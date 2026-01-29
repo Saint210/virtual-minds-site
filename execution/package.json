@@ -1,0 +1,17 @@
+{
+    "name": "execution-scripts",
+    "version": "1.0.0",
+    "description": "Execution scripts for agency site building",
+    "scripts": {
+        "build-site": "ts-node build_site.ts"
+    },
+    "dependencies": {
+        "fs-extra": "^11.2.0"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^11.0.4",
+        "@types/node": "^20.10.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.3.3"
+    }
+}

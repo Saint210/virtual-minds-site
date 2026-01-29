@@ -1,26 +1,95 @@
 @import "tailwindcss";
 
+@theme {
+  --color-primary: #D2691E;
+  --color-primary-hover: #B8860B;
+  --color-accent: #DAA520;
+  --color-secondary: #9CAF88;
+  --color-cream: #FAF8F3;
+  --color-soft-brown: #4A4A4A;
+  --color-trust-navy: #4A4A4A;
+  --color-calm-sage: #9CAF88;
+  --color-medical-gray: #FAF8F3;
+  --color-clinical-green: #9CAF88;
+
+  /* HTML Design Colors */
+  --color-terracotta: #B25A2A;
+  --color-sage: #67927A;
+  --color-cream-html: #F4EBD0;
+  --color-navy: #2D3E35;
+
+  /* Premium Design System Colors */
+  --color-gold: #D4AF37;
+  --color-navy-900: #1a2332;
+  --color-slate-900: #0f172a;
+  --color-cream: #FAF8F3;
+
+  --font-display: "Lora", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #FAF8F3;
+  --foreground: #4A4A4A;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-sans);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  color: var(--color-soft-brown);
+}
+
+/* Material Symbols Setup */
+.material-symbols-outlined {
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 24;
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  font-feature-settings: 'liga';
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Animations */
+@keyframes float {
+
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
 }

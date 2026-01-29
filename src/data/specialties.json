@@ -1,0 +1,240 @@
+[
+    {
+        "slug": "psychiatrists",
+        "name": "Psychiatric",
+        "metaTitle": "Psychiatric VA Resource Hub | Virtual Minds",
+        "metaDescription": "Specialized administrative support for psychiatrists. Appointment scheduling, prior authorizations, and billing correspondence support.",
+        "heroDescription": "Reduce administrative burden. We handle scheduling, prior authorizations, and intake coordination so you can focus on patient care.",
+        "heroImage": "https://lh3.googleusercontent.com/aida-public/AB6AXuD4Pa1J8lNHJfDKmeGvYZRvyDc2qIGF0NusAHs2v8EY0wY3nalt5CPZqngcbDZbVKdwUkgcrgn0coClxKXFJEOA-6uHd0Tt877tpk7NKd0lN_TCXQ25L5EPnQ27xnX2rAdcWZF-cFnURSW9qC1nKLsaWf0XzNaQtwBRUH5vczUzKBACHshcAXiECtm-jLjqIAWXMqm36nZ-nePntLFjz8MXzlLN6eeFy322rv16NGIw8J2BMC5waHcAOL5Ym_HGbTUFW4rURx7Atlc",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Appointment Scheduling",
+                "active": false
+            },
+            {
+                "name": "Prior Authorizations",
+                "active": false
+            },
+            {
+                "name": "Patient Intake",
+                "active": false
+            },
+            {
+                "name": "Billing Support",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Admin",
+                "readTime": "6 min read",
+                "title": "Streamlining Prior Authorizations",
+                "description": "How we manage pharmacy communications and paperwork to ensure your patients get their medication on time.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuB1gM7IgiqLPjHiRNTrT870c9S_z6t16ESvWKDrFhfvRBpKT202TUCP1I58_AX4EIeAdWbk7oP1K9gXJf43MI-JlgFM6PS42_2wXY6vHxo0hf4XPsXsX-8Kegqe8jZ8bheHmg-TI7qMUG_ktTAd5n-671nVZaKClYC4LFB5lC_qxTQNfC3UZ5Be7_w6lkKXyexHKYTjrtW3IEwrPPuVqIGI1tAtCxRHmuDkGOIFa_4mmzd2VyMamoZnyTvGPKYqArATNdpu_K3Gra0"
+            },
+            {
+                "category": "Billing",
+                "readTime": "5 min read",
+                "title": "Superbill Generation Made Easy",
+                "description": "We generate superbills, process credit card transactions, and contact insurance companies on request, working alongside your billing company.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuA-eDHnCFc0TAhlzjSoJqAxgqwutxhsbudk7_dmEWPUNHq_7uQ77VMWAJjRQodX5bPzydQDUCBvj-X7SIOl79nSZiPQnIZaOS2F6nYLX3dEIhiEGvHUmi2Q8A82rVkGuTjNQqaKL8hw8BLPU_1HTDdiV2RKsxRYPq8NO6hDOyOqviRNzg-Ukk51BPyxIfVFEZqYxo8H9BYBiqo-pZy5SPQgdPdWQFyItgX3NgsFcCWMwxMnY-i915ZpWC3Wv1DNCj_uo4uAnw5ijcQ"
+            },
+            {
+                "category": "Workflow",
+                "readTime": "8 min read",
+                "title": "EHR Implementation Support",
+                "description": "Need to set up a new EHR? We review current plans and assist with implementation and office set-up.",
+                "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuDFjx8QBhCCRJ7bXHuLCbhGtK-09inmQnwHk3pPrc4MiINrTtDfz2WbagKzKhbrMf30Ir0dgt0o48U00IBH2-tc_biudU_w50Jm8kJWJkdVYPpVent65HO-Xrc1jFmTZ1V9_l1SWmB3aT5iWoiLOfkfAoQe1Al1vX2_88PlhiREPwiqd3pL04jHOu57yLcEThq27ABR89nF7e9eEKWj7PCgnDnzBPE9Bw3g5SRE5pdsq1NNJzlsqf4pa-V4E0bWgO_7ZvaGV5UHvk0"
+            }
+        ]
+    },
+    {
+        "slug": "private-practice",
+        "name": "Private Practice",
+        "metaTitle": "Private Practice Operations Support | Virtual Minds",
+        "metaDescription": "Consulting and admin support for starting your private practice. Contract review, office set-up, and patient communication.",
+        "heroDescription": "Launching a private practice? We provide the start-up services you need, from office set-up to policy creation.",
+        "heroImage": "https://images.unsplash.com/photo-1556761175-5973dc0f32e7?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Practice Start-Up",
+                "active": false
+            },
+            {
+                "name": "Document Management",
+                "active": false
+            },
+            {
+                "name": "Policy Creation",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Consulting",
+                "readTime": "7 min read",
+                "title": "Reviewing Current Processes",
+                "description": "We analyze your current systems and make recommendations for new procedures to improve efficiency.",
+                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            },
+            {
+                "category": "Admin",
+                "readTime": "5 min read",
+                "title": "Client Intake & Onboarding",
+                "description": "Create a seamless client management experience with our structured intake policies.",
+                "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "adhd-clinics",
+        "name": "ADHD Clinic",
+        "metaTitle": "ADHD Clinic Admin Support | Virtual Minds",
+        "metaDescription": "Specialized support for ADHD clinics. Prior authorizations, calendar management, and patient correspondence.",
+        "heroDescription": "Focus on treatment. We handle the intense volume of prior authorizations and scheduling changes common in ADHD clinics.",
+        "heroImage": "https://images.unsplash.com/photo-1555633514-abceaad63e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Prior Authorizations",
+                "active": false
+            },
+            {
+                "name": "Calendar Management",
+                "active": false
+            },
+            {
+                "name": "Patient Communication",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Admin",
+                "readTime": "6 min read",
+                "title": "Managing Prescription Prior Auths",
+                "description": "We tirelessly contact insurance companies on request to resolve authorization issues for stimulants.",
+                "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            },
+            {
+                "category": "Recall",
+                "readTime": "4 min read",
+                "title": "Telehealth Support Services",
+                "description": "Ensuring your telehealth sessions run smoothly with technical support and patient follow-up.",
+                "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "nurse-practitioners",
+        "name": "Nurse Practitioner",
+        "metaTitle": "PMHNP Administrative Support | Virtual Minds",
+        "metaDescription": "Contract review, HIPAA compliance support, and administrative assistance specifically for PMHNPs.",
+        "heroDescription": "Starting solo? We review contracts, help with HIPAA compliance, and manage your billing correspondence.",
+        "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Contract Review",
+                "active": false
+            },
+            {
+                "name": "HIPAA Compliance",
+                "active": false
+            },
+            {
+                "name": "Billing Correspondence",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Consulting",
+                "readTime": "5 min read",
+                "title": "Contract Review & Negotiation",
+                "description": "Expert assistance in reviewing contracts and ensuring your practice is set up for success.",
+                "image": "https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "drchrono-users",
+        "name": "DrChrono Practice",
+        "metaTitle": "Virtual Assistants for DrChrono | Virtual Minds California",
+        "metaDescription": "Specialized VAs who know DrChrono. We handle templates, billing correspondence support, and OnPatient portal messages.",
+        "heroDescription": "Stop training VAs on DrChrono from scratch. Our assistants are Day-1 proficient in iPad check-ins and custom templates.",
+        "heroImage": "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Template Management",
+                "active": false
+            },
+            {
+                "name": "OnPatient Portal",
+                "active": false
+            },
+            {
+                "name": "Billing Correspondence Support",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Workflow",
+                "readTime": "4 min read",
+                "title": "Optimizing DrChrono Templates",
+                "description": "How we build custom clinical templates to speed up your note-taking by 30%.",
+                "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "charm-health-users",
+        "name": "CharmHealth Practice",
+        "metaTitle": "Virtual Assistants for CharmHealth | Virtual Minds California",
+        "metaDescription": "CharmHealth experts. We manage questionnaires, sketch pads, and patient portal communication for CA psychiatrists.",
+        "heroDescription": "Maximize CharmHealth's potential. We handle the questionnaires and patient portal so you can focus on clinical work.",
+        "heroImage": "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "categories": [
+            {
+                "name": "All Topics",
+                "active": true
+            },
+            {
+                "name": "Questionnaires",
+                "active": false
+            },
+            {
+                "name": "Patient Portal",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "category": "Admin",
+                "readTime": "5 min read",
+                "title": "CharmHealth Questionnaire Setup",
+                "description": "Automating your intake through CharmHealth's patient kiosk and portal features.",
+                "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
+            }
+        ]
+    }
+]

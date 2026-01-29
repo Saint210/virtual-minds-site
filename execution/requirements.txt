@@ -1,0 +1,6 @@
+# Python dependencies for execution scripts
+playwright>=1.40.0
+beautifulsoup4>=4.12.0
+openai>=1.0.0
+anthropic>=0.8.0
+python-dotenv>=1.0.0
