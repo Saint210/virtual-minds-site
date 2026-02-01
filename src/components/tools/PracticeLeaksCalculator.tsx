@@ -3,11 +3,16 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 
-export default function PracticeLeaksCalculator() {
+interface PracticeLeaksCalculatorProps {
+    initialRent?: number;
+    cityName?: string;
+}
+
+export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }: PracticeLeaksCalculatorProps) {
     // State for user inputs
     const [adminHours, setAdminHours] = useState(15);
     const [activePatients, setActivePatients] = useState(40);
-    const [monthlyRent, setMonthlyRent] = useState(2500);
+    const [monthlyRent, setMonthlyRent] = useState(initialRent);
 
     // State for calculated values
     const [annualAdminCost, setAnnualAdminCost] = useState(0);
@@ -63,8 +68,15 @@ export default function PracticeLeaksCalculator() {
                 <div className="lg:w-1/2 p-8 md:p-12 bg-slate-50 relative">
                     <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-[#D2691E] to-[#B8860B]"></div>
 
-                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-2">Practice Leakage Audit</h3>
-                    <p className="text-slate-500 mb-8 text-sm">Adjust the sliders to match your current practice reality.</p>
+                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-2">
+                        {cityName ? `${cityName} Practice Audit` : 'Practice Leakage Audit'}
+                    </h3>
+                    <p className="text-slate-500 mb-8 text-sm">
+                        {cityName
+                            ? `Adjust the sliders to match your current ${cityName} practice reality.`
+                            : 'Adjust the sliders to match your current practice reality.'
+                        }
+                    </p>
 
                     <div className="space-y-8">
                         {/* Input 1: Admin Hours */}

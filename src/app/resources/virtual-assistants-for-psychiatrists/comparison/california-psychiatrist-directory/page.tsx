@@ -18,7 +18,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                     {/* Clean Background */}
                     <div className="absolute inset-0 bg-white">
                     </div>
-                    
+
                     <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-20">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                             <div className="flex flex-col gap-8 text-center lg:text-left">
@@ -37,11 +37,11 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                             California Directory
                                         </span>
                                     </h1>
-                                    
+
                                     <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-lg">
-                                        Be among the first to join California's premier psychiatrist directory. 
-                                        <span className="text-primary font-bold"> Premium listings</span>, 
-                                        <span className="text-primary font-bold"> advanced SEO</span>, and 
+                                        Be among the first to join California's premier psychiatrist directory.
+                                        <span className="text-primary font-bold"> Premium listings</span>,
+                                        <span className="text-primary font-bold"> advanced SEO</span>, and
                                         <span className="text-primary font-bold"> video optimization tools</span>
                                     </p>
                                 </div>
@@ -74,7 +74,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                         </span>
                                         <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform"></div>
                                     </Link>
-                                    
+
                                     <Link
                                         href="#pricing"
                                         className="group border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors"
@@ -86,7 +86,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                     </Link>
                                 </div>
                             </div>
-                            
+
                             <div className="relative">
                                 <div className="aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20">
                                     <div className="flex items-center justify-center h-full">
@@ -136,7 +136,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                                 </td>
                                             </tr>
                                             <tr className="border-b border-gray-200 hover:bg-gray-100">
-                                                <td className="py-4 px-4 font-medium">Medi-Cal & CMIA Expertise</td>
+                                                <td className="py-4 px-4 font-medium">Medi-Cal & Privacy Expertise</td>
                                                 <td className="text-center py-4 px-4">
                                                     <span className="material-symbols-outlined text-green-500">check_circle</span>
                                                 </td>
@@ -236,7 +236,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                 <div className="mt-8 bg-gradient-to-r from-primary/10 to-trust-navy/10 rounded-xl p-6">
                                     <h3 className="text-xl font-bold text-trust-navy mb-3">Premium Investment vs. Basic Directory</h3>
                                     <p className="text-gray-700 leading-relaxed">
-                                        Psychology Today offers basic directory listings at $29.95/month - generic profiles with no California specialization. 
+                                        Psychology Today offers basic directory listings at $29.95/month - generic profiles with no California specialization.
                                         They promise "millions of therapy seekers" and "unparalleled SEO" but deliver generic traffic.
                                     </p>
                                     <div className="mt-4 p-4 bg-white rounded-lg">
@@ -256,7 +256,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                             <li>• <strong>California psychiatric specialist traffic</strong></li>
                                             <li>• <strong>YouTube video optimization suite</strong></li>
                                             <li>• <strong>Google Maps Pack domination tools</strong></li>
-                                            <li>• <strong>CMIA & Medi-Cal compliance expertise</strong></li>
+                                            <li>• <strong>California privacy & Medi-Cal compliance expertise</strong></li>
                                             <li>• <strong>Dedicated account manager</strong></li>
                                             <li>• <strong>Marketing consultation & growth strategy</strong></li>
                                         </ul>
@@ -371,7 +371,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                         <p className="text-xl font-bold text-trust-navy mb-2">Founding Member Slots</p>
                                         <p className="text-gray-600 mb-6">Limited availability for California psychiatrists</p>
                                         <div className="w-full bg-gray-200 rounded-full h-4 mb-6">
-                                            <div className="bg-gradient-to-r from-primary to-[#C19F30] h-4 rounded-full" style={{width: '20%'}}></div>
+                                            <div className="bg-gradient-to-r from-primary to-[#C19F30] h-4 rounded-full" style={{ width: '20%' }}></div>
                                         </div>
                                         <p className="text-sm text-gray-600 mb-6">80% Already Claimed</p>
                                         <Link
@@ -611,7 +611,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                     <li>• <strong>Specialized traffic:</strong> California patients seeking psychiatric care</li>
                                     <li>• <strong>Advanced tools:</strong> YouTube optimization, Google Maps domination</li>
                                     <li>• <strong>Expert support:</strong> Dedicated account manager + marketing consultation</li>
-                                    <li>• <strong>Compliance expertise:</strong> CMIA, Medi-Cal, telehealth regulations</li>
+                                    <li>• <strong>Compliance expertise:</strong> California privacy, Medi-Cal, telehealth regulations</li>
                                 </ul>
                                 <p className="mt-4 font-bold text-primary">
                                     Result: 3x higher patient acquisition, 50% better lead quality
@@ -656,7 +656,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                     Psychology Today includes basic telehealth. We provide California-compliant solutions:
                                 </p>
                                 <ul className="space-y-2 text-gray-600 text-sm">
-                                    <li>• <strong>CMIA compliance:</strong> California mental health privacy laws</li>
+                                    <li>• <strong>State privacy compliance:</strong> California mental health privacy laws</li>
                                     <li>• <strong>Medi-Cal telehealth:</strong> California Medicaid telehealth coverage</li>
                                     <li>• <strong>Integration support:</strong> Connect with your existing EHR/system</li>
                                     <li>• <strong>California regulations:</strong> Telehealth prescribing, cross-state practice</li>

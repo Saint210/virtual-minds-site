@@ -31,7 +31,7 @@ export default function CostAnalysisPageV4() {
                         <div className="bg-white dark:bg-slate-800 p-5 rounded-xl border-l-4 border-terracotta shadow-sm max-w-lg flex items-start gap-4">
                             <Image alt="Dr. Michael Torres" className="w-14 h-14 rounded-full border-2 border-cream object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtRGwNk2r27dHDW-Q8EdizTO2ki4FIPM5bCcVa6mV7PI-zjWHwb6Ez4pgRVoHcfWxrLQAQk_la4YETrBUZu38L5d8eyTYJy05Xtg_Tcnwwwj2YL_TRZWzPieCnMkGM4rl1k6AnHgJmPOGx1f7TwnIBBqqn5HkXWoo6Zx8cbxp3_72_4LYNk_n4-zM1wyN6jTSUuA-wVY1y8lJ9j-kT41uEfnnhr54rijK_Tde51qORgCmS6abwlwuLUHbiJZdvwWrvUDzsuRmogKY" width={160} height={160} />
                             <div>
-                                <p className="text-sm italic text-slate-700 dark:text-slate-300">"The 2026 analysis was a wake-up call. We cut overhead by 40% in two months while improving our CMIA compliance scores."</p>
+                                <p className="text-sm italic text-slate-700 dark:text-slate-300">"The 2026 analysis was a wake-up call. We cut overhead by 40% in two months while improving our overall compliance scores."</p>
                                 <p className="text-xs font-bold mt-2 text-terracotta">— Dr. Michael Torres, MD (San Diego Psychiatric Group)</p>
                             </div>
                         </div>
@@ -334,7 +334,7 @@ export default function CostAnalysisPageV4() {
                         <div className="pt-12 border-t border-white/10 mt-12 flex flex-col md:flex-row justify-between items-center gap-6">
                             <div className="flex items-center gap-3 text-white/50 text-sm">
                                 <span className="material-symbols-outlined text-2xl text-terracotta">psychology</span>
-                                <span>HIPAA & CMIA Compliant Virtual Assistance</span>
+                                <span>HIPAA & California Privacy Compliant Support</span>
                             </div>
                             <div className="text-white/30 text-xs text-right">
                                 © 2026 PsychVA California. All Rights Reserved.<br />

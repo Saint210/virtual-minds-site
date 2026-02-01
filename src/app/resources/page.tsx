@@ -2,6 +2,7 @@ import Link from "next/link";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+
 import specialties from "@/data/specialties.json";
 
 export const metadata = {
@@ -22,36 +23,40 @@ export default function ResourcesHub() {
 
             <main className="flex-grow">
                 {/* Elite Hero Section with Social Proof */}
-                <section className="relative pt-24 pb-20 overflow-hidden bg-[#FAF8F3]">
+                <section className="relative pt-4 md:pt-6 pb-20 overflow-hidden bg-[#FAF8F3]">
                     <div className="absolute inset-0 opacity-10 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#D2691E]/10 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3"></div>
+                        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/10 rounded-full blur-[120px] translate-x-1/3 -translate-y-1/3"></div>
                     </div>
 
                     <div className="relative z-10 max-w-7xl mx-auto px-6">
                         <div className="max-w-4xl">
-                            <span className="text-[#D2691E] font-bold uppercase tracking-widest text-sm mb-6 block italic">The Operational Library</span>
-                            <h1 className="text-5xl md:text-6xl lg:text-7xl font-serif font-bold text-[#2A2A2A] leading-[1.1] mb-8">
-                                Blueprints for <br />
-                                <span className="text-[#D2691E]">Clinical Excellence.</span>
+
+                            <div className="inline-flex items-center gap-2 mb-6">
+                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">The Operational Library</span>
+                                <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
+                            </div>
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-serif font-bold text-trust-navy leading-[1.1] mb-8">
+                                Protocols for <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Clinical Excellence</span>.
                             </h1>
-                            <p className="text-xl text-slate-600 mb-10 leading-relaxed italic max-w-2xl">
-                                Our specialized guides and technical resources are built on a decade of experience in California's mental health landscape. Reclaim your practice, one blueprint at a time.
+                            <p className="text-lg md:text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl font-medium">
+                                Our specialized guides and technical resources are built on <strong className="text-trust-navy">deep experience in California's mental health landscape</strong>. Reclaim your practice, <span className="text-[#D2691E] font-bold">one protocol at a time</span>.
                             </p>
 
                             {/* Social Proof Badges */}
                             <div className="flex flex-wrap items-center gap-6 mb-8">
                                 <div className="flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-slate-100 shadow-sm">
-                                    <span className="material-symbols-outlined text-[#D2691E]">verified</span>
+                                    <span className="material-symbols-outlined text-primary">verified</span>
                                     <div className="text-sm">
                                         <p className="font-bold text-[#2A2A2A]">Trusted by CA Psychiatrists</p>
-                                        <p className="text-slate-500 text-xs">Using These Blueprints</p>
+                                        <p className="text-slate-500 text-xs">Using These Protocols</p>
                                     </div>
                                 </div>
                                 <div className="flex items-center gap-3 bg-white px-5 py-3 rounded-xl border border-slate-100 shadow-sm">
                                     <span className="material-symbols-outlined text-green-600">security</span>
                                     <div className="text-sm">
                                         <p className="font-bold text-[#2A2A2A]">100% HIPAA Compliant</p>
-                                        <p className="text-slate-500 text-xs">California CMIA Certified</p>
+                                        <p className="text-slate-500 text-xs">California Privacy Standards</p>
                                     </div>
                                 </div>
                             </div>
@@ -65,8 +70,16 @@ export default function ResourcesHub() {
                         <div className="mb-20">
                             <div className="flex items-center justify-between mb-8">
                                 <div>
-                                    <h2 className="text-4xl font-serif font-bold text-[#2A2A2A] mb-4">The Operational <span className="text-[#D2691E]">Matrix.</span></h2>
-                                    <p className="text-lg text-slate-500 italic max-w-2xl">Specialized toolkits designed exclusively for the modern psychiatrist.</p>
+                                    <div className="inline-flex items-center gap-2 mb-4">
+                                        <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Resource Hub</span>
+                                        <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
+                                    </div>
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-4">
+                                        The Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Matrix</span>.
+                                    </h2>
+                                    <p className="text-base md:text-lg text-slate-600 max-w-2xl font-medium">
+                                        <strong className="text-trust-navy">Specialized toolkits</strong> designed exclusively for the <span className="text-[#D2691E] font-bold">modern psychiatrist</span>.
+                                    </p>
                                 </div>
                                 {/* Urgency Indicator */}
                                 <div className="hidden lg:flex items-center gap-2 bg-red-50 border border-red-200 px-4 py-2 rounded-full">
@@ -110,18 +123,18 @@ export default function ResourcesHub() {
                                 </div>
                             </Link>
 
-                            {/* 2. Revenue Architecture */}
-                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border border-slate-100 hover:border-[#D2691E]/20 transition-all flex flex-col justify-between shadow-sm hover:shadow-xl min-h-[320px]">
+                            {/* 2. Revenue Optimization */}
+                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border-2 border-slate-200 hover:border-[#D2691E]/30 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-[#D2691E]/5 hover:-translate-y-2 min-h-[320px]">
                                 <div>
                                     <div className="flex items-start justify-between mb-6">
-                                        <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-[#D2691E] shadow-sm group-hover:scale-110 transition-transform">
+                                        <div className="w-14 h-14 bg-[#D2691E]/10 rounded-2xl flex items-center justify-center text-[#D2691E] border border-[#D2691E]/20 group-hover:bg-[#D2691E] group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-3xl">payments</span>
                                         </div>
                                         <span className="bg-green-100 text-green-800 text-[10px] font-black px-3 py-1 rounded-full uppercase">ROI Focused</span>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-4 italic">Revenue Architecture</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Revenue Optimization</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium">
-                                        <strong className="text-[#2A2A2A]">Capture $18K+ annually</strong> in missed billing opportunities. Optimize CPT coding for med-management + therapy add-ons (99214 + 90833).
+                                        <strong className="text-trust-navy">Capture $18K+ annually</strong> in missed billing opportunities. Optimize CPT coding for <span className="text-[#D2691E] font-bold">med-management + therapy add-ons</span> (99214 + 90833).
                                     </p>
                                     {/* Value indicator */}
                                     <div className="bg-white border border-green-100 rounded-xl p-3 mb-6">
@@ -135,20 +148,20 @@ export default function ResourcesHub() {
                             </div>
 
                             {/* 3. ADHD Stimulant Ops */}
-                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border border-slate-100 hover:border-[#D2691E]/20 transition-all flex flex-col justify-between shadow-sm hover:shadow-xl overflow-hidden min-h-[320px]">
+                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border-2 border-slate-200 hover:border-[#67927A]/30 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-[#67927A]/5 hover:-translate-y-2 overflow-hidden min-h-[320px]">
                                 <div>
                                     <div className="flex items-start justify-between mb-6">
-                                        <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-[#9CAF88] shadow-sm group-hover:scale-110 transition-transform">
+                                        <div className="w-14 h-14 bg-[#67927A]/10 rounded-2xl flex items-center justify-center text-[#67927A] border border-[#67927A]/20 group-hover:bg-[#67927A] group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-3xl font-bold">medication</span>
                                         </div>
                                         <span className="bg-blue-100 text-blue-800 text-[10px] font-black px-3 py-1 rounded-full uppercase">Compliance</span>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-4 italic">Controlled Substance Ops</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Controlled Substance Ops</h3>
                                     <p className="text-slate-600 mb-8 leading-relaxed font-medium">
-                                        <strong className="text-[#2A2A2A]">Protect your DEA license.</strong> A specialized guide to managing stimulant prescribing workflows and California compliance for remote practices.
+                                        <strong className="text-trust-navy">Protect your DEA license.</strong> A specialized guide to managing <span className="text-[#67927A] font-bold">stimulant prescribing workflows</span> and California compliance for remote practices.
                                     </p>
                                 </div>
-                                <Link href="/resources/blueprints/controlled-substance-ops" className="text-[#9CAF88] font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <Link href="/resources/blueprints/controlled-substance-ops" className="text-[#67927A] font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Secure Your Workflow <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
@@ -160,9 +173,8 @@ export default function ResourcesHub() {
                                         <div className="w-14 h-14 bg-[#D2691E] rounded-2xl flex items-center justify-center text-white group-hover:scale-110 transition-transform shadow-lg">
                                             <span className="material-symbols-outlined text-3xl font-bold">foundation</span>
                                         </div>
-                                        <span className="bg-yellow-400 text-yellow-900 text-[10px] font-black px-3 py-1 rounded-full uppercase">New</span>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold mb-4 italic leading-tight">
+                                    <h3 className="text-2xl font-serif font-bold mb-4 italic leading-tight !text-white">
                                         Psychiatrist <br />
                                         Start-Up Blueprint
                                     </h3>
@@ -176,16 +188,16 @@ export default function ResourcesHub() {
                             </div>
 
                             {/* 5. EHR Hardening */}
-                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border border-slate-100 hover:border-[#D2691E]/20 transition-all flex flex-col justify-between shadow-sm hover:shadow-xl min-h-[320px]">
+                            <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border-2 border-slate-200 hover:border-blue-500/30 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-2 min-h-[320px]">
                                 <div>
                                     <div className="flex items-start justify-between mb-6">
-                                        <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-sm group-hover:scale-110 transition-transform">
+                                        <div className="w-14 h-14 bg-blue-500/10 rounded-2xl flex items-center justify-center text-blue-600 border border-blue-500/20 group-hover:bg-blue-600 group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-3xl">database</span>
                                         </div>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-4 italic">EHR Hardening</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">EHR Hardening</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium">
-                                        <strong className="text-[#2A2A2A]">Cut documentation time by 40%.</strong> Custom templates for DrChrono, CharmHealth, and AdvancedMD built specifically for psychiatric evaluations and MSEs.
+                                        <strong className="text-trust-navy">Cut documentation time by 40%.</strong> Custom templates for <span className="text-blue-600 font-bold">DrChrono, CharmHealth, and AdvancedMD</span> built specifically for psychiatric evaluations and MSEs.
                                     </p>
                                     {/* Time savings indicator */}
                                     <div className="bg-white border border-blue-100 rounded-xl p-3 mb-6">
@@ -220,7 +232,7 @@ export default function ResourcesHub() {
                                         <span className="text-[#D2691E]">Compliance Standard.</span>
                                     </h2>
                                     <p className="text-lg text-slate-100 mb-8 leading-relaxed !text-slate-100">
-                                        Every resource in our library is vetted by California medical regulatory specialists. We ensure our frameworks meet both HIPAA and CMIA (Confidentiality of Medical Information Act) standards.
+                                        Every resource in our library is vetted by California medical regulatory specialists. We ensure our frameworks meet both HIPAA and California privacy standards.
                                     </p>
                                     {/* Benefit-driven CTA */}
                                     <div className="bg-white/10 border border-white/20 rounded-2xl p-6 mb-8">
@@ -236,7 +248,7 @@ export default function ResourcesHub() {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                                <div className="grid grid-cols-1 gap-6">
                                     {[
                                         { title: "BAA Protection", desc: "Business Associate Agreements for all personnel.", icon: "gavel", stat: "100%" },
                                         { title: "256-bit Security", desc: "Military-grade encryption for all data handling.", icon: "lock", stat: "Secure" },
@@ -258,15 +270,17 @@ export default function ResourcesHub() {
                     </div>
                 </section>
 
-                {/* Final CTA - Now with Urgency and Scarcity */}
-                <section className="bg-[#FAF8F3] py-32 relative overflow-hidden border-t border-slate-100">
-                    <div className="absolute inset-0 opacity-10 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#D2691E]/10 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2"></div>
+                {/* Final CTA - Premium Upgrade */}
+                <section className="relative py-24 md:py-32 overflow-hidden bg-gradient-to-br from-[#FAF8F3] to-white">
+                    {/* Terracotta Glow Effect */}
+                    <div className="absolute -inset-2 bg-[#D2691E]/10 blur-3xl opacity-30"></div>
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#B25A2A_1px,transparent_1px)] [background-size:40px_40px]" />
                     </div>
 
-                    <div className="max-w-4xl mx-auto px-6 text-center text-[#2A2A2A] relative z-10">
+                    <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
                         {/* Scarcity indicator */}
-                        <div className="inline-flex items-center gap-3 bg-white border border-red-200 rounded-full px-6 py-3 mb-8 shadow-sm">
+                        <div className="inline-flex items-center gap-3 bg-white border border-red-200 rounded-full px-6 py-3 mb-8 shadow-lg">
                             <span className="relative flex h-2 w-2">
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
@@ -274,26 +288,26 @@ export default function ResourcesHub() {
                             <span className="text-sm font-bold text-red-800">Only 3 Strategy Audit Slots Left This Week</span>
                         </div>
 
-                        <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 italic leading-tight">
-                            Architect Your Future Practice.
+                        <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight text-trust-navy">
+                            Design Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Future Practice</span>.
                         </h2>
-                        <p className="text-xl text-slate-600 mb-6 max-w-2xl mx-auto font-medium leading-relaxed">
-                            Stop managing the chaos. Start leading your practice.
+                        <p className="text-lg md:text-xl text-slate-600 mb-6 max-w-2xl mx-auto font-medium leading-relaxed">
+                            <strong className="text-trust-navy">Stop managing the chaos.</strong> Start <span className="text-[#D2691E] font-bold">leading your practice</span>.
                         </p>
-                        <p className="text-lg text-slate-500 mb-12 max-w-xl mx-auto">
-                            Book your <strong className="text-[#2A2A2A]">15-minute Strategy Audit</strong> to define your infrastructure roadmap and claim your <strong className="text-[#D2691E]">free compliance review</strong>.
+                        <p className="text-base md:text-lg text-slate-600 mb-12 max-w-xl mx-auto leading-relaxed">
+                            Book your <strong className="text-trust-navy">15-minute Strategy Audit</strong> to define your infrastructure roadmap and claim your <strong className="text-[#D2691E]">free compliance review</strong>.
                         </p>
 
                         {/* Benefit list */}
-                        <div className="grid sm:grid-cols-3 gap-6 mb-12 max-w-3xl mx-auto">
+                        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6 mb-12 max-w-3xl mx-auto">
                             {[
                                 { icon: "fact_check", text: "Practice Workflow Analysis" },
                                 { icon: "shield", text: "HIPAA Compliance Check" },
                                 { icon: "lightbulb", text: "Custom Resource Roadmap" }
                             ].map((item, i) => (
-                                <div key={i} className="flex items-center gap-3 bg-white border border-slate-100 rounded-xl p-4 shadow-sm">
+                                <div key={i} className="flex items-center gap-3 bg-white border-2 border-slate-200 rounded-xl p-4 shadow-sm hover:border-[#D2691E]/30 hover:shadow-lg hover:shadow-[#D2691E]/5 transition-all">
                                     <span className="material-symbols-outlined text-[#D2691E]">{item.icon}</span>
-                                    <span className="text-sm font-bold text-[#2A2A2A]">{item.text}</span>
+                                    <span className="text-sm font-bold text-trust-navy">{item.text}</span>
                                 </div>
                             ))}
                         </div>
@@ -301,14 +315,14 @@ export default function ResourcesHub() {
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
                                 href="/book-consultation"
-                                className="px-12 py-5 bg-[#D2691E] text-white font-black text-xl rounded-2xl shadow-2xl hover:scale-105 transition-transform flex items-center justify-center gap-3"
+                                className="group relative overflow-hidden px-10 md:px-12 py-4 md:py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-black text-lg md:text-xl rounded-2xl shadow-2xl shadow-[#D2691E]/20 hover:shadow-[#D2691E]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
-                                Book Your Strategy Audit
+                                <span>Book Your Strategy Audit</span>
                             </Link>
                             <Link
                                 href="/pricing"
-                                className="px-12 py-5 bg-white border-2 border-slate-200 text-[#2A2A2A] font-bold text-xl rounded-2xl hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
+                                className="px-10 md:px-12 py-4 md:py-5 bg-white border-2 border-slate-200 hover:border-[#D2691E]/30 text-trust-navy font-bold text-lg md:text-xl rounded-2xl hover:bg-slate-50 transition-all flex items-center justify-center gap-2"
                             >
                                 View Pricing
                             </Link>

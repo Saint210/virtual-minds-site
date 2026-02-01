@@ -23,39 +23,114 @@ export default function PracticeStartUpPage() {
             />
             <main className="flex-grow">
 
-                {/* HERO SECTION */}
-                <section className="relative pt-32 pb-40 overflow-hidden bg-[#FAF8F3]">
-                    <div className="max-w-7xl mx-auto px-6 relative z-10">
-                        <div className="flex flex-col lg:flex-row items-center gap-20">
-                            <div className="lg:w-3/5">
-                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-xs mb-6 block italic">Phase 1: Foundation</span>
-                                <h1 className="text-5xl md:text-7xl font-serif font-bold text-[#2A2A2A] leading-[1.1] mb-8">
-                                    Launch Your Practice <br />
-                                    <span className="text-[#D2691E]">Without the Friction.</span>
+                {/* EXECUTIVE START-UP HERO */}
+                <section className="relative pt-4 md:pt-6 pb-12 md:pb-16 overflow-hidden bg-[#FAF8F3]">
+                    {/* Immersive Background Tokens */}
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                            {/* LEFT: Copy & Authority (60%) */}
+                            <div className="lg:w-[60%]">
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black mb-4 shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
+                                    <span className="tracking-[0.2em] uppercase text-primary">Operational Infrastructure</span>
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                                    Psychiatric Practice <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
+                                        Start-Up Support.
+                                    </span>
                                 </h1>
-                                <p className="text-xl text-slate-600 mb-10 leading-relaxed max-w-2xl">
-                                    Stop navigating the complexities of California medical compliance alone. We provide the turnkey blueprint and implementation support to take your practice from concept to opening day.
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">
+                                    Specialized operational setup for new California psychiatric practices.
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-1">EHR implementation, policy development,</span>
+                                    and logistical support built for day-one readiness.
                                 </p>
+
+                                {/* Institutional Social Proof */}
+                                <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
+                                    <div className="flex -space-x-4">
+                                        {[1, 2, 3, 4].map((i) => (
+                                            <div key={i} className="w-12 h-12 rounded-full bg-white border-[3px] border-[#FAF8F3] flex items-center justify-center overflow-hidden shadow-lg relative z-[10]">
+                                                <Image
+                                                    src={`https://i.pravatar.cc/150?u=${i + 170}`}
+                                                    alt="Startup Specialist"
+                                                    width={48}
+                                                    height={48}
+                                                    className="grayscale hover:grayscale-0 transition-all duration-500"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="text-sm text-slate-500 font-medium leading-tight text-center sm:text-left">
+                                        <p><strong className="text-trust-navy italic">Launching Private Practices across California</strong></p>
+                                        <p className="text-slate-400">Comprehensive build-outs for specialized psychiatric clinics.</p>
+                                    </div>
+                                </div>
+
+                                {/* PRACTICE ECONOMICS BAR - STARTUP SPECIFIC */}
+                                <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Implementation</p>
+                                        <p className="text-lg font-bold text-trust-navy">90-Day Setup</p>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Regulatory Health</p>
+                                        <p className="text-lg font-bold text-trust-navy">CA-Compliance+</p>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Status</p>
+                                        <div className="flex items-center gap-2">
+                                            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                            <p className="text-lg font-bold text-trust-navy italic">Practice Ready</p>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div className="flex flex-col sm:flex-row gap-5">
-                                    <Link
-                                        href="/book-consultation"
-                                        className="px-10 py-5 bg-[#D2691E] text-white font-bold text-lg rounded-2xl shadow-xl hover:bg-[#B8860B] transition-all flex items-center justify-center gap-2"
-                                    >
-                                        Request Your Start-Up Blueprint
+                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3">
+                                        <span className="material-symbols-outlined">schedule</span>
+                                        Schedule Strategy Audit
                                     </Link>
                                 </div>
                             </div>
-                            <div className="lg:w-2/5 relative">
-                                <div className="absolute -inset-4 bg-[#D2691E]/10 rounded-[40px] blur-3xl"></div>
-                                <div className="relative p-2 bg-white rounded-[44px] shadow-2xl border border-slate-100 overflow-hidden">
-                                    <div className="relative aspect-square w-full rounded-[36px] overflow-hidden">
+
+                            {/* RIGHT: Visual System Card (40%) */}
+                            <div className="lg:w-[40%] relative w-full">
+                                <div className="relative group">
+                                    <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl opacity-50"></div>
+                                    <div className="relative aspect-[4/5] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
                                         <Image
                                             src="/images/psychiatry-startup-mindmap.png"
                                             alt="Psychiatry Practice Strategic Mindmap"
                                             fill
                                             className="object-cover"
-                                            priority
                                         />
+                                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-trust-navy to-transparent h-1/2 flex items-end p-12">
+                                            <div className="mb-4">
+                                                <h3 className="text-3xl font-serif font-bold !text-white leading-tight">Start-Up <br />Strategic <br />Matrix</h3>
+                                                <p className="!text-slate-100/70 text-sm leading-relaxed mt-4">
+                                                    Phase-based implementation from business entity formation to clinical EHR customization and patient intake logic.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* Floating badge */}
+                                    <div className="absolute -top-6 -right-6 bg-white p-5 rounded-[2rem] shadow-2xl border border-slate-100 flex items-center gap-4 animate-bounce-slow">
+                                        <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                                            <span className="material-symbols-outlined font-bold">verified_user</span>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Security Status</p>
+                                            <p className="text-base font-bold text-trust-navy">Practice Ready</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -76,8 +151,8 @@ export default function PracticeStartUpPage() {
                                 </p>
                                 <div className="grid md:grid-cols-2 gap-10">
                                     <div className="space-y-4">
-                                        <h4 className="text-xl font-bold text-white italic">The Start-Up Gaps:</h4>
-                                        <ul className="space-y-4 text-slate-400">
+                                        <h4 className="text-xl font-bold !text-white italic">The Start-Up Gaps:</h4>
+                                        <ul className="space-y-4 text-slate-300">
                                             <li className="flex items-center gap-3">
                                                 <span className="material-symbols-outlined text-[#D2691E] text-sm">warning</span>
                                                 Manual, non-compliant intake forms
@@ -106,7 +181,7 @@ export default function PracticeStartUpPage() {
                 <section className="py-32 bg-white">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
-                            <h2 className="text-4xl font-serif font-bold text-[#2A2A2A] mb-4">Turnkey Start-Up Services</h2>
+                            <h2 className="text-4xl font-serif font-bold text-trust-navy mb-4">Turnkey Start-Up Services</h2>
                             <p className="text-slate-500 max-w-2xl mx-auto">Specific to the unique regulatory landscape of California Psychiatry.</p>
                         </div>
 
@@ -134,7 +209,7 @@ export default function PracticeStartUpPage() {
                                 },
                                 {
                                     title: "HIPAA Compliance",
-                                    desc: "Establishing secure policies, BAA management, and California-specific CMIA risk assessments.",
+                                    desc: "Establishing secure policies, BAA management, and California state privacy risk assessments.",
                                     icon: "shield_lock"
                                 },
                                 {
@@ -147,7 +222,7 @@ export default function PracticeStartUpPage() {
                                     <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-[#D2691E] mb-8 shadow-sm group-hover:scale-110 transition-transform">
                                         <span className="material-symbols-outlined text-3xl">{service.icon}</span>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-[#2A2A2A] mb-4">{service.title}</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">{service.title}</h3>
                                     <p className="text-slate-600 leading-relaxed">{service.desc}</p>
                                 </div>
                             ))}
@@ -162,7 +237,7 @@ export default function PracticeStartUpPage() {
                             <span className="text-[#FFFFFF]">Your Practice Starts Here.</span>
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium">
-                            Ready to launch? Book your Strategy Audit to define your launch timeline and roadmap.
+                            Ready to launch? Book your Strategy Call to define your launch timeline and roadmap.
                         </p>
                         <Link
                             href="/book-consultation"

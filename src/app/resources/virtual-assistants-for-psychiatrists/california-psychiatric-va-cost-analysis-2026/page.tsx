@@ -65,7 +65,7 @@ export default function CostAnalysisPage() {
                                         <a href="#next-steps" className="block text-sm text-slate-600 hover:text-primary transition-colors py-1">Next Steps</a>
                                     </nav>
                                 </div>
-                                
+
                                 <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl p-6">
                                     <h4 className="font-bold text-trust-navy mb-3">Key Takeaways</h4>
                                     <ul className="space-y-2 text-sm text-slate-600">
@@ -98,7 +98,7 @@ export default function CostAnalysisPage() {
                                                 </span>
                                                 7 Critical Cost Factors for California Psychiatry Practices
                                             </h2>
-                                            
+
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                                 <div className="bg-gradient-to-br from-primary/5 to-transparent border border-primary/10 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
@@ -120,7 +120,7 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-amber-50 to-transparent border border-amber-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-amber-600">trending_down</span>
@@ -141,7 +141,7 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-blue-50 to-transparent border border-blue-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-blue-600">security</span>
@@ -153,7 +153,7 @@ export default function CostAnalysisPage() {
                                                             <span className="text-green-600 font-bold">Included</span>
                                                         </li>
                                                         <li className="flex justify-between">
-                                                            <span>CMIA Compliance</span>
+                                                            <span>State Privacy Standards</span>
                                                             <span className="text-green-600 font-bold">Built-in</span>
                                                         </li>
                                                         <li className="flex justify-between">
@@ -162,7 +162,7 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-green-50 to-transparent border border-green-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-green-600">rocket_launch</span>
@@ -184,7 +184,7 @@ export default function CostAnalysisPage() {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                                 <div className="bg-gradient-to-br from-purple-50 to-transparent border border-purple-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
@@ -206,7 +206,7 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-indigo-50 to-transparent border border-indigo-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-indigo-600">groups</span>
@@ -228,7 +228,7 @@ export default function CostAnalysisPage() {
                                                     </ul>
                                                 </div>
                                             </div>
-                                            
+
                                             <div className="bg-gradient-to-br from-slate-100 to-transparent border border-slate-300 rounded-2xl p-6 mb-8">
                                                 <h3 className="font-bold text-trust-navy text-xl mb-4 flex items-center gap-2">
                                                     <span className="material-symbols-outlined text-slate-600">location_on</span>
@@ -361,7 +361,7 @@ export default function CostAnalysisPage() {
                                                 </span>
                                                 Implementation Strategy
                                             </h2>
-                                            
+
                                             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                                                 <div className="bg-gradient-to-br from-blue-50 to-transparent border border-blue-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
@@ -376,7 +376,7 @@ export default function CostAnalysisPage() {
                                                         <li>• Compliance gap analysis</li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-amber-50 to-transparent border border-amber-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-amber-600">settings</span>
@@ -390,7 +390,7 @@ export default function CostAnalysisPage() {
                                                         <li>• Quality metrics establishment</li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-green-50 to-transparent border border-green-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-green-600">trending_up</span>
@@ -414,7 +414,7 @@ export default function CostAnalysisPage() {
                                                 </span>
                                                 Risk Mitigation
                                             </h2>
-                                            
+
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                                 <div className="bg-red-50 border border-red-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
@@ -428,7 +428,7 @@ export default function CostAnalysisPage() {
                                                         <li>• <strong>Contingency Planning</strong>: 15% budget buffer recommended</li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-orange-50 border border-orange-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-orange-600">settings_suggest</span>
@@ -451,7 +451,7 @@ export default function CostAnalysisPage() {
                                                 </span>
                                                 California Market Advantages
                                             </h2>
-                                            
+
                                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
                                                 <div className="bg-gradient-to-br from-blue-50 to-transparent border border-blue-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
@@ -465,14 +465,14 @@ export default function CostAnalysisPage() {
                                                         <li>• <strong>Network Access</strong>: California healthcare provider relationships</li>
                                                     </ul>
                                                 </div>
-                                                
+
                                                 <div className="bg-gradient-to-br from-purple-50 to-transparent border border-purple-200 rounded-2xl p-6">
                                                     <h3 className="font-bold text-trust-navy text-lg mb-4 flex items-center gap-2">
                                                         <span className="material-symbols-outlined text-purple-600">gavel</span>
                                                         Regulatory Compliance
                                                     </h3>
                                                     <ul className="space-y-2 text-sm">
-                                                        <li>• <strong>CMIA Expertise</strong>: California Medical Information Act</li>
+                                                        <li>• <strong>Privacy Expertise</strong>: California Medical Privacy Standards</li>
                                                         <li>• <strong>Medi-Cal Mastery</strong>: State insurance program proficiency</li>
                                                         <li>• <strong>Telehealth Regulations</strong>: California-specific telehealth laws</li>
                                                         <li>• <strong>Professional Licensing</strong>: California board requirements understanding</li>
@@ -488,7 +488,7 @@ export default function CostAnalysisPage() {
                                                 </span>
                                                 Next Steps
                                             </h2>
-                                            
+
                                             <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-2xl p-8 mb-8">
                                                 <h3 className="font-bold text-trust-navy text-xl mb-6">Immediate Action Items</h3>
                                                 <ol className="space-y-3">

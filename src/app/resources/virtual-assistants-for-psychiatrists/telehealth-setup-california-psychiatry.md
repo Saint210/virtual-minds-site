@@ -4,7 +4,7 @@
 
 ### 1. Platform Selection and Configuration
 - **HIPAA-Compliant Platforms**: Zoom for Healthcare, Doxy.me, SimplePractice
-- **California-Specific Requirements**: CMIA compliance integration
+- **California-Specific Requirements**: California privacy compliance integration
 - **User Experience**: Patient-friendly interface selection
 - **Technical Requirements**: Bandwidth and hardware specifications
 - **Cost Analysis**: Platform comparison and ROI calculation
@@ -56,11 +56,11 @@
 ### Top Telehealth Platforms for California Psychiatry
 | Platform | HIPAA Status | Cost | Features | California Compliance |
 |----------|--------------|------|----------|----------------------|
-| Zoom for Healthcare | Full compliance | $200/month | Video, EHR integration | CMIA compliant |
+| Zoom for Healthcare | Full compliance | $200/month | Video, EHR integration | HIPAA compliant |
 | Doxy.me | Full compliance | $35/month | Simple interface | California verified |
 | SimplePractice | Full compliance | $99/month | Complete practice management | State-specific |
 | TheraNest | Full compliance | $149/month | Advanced features | California optimized |
-| VSee | Full compliance | $49/month | Mobile-friendly | CMIA integrated |
+| VSee | Full compliance | $49/month | Mobile-friendly | HIPAA integrated |
 
 ### Selection Criteria
 - **Security Requirements**: End-to-end encryption mandatory
@@ -89,7 +89,7 @@
 - **Technical Proficiency**: Platform expertise and troubleshooting
 - **Communication Skills**: Patient education and support
 - **Healthcare Knowledge**: Psychiatry practice understanding
-- **Compliance Training**: HIPAA and CMIA certification
+- **Compliance Training**: HIPAA and privacy certification
 - **Customer Service**: Professional and compassionate care
 
 ### Performance Metrics
@@ -132,7 +132,7 @@
 ## California Regulatory Compliance
 
 ### State-Specific Requirements
-- **CMIA Compliance**: California Medical Information Act
+- **Privacy Compliance**: California Medical Privacy Standards
 - **Telehealth Laws**: California Telehealth Act provisions
 - **Licensing Requirements**: California medical board regulations
 - **Insurance Regulations**: Telehealth coverage mandates

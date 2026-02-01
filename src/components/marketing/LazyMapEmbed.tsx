@@ -74,7 +74,7 @@ export default function LazyMapEmbed({ src, title, height, className, staticImag
                         <button
                             type="button"
                             onClick={() => setShouldLoad(true)}
-                            className="inline-flex items-center justify-center rounded-lg bg-white/90 px-4 py-2 text-sm font-bold text-[#4A4A4A] shadow"
+                            className="inline-flex items-center justify-center rounded-lg bg-white/90 px-4 py-2 text-sm font-bold text-trust-navy shadow"
                         >
                             Load interactive map
                         </button>

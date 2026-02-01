@@ -124,7 +124,7 @@ export default function ThankYouPage() {
                                 className="bg-white/10 border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all group"
                             >
                                 <span className="material-symbols-outlined text-[#D2691E] text-3xl mb-3 block">payments</span>
-                                <h3 className="font-bold text-lg mb-2 text-white">Revenue Architecture</h3>
+                                <h3 className="font-bold text-lg mb-2 text-white">Revenue Optimization</h3>
                                 <p className="text-sm text-white/80 mb-3">Capture $18K+ in missed billing opportunities.</p>
                                 <span className="text-[#D2691E] text-xs font-bold uppercase tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all">
                                     Read Now <span className="material-symbols-outlined text-sm">arrow_forward</span>

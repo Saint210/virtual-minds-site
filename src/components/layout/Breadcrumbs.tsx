@@ -11,14 +11,14 @@ interface BreadcrumbsProps {
 
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
   return (
-    <nav className="bg-slate-50 border-b border-slate-200">
-      <div className="max-w-[1200px] mx-auto px-6 py-4">
-        <div className="flex items-center gap-2 text-sm text-slate-600">
+    <nav className="bg-[#FAF8F3]">
+      <div className="max-w-[1400px] mx-auto px-6 py-2">
+        <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
           {items.map((item, index) => (
             <div key={index} className="flex items-center gap-2">
               {item.href ? (
-                <Link 
-                  href={item.href} 
+                <Link
+                  href={item.href}
                   className="hover:text-primary transition-colors"
                 >
                   {item.label}

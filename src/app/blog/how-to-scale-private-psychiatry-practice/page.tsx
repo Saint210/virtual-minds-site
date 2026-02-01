@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 
 export const metadata = {
@@ -53,28 +52,69 @@ const relatedArticles = [
     }
 ];
 
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
+
 export default function ScalingPractice() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Blog", href: "/blog" },
-                    { label: "Scaling Your Practice" }
-                ]}
-            />
 
             <main className="flex-grow">
-                <section className="bg-[#FAF8F3] py-20">
-                    <div className="max-w-[1200px] mx-auto px-6 text-center">
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-trust-navy mb-6">
-                            5 Steps to Scale a Private Psychiatry Practice
-                        </h1>
-                        <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-                        <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-                            Moving from "Owner-Operator" to "Business Owner" requires a shift in mindset and infrastructure.
-                        </p>
+                {/* EXECUTIVE BRIEFING HERO */}
+                <section className="relative pt-8 md:pt-12 pb-16 overflow-hidden">
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="max-w-4xl">
+                            {/* Breadcrumbs Integrated */}
+                            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <Link href="/blog" className="hover:text-primary transition-colors">Intelligence</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <span className="text-trust-navy">Scaling Logic</span>
+                            </nav>
+
+                            {/* Strategic Briefing Badge */}
+                            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                <span className="material-symbols-outlined text-primary text-[16px]">trending_up</span>
+                                2026 Practice Growth Series
+                            </div>
+
+                            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                5 Steps to Scale a <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    Private Psychiatry Practice.
+                                </span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-12 max-w-2xl">
+                                Moving from &quot;Owner-Operator&quot; to &quot;Enterprise Owner&quot; requires a surgical shift in clinical infrastructure and specialized delegation.
+                            </p>
+
+                            {/* PRACTICE ECONOMICS BRIEFING BAR */}
+                            <div className="flex flex-wrap items-center gap-x-12 gap-y-8 py-10 border-y border-slate-200/60">
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Strategy Pillar</p>
+                                    <p className="text-xl font-bold text-trust-navy">Clinical Infrastructure</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Growth Multiplier</p>
+                                    <p className="text-xl font-bold text-trust-navy">2.5x — 4.0x Yield</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Administrative Logic</p>
+                                    <div className="flex items-center gap-2">
+                                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                        <p className="text-xl font-bold text-trust-navy italic">Scale-Ready Infrastructure</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -83,23 +123,52 @@ export default function ScalingPractice() {
                         <div className="flex gap-12">
                             <div className="flex-1 min-w-0">
                                 <article className="prose prose-lg prose-slate max-w-none">
-                                    <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
-                                        <Image
-                                            src="/images/how-to-scale-psychiatry-practice.jpg"
-                                            alt="Scaling a Private Psychiatry Practice"
-                                            width={800}
-                                            height={450}
-                                            className="w-full h-auto object-cover"
-                                        />
+                                    <KeyTakeaways
+                                        takeaways={[
+                                            {
+                                                point: "Operational Audit",
+                                                detail: "Analyze revenue per clinical hour to expose administrative chokepoints before scaling."
+                                            },
+                                            {
+                                                point: "Clinical Capacity",
+                                                detail: "Leverage PMHNP recruitment to triple patient volume while prioritizing high-acuity MD care."
+                                            },
+                                            {
+                                                point: "Workflow Automation",
+                                                detail: "Implement integrated intake and billing bridges to reclaim 30+ hours of monthly staff labor."
+                                            },
+                                            {
+                                                point: "Telehealth ROI",
+                                                detail: "Maximize profit margins by eliminating physical overhead and reducing no-shows by 50%."
+                                            }
+                                        ]}
+                                    />
+
+                                    {/* STRATEGIC BRIEFING INTRODUCTION (60/40) */}
+                                    <div className="flex flex-col lg:flex-row gap-12 my-16 items-start">
+                                        <div className="lg:w-[60%] order-2 lg:order-1">
+                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Transitioning to Enterprise Ownership</h2>
+                                            <p className="text-xl text-slate-600 font-display leading-relaxed mb-6">
+                                                Running a solo psychiatry practice starts as a labor of love, but the ceiling arrives quickly. Moving from solo practitioner to &quot;Enterprise Owner&quot; requires a surgical shift in clinical infrastructure and specialized delegation.
+                                            </p>
+                                            <p className="text-slate-600 leading-relaxed mb-0">
+                                                The psychiatrists who grow successfully don&apos;t just work harder—they fundamentally change how their practice operates. They build systems, hire strategically, and make investments that compound over time, reclaiming their clinical focus while scaling revenue.
+                                            </p>
+                                        </div>
+
+                                        <div className="lg:w-[40%] order-1 lg:order-2 group w-full">
+                                            <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-xl aspect-[4/5] bg-slate-50">
+                                                <Image
+                                                    src="/images/visual-intel-scaling.png"
+                                                    alt="Scaling a Private Psychiatry Practice"
+                                                    fill
+                                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    priority
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/20 via-transparent to-transparent pointer-events-none" />
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    <p className="lead text-xl text-slate-700 mb-8">
-                                        Running a solo psychiatry practice often starts as a labor of love: you built something meaningful, helped patients who needed you, and created a sustainable income. But there comes a point when the ceiling becomes obvious. You're booked out six weeks, turning away referrals, and working evenings just to keep up with documentation. The question of how to scale a private psychiatry practice stops being theoretical and becomes urgent.
-                                    </p>
-
-                                    <p className="mb-8">
-                                        Here's what most practice owners discover too late: scaling isn't just about seeing more patients. It's about building systems, hiring strategically, and making investments that compound over time. The psychiatrists who grow successfully don't just work harder. They fundamentally change how their practice operates. Some double their revenue within 18 months. Others burn out trying, usually because they skipped crucial steps or expanded before their foundation could support the weight.
-                                    </p>
 
                                     <p className="mb-8">
                                         This guide walks through the five essential steps that separate practices that scale sustainably from those that collapse under their own growth. These aren't theoretical frameworks pulled from business textbooks. They're the actual moves that work in psychiatric private practice, based on what's succeeding in the field right now.

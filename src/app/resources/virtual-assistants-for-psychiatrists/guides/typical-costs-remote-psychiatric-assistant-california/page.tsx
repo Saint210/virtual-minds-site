@@ -52,16 +52,16 @@ const costOptions = [
     valueScore: 3.2
   },
   {
-    type: "Specialized Psychiatric VAs (Virtual Minds)",
-    hourlyRate: "$15-25/hour",
-    monthlyCost: "$2,500-4,000",
+    type: "Specialized Psychiatric Support (Virtual Minds)",
+    hourlyRate: "Fixed Monthly",
+    monthlyCost: "$5,000-8,500",
     setupFee: "$0",
-    training: "Psychiatric-specific",
+    training: "Psychiatric Administration",
     hipaaCompliance: "100% Certified",
-    support: "24/7 Dedicated",
-    pros: ["Mental health expertise", "HIPAA certified", "EMR trained", "California knowledge"],
-    cons: ["Premium investment", "Specialized focus"],
-    riskLevel: "Low",
+    support: "Dedicated Psychiatric Assistant",
+    pros: ["Focused Revenue Recovery", "HIPAA Certified", "Full EHR Management", "California Billing Expertise"],
+    cons: ["High-level investment", "Selective deployment"],
+    riskLevel: "Zero",
     valueScore: 4.9,
     highlighted: true
   }
@@ -125,7 +125,7 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Breadcrumbs 
+      <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           { label: "Virtual Assistant Costs" }
@@ -142,10 +142,10 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
               </h1>
               <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
               <p className="text-slate-600 text-lg max-w-3xl mx-auto mb-8">
-                Compare affordable virtual assistant solutions for psychiatric offices in California. 
+                Compare affordable virtual assistant solutions for psychiatric offices in California.
                 Transparent pricing, ROI analysis, and comprehensive cost breakdown.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
@@ -171,24 +171,23 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
 
             <div className="space-y-6">
               {costOptions.map((option, index) => (
-                <div 
-                  key={index} 
-                  className={`bg-white rounded-2xl p-8 border-2 ${
-                    option.highlighted 
-                      ? 'border-primary shadow-xl' 
-                      : 'border-slate-200'
-                  } relative overflow-hidden`}
+                <div
+                  key={index}
+                  className={`bg-white rounded-2xl p-8 border-2 ${option.highlighted
+                    ? 'border-primary shadow-xl'
+                    : 'border-slate-200'
+                    } relative overflow-hidden`}
                 >
                   {option.highlighted && (
                     <div className="absolute top-4 right-4 bg-primary text-white text-sm font-bold px-3 py-1 rounded-full">
                       BEST VALUE
                     </div>
                   )}
-                  
+
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
                     <div>
                       <h3 className="font-bold text-trust-navy text-2xl mb-4">{option.type}</h3>
-                      
+
                       <div className="space-y-3 mb-6">
                         <div className="flex justify-between">
                           <span className="text-slate-600">Hourly Rate:</span>
@@ -210,11 +209,10 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
 
                       <div className="flex items-center gap-2 mb-4">
                         <span className="text-slate-600">Risk Level:</span>
-                        <span className={`px-3 py-1 rounded-full text-sm font-semibold ${
-                          option.riskLevel === 'Low' ? 'bg-green-100 text-green-700' :
+                        <span className={`px-3 py-1 rounded-full text-sm font-semibold ${option.riskLevel === 'Low' ? 'bg-green-100 text-green-700' :
                           option.riskLevel === 'Medium' ? 'bg-yellow-100 text-yellow-700' :
-                          'bg-red-100 text-red-700'
-                        }`}>
+                            'bg-red-100 text-red-700'
+                          }`}>
                           {option.riskLevel}
                         </span>
                       </div>
@@ -233,7 +231,7 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
                             ))}
                           </ul>
                         </div>
-                        
+
                         <div>
                           <h4 className="font-semibold text-trust-navy mb-3 text-red-600">Disadvantages</h4>
                           <ul className="space-y-2">
@@ -279,20 +277,20 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="bg-primary/10 rounded-xl p-8 border-2 border-primary">
                 <h3 className="font-bold text-trust-navy text-xl mb-6">Annual ROI Summary</h3>
                 <div className="space-y-4">
                   <div className="text-center mb-6">
                     <p className="text-sm text-slate-600 mb-2">Total Annual Value Created:</p>
-                    <p className="text-4xl font-bold text-primary">$264,000</p>
+                    <p className="text-4xl font-bold text-primary">$440,000</p>
                   </div>
-                  
+
                   <div className="text-center mb-6">
                     <p className="text-sm text-slate-600 mb-2">Average Annual Investment:</p>
-                    <p className="text-2xl font-bold text-trust-navy">$36,000</p>
+                    <p className="text-2xl font-bold text-trust-navy">$60,000</p>
                   </div>
-                  
+
                   <div className="text-center">
                     <p className="text-sm text-slate-600 mb-2">Net Annual ROI:</p>
                     <p className="text-4xl font-bold text-green-600">633%</p>
@@ -327,7 +325,7 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
                   ))}
                 </div>
               </div>
-              
+
               <div className="bg-green-50 rounded-xl p-8 border border-green-200">
                 <h3 className="font-bold text-green-700 text-xl mb-6">Virtual Minds Protection</h3>
                 <div className="space-y-4">
@@ -385,7 +383,7 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
                   Schedule ROI Analysis
                 </span>
               </Link>
-              
+
               <Link
                 href="/california-psychiatric-virtual-assistant-directory"
                 className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors inline-flex items-center"

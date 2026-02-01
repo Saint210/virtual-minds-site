@@ -1,0 +1,278 @@
+"use client";
+
+import { useState } from "react";
+import Link from "next/link";
+
+interface BlogPost {
+    title: string;
+    excerpt: string;
+    category: string;
+    date: string;
+    readTime: string;
+    image: string;
+    slug: string;
+    featured?: boolean;
+}
+
+interface BlogFeedProps {
+    posts: BlogPost[];
+    categories: string[];
+    upgradedSlugs: string[];
+}
+
+export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedProps) {
+    const [activeCategory, setActiveCategory] = useState("All");
+
+    const filteredPosts = activeCategory === "All"
+        ? posts
+        : posts.filter((post) => post.category === activeCategory);
+
+    return (
+        <>
+            {/* Sticky Filter Bar */}
+            <div className="sticky top-20 z-40 bg-white/80 backdrop-blur-md border-b border-slate-200 py-4 mb-12">
+                <div className="max-w-[1400px] mx-auto px-6 overflow-x-auto no-scrollbar">
+                    <div className="flex gap-3">
+                        {categories.map((category, index) => (
+                            <button
+                                key={index}
+                                onClick={() => setActiveCategory(category)}
+                                className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${activeCategory === category
+                                        ? "bg-trust-navy text-white shadow-lg shadow-trust-navy/20 scale-105"
+                                        : "bg-white text-slate-600 border border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-slate-50"
+                                    }`}
+                            >
+                                {category}
+                            </button>
+                        ))}
+                    </div>
+                </div>
+            </div>
+
+            {/* Magazine Layout Grid */}
+            <section className="pb-24">
+                <div className="max-w-[1400px] mx-auto px-6">
+
+                    {/* VIEW: ALL CATEGORIES */}
+                    {activeCategory === "All" && (
+                        <>
+                            {/* Featured Bento Grid */}
+                            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-20 animate-in fade-in duration-500">
+                                {/* Main Feature - Takes up 8 cols */}
+                                <div className="lg:col-span-8 group cursor-pointer">
+                                    <div className="relative h-full min-h-[500px] rounded-[2rem] overflow-hidden shadow-xl shadow-slate-200/50">
+                                        <img
+                                            src={posts[0].image}
+                                            alt={posts[0].title}
+                                            className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 z-0"
+                                        />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-[#0B1C3E] via-[#0B1C3E]/60 to-transparent z-10 opacity-90" />
+                                        <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12 z-20">
+                                            <div className="flex items-center gap-3 mb-4 text-white/90">
+                                                <span className="bg-primary px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider text-white">
+                                                    {posts[0].category}
+                                                </span>
+                                                <span className="text-sm border-l border-white/20 pl-3">{posts[0].readTime}</span>
+                                            </div>
+                                            <Link href={`/blog/${posts[0].slug}`}>
+                                                <h2 className="font-display text-3xl md:text-5xl font-bold !text-white mb-6 leading-tight drop-shadow-md group-hover:underline decoration-primary decoration-2 underline-offset-8">
+                                                    {posts[0].title}
+                                                </h2>
+                                            </Link>
+                                            <p className="text-white/80 text-lg md:text-xl max-w-2xl line-clamp-2 mb-8">
+                                                {posts[0].excerpt}
+                                            </p>
+                                            <div className="flex items-center gap-2 text-white font-bold group/btn">
+                                                Read Article
+                                                <span className="material-symbols-outlined transition-transform group-hover/btn:translate-x-1">arrow_forward</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                {/* Side Stack - Takes up 4 cols */}
+                                <div className="lg:col-span-4 flex flex-col gap-8">
+                                    {posts.slice(1, 3).map((post, idx) => (
+                                        <article key={idx} className="flex-1 group cursor-pointer bg-white rounded-[2rem] p-6 shadow-lg shadow-slate-200/50 border border-slate-100 hover:shadow-xl transition-all hover:-translate-y-1">
+                                            <div className="flex flex-col h-full justify-between">
+                                                <div>
+                                                    <div className="flex items-center justify-between mb-4">
+                                                        <div className="flex items-center gap-2">
+                                                            <span className="text-xs font-bold text-primary uppercase tracking-wider">{post.category}</span>
+                                                            <span className="text-slate-300">•</span>
+                                                            <span className="text-xs text-slate-500">{post.readTime}</span>
+                                                        </div>
+                                                        {upgradedSlugs.includes(post.slug) && (
+                                                            <div className="flex items-center gap-1 text-[#D2691E] font-bold uppercase tracking-tighter text-[10px]">
+                                                                <span className="material-symbols-outlined text-[12px]">verified</span>
+                                                                <span>Audit</span>
+                                                            </div>
+                                                        )}
+                                                    </div>
+                                                    <Link href={`/blog/${post.slug}`}>
+                                                        <h3 className="font-display text-xl font-bold text-trust-navy mb-3 line-clamp-2 group-hover:text-primary transition-colors">
+                                                            {post.title}
+                                                        </h3>
+                                                    </Link>
+                                                    <p className="text-slate-600 text-sm line-clamp-2 leading-relaxed">
+                                                        {post.excerpt}
+                                                    </p>
+                                                </div>
+                                                <Link href={`/blog/${post.slug}`} className="mt-6 flex items-center text-sm font-bold text-trust-navy group-hover:text-primary transition-colors">
+                                                    Read Now <span className="material-symbols-outlined text-sm ml-1">arrow_forward</span>
+                                                </Link>
+                                            </div>
+                                        </article>
+                                    ))}
+                                </div>
+                            </div>
+
+                            {/* Newsletter Breakout - Private Practice Growth Kit */}
+                            <div className="mb-24 relative rounded-[2.5rem] overflow-hidden bg-[#2A2A2A] shadow-2xl">
+                                <div className="absolute inset-0 bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] z-0"></div>
+                                {/* Subtle ambient heavy glow */}
+                                <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#D2691E]/10 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
+
+                                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 p-12 lg:p-20 items-center">
+                                    <div>
+                                        <h2 className="font-serif text-4xl md:text-5xl font-bold !text-white mb-6 leading-tight">
+                                            The Private Practice <br />
+                                            <span className="text-[#D2691E]">Growth Kit</span>
+                                        </h2>
+                                        <p className="text-slate-300 text-lg mb-10 leading-relaxed font-light opacity-90">
+                                            Stop moonlighting as an office manager. Get the exact blueprints used to build a scalable, high-revenue practice—without the burnout.
+                                        </p>
+                                        <ul className="space-y-4 mb-8">
+                                            {['Scaling Roadmap PDF', 'Hiring Checklist', 'ROI Calculator Template'].map((item, i) => (
+                                                <li key={i} className="flex items-center gap-4 text-white font-medium">
+                                                    <div className="w-6 h-6 rounded-full bg-[#D2691E]/20 flex items-center justify-center border border-[#D2691E]/50">
+                                                        <span className="material-symbols-outlined text-[#D2691E] text-sm font-bold">check</span>
+                                                    </div>
+                                                    {item}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+
+                                    <div className="bg-white/5 backdrop-blur-md p-10 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">
+                                        <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-50 pointer-events-none"></div>
+                                        <div className="relative z-10 flex flex-col gap-5">
+                                            <div>
+                                                <label className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block ml-1">Email Address</label>
+                                                <input
+                                                    type="email"
+                                                    placeholder="doctor@example.com"
+                                                    className="w-full px-6 py-4 rounded-xl bg-[#1A1A1A]/80 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-[#D2691E] focus:ring-1 focus:ring-[#D2691E] transition-all"
+                                                />
+                                            </div>
+                                            <button className="w-full bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-[#D2691E]/20 hover:scale-[1.02] active:scale-[0.98]">
+                                                Send Me The Kit
+                                            </button>
+                                            <p className="text-slate-500 text-xs text-center mt-2 italic">No spam, unsubscribe anytime.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </>
+                    )}
+
+                    {/* Grid Layout (Used for both Remaining Articles AND Filtered View) */}
+                    <div className="mb-12">
+
+                        {activeCategory !== "All" && (
+                            <div className="flex items-center justify-between mb-12 animate-in fade-in slide-in-from-bottom-4 duration-500">
+                                <h2 className="font-display text-3xl font-bold text-trust-navy">
+                                    {activeCategory} Articles
+                                    <span className="text-slate-400 text-lg font-normal ml-3">({filteredPosts.length})</span>
+                                </h2>
+                                <div className="h-px bg-slate-200 flex-1 ml-8"></div>
+                            </div>
+                        )}
+
+                        {activeCategory === "All" && (
+                            <div className="flex items-center justify-between mb-12">
+                                <h2 className="font-display text-3xl font-bold text-trust-navy">Latest Insights</h2>
+                                <div className="h-px bg-slate-200 flex-1 ml-8"></div>
+                            </div>
+                        )}
+
+                        {filteredPosts.length > 0 ? (
+                            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                {/* For 'All', we slice(3). For Filtered, we show all. */}
+                                {(activeCategory === "All" ? filteredPosts.slice(3) : filteredPosts).map((post, index) => (
+                                    <article key={index} className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-in fade-in zoom-in-50 duration-500" style={{ animationDelay: `${index * 50}ms` }}>
+                                        <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
+                                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-trust-navy/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                                            <div className="w-full h-full bg-slate-200 flex items-center justify-center text-slate-300">
+                                                <img src={post.image} alt={post.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
+                                            </div>
+                                            <div className="absolute top-4 left-4 z-20">
+                                                <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-trust-navy shadow-sm">
+                                                    {post.category}
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div className="p-8 flex flex-col flex-grow">
+                                            <div className="mb-4 flex items-center justify-between text-xs text-slate-500 font-medium">
+                                                <div className="flex items-center">
+                                                    <span>{post.date}</span>
+                                                    <span className="mx-2">•</span>
+                                                    <span>{post.readTime}</span>
+                                                </div>
+                                                {upgradedSlugs.includes(post.slug) && (
+                                                    <div className="flex items-center gap-1 text-[#D2691E] font-bold uppercase tracking-tighter">
+                                                        <span className="material-symbols-outlined text-[14px]">verified</span>
+                                                        <span>Semantic Audit</span>
+                                                    </div>
+                                                )}
+                                            </div>
+                                            <Link href={`/blog/${post.slug}`}>
+                                                <h3 className="font-display text-xl font-bold text-trust-navy mb-4 leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                                                    {post.title}
+                                                </h3>
+                                            </Link>
+                                            <p className="text-slate-600 text-sm line-clamp-3 mb-6 leading-relaxed flex-grow">
+                                                {post.excerpt}
+                                            </p>
+                                            <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
+                                                <div className="flex items-center gap-2">
+                                                    <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-trust-navy">VM</div>
+                                                    <span className="text-xs text-slate-500 font-medium">Virtual Minds Team</span>
+                                                </div>
+                                                <Link href={`/blog/${post.slug}`} className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
+                                                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                                </Link>
+                                            </div>
+                                        </div>
+                                    </article>
+                                ))}
+                            </div>
+                        ) : (
+                            <div className="text-center py-20 bg-slate-50 rounded-3xl border border-slate-100">
+                                <span className="material-symbols-outlined text-6xl text-slate-300 mb-4">search_off</span>
+                                <h3 className="text-xl font-bold text-trust-navy mb-2">No articles found</h3>
+                                <p className="text-slate-500">We couldn't find any articles in the <span className="font-bold text-primary">"{activeCategory}"</span> category.</p>
+                                <button
+                                    onClick={() => setActiveCategory("All")}
+                                    className="mt-6 text-sm font-bold text-trust-navy uppercase tracking-widest border-b-2 border-primary pb-1 hover:text-primary transition-colors"
+                                >
+                                    Clear Filter
+                                </button>
+                            </div>
+                        )}
+                    </div>
+
+                    {/* Bottom CTA (Always Visible) */}
+                    {activeCategory === "All" && (
+                        <div className="text-center py-12">
+                            <button className="inline-flex items-center gap-2 px-8 py-4 rounded-full border-2 border-slate-200 text-slate-600 font-bold hover:border-trust-navy hover:text-trust-navy transition-all">
+                                Load More Articles
+                                <span className="material-symbols-outlined">expand_more</span>
+                            </button>
+                        </div>
+                    )}
+                </div>
+            </section>
+        </>
+    );
+}

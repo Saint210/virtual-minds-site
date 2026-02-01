@@ -6,7 +6,7 @@ export const blogPosts = [
         category: "Selection Guide",
         date: "January 2026",
         readTime: "8 min read",
-        image: "/images/hero-new.png",
+        image: "/images/visual-intel-audit.png",
         slug: "how-to-choose-california-psychiatric-virtual-assistant",
         featured: true
     },
@@ -16,7 +16,7 @@ export const blogPosts = [
         category: "Practice Growth",
         date: "January 2026",
         readTime: "12 min read",
-        image: "/images/psychiatrist-salary-california.jpg",
+        image: "/images/visual-intel-salary.png",
         slug: "psychiatrist-salary-california-private-practice"
     },
     {
@@ -25,7 +25,7 @@ export const blogPosts = [
         category: "Practice Growth",
         date: "January 2026",
         readTime: "6 min read",
-        image: "/images/operational-process-review-mental-health.jpg",
+        image: "/images/visual-intel-audit.png",
         slug: "operational-process-review-mental-health-practices"
     },
     {
@@ -34,7 +34,7 @@ export const blogPosts = [
         category: "Practice Growth",
         date: "January 2026",
         readTime: "8 min read",
-        image: "/images/how-to-scale-psychiatry-practice.jpg",
+        image: "/images/visual-intel-scaling.png",
         slug: "how-to-scale-private-psychiatry-practice"
     },
     {
@@ -43,7 +43,7 @@ export const blogPosts = [
         category: "Billing",
         date: "January 2026",
         readTime: "7 min read",
-        image: "/images/blueprint-revenue.png",
+        image: "/images/visual-intel-rcm.png",
         slug: "revenue-cycle-management-vs-billing"
     },
     {
@@ -52,7 +52,7 @@ export const blogPosts = [
         category: "Efficiency",
         date: "January 2026",
         readTime: "5 min read",
-        image: "/images/patient-intake-workflow.png",
+        image: "/images/visual-intel-workflow.png",
         slug: "optimizing-patient-workflow-psychiatry"
     },
     {
@@ -61,7 +61,7 @@ export const blogPosts = [
         category: "Efficiency",
         date: "January 2026",
         readTime: "6 min read",
-        image: "/images/psychiatry-startup-mindmap.png",
+        image: "/images/visual-intel-efficiency.png",
         slug: "implementing-efficiency-models-mental-health"
     },
     {

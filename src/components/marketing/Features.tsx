@@ -1,19 +1,69 @@
+import React from 'react';
+
 export default function Features() {
     return (
-        <section className="relative py-20 overflow-hidden bg-[#F8FAFC]">
-            <div className="relative z-10 max-w-[1200px] mx-auto px-6">
-                <div className="text-center mb-16">
-                    <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-trust-navy mb-6">
-                        Engineered for California Excellence
+        <section className="relative py-24 overflow-hidden bg-[#FAF8F3]">
+            <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                <div className="text-center mb-20">
+                    <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black uppercase tracking-widest mb-6 shadow-sm">
+                        <span className="material-symbols-outlined text-primary text-base">psychiatry</span>
+                        Clinical Infrastructure
+                    </div>
+                    <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl font-black text-trust-navy mb-6 leading-tight">
+                        Engineered for <br />
+                        <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Subspecialty Excellence.</span>
                     </h2>
-                    <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                        Specialized support designed to integrate seamlessly into your California psychiatric practice
+                    <p className="text-slate-600 text-xl font-medium max-w-3xl mx-auto leading-relaxed">
+                        We don't just "answer phones." We are a clinical operations team fluent in the nuances of complex psychiatric care, from UCLA to Stanford.
                     </p>
                 </div>
-                <div className="text-center">
-                    <div className="bg-white/90 backdrop-blur-md border border-slate-200 rounded-2xl p-8 max-w-md mx-auto">
-                        <h3 className="text-2xl font-bold text-trust-navy mb-4">Features Component Working!</h3>
-                        <p className="text-slate-600 mb-6">Modern 2026 design loaded successfully</p>
+
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    {/* Feature 1: Clinical Intake */}
+                    <div className="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group">
+                        <div className="w-16 h-16 rounded-2xl bg-[#FAF8F3] flex items-center justify-center text-[#D2691E] mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <span className="material-symbols-outlined text-4xl">clinical_notes</span>
+                        </div>
+                        <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Subspecialty Intake</h3>
+                        <p className="text-slate-600 leading-relaxed">
+                            Our team speaks the language of OCD, Eating Disorders, and Neuropsychiatry. We screen for acuity and fit before they ever reach your calendar.
+                        </p>
+                    </div>
+
+                    {/* Feature 2: Concierge Coordination */}
+                    <div className="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group">
+                        <div className="w-16 h-16 rounded-2xl bg-[#FAF8F3] flex items-center justify-center text-[#B8860B] mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <span className="material-symbols-outlined text-4xl">diamond</span>
+                        </div>
+                        <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Concierge Care</h3>
+                        <p className="text-slate-600 leading-relaxed">
+                            White-glove scheduling for high-net-worth patients in Beverly Hills and Pacific Heights. We manage waitlists and VIP coordination with discretion.
+                        </p>
+                    </div>
+
+                    {/* Feature 3: Complex Billing */}
+                    <div className="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group">
+                        <div className="w-16 h-16 rounded-2xl bg-[#FAF8F3] flex items-center justify-center text-[#D2691E] mb-8 group-hover:scale-110 transition-transform duration-500">
+                            <span className="material-symbols-outlined text-4xl">account_balance</span>
+                        </div>
+                        <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Acuity Billing</h3>
+                        <p className="text-slate-600 leading-relaxed">
+                            Navigating Prior Authorizations for TMS, Spravato, and extensive neuropsych testing. We fight for coverage so you can treat with confidence.
+                        </p>
+                    </div>
+
+                    {/* Feature 4: Practice Launch */}
+                    <div className="bg-trust-navy rounded-[2.5rem] p-10 border border-trust-navy shadow-xl hover:shadow-2xl transition-all hover:-translate-y-1 group relative overflow-hidden">
+                        <div className="absolute top-0 right-0 p-8 opacity-10">
+                            <span className="material-symbols-outlined text-[150px] text-white">rocket_launch</span>
+                        </div>
+                        <div className="w-16 h-16 rounded-2xl bg-white/10 flex items-center justify-center text-white mb-8 group-hover:scale-110 transition-transform duration-500 relative z-10">
+                            <span className="material-symbols-outlined text-4xl">rocket_launch</span>
+                        </div>
+                        <h3 className="text-2xl font-serif font-bold !text-white mb-4 relative z-10">Fellowship to Founder</h3>
+                        <p className="text-slate-300 leading-relaxed relative z-10">
+                            Complete launch support for graduating fellows. Credentialing, EHR setup, and brand formation to get your private practice live in 30 days.
+                        </p>
                     </div>
                 </div>
             </div>

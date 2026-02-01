@@ -60,7 +60,7 @@ export default function HIPAACompliance() {
 
   const californiaRequirements = [
     {
-      title: "CMIA Compliance",
+      title: "California Privacy",
       description: "California Medical Information Act compliance for mental health records"
     },
     {
@@ -80,7 +80,7 @@ export default function HIPAACompliance() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Breadcrumbs 
+      <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           { label: "HIPAA Compliance" }
@@ -105,7 +105,7 @@ export default function HIPAACompliance() {
             </h1>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
             <p className="text-slate-600 text-lg max-w-3xl mx-auto mb-8">
-              California's most trusted HIPAA-certified virtual assistants for psychiatric practices. 
+              California's most trusted HIPAA-certified virtual assistants for psychiatric practices.
               Complete compliance, data security, and peace of mind for your mental health practice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -258,7 +258,7 @@ export default function HIPAACompliance() {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform"></div>
               </Link>
-              
+
               <Link
                 href="/california-market-insights"
                 className="group border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors inline-flex items-center"

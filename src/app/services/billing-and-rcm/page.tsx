@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import BillingDashboardGraphic from "@/components/services/BillingDashboardGraphic";
 
 export const metadata = {
     title: "California Psychiatric Billing Support Virtual Assistants | Virtual Minds",
@@ -22,56 +23,147 @@ export default function BillingPage() {
                 ]}
             />
             <main className="flex-grow">
-                {/* Hero Section */}
-                <section className="bg-[#FAF8F3] w-full px-6 py-16 md:py-24">
-                    <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="flex flex-col gap-8">
-                            <div className="flex flex-col gap-6">
-                                <span className="text-primary font-bold tracking-widest text-xs uppercase italic">Revenue Support</span>
-                                <h1 className="font-display text-trust-navy text-4xl lg:text-7xl font-black leading-[1.1] tracking-tight">
-                                    California Psychiatric <br />
-                                    <span className="text-primary italic">Billing Support VAs</span>
+                {/* EXECUTIVE BILLING SUPPORT HERO */}
+                <section className="relative pt-6 md:pt-10 pb-12 md:pb-20 bg-[#FAF8F3]">
+                    {/* Immersive Background Tokens - Wrapped to prevent page overflow but allow section overlap */}
+                    <div className="absolute inset-0 overflow-hidden pointer-events-none">
+                        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1A2332]/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
+                        <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-[#D2691E]/10 rounded-full blur-[100px] translate-y-1/2" />
+                    </div>
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-16">
+
+                            {/* LEFT: Copy & Authority (55%) */}
+                            <div className="lg:w-[55%]">
+                                <div className="inline-flex items-center gap-2 bg-white border border-[#1A2332]/10 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black mb-5 shadow-sm group hover:shadow-md transition-all">
+                                    <span className="material-symbols-outlined text-[#D2691E] text-[16px]">verified</span>
+                                    <span className="tracking-[0.2em] uppercase text-trust-navy">Administrative Infrastructure</span>
+                                </div>
+
+                                <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-5 leading-[0.95] tracking-tight">
+                                    Psychiatric Billing <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-shimmer bg-[length:200%_auto]">
+                                        & RCM Support.
+                                    </span>
                                 </h1>
-                                <p className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
-                                    Our virtual assistants support California psychiatric practices with billing administration and revenue-cycle coordination. While we do not submit claims directly, we handle the critical admin work that helps keep billing accurate and paid on time.
+
+                                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
+                                    Specialized administrative support for
+                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2 pb-0.5">eligibility, prior authorizations,</span>
+                                    and revenue cycle coordination built exclusively for California psychiatric practices.
                                 </p>
+
+                                {/* Institutional Social Proof */}
+                                <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
+                                    <div className="flex -space-x-4">
+                                        {[1, 2, 3, 4].map((i) => (
+                                            <div key={i} className="size-12 rounded-full bg-white border-[3px] border-[#FAF8F3] flex items-center justify-center overflow-hidden shadow-lg relative z-[10] hover:scale-110 transition-transform duration-300">
+                                                <Image
+                                                    src={`https://i.pravatar.cc/150?u=${i + 120}`}
+                                                    alt="Billing Specialist"
+                                                    width={48}
+                                                    height={48}
+                                                    className="grayscale hover:grayscale-0 transition-all duration-500"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="text-xs text-slate-500 font-medium leading-tight text-center sm:text-left">
+                                        <p className="mb-0.5"><strong className="text-trust-navy italic text-sm">Stabilizing Revenue</strong></p>
+                                        <p className="text-slate-400">for California psychiatric clinics.</p>
+                                    </div>
+                                </div>
+
+                                {/* PREMIUM PRACTICE ECONOMICS BAR */}
+                                <div className="flex flex-wrap items-center gap-x-8 gap-y-4 py-6 border-y border-[#1A2332]/10 mb-8">
+                                    <div className="space-y-1">
+                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Yield</p>
+                                        <div className="flex items-center gap-2">
+                                            <span className="material-symbols-outlined text-trust-navy text-lg">account_balance</span>
+                                            <p className="text-base font-bold text-trust-navy">Revenue Continuity</p>
+                                        </div>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-[#1A2332]/10" />
+                                    <div className="space-y-1">
+                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Verification</p>
+                                        <div className="flex items-center gap-2">
+                                            <span className="material-symbols-outlined text-trust-navy text-lg">fact_check</span>
+                                            <p className="text-base font-bold text-trust-navy">Prior Auth Support</p>
+                                        </div>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-[#1A2332]/10" />
+                                    <div className="space-y-1">
+                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Security</p>
+                                        <div className="flex items-center gap-2">
+                                            <span className="size-2 rounded-full bg-green-500 animate-pulse box-shadow-lg shadow-green-500/50" />
+                                            <p className="text-base font-bold text-trust-navy italic">CCPA Secure</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-4">
+                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5">
+                                        <span className="material-symbols-outlined text-[20px]">schedule</span>
+                                        Schedule Strategy Audit
+                                    </Link>
+                                </div>
                             </div>
-                            <div className="flex flex-wrap gap-4 pt-4">
-                                <Link href="/book-consultation" className="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center gap-3">
-                                    <span className="material-symbols-outlined">account_balance_wallet</span>
-                                    Get a Billing Support Strategy
-                                </Link>
+
+                            {/* RIGHT: Visual System Card (45%) - OPTIMIZED FOR COMPACTNESS */}
+                            <div className="lg:w-[45%] w-full h-full min-h-[420px] flex flex-col pt-6 lg:pt-0">
+                                <div className="relative group w-full flex-grow h-full">
+                                    <div className="absolute -inset-4 bg-[#1A2332]/5 rounded-[3rem] blur-3xl opacity-50"></div>
+                                    <div className="relative w-full h-full rounded-[2.5rem] shadow-2xl overflow-hidden border-4 border-white flex items-center justify-center group-hover:scale-[1.005] transition-transform duration-700">
+                                        <BillingDashboardGraphic />
+                                    </div>
+
+                                    {/* Floating Premium Badge - Adjusted position */}
+                                    <div className="absolute -top-4 -right-4 bg-white p-4 rounded-[1.5rem] shadow-xl border border-slate-50 flex items-center gap-4 animate-bounce-slow z-20 scale-90 origin-top-right">
+                                        <div className="size-10 bg-[#D2691E]/10 rounded-xl flex items-center justify-center text-[#D2691E]">
+                                            <span className="material-symbols-outlined font-bold text-xl">payments</span>
+                                        </div>
+                                        <div>
+                                            <p className="text-[9px] font-black text-slate-400 uppercase tracking-widest leading-none mb-0.5">Direct Impact</p>
+                                            <p className="text-sm font-bold text-trust-navy">Revenue Optimized</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div className="relative">
-                            <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl"></div>
-                            <div className="relative aspect-video w-full rounded-[2rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center">
-                                <Image
-                                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbcsBIKTPBjAgTSlXWh9T2Vv0zE0xw_fTYSOFMjSfqAUYRGlFIGrliXZ2IHBRoHX2ftrYdXsPGn7CprajYH00PWCv3V92a0ZQTtkRD_SXUBRec4hjeevQfAgdeul-Lkf6PTm_hdT_lwmy6bxZUJ7NLWiUgyhOWJ3IN7E7AA_wnjy9_b2jd_Yv0hztJ2ITOhpdDA6mGatnjXH26qdsNT9_pS4VLpaGrQq8EgEyPGHuEwUGLI94DWgr4iPOoZhS80l00SvqJyyEx800"
-                                    className="w-full h-full object-cover"
-                                    alt="Billing Support Workflow"
-                                    width={1600}
-                                    height={900}
-                                />
-                            </div>
+
                         </div>
                     </div>
                 </section>
 
-                {/* Scope of Service Section */}
-                <section className="bg-slate-50 border-y border-slate-100 py-24">
-                    <div className="max-w-[1280px] mx-auto px-6">
-                        <div className="bg-white rounded-[3rem] p-12 md:p-20 shadow-xl border border-slate-100 relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-primary/5 rounded-full -mr-16 -mt-16"></div>
-                            <div className="max-w-3xl">
-                                <h2 className="font-display text-4xl font-black text-trust-navy mb-8">Our Role in Your Billing</h2>
-                                <p className="text-xl text-slate-600 mb-12 italic border-l-4 border-primary pl-6">
-                                    &ldquo;Virtual Minds does not create claims or submit billing on behalf of a practice. We work together with your existing billing team or software to provide necessary administrative data.&rdquo;
-                                </p>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-                                    <div className="space-y-6">
-                                        <h3 className="font-bold text-2xl text-trust-navy">What We Handle</h3>
-                                        <ul className="space-y-4">
+                {/* SCOPE OF SERVICE - PREMIUM REDESIGN */}
+                <section className="bg-white border-y border-slate-100 py-32 relative overflow-hidden">
+                    {/* Background Pattern */}
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute inset-0 bg-[radial-gradient(#1A2332_1px,transparent_1px)] [background-size:32px_32px]" />
+                    </div>
+
+                    <div className="max-w-[1280px] mx-auto px-6 relative z-10">
+                        <div className="bg-[#FAF8F3] rounded-[3rem] p-12 md:p-24 shadow-2xl border border-white relative overflow-hidden">
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D2691E]/5 rounded-full -mr-32 -mt-32"></div>
+
+                            <div className="max-w-4xl mx-auto">
+                                <div className="text-center mb-16">
+                                    <span className="inline-block py-1 px-3 rounded-full bg-[#1A2332]/5 text-[#1A2332] text-xs font-black uppercase tracking-widest mb-4">
+                                        Operational Clarification
+                                    </span>
+                                    <h2 className="font-display text-4xl md:text-5xl font-black text-trust-navy mb-8">Our Role in Your Billing</h2>
+                                    <p className="text-2xl text-slate-600 italic font-serif leading-relaxed">
+                                        &ldquo;Virtual Minds does not create claims or submit billing on behalf of a practice. We work together with your existing billing team or software to provide necessary administrative data.&rdquo;
+                                    </p>
+                                </div>
+
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
+                                    <div className="space-y-8">
+                                        <h3 className="font-display text-2xl font-bold text-trust-navy flex items-center gap-3">
+                                            <span className="size-8 rounded-full bg-[#D2691E] text-white flex items-center justify-center text-sm">1</span>
+                                            What We Handle
+                                        </h3>
+                                        <ul className="space-y-6">
                                             {[
                                                 'Insurance Verification & Eligibility Checks',
                                                 'Obtaining Prior Authorizations',
@@ -80,18 +172,22 @@ export default function BillingPage() {
                                                 'Ensuring CPT Code Accuracy in EHR',
                                                 'Resubmitting Missing Provider Documentation'
                                             ].map((item, i) => (
-                                                <li key={i} className="flex gap-4 items-start">
-                                                    <span className="material-symbols-outlined text-primary">check_circle</span>
-                                                    <span className="font-medium text-slate-700">{item}</span>
+                                                <li key={i} className="flex gap-4 items-start group">
+                                                    <span className="material-symbols-outlined text-[#D2691E] mt-0.5 group-hover:scale-110 transition-transform">check_circle</span>
+                                                    <span className="font-medium text-slate-700 text-lg">{item}</span>
                                                 </li>
                                             ))}
                                         </ul>
                                     </div>
-                                    <div className="space-y-6">
-                                        <div className="bg-trust-navy/5 p-8 rounded-3xl border border-trust-navy/10">
-                                            <h3 className="font-bold text-xl text-trust-navy mb-4">Why This Model Works</h3>
-                                            <p className="text-slate-600 text-sm leading-relaxed">
-                                                By separating clinical data gathering from actual claim submission, we provide a layer of verification that significantly reduces denials. Your VA becomes &ldquo;bridge&rdquo; between provider and billing software.
+
+                                    <div className="space-y-8">
+                                        <div className="bg-white p-10 rounded-[2.5rem] border border-[#1A2332]/5 shadow-xl transition-transform hover:-translate-y-1 duration-500">
+                                            <div className="size-12 rounded-xl bg-[#1A2332] flex items-center justify-center mb-6 shadow-lg shadow-[#1A2332]/20">
+                                                <span className="material-symbols-outlined text-white">psychology</span>
+                                            </div>
+                                            <h3 className="font-display font-bold text-2xl text-trust-navy mb-4">Why This Model Works</h3>
+                                            <p className="text-slate-600 leading-relaxed text-lg">
+                                                By separating clinical data gathering from actual claim submission, we provide a layer of verification that significantly reduces denials. Your VA becomes the &ldquo;bridge&rdquo; between the provider and the billing software, ensuring clean data entry every time.
                                             </p>
                                         </div>
                                     </div>
@@ -101,20 +197,29 @@ export default function BillingPage() {
                     </div>
                 </section>
 
-                {/* Technical Benefits */}
-                <section className="max-w-[1280px] mx-auto px-6 py-24">
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+                {/* PREMIUM TECHNICAL FUNCTIONS */}
+                <section className="max-w-[1280px] mx-auto px-6 py-32">
+                    <div className="text-center mb-16">
+                        <h2 className="font-display text-4xl font-bold text-trust-navy mb-4">Technical Competencies</h2>
+                        <p className="text-slate-500 max-w-xl mx-auto">Our assistants are trained in the specific workflows that keep revenue moving.</p>
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
                         {[
                             { icon: 'receipt_long', title: 'Superbill Generation', desc: 'Timely creation and distribution of superbills for your out-of-network patients.' },
                             { icon: 'schedule', title: 'Prior Auth Tracking', desc: 'Meticulous tracking of authorization windows to prevent unpaid sessions.' },
                             { icon: 'credit_card', title: 'Payment Processing', desc: 'Secure processing of credit card transactions and recurring payment setups.' }
                         ].map((benefit, i) => (
-                            <div key={i} className="flex flex-col gap-6 p-8 rounded-3xl bg-white border border-slate-100 hover:shadow-2xl transition-all group">
-                                <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all">
-                                    <span className="material-symbols-outlined text-3xl">{benefit.icon}</span>
+                            <div key={i} className="flex flex-col gap-6 p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group relative overflow-hidden">
+
+                                <div className="size-20 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] group-hover:bg-[#D2691E] group-hover:text-white transition-all duration-300 shadow-sm">
+                                    <span className="material-symbols-outlined text-4xl">{benefit.icon}</span>
                                 </div>
-                                <h3 className="text-2xl font-bold text-trust-navy">{benefit.title}</h3>
-                                <p className="text-slate-500 leading-relaxed text-sm">{benefit.desc}</p>
+
+                                <div>
+                                    <h3 className="text-2xl font-display font-bold text-trust-navy mb-3">{benefit.title}</h3>
+                                    <p className="text-slate-500 leading-relaxed font-medium">{benefit.desc}</p>
+                                </div>
                             </div>
                         ))}
                     </div>

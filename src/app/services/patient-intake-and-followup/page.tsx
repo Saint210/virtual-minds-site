@@ -22,37 +22,117 @@ export default function IntakePage() {
                 ]}
             />
             <main className="flex-grow">
-                {/* Hero Section */}
-                <section className="bg-[#FAF8F3] w-full px-6 py-16 md:py-24">
-                    <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="flex flex-col gap-8">
-                            <div className="flex flex-col gap-6">
-                                <span className="text-primary font-bold tracking-widest text-xs uppercase italic">Patient Excellence</span>
-                                <h1 className="font-display text-trust-navy text-4xl lg:text-7xl font-black leading-[1.1] tracking-tight">
-                                    California Psychiatric <br />
-                                    <span className="text-primary italic">Patient Intake VAs</span>
+                {/* EXECUTIVE INTAKE HERO */}
+                <section className="relative pt-4 md:pt-6 pb-12 md:pb-16 overflow-hidden bg-[#FAF8F3]">
+                    {/* Immersive Background Tokens */}
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+
+                            {/* LEFT: Copy & Authority (60%) */}
+                            <div className="lg:w-[60%]">
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black mb-4 shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-[18px]">psychology</span>
+                                    <span className="tracking-[0.2em] uppercase">Continuity of Care Engine</span>
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
+                                    Patient Intake <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                        Optimization.
+                                    </span>
                                 </h1>
-                                <p className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
-                                    California psychiatric patient intake and follow-up virtual assistants for screening, onboarding, refill coordination, and continuity workflows.
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
+                                    We handle the
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">onboarding, screening, and refill logistics</span>
+                                    that ensure patients remain engaged and clinicians remain focused.
                                 </p>
+
+                                {/* Institutional Social Proof */}
+                                <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
+                                    <div className="flex -space-x-4">
+                                        {[1, 2, 3, 4].map((i) => (
+                                            <div key={i} className="w-12 h-12 rounded-full bg-white border-[3px] border-[#FAF8F3] flex items-center justify-center overflow-hidden shadow-lg relative z-[10]">
+                                                <Image
+                                                    src={`https://i.pravatar.cc/150?u=${i + 160}`}
+                                                    alt="Intake Specialist"
+                                                    width={48}
+                                                    height={48}
+                                                    className="grayscale hover:grayscale-0 transition-all duration-500"
+                                                />
+                                            </div>
+                                        ))}
+                                    </div>
+                                    <div className="text-sm text-slate-500 font-medium leading-tight text-center sm:text-left">
+                                        <p><strong className="text-trust-navy">Streamlining Entry for California's Private Practices</strong></p>
+                                        <p>Standardized patient onboarding and clinical continuity support.</p>
+                                    </div>
+                                </div>
+
+                                {/* PRACTICE ECONOMICS BAR - INTAKE SPECIFIC */}
+                                <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Intake Completion</p>
+                                        <p className="text-lg font-bold text-trust-navy">99.8% Done</p>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Screening Integrity</p>
+                                        <p className="text-lg font-bold text-trust-navy">Med-Board Ready</p>
+                                    </div>
+                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
+                                    <div className="space-y-1">
+                                        <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Refill Verification</p>
+                                        <div className="flex items-center gap-2">
+                                            <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                            <p className="text-lg font-bold text-trust-navy italic">0 Gaps Policy</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="flex flex-col sm:flex-row gap-5">
+                                    <Link href="/book-consultation" className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3">
+                                        <span className="material-symbols-outlined">person_add</span>
+                                        Book Setup Call
+                                    </Link>
+                                </div>
                             </div>
-                            <div className="flex flex-wrap gap-4 pt-4">
-                                <Link href="/book-consultation" className="bg-primary text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center gap-3">
-                                    <span className="material-symbols-outlined">person_add</span>
-                                    Book Setup Call
-                                </Link>
-                            </div>
-                        </div>
-                        <div className="relative">
-                            <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl"></div>
-                            <div className="relative aspect-video w-full rounded-[2rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center">
-                                <Image
-                                    src="/images/patient-intake-workflow.png"
-                                    className="w-full h-full object-cover"
-                                    alt="Patient Intake Workflow Dashboard"
-                                    fill
-                                    priority
-                                />
+
+                            {/* RIGHT: Visual System Card (40%) */}
+                            <div className="lg:w-[40%] relative w-full">
+                                <div className="relative group">
+                                    <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl opacity-50"></div>
+                                    <div className="relative aspect-[4/5] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
+                                        <Image
+                                            src="/images/patient-intake-mockup-v2.png"
+                                            alt="Patient Intake & Continuity Dashboard"
+                                            fill
+                                            className="object-cover"
+                                            priority
+                                        />
+                                        <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-trust-navy/80 to-transparent h-1/3 flex items-end p-12">
+                                            <div className="mb-4">
+                                                <h3 className="text-3xl font-serif font-bold !text-white leading-tight">Clinical <br />Onboarding <br />Matrix</h3>
+                                                <p className="!text-slate-100 text-sm leading-relaxed mt-4">
+                                                    Automated sync between patient portals and clinical EHR profiles with full BAA-covered administrative security.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {/* Floating badge */}
+                                    <div className="absolute -top-6 -right-6 bg-white p-5 rounded-[2rem] shadow-2xl border border-slate-100 flex items-center gap-4 animate-bounce-slow">
+                                        <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
+                                            <span className="material-symbols-outlined font-bold">clinical_notes</span>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Onboarding Status</p>
+                                            <p className="text-base font-bold text-trust-navy">Sync Active</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -32,7 +32,7 @@ export default function CostAnalysisPageV2() {
                             <span className="text-slate-500 text-sm">12 min read</span>
                         </div>
                         <h1 className="text-5xl lg:text-7xl font-display font-bold leading-tight text-trust-navy mb-6">
-                            California Psychiatric<br/>VA Cost Analysis 2026
+                            California Psychiatric<br />VA Cost Analysis 2026
                         </h1>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12">
                             7 critical cost factors, ROI calculations, and hidden savings for California psychiatry practices implementing virtual assistants.
@@ -69,11 +69,11 @@ export default function CostAnalysisPageV2() {
                 {/* Article Content - Version 2: Simple & Scannable */}
                 <section className="max-w-4xl mx-auto px-6 lg:px-10 pb-24">
                     <div className="bg-white rounded-2xl border border-slate-100 p-12">
-                        
+
                         {/* 7 Critical Cost Factors */}
                         <div className="mb-16">
                             <h2 className="text-3xl font-bold text-trust-navy mb-8">7 Critical Cost Factors</h2>
-                            
+
                             <div className="space-y-6">
                                 <div className="border-l-4 border-primary pl-6">
                                     <h3 className="text-xl font-bold text-trust-navy mb-2">1. Hourly Rate Comparison</h3>
@@ -99,7 +99,7 @@ export default function CostAnalysisPageV2() {
                                     <h3 className="text-xl font-bold text-trust-navy mb-2">3. California Compliance Savings</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600">
                                         <div>• <strong>HIPAA Training</strong>: $2,000-5,000/year included</div>
-                                        <div>• <strong>CMIA Compliance</strong>: Built into service</div>
+                                        <div>• <strong>California Privacy</strong>: Built into service</div>
                                         <div>• <strong>Medi-Cal Expertise</strong>: No extra fees</div>
                                         <div>• <strong>Audit Preparation</strong>: Documentation included</div>
                                     </div>

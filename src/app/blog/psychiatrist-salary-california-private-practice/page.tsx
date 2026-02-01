@@ -2,12 +2,13 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import BlogSidebar from "@/components/blog/BlogSidebar";
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
 
 export const metadata = {
-    title: "Psychiatrist Salary California Private Practice: 2026 Reality Check | Virtual Minds",
-    description: "What psychiatrists actually earn in California private practice. Compare insurance vs. private pay models, overhead costs, and realistic income projections.",
+    title: "Psychiatrist Salary California Private Practice: 2026 Reality Check",
+    description: "What psychiatrists actually earn in California private practice. Compare insurance vs. private pay, overhead costs, and 2026 income projections for MDs.",
+    keywords: ["psychiatrist salary California private practice", "California psychiatry income models", "private pay vs insurance psychiatry", "psychiatric practice overhead California", "net income psychiatrist CA"],
     openGraph: {
         title: "Psychiatrist Salary California Private Practice: 2026 Reality Check",
         description: "What psychiatrists actually earn in California private practice. Insurance vs. private pay income breakdown.",
@@ -25,6 +26,25 @@ export const metadata = {
         type: "article",
     },
 };
+
+const salaryTakeaways = [
+    {
+        point: "Model Dictates Margin",
+        detail: "A private-pay psychiatrist net income can be 2.3x higher than an insurance-only model with the identical patient volume."
+    },
+    {
+        point: "The 'Admin Tax'",
+        detail: "Unoptimized practices lose up to 15 hours weekly to documentation and prior auths, effectively slashing the MD's hourly rate."
+    },
+    {
+        point: "Scaling via NPs",
+        detail: "The path to $500k+ in California often involves building a group practice and netting from psychiatric NP productivity."
+    },
+    {
+        point: "California Overhead Realities",
+        detail: "Commercial rent and malpractice in CA are high-water marks; shared offices and telehealth are critical margin-protection strategies."
+    }
+];
 
 const tableOfContents = [
     { id: "baseline", title: "What Employed Psychiatrists Earn" },
@@ -58,28 +78,64 @@ export default function PsychiatristSalaryCA() {
     return (
         <div className="flex flex-col min-h-screen">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Blog", href: "/blog" },
-                    { label: "Psychiatrist Salary CA" }
-                ]}
-            />
-
             <main className="flex-grow">
-                <section className="bg-[#FAF8F3] py-20">
-                    <div className="max-w-[1200px] mx-auto px-6 text-center">
-                        <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-md border border-primary/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium mb-6">
-                            <span className="material-symbols-outlined text-primary">trending_up</span>
-                            <span>Practice Growth Series</span>
+                {/* PREVIEW-GRADE EXECUTIVE HERO */}
+                <section className="relative pt-16 pb-20 overflow-hidden bg-[#FAF8F3]">
+                    {/* Immersive Background Tokens */}
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-[#D2691E]/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="max-w-4xl">
+                            {/* In-Hero Breadcrumbs */}
+                            <nav className="flex items-center gap-3 mb-6 text-[10px] font-black uppercase tracking-[0.25em] text-slate-400">
+                                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                <span className="text-slate-300">/</span>
+                                <Link href="/blog" className="hover:text-primary transition-colors">Insights</Link>
+                                <span className="text-slate-300">/</span>
+                                <span className="text-trust-navy">Salary Benchmarking</span>
+                            </nav>
+
+                            <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-bold mb-6 shadow-sm">
+                                <span className="material-symbols-outlined text-primary text-[18px]">verified</span>
+                                <span className="tracking-widest uppercase">2026 Practice Growth Series</span>
+                            </div>
+
+                            <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
+                                Psychiatrist Salary in California: <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    Expectations vs. Reality.
+                                </span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-3xl">
+                                The honest breakdown of what MDs actually earn in 2026—and why your
+                                <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-1">clinical model</span>
+                                determines your net wealth more than your hourly rate.
+                            </p>
+
+                            {/* PRACTICE ECONOMICS BRIEFING BAR */}
+                            <div className="flex flex-wrap items-center gap-x-12 gap-y-8 py-10 border-y border-slate-200/60">
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Strategy Pillar</p>
+                                    <p className="text-xl font-bold text-trust-navy">Revenue Optimization</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Projected Yield</p>
+                                    <p className="text-xl font-bold text-trust-navy">$350k — $600k+</p>
+                                </div>
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Regulatory Authority</p>
+                                    <div className="flex items-center gap-2">
+                                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                        <p className="text-xl font-bold text-trust-navy italic">California State Privacy</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-trust-navy mb-6">
-                            Psychiatrist Salary in California Private Practice: Expectations vs. Reality
-                        </h1>
-                        <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-                        <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-                            The honest breakdown of what psychiatrists actually earn in California—and why the model you choose matters more than your hourly rate.
-                        </p>
                     </div>
                 </section>
 
@@ -89,19 +145,31 @@ export default function PsychiatristSalaryCA() {
                             {/* Main Content */}
                             <div className="flex-1 min-w-0">
                                 <article className="prose prose-lg prose-slate max-w-none">
-                                    <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
-                                        <Image
-                                            src="/images/psychiatrist-salary-california.jpg"
-                                            alt="Psychiatrist Salary in California Private Practice"
-                                            width={800}
-                                            height={450}
-                                            className="w-full h-auto object-cover"
-                                        />
-                                    </div>
+                                    {/* STRATEGIC BRIEFING INTRODUCTION (60/40) */}
+                                    <div className="flex flex-col lg:flex-row gap-12 my-16 items-start">
+                                        <div className="lg:w-[60%] order-2 lg:order-1">
+                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Revenue Optimization Benchmarking</h2>
+                                            <p className="text-xl text-slate-600 font-display leading-relaxed mb-6">
+                                                You finished residency, passed your boards, and opened a private practice in California. Now comes the question everyone asks but few answer honestly: <span className="text-primary italic font-bold">&quot;How much will I actually make?&quot;</span>
+                                            </p>
+                                            <p className="text-slate-600 leading-relaxed mb-0">
+                                                The answer isn&apos;t a single number—it&apos;s a spectrum determined by your insurance mix, patient volume, and administrative overhead. By analyzing current 2026 benchmarks, we can map the realistic income projections for board-certified specialists in California&apos;s private sector.
+                                            </p>
+                                        </div>
 
-                                    <p className="lead text-xl text-slate-700 mb-8">
-                                        You finished residency, passed your boards, and opened a private practice in California. Now comes the question everyone asks but few answer honestly: "How much will I actually make?"
-                                    </p>
+                                        <div className="lg:w-[40%] order-1 lg:order-2 group w-full">
+                                            <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-xl aspect-[4/5] bg-slate-50">
+                                                <Image
+                                                    src="/images/visual-intel-salary.png"
+                                                    alt="Psychiatrist Salary in California Private Practice"
+                                                    fill
+                                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    priority
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/20 via-transparent to-transparent pointer-events-none" />
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <p className="mb-8">
                                         The answer isn't simple because "psychiatrist salary California private practice" varies wildly based on your practice model, payer mix, overhead structure, and how much unpaid administrative work you're willing to absorb. A solo psychiatrist accepting insurance in Los Angeles might gross $250,000 while netting $180,000 after overhead. Another psychiatrist 20 miles away, operating cash-pay only, could gross $450,000 and net $350,000 with similar patient volume.
@@ -110,19 +178,6 @@ export default function PsychiatristSalaryCA() {
                                     <p className="mb-12">
                                         This guide breaks down the real numbers, the hidden costs, and the strategic decisions that determine whether you build a comfortable practice or a highly profitable one.
                                     </p>
-
-                                    <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 mb-12">
-                                        <h3 className="text-xl font-bold text-trust-navy mb-4">Table of Contents</h3>
-                                        <ul className="space-y-2">
-                                            <li><a href="#baseline" className="text-primary hover:underline">The Baseline: What Employed Psychiatrists Earn in California</a></li>
-                                            <li><a href="#insurance" className="text-primary hover:underline">Insurance-Based Private Practice Income Model</a></li>
-                                            <li><a href="#private-pay" className="text-primary hover:underline">Private Pay (Cash-Based) Practice Income Model</a></li>
-                                            <li><a href="#hybrid" className="text-primary hover:underline">The Hybrid Model: Best of Both Worlds?</a></li>
-                                            <li><a href="#overhead" className="text-primary hover:underline">California-Specific Overhead Costs That Eat Your Margin</a></li>
-                                            <li><a href="#scaling" className="text-primary hover:underline">Scaling Beyond Solo: The Group Practice Income Multiplier</a></li>
-                                            <li><a href="#maximize" className="text-primary hover:underline">How to Maximize Your Take-Home as a California Psychiatrist</a></li>
-                                        </ul>
-                                    </div>
 
                                     <h2 id="baseline" className="text-3xl font-bold text-trust-navy mt-12 mb-6">The Baseline: What Employed Psychiatrists Earn in California</h2>
                                     <p className="mb-6">
@@ -281,7 +336,7 @@ export default function PsychiatristSalaryCA() {
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Administrative Support</h3>
                                     <p className="mb-6">
-                                        Solo practitioners often underestimate the value of administrative help. A part-time virtual assistant handling scheduling, insurance verification, and billing follow-up costs $1,500-$2,500 monthly but can increase your clinical time by 5-10 hours weekly—easily generating $5,000-$10,000 in additional revenue.
+                                        Solo practitioners often underestimate the value of administrative help. A dedicated psychiatric virtual assistant handling scheduling, insurance verification, and billing follow-up costs $5,000+ monthly but can increase your clinical time by 10-15 hours weekly—easily generating $15,000-$30,000 in additional revenue.
                                     </p>
 
                                     <h2 id="scaling" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Scaling Beyond Solo: The Group Practice Income Multiplier</h2>
@@ -340,7 +395,7 @@ export default function PsychiatristSalaryCA() {
                                             California psychiatrists in private practice can earn anywhere from $180,000 (struggling insurance-only solo practice) to $600,000+ (optimized group practice or high-end private pay).
                                         </p>
                                         <p className="mb-0">
-                                            The difference isn't clinical skill—it's business strategy. Your practice model, payer mix, overhead management, and willingness to scale determine your income more than your hourly rate ever will.
+                                            The difference isn’t clinical skill—it’s business strategy. Your practice model, payer mix, and <Link href="/services" className="text-primary font-bold hover:underline">Practice Management Model</Link> determine your income more than your hourly rate ever will.
                                         </p>
                                     </div>
 

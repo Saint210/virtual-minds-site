@@ -1,145 +1,212 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
-    title: "Revenue Architecture for California Psychiatrists | Virtual Minds",
+    title: "Revenue Optimization for California Psychiatrists | Virtual Minds",
     description: "Maximize practice revenue through optimized documentation, proper CPT coding guidance, and seamless billing company coordination.",
+    keywords: ["psychiatric billing", "90833 add-on codes", "revenue cycle management", "psychiatry documentation", "cpt optimization"],
 };
 
 export default function RevenueBlueprint() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Resources", href: "/resources" },
-                    { label: "Revenue Architecture" }
-                ]}
-            />
 
-            <main className="flex-grow pb-24">
-                {/* Article Hero */}
-                <section className="bg-gradient-to-br from-[#1E1E1E] to-[#2D2D2D] py-24 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#9CAF88]/20 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2"></div>
+            <main className="flex-grow">
+                {/* EXECUTIVE STRATEGIC HERO */}
+                <section className="relative pt-12 md:pt-20 pb-20 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
                     </div>
 
-                    <div className="max-w-4xl mx-auto px-6 relative z-10">
-                        <span className="text-[#D2691E] font-bold uppercase tracking-[0.4em] text-xs mb-6 block">Psychiatric Operations Blueprint #02</span>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold italic mb-8 leading-[1.1] !text-white" style={{ color: 'white' }}>
-                            Psychiatric Revenue <br /> & Documentation Architecture
-                        </h1>
-                        <p className="text-xl text-slate-100 leading-relaxed font-medium italic">
-                            Stop the leakage. Master documentation that supports 99214+90833 optimization and streamlines your billing company's workflow.
-                        </p>
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+
+                            {/* Left Column: Strategic Context (60%) */}
+                            <div className="lg:w-[60%]">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">Revenue Optimization</span>
+                                </nav>
+
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                    <span className="material-symbols-outlined text-primary text-[16px]">account_balance_wallet</span>
+                                    Strategic Blueprint #02
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                    Revenue <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                        Optimization.
+                                    </span>
+                                </h1>
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
+                                    Stop the leakage. Master documentation that supports 99214+90833 optimization and streamlines your billing company's entire workflow.
+                                </p>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-green-500">trending_up</span>
+                                        <span className="text-sm font-bold text-trust-navy">+22% Yield Increase</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-blue-500">description</span>
+                                        <span className="text-sm font-bold text-trust-navy">90833 Mastery</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column: Visual Intel (40%) */}
+                            <div className="lg:w-[40%] group w-full">
+                                <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
+                                    <Image
+                                        src="/images/blueprint-revenue.png"
+                                        alt="Psychiatric Revenue and CPT Optimization System"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
 
-                {/* Content Section */}
-                <div className="max-w-4xl mx-auto px-6 mt-16">
-                    <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-12">
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">The CPT Optimization Opportunity</h2>
-                            <p>
-                                Most California psychiatrists are under-coding their sessions or failing to document properly for "Add-on" codes that correctly reflect the clinical depth of their work. Transitioning from simple med-management to integrated therapy + med-management can increase per-hour revenue by <strong>22-35%</strong>.
-                            </p>
-                            <div className="bg-white p-8 rounded-[30px] border border-slate-100 shadow-xl overflow-hidden relative group mt-8">
-                                <div className="flex items-center justify-between mb-4">
-                                    <h4 className="font-bold text-[#2A2A2A]">99214 + 90833 Documentation Support</h4>
-                                    <span className="text-green-600 font-black">+ $75-120 / Visit</span>
-                                </div>
-                                <p className="text-sm text-slate-500 leading-relaxed mb-0">
-                                    Our Virtual Assistants organize your clinical templates and scribing workflows to prompt for proper time tracking, therapeutic element notation, and compliant session summaries—empowering you to capture this revenue.
-                                </p>
-                            </div>
-                        </section>
+                {/* CORE BLUEPRINT CONTENT */}
+                <section className="py-24 bg-white border-t border-slate-100">
+                    <div className="max-w-[1200px] mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
 
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">3 Pillars of Revenue Protection</h2>
-                            <p className="text-slate-600 mb-8">
-                                <strong className="text-[#2A2A2A]">Important:</strong> Virtual Minds does not create claims or submit billing. We coordinate with your billing company to prevent revenue loss through administrative excellence.
-                            </p>
-                            <div className="space-y-6 not-prose">
-                                {[
-                                    {
-                                        title: "Intake Capture",
-                                        desc: "Missed calls are missed revenue. We convert 95%+ of initial psychiatric inquiries into booked evaluations through empathetic, professional intake coordination.",
-                                        icon: "call"
-                                    },
-                                    {
-                                        title: "Documentation Quality Control",
-                                        desc: "We prepare accurate superbills and session documentation that your billing company needs for clean first-pass submissions—reducing rejections and speeding up reimbursement.",
-                                        icon: "fact_check"
-                                    },
-                                    {
-                                        title: "Billing Company Liaison",
-                                        desc: "We work directly with your billing partner to resolve documentation issues, track outstanding claims, and ensure nothing falls through the cracks.",
-                                        icon: "handshake"
-                                    }
-                                ].map((item, i) => (
-                                    <div key={i} className="flex gap-6 items-start p-8 bg-[#FAF8F3] rounded-3xl border border-slate-100 hover:border-[#D2691E]/20 transition-all">
-                                        <span className="material-symbols-outlined text-[#D2691E] text-4xl">{item.icon}</span>
-                                        <div>
-                                            <h4 className="font-bold text-lg text-[#2A2A2A] mb-2">{item.title}</h4>
-                                            <p className="text-sm text-slate-600 leading-relaxed">{item.desc}</p>
-                                        </div>
-                                    </div>
-                                ))}
-                            </div>
-                        </section>
+                            {/* Left Content Area (8 columns) */}
+                            <div className="lg:col-span-8 space-y-20">
 
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">How Virtual Minds Supports Your Revenue Cycle</h2>
-                            <div className="bg-gradient-to-br from-blue-50 to-slate-50 p-8 rounded-3xl border border-blue-100">
-                                <div className="space-y-4">
-                                    <div className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-green-600 mt-1">check_circle</span>
-                                        <div>
-                                            <p className="font-bold text-[#2A2A2A] mb-1">Documentation That Supports Higher Codes</p>
-                                            <p className="text-sm text-slate-600">We optimize your templates to include time stamps, therapeutic interventions, and medical decision-making prompts.</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-green-600 mt-1">check_circle</span>
-                                        <div>
-                                            <p className="font-bold text-[#2A2A2A] mb-1">Accurate Superbill Preparation</p>
-                                            <p className="text-sm text-slate-600">We compile diagnosis codes, CPT codes, session details, and patient information for your billing company.</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-green-600 mt-1">check_circle</span>
-                                        <div>
-                                            <p className="font-bold text-[#2A2A2A] mb-1">Proactive Billing Coordination</p>
-                                            <p className="text-sm text-slate-600">We track claim status with your billing company and alert you to issues before they become denials.</p>
-                                        </div>
-                                    </div>
-                                    <div className="flex items-start gap-4">
-                                        <span className="material-symbols-outlined text-green-600 mt-1">check_circle</span>
-                                        <div>
-                                            <p className="font-bold text-[#2A2A2A] mb-1">Patient Payment Follow-Up</p>
-                                            <p className="text-sm text-slate-600">We manage patient billing inquiries, payment collections, and credit card processing coordination.</p>
-                                        </div>
+                                {/* 1. The Operational Friction */}
+                                <div className="space-y-6">
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The CPT Optimization Opportunity</h2>
+                                    <div className="prose prose-slate prose-lg max-w-none">
+                                        <p>
+                                            Most California psychiatrists are either under-coding their sessions or failing to document properly for "Add-on" codes that accurately reflect clinical depth. Transitioning from simple med-management to integrated therapy + med-management (99214 + 90833) can increase per-hour revenue by <strong>22-35%</strong>.
+                                        </p>
+                                        <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
+                                            <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
+                                                "Precision Documentation is the bridge between clinical excellence and financial sustainability. If your templates aren't audit-proof, you're leaving thousands on the table every month."
+                                            </p>
+                                            <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Revenue Director, Virtual Minds</cite>
+                                        </blockquote>
                                     </div>
                                 </div>
-                            </div>
-                        </section>
 
-                        <section className="bg-[#FAF8F3] border-2 border-[#D2691E]/10 rounded-[40px] p-12 text-center">
-                            <h2 className="text-3xl font-serif font-bold mb-6 italic text-[#2A2A2A]">Analyze Your Revenue Leakage</h2>
-                            <p className="text-slate-600 mb-10 max-w-xl mx-auto">
-                                In 15 minutes, we can audit your current documentation and billing coordination workflow to identify where your practice is losing billable revenue.
-                            </p>
-                            <Link href="/book-consultation" className="bg-[#D2691E] text-white font-black uppercase tracking-widest text-xs px-12 py-5 rounded-2xl shadow-2xl hover:scale-105 transition-all inline-block">
-                                Book Your Revenue Audit
-                            </Link>
-                        </section>
+                                {/* 2. The 5 Pillars of Revenue Protection */}
+                                <div className="space-y-12">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Revenue Infrastructure</h2>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        {[
+                                            {
+                                                icon: "call",
+                                                title: "Intake Conversion",
+                                                desc: "Convert 95%+ of initial psychiatric inquiries into booked evaluations through empathetic, professional coordination."
+                                            },
+                                            {
+                                                icon: "fact_check",
+                                                title: "Doc Quality Control",
+                                                desc: "Prepare accurate superbills that your billing company needs for clean first-pass submissions, reducing rejection rates to <2%."
+                                            },
+                                            {
+                                                icon: "handshake",
+                                                title: "Billing Liaison",
+                                                desc: "Direct coordination with your third-party biller to resolve documentation issues and track outstanding claims proactivey."
+                                            },
+                                            {
+                                                icon: "payments",
+                                                title: "Payment Recovery",
+                                                desc: "Automated collection workflows for patient copays and balances, managed by your VA without awkward clinical conversations."
+                                            },
+                                            {
+                                                icon: "analytics",
+                                                title: "Yield Analysis",
+                                                desc: "Monthly auditing of your per-patient yield to identify coding opportunities and insurance payer trends."
+                                            }
+                                        ].map((step, idx) => (
+                                            <div key={idx} className="bg-[#FAF8F3] p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all group">
+                                                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-primary mb-6 shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
+                                                    <span className="material-symbols-outlined">{step.icon}</span>
+                                                </div>
+                                                <h4 className="font-bold text-xl text-trust-navy mb-3">{step.title}</h4>
+                                                <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* 3. The Efficiency Table */}
+                                <div className="space-y-8">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">Financial Comparison</h2>
+                                    <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-sm">
+                                        <table className="w-full text-left border-collapse">
+                                            <thead>
+                                                <tr className="bg-slate-50">
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-slate-400">Metric</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-trust-navy">Standard Coding</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-primary">VM Optimized Model</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-100">
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Avg. Visit Value</td>
+                                                    <td className="p-6 text-sm text-slate-500">$180 - $220</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">$275 - $340</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Claim Rejection Rate</td>
+                                                    <td className="p-6 text-sm text-slate-500">8 - 12%</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">&lt; 2%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Patient Bad Debt</td>
+                                                    <td className="p-6 text-sm text-slate-500">Significant</td>
+                                                    <td className="p-6 text-sm font-bold text-primary italic">Automated Collection</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            {/* Right Sidebar (4 columns) */}
+                            <div className="lg:col-span-4 space-y-8">
+                                <div className="sticky top-12 space-y-8">
+
+                                    {/* Strategic Download Card */}
+                                    <div className="bg-trust-navy rounded-[2.5rem] p-10 text-white shadow-2xl relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
+                                        <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Analyze Revenue Leakage</h3>
+                                        <p className="text-slate-300 text-sm leading-relaxed mb-8">
+                                            In 15 minutes, we can identify exactly where your practice is losing billable revenue through administrative friction.
+                                        </p>
+                                        <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
+                                            Book Revenue Audit
+                                        </Link>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div >
-            </main >
+                </section>
+
+            </main>
+
             <Footer />
-        </div >
+        </div>
     );
 }

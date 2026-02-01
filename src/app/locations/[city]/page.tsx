@@ -1,5 +1,4 @@
-
-import { locations, LocationData } from "@/data/locations";
+import { locations } from "@/data/locations";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
@@ -44,258 +43,188 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
+
             <main className="flex-grow">
-                {/* 
-                  LOCALIZED HERO SECTION 
-                */}
-                <section className="relative pt-20 pb-32 overflow-hidden">
-                    <div className="absolute inset-0 bg-gradient-to-br from-white/50 to-orange-50/50 z-0" />
-                    <div className="max-w-7xl mx-auto px-6 relative z-10">
-                        <div className="flex flex-col lg:flex-row items-center gap-16">
-                            <div className="lg:w-1/2 space-y-8">
-                                <div className="inline-flex items-center gap-2 bg-[#D2691E]/10 border border-[#D2691E]/20 text-[#D2691E] px-4 py-2 rounded-full text-sm font-bold shadow-sm">
-                                    <span className="material-symbols-outlined text-[18px]">location_on</span>
-                                    <span>Serving {location.name} & Surrounding Areas</span>
+                {/* EXECUTIVE STRATEGIC HERO */}
+                <section className="relative pt-12 md:pt-24 pb-24 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
+                    </div>
+
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+
+                            {/* Left Column (60%) */}
+                            <div className="lg:w-[60%]">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-10">
+                                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">Locations</span>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">{location.name}</span>
+                                </nav>
+
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-8">
+                                    <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
+                                    Serving {location.name} & Adjacent Networks
                                 </div>
 
-                                <h1 className="text-5xl lg:text-7xl font-serif font-bold text-[#2A2A2A] leading-[1.1]">
-                                    {location.name} Psychiatry, <br /><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Without the Overhead</span>
+                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                    Strategic Practice Management <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                        for {location.name} Clinicians.
+                                    </span>
                                 </h1>
 
-                                <p className="text-xl text-slate-600 font-display leading-relaxed">
-                                    <span className="font-bold text-[#D2691E]">Lease Talent, Not Overhead.</span> High-performance virtual staff for in-office and telehealth practices. Whether you're managing {location.name} office space or running fully remote—eliminate administrative drag.
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-10 max-w-2xl">
+                                    A specialized administrative task force for {location.name} based psychiatric firms. We understand the unique regional billing textures and hospital referral systems of the Golden State.
                                 </p>
 
-                                <div className="flex flex-col sm:flex-row gap-4">
+                                <div className="flex flex-wrap gap-4">
                                     <Link
                                         href="/book-consultation"
-                                        className="px-8 py-4 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold rounded-xl shadow-xl hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center justify-center gap-2"
+                                        className="px-8 py-5 bg-trust-navy hover:bg-trust-navy/90 text-white font-bold text-lg rounded-2xl shadow-xl hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                                     >
-                                        <span className="material-symbols-outlined">calendar_month</span>
-                                        Schedule Strategy Call
+                                        <span className="material-symbols-outlined">analytics</span>
+                                        Audit Your {location.name} Practice
                                     </Link>
-                                    <Link
-                                        href="#calculator"
-                                        className="px-8 py-4 bg-white border-2 border-[#D2691E]/20 text-[#2A2A2A] font-bold rounded-xl hover:bg-orange-50 transition-all flex items-center justify-center gap-2"
-                                    >
-                                        <span className="material-symbols-outlined">calculate</span>
-                                        Compare {location.name} Costs
-                                    </Link>
-                                </div>
-
-                                <div className="flex items-center gap-4 text-sm text-slate-500 font-medium">
-                                    <div className="flex -space-x-3">
-                                        {[1, 2, 3].map((i) => (
-                                            <div key={i} className="w-10 h-10 rounded-full border-2 border-white bg-slate-200" />
-                                        ))}
-                                    </div>
-                                    <p>The Dedicated Administrative Partner for {location.name} Psychiatrists</p>
                                 </div>
                             </div>
 
-                            <div className="lg:w-1/2 relative">
-                                <div className="absolute -inset-4 bg-gradient-to-tr from-[#D2691E]/20 to-transparent rounded-[2rem] blur-2xl" />
-                                <div className="relative bg-white/60 backdrop-blur-xl border border-white/40 p-2 rounded-[2rem] shadow-2xl">
-                                    <div className="relative aspect-[4/3] rounded-[1.5rem] overflow-hidden bg-slate-100">
-                                        <Image
-                                            src={location.heroImage || "/images/elite_psychiatry_hub.png"}
-                                            alt={location.heroImageAlt}
-                                            fill
-                                            className="object-cover"
-                                            priority
-                                        />
-                                    </div>
+                            {/* Right Column: Visual Intel (40%) */}
+                            <div className="lg:w-[40%] group w-full">
+                                <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
+                                    <Image
+                                        src={location.heroImage || "/images/hero-dashboard.png"}
+                                        alt={location.heroImageAlt}
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
 
-                                    {/* Floating Local Card */}
-                                    <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 max-w-xs">
-                                        <div className="flex items-center gap-3 mb-3">
-                                            <div className="p-2 bg-green-100 rounded-lg text-green-700">
-                                                <span className="material-symbols-outlined">payments</span>
+                                    {/* Floating Savings Token */}
+                                    <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Regional Yield Gain</p>
+                                        <p className="text-4xl font-serif font-bold text-primary mb-1">{location.rentSavings}</p>
+                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Average overhead reduction compared to in-office staffing in {location.name}.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* THE COST CALCULATOR ARCHITECTURE */}
+                <section className="py-32 bg-white border-t border-slate-100" id="calculator">
+                    <div className="max-w-5xl mx-auto px-6">
+                        <div className="text-center mb-20">
+                            <span className="text-primary font-black uppercase tracking-[0.4em] text-xs mb-6 block italic">Regional Economic Analysis</span>
+                            <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 italic leading-tight">Quantify the Administrative <br /> Drag in {location.name}.</h2>
+                        </div>
+                        <PracticeLeaksCalculator cityName={location.name} />
+                    </div>
+                </section>
+
+                {/* LOCATIONAL PROBLEM ARCHITECTURE */}
+                <section className="py-32 bg-slate-50 border-y border-slate-100 relative overflow-hidden">
+                    <div className="max-w-7xl mx-auto px-6 relative z-10">
+                        <div className="grid lg:grid-cols-2 gap-24 items-center">
+                            <div className="space-y-12">
+                                <span className="text-primary font-black uppercase tracking-[0.4em] text-xs block italic">Market Specificity</span>
+                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy leading-tight italic">Engineered for the <br /> {location.name} Clinician.</h2>
+                                <div className="space-y-8">
+                                    {[
+                                        { icon: "verified", title: "Compliance Mastery", desc: "Native understanding of California's state privacy protocols compared to federal baseline standards." },
+                                        { icon: "local_hospital", title: "Network Coordination", desc: `Direct experience with ${location.hospitals} referral pathways and intake logic.` },
+                                        { icon: "attach_money", title: "Yield Optimization", desc: `Eliminating ${location.name} office overhead transforms fixed costs into variable, high-growth clinical investments.` }
+                                    ].map((item, i) => (
+                                        <div key={i} className="flex gap-6 items-start">
+                                            <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-primary shrink-0 shadow-sm">
+                                                <span className="material-symbols-outlined">{item.icon}</span>
                                             </div>
                                             <div>
-                                                <p className="text-xs text-slate-500 uppercase font-bold">Avg. {location.name} Savings</p>
-                                                <p className="text-xl font-black text-[#2A2A2A]">{location.rentSavings}</p>
+                                                <h4 className="text-lg font-bold text-trust-navy mb-2">{item.title}</h4>
+                                                <p className="text-sm text-slate-500 leading-relaxed font-medium">{item.desc}</p>
                                             </div>
                                         </div>
-                                        <p className="text-xs text-slate-500 leading-tight">
-                                            Compared to hiring full-time admin staff in the {location.name} area.
-                                        </p>
-                                    </div>
+                                    ))}
+                                </div>
+                            </div>
+
+                            <div className="bg-trust-navy rounded-[3rem] p-12 text-white shadow-2xl relative overflow-hidden group">
+                                <div className="absolute top-0 right-0 p-12 opacity-10 group-hover:rotate-12 transition-transform">
+                                    <span className="material-symbols-outlined text-[120px]">map</span>
+                                </div>
+                                <h3 className="text-2xl font-serif font-bold mb-8 italic !text-white" style={{ color: 'white' }}>Serving the Entire <br /> {location.name} Region</h3>
+                                <div className="flex flex-wrap gap-2 mb-12">
+                                    {location.neighborhoods.map((hood) => (
+                                        <span key={hood} className="px-3 py-1 bg-white/10 rounded-lg text-[10px] font-black uppercase tracking-widest text-primary hover:bg-white/20 transition-colors">
+                                            {hood}
+                                        </span>
+                                    ))}
+                                </div>
+                                <div className="p-8 bg-white/5 rounded-[2rem] border border-white/10 italic text-slate-300 text-sm">
+                                    "We scaled our practice from 2 to 6 practitioners without increasing our physical office footprint in {location.neighborhoods[0]}. Virtual Minds provided the administrative engine."
                                 </div>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* 
-                  HYPER-LOCAL PROBLEM SECTION 
-                */}
-                <section className="py-24 bg-white" id="calculator">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center max-w-3xl mx-auto mb-16">
-                            <h2 className="text-4xl font-serif font-bold text-[#2A2A2A] mb-6">
-                                Why {location.name} Psychiatrists Are Switching to Virtual Staff
-                            </h2>
-                            <p className="text-lg text-slate-600">
-                                Whether you're in-office, hybrid, or fully telehealth—administrative overhead drains your time and profit. See exactly how much admin costs are impacting your {location.name} practice.
-                            </p>
-                        </div>
-
-                        <div className="mb-16">
-                            <PracticeLeaksCalculator />
-                        </div>
-
-                        <div className="grid md:grid-cols-3 gap-8 opacity-80">
-                            <div className="group p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <span className="material-symbols-outlined text-[#D2691E]">savings</span>
-                                    <h3 className="font-bold text-[#2A2A2A]">Cut Administrative Costs</h3>
-                                </div>
-                                <p className="text-sm text-slate-500 leading-relaxed">
-                                    Whether you're paying {location.name} office rents or running telehealth—don't overpay for admin. Virtual staff = 60% cost savings.
-                                </p>
-                            </div>
-
-                            <div className="group p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <span className="material-symbols-outlined text-[#D2691E]">schedule</span>
-                                    <h3 className="font-bold text-[#2A2A2A]">Always Available</h3>
-                                </div>
-                                <p className="text-sm text-slate-500 leading-relaxed">
-                                    No sick days, no commute delays, no scheduling conflicts. Your virtual staff is always ready—whether you're seeing patients in-office or online.
-                                </p>
-                            </div>
-
-                            <div className="group p-6 rounded-2xl bg-slate-50 border border-slate-100">
-                                <div className="flex items-center gap-3 mb-3">
-                                    <span className="material-symbols-outlined text-[#D2691E]">workspace_premium</span>
-                                    <h3 className="font-bold text-[#2A2A2A]">Top 1% Talent</h3>
-                                </div>
-                                <p className="text-sm text-slate-500 leading-relaxed">
-                                    Don't limit yourself to local hiring pools. Access elite psychiatric VAs trained for both in-person and telehealth workflows.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 
-                  LOCAL SEO CONTENT BLOCK
-                */}
-                <section className="py-24 bg-[#2A2A2A] text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
-                    <div className="max-w-7xl mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-16 items-center">
-                        <div className="space-y-8">
-                            <h2 className="text-4xl font-serif font-bold !text-white" style={{ color: 'white' }}>
-                                Specialized for the <br /><span className="text-[#D2691E]">{location.name} Market</span>
-                            </h2>
-                            <div className="space-y-6">
-                                <div className="flex gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-[#D2691E]/20 flex items-center justify-center text-[#D2691E] shrink-0">
-                                        <span className="material-symbols-outlined">verified</span>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold mb-1 !text-[#D2691E]">High-Profile Client Discretion</h4>
-                                        <p className="text-slate-200">We understand the privacy needs of celebrity and high-profile clients common in {location.name} practices.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-[#D2691E]/20 flex items-center justify-center text-[#D2691E] shrink-0">
-                                        <span className="material-symbols-outlined">local_hospital</span>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold mb-1 !text-[#D2691E]">Local Hospital Coordination</h4>
-                                        <p className="text-slate-200">Familiarity with {location.hospitals} referral workflows and intake procedures.</p>
-                                    </div>
-                                </div>
-                                <div className="flex gap-4">
-                                    <div className="w-12 h-12 rounded-full bg-[#D2691E]/20 flex items-center justify-center text-[#D2691E] shrink-0">
-                                        <span className="material-symbols-outlined">attach_money</span>
-                                    </div>
-                                    <div>
-                                        <h4 className="text-lg font-bold mb-1 !text-[#D2691E]">Maximize Billable Hours</h4>
-                                        <p className="text-slate-200">In a high-cost city, your time is your most valuable asset. Offload 90% of admin tasks to focus on billable clinical hours.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="bg-white/5 border border-white/10 rounded-2xl p-8 backdrop-blur-sm">
-                            <h3 className="text-xl font-bold mb-6 flex items-center gap-2 !text-white" style={{ color: 'white' }}>
-                                <span className="material-symbols-outlined text-[#D2691E]">map</span>
-                                Serving Practices In:
-                            </h3>
-                            <div className="flex flex-wrap gap-2">
-                                {location.neighborhoods.map((hood) => (
-                                    <span key={hood} className="px-3 py-1 bg-white/20 rounded-lg text-sm text-white hover:bg-[#D2691E] transition-colors cursor-default font-medium">
-                                        {hood}
-                                    </span>
-                                ))}
-                            </div>
-                            <div className="mt-8 pt-8 border-t border-white/10">
-                                <p className="text-sm text-slate-300 italic">
-                                    "Virtual Minds helped us scale our {location.neighborhoods[0]} group practice without having to lease the suite next door. Huge savings."
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                {/* 
-                  FAQ Section (Localized)
-                */}
-                <section className="py-20 bg-[#FAF8F3]">
+                {/* THE REGIONAL FAQ BLOCK */}
+                <section className="py-32 bg-white">
                     <div className="max-w-4xl mx-auto px-6">
-                        <h2 className="text-3xl font-serif font-bold text-center text-[#2A2A2A] mb-12">
-                            {location.name} FAQ
-                        </h2>
-                        <div className="space-y-4">
-                            <details className="group bg-white rounded-xl border border-slate-200 open:border-[#D2691E] shadow-sm overflow-hidden transition-all">
-                                <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-[#2A2A2A]">
-                                    Are your VAs in the {location.faqZone}?
-                                    <span className="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
-                                </summary>
-                                <div className="px-6 pb-6 text-slate-600">
-                                    Yes. Our team works {location.faqZone} hours to seamlessly integrate with your {location.name} practice schedule, ensuring phones are answered and patients are scheduled in real-time.
-                                </div>
-                            </details>
-                            <details className="group bg-white rounded-xl border border-slate-200 open:border-[#D2691E] shadow-sm overflow-hidden transition-all">
-                                <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-[#2A2A2A]">
-                                    Do they understand California specific regulations?
-                                    <span className="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
-                                </summary>
-                                <div className="px-6 pb-6 text-slate-600">
-                                    Absolutely. Every VA is trained on HIPAA and California's specific CMIA (Confidentiality of Medical Information Act) requirements, which are stricter than federal standards.
-                                </div>
-                            </details>
-                            <details className="group bg-white rounded-xl border border-slate-200 open:border-[#D2691E] shadow-sm overflow-hidden transition-all">
-                                <summary className="flex items-center justify-between p-6 cursor-pointer font-bold text-[#2A2A2A]">
-                                    Can they coordinate with local {location.name} pharmacies?
-                                    <span className="material-symbols-outlined text-slate-400 group-open:rotate-180 transition-transform">expand_more</span>
-                                </summary>
-                                <div className="px-6 pb-6 text-slate-600">
-                                    Yes. Whether it's a specialty pharmacy in {location.neighborhoods[0]} or a chain in the area, our VAs handle refill requests, prior authorizations, and pharmacy coordination efficiently.
-                                </div>
-                            </details>
+                        <div className="text-center mb-20">
+                            <h2 className="text-4xl font-serif font-bold text-trust-navy mb-6 italic">Regional Analysis & FAQ</h2>
+                        </div>
+                        <div className="space-y-6">
+                            {[
+                                { q: `Are your assistants synchronized with ${location.faqZone}?`, a: `Yes. Our task force operates on strict ${location.faqZone} hours to ensure real-time coordination with your ${location.name} practice. No lag, no latency.` },
+                                { q: "Do you handle California insurance networks?", a: "Extensively. We manage the friction between your clinical work and the major California carriers, ensuring PAs and eligibility are verified before the patient sits down." },
+                                { q: `Can you coordinate with pharmacies in ${location.neighborhoods[0]}?`, a: "Directly. We bridge the gap between your EHR and local pharmacy hubs to automate the refill lifecycle." }
+                            ].map((faq, i) => (
+                                <details key={i} className="group bg-[#FAF8F3] rounded-[2rem] border border-slate-100 p-2 overflow-hidden">
+                                    <summary className="flex items-center justify-between p-8 cursor-pointer font-bold text-trust-navy list-none">
+                                        {faq.q}
+                                        <span className="material-symbols-outlined group-open:rotate-180 transition-transform text-primary">expand_more</span>
+                                    </summary>
+                                    <div className="px-8 pb-8 text-slate-500 font-medium leading-relaxed italic text-sm">
+                                        {faq.a}
+                                    </div>
+                                </details>
+                            ))}
                         </div>
                     </div>
                 </section>
 
-                {/* CTA */}
-                <section className="bg-gradient-to-r from-[#D2691E] to-[#B8860B] py-20 text-white text-center">
-                    <div className="max-w-4xl mx-auto px-6 space-y-8">
-                        <h2 className="text-4xl font-serif font-bold">Ready to streamline your {location.name} practice?</h2>
-                        <p className="text-xl opacity-90">Get a specialized VA who understands {location.name} regulations, insurance networks, and workflows—for in-office or telehealth.</p>
-                        <Link
-                            href="/book-consultation"
-                            className="inline-flex px-10 py-5 bg-white text-[#D2691E] font-black text-xl rounded-xl shadow-xl hover:scale-105 transition-transform"
-                        >
-                            Book Your Strategy Call
-                        </Link>
+                {/* FINAL STRATEGIC CTA */}
+                <section className="bg-trust-navy py-32 relative overflow-hidden">
+                    <div className="absolute inset-0 opacity-10 pointer-events-none">
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/20 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
+                    </div>
+
+                    <div className="max-w-4xl mx-auto px-6 text-center relative z-10">
+                        <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 italic leading-tight !text-white">
+                            Secure Your <br /> {location.name} Perimeter.
+                        </h2>
+                        <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-display leading-relaxed">
+                            Join the elite psychiatric practitioners in {location.name} who have transitioned to the Virtual Minds operational standard.
+                        </p>
+                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
+                            <Link
+                                href="/book-consultation"
+                                className="px-12 py-5 bg-primary text-white font-black text-xl rounded-2xl shadow-2xl hover:scale-105 transition-all hover:bg-primary-hover flex items-center justify-center gap-3"
+                            >
+                                <span className="material-symbols-outlined">calendar_today</span>
+                                Schedule {location.name} Audit
+                            </Link>
+                        </div>
                     </div>
                 </section>
             </main>
+
             <Footer />
-        </div>
+        </div >
     );
 }

@@ -49,7 +49,7 @@
 - **Data Migration**: Historical data transfer
 - **Training Programs**: Staff and VA education
 - **Support Systems**: Ongoing technical assistance
-- **Compliance**: HIPAA and CMIA adherence
+- **Compliance**: HIPAA and California privacy adherence
 
 ## Integration Implementation Framework
 

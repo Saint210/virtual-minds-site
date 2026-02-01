@@ -22,16 +22,30 @@ export default function ConsultingPage() {
                 ]}
             />
             <main className="flex-grow">
-                <section className="bg-[#FAF8F3] w-full px-6 py-16 md:py-24">
-                    <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                        <div className="flex flex-col gap-8">
-                            <div className="flex flex-col gap-6">
-                                <span className="text-primary font-bold tracking-widest text-xs uppercase italic">Strategic Advisory</span>
-                                <h1 className="font-display text-trust-navy text-4xl lg:text-7xl font-black leading-[1.1] tracking-tight">
+                {/* EXECUTIVE CONSULTING HERO */}
+                <section className="relative pt-4 md:pt-6 pb-12 md:pb-16 overflow-hidden bg-[#FAF8F3]">
+                    {/* Immersive Background Tokens */}
+                    <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
+
+                            {/* LEFT: Copy & Authority (60%) */}
+                            <div className="lg:w-[60%] flex flex-col gap-6">
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black mb-4 shadow-sm w-fit">
+                                    <span className="material-symbols-outlined text-primary text-[18px]">strategy</span>
+                                    <span className="tracking-[0.2em] uppercase">Strategic Advisory</span>
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
                                     California Psychiatric <br />
-                                    <span className="text-primary italic">Practice Consulting</span>
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
+                                        Practice Consulting
+                                    </span>
                                 </h1>
-                                <p className="text-lg md:text-xl text-slate-600 max-w-xl leading-relaxed">
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">
                                     Whether you are launching your first private practice or scaling an existing one, our consultants provide California-focused operational guidance for psychiatric practices.
                                 </p>
                             </div>

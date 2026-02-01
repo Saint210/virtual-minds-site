@@ -17,7 +17,7 @@
 - **Backup Security**: Encrypted backup systems
 
 ### 3. California-Specific Requirements
-- **CMIA Compliance**: California Medical Information Act
+- **State Privacy Compliance**: California Medical Privacy Standards
 - **State Privacy Laws**: Additional California protections
 - **Breach Notification**: California-specific timing requirements
 - **Patient Rights**: Enhanced privacy under state law
@@ -96,7 +96,7 @@
 
 ## California Compliance Enhancement
 
-### CMIA Integration
+### State Privacy Integration
 - **Stricter Standards**: California exceeds HIPAA minimums
 - **Patient Consent**: Enhanced consent requirements
 - **Data Minimization**: Only necessary data collection
@@ -182,6 +182,6 @@
 
 ---
 
-**Bottom Line**: HIPAA compliance for virtual assistants in California requires systematic implementation of technical safeguards, comprehensive training, and ongoing monitoring. The combination of federal HIPAA requirements and California's stricter CMIA standards creates a compliance framework that protects both patients and practices while enabling efficient virtual assistance.
+**Bottom Line**: HIPAA compliance for virtual assistants in California requires systematic implementation of technical safeguards, comprehensive training, and ongoing monitoring. The combination of federal HIPAA requirements and California's stricter privacy standards creates a compliance framework that protects both patients and practices while enabling efficient virtual assistance.
 
-*Compliance with HIPAA and CMIA is mandatory for all California psychiatric practices using virtual assistants. Consult legal counsel for specific implementation guidance.*
+*Compliance with HIPAA and California privacy laws is mandatory for all California psychiatric practices using virtual assistants. Consult legal counsel for specific implementation guidance.*

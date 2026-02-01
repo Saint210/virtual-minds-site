@@ -16,7 +16,7 @@
 
 ### 3. California-Specific Compliance Savings
 - **HIPAA Training**: $2,000-5,000/year (included)
-- **CMIA Compliance**: Built into service cost
+- **California Privacy Compliance**: Built into service cost
 - **Medi-Cal Expertise**: No additional consulting fees
 - **Audit Preparation**: Documentation included at no extra charge
 
@@ -106,7 +106,7 @@
 - **Network Access**: California healthcare provider relationships
 
 ### Regulatory Compliance
-- **CMIA Expertise**: California Medical Information Act
+- **Privacy Expertise**: California Medical Privacy Standards
 - **Medi-Cal Mastery**: State insurance program proficiency
 - **Telehealth Regulations**: California-specific telehealth laws
 - **Professional Licensing**: California board requirements understanding
@@ -143,6 +143,6 @@
 
 ---
 
-**Bottom Line**: California psychiatric practices implementing virtual assistants see average ROI of 245% within 6 months, with significant improvements in provider satisfaction, patient care capacity, and regulatory compliance. The combination of cost savings, productivity gains, and risk reduction makes virtual assistance the most strategic investment for 2026 practice growth.
+**Bottom Line**: California psychiatric practices implementing virtual assistants see significant ROI within the first year, with significant improvements in provider satisfaction, patient care capacity, and regulatory compliance. The combination of cost savings, productivity gains, and risk reduction makes virtual assistance the most strategic investment for 2026 practice growth.
 
 *Data sourced from California Medical Board, BLS wage reports, and Virtual Minds client performance metrics (2024-2025).*

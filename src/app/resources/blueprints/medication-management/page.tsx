@@ -1,91 +1,248 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
-    title: "Medication Management Infrastructure for Psychiatrists | Virtual Minds",
-    description: "Elite operational blueprint for automating refills and pharmacy liaison workflows in California psychiatric practices.",
+    title: "Medication Management Infrastructure for Psychiatrists | 2026 Executive Blueprint",
+    description: "Elite operational blueprint for automating refills and pharmacy liaison workflows in California psychiatric practices. Reclaim 10+ hours weekly.",
+    keywords: ["psychiatric medication management", "refill automation", "pharmacy liaison", "psychiatry operations", "EMR refill workflow"],
 };
 
 export default function MedManagementBlueprint() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Resources", href: "/resources" },
-                    { label: "Medication Management" }
-                ]}
-            />
 
-            <main className="flex-grow pb-24">
-                {/* Article Hero */}
-                <section className="bg-gradient-to-br from-[#1E1E1E] to-[#2D2D2D] py-24 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#D2691E]/20 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2"></div>
+            <main className="flex-grow">
+                {/* EXECUTIVE STRATEGIC HERO */}
+                <section className="relative pt-12 md:pt-20 pb-20 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
                     </div>
 
-                    <div className="max-w-4xl mx-auto px-6 relative z-10">
-                        <span className="text-[#D2691E] font-bold uppercase tracking-[0.4em] text-xs mb-6 block">Psychiatric Operations Blueprint #01</span>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold italic mb-8 leading-[1.1] !text-white" style={{ color: 'white' }}>
-                            The Medication Management <br /> & Refill Infrastructure
-                        </h1>
-                        <p className="text-xl text-slate-100 leading-relaxed font-medium italic">
-                            How elite California practices automate the "Refill Vortex" to reclaim 10+ clinical hours weekly without sacrificing safety or control.
-                        </p>
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+
+                            {/* Left Column: Strategic Context (60%) */}
+                            <div className="lg:w-[60%]">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">Medication Infrastructure</span>
+                                </nav>
+
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                    <span className="material-symbols-outlined text-primary text-[16px]">pill</span>
+                                    Strategic Blueprint #01
+                                </div>
+
+                                <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
+                                    The Refill <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                        Infrastructure.
+                                    </span>
+                                </h1>
+
+                                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-xl">
+                                    Automating the "Refill Vortex" to reclaim 10+ clinical hours weekly while hardening patient safety protocols in California practices.
+                                </p>
+
+                                <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
+                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5 w-full sm:w-auto">
+                                        <span className="material-symbols-outlined">network_check</span>
+                                        Audit My Refill Workflow
+                                    </Link>
+                                </div>
+
+                                <div className="flex flex-wrap gap-3">
+                                    <div className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-green-500 text-lg">check_circle</span>
+                                        <span className="text-[11px] font-bold text-trust-navy uppercase tracking-wider">CA Privacy Compliant</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-blue-500 text-lg">analytics</span>
+                                        <span className="text-[11px] font-bold text-trust-navy uppercase tracking-wider">ROI: 12.5 hrs/week</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column: Visual Intel (40%) */}
+                            <div className="lg:w-[40%] group w-full">
+                                <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
+                                    <Image
+                                        src="/images/blueprint-medication.png"
+                                        alt="Psychiatric Medication Management Infrastructure"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
 
-                {/* Content Section */}
-                <div className="max-w-4xl mx-auto px-6 mt-16">
-                    <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-12">
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">The "Refill Vortex" Problem</h2>
-                            <p>
-                                For most psychiatrists, the administration of refills is a constant, low-level drain on clinical energy. Pharmacy calls, prior authorization denials, and patient portal messages create a "vortex" that pulls attention away from complex clinical decision-making.
-                            </p>
-                            <p className="font-serif italic font-medium bg-[#D2691E]/5 p-6 border-l-4 border-[#D2691E] rounded-r-xl">
-                                "If you are handling pharmacy liaising yourself, you aren't just a doctor—you're a high-priced secretary. This administration leakage costs the average solo practitioner over $40,000 in lost billable time annually."
-                            </p>
-                        </section>
+                {/* CORE BLUEPRINT CONTENT */}
+                <section className="py-24 bg-white border-t border-slate-100">
+                    <div className="max-w-[1200px] mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
 
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">The 5-Step Automation Framework</h2>
-                            <div className="grid md:grid-cols-2 gap-8 not-prose">
-                                {[
-                                    { step: "01", title: "Refill Sprints", desc: "Batch refill approvals into a 15-minute daily sprint, rather than handling them ad-hoc between patients." },
-                                    { step: "02", title: "Pharmacy Liaison", desc: "Your VA handles all outbound pharmacy calls, resolving supply issues and basic technical blocks before they reach your desk." },
-                                    { step: "03", title: "Portal Hardening", desc: "Standardize portal response templates to ensure consistency and speed in patient communications." },
-                                    { step: "04", title: "Monitoring Logs", desc: "Audit logs for every refill action to maintain 100% HIPAA and Board of Behavioral Sciences compliance." }
-                                ].map((item, i) => (
-                                    <div key={i} className="bg-white p-8 rounded-[30px] border border-slate-100 shadow-sm">
-                                        <span className="text-4xl font-black text-[#D2691E] opacity-20 block mb-4">{item.step}</span>
-                                        <h4 className="font-bold text-[#2A2A2A] text-lg mb-2">{item.title}</h4>
-                                        <p className="text-sm text-slate-500">{item.desc}</p>
+                            {/* Left Content Area (8 columns) */}
+                            <div className="lg:col-span-8 space-y-20">
+
+                                {/* 1. The Operational Friction */}
+                                <div className="space-y-6">
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The Refill Vortex Problem</h2>
+                                    <div className="prose prose-slate prose-lg max-w-none">
+                                        <p>
+                                            For the high-performance psychiatrist, medication management is often the most significant administrative drain. Pharmacy phone trees, prior authorization denials, and inconsistent patient requests create a fragmented workflow that degrades clinical focus.
+                                        </p>
+                                        <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
+                                            <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
+                                                "If you are handling pharmacy liaising yourself, you aren't just a doctor—you're a high-priced secretary. This administration leakage costs the average solo practitioner over $40,000 in lost billable time annually."
+                                            </p>
+                                            <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Clinical Director, Virtual Minds</cite>
+                                        </blockquote>
                                     </div>
-                                ))}
-                            </div>
-                        </section>
+                                </div>
 
-                        <section className="bg-[#2A2A2A] rounded-[40px] p-10 text-white shadow-2xl relative overflow-hidden">
-                            <div className="relative z-10">
-                                <h2 className="text-3xl font-serif font-bold mb-6 italic text-[#D2691E]">Secure Your Practice</h2>
-                                <p className="text-white/90 mb-8 leading-relaxed">
-                                    Implementing this infrastructure isn't just about speed—it's about clinical safety. We ensure that every VA action is triple-checked and fully logged within your EHR.
-                                </p>
-                                <Link href="/book-consultation" className="inline-flex items-center gap-2 bg-[#D2691E] text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-105 transition-all">
-                                    Request Your Audit <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                </Link>
+                                {/* 2. The 5 Pillars of Refill Infrastructure */}
+                                <div className="space-y-12">
+                                    <h2 className="text-3xl font-display font-bold text-trust-navy">The 5-Step Automation Framework</h2>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        {[
+                                            {
+                                                icon: "batch_prediction",
+                                                title: "Refill Sprints",
+                                                desc: "Eliminate ad-hoc interruptions by batching refill approvals into a 15-minute daily data-sprint managed by your executive VA."
+                                            },
+                                            {
+                                                icon: "support_agent",
+                                                title: "Pharmacy Liaison",
+                                                desc: "VA identifies supply shortages, resolves basic technical blocks, and confirms patient eligibility before the request ever hits your desk."
+                                            },
+                                            {
+                                                icon: "fact_check",
+                                                title: "Prior Auth Autopilot",
+                                                desc: "Implement a triage system where VAs gather clinical documentation and initiate PA requests in your EMR system automatically."
+                                            },
+                                            {
+                                                icon: "mail_lock",
+                                                title: "Portal Hardening",
+                                                desc: "Standardize patient communication templates for dosage questions and refill policies to reduce 'portal ping-pong'."
+                                            },
+                                            {
+                                                icon: "gavel",
+                                                title: "Compliance Audit Logs",
+                                                desc: "Automated logging of every refill action to ensure adherence to California state medical privacy standards."
+                                            }
+                                        ].map((step, idx) => (
+                                            <div key={idx} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group">
+                                                <div className="size-16 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] mb-6 shadow-sm group-hover:bg-[#D2691E] group-hover:text-white transition-all duration-300">
+                                                    <span className="material-symbols-outlined text-3xl">{step.icon}</span>
+                                                </div>
+                                                <h4 className="font-display font-bold text-xl text-trust-navy mb-3">{step.title}</h4>
+                                                <p className="text-slate-500 text-sm leading-relaxed font-medium">{step.desc}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* 3. The Efficiency Table */}
+                                <div className="space-y-8">
+                                    <h2 className="text-3xl font-display font-bold text-trust-navy">Operational Comparison</h2>
+                                    <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-xl bg-white">
+                                        <table className="w-full text-left border-collapse">
+                                            <thead>
+                                                <tr className="bg-slate-50/50 border-b border-slate-100">
+                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Metric</th>
+                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-trust-navy">Solo/Manual</th>
+                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-[#D2691E]">VM Infrastructure</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-100">
+                                                <tr className="group hover:bg-slate-50 transition-colors">
+                                                    <td className="p-8 text-sm font-bold text-trust-navy">Weekly Admin Spend</td>
+                                                    <td className="p-8 text-sm text-slate-500">12 - 15 Hours</td>
+                                                    <td className="p-8">
+                                                        <span className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-black border border-green-100">
+                                                            &lt; 2 Hours
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr className="group hover:bg-slate-50 transition-colors">
+                                                    <td className="p-8 text-sm font-bold text-trust-navy">Refill TAT (Turnaround)</td>
+                                                    <td className="p-8 text-sm text-slate-500">24 - 72 Hours</td>
+                                                    <td className="p-8">
+                                                        <span className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-black border border-green-100">
+                                                            &lt; 4 Hours
+                                                        </span>
+                                                    </td>
+                                                </tr>
+                                                <tr className="group hover:bg-slate-50 transition-colors">
+                                                    <td className="p-8 text-sm font-bold text-trust-navy">Patient Frustration Score</td>
+                                                    <td className="p-8">
+                                                        <span className="inline-flex items-center gap-2 text-red-400 font-bold text-sm">
+                                                            <span className="material-symbols-outlined text-lg">warning</span>
+                                                            High Lag
+                                                        </span>
+                                                    </td>
+                                                    <td className="p-8 text-sm font-bold text-[#D2691E] italic">Negligible</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
                             </div>
-                            <div className="absolute top-0 right-0 opacity-5 translate-x-1/4 -translate-y-1/4">
-                                <span className="material-symbols-outlined text-[300px]">verified_user</span>
+
+                            {/* Right Sidebar (4 columns) */}
+                            <div className="lg:col-span-4 space-y-8">
+                                <div className="sticky top-12 space-y-8">
+
+                                    {/* Strategic Download Card */}
+                                    <div className="bg-trust-navy rounded-[2.5rem] p-10 text-white shadow-2xl relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
+                                        <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Secure Your Refill Channel</h3>
+                                        <p className="text-slate-300 text-sm leading-relaxed mb-8">
+                                            Stop leaking billable hours to pharmacy phone trees. Request an operational audit of your refill pipeline today.
+                                        </p>
+                                        <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
+                                            Request Refill Audit
+                                        </Link>
+                                    </div>
+
+                                    {/* Trust Signals */}
+                                    <div className="bg-white rounded-[2.5rem] p-8 border border-slate-100 shadow-sm space-y-6">
+                                        <h4 className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">Security Parameters</h4>
+                                        <div className="space-y-4">
+                                            {[
+                                                { label: "SOC 2 Type II Infrastructure", icon: "security" },
+                                                { label: "California Privacy Data Ops", icon: "verified" },
+                                                { label: "HIPAA Certified Liaisons", icon: "shield_person" }
+                                            ].map((signal, sidx) => (
+                                                <div key={sidx} className="flex items-center gap-3">
+                                                    <span className="material-symbols-outlined text-trust-navy/40 text-lg">{signal.icon}</span>
+                                                    <span className="text-xs font-bold text-trust-navy">{signal.label}</span>
+                                                </div>
+                                            ))}
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
-                        </section>
+
+                        </div>
                     </div>
-                </div>
+                </section>
+
             </main>
+
             <Footer />
         </div>
     );

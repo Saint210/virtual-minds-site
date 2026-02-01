@@ -4,8 +4,8 @@ import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "CMIA Compliant Virtual Assistants for California Psychiatrists | Virtual Minds",
-    description: "California's leading CMIA and HIPAA compliant virtual assistants for psychiatric practices. Specialized in Medi-Cal billing, telehealth regulations, and state-specific compliance.",
+    title: "California Privacy Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
+    description: "California's leading privacy and HIPAA compliant virtual assistants for psychiatric practices. Specialized in Medi-Cal billing, telehealth regulations, and state-specific compliance.",
 };
 
 export default function CaliforniaCompliancePage() {
@@ -18,18 +18,18 @@ export default function CaliforniaCompliancePage() {
                     <div className="max-w-7xl mx-auto">
                         <div className="absolute top-4 right-4">
                             <span className="bg-blue-600 text-white text-[10px] font-black px-2 py-1 rounded flex items-center gap-1 animate-pulse shadow-sm">
-                                <span className="material-symbols-outlined text-[12px]">verified</span> CMIA SPECIALISTS
+                                <span className="material-symbols-outlined text-[12px]">verified</span> PRIVACY SPECIALISTS
                             </span>
                         </div>
                         <div className="flex flex-col md:flex-row justify-between items-start md:items-center gap-6">
                             <div className="max-w-2xl">
                                 <h1 className="text-4xl md:text-5xl font-serif font-bold text-navy dark:text-white leading-tight mb-4">
-                                    CMIA Compliant Virtual Assistants
+                                    California Privacy Compliant Virtual Assistants
                                     <br />
                                     <span className="text-terracotta">California Psychiatric Practices</span>
                                 </h1>
                                 <p className="text-lg text-slate-600 dark:text-slate-300 font-display">
-                                    California's only virtual assistant service specializing in CMIA compliance, Medi-Cal billing, and state-specific psychiatric regulations. Protect your practice while serving industry leaders, public figures, and families who rely on exceptional care.
+                                    Specialized virtual assistant services focused on California privacy standards, Medi-Cal billing, and state-specific psychiatric regulations. Protect your practice while serving industry leaders, public figures, and families who rely on exceptional care.
                                 </p>
                             </div>
                             <div className="flex flex-col gap-3">
@@ -49,10 +49,10 @@ export default function CaliforniaCompliancePage() {
                         <div className="bg-white dark:bg-slate-900 p-6 rounded-xl border border-cream dark:border-slate-800 shadow-sm">
                             <div className="flex items-center gap-3 mb-4">
                                 <span className="material-symbols-outlined text-terracotta text-2xl">gavel</span>
-                                <h3 className="font-bold text-navy dark:text-white">CMIA Compliance</h3>
+                                <h3 className="font-bold text-navy dark:text-white">California Privacy</h3>
                             </div>
                             <p className="text-slate-600 dark:text-slate-300 text-sm">
-                                Full California Medical Information Act compliance training, including patient privacy, data sharing restrictions, and state-specific documentation requirements.
+                                Full California medical privacy training, including patient confidentiality, data sharing restrictions, and state-specific documentation requirements.
                             </p>
                         </div>
 
@@ -92,7 +92,7 @@ export default function CaliforniaCompliancePage() {
                                 <h3 className="font-bold text-navy dark:text-white">BAA Coverage</h3>
                             </div>
                             <p className="text-slate-600 dark:text-slate-300 text-sm">
-                                Comprehensive Business Associate Agreements covering all California psychiatric compliance requirements, including CMIA and HIPAA.
+                                Comprehensive Business Associate Agreements covering all California psychiatric compliance requirements, including HIPAA and state privacy laws.
                             </p>
                         </div>
 
@@ -118,7 +118,7 @@ export default function CaliforniaCompliancePage() {
                                 <ul className="space-y-3">
                                     <li className="flex items-start gap-2">
                                         <span className="material-symbols-outlined text-terracotta text-sm mt-1">check_circle</span>
-                                        <span className="text-slate-600 dark:text-slate-300">CMIA privacy protections stricter than HIPAA</span>
+                                        <span className="text-slate-600 dark:text-slate-300">California privacy protections stricter than HIPAA</span>
                                     </li>
                                     <li className="flex items-start gap-2">
                                         <span className="material-symbols-outlined text-terracotta text-sm mt-1">check_circle</span>
@@ -166,7 +166,7 @@ export default function CaliforniaCompliancePage() {
                             Protect Your Practice with California Compliance Experts
                         </h2>
                         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                            Don't risk non-compliance with California's complex psychiatric regulations. Our virtual assistants are trained specifically for CMIA, Medi-Cal, and state-specific requirements.
+                            Don't risk non-compliance with California's complex psychiatric regulations. Our virtual assistants are trained specifically for California privacy, Medi-Cal, and state-specific requirements.
                         </p>
                         <Link href="/book-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-terracotta rounded-lg font-black hover:scale-105 transition-all shadow-lg">
                             <span className="material-symbols-outlined">calendar_today</span>

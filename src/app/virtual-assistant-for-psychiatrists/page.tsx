@@ -16,7 +16,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
     return (
         <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
-            <Breadcrumbs 
+            <Breadcrumbs
                 items={[
                     { label: "Home", href: "/" },
                     { label: "Psychiatrist VA" }
@@ -28,123 +28,123 @@ export default function VirtualAssistantForPsychiatristsPage() {
                     {/* Clean Background */}
                     <div className="absolute inset-0 bg-white">
                     </div>
-                    
+
                     <div className="relative z-10 max-w-[1200px] mx-auto px-6 py-12">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    {/* Left Content - Mobile First */}
-                    <div className="flex flex-col gap-6 text-center lg:text-left">
-                        {/* Trust Badge */}
-                        <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium">
-                            <span className="material-symbols-outlined text-primary">emergency</span>
-                            <span>Los Angeles-Based Practice Recovery Specialists</span>
-                        </div>
+                        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                            {/* Left Content - Mobile First */}
+                            <div className="flex flex-col gap-6 text-center lg:text-left">
+                                {/* Trust Badge */}
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium">
+                                    <span className="material-symbols-outlined text-primary">emergency</span>
+                                    <span>Los Angeles-Based Practice Recovery Specialists</span>
+                                </div>
 
-                        {/* Main Headline */}
-                        <div className="space-y-3">
-                            <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] text-trust-navy">
-                                Los Angeles Psychiatric VAs
-                                <br />
-                                <span className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
-                                    Rescue & Recover Your Practice
-                                </span>
-                            </h1>
-                            
-                            {/* Value Proposition */}
-                            <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-lg">
-                                When business transitions create administrative gaps, our Los Angeles-based practice recovery specialists eliminate burnout and restore stability. Trained in 
-                                <span className="text-primary font-bold"> emergency response</span>, 
-                                <span className="text-primary font-bold"> HIPAA compliance</span>, and 
-                                <span className="text-primary font-bold"> California telehealth</span>
-                            </p>
-                        </div>
+                                {/* Main Headline */}
+                                <div className="space-y-3">
+                                    <h1 className="text-3xl md:text-4xl lg:text-5xl font-black leading-[1.1] text-trust-navy">
+                                        Los Angeles Psychiatric VAs
+                                        <br />
+                                        <span className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
+                                            Rescue & Recover Your Practice
+                                        </span>
+                                    </h1>
 
-                        {/* Interactive Metrics */}
-                        <div className="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
-                            <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
-                                <div className="text-xl md:text-2xl font-black text-primary mb-1">Same Day</div>
-                                <div className="text-trust-navy text-xs font-medium">Rapid Deployment</div>
-                            </div>
-                            <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
-                                <div className="text-xl md:text-2xl font-black text-primary mb-1">100%</div>
-                                <div className="text-trust-navy text-xs font-medium">Crisis Resolution</div>
-                            </div>
-                            <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
-                                <div className="text-xl md:text-2xl font-black text-primary mb-1">0</div>
-                                <div className="text-trust-navy text-xs font-medium">Days Downtime</div>
-                            </div>
-                        </div>
+                                    {/* Value Proposition */}
+                                    <p className="text-base md:text-lg text-slate-600 leading-relaxed max-w-lg">
+                                        When business transitions create administrative gaps, our Los Angeles-based practice recovery specialists eliminate burnout and restore stability. Trained in
+                                        <span className="text-primary font-bold"> emergency response</span>,
+                                        <span className="text-primary font-bold"> HIPAA compliance</span>, and
+                                        <span className="text-primary font-bold"> California telehealth</span>
+                                    </p>
+                                </div>
 
-                        {/* Modern CTA */}
-                        <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
-                            <Link
-                                href="/book-consultation"
-                                className="group relative overflow-hidden bg-primary hover:bg-[#C19F30] text-white px-6 py-3 rounded-xl font-bold text-base transition-all hover:scale-105 shadow-xl shadow-black/20"
-                            >
-                                <span className="relative z-10 flex items-center gap-2">
-                                    <span className="material-symbols-outlined">calendar_today</span>
-                                    Book Free Strategy Call
-                                </span>
-                                <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform"></div>
-                            </Link>
-                            
-                            <button className="group border-2 border-primary text-primary px-6 py-3 rounded-xl font-bold text-base hover:bg-primary/5 transition-colors">
-                                <span className="flex items-center gap-2">
-                                    <span className="material-symbols-outlined">calculate</span>
-                                    Calculate Your ROI
-                                </span>
-                            </button>
-                        </div>
+                                {/* Interactive Metrics */}
+                                <div className="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
+                                    <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
+                                        <div className="text-xl md:text-2xl font-black text-primary mb-1">Same Day</div>
+                                        <div className="text-trust-navy text-xs font-medium">Rapid Deployment</div>
+                                    </div>
+                                    <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
+                                        <div className="text-xl md:text-2xl font-black text-primary mb-1">100%</div>
+                                        <div className="text-trust-navy text-xs font-medium">Crisis Resolution</div>
+                                    </div>
+                                    <div className="bg-primary/10 border border-primary/20 rounded-xl p-3 hover:bg-primary/20 transition-all">
+                                        <div className="text-xl md:text-2xl font-black text-primary mb-1">0</div>
+                                        <div className="text-trust-navy text-xs font-medium">Days Downtime</div>
+                                    </div>
+                                </div>
 
-                        {/* Urgency & Social Proof */}
-                        <div className="space-y-3">
-                            <div className="flex items-center justify-center lg:justify-start gap-2 text-slate-500 text-sm">
-                                <span className="material-symbols-outlined text-primary">emergency</span>
-                                <span>Rapid deployment for practice transitions, compliance emergencies, and launch crises</span>
+                                {/* Modern CTA */}
+                                <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                                    <Link
+                                        href="/book-consultation"
+                                        className="group relative overflow-hidden bg-primary hover:bg-[#C19F30] text-white px-6 py-3 rounded-xl font-bold text-base transition-all hover:scale-105 shadow-xl shadow-black/20"
+                                    >
+                                        <span className="relative z-10 flex items-center gap-2">
+                                            <span className="material-symbols-outlined">calendar_today</span>
+                                            Book Free Strategy Call
+                                        </span>
+                                        <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform"></div>
+                                    </Link>
+
+                                    <button className="group border-2 border-primary text-primary px-6 py-3 rounded-xl font-bold text-base hover:bg-primary/5 transition-colors">
+                                        <span className="flex items-center gap-2">
+                                            <span className="material-symbols-outlined">calculate</span>
+                                            Calculate Your ROI
+                                        </span>
+                                    </button>
+                                </div>
+
+                                {/* Urgency & Social Proof */}
+                                <div className="space-y-3">
+                                    <div className="flex items-center justify-center lg:justify-start gap-2 text-slate-500 text-sm">
+                                        <span className="material-symbols-outlined text-primary">emergency</span>
+                                        <span>Rapid deployment for practice transitions, compliance emergencies, and launch crises</span>
+                                    </div>
+
+                                    <div className="bg-primary/5 border border-primary/10 rounded-xl p-3 max-w-md mx-auto lg:mx-0">
+                                        <p className="text-slate-700 text-xs italic">
+                                            Whether facing sudden administrative gaps, compliance deadlines, or practice launch challenges, our Los Angeles-based team provides immediate support to prevent practice disruption.
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <div className="bg-primary/5 border border-primary/10 rounded-xl p-3 max-w-md mx-auto lg:mx-0">
-                                <p className="text-slate-700 text-xs italic">
-                                    Whether facing sudden administrative gaps, compliance deadlines, or practice launch challenges, our Los Angeles-based team provides immediate support to prevent practice disruption.
-                                </p>
+
+                            {/* Right Content - Modern Visual */}
+                            <div className="relative">
+                                {/* Main Image with Glassmorphism */}
+                                <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20">
+                                    <div className="flex items-center justify-center h-full">
+                                        <div className="text-center text-trust-navy p-6">
+                                            <span className="material-symbols-outlined text-5xl text-primary mb-3">location_on</span>
+                                            <h3 className="text-xl font-bold mb-2">Serving California</h3>
+                                            <p className="text-sm">Rapid deployment across all California markets for psychiatric practices</p>
+                                        </div>
+                                    </div>
+                                    <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
+                                </div>
+
+                                {/* Floating LA Badge */}
+                                <div className="absolute -bottom-4 -right-4 bg-primary/10 border border-primary/20 rounded-xl p-4 shadow-xl max-w-[180px] hover:bg-primary/20 transition-all">
+                                    <div className="text-center">
+                                        <p className="text-2xl font-display font-bold text-primary mb-1">LA</p>
+                                        <p className="text-xs font-bold uppercase tracking-widest text-trust-navy">Based</p>
+                                    </div>
+                                </div>
+
+                                {/* Floating Trust Indicators */}
+                                <div className="absolute top-4 -left-4 bg-primary/10 border border-primary/20 rounded-xl p-3 shadow-xl hover:bg-primary/20 transition-all">
+                                    <div className="flex items-center gap-2">
+                                        <span className="material-symbols-outlined text-primary">security</span>
+                                        <div>
+                                            <p className="text-xs font-bold text-trust-navy">HIPAA</p>
+                                            <p className="text-xs text-slate-600">Certified</p>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-
-                    {/* Right Content - Modern Visual */}
-                    <div className="relative">
-                        {/* Main Image with Glassmorphism */}
-                        <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-primary/20">
-                            <div className="flex items-center justify-center h-full">
-                                <div className="text-center text-trust-navy p-6">
-                                    <span className="material-symbols-outlined text-5xl text-primary mb-3">location_on</span>
-                                    <h3 className="text-xl font-bold mb-2">Serving California</h3>
-                                    <p className="text-sm">Rapid deployment across all California markets for psychiatric practices</p>
-                                </div>
-                            </div>
-                            <div className="absolute inset-0 bg-gradient-to-t from-primary/10 to-transparent"></div>
-                        </div>
-                        
-                        {/* Floating LA Badge */}
-                        <div className="absolute -bottom-4 -right-4 bg-primary/10 border border-primary/20 rounded-xl p-4 shadow-xl max-w-[180px] hover:bg-primary/20 transition-all">
-                            <div className="text-center">
-                                <p className="text-2xl font-display font-bold text-primary mb-1">LA</p>
-                                <p className="text-xs font-bold uppercase tracking-widest text-trust-navy">Based</p>
-                            </div>
-                        </div>
-
-                        {/* Floating Trust Indicators */}
-                        <div className="absolute top-4 -left-4 bg-primary/10 border border-primary/20 rounded-xl p-3 shadow-xl hover:bg-primary/20 transition-all">
-                            <div className="flex items-center gap-2">
-                                <span className="material-symbols-outlined text-primary">security</span>
-                                <div>
-                                    <p className="text-xs font-bold text-trust-navy">HIPAA</p>
-                                    <p className="text-xs text-slate-600">Certified</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
                 </section>
 
                 {/* Location Images Grid */}
@@ -161,14 +161,14 @@ export default function VirtualAssistantForPsychiatristsPage() {
                             </p>
                             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-8"></div>
                         </div>
-                        
+
                         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6 lg:gap-8 justify-items-center">
                             {/* Downtown LA */}
                             <div className="group relative w-full max-w-[200px]">
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Downtown-LA-Hero-1024x640.jpg"
+                                            src="/luxury_psychiatry_office_interior_1.png"
                                             alt="Los Angeles downtown psychiatric virtual assistant services addiction and women's reproductive mental health treatments"
                                             title="Downtown Los Angeles - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -195,7 +195,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Santa-Monica-Hero-1024x640.jpg"
+                                            src="/modern_medical_reception_california_2.png"
                                             alt="Santa Monica depression and anxiety treatment psychiatric virtual assistant services"
                                             title="Santa Monica - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -222,7 +222,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2019/07/HERMOSA-1024x640.jpg"
+                                            src="/professional_consultation_room_3.png"
                                             alt="Hermosa Beach mental health treatments psychiatric virtual assistant services"
                                             title="Hermosa Beach - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -249,7 +249,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Marina-Del-Rey-Hero-1024x640.jpg"
+                                            src="/luxury_psychiatry_office_interior_1.png"
                                             alt="Marina Del Rey mood disorders and ADHD treatment psychiatric virtual assistant services"
                                             title="Marina Del Rey - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -276,7 +276,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Echo-Park-Hero-1024x640.jpg"
+                                            src="/modern_medical_reception_california_2.png"
                                             alt="Echo Park Los Angeles psychiatric virtual assistant services"
                                             title="Echo Park - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -303,7 +303,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Santa-Barbara-Hero-1024x640.jpg"
+                                            src="/professional_consultation_room_3.png"
                                             alt="santa-barbara-at-dusk coastal mental health"
                                             title="Santa Barbara - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -330,7 +330,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2023/04/Palo-Alto-Hero-1024x640.jpg"
+                                            src="/luxury_psychiatry_office_interior_1.png"
                                             alt="silicon valley psychiatry services palo alto"
                                             title="Palo Alto - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -357,7 +357,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2021/09/san-francisco-3-1024x640.jpg"
+                                            src="/modern_medical_reception_california_2.png"
                                             alt="bay area psychiatry services san francisco"
                                             title="San Francisco - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -384,7 +384,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2022/07/Del-Mar-Hero-1024x640.jpg"
+                                            src="/professional_consultation_room_3.png"
                                             alt="coastal mental wellness services del mar california"
                                             title="Del Mar - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -411,7 +411,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2022/07/La-Jolla-Hero-1024x640.jpg"
+                                            src="/luxury_psychiatry_office_interior_1.png"
                                             alt="be city psychiatry services la jolla california"
                                             title="La Jolla - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -438,7 +438,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <div className="bg-white/95 backdrop-blur-md border border-primary/20 rounded-xl overflow-hidden hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg w-full">
                                     <div className="aspect-[4/3] w-full overflow-hidden relative">
                                         <img
-                                            src="https://web.archive.org/web/20230622001034im_/https://calpsychiatry.com/wp-content/uploads/2022/07/Orange-County-Hero-1024x640.jpg"
+                                            src="/modern_medical_reception_california_2.png"
                                             alt="community mental health services orange county california"
                                             title="Orange County - Virtual Minds Psychiatric Services"
                                             className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
@@ -478,7 +478,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                         <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
                         <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse delay-500"></div>
                     </div>
-                    
+
                     <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                         <div className="bg-white/90 backdrop-blur-md border border-slate-200 rounded-3xl p-12 md:p-20 text-center shadow-xl">
                             {/* Section Header */}
@@ -486,7 +486,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                                 <span className="material-symbols-outlined text-primary">emergency</span>
                                 <span>Ready to Rescue & Recover</span>
                             </div>
-                            
+
                             <h2 className="!text-trust-navy text-4xl md:text-6xl font-black mb-6 leading-tight">
                                 Facing Practice Transition Crisis?
                             </h2>
@@ -494,7 +494,7 @@ export default function VirtualAssistantForPsychiatristsPage() {
                             <p className="text-slate-600 text-xl md:text-2xl mb-12 max-w-2xl mx-auto font-sans leading-relaxed">
                                 When administrative support undergoes unexpected transitions, compliance deadlines loom, or practice launches stall, our Los Angeles-based rapid deployment team restores stability and prevents practice collapse.
                             </p>
-                            
+
                             <div className="flex flex-col sm:flex-row gap-6 justify-center">
                                 <Link
                                     href="/book-consultation"

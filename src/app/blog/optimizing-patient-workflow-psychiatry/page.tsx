@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 
 export const metadata = {
@@ -70,28 +69,69 @@ const steps = [
     },
 ];
 
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
+
 export default function PatientWorkflowOptimization() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Blog", href: "/blog" },
-                    { label: "Patient Workflow Optimization" }
-                ]}
-            />
 
             <main className="flex-grow">
-                <section className="bg-[#FAF8F3] py-20">
-                    <div className="max-w-[1200px] mx-auto px-6 text-center">
-                        <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-trust-navy mb-6">
-                            Optimizing Patient Workflow in Psychiatry
-                        </h1>
-                        <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-                        <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-                            Create a seamless experience for your patients while reducing the administrative load on your team.
-                        </p>
+                {/* EXECUTIVE BRIEFING HERO */}
+                <section className="relative pt-8 md:pt-12 pb-16 overflow-hidden">
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="max-w-4xl">
+                            {/* Breadcrumbs Integrated */}
+                            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <Link href="/blog" className="hover:text-primary transition-colors">Intelligence</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <span className="text-trust-navy">Workflow Optimization</span>
+                            </nav>
+
+                            {/* Strategic Briefing Badge */}
+                            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                <span className="material-symbols-outlined text-primary text-[16px]">patient_list</span>
+                                2026 Patient Experience Series
+                            </div>
+
+                            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                Optimizing Patient <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    Workflow In Psychiatry.
+                                </span>
+                            </h1>
+
+                            <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-12 max-w-2xl">
+                                Standardizing the patient journey from digital intake to follow-up loops to maximize therapeutic alliance and practice efficiency.
+                            </p>
+
+                            {/* PRACTICE ECONOMICS BRIEFING BAR */}
+                            <div className="flex flex-wrap items-center gap-x-12 gap-y-8 py-10 border-y border-slate-200/60">
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Strategy Pillar</p>
+                                    <p className="text-xl font-bold text-trust-navy">Patient Journey</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Growth Multiplier</p>
+                                    <p className="text-xl font-bold text-trust-navy">Treatment Adherence</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Administrative Logic</p>
+                                    <div className="flex items-center gap-2">
+                                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                        <p className="text-xl font-bold text-trust-navy italic">Flow Optimization</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
 
@@ -100,23 +140,51 @@ export default function PatientWorkflowOptimization() {
                         <div className="flex gap-12">
                             <div className="flex-1 min-w-0">
                                 <article className="prose prose-lg prose-slate max-w-none">
-                                    <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
-                                        <Image
-                                            src="/images/hero-new.png"
-                                            alt="Optimizing Patient Workflow in Psychiatry"
-                                            width={800}
-                                            height={300}
-                                            className="w-full h-auto object-cover"
-                                        />
-                                    </div>
+                                    <KeyTakeaways
+                                        takeaways={[
+                                            {
+                                                point: "Seamless Intake",
+                                                detail: "Replace PDF attachments with secure, mobile-friendly digital forms that sync directly to your EHR."
+                                            },
+                                            {
+                                                point: "Automated Reminders",
+                                                detail: "Reduce no-show rates by 30% with multi-channel appointment and refill reminder sequences."
+                                            },
+                                            {
+                                                point: "Therapeutic Alliance",
+                                                detail: "Standardize administrative touchpoints to allow more focus on patient connection during the session."
+                                            },
+                                            {
+                                                point: "Feedback Loops",
+                                                detail: "Trigger automated clinical outcome measures (PHQ-9/GAD-7) to demonstrate treatment efficacy."
+                                            }
+                                        ]}
+                                    />
+                                    {/* STRATEGIC BRIEFING INTRODUCTION (60/40) */}
+                                    <div className="flex flex-col lg:flex-row gap-12 my-16 items-start">
+                                        <div className="lg:w-[60%] order-2 lg:order-1">
+                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Why Workflow Optimization Matters</h2>
+                                            <p className="text-xl text-slate-600 font-display leading-relaxed mb-6">
+                                                A &quot;patient workflow&quot; encompasses every interaction a patient has with your practice, from the moment they land on your website to their ongoing treatment plan. When this workflow is disjointed, patients feel neglected and staff feel overwhelmed.
+                                            </p>
+                                            <p className="text-slate-600 leading-relaxed mb-0">
+                                                Optimization isn&apos;t just about speed; it&apos;s about <strong>clarity and consistency</strong>. By standardizing these steps, you minimize errors and maximize the therapeutic alliance. This is a key component of <Link href="/blog/implementing-efficiency-models-mental-health" className="text-primary hover:underline font-bold">implementing efficiency models</Link> in your clinic.
+                                            </p>
+                                        </div>
 
-                                    <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Why Workflow Optimization Matters</h2>
-                                    <p className="mb-6">
-                                        A "patient workflow" encompasses every interaction a patient has with your practice, from the moment they land on your website to their ongoing treatment plan. When this workflow is disjointed, patients feel neglected and staff feel overwhelmed.
-                                    </p>
-                                    <p className="mb-8">
-                                        Optimization isn't just about speed; it's about <strong>clarity and consistency</strong>. By standardizing these steps, you minimize errors and maximize the therapeutic alliance. This is a key component of <Link href="/blog/implementing-efficiency-models-mental-health" className="text-primary hover:underline">implementing efficiency models</Link> in your clinic.
-                                    </p>
+                                        <div className="lg:w-[40%] order-1 lg:order-2 group w-full">
+                                            <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-xl aspect-[4/5] bg-slate-50">
+                                                <Image
+                                                    src="/images/visual-intel-workflow.png"
+                                                    alt="Optimizing Patient Workflow in Psychiatry"
+                                                    fill
+                                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    priority
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/20 via-transparent to-transparent pointer-events-none" />
+                                            </div>
+                                        </div>
+                                    </div>
 
                                     <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 mb-12">
                                         <h3 className="text-2xl font-bold text-trust-navy mb-4">The Golden Rule of Workflow</h3>

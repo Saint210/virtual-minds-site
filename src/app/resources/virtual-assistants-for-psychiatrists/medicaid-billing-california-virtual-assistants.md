@@ -93,7 +93,7 @@
 ### Training and Certification
 - **Medi-Cal Basics**: State program fundamentals
 - **Billing Codes**: CPT and ICD-10 proficiency
-- **Compliance Standards**: HIPAA and CMIA requirements
+- **Compliance Standards**: HIPAA and California privacy requirements
 - **System Training**: Software and platform education
 - **Quality Metrics**: Performance measurement understanding
 
@@ -212,7 +212,7 @@
 - **Challenge**: New practice, limited billing experience
 - **Solution**: VA billing and compliance management
 - **Results**: 100% compliance, rapid practice growth
-- **Timeline**: 6-week setup and training
+- **Timeline**: Streamlined setup and training
 
 ## Next Steps
 

@@ -1,36 +1,36 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #D2691E;
-  --color-primary-hover: #B8860B;
-  --color-accent: #DAA520;
-  --color-secondary: #9CAF88;
+  --color-primary: #B25A2A;
+  --color-primary-hover: #964A22;
+  --color-accent: #67927A;
+  --color-secondary: #2D3E35;
   --color-cream: #FAF8F3;
-  --color-soft-brown: #4A4A4A;
-  --color-trust-navy: #4A4A4A;
-  --color-calm-sage: #9CAF88;
-  --color-medical-gray: #FAF8F3;
-  --color-clinical-green: #9CAF88;
+  --color-soft-brown: #2A2A2A;
+  --color-trust-navy: #1A2332;
+  --color-calm-sage: #67927A;
+  --color-medical-gray: #F1F5F9;
+  --color-clinical-teal: #67927A;
 
   /* HTML Design Colors */
   --color-terracotta: #B25A2A;
   --color-sage: #67927A;
-  --color-cream-html: #F4EBD0;
-  --color-navy: #2D3E35;
+  --color-cream-html: #FAF8F3;
+  --color-navy: #1A2332;
 
   /* Premium Design System Colors */
   --color-gold: #D4AF37;
-  --color-navy-900: #1a2332;
-  --color-slate-900: #0f172a;
-  --color-cream: #FAF8F3;
+  --color-navy-900: #1A2332;
+  --color-slate-900: #0F172A;
 
-  --font-display: "Lora", serif;
-  --font-sans: "Inter", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Outfit", sans-serif;
+  --font-sans: "Manrope", sans-serif;
 }
 
 :root {
   --background: #FAF8F3;
-  --foreground: #4A4A4A;
+  --foreground: #2A2A2A;
 }
 
 @theme inline {
@@ -42,6 +42,10 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-sans);
+  font-weight: 500;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 h1,
@@ -51,7 +55,10 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
-  color: var(--color-soft-brown);
+  color: var(--color-trust-navy);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
 }
 
 /* Material Symbols Setup */

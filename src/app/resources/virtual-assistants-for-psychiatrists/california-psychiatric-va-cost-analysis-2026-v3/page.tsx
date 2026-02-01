@@ -35,7 +35,7 @@ export default function CostAnalysisPageV3() {
                                     <span className="text-slate-600 text-sm">12 min read</span>
                                 </div>
                                 <h1 className="text-5xl lg:text-6xl font-display font-bold leading-tight text-trust-navy mb-6">
-                                    California Psychiatric<br/>VA Cost Analysis 2026
+                                    California Psychiatric<br />VA Cost Analysis 2026
                                 </h1>
                                 <p className="text-xl text-slate-600 mb-8">
                                     7 critical cost factors, ROI calculations, and hidden savings for California psychiatry practices implementing virtual assistants.
@@ -74,10 +74,10 @@ export default function CostAnalysisPageV3() {
                 {/* Article Content - Version 3: Card-Based & Interactive */}
                 <section className="max-w-[1280px] mx-auto px-6 lg:px-10 py-16">
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                        
+
                         {/* Main Content */}
                         <div className="lg:col-span-2 space-y-12">
-                            
+
                             {/* 7 Critical Cost Factors */}
                             <div>
                                 <h2 className="text-3xl font-bold text-trust-navy mb-8 flex items-center gap-3">
@@ -86,7 +86,7 @@ export default function CostAnalysisPageV3() {
                                     </span>
                                     7 Critical Cost Factors
                                 </h2>
-                                
+
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
                                         <div className="flex items-center gap-3 mb-4">
@@ -147,7 +147,7 @@ export default function CostAnalysisPageV3() {
                                                 <span className="text-green-600 font-bold">Included</span>
                                             </div>
                                             <div className="flex justify-between">
-                                                <span>CMIA Compliance</span>
+                                                <span>State Privacy Compliance</span>
                                                 <span className="text-green-600 font-bold">Built-in</span>
                                             </div>
                                             <div className="flex justify-between">
@@ -190,7 +190,7 @@ export default function CostAnalysisPageV3() {
                                     </span>
                                     ROI Framework
                                 </h2>
-                                
+
                                 <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div className="text-center">
@@ -225,7 +225,7 @@ export default function CostAnalysisPageV3() {
                                     </span>
                                     Transparent Pricing Tiers
                                 </h2>
-                                
+
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                                     <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100 hover:shadow-xl transition-shadow">
                                         <h3 className="font-bold text-trust-navy text-lg mb-4">Starter</h3>
@@ -308,7 +308,7 @@ export default function CostAnalysisPageV3() {
                         {/* Sidebar */}
                         <div className="lg:col-span-1">
                             <div className="sticky top-28 space-y-8">
-                                
+
                                 {/* Quick Stats */}
                                 <div className="bg-white rounded-2xl p-6 shadow-lg border border-slate-100">
                                     <h3 className="font-bold text-trust-navy text-lg mb-4">Quick Stats</h3>

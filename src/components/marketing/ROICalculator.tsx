@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export default function ROICalculator() {
     const [adminHours, setAdminHours] = useState(20);
-    const [hourlyRate, setHourlyRate] = useState(150);
+    const [hourlyRate, setHourlyRate] = useState(400);
     const [errorRate, setErrorRate] = useState(5);
     const [monthlyRevenue, setMonthlyRevenue] = useState(50000);
     const [priorAuthHours, setPriorAuthHours] = useState(5);
@@ -36,7 +36,7 @@ export default function ROICalculator() {
                 <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse delay-500"></div>
             </div>
-            
+
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -60,7 +60,7 @@ export default function ROICalculator() {
                             <span className="material-symbols-outlined text-primary">business</span>
                             Practice Information
                         </h3>
-                        
+
                         <div className="space-y-6">
                             <div className="group">
                                 <label className="block text-sm font-semibold text-trust-navy mb-2 flex items-center gap-2">
@@ -109,17 +109,17 @@ export default function ROICalculator() {
                                 </label>
                                 <input
                                     type="range"
-                                    min="50"
-                                    max="300"
-                                    step="10"
+                                    min="150"
+                                    max="600"
+                                    step="25"
                                     value={hourlyRate}
                                     onChange={(e) => setHourlyRate(Number(e.target.value))}
                                     className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
                                 />
                                 <div className="flex justify-between text-xs md:text-sm text-slate-600">
-                                    <span>$50</span>
+                                    <span>$150</span>
                                     <span className="font-bold text-primary bg-primary/10 px-2 py-1 rounded">${hourlyRate}</span>
-                                    <span>$300</span>
+                                    <span>$600</span>
                                 </div>
                             </div>
 
@@ -150,17 +150,17 @@ export default function ROICalculator() {
                                 </label>
                                 <input
                                     type="range"
-                                    min="10000"
-                                    max="200000"
+                                    min="20000"
+                                    max="500000"
                                     step="5000"
                                     value={monthlyRevenue}
                                     onChange={(e) => setMonthlyRevenue(Number(e.target.value))}
                                     className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer slider"
                                 />
                                 <div className="flex justify-between text-xs md:text-sm text-slate-600">
-                                    <span>$10k</span>
-                                    <span className="font-bold text-primary bg-primary/10 px-2 py-1 rounded">${(monthlyRevenue/1000).toFixed(0)}k</span>
-                                    <span>$200k</span>
+                                    <span>$20k</span>
+                                    <span className="font-bold text-primary bg-primary/10 px-2 py-1 rounded">${(monthlyRevenue / 1000).toFixed(0)}k</span>
+                                    <span>$500k</span>
                                 </div>
                             </div>
                         </div>

@@ -8,7 +8,7 @@ export default function Expertise() {
         },
         {
             icon: "verified_user",
-            title: "CMIA Trained",
+            title: "California Privacy",
             description: "California-specific medical privacy law expertise for psychiatric practices",
             level: "Specialized"
         },
@@ -34,7 +34,7 @@ export default function Expertise() {
             duration: "Week 1"
         },
         {
-            step: "02", 
+            step: "02",
             title: "Custom Matching",
             description: "We match you with a psychiatric-trained VA specialized in your practice type and EHR platform",
             duration: "Week 2"
@@ -85,7 +85,7 @@ export default function Expertise() {
                 <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse delay-500"></div>
             </div>
-            
+
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -116,7 +116,7 @@ export default function Expertise() {
                                     </span>
                                 </div>
                                 <h3 className="font-bold text-trust-navy mb-2">{cert.title}</h3>
-                                <p className="text-sm text-slate-600 leading-relaxed">{cert.description}</p>
+                                <p className="text-base text-slate-600 leading-relaxed">{cert.description}</p>
                             </div>
                             {/* Hover Glow */}
                             <div className="absolute -inset-1 bg-primary/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -143,7 +143,7 @@ export default function Expertise() {
                                         </span>
                                     </div>
                                     <h4 className="font-bold text-trust-navy mb-2">{step.title}</h4>
-                                    <p className="text-sm text-slate-600 leading-relaxed">{step.description}</p>
+                                    <p className="text-base text-slate-600 leading-relaxed">{step.description}</p>
                                 </div>
                                 {/* Connector Line */}
                                 {index < processSteps.length - 1 && (
@@ -169,7 +169,7 @@ export default function Expertise() {
                                     <span className="material-symbols-outlined text-primary text-xl">{point.icon}</span>
                                     <h4 className="font-bold text-trust-navy text-sm">{point.title}</h4>
                                 </div>
-                                <p className="text-xs text-slate-600 leading-relaxed">{point.description}</p>
+                                <p className="text-sm text-slate-600 leading-relaxed">{point.description}</p>
                             </div>
                         ))}
                     </div>

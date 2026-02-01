@@ -10,17 +10,17 @@ export default function NotFound() {
         <div className="max-w-[600px] mx-auto px-6 text-center">
           {/* 404 Number */}
           <div className="text-8xl md:text-9xl font-black text-[#D2691E] mb-8">404</div>
-          
+
           {/* Error Message */}
-          <h1 className="text-3xl md:text-4xl font-bold text-[#4A4A4A] mb-6">
+          <h1 className="text-3xl md:text-4xl font-bold text-trust-navy mb-6">
             Page Not Found
           </h1>
-          
-          <p className="text-lg text-[#4A4A4A] mb-8 max-w-md mx-auto">
-            The page you're looking for doesn't exist or has been moved. 
+
+          <p className="text-lg text-slate-600 mb-8 max-w-md mx-auto">
+            The page you're looking for doesn't exist or has been moved.
             Let's get you back to finding the perfect virtual assistant for your California psychiatric practice.
           </p>
-          
+
           {/* Action Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
@@ -30,7 +30,7 @@ export default function NotFound() {
               <span className="material-symbols-outlined">home</span>
               Back to Homepage
             </Link>
-            
+
             <Link
               href="/services"
               className="group border-2 border-[#D2691E] text-[#D2691E] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#D2691E]/5 transition-colors inline-flex items-center justify-center gap-2"
@@ -39,10 +39,10 @@ export default function NotFound() {
               View Services
             </Link>
           </div>
-          
+
           {/* Helpful Links */}
           <div className="mt-12 p-6 bg-white/80 backdrop-blur-md border border-[#D2691E]/20 rounded-2xl">
-            <h3 className="font-bold text-[#4A4A4A] mb-4">Looking for something specific?</h3>
+            <h3 className="font-bold text-trust-navy mb-4">Looking for something specific?</h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
               <Link href="/pricing" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
                 → Pricing Plans

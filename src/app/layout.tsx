@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Lora } from "next/font/google";
+import { Manrope, Outfit } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 // import PostHogAnalytics from "@/components/analytics/PostHogAnalytics";
@@ -8,19 +8,21 @@ import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import Link from "next/link";
 import MedicalSchema from "@/components/seo/MedicalSchema";
 
-const inter = Inter({
+const manrope = Manrope({
   variable: "--font-sans",
   subsets: ["latin"],
+  weight: ["400", "500", "600", "700", "800"],
 });
 
-const lora = Lora({
+const outfit = Outfit({
   variable: "--font-display",
   subsets: ["latin"],
+  weight: ["400", "600", "700", "800", "900"],
 });
 
 export const metadata: Metadata = {
   title: "Los Angeles Psychiatric Virtual Assistants | Virtual Minds",
-  description: "Los Angeles-based virtual assistants for California psychiatrists. Local experts trained in psychiatric workflows, HIPAA compliance, and California mental health regulations.",
+  description: "Los Angeles-based virtual assistants for California psychiatrists. Experts in Telehealth workflows, HIPAA compliance, and remote practice management.",
   openGraph: {
     title: "Virtual Minds - Los Angeles Virtual Assistants for California Psychiatrists",
     description: "Los Angeles-based virtual assistants specializing in psychiatric workflow, HIPAA compliance, and California mental health regulations.",
@@ -59,7 +61,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${inter.variable} ${lora.variable} antialiased`}
+        className={`${manrope.variable} ${outfit.variable} antialiased`}
         style={{ backgroundColor: '#FAF8F3' }}
       >
         <GoogleAnalytics />

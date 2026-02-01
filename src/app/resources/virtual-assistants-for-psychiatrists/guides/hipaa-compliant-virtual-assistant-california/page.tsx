@@ -48,7 +48,7 @@ const hipaaFeatures = [
   {
     icon: "privacy_tip",
     title: "Privacy Training",
-    description: "Ongoing training on patient privacy and California-specific regulations including CMIA"
+    description: "Ongoing training on patient privacy and California-specific regulations"
   },
   {
     icon: "gpp_good",
@@ -59,7 +59,7 @@ const hipaaFeatures = [
 
 const californiaRequirements = [
   {
-    title: "CMIA Compliance",
+    title: "California Privacy",
     description: "California Medical Information Act compliance for mental health records and privacy"
   },
   {
@@ -91,7 +91,7 @@ export default function HIPAACompliantVACalifornia() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Breadcrumbs 
+      <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           { label: "HIPAA Compliant Virtual Assistants" }
@@ -108,10 +108,10 @@ export default function HIPAACompliantVACalifornia() {
               </h1>
               <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
               <p className="text-slate-600 text-lg max-w-3xl mx-auto mb-8">
-                California's most trusted HIPAA-certified virtual assistants for psychiatric practices. 
+                California's most trusted HIPAA-certified virtual assistants for psychiatric practices.
                 Complete compliance, data security, and peace of mind for your mental health practice.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Link
                   href="/contact"
@@ -134,7 +134,7 @@ export default function HIPAACompliantVACalifornia() {
               Comprehensive HIPAA Compliance Features
             </h2>
             <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-12"></div>
-            
+
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {hipaaFeatures.map((feature, index) => (
                 <div key={index} className="bg-slate-50 rounded-xl p-6 border border-slate-200">
@@ -199,7 +199,7 @@ export default function HIPAACompliantVACalifornia() {
                   ))}
                 </ul>
               </div>
-              
+
               <div className="bg-primary/10 rounded-xl p-8 border-2 border-primary">
                 <h3 className="font-bold text-trust-navy text-xl mb-6">Why Virtual Minds?</h3>
                 <div className="space-y-4">
@@ -247,7 +247,7 @@ export default function HIPAACompliantVACalifornia() {
                 <p className="text-slate-600 text-sm mb-4">Risk: Data breaches, HIPAA violations, legal penalties</p>
                 <p className="text-red-600 font-semibold">Up to $1.5M in fines</p>
               </div>
-              
+
               <div className="bg-white rounded-xl p-6 border border-slate-200 text-center">
                 <div className="w-16 h-16 bg-yellow-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="material-symbols-outlined text-yellow-600 text-2xl">help</span>
@@ -256,7 +256,7 @@ export default function HIPAACompliantVACalifornia() {
                 <p className="text-slate-600 text-sm mb-4">Risk: Limited mental health knowledge, basic training</p>
                 <p className="text-yellow-600 font-semibold">Compliance gaps</p>
               </div>
-              
+
               <div className="bg-primary/10 rounded-xl p-6 border-2 border-primary text-center">
                 <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="material-symbols-outlined text-green-600 text-2xl">verified</span>
@@ -289,7 +289,7 @@ export default function HIPAACompliantVACalifornia() {
                   Schedule Compliance Review
                 </span>
               </Link>
-              
+
               <Link
                 href="/california-psychiatric-virtual-assistant-directory"
                 className="border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors inline-flex items-center"

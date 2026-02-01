@@ -45,7 +45,7 @@
 - **Analytics Access**: Data-driven practice insights
 
 ### 7. California-Specific Advantages
-- **Regulatory Compliance**: CMIA and HIPAA expertise
+- **Regulatory Compliance**: California privacy and HIPAA expertise
 - **Medi-Cal Expertise**: State insurance program mastery
 - **Local Knowledge**: California healthcare landscape understanding
 - **Network Access**: California provider relationships

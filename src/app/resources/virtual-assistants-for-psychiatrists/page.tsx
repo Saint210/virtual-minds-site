@@ -32,7 +32,7 @@ export default function ResourcesPage() {
             category: "Compliance",
             readTime: "15 min read",
             title: "California HIPAA Compliance for Remote Staff",
-            description: "7 essential protocols, BAA requirements, and CMIA compliance for virtual assistants in psychiatric practices.",
+            description: "7 essential protocols, BAA requirements, and state privacy compliance for virtual assistants in psychiatric practices.",
             image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&h=450&fit=crop&crop=entropy&auto=format"
         },
         {
@@ -46,21 +46,21 @@ export default function ResourcesPage() {
             category: "Burnout Prevention",
             readTime: "14 min read",
             title: "How Virtual Assistants Reduce California Psychiatrist Burnout",
-            description: "7 evidence-based strategies to reclaim 25-35 hours weekly while increasing practice revenue by 25-35%.",
+            description: "7 evidence-based strategies to reclaim significant clinical hours weekly while increasing practice efficiency.",
             image: "https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=800&h=450&fit=crop&crop=entropy&auto=format"
         },
         {
             category: "Medi-Cal Billing",
             readTime: "16 min read",
             title: "California Medi-Cal Billing with Virtual Assistants",
-            description: "7 critical billing strategies achieving 98% clean claim rates and 25-35% revenue growth for psychiatry practices.",
+            description: "7 critical billing strategies achieving high clean claim rates and consistent revenue growth for psychiatry practices.",
             image: "https://images.unsplash.com/photo-1554224154-260325c05f8f?w=800&h=450&fit=crop&crop=entropy&auto=format"
         },
         {
             category: "Telehealth Setup",
             readTime: "13 min read",
             title: "Telehealth Virtual Assistant Setup for California Psychiatry",
-            description: "7 essential implementation strategies for HIPAA-compliant telehealth with 95%+ technical success rates.",
+            description: "7 essential implementation strategies for HIPAA-compliant telehealth with high technical success rates.",
             image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=450&fit=crop&crop=entropy&auto=format"
         }
     ];
@@ -160,12 +160,12 @@ export default function ResourcesPage() {
                                             </p>
                                             <a className="text-sm font-bold flex items-center gap-2 text-trust-navy group-hover:gap-3 transition-all" href={
                                                 resource.title === "California Psychiatric VA Cost Analysis 2026" ? "/resources/virtual-assistants-for-psychiatrists/california-psychiatric-va-cost-analysis-2026" :
-                                                resource.title === "California HIPAA Compliance for Remote Staff" ? "/resources/virtual-assistants-for-psychiatrists/hipaa-compliance-california-remote-staff" :
-                                                resource.title === "EMR Integration Guide for California Psychiatry" ? "/resources/virtual-assistants-for-psychiatrists/emr-integration-guide-california-psychiatry" :
-                                                resource.title === "How Virtual Assistants Reduce California Psychiatrist Burnout" ? "/resources/virtual-assistants-for-psychiatrists/reduce-psychiatrist-burnout-california" :
-                                                resource.title === "California Medi-Cal Billing with Virtual Assistants" ? "/resources/virtual-assistants-for-psychiatrists/medicaid-billing-california-virtual-assistants" :
-                                                resource.title === "Telehealth Virtual Assistant Setup for California Psychiatry" ? "/resources/virtual-assistants-for-psychiatrists/telehealth-setup-california-psychiatry" :
-                                                "#"
+                                                    resource.title === "California HIPAA Compliance for Remote Staff" ? "/resources/virtual-assistants-for-psychiatrists/hipaa-compliance-california-remote-staff" :
+                                                        resource.title === "EMR Integration Guide for California Psychiatry" ? "/resources/virtual-assistants-for-psychiatrists/emr-integration-guide-california-psychiatry" :
+                                                            resource.title === "How Virtual Assistants Reduce California Psychiatrist Burnout" ? "/resources/virtual-assistants-for-psychiatrists/reduce-psychiatrist-burnout-california" :
+                                                                resource.title === "California Medi-Cal Billing with Virtual Assistants" ? "/resources/virtual-assistants-for-psychiatrists/medicaid-billing-california-virtual-assistants" :
+                                                                    resource.title === "Telehealth Virtual Assistant Setup for California Psychiatry" ? "/resources/virtual-assistants-for-psychiatrists/telehealth-setup-california-psychiatry" :
+                                                                        "#"
                                             }>
                                                 Read Article <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                             </a>

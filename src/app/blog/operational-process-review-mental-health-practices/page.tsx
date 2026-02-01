@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import BlogSidebar from "@/components/blog/BlogSidebar";
 
 export const metadata = {
@@ -53,34 +52,68 @@ const relatedArticles = [
     }
 ];
 
+import KeyTakeaways from "@/components/blog/KeyTakeaways";
+
 export default function OperationalProcessReview() {
     return (
-        <div className="flex flex-col min-h-screen">
+        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Blog", href: "/blog" },
-                    { label: "Operational Process Review" }
-                ]}
-            />
 
             <main className="flex-grow">
-                {/* Hero Section */}
-                <section className="bg-[#FAF8F3] py-20">
-                    <div className="max-w-[1200px] mx-auto px-6">
-                        <div className="text-center">
-                            <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-md border border-primary/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium mb-6">
-                                <span className="material-symbols-outlined text-primary">analytics</span>
-                                <span>Practice Growth Series</span>
+                {/* EXECUTIVE BRIEFING HERO */}
+                <section className="relative pt-8 md:pt-12 pb-16 overflow-hidden">
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="max-w-4xl">
+                            {/* Breadcrumbs Integrated */}
+                            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <Link href="/blog" className="hover:text-primary transition-colors">Intelligence</Link>
+                                <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                <span className="text-trust-navy">Operational Review</span>
+                            </nav>
+
+                            {/* Strategic Briefing Badge */}
+                            <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                <span className="material-symbols-outlined text-primary text-[16px]">analytics</span>
+                                2026 Strategy & Logic Series
                             </div>
-                            <h1 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-trust-navy mb-6">
-                                Operational Process Review for Mental Health Practices
+
+                            <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                Operational Process <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    Review Framework.
+                                </span>
                             </h1>
-                            <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
-                            <p className="text-slate-600 text-lg max-w-3xl mx-auto mb-8">
-                                Running a mental health practice means juggling clinical excellence with the operational realities that keep your doors open.
+
+                            <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-12 max-w-2xl">
+                                Treating clinical operations with the same surgical precision as patient care identifies hidden leaks in staff productivity and revenue.
                             </p>
+
+                            {/* PRACTICE ECONOMICS BRIEFING BAR */}
+                            <div className="flex flex-wrap items-center gap-x-12 gap-y-8 py-10 border-y border-slate-200/60">
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Strategy Pillar</p>
+                                    <p className="text-xl font-bold text-trust-navy">Operations Audit</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Growth Multiplier</p>
+                                    <p className="text-xl font-bold text-trust-navy">Risk Reduction</p>
+                                </div>
+
+                                <div className="hidden md:block h-12 w-px bg-slate-200" />
+
+                                <div className="space-y-2">
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Administrative Logic</p>
+                                    <div className="flex items-center gap-2">
+                                        <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
+                                        <p className="text-xl font-bold text-trust-navy italic">Process Mapping</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -92,24 +125,51 @@ export default function OperationalProcessReview() {
                             {/* Main Content */}
                             <div className="flex-1 min-w-0">
                                 <article className="prose prose-lg prose-slate max-w-none">
-                                    <div className="mb-12 rounded-2xl overflow-hidden shadow-xl">
-                                        <Image
-                                            src="/images/operational-process-review-mental-health.jpg"
-                                            alt="Operational Process Review for Mental Health Practices"
-                                            width={800}
-                                            height={450}
-                                            className="w-full h-auto object-cover"
-                                        />
+                                    <KeyTakeaways
+                                        takeaways={[
+                                            {
+                                                point: "Operational Seriousness",
+                                                detail: "Treat administrative systems with the same clinical rigor as patient care to avoid burnout."
+                                            },
+                                            {
+                                                point: "Patient Journey Mapping",
+                                                detail: "Document every touchpoint from intake to discharge to identify where time and money disappear."
+                                            },
+                                            {
+                                                point: "EHR Alignment",
+                                                detail: "Switch to psychiatric-native EHR systems that support rather than fight the behavioral health workflow."
+                                            },
+                                            {
+                                                point: "Revenue Performance",
+                                                detail: "Verify eligibility before every appointment to reduce the 40% of denials caused by lapsed coverage."
+                                            }
+                                        ]}
+                                    />
+                                    {/* STRATEGIC BRIEFING INTRODUCTION (60/40) */}
+                                    <div className="flex flex-col lg:flex-row gap-12 my-16 items-start">
+                                        <div className="lg:w-[60%] order-2 lg:order-1">
+                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Strategic Institutional Review</h2>
+                                            <p className="text-xl text-slate-600 font-display leading-relaxed mb-6">
+                                                Most psychiatrists didn&apos;t go into medicine to become experts in billing codes or HIPAA matrices. Yet these operational elements determine whether your practice thrives or struggles under administrative weight.
+                                            </p>
+                                            <p className="text-slate-600 leading-relaxed mb-0">
+                                                The practices that succeed treat operations as seriously as clinical care. A missed prior authorization isn&apos;t just a billing problem—it&apos;s a barrier to treatment. This is where <span className="text-trust-navy font-bold italic underline decoration-primary/30 decoration-2">psychiatric practice management consulting</span> becomes invaluable.
+                                            </p>
+                                        </div>
+
+                                        <div className="lg:w-[40%] order-1 lg:order-2 group w-full">
+                                            <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-xl aspect-[4/5] bg-slate-50">
+                                                <Image
+                                                    src="/images/visual-intel-audit.png"
+                                                    alt="Operational Process Review for Mental Health Practices"
+                                                    fill
+                                                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                                    priority
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/20 via-transparent to-transparent pointer-events-none" />
+                                            </div>
+                                        </div>
                                     </div>
-
-                                    {/* Introduction */}
-                                    <p className="lead text-xl text-slate-700 mb-8">
-                                        Most psychiatrists and behavioral health providers didn't go into medicine to become experts in billing codes, EHR configurations, or HIPAA compliance matrices. Yet these operational elements determine whether your practice thrives or struggles under administrative weight.
-                                    </p>
-
-                                    <p className="mb-8">
-                                        The practices I've seen succeed share a common thread: they treat operations as seriously as clinical care. They recognize that a missed prior authorization isn't just a billing problem - it's a barrier between a patient and treatment. A clunky EHR workflow doesn't just frustrate providers; it steals time from actual patient care. This is where psychiatric practice management consulting becomes invaluable, bringing outside expertise to problems that are difficult to solve from the inside.
-                                    </p>
 
                                     <p className="mb-12">
                                         What follows is a practical framework for reviewing and improving your mental health practice operations. Whether you're a solo practitioner feeling overwhelmed or a group practice ready to scale, these principles apply. The goal isn't perfection - it's building systems that work reliably while freeing you to focus on what you do best.

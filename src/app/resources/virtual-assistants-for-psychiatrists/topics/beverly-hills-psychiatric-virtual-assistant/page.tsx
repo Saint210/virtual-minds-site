@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Beverly Hills Psychiatric Virtual Assistant | Elite Practice Support",
-    description: "Premium virtual assistants for Beverly Hills psychiatric practices serving discerning clientele. HIPAA and CMIA compliant, specializing in confidentiality and high-profile patient care.",
+    description: "Premium virtual assistants for Beverly Hills psychiatric practices serving discerning clientele. HIPAA and privacy compliant, specializing in confidentiality and high-profile patient care.",
 };
 
 export default function BeverlyHillsPage() {
@@ -216,7 +216,7 @@ export default function BeverlyHillsPage() {
                             Elevate Your Beverly Hills Practice
                         </h2>
                         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                            Join Beverly Hills' most prestigious psychiatric practices that trust Virtual Minds for elite virtual assistant services. 
+                            Join Beverly Hills' most prestigious psychiatric practices that trust Virtual Minds for elite virtual assistant services.
                             Experience the difference that specialized, discreet support can make.
                         </p>
                         <Link href="/book-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-terracotta rounded-lg font-black hover:scale-105 transition-all shadow-lg">

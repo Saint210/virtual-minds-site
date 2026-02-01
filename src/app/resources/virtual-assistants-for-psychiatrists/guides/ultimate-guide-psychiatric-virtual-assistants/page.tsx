@@ -92,7 +92,7 @@ export default function UltimateGuidePage() {
                             <div className="bg-cream/50 rounded-lg p-6">
                                 <h3 className="font-bold text-navy mb-3">Administrative Expertise</h3>
                                 <ul className="space-y-2 text-slate-600">
-                                    <li>• HIPAA and CMIA compliance</li>
+                                    <li>• HIPAA and California privacy compliance</li>
                                     <li>• EHR/EMR management</li>
                                     <li>• Insurance prior authorizations</li>
                                     <li>• Patient coordination and scheduling</li>
@@ -184,7 +184,7 @@ export default function UltimateGuidePage() {
                             </div>
                         </div>
                     </div>
-                    
+
                     <div className="bg-terracotta/10 border border-terracotta/20 rounded-xl p-6">
                         <h3 className="text-xl font-bold text-navy mb-4">ROI Calculator</h3>
                         <p className="text-slate-600 mb-4">
@@ -233,7 +233,7 @@ export default function UltimateGuidePage() {
                         <div className="bg-white border border-cream rounded-xl p-6 shadow-sm">
                             <h3 className="font-bold text-navy mb-4 flex items-center gap-2">
                                 <span className="material-symbols-outlined text-terracotta">gavel</span>
-                                California-Specific (CMIA)
+                                California-Specific Privacy
                             </h3>
                             <ul className="space-y-2 text-slate-600 text-sm">
                                 <li>• California Medical Information Act</li>
@@ -288,7 +288,7 @@ export default function UltimateGuidePage() {
                                 <div className="p-4 bg-slate-50 rounded-lg">
                                     <p className="font-medium text-navy mb-2">Compliance Knowledge</p>
                                     <p className="text-slate-600 text-sm italic">
-                                        "How do you ensure HIPAA and CMIA compliance when handling patient information?"
+                                        "How do you ensure HIPAA and California privacy compliance when handling patient information?"
                                     </p>
                                 </div>
                                 <div className="p-4 bg-slate-50 rounded-lg">
@@ -344,8 +344,8 @@ export default function UltimateGuidePage() {
                             Ready to Transform Your Psychiatric Practice?
                         </h2>
                         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                            Join California's leading psychiatrists who trust Virtual Minds for specialized virtual assistant services. 
-                                    Serving industry leaders, public figures, and families who rely on exceptional care.
+                            Join California's leading psychiatrists who trust Virtual Minds for specialized virtual assistant services.
+                            Serving industry leaders, public figures, and families who rely on exceptional care.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link href="/book-consultation" className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-terracotta rounded-lg font-black hover:scale-105 transition-all">

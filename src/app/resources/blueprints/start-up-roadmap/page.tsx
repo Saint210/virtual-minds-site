@@ -1,87 +1,203 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
-import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
     title: "Psychiatrist Practice Start-Up Blueprint | Virtual Minds",
     description: "The complete operational roadmap for transitioning from hospital group to solo private practice in California.",
+    keywords: ["psychiatry startup", "solo practice roadmap", "private practice infrastructure", "psychiatrist business plan", "private practice california"],
 };
 
 export default function StartUpBlueprint() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
-            <Breadcrumbs
-                items={[
-                    { label: "Home", href: "/" },
-                    { label: "Resources", href: "/resources" },
-                    { label: "Start-Up Roadmap" }
-                ]}
-            />
 
-            <main className="flex-grow pb-24">
-                {/* Article Hero */}
-                <section className="bg-gradient-to-br from-[#1E1E1E] to-[#2D2D2D] py-24 text-white relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-20 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#D2691E]/20 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2"></div>
+            <main className="flex-grow">
+                {/* EXECUTIVE STRATEGIC HERO */}
+                <section className="relative pt-12 md:pt-20 pb-20 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
                     </div>
 
-                    <div className="max-w-4xl mx-auto px-6 relative z-10">
-                        <span className="text-[#D2691E] font-bold uppercase tracking-[0.4em] text-xs mb-6 block">Psychiatric Operations Blueprint #03</span>
-                        <h1 className="text-4xl md:text-6xl font-serif font-bold italic mb-8 leading-[1.1] !text-white" style={{ color: 'white' }}>
-                            The Solo Practice <br /> Start-Up Roadmap
-                        </h1>
-                        <p className="text-xl text-slate-100 leading-relaxed font-medium italic">
-                            Transitioning from a hospital system to private practice? Here is the exact 90-day operational sprint to clinical independence.
-                        </p>
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+
+                            {/* Left Column: Strategic Context (60%) */}
+                            <div className="lg:w-[60%]">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">Start-Up Roadmap</span>
+                                </nav>
+
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                    <span className="material-symbols-outlined text-primary text-[16px]">rocket_launch</span>
+                                    Strategic Blueprint #03
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                    The Independence <br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                        Roadmap.
+                                    </span>
+                                </h1>
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
+                                    The exact 90-day operational sprint designed for hospital-based psychiatrists transitioning to elite, solo private practice in California.
+                                </p>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-green-500">schedule</span>
+                                        <span className="text-sm font-bold text-trust-navy">90-Day Deployment</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-blue-500">apartment</span>
+                                        <span className="text-sm font-bold text-trust-navy">Foundation Ready</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column: Visual Intel (40%) */}
+                            <div className="lg:w-[40%] group w-full">
+                                <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
+                                    <Image
+                                        src="/images/blueprint-startup.png"
+                                        alt="Solo Practice Launch Roadmap and Infrastructure"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </section>
 
-                {/* Content Section */}
-                <div className="max-w-4xl mx-auto px-6 mt-16">
-                    <div className="prose prose-lg max-w-none text-slate-700 leading-relaxed space-y-12">
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">The Fear of the Unknown</h2>
-                            <p>
-                                Most psychiatrists stay in hospital systems (W2) far longer than they want to because the "business of medicine" feels like a black box. However, the administrative lift for a modern, tech-enabled solo practice is actually quite light—if you have the correct blueprint.
-                            </p>
-                        </section>
+                {/* CORE BLUEPRINT CONTENT */}
+                <section className="py-24 bg-white border-t border-slate-100">
+                    <div className="max-w-[1200px] mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
 
-                        <section>
-                            <h2 className="text-3xl font-serif font-bold text-[#2A2A2A] mb-6">The 90-Day Sprint Phases</h2>
-                            <div className="space-y-4 not-prose">
-                                {[
-                                    { phase: "Days 1-30", title: "Infrastructure Hardening", desc: "LLC formation, Malpractice tail coverage, and selecting the 'Golden Triangle' of tech: EHR, Telehealth, and Phone/HIPAA Fax." },
-                                    { phase: "Days 31-60", title: "Credentialing & Policies", desc: "Setting up CAQH profiles, drafting your Informed Consents, and defining your controlled substance prescribing policy." },
-                                    { phase: "Days 61-90", title: "Deployment & Marketing", desc: "Integrating your Virtual Assistant, launching your 'authority site', and opening your calendar to the California market." }
-                                ].map((item, i) => (
-                                    <div key={i} className="bg-white p-10 rounded-[40px] border border-slate-100 shadow-sm flex flex-col md:flex-row gap-8 items-start">
-                                        <span className="text-2xl font-black text-[#D2691E] whitespace-nowrap">{item.phase}</span>
-                                        <div>
-                                            <h4 className="font-bold text-xl text-[#2A2A2A] mb-2">{item.title}</h4>
-                                            <p className="text-slate-500 leading-relaxed">{item.desc}</p>
-                                        </div>
+                            {/* Left Content Area (8 columns) */}
+                            <div className="lg:col-span-8 space-y-20">
+
+                                {/* 1. The Operational Friction */}
+                                <div className="space-y-6">
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The "W2 to CEO" Transition</h2>
+                                    <div className="prose prose-slate prose-lg max-w-none">
+                                        <p>
+                                            Most psychiatrists stay in restrictive hospital systems (W2) far longer than intended because the "business of medicine" feels like a liability-filled black box. The reality? A tech-enabled solo practice requires significantly less overhead than a traditional office—provided you have a hardened operational core.
+                                        </p>
+                                        <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
+                                            <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
+                                                "Your clinical license is your greatest asset. Don't let administrative fear be the reason you trade your time for a hospital group's profit margin. We build the engine; you drive the care."
+                                            </p>
+                                            <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Founder, Virtual Minds</cite>
+                                        </blockquote>
                                     </div>
-                                ))}
-                            </div>
-                        </section>
+                                </div>
 
-                        <section className="bg-white p-12 rounded-[50px] border border-slate-100 shadow-2xl relative overflow-hidden text-center">
-                            <div className="relative z-10">
-                                <span className="material-symbols-outlined text-6xl text-[#D2691E] mb-6">rocket_launch</span>
-                                <h2 className="text-3xl font-serif font-bold mb-6 italic text-[#2A2A2A]">Ready for Independence?</h2>
-                                <p className="text-slate-600 mb-10 max-w-xl mx-auto">
-                                    We've helped dozens of doctors transition from burnout to autonomy. Let us handle the infrastructure while you focus on the patients.
-                                </p>
-                                <Link href="/book-consultation" className="bg-[#2A2A2A] text-white font-black uppercase tracking-widest text-xs px-12 py-5 rounded-2xl shadow-2xl hover:bg-black transition-all inline-block">
-                                    Start Your Roadmap Audit
-                                </Link>
+                                {/* 2. The 90-Day Sprint Phases */}
+                                <div className="space-y-12">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The 90-Day Sprint Protocol</h2>
+                                    <div className="space-y-6">
+                                        {[
+                                            {
+                                                phase: "Days 1-30",
+                                                title: "Infrastructure Hardening",
+                                                desc: "LLC/PLLC selection, Malpractice tail coverage, and selecting the 'Golden Triangle' of psychiatric tech: EMR, Secure Telehealth, and HIPAA-Compliant Voice/Fax."
+                                            },
+                                            {
+                                                phase: "Days 31-60",
+                                                title: "Credentialing & Policy Design",
+                                                desc: "CAQH profile optimization, drafting California-compliant Informed Consents, and defining your DEA-proof Controlled Substance Prescribing Policy."
+                                            },
+                                            {
+                                                phase: "Days 61-90",
+                                                title: "Deployment & VA Integration",
+                                                desc: "Integrating your Executive VA into your EHR, launching your authority marketing site, and opening your calendar to the California market for the first intake."
+                                            }
+                                        ].map((item, idx) => (
+                                            <div key={idx} className="bg-[#FAF8F3] p-10 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-all group">
+                                                <div className="bg-white px-6 py-3 rounded-2xl shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
+                                                    <span className="text-lg font-black uppercase tracking-widest whitespace-nowrap">{item.phase}</span>
+                                                </div>
+                                                <div>
+                                                    <h4 className="font-bold text-2xl text-trust-navy mb-3">{item.title}</h4>
+                                                    <p className="text-slate-500 leading-relaxed text-base">{item.desc}</p>
+                                                </div>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* 3. The Efficiency Table */}
+                                <div className="space-y-8">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Freedom Matrix</h2>
+                                    <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-sm">
+                                        <table className="w-full text-left border-collapse">
+                                            <thead>
+                                                <tr className="bg-slate-50">
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-slate-400">Metric</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-trust-navy">Hospital Group (W2)</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-primary">Solo Practice (CEO)</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-100">
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Net Margin Per Visit</td>
+                                                    <td className="p-6 text-sm text-slate-500">25 - 40%</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">85 - 92%</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Clinical Autonomy</td>
+                                                    <td className="p-6 text-sm text-slate-500">Restricted (System KPI)</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">Absolute</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Admin Overhead</td>
+                                                    <td className="p-6 text-sm text-slate-500">Hidden / High</td>
+                                                    <td className="p-6 text-sm font-bold text-primary italic">VA-Automated</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
                             </div>
-                        </section>
+
+                            {/* Right Sidebar (4 columns) */}
+                            <div className="lg:col-span-4 space-y-8">
+                                <div className="sticky top-12 space-y-8">
+
+                                    {/* Strategic Download Card */}
+                                    <div className="bg-trust-navy rounded-[2.5rem] p-10 text-white shadow-2xl relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
+                                        <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Start Your 90-Day Sprint</h3>
+                                        <p className="text-slate-300 text-sm leading-relaxed mb-8">
+                                            We've helped dozens of psychiatrists transition from burnout to autonomy. Let us handle the infrastructure while you focus on the medicine.
+                                        </p>
+                                        <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
+                                            Request Launch Roadmap
+                                        </Link>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
-                </div>
+                </section>
+
             </main>
+
             <Footer />
         </div>
     );
