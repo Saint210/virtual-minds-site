@@ -82,7 +82,7 @@ export default function AdminLeakageCalculator() {
                             </div>
                         </div>
 
-                        <div className="mt-10 p-8 bg-white/60 backdrop-blur-sm rounded-3xl border border-white/50 shadow-sm">
+                        <div className="mt-10 p-8 bg-white/60 backdrop-blur-sm rounded-3xl border border-white/50 shadow-sm hidden lg:block">
                             <h4 className="font-bold text-trust-navy mb-4 flex items-center gap-2">
                                 <span className="material-symbols-outlined text-[#D2691E]">info</span>
                                 How we calculate this:
@@ -136,6 +136,19 @@ export default function AdminLeakageCalculator() {
                                     Based on conservative industry estimates.
                                 </p>
                             </div>
+                        </div>
+
+                        {/* Mobile Only Disclaimer (Shows BELOW results) */}
+                        <div className="mt-8 p-6 bg-white/60 backdrop-blur-sm rounded-3xl border border-white/50 shadow-sm block lg:hidden">
+                            <h4 className="font-bold text-trust-navy mb-4 flex items-center gap-2">
+                                <span className="material-symbols-outlined text-[#D2691E]">info</span>
+                                How we calculate this:
+                            </h4>
+                            <ul className="text-sm text-slate-500 space-y-3 font-medium">
+                                <li className="flex items-center gap-2">• 15 mins of admin tasks per patient session</li>
+                                <li className="flex items-center gap-2">• 15% industry-standard no-show rate (vs 5% with VA)</li>
+                                <li className="flex items-center gap-2">• Lost billing opportunity cost vs. admin time</li>
+                            </ul>
                         </div>
                     </div>
 

@@ -87,6 +87,7 @@ export default function Hero() {
                                 src="/images/homepage-hero.png"
                                 alt="California Psychiatrist Collaborating with Virtual Minds Assistant"
                                 fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
                                 priority
                             />
