@@ -3,14 +3,14 @@ import Image from "next/image";
 
 export default function Hero() {
     return (
-        <section className="relative min-h-[90vh] flex items-center overflow-hidden">
+        <section className="relative min-h-[auto] lg:min-h-[90vh] flex items-start lg:items-center overflow-hidden">
             {/* Premium Matte Cream Background (Matches Services Hub) */}
             <div className="absolute inset-0 bg-[#FAF8F3]">
                 {/* Subtle Grain/Texture overlay for premium feel */}
                 <div className="absolute inset-0 opacity-[0.03] bg-[url('/noise.png')] mix-blend-overlay"></div>
             </div>
 
-            <div className="relative z-10 max-w-[1400px] mx-auto px-6 pt-32 pb-12 lg:py-0">
+            <div className="relative z-10 max-w-[1400px] mx-auto px-6 pt-12 pb-12 lg:py-0">
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                     {/* Left Content - Mobile First */}
                     <div className="flex flex-col gap-6 text-center lg:text-left">
