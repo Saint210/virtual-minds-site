@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Outfit } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // import PostHogAnalytics from "@/components/analytics/PostHogAnalytics";
 
 // Add Material Symbols font
@@ -66,6 +67,7 @@ export default function RootLayout({
       >
         <GoogleAnalytics />
         <MedicalSchema />
+        <SpeedInsights />
         {/* <PostHogAnalytics /> */}
         {children}
       </body>
