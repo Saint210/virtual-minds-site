@@ -437,7 +437,7 @@ export default function PricingPage() {
             </h2>
             <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
               Identify exactly <strong className="text-white">how much time and revenue</strong> your practice is losing to administrative friction with a{' '}
-              <span className="text-[#D2691E] font-bold">15-minute Strategy Audit</span>.
+              <span className="text-[#D2691E] font-bold">15-minute Recovery Plan</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Link
@@ -445,7 +445,7 @@ export default function PricingPage() {
                 className="px-12 py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-xl rounded-2xl shadow-2xl shadow-[#D2691E]/20 hover:shadow-[#D2691E]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
               >
                 <span className="material-symbols-outlined">calendar_today</span>
-                Book Strategy Audit
+                See My Recovery Plan
               </Link>
             </div>
           </div>

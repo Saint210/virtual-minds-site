@@ -34,12 +34,12 @@ export default function FAQPage() {
                     <div className="max-w-4xl mx-auto px-6 text-center text-white relative z-10">
                         <h2 className="text-4xl md:text-5xl font-display font-bold mb-6">Specific Inquiry Required?</h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium">
-                            If your practice has custom compliance or EHR requirements, book a brief strategy audit with our lead strategist.
+                            If your practice has custom compliance or EHR requirements, book a brief recovery plan session with our lead strategist.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link href="/book-consultation" className="px-10 py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-lg rounded-2xl shadow-xl hover:shadow-[#D2691E]/20 transition-all hover:scale-[1.02] flex items-center justify-center gap-3">
                                 <span className="material-symbols-outlined">calendar_month</span>
-                                Book Strategy Audit
+                                See My Recovery Plan
                             </Link>
                             <Link href="/contact" className="px-10 py-5 bg-white/5 border border-white/10 hover:bg-white/10 text-white font-bold text-lg rounded-2xl transition-all flex items-center justify-center gap-3">
                                 <span className="material-symbols-outlined">mail</span>

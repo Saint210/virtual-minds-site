@@ -153,9 +153,9 @@ export default function PracticeAuditWizard() {
                             <button
                                 key={model.id}
                                 onClick={() => handleNext("practiceModel", model.id)}
-                                className="group text-left p-6 rounded-2xl border border-slate-200 hover:border-primary/50 hover:bg-primary/5 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
+                                className="group text-left p-6 rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-white to-slate-50/50 shadow-md hover:border-primary/50 hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
                             >
-                                <div className="size-12 rounded-xl bg-slate-100 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-colors">
+                                <div className="size-12 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/50 shadow-inner flex items-center justify-center text-slate-500 group-hover:bg-primary group-hover:from-primary group-hover:to-primary group-hover:text-white transition-all duration-300">
                                     <span className="material-symbols-outlined text-2xl">{model.icon}</span>
                                 </div>
                                 <div>

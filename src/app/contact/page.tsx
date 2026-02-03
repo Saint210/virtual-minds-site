@@ -6,7 +6,7 @@ import LazyMapEmbed from "@/components/marketing/LazyMapEmbed";
 import ProtectedEmail from "@/components/ui/ProtectedEmail";
 
 export const metadata = {
-    title: "Schedule Your Strategy Audit | Virtual Minds Psychiatric Ops",
+    title: "Request Your Recovery Plan | Virtual Minds Psychiatric Ops",
     description: "Connect with California's elite psychiatric operational firm. Audit your EHR workflows, billing infrastructure, and compliance guardrails.",
 };
 
@@ -89,7 +89,7 @@ export default function ContactPage() {
                             <div className="relative bg-white border border-slate-100 rounded-[3.5rem] p-10 md:p-14 shadow-2xl">
                                 <div className="flex items-center gap-3 mb-10">
                                     <div className="size-3 bg-red-500 rounded-full animate-pulse" />
-                                    <h2 className="text-2xl font-serif font-bold text-trust-navy italic">Book Strategy Audit</h2>
+                                    <h2 className="text-2xl font-serif font-bold text-trust-navy italic">See My Recovery Plan</h2>
                                 </div>
 
                                 <form className="space-y-8">

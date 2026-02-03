@@ -188,8 +188,8 @@ export default function AboutPage() {
                             Return to <span className="text-[#D2691E]">Patient Care</span>.
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-                            Experience the difference of a <strong className="text-white">specialized psychiatric support team</strong>. Schedule your{' '}
-                            <span className="text-[#D2691E] font-bold">15-minute Strategy Audit</span> to get started.
+                            Experience the difference of a <strong className="text-white">specialized psychiatric support team</strong>. Request your{' '}
+                            <span className="text-[#D2691E] font-bold">15-minute Recovery Plan</span> to get started.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
@@ -197,7 +197,7 @@ export default function AboutPage() {
                                 className="px-12 py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-xl rounded-2xl shadow-2xl shadow-[#D2691E]/20 hover:shadow-[#D2691E]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
-                                Schedule Audit
+                                See My Recovery Plan
                             </Link>
                         </div>
                     </div>

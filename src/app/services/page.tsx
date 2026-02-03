@@ -24,7 +24,7 @@ const serviceBlueprints = [
         color: "text-primary",
         link: "/services/virtual-assistant",
         tags: ["Intake Management", "Telehealth Comms"],
-        yield: "Recover 10-20+ Hours Weekly"
+        yield: "Recover $25k/yr in Admin Overhead"
     },
     {
         title: "Billing & RCM",
@@ -39,7 +39,7 @@ const serviceBlueprints = [
         color: "text-accent",
         link: "/services/billing-and-rcm",
         tags: ["Prior Auths", "Superbills"],
-        yield: "Ensure Revenue Stability"
+        yield: "Recover 4-7% Lost Revenue"
     },
     {
         title: "Practice Start-Up",
@@ -54,7 +54,7 @@ const serviceBlueprints = [
         color: "text-primary",
         link: "/services/practice-start-up",
         tags: ["Credentialing", "Telepsych Setup"],
-        yield: "Launch with Confidence"
+        yield: "Launch $15k Under Budget"
     },
     {
         title: "HIPAA Compliance",
@@ -69,7 +69,7 @@ const serviceBlueprints = [
         color: "text-accent",
         link: "/services/hipaa-compliance-support",
         tags: ["Privacy Protected", "Audit Ready"],
-        yield: "Secure Infrastructure"
+        yield: "Eliminate $50k Audit Risk"
     },
     {
         title: "Medication Management",
@@ -84,7 +84,7 @@ const serviceBlueprints = [
         color: "text-primary",
         link: "/services/patient-intake-and-followup",
         tags: ["Refill Logistics", "Pharmacy Liaison"],
-        yield: "Clinical Workflow Efficiency"
+        yield: "Recover 8+ Billable Hrs/Mo"
     },
     {
         title: "EHR Optimization",
@@ -99,22 +99,7 @@ const serviceBlueprints = [
         color: "text-accent",
         link: "/services/ehr-emr-management",
         tags: ["Automation", "Workflow Support"],
-        yield: "Reduce Administrative Burden"
-    },
-    {
-        title: "Website Design",
-        desc: "Medical-grade, HIPAA-aware website design covering SEO, patient intake portals, and mobile responsiveness.",
-        descMarkup: (
-            <>
-                <strong className="text-trust-navy">AI-optimized websites</strong> that rank on Google <em>and</em> ChatGPT—
-                <span className="text-[#D2691E]"> 300% more patient inquiries</span>.
-            </>
-        ),
-        icon: "web",
-        color: "text-primary",
-        link: "/services/website-design",
-        tags: ["SEO", "Patient Experience"],
-        yield: "Increase Patient Inquiries"
+        yield: "Save $12k/yr in Clinician Time"
     }
 ];
 
@@ -203,7 +188,7 @@ export default function ServicesPage() {
                                         className="px-10 py-5 bg-primary hover:bg-primary-hover text-white font-bold text-lg rounded-2xl shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2 group"
                                     >
                                         <span className="material-symbols-outlined group-hover:rotate-12 transition-transform">schedule</span>
-                                        Start Strategy Audit
+                                        See My Recovery Plan
                                     </Link>
                                     <Link
                                         href="/pricing"
@@ -354,7 +339,7 @@ export default function ServicesPage() {
                                 href="/book-consultation"
                                 className="px-12 py-5 bg-primary text-white font-black text-xl rounded-2xl shadow-2xl shadow-primary/20 hover:bg-primary-hover transition-all hover:scale-105"
                             >
-                                Schedule Strategy Audit
+                                See My Recovery Plan
                             </Link>
                             <Link
                                 href="/contact"

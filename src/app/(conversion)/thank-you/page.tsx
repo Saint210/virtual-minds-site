@@ -80,7 +80,7 @@ export default function ThankYouPage() {
                                 <div>
                                     <h3 className="font-bold text-lg text-[#2A2A2A] mb-2">Strategy Call Scheduled</h3>
                                     <p className="text-slate-600 leading-relaxed mb-4">
-                                        We'll send you a calendar invite for your 15-minute strategy audit via email or text. You'll meet with a Virtual Minds specialist who understands California psychiatric practice operations.
+                                        We'll send you a calendar invite for your 15-minute recovery plan session via email or text. You'll meet with a Virtual Minds specialist who understands California psychiatric practice operations.
                                     </p>
                                     <div className="bg-slate-50 border border-slate-200 rounded-xl p-4">
                                         <p className="text-sm font-bold text-[#2A2A2A] mb-2">

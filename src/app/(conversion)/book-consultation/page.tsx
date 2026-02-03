@@ -1,18 +1,44 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
 import PracticeAuditWizard from "@/components/conversion/PracticeAuditWizard";
+import ConsultationServiceSchema from "@/components/seo/ConsultationServiceSchema";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Book Your Strategy Call | Virtual Minds",
     description: "Schedule your 15-minute psychiatric strategy call. We'll analyze your workflow and match you with a specialized, HIPAA-trained VA.",
+    alternates: {
+        canonical: 'https://thevirtualminds.com/book-consultation'
+    },
+    openGraph: {
+        title: "Book Your Strategy Call | Virtual Minds",
+        description: "Schedule your 15-minute psychiatric strategy call for California practices.",
+        url: "https://thevirtualminds.com/book-consultation",
+        siteName: "Virtual Minds",
+        images: [{
+            url: "https://thevirtualminds.com/images/og-virtual-assistant.png",
+            width: 1200,
+            height: 630,
+            alt: "Book Your Psychiatric Strategy Call"
+        }],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Book Your Strategy Call | Virtual Minds",
+        description: "Schedule your 15-minute psychiatric strategy call for California practices.",
+        images: ["https://thevirtualminds.com/images/og-virtual-assistant.png"],
+    },
 };
 
 export default function BookConsultationPage() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+            <ConsultationServiceSchema />
             <Navbar />
 
             <main className="flex-grow flex flex-col items-center py-12 md:py-20 px-6">
@@ -32,13 +58,13 @@ export default function BookConsultationPage() {
                             </div>
 
                             <h1 className="font-serif text-5xl lg:text-[5rem] font-bold text-trust-navy leading-[0.95] tracking-tight">
-                                Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">Gold Standard</span> <br />
-                                Strategy Audit.
+                                Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Gold Standard</span> <br />
+                                Recovery Plan.
                             </h1>
 
                             <p className="text-xl text-slate-600 font-display leading-relaxed max-w-xl">
                                 Schedule your <strong className="text-trust-navy">15-minute</strong> California psychiatric strategy call. We'll{' '}
-                                <span className="text-[#D2691E] font-bold">analyze your clinical administrative load</span> and blueprint a{' '}
+                                <span className="text-primary font-bold">analyze your clinical administrative load</span> and blueprint a{' '}
                                 <strong className="text-trust-navy">high-yield operational path</strong>.
                             </p>
 
@@ -112,7 +138,7 @@ export default function BookConsultationPage() {
                             </div>
                             <div className="text-sm text-slate-500 font-medium leading-tight">
                                 <p><strong className="text-trust-navy">Trusted by California Psychiatrists</strong></p>
-                                <p>Specialized <span className="text-[#D2691E] font-bold">psychiatric virtual assistants</span> for HIPAA-compliant practice management.</p>
+                                <p>Specialized <span className="text-primary font-bold">psychiatric virtual assistants</span> for HIPAA-compliant practice management.</p>
                             </div>
                         </div>
                     </div>

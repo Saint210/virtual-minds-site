@@ -48,3 +48,11 @@ build_*.log
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Agent & Tool Metadata
+.agent/
+.gemini/
+.venv/
+.archive/
+.tmp/
+.windsurf/

@@ -1,18 +1,43 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import PracticeStartupServiceSchema from "@/components/seo/PracticeStartupServiceSchema";
 
-export const metadata = {
+export const metadata: Metadata = {
     title: "Psychiatry Practice Start-Up Services | California | Virtual Minds",
     description: "Comprehensive start-up support for California psychiatric practices. EHR implementation, contract negotiation, and HIPAA compliance setup.",
-    keywords: ["psychiatry practice startup", "launch private practice California", "EHR implementation for psychiatrists", "medical contract review"],
+    alternates: {
+        canonical: 'https://thevirtualminds.com/services/practice-start-up'
+    },
+    openGraph: {
+        title: "Psychiatry Practice Start-Up Services | California",
+        description: "Comprehensive start-up support for California psychiatric practices. EHR implementation, contract negotiation, and HIPAA compliance setup.",
+        url: "https://thevirtualminds.com/services/practice-start-up",
+        siteName: "Virtual Minds",
+        images: [{
+            url: "https://thevirtualminds.com/images/og-startup-guide.png",
+            width: 1200,
+            height: 630,
+            alt: "Psychiatry Practice Start-Up Services"
+        }],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Psychiatry Practice Start-Up Services | California",
+        description: "Comprehensive start-up support for California psychiatric practices. EHR implementation, contract negotiation, and HIPAA compliance.",
+        images: ["https://thevirtualminds.com/images/og-startup-guide.png"],
+    },
 };
 
 export default function PracticeStartUpPage() {
     return (
         <div className="flex flex-col min-h-screen bg-white font-sans">
+            <PracticeStartupServiceSchema />
             <Navbar />
             <Breadcrumbs
                 items={[
@@ -97,7 +122,7 @@ export default function PracticeStartUpPage() {
                                 <div className="flex flex-col sm:flex-row gap-5">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3">
                                         <span className="material-symbols-outlined">schedule</span>
-                                        Schedule Strategy Audit
+                                        See My Recovery Plan
                                     </Link>
                                 </div>
                             </div>
@@ -108,8 +133,8 @@ export default function PracticeStartUpPage() {
                                     <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl opacity-50"></div>
                                     <div className="relative aspect-[4/5] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
                                         <Image
-                                            src="/images/psychiatry-startup-mindmap.png"
-                                            alt="Psychiatry Practice Strategic Mindmap"
+                                            src="/images/practice-startup-blueprint-v4.png"
+                                            alt="Psychiatry Practice Strategic Blueprint"
                                             fill
                                             className="object-cover"
                                         />
@@ -147,14 +172,14 @@ export default function PracticeStartUpPage() {
                                     <span className="text-[#FFFFFF]">The "First Year" Reality Check</span>
                                 </h2>
                                 <p className="text-xl text-slate-300 mb-12 leading-relaxed">
-                                    50% of new mental health practices struggle within the first year not because of clinical ability, but because of <span className="text-[#D2691E] font-bold italic">administrative exhaustion.</span>
+                                    50% of new mental health practices struggle within the first year not because of clinical ability, but because of <span className="text-primary font-bold italic">administrative exhaustion.</span>
                                 </p>
                                 <div className="grid md:grid-cols-2 gap-10">
                                     <div className="space-y-4">
                                         <h4 className="text-xl font-bold !text-white italic">The Start-Up Gaps:</h4>
                                         <ul className="space-y-4 text-slate-300">
                                             <li className="flex items-center gap-3">
-                                                <span className="material-symbols-outlined text-[#D2691E] text-sm">warning</span>
+                                                <span className="material-symbols-outlined text-primary text-sm">warning</span>
                                                 Manual, non-compliant intake forms
                                             </li>
                                             <li className="flex items-center gap-3">
@@ -168,7 +193,7 @@ export default function PracticeStartUpPage() {
                                         </ul>
                                     </div>
                                     <div className="p-8 bg-white/5 rounded-3xl border border-white/10 flex flex-col justify-center">
-                                        <p className="text-sm font-bold uppercase tracking-widest text-[#D2691E] mb-2">Our Solution</p>
+                                        <p className="text-sm font-bold uppercase tracking-widest text-primary mb-2">Our Solution</p>
                                         <p className="text-lg text-white font-medium italic">We install the "Practice Operating System" so you start profitable on Day 1.</p>
                                     </div>
                                 </div>
@@ -218,14 +243,69 @@ export default function PracticeStartUpPage() {
                                     icon: "history_edu"
                                 }
                             ].map((service, i) => (
-                                <div key={i} className="p-10 bg-[#FAF8F3] rounded-[40px] border border-[#D2691E]/5 hover:border-[#D2691E]/20 transition-all hover:shadow-2xl hover:shadow-[#D2691E]/5 group">
-                                    <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-[#D2691E] mb-8 shadow-sm group-hover:scale-110 transition-transform">
+                                <div key={i} className="p-10 bg-[#FAF8F3] rounded-[40px] border border-primary/5 hover:border-primary/20 transition-all hover:shadow-2xl hover:shadow-primary/5 group">
+                                    <div className="w-14 h-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-8 shadow-sm group-hover:scale-110 transition-transform">
                                         <span className="material-symbols-outlined text-3xl">{service.icon}</span>
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">{service.title}</h3>
                                     <p className="text-slate-600 leading-relaxed">{service.desc}</p>
                                 </div>
                             ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* FEATURED RESOURCE SECTION */}
+                <section className="py-24 bg-gradient-to-br from-[#FAF8F3] to-white">
+                    <div className="max-w-6xl mx-auto px-6">
+                        <div className="bg-white rounded-[40px] shadow-2xl border border-primary/10 overflow-hidden">
+                            <div className="grid lg:grid-cols-2 gap-0">
+                                {/* Left: Content */}
+                                <div className="p-12 lg:p-16 flex flex-col justify-center">
+                                    <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-6 w-fit">
+                                        <span className="material-symbols-outlined text-primary text-[16px]">school</span>
+                                        Featured Authority Resource
+                                    </div>
+                                    <h3 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-6 leading-tight">
+                                        Complete Practice Start-Up Guide
+                                    </h3>
+                                    <p className="text-lg text-slate-600 mb-8 leading-relaxed">
+                                        Our <strong className="text-trust-navy">3,500-word comprehensive roadmap</strong> covers every phase of launching a California psychiatry practice—from licensing to your first patient. Used by 100+ psychiatrists statewide.
+                                    </p>
+                                    <div className="space-y-4 mb-8">
+                                        <div className="flex items-start gap-3">
+                                            <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                            <p className="text-slate-600"><strong className="text-trust-navy">12-Month Timeline</strong> with phase-based milestones</p>
+                                        </div>
+                                        <div className="flex items-start gap-3">
+                                            <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                            <p className="text-slate-600"><strong className="text-trust-navy">California-Specific</strong> regulatory compliance</p>
+                                        </div>
+                                        <div className="flex items-start gap-3">
+                                            <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
+                                            <p className="text-slate-600"><strong className="text-trust-navy">EHR Selection Matrix</strong> for psychiatric workflows</p>
+                                        </div>
+                                    </div>
+                                    <Link
+                                        href="/resources/psychiatry-practice-startup-guide"
+                                        className="inline-flex items-center gap-3 px-8 py-4 bg-primary hover:bg-primary-hover text-white font-bold text-lg rounded-2xl shadow-xl shadow-primary/20 transition-all hover:-translate-y-1 w-fit"
+                                    >
+                                        Read the Complete Guide
+                                        <span className="material-symbols-outlined">arrow_forward</span>
+                                    </Link>
+                                </div>
+                                {/* Right: Visual */}
+                                <div className="relative aspect-square lg:aspect-auto bg-gradient-to-br from-primary/5 to-primary/10 flex items-center justify-center p-12">
+                                    <div className="relative w-full h-full max-w-md">
+                                        <Image
+                                            src="/images/practice-startup-blueprint-v4.png"
+                                            alt="Psychiatry Practice Startup Strategic Blueprint"
+                                            fill
+                                            className="object-contain drop-shadow-2xl"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
@@ -241,7 +321,7 @@ export default function PracticeStartUpPage() {
                         </p>
                         <Link
                             href="/book-consultation"
-                            className="px-12 py-5 bg-[#D2691E] text-white font-black text-xl rounded-2xl shadow-2xl hover:scale-105 transition-transform inline-block"
+                            className="px-12 py-5 bg-primary text-white font-black text-xl rounded-2xl shadow-2xl hover:scale-105 transition-transform inline-block"
                         >
                             Book Your Start-Up Strategy Call
                         </Link>

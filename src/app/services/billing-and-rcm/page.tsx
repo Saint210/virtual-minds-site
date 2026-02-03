@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Link from "next/link";
@@ -5,15 +6,40 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import BillingDashboardGraphic from "@/components/services/BillingDashboardGraphic";
+import BillingServiceSchema from "@/components/seo/BillingServiceSchema";
 
-export const metadata = {
-    title: "California Psychiatric Billing Support Virtual Assistants | Virtual Minds",
-    description: "California psychiatric billing support virtual assistants for insurance verification, prior authorizations, and revenue cycle admin coordination.",
+export const metadata: Metadata = {
+    title: "Psychiatric Revenue Engineering & RCM Support | California | Virtual Minds",
+    description: "Executive-level revenue cycle management support for California psychiatric practices. Specialized in eliminating administrative leakage in eligibility and prior authorizations.",
+    alternates: {
+        canonical: 'https://thevirtualminds.com/services/billing-and-rcm'
+    },
+    openGraph: {
+        title: "Psychiatric Billing & RCM Support | California",
+        description: "Specialized administrative support for eligibility, prior authorizations, and revenue cycle coordination for California psychiatric practices.",
+        url: "https://thevirtualminds.com/services/billing-and-rcm",
+        siteName: "Virtual Minds",
+        images: [{
+            url: "https://thevirtualminds.com/images/og-virtual-assistant.png",
+            width: 1200,
+            height: 630,
+            alt: "Psychiatric Billing & RCM Support Services"
+        }],
+        locale: "en_US",
+        type: "website",
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "Psychiatric Billing & RCM Support | California",
+        description: "Specialized administrative support for eligibility, prior authorizations, and revenue cycle coordination.",
+        images: ["https://thevirtualminds.com/images/og-virtual-assistant.png"],
+    },
 };
 
 export default function BillingPage() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+            <BillingServiceSchema />
             <Navbar />
             <Breadcrumbs
                 items={[
@@ -28,7 +54,7 @@ export default function BillingPage() {
                     {/* Immersive Background Tokens - Wrapped to prevent page overflow but allow section overlap */}
                     <div className="absolute inset-0 overflow-hidden pointer-events-none">
                         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#1A2332]/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2" />
-                        <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-[#D2691E]/10 rounded-full blur-[100px] translate-y-1/2" />
+                        <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-primary/10 rounded-full blur-[100px] translate-y-1/2" />
                     </div>
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -37,20 +63,20 @@ export default function BillingPage() {
                             {/* LEFT: Copy & Authority (55%) */}
                             <div className="lg:w-[55%]">
                                 <div className="inline-flex items-center gap-2 bg-white border border-[#1A2332]/10 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black mb-5 shadow-sm group hover:shadow-md transition-all">
-                                    <span className="material-symbols-outlined text-[#D2691E] text-[16px]">verified</span>
+                                    <span className="material-symbols-outlined text-primary text-[16px]">verified</span>
                                     <span className="tracking-[0.2em] uppercase text-trust-navy">Administrative Infrastructure</span>
                                 </div>
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-5 leading-[0.95] tracking-tight">
                                     Psychiatric Billing <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-shimmer bg-[length:200%_auto]">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                                         & RCM Support.
                                     </span>
                                 </h1>
 
                                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                                     Specialized administrative support for
-                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2 pb-0.5">eligibility, prior authorizations,</span>
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2 pb-0.5">eligibility, prior authorizations,</span>
                                     and revenue cycle coordination built exclusively for California psychiatric practices.
                                 </p>
 
@@ -78,7 +104,7 @@ export default function BillingPage() {
                                 {/* PREMIUM PRACTICE ECONOMICS BAR */}
                                 <div className="flex flex-wrap items-center gap-x-8 gap-y-4 py-6 border-y border-[#1A2332]/10 mb-8">
                                     <div className="space-y-1">
-                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Yield</p>
+                                        <p className="text-[9px] font-black text-primary uppercase tracking-[0.2em] leading-none">Yield</p>
                                         <div className="flex items-center gap-2">
                                             <span className="material-symbols-outlined text-trust-navy text-lg">account_balance</span>
                                             <p className="text-base font-bold text-trust-navy">Revenue Continuity</p>
@@ -103,9 +129,9 @@ export default function BillingPage() {
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5">
+                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-primary/20 transition-all flex items-center justify-center gap-2.5">
                                         <span className="material-symbols-outlined text-[20px]">schedule</span>
-                                        Schedule Strategy Audit
+                                        See My Recovery Plan
                                     </Link>
                                 </div>
                             </div>
@@ -120,7 +146,7 @@ export default function BillingPage() {
 
                                     {/* Floating Premium Badge - Adjusted position */}
                                     <div className="absolute -top-4 -right-4 bg-white p-4 rounded-[1.5rem] shadow-xl border border-slate-50 flex items-center gap-4 animate-bounce-slow z-20 scale-90 origin-top-right">
-                                        <div className="size-10 bg-[#D2691E]/10 rounded-xl flex items-center justify-center text-[#D2691E]">
+                                        <div className="size-10 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
                                             <span className="material-symbols-outlined font-bold text-xl">payments</span>
                                         </div>
                                         <div>
@@ -144,7 +170,7 @@ export default function BillingPage() {
 
                     <div className="max-w-[1280px] mx-auto px-6 relative z-10">
                         <div className="bg-[#FAF8F3] rounded-[3rem] p-12 md:p-24 shadow-2xl border border-white relative overflow-hidden">
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D2691E]/5 rounded-full -mr-32 -mt-32"></div>
+                            <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -mr-32 -mt-32"></div>
 
                             <div className="max-w-4xl mx-auto">
                                 <div className="text-center mb-16">
@@ -160,7 +186,7 @@ export default function BillingPage() {
                                 <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-start">
                                     <div className="space-y-8">
                                         <h3 className="font-display text-2xl font-bold text-trust-navy flex items-center gap-3">
-                                            <span className="size-8 rounded-full bg-[#D2691E] text-white flex items-center justify-center text-sm">1</span>
+                                            <span className="size-8 rounded-full bg-primary text-white flex items-center justify-center text-sm">1</span>
                                             What We Handle
                                         </h3>
                                         <ul className="space-y-6">
@@ -173,7 +199,7 @@ export default function BillingPage() {
                                                 'Resubmitting Missing Provider Documentation'
                                             ].map((item, i) => (
                                                 <li key={i} className="flex gap-4 items-start group">
-                                                    <span className="material-symbols-outlined text-[#D2691E] mt-0.5 group-hover:scale-110 transition-transform">check_circle</span>
+                                                    <span className="material-symbols-outlined text-primary mt-0.5 group-hover:scale-110 transition-transform">check_circle</span>
                                                     <span className="font-medium text-slate-700 text-lg">{item}</span>
                                                 </li>
                                             ))}
@@ -197,7 +223,44 @@ export default function BillingPage() {
                     </div>
                 </section>
 
-                {/* PREMIUM TECHNICAL FUNCTIONS */}
+                {/* REVENUE RECOVERY MATRIX */}
+                <section className="py-32 bg-[#FAF8F3]">
+                    <div className="max-w-7xl mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-display text-4xl md:text-5xl font-black text-trust-navy mb-6">Revenue Recovery Matrix</h2>
+                            <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium">
+                                We identify and reclaim clinical revenue lost to administrative friction, verification gaps, and credentialing delays.
+                            </p>
+                        </div>
+
+                        <div className="grid lg:grid-cols-4 gap-8">
+                            {[
+                                { stage: "Eligibility", leakage: "12-18%", cause: "Incorrect member ID or plan change", recovery: "Real-time 72hr pre-verification", icon: "how_to_reg" },
+                                { stage: "Prior Auth", leakage: "20-30%", cause: "Expired windows or missing notes", recovery: "Automated tracking & note prep", icon: "event_busy" },
+                                { stage: "Verification", leakage: "5-10%", cause: "Out-of-network mismatch", recovery: "OON gap-exception coordination", icon: "verified" },
+                                { stage: "Cleanup", leakage: "8-12%", cause: "Uncollected patient responsibility", recovery: "Active card-on-file management", icon: "payments" }
+                            ].map((item, idx) => (
+                                <div key={idx} className="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+                                    <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
+                                        <span className="material-symbols-outlined">{item.icon}</span>
+                                    </div>
+                                    <h3 className="text-xl font-bold text-trust-navy mb-2">{item.stage}</h3>
+                                    <div className="flex items-center gap-2 mb-4">
+                                        <span className="text-red-500 font-black text-lg">-{item.leakage}</span>
+                                        <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest">Industry Leakage</span>
+                                    </div>
+                                    <p className="text-xs text-slate-500 mb-6 italic leading-relaxed">
+                                        Commonly caused by: {item.cause}
+                                    </p>
+                                    <div className="pt-6 border-t border-slate-100 flex items-center gap-3">
+                                        <span className="material-symbols-outlined text-green-600 text-sm">auto_awesome</span>
+                                        <span className="text-sm font-bold text-trust-navy">{item.recovery}</span>
+                                    </div>
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
                 <section className="max-w-[1280px] mx-auto px-6 py-32">
                     <div className="text-center mb-16">
                         <h2 className="font-display text-4xl font-bold text-trust-navy mb-4">Technical Competencies</h2>
@@ -210,9 +273,9 @@ export default function BillingPage() {
                             { icon: 'schedule', title: 'Prior Auth Tracking', desc: 'Meticulous tracking of authorization windows to prevent unpaid sessions.' },
                             { icon: 'credit_card', title: 'Payment Processing', desc: 'Secure processing of credit card transactions and recurring payment setups.' }
                         ].map((benefit, i) => (
-                            <div key={i} className="flex flex-col gap-6 p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group relative overflow-hidden">
+                            <div key={i} className="flex flex-col gap-6 p-10 rounded-[2.5rem] bg-white border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 group relative overflow-hidden">
 
-                                <div className="size-20 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] group-hover:bg-[#D2691E] group-hover:text-white transition-all duration-300 shadow-sm">
+                                <div className="size-20 rounded-2xl bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all duration-300 shadow-sm">
                                     <span className="material-symbols-outlined text-4xl">{benefit.icon}</span>
                                 </div>
 

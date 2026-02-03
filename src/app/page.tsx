@@ -9,8 +9,10 @@ import Hero from "@/components/marketing/Hero";
 
 export const metadata: Metadata = {
   title: "Virtual Minds | Psychiatric Practice Management & Operational Intelligence",
-  description: "Specialized practice management and virtual assistants for California psychiatrists. HIPAA-compliant operational support that saves 20+ hours/week and recovers $300K+ annually.",
-  keywords: ["virtual assistants for psychiatrists", "psychiatric virtual assistant California", "mental health practice management", "California psychiatric billing", "HIPAA compliant VA", "EHR implementation for psychiatrists", "psychiatric practice operations"],
+  description: "California psychiatric virtual assistants: Reclaim 20+ hours weekly, recover $300K+ annually. HIPAA-compliant practice management. SimplePractice experts. Book free audit.",
+  alternates: {
+    canonical: 'https://thevirtualminds.com'
+  },
 };
 
 export default function Home() {
@@ -76,14 +78,14 @@ export default function Home() {
               <div>
                 <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px] mb-4 block">Operational Clarity</span>
                 <h2 className="text-5xl md:text-6xl font-serif font-bold text-trust-navy mb-8 leading-[1.1]">
-                  Focus on <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Clinical Care</span>
+                  California Psychiatrists: Focus on
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Clinical Care, Not Admin</span>
                 </h2>
                 <p className="text-xl text-slate-700 leading-relaxed mb-10 font-medium">
                   Administrative challenges shouldn&apos;t keep you from your patients. We specialize in the complex California workflows that take you away from what matters most.
                 </p>
                 <Link href="/book-consultation" className="inline-flex items-center gap-3 px-8 py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-lg rounded-2xl shadow-xl shadow-[#D2691E]/20 transition-all hover:-translate-y-1">
-                  Schedule Strategy Audit
+                  See My Recovery Plan
                   <span className="material-symbols-outlined">arrow_forward</span>
                 </Link>
               </div>
@@ -123,8 +125,7 @@ export default function Home() {
           </div>
         </section>
 
-        {/* CALCULATOR SECTION */}
-        <AdminLeakageCalculator />
+
 
         {/* CORE SERVICES */}
         <section className="py-32 bg-white relative">
@@ -135,11 +136,7 @@ export default function Home() {
                 <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
               </div>
               <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mt-4 mb-6 tracking-tight leading-tight">
-                <span className="relative inline-block">
-                  Psychiatric Workflow
-                  <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#D2691E]/20"></span>
-                </span>
-                {' '}<span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Support</span>
+                Psychiatric Practice Management for California Psychiatrists
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
                 <strong className="text-trust-navy">Comprehensive administrative support</strong> designed specifically for the unique needs of{' '}
@@ -246,7 +243,7 @@ export default function Home() {
           <div className="max-w-6xl mx-auto px-6">
             <div className="text-center mb-20">
               <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px] mb-4 block">Client Feedback</span>
-              <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mt-4 mb-6 tracking-tight">Psychiatric Practice Success</h2>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mt-4 mb-6 tracking-tight">California Psychiatrist Success Stories</h2>
             </div>
 
             <div className="grid md:grid-cols-2 gap-12">
@@ -301,7 +298,7 @@ export default function Home() {
 
               <h2 className="text-4xl md:text-6xl font-serif font-bold mb-6 !text-white leading-tight drop-shadow-md">
                 Ready to reclaim your <br className="hidden md:block" />
-                <span className="text-[#D2691E]">Clinical Focus?</span>
+                <span className="text-[#D2691E]">Clinical Focus</span>
               </h2>
 
               <p className="text-xl text-slate-200 mb-10 max-w-2xl mx-auto font-medium leading-relaxed">
@@ -313,7 +310,7 @@ export default function Home() {
                   href="/book-consultation"
                   className="relative group/btn inline-flex items-center gap-4 px-10 py-5 bg-[#D2691E] text-white font-black text-xl rounded-2xl shadow-[0_20px_40px_-10px_rgba(210,105,30,0.4)] hover:shadow-[0_20px_60px_-10px_rgba(210,105,30,0.6)] hover:-translate-y-1 transition-all duration-300"
                 >
-                  <span className="relative z-10">Schedule Strategy Audit</span>
+                  <span className="relative z-10">See My Recovery Plan</span>
                   <span className="relative z-10 material-symbols-outlined group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
                   <div className="absolute inset-0 rounded-2xl bg-white/20 opacity-0 group-hover/btn:opacity-100 transition-opacity blur-md" />
                 </Link>

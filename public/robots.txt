@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemap
-Sitemap: https://virtualminds.com/sitemap.xml
+Sitemap: https://thevirtualminds.com/sitemap.xml
 
 # Block common non-content paths
 Disallow: /api/

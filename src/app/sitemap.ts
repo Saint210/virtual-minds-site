@@ -28,6 +28,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: route === '' ? 1 : 0.8,
     }))
 
+    // HIGH-PRIORITY PILLAR PAGES (SEO-critical content)
+    const pillarPages = [
+        '/virtual-assistant-for-psychiatrists',
+        '/resources/psychiatry-practice-startup-guide',
+    ].map((route) => ({
+        url: `${baseUrl}${route}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly' as const,
+        priority: 1.0,
+    }))
+
     // Dynamic Location Pages for California Cities
     const locationRoutes = locations.map((location) => ({
         url: `${baseUrl}/locations/${location.slug}`,
@@ -58,5 +69,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }))
 
-    return [...routes, ...locationRoutes, ...blueprints, ...posts]
+    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts]
 }

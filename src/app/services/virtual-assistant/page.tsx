@@ -93,7 +93,7 @@ export default function VirtualAssistantPage() {
                                 <div className="flex flex-col sm:flex-row gap-5">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group">
                                         <span className="material-symbols-outlined group-hover:rotate-12 transition-transform">schedule</span>
-                                        Schedule Strategy Audit
+                                        See My Recovery Plan
                                     </Link>
                                     <Link href="/services" className="bg-white border border-slate-200 text-trust-navy px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-3">
                                         Explore All Services

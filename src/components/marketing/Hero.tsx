@@ -10,49 +10,49 @@ export default function Hero() {
                 <div className="absolute inset-0 opacity-[0.03] bg-[url('/noise.png')] mix-blend-overlay"></div>
             </div>
 
-            <div className="relative z-10 max-w-[1400px] mx-auto px-6 pt-12 pb-12 lg:py-0">
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+            <div className="relative z-10 max-w-[1400px] mx-auto px-6 py-6 lg:py-8">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-center">
                     {/* Left Content - Mobile First */}
-                    <div className="flex flex-col gap-6 text-center lg:text-left">
+                    <div className="flex flex-col gap-4 text-center lg:text-left">
                         {/* Trust Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/40 backdrop-blur-sm border border-[#b25a2a]/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium shadow-sm">
                             <span className="material-symbols-outlined text-[#b25a2a]">verified</span>
                             <span>California's Premier Psychiatric VA Service</span>
                         </div>
 
-                        {/* Modern Headline */}
+                        {/* Modern Headline - SEO + Conversion Optimized */}
                         <div className="space-y-4">
-                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black leading-[1.1] text-trust-navy tracking-tight">
-                                Virtual Assistants for
+                            <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-[1.1] text-trust-navy tracking-tight">
+                                California Psychiatric Virtual Assistants:
                                 <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                    California Psychiatrists
+                                    Reclaim 20+ Hours Weekly. Recover $300K+ Annually.
                                 </span>
                             </h1>
 
-                            {/* Value Proposition */}
-                            <p className="text-lg md:text-xl text-slate-700 leading-relaxed max-w-lg font-medium">
-                                HIPAA‑compliant administrative infrastructure for <strong className="text-trust-navy">Telehealth</strong> & Hybrid Psychiatric Practices.
-                                <span className="text-primary font-bold"> Specialized clinical support</span> for psychiatrists who demand precision.
+                            {/* Value Proposition - Benefit-Focused */}
+                            <p className="text-base md:text-lg text-slate-700 leading-relaxed max-w-lg font-medium">
+                                California psychiatric VAs who handle <strong className="text-trust-navy">prior auths, billing chaos, and no-show recovery</strong>.
+                                <span className="text-primary font-bold"> HIPAA-compliant. SimplePractice experts. Psychiatry-only focus.</span>
                             </p>
                         </div>
 
 
                         {/* Modern CTA */}
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
                             <Link
                                 href="/book-consultation"
-                                className="group relative overflow-hidden bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:shadow-xl hover:shadow-[#D2691E]/20 hover:-translate-y-1"
+                                className="group relative overflow-hidden bg-[#D2691E] hover:bg-[#B8860B] text-white px-6 py-3 rounded-xl font-bold text-base transition-all hover:shadow-xl hover:shadow-[#D2691E]/20 hover:-translate-y-1"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
-                                    <span className="material-symbols-outlined">calendar_today</span>
-                                    Book Strategy Audit
+                                    <span className="material-symbols-outlined">trending_up</span>
+                                    See My Recovery Plan
                                 </span>
                             </Link>
 
                             <Link
                                 href="/virtual-assistant-for-psychiatrists"
-                                className="group border-2 border-primary/30 text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors flex items-center gap-2"
+                                className="group border-2 border-primary/30 text-primary px-6 py-3 rounded-xl font-bold text-base hover:bg-primary/5 transition-colors flex items-center gap-2"
                             >
                                 <span>Explore Services</span>
                                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -60,26 +60,26 @@ export default function Hero() {
                         </div>
 
                         {/* Interactive Metrics */}
-                        <div className="grid grid-cols-3 gap-4 max-w-md mx-auto lg:mx-0">
-                            <div className="bg-white/40 backdrop-blur-sm border border-[#b25a2a]/20 rounded-2xl p-4 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-2xl md:text-3xl font-black text-[#b25a2a] mb-1 group-hover:scale-110 transition-transform origin-left">40%</div>
+                        <div className="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
+                            <div className="bg-white/40 backdrop-blur-sm border border-[#b25a2a]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
+                                <div className="text-xl md:text-2xl font-black text-[#b25a2a] mb-1 group-hover:scale-110 transition-transform origin-left">40%</div>
                                 <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Less Admin</div>
                             </div>
-                            <div className="bg-white/40 backdrop-blur-sm border border-[#9CAF88]/20 rounded-2xl p-4 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-2xl md:text-3xl font-black text-[#9CAF88] mb-1 group-hover:scale-110 transition-transform origin-left">95%</div>
+                            <div className="bg-white/40 backdrop-blur-sm border border-[#9CAF88]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
+                                <div className="text-xl md:text-2xl font-black text-[#9CAF88] mb-1 group-hover:scale-110 transition-transform origin-left">95%</div>
                                 <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Accuracy</div>
                             </div>
-                            <div className="bg-white/40 backdrop-blur-sm border border-[#DAA520]/20 rounded-2xl p-4 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-2xl md:text-3xl font-black text-[#DAA520] mb-1 group-hover:scale-110 transition-transform origin-left">20hr</div>
+                            <div className="bg-white/40 backdrop-blur-sm border border-[#DAA520]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
+                                <div className="text-xl md:text-2xl font-black text-[#DAA520] mb-1 group-hover:scale-110 transition-transform origin-left">20hr</div>
                                 <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Recovered</div>
                             </div>
                         </div>
                     </div>
 
                     {/* Right Content - Modern Visual */}
-                    <div className="relative pt-10 lg:pt-0">
+                    <div className="relative pt-6 lg:pt-0">
                         {/* Main Image Container - Matches Services Architecture Style */}
-                        <div className="relative aspect-[4/3] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/20 bg-white/5 backdrop-blur-sm group/hero-image transform transition-transform hover:scale-[1.01] duration-700">
+                        <div className="relative aspect-[5/3] w-full rounded-[2rem] overflow-hidden shadow-2xl border border-white/20 bg-white/5 backdrop-blur-sm group/hero-image transform transition-transform hover:scale-[1.01] duration-700">
                             {/* Decorative Glow */}
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[#b25a2a]/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
 

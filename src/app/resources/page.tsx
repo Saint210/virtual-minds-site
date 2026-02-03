@@ -285,7 +285,7 @@ export default function ResourcesHub() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
                             </span>
-                            <span className="text-sm font-bold text-red-800">Only 3 Strategy Audit Slots Left This Week</span>
+                            <span className="text-sm font-bold text-red-800">Only 3 Recovery Plan Slots Left This Week</span>
                         </div>
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight text-trust-navy">
@@ -295,7 +295,7 @@ export default function ResourcesHub() {
                             <strong className="text-trust-navy">Stop managing the chaos.</strong> Start <span className="text-[#D2691E] font-bold">leading your practice</span>.
                         </p>
                         <p className="text-base md:text-lg text-slate-600 mb-12 max-w-xl mx-auto leading-relaxed">
-                            Book your <strong className="text-trust-navy">15-minute Strategy Audit</strong> to define your infrastructure roadmap and claim your <strong className="text-[#D2691E]">free compliance review</strong>.
+                            Book your <strong className="text-trust-navy">15-minute Recovery Plan</strong> to define your infrastructure roadmap and claim your <strong className="text-[#D2691E]">free compliance review</strong>.
                         </p>
 
                         {/* Benefit list */}
@@ -318,7 +318,7 @@ export default function ResourcesHub() {
                                 className="group relative overflow-hidden px-10 md:px-12 py-4 md:py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-black text-lg md:text-xl rounded-2xl shadow-2xl shadow-[#D2691E]/20 hover:shadow-[#D2691E]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
-                                <span>Book Your Strategy Audit</span>
+                                <span>See My Recovery Plan</span>
                             </Link>
                             <Link
                                 href="/pricing"
