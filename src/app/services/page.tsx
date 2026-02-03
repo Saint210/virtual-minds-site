@@ -16,7 +16,7 @@ const serviceBlueprints = [
         desc: "Specialized assistants trained in psychiatric-specific workflows, medication refill coordination, and professional patient communication.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Psychiatric-trained assistants</strong> who handle intake, refills, and patient communication—
+                <strong>Psychiatric-trained assistants</strong> who handle intake, refills, and patient communication—
                 <span className="text-[#D2691E]"> so you can focus on clinical care</span>.
             </>
         ),
@@ -31,7 +31,7 @@ const serviceBlueprints = [
         desc: "Dedicated support for insurance verification, superbill creation, and revenue cycle management to ensure practice stability.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Maximize revenue</strong> with dedicated insurance verification, prior auths, and claims management—
+                <strong>Maximize revenue</strong> with dedicated insurance verification, prior auths, and claims management—
                 <span className="text-[#D2691E]"> ensuring practice stability</span>.
             </>
         ),
@@ -46,7 +46,7 @@ const serviceBlueprints = [
         desc: "Turnkey operational setup for new California psychiatric practices. EHR implementation, policy development, and logistical support.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Turnkey setup</strong> for new practices—EHR, credentialing, policies, and telehealth infrastructure.{' '}
+                <strong>Turnkey setup</strong> for new practices—EHR, credentialing, policies, and telehealth infrastructure.{' '}
                 <span className="text-[#D2691E]">Launch in 30 days</span>.
             </>
         ),
@@ -61,7 +61,7 @@ const serviceBlueprints = [
         desc: "Secure data handling protocols and HIPAA compliance auditing designed specifically for California patient privacy requirements.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Secure infrastructure</strong> with audit-ready protocols designed for{' '}
+                <strong>Secure infrastructure</strong> with audit-ready protocols designed for{' '}
                 <span className="text-[#D2691E]">California privacy compliance</span>.
             </>
         ),
@@ -76,7 +76,7 @@ const serviceBlueprints = [
         desc: "Streamlined coordination between your practice and pharmacies. Handling refill requests and prior authorization documentation.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Streamlined pharmacy coordination</strong>—handling refills and prior auths{' '}
+                <strong>Streamlined pharmacy coordination</strong>—handling refills and prior auths{' '}
                 <span className="text-[#D2691E]">90% faster</span>.
             </>
         ),
@@ -91,7 +91,7 @@ const serviceBlueprints = [
         desc: "Expert configuration of SimplePractice, Kareo, and other leading EHR platforms to match your practice's unique clinical workflow.",
         descMarkup: (
             <>
-                <strong className="text-trust-navy">Expert EHR configuration</strong> for SimplePractice, Kareo, and more—
+                <strong>Expert EHR configuration</strong> for SimplePractice, Kareo, and more—
                 <span className="text-[#D2691E]"> reduce clicks by 50%</span>.
             </>
         ),

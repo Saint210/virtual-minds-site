@@ -162,8 +162,8 @@ export default function Home() {
                   <span className="material-symbols-outlined text-5xl text-[#D2691E] block mb-4">person_search</span>
                   <h3 className="text-3xl font-serif font-bold !text-white mb-4">Virtual Assistants</h3>
                   <p className="text-slate-300 font-medium leading-relaxed">
-                    <strong className="text-white">Psychiatric-trained assistants</strong> who handle intake, refills, and patient communication—
-                    <span className="text-[#D2691E]"> so you can focus on clinical care</span>. Recover <strong className="text-white">20+ hours weekly</strong>.
+                    <strong className="!text-white">Psychiatric-trained assistants</strong> who handle intake, refills, and patient communication—
+                    <span className="text-[#D2691E]"> so you can focus on clinical care</span>. Recover <strong className="!text-white">20+ hours weekly</strong>.
                   </p>
                 </div>
 
