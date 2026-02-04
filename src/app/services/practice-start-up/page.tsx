@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import PracticeStartupServiceSchema from "@/components/seo/PracticeStartupServiceSchema";
+import RelatedInsights from "@/components/services/RelatedInsights";
 
 export const metadata: Metadata = {
     title: "Psychiatry Practice Start-Up Services | California | Virtual Minds",
@@ -310,6 +311,34 @@ export default function PracticeStartUpPage() {
                     </div>
                 </section>
 
+                <RelatedInsights
+                    title="Start-Up Intelligence"
+                    subtitle="Critical data for the planning phase."
+                    insights={[
+                        {
+                            title: "The Hidden Costs of Starting a Private Psychiatry Practice in CA (2025 Data)",
+                            category: "Financial Planning",
+                            excerpt: "Budgeting beyond rent: A breakdown of malpractice, software, and compliance costs you might miss.",
+                            href: "/resources/startup-costs-breakdown",
+                            readTime: "7 min read"
+                        },
+                        {
+                            title: "Telehealth vs. Office: Which is More Profitable for New Psychiatrists?",
+                            category: "Business Model",
+                            excerpt: "Analyzing the overhead vs. reimbursement rates for hybrid models in California.",
+                            href: "/resources/telehealth-vs-office-profitability",
+                            readTime: "5 min read"
+                        },
+                        {
+                            title: "Insurance Credentialing Timeline Reality Check",
+                            category: "Payer Relations",
+                            excerpt: "Why it takes 90-120 days to get paid, and how to survive the 'cash-flow gap'.",
+                            href: "/resources/credentialing-timeline-guide",
+                            readTime: "4 min read"
+                        }
+                    ]}
+                />
+
                 {/* FINAL CTA */}
                 <section className="bg-gradient-to-br from-[#131313] to-[#252525] py-32 relative overflow-hidden text-center">
                     <div className="max-w-4xl mx-auto px-6 relative z-10">
@@ -329,6 +358,6 @@ export default function PracticeStartUpPage() {
                 </section>
             </main>
             <Footer />
-        </div>
+        </div >
     );
 }

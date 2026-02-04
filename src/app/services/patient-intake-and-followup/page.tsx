@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import RelatedInsights from "@/components/services/RelatedInsights";
 
 export const metadata = {
     title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
@@ -273,9 +274,37 @@ export default function IntakePage() {
                     </div>
                 </div>
 
+                <RelatedInsights
+                    title="Intake Optimization Briefings"
+                    subtitle="Strategies to convert more inquiries into committed patients."
+                    insights={[
+                        {
+                            title: "Why 40% of Psychiatry Leads Ghost Before the First Appointment",
+                            category: "Patient Retention",
+                            excerpt: "The psychological barriers new patients face and how a concierge intake process removes them.",
+                            href: "/resources/why-leads-ghost",
+                            readTime: "4 min read"
+                        },
+                        {
+                            title: "The 'Speed to Lead' Rule: Why Answering in 5 Minutes Matters",
+                            category: "practice growth",
+                            excerpt: "Data shows calling back within 5 minutes increases conversion by 900%. Here is how to operationalize that.",
+                            href: "/resources/speed-to-lead-psychiatry",
+                            readTime: "3 min read"
+                        },
+                        {
+                            title: "Scripts for High-Converting Patient Intake Calls",
+                            category: "Operations",
+                            excerpt: "Exact verbiage our Virtual Minds use to validate insurance, set expectations, and secure the booking.",
+                            href: "/resources/intake-scripts",
+                            readTime: "6 min read"
+                        }
+                    ]}
+                />
+
                 <ServiceNavigationTray />
-            </main>
+            </main >
             <Footer />
-        </div>
+        </div >
     );
 }

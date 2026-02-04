@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import RelatedInsights from "@/components/services/RelatedInsights";
 
 export const metadata = {
     title: "Specialized Mental Health Virtual Assistants | Virtual Minds",
@@ -527,9 +528,37 @@ export default function VirtualAssistantPage() {
                     </div>
                 </section>
 
+                <RelatedInsights
+                    title="Executive Briefings: Delegation Strategy"
+                    subtitle="Maximize the impact of your remote clinical staff."
+                    insights={[
+                        {
+                            title: "Math Breakdown: In-House Receptionist vs. Virtual Mind",
+                            category: "Practice Economics",
+                            excerpt: "A transparent cost comparison showing how California practices save $30k/year while gaining higher coverage.",
+                            href: "/resources/virtual-vs-inhouse-cost",
+                            readTime: "5 min read"
+                        },
+                        {
+                            title: "What Can a Virtual Assistant Legally Do in Psychiatry?",
+                            category: "Compliance",
+                            excerpt: "Navigating the clinical boundary: A guide to HIPAA-compliant delegation for California psychiatrists.",
+                            href: "/resources/va-scope-of-practice",
+                            readTime: "4 min read"
+                        },
+                        {
+                            title: "How to Delegate Intake Calls to Increase Patient Conversion",
+                            category: "Operations",
+                            excerpt: "Stop playing phone tag. A systematic workflow for handing off new patient inquiries to your VA.",
+                            href: "/resources/intake-delegation-workflow",
+                            readTime: "3 min read"
+                        }
+                    ]}
+                />
+
                 <ServiceNavigationTray />
             </main>
             <Footer />
-        </div>
+        </div >
     );
 }
