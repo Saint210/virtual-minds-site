@@ -61,7 +61,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 </div>
                                 <h1 className="font-serif text-5xl md:text-7xl font-black text-trust-navy mb-8 leading-[1.15] tracking-tight">
                                     Strategic Practice <br />
-                                    <span className="text-[#D2691E]">Architecture.</span>
+                                    <span className="text-primary">Architecture.</span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-10 max-w-lg">
                                     A professional-grade <strong className="text-trust-navy">3,500-word roadmap</strong> for psychiatrists ready to engineer an elite private practice in California.
@@ -69,7 +69,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link
                                         href="#guide-intro"
-                                        className="inline-flex items-center gap-3 px-10 py-5 bg-[#D2691E] border border-[#B25A2A] hover:bg-[#B8860B] text-white font-bold text-lg rounded-2xl shadow-[0_20px_40px_-15px_rgba(210,105,30,0.3)] transition-all hover:scale-[1.02] justify-center"
+                                        className="inline-flex items-center gap-3 px-10 py-5 bg-primary border border-primary hover:bg-[#B8860B] text-white font-bold text-lg rounded-2xl shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] justify-center"
                                     >
                                         Read The Blueprint
                                         <span className="material-symbols-outlined">arrow_forward</span>
@@ -118,7 +118,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 </div>
 
                                 {/* Feature: EHR Matrix */}
-                                <div className="md:col-span-2 bg-[#1A2332] rounded-[2.5rem] p-10 shadow-2xl flex flex-col items-start gap-10 group hover:bg-[#121E31] transition-all duration-300 border border-white/5">
+                                <div className="md:col-span-2 bg-trust-navy rounded-[2.5rem] p-10 shadow-2xl flex flex-col items-start gap-10 group hover:shadow-primary/5 transition-all duration-300 border border-white/5">
                                     <div className="size-14 rounded-2xl bg-white/10 border border-white/10 flex items-center justify-center text-primary shadow-inner group-hover:bg-white/20 transition-all">
                                         <span className="material-symbols-outlined text-3xl font-light">analytics</span>
                                     </div>
@@ -694,34 +694,58 @@ export default function PsychiatryPracticeStartupGuidePage() {
                             {[
                                 {
                                     title: "Underestimating Startup Timeline",
+                                    risk_level: "High",
                                     problem: "Expecting to see patients in 3 months",
                                     solution: "Plan for 6-12 months from license to first patient. Insurance credentialing alone takes 90-180 days."
                                 },
                                 {
                                     title: "Skipping Insurance Credentialing",
+                                    risk_level: "Critical",
                                     problem: "Going cash-only without market research",
                                     solution: "Most CA patients expect insurance. Start credentialing early, even if you plan to be cash-heavy."
                                 },
                                 {
                                     title: "Poor Financial Planning",
+                                    risk_level: "Critical",
                                     problem: "Running out of capital before break-even",
                                     solution: "Budget for 12 months of expenses. Most practices take 6-9 months to reach profitability."
                                 },
                                 {
                                     title: "HIPAA Violations",
+                                    risk_level: "Severe",
                                     problem: "Using non-compliant tools (regular Zoom, Gmail)",
                                     solution: "Invest in HIPAA-compliant EHR, email, and video from day one. Violations can cost $50K+."
                                 },
                                 {
                                     title: "Doing Everything Yourself",
+                                    risk_level: "Moderate",
                                     problem: "Spending 20+ hours/week on admin instead of patients",
                                     solution: "Hire a virtual assistant early. Your time is worth $400/hour seeing patients, not $25/hour doing billing."
                                 }
                             ].map((pitfall, i) => (
-                                <div key={i} className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-2xl">
-                                    <h3 className="font-bold text-trust-navy text-xl mb-2">❌ {pitfall.title}</h3>
-                                    <p className="text-red-800 mb-3"><strong>Problem:</strong> {pitfall.problem}</p>
-                                    <p className="text-green-800"><strong>✅ Solution:</strong> {pitfall.solution}</p>
+                                <div key={i} className="group relative bg-[#FAF8F3] p-8 rounded-[2rem] border border-slate-200 hover:border-red-200 hover:shadow-xl hover:shadow-red-500/5 transition-all">
+                                    <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                                        <span className="material-symbols-outlined text-6xl text-red-500">warning</span>
+                                    </div>
+                                    <div className="relative z-10">
+                                        <div className="flex items-center gap-3 mb-4">
+                                            <span className="px-3 py-1 bg-red-100 text-red-700 text-[10px] font-black uppercase tracking-[0.2em] rounded-full">
+                                                Risk Level: {pitfall.risk_level}
+                                            </span>
+                                            <h3 className="font-serif text-2xl font-bold text-trust-navy">{pitfall.title}</h3>
+                                        </div>
+
+                                        <div className="grid md:grid-cols-2 gap-6">
+                                            <div>
+                                                <div className="text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">The Trap</div>
+                                                <p className="text-slate-600 font-medium leading-relaxed">{pitfall.problem}</p>
+                                            </div>
+                                            <div>
+                                                <div className="text-xs font-bold uppercase tracking-widest text-primary mb-2">The Mitigation</div>
+                                                <p className="text-trust-navy font-bold leading-relaxed">{pitfall.solution}</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             ))}
                         </div>
