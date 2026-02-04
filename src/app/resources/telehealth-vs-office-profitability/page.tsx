@@ -94,7 +94,7 @@ export default function TelehealthProfitabilityPost() {
                                     <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D2691E]/10 rounded-full blur-[100px] -mr-20 -mt-20"></div>
                                     <div className="relative z-10">
                                         <div className="flex items-center justify-between mb-8 border-b border-white/10 pb-6">
-                                            <h3 className="text-2xl font-serif font-bold text-white m-0">Monthly Overhead Ledger</h3>
+                                            <h3 className="text-2xl font-serif font-bold !text-white m-0">Monthly Overhead Ledger</h3>
                                             <span className="text-xs font-bold uppercase tracking-widest text-slate-400">California Averages</span>
                                         </div>
 

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 // Step Types - REDESIGNED V3
 type Step = "MODEL" | "CHALLENGE" | "STAFFING" | "TIME_DRAIN" | "TECH" | "DIGITAL" | "BOOKING";
@@ -26,6 +27,11 @@ export default function PracticeAuditWizard() {
     });
 
 
+
+    // Smart Funnel Logic
+    const searchParams = useSearchParams();
+    const ref = searchParams.get('ref');
+
     // Step 1: Model
     const models = [
         { id: "solo_launch", label: "Solo (Launching)", icon: "rocket_launch", size: "1 - 5" },
@@ -36,13 +42,13 @@ export default function PracticeAuditWizard() {
 
     // Step 2: Primary Challenge (Enhanced)
     const challenges = [
-        { id: "intake", label: "Intake & Scheduling", icon: "calendar_month" },
-        { id: "billing", label: "Billing / Insurance Claims", icon: "receipt_long" },
+        { id: "intake", label: "Intake & Scheduling", icon: "calendar_month", recommended: ref === 'intake' },
+        { id: "billing", label: "Billing / Insurance Claims", icon: "receipt_long", recommended: ref === 'credentialing' },
         { id: "clinical", label: "Clinical Admin (Refills/Renewals)", icon: "medication" },
         { id: "prior_auth", label: "Prior Authorizations", icon: "approval" },
         { id: "no_shows", label: "Patient No-Shows", icon: "event_busy" },
         { id: "documentation", label: "Documentation Backlog", icon: "description" },
-        { id: "staffing", label: "Staffing / Reliability", icon: "person_off" }
+        { id: "staffing", label: "Staffing / Reliability", icon: "person_off", recommended: ref === 'roi' }
     ];
 
     // Step 3: Current Staffing (NEW)
@@ -167,24 +173,38 @@ export default function PracticeAuditWizard() {
                     </div>
                 )}
 
-                {/* STEP 2: CHALLENGE */}
+
                 {step === "CHALLENGE" && (
                     <div className="grid grid-cols-1 gap-4">
                         {challenges.map((c) => (
                             <button
                                 key={c.id}
                                 onClick={() => handleNext("challenge", c.id)}
-                                className="group text-left p-6 rounded-2xl border border-slate-200 hover:border-primary/50 hover:bg-primary/5 hover:shadow-lg transition-all duration-300 flex items-center justify-between"
+                                className={`group text-left p-6 rounded-2xl border transition-all duration-300 flex items-center justify-between text-lg
+                                    ${c.recommended
+                                        ? 'border-primary bg-primary/5 ring-1 ring-primary shadow-lg scale-[1.02]'
+                                        : 'border-slate-200 hover:border-primary/50 hover:bg-primary/5 hover:shadow-lg'
+                                    }`}
                             >
                                 <div className="flex items-center gap-4">
                                     <div className="size-10 rounded-full bg-red-50 flex items-center justify-center text-red-400 group-hover:bg-red-100 transition-colors">
                                         <span className="material-symbols-outlined">{c.icon}</span>
                                     </div>
-                                    <span className="font-bold text-trust-navy text-lg">{c.label}</span>
+                                    <div className="flex flex-col">
+                                        <div className="flex items-center gap-2">
+                                            <span className="font-bold text-trust-navy">{c.label}</span>
+                                            {c.recommended && (
+                                                <span className="bg-primary text-white text-[10px] uppercase font-black px-2 py-0.5 rounded-full tracking-widest animate-pulse">
+                                                    Recommended
+                                                </span>
+                                            )}
+                                        </div>
+                                    </div>
                                 </div>
                                 <span className="material-symbols-outlined text-slate-300 group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
                             </button>
                         ))}
+
                         <button onClick={handleBack} className="text-slate-400 text-sm font-bold mt-4 hover:text-trust-navy transition-colors flex items-center gap-2">
                             <span className="material-symbols-outlined text-sm">arrow_back</span> Back
                         </button>
