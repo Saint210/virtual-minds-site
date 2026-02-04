@@ -462,11 +462,11 @@ export default function VirtualAssistantPage() {
                 <section className="bg-white border-y border-slate-100 py-24">
                     <div className="max-w-[1280px] mx-auto px-6 text-center">
                         <div className="inline-flex items-center gap-2 mb-6">
-                            <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Platform Integration</span>
-                            <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
+                            <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Platform Integration</span>
+                            <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                         </div>
                         <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">
-                            Seamless <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Platform</span> Integration
+                            Seamless <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Platform</span> Integration
                         </h2>
                         <p className="text-slate-600 max-w-2xl mx-auto mb-12 font-medium">
                             Our assistants are trained on the platforms you already use—<strong className="text-trust-navy">no disruption</strong> to your workflow.
@@ -480,9 +480,47 @@ export default function VirtualAssistantPage() {
                                 { name: 'DrChrono', icon: 'stethoscope' },
                                 { name: 'Google Workspace', icon: 'workspace_premium' }
                             ].map((platform) => (
-                                <div key={platform.name} className="group bg-[#FAF8F3] px-8 py-4 rounded-2xl border-2 border-slate-200 hover:border-[#D2691E]/30 font-bold text-slate-600 text-sm shadow-sm hover:shadow-lg transition-all duration-300 flex items-center gap-3">
-                                    <span className="material-symbols-outlined text-[#D2691E] text-xl group-hover:scale-110 transition-transform">{platform.icon}</span>
+                                <div key={platform.name} className="group bg-[#FAF8F3] px-8 py-4 rounded-2xl border-2 border-slate-200 hover:border-primary/30 font-bold text-slate-600 text-sm shadow-sm hover:shadow-lg transition-all duration-300 flex items-center gap-3">
+                                    <span className="material-symbols-outlined text-primary text-xl group-hover:scale-110 transition-transform">{platform.icon}</span>
                                     {platform.name}
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                </section>
+
+                {/* FAQ Section */}
+                <section className="py-24 bg-[#FAF8F3]">
+                    <div className="max-w-4xl mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Common Questions</h2>
+                            <p className="text-slate-600">Everything you need to know about our specialized VA service.</p>
+                        </div>
+                        <div className="space-y-6">
+                            {[
+                                {
+                                    q: "Are your VAs HIPAA compliant?",
+                                    a: "Absolutely. Every Virtual Minds assistant undergoes rigorous HIPAA certification and annual retraining. We sign a BAA (Business Associate Agreement) with your practice to ensure full legal compliance."
+                                },
+                                {
+                                    q: "What time zone do they work in?",
+                                    a: "They work in your time zone (Pacific Time). Our assistants align their schedule with your clinic hours to ensure real-time coordination for intakes and patient support."
+                                },
+                                {
+                                    q: "Can they handle prior authorizations?",
+                                    a: "Yes. This is a core specialization. They are trained to navigate insurance portals (CoverMyMeds, Availity) to process prior authorizations and handle pharmacy calls effectively."
+                                },
+                                {
+                                    q: "How long is the contract?",
+                                    a: "We operate on a month-to-month basis with no long-term lock-in. We believe we should earn your business every single month through high-performance support."
+                                }
+                            ].map((item, i) => (
+                                <div key={i} className="bg-white p-8 rounded-2xl border border-slate-200 hover:border-primary/30 transition-colors shadow-sm">
+                                    <h3 className="font-bold text-lg text-trust-navy mb-3 flex items-start gap-3">
+                                        <span className="text-primary material-symbols-outlined mt-0.5">help</span>
+                                        {item.q}
+                                    </h3>
+                                    <p className="text-slate-600 leading-relaxed ml-9">{item.a}</p>
                                 </div>
                             ))}
                         </div>

@@ -4,7 +4,9 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import BlogFeed from "@/components/blog/BlogFeed";
 
-import { blogPosts, categories } from "@/lib/blog-data";
+import { blogPosts as staticPosts, categories as staticCategories } from "@/lib/blog-data";
+import { getPosts } from "@/lib/blog-service";
+import { urlFor } from "@/lib/sanity";
 
 export const metadata = {
   title: "California Psychiatric Virtual Assistant Blog | Virtual Minds",
@@ -27,7 +29,6 @@ export const metadata = {
   },
 };
 
-
 const upgradedSlugs = [
   "how-to-choose-california-psychiatric-virtual-assistant",
   "revenue-cycle-management-vs-billing",
@@ -38,7 +39,51 @@ const upgradedSlugs = [
   "optimizing-patient-workflow-psychiatry"
 ];
 
-export default function BlogPage() {
+function calculateReadTime(text: any[]): string {
+  const wordsPerMinute = 200;
+  let wordCount = 0;
+
+  if (!text) return "5 min read";
+
+  text.forEach((block: any) => {
+    if (block._type === 'block' && block.children) {
+      block.children.forEach((child: any) => {
+        if (child.text) {
+          wordCount += child.text.split(/\s+/).length;
+        }
+      });
+    }
+  });
+
+  const minutes = Math.ceil(wordCount / wordsPerMinute);
+  return `${minutes > 0 ? minutes : 5} min read`;
+}
+
+export default async function BlogPage() {
+  // Fetch live posts from Sanity
+  const sanityPosts = await getPosts();
+
+  // Transform Sanity posts to match the internal BlogPost interface
+  const livePosts = sanityPosts.map((post) => ({
+    title: post.title,
+    excerpt: post.excerpt,
+    category: post.categories?.[0] || "Practice Growth",
+    date: post.publishedAt
+      ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
+      : "Coming Soon",
+    readTime: calculateReadTime(post.body),
+    image: post.mainImage ? urlFor(post.mainImage).url() : "/images/hero-new.png",
+    slug: post.slug?.current || "",
+    featured: false // You can add logic to set this from Sanity if desired
+  }));
+
+  // Combine static and live posts (Live posts first)
+  const allPosts = [...livePosts, ...staticPosts];
+
+  // Logic to ensure all categories are represented
+  const liveCategories = [...new Set(livePosts.map(p => p.category))];
+  const allCategories = [...new Set(["All", ...liveCategories, ...staticCategories])];
+
   return (
     <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
       <Navbar />
@@ -76,8 +121,8 @@ export default function BlogPage() {
         </section>
 
         <BlogFeed
-          posts={blogPosts}
-          categories={categories}
+          posts={allPosts}
+          categories={allCategories as string[]}
           upgradedSlugs={upgradedSlugs}
         />
       </main>

@@ -5,12 +5,15 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceArchitectureGraphic from "@/components/services/ServiceArchitectureGraphic";
 
+import { getServices } from "@/lib/services-service";
+import { urlFor } from "@/lib/sanity";
+
 export const metadata = {
     title: "Psychiatric Practice Support Services | Virtual Minds",
     description: "Specialized virtual assistant and practice management support for California psychiatrists. From practice start-ups to medication management workflows.",
 };
 
-const serviceBlueprints = [
+const staticServiceBlueprints = [
     {
         title: "Virtual Assistants",
         desc: "Specialized assistants trained in psychiatric-specific workflows, medication refill coordination, and professional patient communication.",
@@ -24,7 +27,8 @@ const serviceBlueprints = [
         color: "text-primary",
         link: "/services/virtual-assistant",
         tags: ["Intake Management", "Telehealth Comms"],
-        yield: "Recover $25k/yr in Admin Overhead"
+        yield: "Recover $25k/yr in Admin Overhead",
+        isPopular: true
     },
     {
         title: "Billing & RCM",
@@ -103,7 +107,41 @@ const serviceBlueprints = [
     }
 ];
 
-export default function ServicesPage() {
+export default async function ServicesPage() {
+    // Fetch live services from Sanity
+    const sanityServicesData = await getServices();
+
+    // Transform Sanity services to match UI layout
+    const liveServices = sanityServicesData.map((service) => ({
+        title: service.name,
+        desc: service.description,
+        descMarkup: (
+            <>
+                {service.tagline && <strong>{service.tagline}</strong>} {service.tagline && "— "}
+                <span className="text-[#D2691E]">{service.description}</span>
+            </>
+        ),
+        icon: service.icon || "settings",
+        color: "text-primary",
+        link: `/services/${service.slug.current}`,
+        tags: service.tags || [],
+        yield: service.yield || "High ROI Analysis",
+        isPopular: false, // Default
+        isLive: true
+    }));
+
+    // Combine static and live (filter out static if live version exists by slug)
+    const allServices = [...liveServices];
+
+    // Fallback logic: if no live services are published yet, show the static ones
+    // Otherwise, we could merge them. For now, let's merge them but prefer live.
+    staticServiceBlueprints.forEach(staticService => {
+        const liveMatch = liveServices.find(live => live.link === staticService.link);
+        if (!liveMatch) {
+            allServices.push(staticService as any);
+        }
+    });
+
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
@@ -237,9 +275,9 @@ export default function ServicesPage() {
                         </div>
 
                         <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
-                            {serviceBlueprints.map((service, idx) => {
-                                // Featured cards (navy background): Virtual Assistants, Website Design
-                                const isFeatured = idx === 0 || idx === 6;
+                            {allServices.map((service, idx) => {
+                                // Featured cards (navy background): Virtual Assistants OR if marked as popular
+                                const isFeatured = (service as any).isPopular || idx === 0;
 
                                 if (isFeatured) {
                                     return (
@@ -248,18 +286,13 @@ export default function ServicesPage() {
                                             <div className="absolute top-0 right-0 w-64 h-64 bg-[#D2691E]/20 rounded-full blur-[100px] -mr-20 -mt-20 pointer-events-none group-hover:bg-[#D2691E]/30 transition-colors" />
 
                                             <div className="relative z-10 mb-8">
-                                                {idx === 0 && (
+                                                {isFeatured && (
                                                     <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2691E] text-white text-[10px] font-bold uppercase tracking-widest mb-6">
                                                         <span className="material-symbols-outlined text-sm">star</span>
-                                                        Most Popular
+                                                        {(service as any).isLive ? "Live Strategy" : "Most Popular"}
                                                     </div>
                                                 )}
-                                                {idx === 6 && (
-                                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#67927A] text-white text-[10px] font-bold uppercase tracking-widest mb-6">
-                                                        <span className="material-symbols-outlined text-sm">auto_awesome</span>
-                                                        AI-Optimized
-                                                    </div>
-                                                )}
+
                                                 <span className={`material-symbols-outlined text-5xl text-[#D2691E] block mb-4`}>{service.icon}</span>
                                                 <h3 className="text-3xl font-serif font-bold !text-white mb-4">{service.title}</h3>
                                                 <p className="text-slate-300 font-medium leading-relaxed text-base">

@@ -47,7 +47,7 @@ export default function Navbar({
                         Services
                     </Link>
                     <Link href="/about" className="hover:text-primary transition-colors">
-                        The Firm
+                        About
                     </Link>
                     <Link href="/pricing" className="hover:text-primary transition-colors">
                         Pricing
@@ -56,7 +56,7 @@ export default function Navbar({
                         Resources
                     </Link>
                     <Link href="/blog" className="hover:text-primary transition-colors">
-                        Insights
+                        Blog
                     </Link>
                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-primary/10">
                         Schedule Call
@@ -94,10 +94,10 @@ export default function Navbar({
                         <div className="flex flex-col p-6 gap-2">
                             {[
                                 { name: "Services", href: "/services" },
-                                { name: "The Firm", href: "/about" },
+                                { name: "About", href: "/about" },
                                 { name: "Pricing", href: "/pricing" },
                                 { name: "Resources", href: "/resources" },
-                                { name: "Insights", href: "/blog" }
+                                { name: "Blog", href: "/blog" }
                             ].map((item) => (
                                 <Link
                                     key={item.name}

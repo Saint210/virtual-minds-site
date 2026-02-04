@@ -52,9 +52,20 @@ export default function BookConsultationPage() {
                                 <span className="text-trust-navy">Book Consultation</span>
                             </nav>
 
-                            <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black w-fit shadow-sm">
-                                <span className="material-symbols-outlined text-primary text-[18px]">analytics</span>
-                                <span className="tracking-[0.2em] uppercase">2026 Strategy & Consultation</span>
+                            {/* Trust Badges - High Conversion */}
+                            <div className="flex items-center gap-3">
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black w-fit shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-[18px]">analytics</span>
+                                    <span className="tracking-[0.2em] uppercase">2026 Strategy</span>
+                                </div>
+                                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-100">
+                                    <span className="material-symbols-outlined text-green-600 text-sm">verified_user</span>
+                                    <span className="text-[10px] font-bold text-green-800">HIPAA</span>
+                                </div>
+                                <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-blue-50 border border-blue-100">
+                                    <span className="material-symbols-outlined text-blue-600 text-sm">workspace_premium</span>
+                                    <span className="text-[10px] font-bold text-blue-800">Licensed</span>
+                                </div>
                             </div>
 
                             <h1 className="font-serif text-5xl lg:text-[5rem] font-bold text-trust-navy leading-[0.95] tracking-tight">
@@ -68,9 +79,14 @@ export default function BookConsultationPage() {
                                 <strong className="text-trust-navy">high-yield operational path</strong>.
                             </p>
 
-                            <div className="flex items-center gap-3 mt-2 text-trust-navy font-bold italic">
-                                <span className="material-symbols-outlined text-primary text-2xl animate-pulse">verified</span>
-                                <p className="text-base">Exclusively Serving Board-Certified California Practices</p>
+                            <div className="flex flex-col gap-2 mt-2 p-4 bg-white/50 border border-slate-200 rounded-xl">
+                                <div className="flex items-center gap-2 text-trust-navy font-bold">
+                                    <span className="material-symbols-outlined text-primary text-xl">school</span>
+                                    <span className="text-sm uppercase tracking-wider">UCLA, UCSF, Stanford-Trained?</span>
+                                </div>
+                                <p className="text-sm text-slate-600 font-medium">
+                                    We speak your language. Our VAs are trained to support the high-complexity workflows of elite, board-certified practices.
+                                </p>
                             </div>
                         </div>
 
@@ -151,13 +167,25 @@ export default function BookConsultationPage() {
                         <PracticeAuditWizard />
 
                         {/* Security Footer */}
-                        <div className="mt-8 flex items-center justify-center gap-4 opacity-80">
-                            <div className="size-10 rounded-xl bg-green-50 flex items-center justify-center text-green-600 border border-green-100">
-                                <span className="material-symbols-outlined font-bold text-xl">security</span>
+                        {/* Guarantee & Security Footer */}
+                        <div className="mt-8 grid grid-cols-2 gap-4 opacity-90">
+                            <div className="flex items-center gap-3 bg-white/50 p-3 rounded-xl border border-slate-100">
+                                <div className="size-8 rounded-lg bg-green-50 flex items-center justify-center text-green-600 shrink-0">
+                                    <span className="material-symbols-outlined font-bold text-lg">security</span>
+                                </div>
+                                <div>
+                                    <p className="text-[10px] font-black text-trust-navy uppercase tracking-wider">HIPAA Compliant</p>
+                                    <p className="text-[10px] text-slate-500 font-medium leading-tight">100% Secure Data Audit</p>
+                                </div>
                             </div>
-                            <div>
-                                <p className="text-xs font-bold text-trust-navy">100% HIPAA & State Privacy Compliant</p>
-                                <p className="text-[10px] text-slate-500 font-medium">Your audit data is legally privileged.</p>
+                            <div className="flex items-center gap-3 bg-white/50 p-3 rounded-xl border border-slate-100">
+                                <div className="size-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary shrink-0">
+                                    <span className="material-symbols-outlined font-bold text-lg">verified</span>
+                                </div>
+                                <div>
+                                    <p className="text-[10px] font-black text-trust-navy uppercase tracking-wider">Zero Risk</p>
+                                    <p className="text-[10px] text-slate-500 font-medium leading-tight">No Contracts. Cancel Anytime.</p>
+                                </div>
                             </div>
                         </div>
                     </div>

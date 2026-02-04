@@ -48,7 +48,7 @@ export default function AboutPage() {
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl">
                                     Virtual Minds provides <strong className="text-trust-navy">specialized virtual assistant and practice management services</strong>{' '}
-                                    <span className="text-[#D2691E] font-bold">exclusively for California psychiatrists</span>, with{' '}
+                                    <span className="text-primary font-bold">exclusively for California psychiatrists</span>, with{' '}
                                     <strong className="text-trust-navy">deep expertise</strong> in remote and hybrid practice models.
                                 </p>
 
@@ -88,21 +88,21 @@ export default function AboutPage() {
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                             <div>
                                 <div className="inline-flex items-center gap-2 mb-6">
-                                    <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Our Niche</span>
-                                    <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
+                                    <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Our Niche</span>
+                                    <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                                 </div>
                                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 leading-tight">
                                     Exclusively Focused on <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Psychiatric Workflows</span>.
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Psychiatric Workflows</span>.
                                 </h2>
                                 <div className="space-y-6 text-slate-500 text-lg font-medium leading-relaxed">
                                     <p>
                                         Unlike general healthcare virtual assistant services, we focus <strong className="text-trust-navy">solely on psychiatric practice workflows</strong>. Our team understands{' '}
-                                        <span className="text-[#D2691E] font-bold">medication management coordination, prior authorization processes</span>, pharmacy liaison, insurance verification, and the{' '}
+                                        <span className="text-primary font-bold">medication management coordination, prior authorization processes</span>, pharmacy liaison, insurance verification, and the{' '}
                                         <strong className="text-trust-navy">unique administrative demands</strong> of psychiatric practices.
                                     </p>
                                     <p>
-                                        We serve <span className="text-[#D2691E] font-bold">only California psychiatrists</span>—from solo telehealth practices to multi-provider hybrid groups—giving us{' '}
+                                        We serve <span className="text-primary font-bold">only California psychiatrists</span>—from solo telehealth practices to multi-provider hybrid groups—giving us{' '}
                                         <strong className="text-trust-navy">deep expertise in state regulations</strong>, common EHR platforms, and psychiatric-specific administrative needs.
                                     </p>
                                 </div>
@@ -115,23 +115,23 @@ export default function AboutPage() {
                                     { label: "Compliance", value: "HIPAA", sub: "Secure Data Handling", icon: "shield" },
                                     { label: "Model Type", value: "Custom", sub: "Insurance & Cash-Pay", icon: "tune" }
                                 ].map((stat, idx) => (
-                                    <div key={idx} className="relative bg-gradient-to-br from-[#FAF8F3] to-white p-8 rounded-[2rem] border-2 border-slate-200 hover:border-[#D2691E]/30 shadow-sm hover:shadow-xl hover:shadow-[#D2691E]/5 transition-all duration-500 group overflow-hidden">
+                                    <div key={idx} className="relative bg-gradient-to-br from-[#FAF8F3] to-white p-8 rounded-[2rem] border-2 border-slate-200 hover:border-primary/30 shadow-sm hover:shadow-xl hover:shadow-primary/5 transition-all duration-500 group overflow-hidden">
                                         {/* Decorative gradient overlay */}
-                                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-[#D2691E]/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                                        <div className="absolute top-0 right-0 w-24 h-24 bg-gradient-to-br from-primary/10 to-transparent rounded-full blur-2xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
 
                                         <div className="relative z-10">
                                             {/* Icon */}
                                             <div className="mb-4">
-                                                <span className="material-symbols-outlined text-[#D2691E] text-3xl">{stat.icon}</span>
+                                                <span className="material-symbols-outlined text-primary text-3xl">{stat.icon}</span>
                                             </div>
 
                                             {/* Value - Large and Bold */}
-                                            <div className="text-4xl font-serif font-bold text-trust-navy mb-2 tracking-tight group-hover:text-[#D2691E] transition-colors">
+                                            <div className="text-4xl font-serif font-bold text-trust-navy mb-2 tracking-tight group-hover:text-primary transition-colors">
                                                 {stat.value}
                                             </div>
 
                                             {/* Subtitle */}
-                                            <div className="text-xs font-bold text-[#D2691E] uppercase tracking-widest mb-1">
+                                            <div className="text-xs font-bold text-primary uppercase tracking-widest mb-1">
                                                 {stat.sub}
                                             </div>
                                         </div>
@@ -147,15 +147,15 @@ export default function AboutPage() {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <div className="inline-flex items-center gap-2 mb-6">
-                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Operational Value</span>
-                                <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
+                                <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Operational Value</span>
+                                <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Administrative</span> Support.
+                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Administrative</span> Support.
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
                                 We handle the workflows that <strong className="text-trust-navy">take you away from patient care</strong>, ensuring your practice runs{' '}
-                                <span className="text-[#D2691E] font-bold">smoothly while you focus on clinical excellence</span>.
+                                <span className="text-primary font-bold">smoothly while you focus on clinical excellence</span>.
                             </p>
                         </div>
 
@@ -165,8 +165,8 @@ export default function AboutPage() {
                                 { title: "California Privacy", icon: "security", desc: "Expertise in California patient privacy requirements and secure data handling protocols." },
                                 { title: "Administrative Mastery", icon: "verified_user", desc: "Reliable support for intake, pharmacy liaison, and insurance verification for psychiatric practices." }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-[#FAF8F3] p-10 rounded-[2.5rem] border-2 border-slate-200 hover:border-[#D2691E]/30 group hover:shadow-2xl hover:shadow-[#D2691E]/5 transition-all duration-500 hover:-translate-y-2">
-                                    <div className="size-16 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] mb-8 border border-[#D2691E]/20 group-hover:bg-[#D2691E] group-hover:text-white transition-all">
+                                <div key={idx} className="bg-[#FAF8F3] p-10 rounded-[2.5rem] border-2 border-slate-200 hover:border-primary/30 group hover:shadow-2xl hover:shadow-primary/5 transition-all duration-500 hover:-translate-y-2">
+                                    <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-8 border border-primary/20 group-hover:bg-primary group-hover:text-white transition-all">
                                         <span className="material-symbols-outlined text-3xl">{item.icon}</span>
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">{item.title}</h3>
@@ -180,21 +180,21 @@ export default function AboutPage() {
                 {/* 4. FINAL CTA */}
                 <section className="bg-trust-navy py-32 relative overflow-hidden">
                     <div className="absolute inset-0 opacity-20 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-[#D2691E]/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
+                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
                     </div>
 
                     <div className="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
                         <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 italic leading-tight !text-white">
-                            Return to <span className="text-[#D2691E]">Patient Care</span>.
+                            Return to <span className="text-primary">Patient Care</span>.
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
                             Experience the difference of a <strong className="text-white">specialized psychiatric support team</strong>. Request your{' '}
-                            <span className="text-[#D2691E] font-bold">15-minute Recovery Plan</span> to get started.
+                            <span className="text-primary font-bold">15-minute Recovery Plan</span> to get started.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
                                 href="/book-consultation"
-                                className="px-12 py-5 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-xl rounded-2xl shadow-2xl shadow-[#D2691E]/20 hover:shadow-[#D2691E]/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
+                                className="px-12 py-5 bg-primary hover:bg-[#B8860B] text-white font-bold text-xl rounded-2xl shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
                                 See My Recovery Plan
