@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
 
+import { Suspense } from "react";
 import PracticeAuditWizard from "@/components/conversion/PracticeAuditWizard";
 import ConsultationServiceSchema from "@/components/seo/ConsultationServiceSchema";
 
@@ -164,7 +165,9 @@ export default function BookConsultationPage() {
                         <div className="absolute -inset-4 bg-primary/10 rounded-[3rem] blur-3xl opacity-30"></div>
 
                         {/* The Wizard */}
-                        <PracticeAuditWizard />
+                        <Suspense fallback={<div className="h-[600px] w-full bg-white rounded-[2.5rem] shadow-2xl animate-pulse" />}>
+                            <PracticeAuditWizard />
+                        </Suspense>
 
                         {/* Security Footer */}
                         {/* Guarantee & Security Footer */}
