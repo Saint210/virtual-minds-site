@@ -209,6 +209,25 @@
             "Billing Company Liaison",
             "Contact Insurance Companies On Request",
             "Process Credit Card Transactions"
+        ],
+        "categories": [
+            {
+                "name": "Prior Auth",
+                "active": true
+            },
+            {
+                "name": "Testing",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Stimulant Prior Authorization Cheat Sheet",
+                "category": "Prior Auth",
+                "readTime": "7 min read",
+                "description": "Navigating California insurance requirements for stimulant medication coverage.",
+                "image": "https://images.unsplash.com/photo-1555633514-abceaad63e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     },
     {
