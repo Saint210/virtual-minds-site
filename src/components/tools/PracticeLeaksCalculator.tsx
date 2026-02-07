@@ -13,6 +13,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     const [adminHours, setAdminHours] = useState(15);
     const [activePatients, setActivePatients] = useState(40);
     const [monthlyRent, setMonthlyRent] = useState(initialRent);
+    const [hourlyRate, setHourlyRate] = useState(300);
 
     // State for calculated values
     const [annualAdminCost, setAnnualAdminCost] = useState(0);
@@ -21,7 +22,6 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     const [totalAnnualImpact, setTotalAnnualImpact] = useState(0);
 
     // Constants for calculation
-    const HOURLY_CLINICAL_RATE = 300; // Value of psychiatrist's time
     const IN_HOUSE_ADMIN_COST = 45; // Hourly cost of in-house staff (w/ benefits)
     const VIRTUAL_ADMIN_COST = 24; // Hourly cost of Virtual Minds VA
     const ADMIN_EFFICIENCY_MULTIPLIER = 1.4; // Virtual VAs are faster/focused
@@ -35,21 +35,21 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
         const adminSavings = inHouseYearly - virtualYearly;
 
         // 2. Rent Savings (Assumes you could downsize or sub-lease space)
-        // Conservative estimate: 40% of rent is for admin/waiting space overhead
-        const rentSavings = monthlyRent * 12 * 0.40;
+        // Illustrative estimate: significant portion of rent is typically for admin/waiting space overhead
+        const rentSavings = monthlyRent * 12 * 0.25;
 
         // 3. Revenue Gain (Opportunity Cost)
         // Assumption: For every 20 active patients, you lose ~1 hour/week to non-billable admin tasks
         // that a specialized VA could handle (scheduling, refills, insurance calls).
         const reclaimedHoursPerWeek = activePatients / 20;
-        const revenueGain = reclaimedHoursPerWeek * HOURLY_CLINICAL_RATE * 50; // 50 weeks
+        const revenueGain = reclaimedHoursPerWeek * hourlyRate * 50; // 50 weeks
 
         setAnnualAdminCost(adminSavings);
         setAnnualRentSavings(rentSavings);
         setPotentialRevenueGain(revenueGain);
         setTotalAnnualImpact(adminSavings + rentSavings + revenueGain);
 
-    }, [adminHours, activePatients, monthlyRent]);
+    }, [adminHours, activePatients, monthlyRent, hourlyRate]);
 
     // Formatting helper
     const formatCurrency = (amount: number) => {
@@ -114,7 +114,25 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             <p className="text-xs text-slate-400 mt-1">Rent, utilities, parking, cleaning for office space.</p>
                         </div>
 
-                        {/* Input 3: Active Patients (Proxy for complexity) */}
+                        {/* Input 3: Hourly Rate */}
+                        <div>
+                            <div className="flex justify-between mb-2">
+                                <label className="text-sm font-bold text-slate-700">Your Hourly Clinical Rate</label>
+                                <span className="text-[#D2691E] font-bold">${hourlyRate}/hr</span>
+                            </div>
+                            <input
+                                type="range"
+                                min="100"
+                                max="800"
+                                step="10"
+                                value={hourlyRate}
+                                onChange={(e) => setHourlyRate(parseInt(e.target.value))}
+                                className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
+                            />
+                            <p className="text-xs text-slate-400 mt-1">Estimates the value of your clinical time lost to admin work.</p>
+                        </div>
+
+                        {/* Input 4: Active Patients (Proxy for complexity) */}
                         <div>
                             <div className="flex justify-between mb-2">
                                 <label className="text-sm font-bold text-slate-700">Active Patient Load</label>
@@ -139,7 +157,9 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                     <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
                     <div className="relative z-10">
-                        <h4 className="text-slate-400 font-bold uppercase tracking-widest text-xs mb-6">Projected Annual Impact</h4>
+                        <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 border-l-4 border-[#D2691E] pl-4">
+                            Projected Annual Impact
+                        </h4>
 
                         <div className="space-y-6">
                             <div className="flex justify-between items-end border-b border-white/10 pb-4">
@@ -171,7 +191,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                         </Link>
 
                         <p className="text-center text-xs text-slate-500 mt-4">
-                            *Estimates based on 2025 CA market averages.
+                            *Illustrative estimates based on California market trends. Not a guarantee of results.
                         </p>
                     </div>
                 </div>

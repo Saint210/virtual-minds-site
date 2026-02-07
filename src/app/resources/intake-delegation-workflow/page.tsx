@@ -7,7 +7,7 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata: Metadata = {
-    title: "Psychiatry Intake Delegation Workflow: The 'One-Touch' System",
+    title: "Psychiatry Intake Delegation Workflow: The Master Protocol",
     description: "A step-by-step operational guide to delegating patient intake. Stop playing phone tag and let a VA manage the lead-to-patient pipeline.",
     alternates: {
         canonical: 'https://thevirtualminds.com/resources/intake-delegation-workflow'
@@ -48,7 +48,7 @@ export default function IntakeDelegationPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 Stop Playing Phone Tag: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The "One-Touch" Intake Protocol.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The Streamlined Intake Protocol.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 You should not speak to a patient until they are booked, insured, and deposit-paid. Here is the exact workflow to delegate the noise.
@@ -72,16 +72,16 @@ export default function IntakeDelegationPost() {
                                 <div className="space-y-2 text-slate-700 leading-relaxed">
                                     <p><strong>The Goal:</strong> Eliminate "false starts" (unqualified leads) from your schedule.</p>
                                     <p><strong>The Method:</strong> A VA uses a script to verify insurance, clinical fit, and payment capability <em>before</em> booking.</p>
-                                    <p><strong>The Result:</strong> 100% of your clinical hours are spent with qualified, paying patients.</p>
+                                    <p><strong>The Result:</strong> Your clinical hours are dedicated to qualified, paying patients.</p>
                                 </div>
                             </div>
 
                             <article className="prose prose-lg prose-slate max-w-none">
                                 <p className="text-xl leading-8 text-slate-600 mb-12 font-medium">
-                                    The average psychiatrist spends 4 hours a week returning calls to people who ultimately say, "Oh, you don't take Medi-Cal?" This is a massive waste of high-value inventory.
+                                    The average psychiatrist spends significant time weekly returning calls to people who ultimately say, "Oh, you don't take my insurance?" This is a massive waste of high-value clinical availability.
                                 </p>
                                 <p>
-                                    Your time is worth \$5-8 per minute. A Virtual Assistant's time is worth \$0.20 per minute. The math dictates that <strong>someone else must be the gatekeeper</strong>.
+                                    Your time is your most valuable asset. A Virtual Assistant's time is highly cost-effective for administrative heavy lifting. The math dictates that <strong>someone else must be the gatekeeper</strong>.
                                 </p>
 
                                 <h2 className="text-3xl font-serif font-bold text-trust-navy mt-16 mb-8">The "Velvet Rope" Workflow</h2>

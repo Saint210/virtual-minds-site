@@ -90,7 +90,7 @@ export default function ResourcesPage() {
                                 A comprehensive educational pillar on how specialized VAs reduce California psychiatrist burnout, manage administrative complexity, and ensure full HIPAA compliance while scaling your practice in the Golden State.
                             </p>
                             <div className="flex flex-wrap gap-4">
-                                <Link href="/virtual-assistant-for-psychiatrists" className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-shadow">
+                                <Link href="/services/virtual-assistant" className="bg-primary text-white px-8 py-4 rounded-lg font-bold text-lg hover:shadow-lg transition-shadow">
                                     Hire a Psychiatrist VA
                                 </Link>
                                 <button className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-bold text-lg hover:bg-primary/5 transition-colors">

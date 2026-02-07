@@ -58,7 +58,7 @@ Generic VAs don't understand:
 - California-specific insurance panels
 - Mental health parity laws
 - Telehealth verification requirements
-- Psychiatric CPT codes
+- Psychiatric Procedure Knowledge
 
 **Link to Target Page:**
 *"California psychiatric virtual assistants handle insurance verification with specialized training. [Learn our complete verification services](/virtual-assistant-for-psychiatrists)."*
@@ -79,7 +79,7 @@ Data from 75 California psychiatric practices shows:
 **Optimized Results with VA:**
 - No-show reduction: 42%
 - Scheduling conflicts: 0.8 per week
-- Automated reminders: 95% patient confirmation rate
+- Automated reminders: Exceptional patient confirmation rate
 - Time savings: 6.7 hours weekly
 
 **California-Specific Features**

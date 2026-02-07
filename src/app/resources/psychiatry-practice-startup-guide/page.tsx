@@ -197,7 +197,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
-                                        <span className="text-slate-700"><strong>Staffing & Administrative Support</strong> - When to hire, <Link href="/virtual-assistant-for-psychiatrists" className="text-primary hover:text-[#B8860B] underline font-semibold">virtual assistants for psychiatrists</Link> vs. in-house staff</span>
+                                        <span className="text-slate-700"><strong>Staffing & Administrative Support</strong> - When to hire, <Link href="/services/virtual-assistant" className="text-primary hover:text-[#B8860B] underline font-semibold">virtual assistants for psychiatrists</Link> vs. in-house staff</span>
                                     </li>
                                     <li className="flex items-start gap-3">
                                         <span className="material-symbols-outlined text-primary mt-1">check_circle</span>
@@ -554,7 +554,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li>• Focus 100% on patient care and clinical excellence</li>
                                         <li>• Expert credentialing (3-4 months to approval)</li>
-                                        <li>• 98%+ clean claim rate, maximized reimbursements</li>
+                                        <li>• High clean claim rate, maximized reimbursements</li>
                                         <li>• Launch faster, scale sustainably</li>
                                     </ul>
                                 </div>
@@ -774,7 +774,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
-                                    <span className="text-slate-700"><Link href="/virtual-assistant-for-psychiatrists" className="text-primary hover:text-[#B8860B] underline font-semibold">Administrative support</Link> from day one</span>
+                                    <span className="text-slate-700"><Link href="/services/virtual-assistant" className="text-primary hover:text-[#B8860B] underline font-semibold">Administrative support</Link> from day one</span>
                                 </li>
                                 <li className="flex items-start gap-2">
                                     <span className="material-symbols-outlined text-primary text-xl">check_circle</span>
@@ -1021,11 +1021,11 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 See My Recovery Plan
                             </Link>
                             <a
-                                href="tel:+14243302700"
+                                href="tel:+13104006266"
                                 className="inline-flex items-center gap-3 px-12 py-6 bg-white/10 backdrop-blur-md border-2 border-white/30 text-white font-bold text-xl rounded-2xl hover:bg-white/20 transition-all justify-center"
                             >
                                 <span className="material-symbols-outlined">phone</span>
-                                (424) 330-2700
+                                (310) 400-6266
                             </a>
                         </div>
 

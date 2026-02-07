@@ -59,7 +59,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-10">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <span className="text-trust-navy">Locations</span>
+                                    <Link href="/locations" className="text-trust-navy hover:text-primary transition-colors">Locations</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
                                     <span className="text-trust-navy">{location.name}</span>
                                 </nav>
@@ -105,7 +105,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
 
                                     {/* Floating Savings Token */}
                                     <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Regional Yield Gain</p>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Regional Performance Gain</p>
                                         <p className="text-4xl font-serif font-bold text-primary mb-1">{location.rentSavings}</p>
                                         <p className="text-[10px] font-bold text-slate-500 leading-tight">Average overhead reduction compared to in-office staffing in {location.name}.</p>
                                     </div>
@@ -137,7 +137,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                                     {[
                                         { icon: "verified", title: "Compliance Mastery", desc: "Native understanding of California's state privacy protocols compared to federal baseline standards." },
                                         { icon: "local_hospital", title: "Network Coordination", desc: `Direct experience with ${location.hospitals} referral pathways and intake logic.` },
-                                        { icon: "attach_money", title: "Yield Optimization", desc: `Eliminating ${location.name} office overhead transforms fixed costs into variable, high-growth clinical investments.` }
+                                        { icon: "attach_money", title: "Efficiency Optimization", desc: `Eliminating ${location.name} office overhead transforms fixed costs into variable, high-growth clinical investments.` }
                                     ].map((item, i) => (
                                         <div key={i} className="flex gap-6 items-start">
                                             <div className="w-12 h-12 rounded-2xl bg-white border border-slate-200 flex items-center justify-center text-primary shrink-0 shadow-sm">

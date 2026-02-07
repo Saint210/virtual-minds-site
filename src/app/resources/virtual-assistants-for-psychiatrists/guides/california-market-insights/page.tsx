@@ -29,7 +29,7 @@ export default function CaliforniaMarketInsights() {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <Breadcrumbs 
+      <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
           { label: "California Market Insights" }
@@ -38,7 +38,7 @@ export default function CaliforniaMarketInsights() {
 
       <main className="flex-grow">
         <MarketInsights />
-        
+
         {/* Additional Content Sections */}
         <section className="relative py-20 overflow-hidden bg-slate-50">
           <div className="max-w-[1200px] mx-auto px-6">
@@ -85,7 +85,7 @@ export default function CaliforniaMarketInsights() {
                   What ROI can California psychiatrists expect?
                 </h3>
                 <p className="text-slate-600 text-sm leading-relaxed">
-                  California psychiatric practices typically see 40% reduction in admin time, 95% billing support accuracy, and 25% increase in patient capacity, resulting in $40K-$100K annual value.
+                  California psychiatric practices typically see significant reduction in admin time, precise billing support accuracy, and sustainable increase in patient capacity, resulting in maximum operational efficiency.
                 </p>
               </div>
             </div>
@@ -113,7 +113,7 @@ export default function CaliforniaMarketInsights() {
                 </span>
                 <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent translate-x-full group-hover:translate-x-0 transition-transform"></div>
               </Link>
-              
+
               <Link
                 href="/roi-calculator"
                 className="group border-2 border-primary text-primary px-8 py-4 rounded-xl font-bold text-lg hover:bg-primary/5 transition-colors inline-flex items-center"

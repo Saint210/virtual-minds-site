@@ -7,8 +7,8 @@ import KeyTakeaways from "@/components/blog/KeyTakeaways";
 
 export const metadata = {
     title: "Psychiatrist Salary California Private Practice: 2026 Reality Check",
-    description: "What psychiatrists actually earn in California private practice. Compare insurance vs. private pay, overhead costs, and 2026 income projections for MDs.",
-    keywords: ["psychiatrist salary California private practice", "California psychiatry income models", "private pay vs insurance psychiatry", "psychiatric practice overhead California", "net income psychiatrist CA"],
+    description: "What psychiatrists actually earn in California private practice. Compare insurance vs. private pay, overhead costs, and 2026 operational insights for MDs.",
+    keywords: ["psychiatrist salary California private practice", "California psychiatry models", "private pay vs insurance psychiatry", "psychiatric practice overhead California", "net income psychiatrist CA"],
     openGraph: {
         title: "Psychiatrist Salary California Private Practice: 2026 Reality Check",
         description: "What psychiatrists actually earn in California private practice. Insurance vs. private pay income breakdown.",
@@ -30,15 +30,15 @@ export const metadata = {
 const salaryTakeaways = [
     {
         point: "Model Dictates Margin",
-        detail: "A private-pay psychiatrist net income can be 2.3x higher than an insurance-only model with the identical patient volume."
+        detail: "A private-pay psychiatrist net income margin is often significantly higher than an insurance-only model with identical patient volume."
     },
     {
         point: "The 'Admin Tax'",
-        detail: "Unoptimized practices lose up to 15 hours weekly to documentation and prior auths, effectively slashing the MD's hourly rate."
+        detail: "Unoptimized practices lose significant weekly hours to documentation and prior auths, effectively impacting the provider's focus."
     },
     {
-        point: "Scaling via NPs",
-        detail: "The path to $500k+ in California often involves building a group practice and netting from psychiatric NP productivity."
+        point: "Scaling Strategy",
+        detail: "The path to sustainable growth in California often involves building a group practice and netting from collaborative clinical productivity."
     },
     {
         point: "California Overhead Realities",
@@ -53,7 +53,7 @@ const tableOfContents = [
     { id: "hybrid", title: "The Hybrid Model" },
     { id: "overhead", title: "California Overhead Costs" },
     { id: "scaling", title: "Scaling Beyond Solo" },
-    { id: "maximize", title: "Maximize Your Take-Home" }
+    { id: "maximize", title: "Maximize Your Stability" }
 ];
 
 const relatedArticles = [
@@ -111,20 +111,20 @@ export default function PsychiatristSalaryCA() {
                             <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-3xl">
                                 The honest breakdown of what MDs actually earn in 2026—and why your
                                 <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-1">clinical model</span>
-                                determines your net wealth more than your hourly rate.
+                                determines your professional net wealth more than your hourly rate.
                             </p>
 
                             {/* PRACTICE ECONOMICS BRIEFING BAR */}
                             <div className="flex flex-wrap items-center gap-x-12 gap-y-8 py-10 border-y border-slate-200/60">
                                 <div className="space-y-2">
                                     <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Strategy Pillar</p>
-                                    <p className="text-xl font-bold text-trust-navy">Revenue Optimization</p>
+                                    <p className="text-xl font-bold text-trust-navy">Operational Infrastructure</p>
                                 </div>
 
                                 <div className="hidden md:block h-12 w-px bg-slate-200" />
                                 <div className="space-y-2">
-                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Projected Yield</p>
-                                    <p className="text-xl font-bold text-trust-navy">$350k — $600k+</p>
+                                    <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Administrative Output</p>
+                                    <p className="text-xl font-bold text-trust-navy">High-Value Clinical Return</p>
                                 </div>
                                 <div className="hidden md:block h-12 w-px bg-slate-200" />
                                 <div className="space-y-2">
@@ -148,12 +148,12 @@ export default function PsychiatristSalaryCA() {
                                     {/* STRATEGIC BRIEFING INTRODUCTION (60/40) */}
                                     <div className="flex flex-col lg:flex-row gap-12 my-16 items-start">
                                         <div className="lg:w-[60%] order-2 lg:order-1">
-                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Revenue Optimization Benchmarking</h2>
+                                            <h2 id="introduction" className="text-3xl font-bold text-trust-navy mt-0 mb-6">Operational Benchmarking</h2>
                                             <p className="text-xl text-slate-600 font-display leading-relaxed mb-6">
                                                 You finished residency, passed your boards, and opened a private practice in California. Now comes the question everyone asks but few answer honestly: <span className="text-primary italic font-bold">&quot;How much will I actually make?&quot;</span>
                                             </p>
                                             <p className="text-slate-600 leading-relaxed mb-0">
-                                                The answer isn&apos;t a single number—it&apos;s a spectrum determined by your insurance mix, patient volume, and administrative overhead. By analyzing current 2026 benchmarks, we can map the realistic income projections for board-certified specialists in California&apos;s private sector.
+                                                The answer isn&apos;t a single number—it&apos;s a spectrum determined by your insurance mix, patient volume, and administrative overhead. By analyzing current 2026 benchmarks, we can map the realistic projections for board-certified specialists in California&apos;s private sector.
                                             </p>
                                         </div>
 
@@ -172,27 +172,27 @@ export default function PsychiatristSalaryCA() {
                                     </div>
 
                                     <p className="mb-8">
-                                        The answer isn't simple because "psychiatrist salary California private practice" varies wildly based on your practice model, payer mix, overhead structure, and how much unpaid administrative work you're willing to absorb. A solo psychiatrist accepting insurance in Los Angeles might gross $250,000 while netting $180,000 after overhead. Another psychiatrist 20 miles away, operating cash-pay only, could gross $450,000 and net $350,000 with similar patient volume.
+                                        The answer isn&apos;t simple because &quot;psychiatrist salary California private practice&quot; varies wildly based on your practice model, payer mix, overhead structure, and how much administrative work you manage. A solo psychiatrist accepting insurance in Los Angeles will see different net results than an out-of-network model 20 miles away.
                                     </p>
 
                                     <p className="mb-12">
-                                        This guide breaks down the real numbers, the hidden costs, and the strategic decisions that determine whether you build a comfortable practice or a highly profitable one.
+                                        This guide breaks down the real metrics, the hidden costs, and the strategic decisions that determine whether you build a comfortable practice or a highly efficient one.
                                     </p>
 
                                     <h2 id="baseline" className="text-3xl font-bold text-trust-navy mt-12 mb-6">The Baseline: What Employed Psychiatrists Earn in California</h2>
                                     <p className="mb-6">
-                                        Before diving into private practice numbers, let's establish the baseline. Employed psychiatrists in California—working for hospital systems, community mental health centers, or large medical groups—typically earn between $280,000 and $350,000 annually, according to 2026 compensation surveys.
+                                        Before diving into private practice numbers, let's establish the baseline. Employed psychiatrists in California—working for hospital systems, community mental health centers, or large medical groups—typically earn stabilized salaries according to 2026 compensation surveys.
                                     </p>
                                     <p className="mb-6">
                                         This salary comes with benefits: health insurance, malpractice coverage, paid time off, retirement contributions, and zero administrative burden. You show up, see patients, document, and go home. No billing headaches, no marketing, no payroll management.
                                     </p>
                                     <div className="bg-primary/5 p-6 rounded-xl border border-primary/20 mb-8">
                                         <p className="italic text-trust-navy font-medium">
-                                            "The employed model trades income ceiling for predictability. You'll never make $500,000, but you'll also never worry about a slow month."
+                                            "The employed model trades income ceiling for predictability. You'll have a stable floor, but you'll also trade autonomy for that security."
                                         </p>
                                     </div>
                                     <p className="mb-6">
-                                        Private practice offers higher earning potential but requires you to build and manage a business. The question is: how much higher, and is the additional complexity worth it?
+                                        Private practice offers higher earning potential but requires you to build and manage a business. The question is: how do you manage the additional complexity?
                                     </p>
 
                                     <h2 id="insurance" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Insurance-Based Private Practice Income Model</h2>
@@ -200,202 +200,158 @@ export default function PsychiatristSalaryCA() {
                                         Most psychiatrists starting private practice in California begin by accepting insurance. It provides immediate patient flow without requiring extensive marketing, and patients appreciate in-network rates.
                                     </p>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Reimbursement Rates: The California Reality</h3>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Reimbursement Realities: The California Landscape</h3>
                                     <p className="mb-6">
-                                        California insurance reimbursement for psychiatric services varies significantly by payer and region. Here are typical 2026 rates:
+                                        California insurance reimbursement for psychiatric services varies significantly by payer and region.
                                     </p>
                                     <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li><strong>Initial Psychiatric Evaluation (90791):</strong> $180-$280</li>
-                                        <li><strong>Medication Management (99214 + 90833):</strong> $150-$220</li>
-                                        <li><strong>Psychotherapy Session (90834):</strong> $120-$180</li>
-                                        <li><strong>Medicare:</strong> Generally 20-30% lower than commercial rates</li>
-                                        <li><strong>Medi-Cal:</strong> Significantly lower, often $80-$120 per session</li>
+                                        <li><strong>Initial Psychiatric Evaluation (90791):</strong> Standard Market Rates</li>
+                                        <li><strong>Medication Management & E/M:</strong> Variable by Payer</li>
+                                        <li><strong>Psychotherapy Session:</strong> Professional Fee Schedule</li>
+                                        <li><strong>Medicare:</strong> Generally aligned with commercial standard percentages</li>
+                                        <li><strong>Medi-Cal:</strong> Regional fee structures apply</li>
                                     </ul>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">The Math: A Realistic Income Projection</h3>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">The Operational Math</h3>
                                     <p className="mb-6">
-                                        Let's model a solo psychiatrist seeing 25 patients per week (a sustainable full-time caseload):
+                                        A sustainable solo caseload requires careful balancing of clinical time and administrative overhead.
                                     </p>
                                     <div className="bg-slate-100 p-6 rounded-xl mb-8">
-                                        <p className="font-mono text-sm mb-2"><strong>Weekly Schedule:</strong></p>
+                                        <p className="font-mono text-sm mb-2"><strong>Operational Framework:</strong></p>
                                         <ul className="font-mono text-sm space-y-1 mb-4">
-                                            <li>• 20 medication management sessions @ $180 avg = $3,600</li>
-                                            <li>• 5 initial evaluations @ $230 avg = $1,150</li>
-                                            <li>• <strong>Weekly Gross: $4,750</strong></li>
-                                            <li>• <strong>Annual Gross (48 weeks): $228,000</strong></li>
+                                            <li>• Managed clinical sessions per week</li>
+                                            <li>• Weekly administrative oversight hours</li>
+                                            <li>• Professional overhead mitigation</li>
+                                            <li>• <strong>Net Practice Stability</strong></li>
                                         </ul>
-                                        <p className="font-mono text-sm mb-2"><strong>Overhead (35-45% typical):</strong></p>
-                                        <ul className="font-mono text-sm space-y-1 mb-4">
-                                            <li>• Office rent: $2,000/month</li>
-                                            <li>• EHR + billing software: $400/month</li>
-                                            <li>• Malpractice insurance: $8,000/year</li>
-                                            <li>• Marketing + admin: $1,500/month</li>
-                                            <li>• <strong>Total Overhead: ~$90,000/year</strong></li>
-                                        </ul>
-                                        <p className="font-mono text-sm font-bold">Net Income: $138,000</p>
                                     </div>
                                     <p className="mb-6">
-                                        Wait—that's significantly less than employed positions. What happened?
+                                        The challenge in an insurance-based model is the administrative burden. Without optimization, you may spend excessive hours on documentation and billing follow-up.
                                     </p>
                                     <p className="mb-6">
-                                        The problem: this model assumes you're seeing patients 20 hours per week. In reality, you're spending another 10-15 hours on documentation, prior authorizations, billing follow-up, and practice management. Your effective hourly rate drops to $65-$80.
-                                    </p>
-                                    <p className="mb-6">
-                                        To match employed salaries with insurance-based practice, you need either higher volume (30+ patients weekly, which risks burnout) or you need to optimize your payer mix and reduce administrative burden.
+                                        To reach peak efficiency, you need either higher volume or you need to optimize your administrative stack to reduce clinical friction.
                                     </p>
 
                                     <h2 id="private-pay" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Private Pay (Cash-Based) Practice Income Model</h2>
                                     <p className="mb-6">
-                                        Private pay practices charge patients directly without insurance involvement. This model eliminates billing complexity, prior authorizations, and reimbursement delays—but requires patients who can afford $300-$500 per session.
+                                        Private pay practices charge patients directly without insurance involvement. This model reduces billing complexity and reimbursement delays.
                                     </p>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">California Market Rates for Cash-Pay Psychiatry</h3>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Market Rates for Cash-Pay Psychiatry</h3>
                                     <p className="mb-6">
-                                        Cash-pay rates in California metropolitan areas (2026):
+                                        Cash-pay rates in California metropolitan areas are determined by specialty expertise and regional demand.
                                     </p>
-                                    <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li><strong>Initial Evaluation:</strong> $400-$600</li>
-                                        <li><strong>Medication Management (30 min):</strong> $250-$400</li>
-                                        <li><strong>Therapy Session (45-50 min):</strong> $300-$450</li>
-                                    </ul>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">The Math: Private Pay Income Projection</h3>
-                                    <p className="mb-6">
-                                        Same 25 patients per week, private pay rates:
-                                    </p>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Private Pay Stability Projection</h3>
                                     <div className="bg-slate-100 p-6 rounded-xl mb-8">
-                                        <p className="font-mono text-sm mb-2"><strong>Weekly Schedule:</strong></p>
+                                        <p className="font-mono text-sm mb-2"><strong>Efficiency Model:</strong></p>
                                         <ul className="font-mono text-sm space-y-1 mb-4">
-                                            <li>• 20 medication management sessions @ $325 avg = $6,500</li>
-                                            <li>• 5 initial evaluations @ $500 avg = $2,500</li>
-                                            <li>• <strong>Weekly Gross: $9,000</strong></li>
-                                            <li>• <strong>Annual Gross (48 weeks): $432,000</strong></li>
+                                            <li>• Specialized clinical sessions</li>
+                                            <li>• Reduced administrative lag</li>
+                                            <li>• High-fidelity documentation</li>
+                                            <li>• <strong>Optimized Net Margin</strong></li>
                                         </ul>
-                                        <p className="font-mono text-sm mb-2"><strong>Overhead (25-30% typical):</strong></p>
-                                        <ul className="font-mono text-sm space-y-1 mb-4">
-                                            <li>• Office rent: $2,500/month</li>
-                                            <li>• EHR software: $200/month</li>
-                                            <li>• Malpractice insurance: $8,000/year</li>
-                                            <li>• Marketing: $2,000/month</li>
-                                            <li>• <strong>Total Overhead: ~$115,000/year</strong></li>
-                                        </ul>
-                                        <p className="font-mono text-sm font-bold">Net Income: $317,000</p>
                                     </div>
                                     <p className="mb-6">
-                                        The private pay model generates nearly 2.3x the net income of insurance-based practice with the same patient volume. Why? Higher rates, lower overhead percentage, and minimal administrative burden.
+                                        The private pay model typically generates higher net margins with the same patient volume due to minimal administrative friction.
                                     </p>
                                     <p className="mb-6">
-                                        The tradeoff: patient acquisition is harder. You need strong marketing, excellent reputation, and a target demographic that can afford out-of-pocket mental health care.
+                                        The tradeoff: patient acquisition requires a stronger reputation and a target demographic that values specialized out-of-pocket care.
                                     </p>
 
-                                    <h2 id="hybrid" className="text-3xl font-bold text-trust-navy mt-12 mb-6">The Hybrid Model: Best of Both Worlds?</h2>
+                                    <h2 id="hybrid" className="text-3xl font-bold text-trust-navy mt-12 mb-6">The Hybrid Model: Balanced Growth</h2>
                                     <p className="mb-6">
-                                        Many California psychiatrists operate hybrid practices: accepting select insurance plans (typically PPO plans with better reimbursement) while maintaining a portion of private pay patients.
+                                        Many California psychiatrists operate hybrid practices: accepting select insurance plans while maintaining a portion of private pay patients.
                                     </p>
                                     <p className="mb-6">
-                                        This approach provides patient flow stability from insurance while capturing higher margins on cash-pay patients. A typical split might be 60% insurance, 40% private pay.
+                                        This approach provides patient flow stability from insurance while capturing higher margins on cash-pay patients.
                                     </p>
                                     <div className="bg-slate-100 p-6 rounded-xl mb-8">
-                                        <p className="font-mono text-sm mb-2"><strong>Hybrid Model Projection:</strong></p>
+                                        <p className="font-mono text-sm mb-2"><strong>Hybrid Operational Model:</strong></p>
                                         <ul className="font-mono text-sm space-y-1 mb-4">
-                                            <li>• 15 insurance patients/week @ $180 avg = $2,700</li>
-                                            <li>• 10 private pay patients/week @ $325 avg = $3,250</li>
-                                            <li>• <strong>Weekly Gross: $5,950</strong></li>
-                                            <li>• <strong>Annual Gross (48 weeks): $285,600</strong></li>
-                                            <li>• <strong>Overhead (~32%): $91,400</strong></li>
-                                            <li>• <strong>Net Income: $194,200</strong></li>
+                                            <li>• Balanced patient mix support</li>
+                                            <li>• Flexible administrative scaling</li>
+                                            <li>• <strong>Optimized Daily Operations</strong></li>
+                                            <li>• <strong>Annual Stability Focus</strong></li>
+                                            <li>• <strong>Administrative Overhead Mitigation</strong></li>
+                                            <li>• <strong>Net Income Stability</strong></li>
                                         </ul>
                                     </div>
                                     <p className="mb-6">
                                         The hybrid model offers a middle path: better than pure insurance, more stable than pure private pay.
                                     </p>
 
-                                    <h2 id="overhead" className="text-3xl font-bold text-trust-navy mt-12 mb-6">California-Specific Overhead Costs That Eat Your Margin</h2>
+                                    <h2 id="overhead" className="text-3xl font-bold text-trust-navy mt-12 mb-6">California-Specific Overhead Realities</h2>
                                     <p className="mb-6">
-                                        California presents unique cost challenges that impact practice profitability:
+                                        California presents unique cost challenges that impact practice sustainability:
                                     </p>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Office Space: The Biggest Variable</h3>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Office Space: The Regional Variable</h3>
                                     <p className="mb-6">
-                                        Commercial office rent varies dramatically by region:
+                                        Commercial office rent varies dramatically by region, from San Francisco and Los Angeles to Inland areas.
                                     </p>
-                                    <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li><strong>San Francisco/Silicon Valley:</strong> $3,000-$5,000/month for suitable office space</li>
-                                        <li><strong>Los Angeles (Westside):</strong> $2,500-$4,000/month</li>
-                                        <li><strong>San Diego:</strong> $2,000-$3,500/month</li>
-                                        <li><strong>Sacramento/Inland areas:</strong> $1,500-$2,500/month</li>
-                                    </ul>
                                     <p className="mb-6">
-                                        Telehealth reduces this burden significantly. Many psychiatrists now operate hybrid models with 1-2 days in-office and 3-4 days virtual, allowing shared office arrangements that cut rent costs by 60-70%.
+                                        Telehealth reduces this burden significantly. Many psychiatrists now operate hybrid models with limited in-office days, allowing shared office arrangements that cut rent costs substantially.
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Malpractice Insurance</h3>
                                     <p className="mb-6">
-                                        California malpractice rates for psychiatrists range from $7,000-$12,000 annually depending on coverage limits and claims history. This is higher than many states due to California's litigation environment.
+                                        California malpractice rates for psychiatrists are among the highest in the country due to the litigation environment, requiring careful planning in the overhead stack.
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Administrative Support</h3>
                                     <p className="mb-6">
-                                        Solo practitioners often underestimate the value of administrative help. A dedicated psychiatric virtual assistant handling scheduling, insurance verification, and billing follow-up costs $5,000+ monthly but can increase your clinical time by 10-15 hours weekly—easily generating $15,000-$30,000 in additional revenue.
+                                        Solo practitioners often find that administrative help is a necessity, not a luxury. A dedicated psychiatric virtual assistant handling scheduling and insurance verification can reclaim significant clinical hours.
                                     </p>
 
-                                    <h2 id="scaling" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Scaling Beyond Solo: The Group Practice Income Multiplier</h2>
+                                    <h2 id="scaling" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Scaling Beyond Solo: Group Practice Models</h2>
                                     <p className="mb-6">
-                                        The highest-earning psychiatrists in California private practice aren't seeing the most patients—they're building group practices and earning from other clinicians' productivity.
+                                        Sustainable growth in California often involves building group practices and leveraging collaborative clinical productivity.
                                     </p>
 
-                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">The Economics of Hiring Psychiatric NPs</h3>
-                                    <p className="mb-6">
-                                        A psychiatric nurse practitioner in California earns $130,000-$160,000 annually. If that NP sees 100 patients monthly at $180 average reimbursement, they generate $216,000 in annual revenue.
-                                    </p>
+                                    <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Collaborative Clinical Models</h3>
                                     <div className="bg-slate-100 p-6 rounded-xl mb-8">
-                                        <p className="font-mono text-sm mb-2"><strong>Per-NP Profit Calculation:</strong></p>
+                                        <p className="font-mono text-sm mb-2"><strong>Group Practice Scalability:</strong></p>
                                         <ul className="font-mono text-sm space-y-1">
-                                            <li>• Revenue: $216,000</li>
-                                            <li>• Salary + benefits: $165,000</li>
-                                            <li>• Allocated overhead: $25,000</li>
-                                            <li>• <strong>Net profit per NP: $26,000-$35,000</strong></li>
+                                            <li>• Enhanced patient access</li>
+                                            <li>• Scaled administrative coordination</li>
+                                            <li>• Compliance oversight at scale</li>
+                                            <li>• <strong>Network Stability Potential</strong></li>
                                         </ul>
                                     </div>
                                     <p className="mb-6">
                                         A psychiatrist operating a group practice with 3 NPs can add $75,000-$105,000 to their personal income while maintaining their own clinical schedule. This is how California practice owners reach $400,000-$600,000+ in total compensation.
                                     </p>
 
-                                    <h2 id="maximize" className="text-3xl font-bold text-trust-navy mt-12 mb-6">How to Maximize Your Take-Home as a California Psychiatrist</h2>
+                                    <h2 id="maximize" className="text-3xl font-bold text-trust-navy mt-12 mb-6">How to Maximize Your Stability as a California Psychiatrist</h2>
                                     <p className="mb-6">
-                                        Based on the models above, here's the strategic framework for maximizing income:
+                                        Based on the models above, here's the strategic framework for maximizing professional sustainability:
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Year 1-2: Build Your Foundation</h3>
                                     <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li>Accept insurance to build patient volume quickly</li>
-                                        <li>Focus on high-reimbursement PPO plans; avoid Medi-Cal unless mission-driven</li>
+                                        <li>Utilize stable payer mixes to build volume</li>
                                         <li>Invest in efficient EHR and billing systems from day one</li>
-                                        <li>Target net income: $180,000-$220,000</li>
+                                        <li>Focus on high-fidelity clinical documentation</li>
                                     </ul>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Year 3-4: Optimize Your Mix</h3>
                                     <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li>Gradually increase private pay percentage to 30-40%</li>
-                                        <li>Drop lowest-reimbursing insurance plans</li>
-                                        <li>Hire part-time administrative support to reclaim 5-10 clinical hours weekly</li>
-                                        <li>Target net income: $250,000-$300,000</li>
+                                        <li>Gradually optimize your private pay vs insurance mix</li>
+                                        <li>Deploy administrative support to reclaim clinical hours</li>
                                     </ul>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Year 5+: Scale or Specialize</h3>
                                     <ul className="list-disc pl-6 space-y-3 mb-8 text-slate-700">
-                                        <li><strong>Option A:</strong> Go fully private pay, raise rates, reduce volume, improve lifestyle (net $300,000-$400,000)</li>
-                                        <li><strong>Option B:</strong> Build group practice, hire 2-3 NPs, earn from their productivity (net $350,000-$600,000+)</li>
-                                        <li><strong>Option C:</strong> Develop niche expertise (e.g., treatment-resistant depression, perinatal psychiatry) commanding premium rates</li>
+                                        <li><strong>Option A:</strong> Transition to specialized care and improved lifestyle focus</li>
+                                        <li><strong>Option B:</strong> Build group practice with scaled administrative coordination</li>
+                                        <li><strong>Option C:</strong> Develop niche expertise commanding professional premiums</li>
                                     </ul>
 
                                     <div className="bg-primary/5 p-8 rounded-xl border border-primary/20 mb-8 mt-12">
                                         <h3 className="text-2xl font-bold text-trust-navy mb-4">The Bottom Line</h3>
-                                        <p className="mb-4">
-                                            California psychiatrists in private practice can earn anywhere from $180,000 (struggling insurance-only solo practice) to $600,000+ (optimized group practice or high-end private pay).
-                                        </p>
                                         <p className="mb-0">
-                                            The difference isn’t clinical skill—it’s business strategy. Your practice model, payer mix, and <Link href="/services" className="text-primary font-bold hover:underline">Practice Management Model</Link> determine your income more than your hourly rate ever will.
+                                            The difference is often found in operational efficiency. Your practice model, payer mix, and <Link href="/services" className="text-primary font-bold hover:underline">Practice Management Model</Link> determine your professional sustainability more than your volume ever will.
                                         </p>
                                     </div>
 
@@ -416,11 +372,11 @@ export default function PsychiatristSalaryCA() {
                 <section className="py-20 bg-gradient-to-br from-primary/10 to-primary/5">
                     <div className="max-w-[1200px] mx-auto px-6 text-center">
                         <h2 className="font-display text-3xl md:text-4xl font-bold text-trust-navy mb-6">
-                            Ready to Optimize Your Practice Income?
+                            Ready to Optimize Your Practice?
                         </h2>
                         <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
                         <p className="text-slate-600 text-lg max-w-2xl mx-auto mb-8">
-                            We help California psychiatrists transition from "busy but broke" to profitable and sustainable. Get a custom revenue optimization plan for your practice.
+                            We help California psychiatrists transition from administrative exhaustion to sustainable excellence. Get a custom operational roadmap for your practice.
                         </p>
                         <div className="flex justify-center">
                             <Link
@@ -428,7 +384,7 @@ export default function PsychiatristSalaryCA() {
                                 className="bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center gap-2"
                             >
                                 <span className="material-symbols-outlined">account_balance</span>
-                                Schedule Revenue Strategy Call
+                                Schedule Practice Strategy Call
                             </Link>
                         </div>
                     </div>

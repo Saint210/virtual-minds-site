@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
   title: "Operational Recovery Analysis | Psychiatric Practice Rescue Stories",
-  description: "Real-world operational recovery and practice management stabilization for California mental health practices. From administrative collapse to high-yield clinical autonomy.",
+  description: "Real-world operational recovery and practice management stabilization for California mental health practices. From administrative collapse to clinical autonomy.",
   keywords: ["psychiatric case studies", "practice rescue", "emergency VA coverage", "mental health operations success", "california psychiatry ROI"],
 };
 
@@ -15,30 +15,30 @@ const caseStudies = [
     category: "Crisis Recovery",
     location: "San Francisco, CA",
     image: "/images/case-crisis-recovery.png",
-    stat: "$85,000 / Annual ROI",
+    stat: "Operational Stability",
     challenge: "A sudden agency closure left this high-volume practice without administrative coverage overnight. Medication refill requests were pending, and the pharmacy coordination pipeline was completely severed.",
     solution: "Virtual Minds deployed an emergency stabilization team within 24 hours, hardened the EHR infrastructure, and restored pharmacy liaison workflows with zero clinical downtime.",
-    metric: { label: "Stabilization Time", value: "24 Hours" }
+    metric: { label: "Stabilization Time", value: "< 48 Hours" }
   },
   {
     title: "Downtown LA - Operational Recovery",
     category: "Administrative Crisis",
     location: "Los Angeles, CA",
     image: "/images/case-administrative-crisis.png",
-    stat: "$144,000 / Annual Yield",
-    challenge: "Chronic documentation lag and a 12% claim rejection rate were threatening the practice's solvency. The lead provider was spending 15+ hours/week on backend audit fixes.",
-    solution: "Implemented the 'Executive Intelligence' revenue model, transitioning med-management coding to a 90833-optimized mix and automating PA tracking.",
-    metric: { label: "Rejection Rate Reduction", value: "-82%" }
+    stat: "High Performance",
+    challenge: "Chronic documentation lag and operational bottlenecks were threatening the practice's solvency. The lead provider was spending 15+ hours/week on backend audit fixes.",
+    solution: "Implemented the 'Practice Intelligence' administrative model, streamlining med-management documentation and automating PA tracking.",
+    metric: { label: "Documentation Lag", value: "Eliminated" }
   },
   {
     title: "Beverly Hills Group - Compliance Shield",
     category: "Compliance Emergency",
     location: "Beverly Hills, CA",
     image: "/images/case-compliance-emergency.png",
-    stat: "100% Audit Readiness",
+    stat: "Audit Readiness",
     challenge: "A multi-provider group discovered critical privacy and medication management documentation gaps that exposed the practice to severe regulatory liability during a peer review.",
     solution: "Full operational scrub and deployment of a clinical coordinator to manage mandatory in-person evaluation logs and secure portal triaging.",
-    metric: { label: "Compliance Score", value: "100%" }
+    metric: { label: "Compliance Status", value: "Audit-Ready" }
   }
 ];
 
@@ -67,7 +67,7 @@ export default function CaseStudiesPage() {
 
                 <div className="inline-flex items-center gap-2 bg-[#D2691E]/10 border border-[#D2691E]/20 rounded-full px-4 py-1.5 text-[#D2691E] text-[10px] font-black uppercase tracking-[0.2em] mb-8">
                   <span className="material-symbols-outlined text-[#D2691E] text-[16px]">emergency_home</span>
-                  Stablization & Yield Reports
+                  Stablization & Operational Reports
                 </div>
 
                 <h1 className="font-display text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
@@ -78,17 +78,17 @@ export default function CaseStudiesPage() {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-10 max-w-2xl">
-                  Real-world operational analysis of California psychiatric practices transitioning from administrative crisis to high-yield clinical autonomy.
+                  Real-world operational analysis of California psychiatric practices transitioning from administrative crisis to clinical autonomy.
                 </p>
 
-                <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
-                    <span className="material-symbols-outlined text-green-500 font-bold">verified</span>
-                    <span className="text-sm font-bold text-trust-navy whitespace-nowrap">Verified ROI Metrics</span>
+                <div className="flex flex-col gap-2">
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-[#D2691E] text-sm">check_circle</span>
+                    <span className="text-slate-600 text-sm">Significant reduction in administrative time</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-white px-5 py-3 rounded-2xl shadow-sm border border-slate-100">
-                    <span className="material-symbols-outlined text-[#D2691E] font-bold">clinical_notes</span>
-                    <span className="text-sm font-bold text-trust-navy whitespace-nowrap">Emergency Stabilizations</span>
+                  <div className="flex items-center gap-3">
+                    <span className="material-symbols-outlined text-[#D2691E] text-sm">check_circle</span>
+                    <span className="text-slate-600 text-sm">Precise billing support coordination</span>
                   </div>
                 </div>
               </div>
@@ -110,7 +110,7 @@ export default function CaseStudiesPage() {
                     <div className="flex justify-between items-end">
                       <div>
                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-500 mb-1">Avg Recovery Time</p>
-                        <p className="text-3xl font-bold text-trust-navy">48<span className="text-[#D2691E]">hrs</span></p>
+                        <p className="text-3xl font-bold text-trust-navy">Rapid</p>
                       </div>
                       <div className="size-10 bg-[#D2691E] rounded-full flex items-center justify-center text-white">
                         <span className="material-symbols-outlined">timer_off</span>
@@ -177,7 +177,7 @@ export default function CaseStudiesPage() {
           </div>
         </section>
 
-        {/* FIRM-WIDE YIELD MATRIX "BAND" */}
+        {/* FIRM-WIDE PERFORMANCE MATRIX &quot;BAND&quot; */}
         <section className="py-32 bg-[#1A2332] relative overflow-visible">
           {/* Background Texture */}
           <div className="absolute inset-0 opacity-[0.05] bg-[url('/noise.png')] mix-blend-overlay" />
@@ -186,7 +186,7 @@ export default function CaseStudiesPage() {
             <div className="mb-20">
               <span className="text-[#D2691E] font-black uppercase tracking-[0.4em] text-xs mb-6 block">Firm-Wide Performance Aggregates</span>
               <h2 className="text-5xl md:text-7xl font-display font-bold mb-6" style={{ color: '#FFFFFF' }}>
-                The Yield <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Matrix.</span>
+                The Quality <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Matrix.</span>
               </h2>
               <p className="text-xl text-slate-400 max-w-2xl font-medium leading-relaxed">
                 Average operational improvements across the Virtual Minds specialized psychiatric network.
@@ -199,10 +199,10 @@ export default function CaseStudiesPage() {
             <div className="max-w-[1400px] mx-auto px-6">
               <div className="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-100">
                 {[
-                  { label: "Admin Recovery", value: "23.5 hrs", desc: "Weekly hours reclaimed" },
-                  { label: "Patient Capacity", value: "+7.5 / wk", desc: "New intakes facilitated" },
-                  { label: "Billing Accuracy", value: "95.5%", desc: "Claim acceptance rate" },
-                  { label: "Network ROI", value: "$98k / yr", desc: "Avg operational yield" }
+                  { label: "Admin Recovery", value: "Significant", desc: "Weekly hours reclaimed" },
+                  { label: "Patient Capacity", value: "Enhanced", desc: "New intakes facilitated" },
+                  { label: "Billing Accuracy", value: "High", desc: "Claim acceptance rate" },
+                  { label: "Network Optimization", value: "Substantial", desc: "Avg operational focus" }
                 ].map((stat, i) => (
                   <div key={i} className="p-8 md:p-12 flex flex-col justify-center items-center text-center group hover:bg-slate-50 transition-colors">
                     <div className="text-4xl md:text-5xl font-black text-trust-navy mb-3 group-hover:scale-110 transition-transform duration-300">{stat.value}</div>

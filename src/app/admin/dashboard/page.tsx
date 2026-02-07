@@ -426,7 +426,7 @@ export default function AdminDashboard() {
                   <div>
                     <div className="flex justify-between items-center mb-2">
                       <span className="text-sm font-medium text-slate-600">Mobile Responsiveness</span>
-                      <span className="text-sm font-bold text-green-600">98%</span>
+                      <span className="text-sm font-bold text-green-600">High</span>
                     </div>
                     <div className="w-full bg-slate-200 rounded-full h-2">
                       <div className="w-11/12 bg-green-500 h-2 rounded-full"></div>

@@ -77,7 +77,7 @@ export default function IntakePage() {
                                 <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
                                     <div className="space-y-1">
                                         <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Intake Completion</p>
-                                        <p className="text-lg font-bold text-trust-navy">99.8% Done</p>
+                                        <p className="text-lg font-bold text-trust-navy">Standardized</p>
                                     </div>
                                     <div className="hidden md:block h-10 w-px bg-slate-200" />
                                     <div className="space-y-1">
@@ -279,16 +279,16 @@ export default function IntakePage() {
                     subtitle="Strategies to convert more inquiries into committed patients."
                     insights={[
                         {
-                            title: "Why 40% of Psychiatry Leads Ghost Before the First Appointment",
+                            title: "Why New Psychiatry Patient Leads May Not Convert",
                             category: "Patient Retention",
-                            excerpt: "The psychological barriers new patients face and how a concierge intake process removes them.",
+                            excerpt: "The psychological barriers new patients face and how a professional intake process removes them.",
                             href: "/resources/why-leads-ghost",
                             readTime: "4 min read"
                         },
                         {
-                            title: "The 'Speed to Lead' Rule: Why Answering in 5 Minutes Matters",
+                            title: "The 'Speed to Lead' Impact: Why Rapid Response Matters",
                             category: "practice growth",
-                            excerpt: "Data shows calling back within 5 minutes increases conversion by 900%. Here is how to operationalize that.",
+                            excerpt: "Professional responsiveness can significantly increase conversion. Here is how to operationalize that.",
                             href: "/resources/speed-to-lead-psychiatry",
                             readTime: "3 min read"
                         },

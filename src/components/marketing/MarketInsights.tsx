@@ -74,7 +74,7 @@ export default function MarketInsights() {
                     </h2>
                     <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
                     <p className="text-slate-600 text-lg max-w-3xl mx-auto">
-                        The California psychiatric virtual assistant market is experiencing unprecedented growth. 
+                        The California psychiatric virtual assistant market is experiencing unprecedented growth.
                         With 7,797 active psychiatrists and expanding telehealth adoption, the timing has never been better to optimize your practice.
                     </p>
                 </div>
@@ -144,15 +144,15 @@ export default function MarketInsights() {
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">check_circle</span>
-                                    <span className="text-slate-700">40% reduction in administrative time</span>
+                                    <span className="text-slate-700">Significant reduction in administrative time</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">check_circle</span>
-                                    <span className="text-slate-700">95% billing accuracy improvement</span>
+                                    <span className="text-slate-700">Precise billing support coordination</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">check_circle</span>
-                                    <span className="text-slate-700">25% increase in patient capacity</span>
+                                    <span className="text-slate-700">Sustainable increase in patient capacity</span>
                                 </div>
                                 <div className="flex items-center gap-3">
                                     <span className="material-symbols-outlined text-primary">check_circle</span>
@@ -162,13 +162,13 @@ export default function MarketInsights() {
                         </div>
                         <div className="bg-white rounded-xl p-6 text-center border border-slate-200">
                             <div className="text-4xl md:text-5xl font-black text-primary mb-2">
-                                $40K-$100K
+                                Maximum
                             </div>
                             <div className="font-bold text-trust-navy mb-1">
-                                Annual Value per Practice
+                                Operational Efficiency
                             </div>
                             <div className="text-sm text-slate-600 mb-4">
-                                Based on California market analysis
+                                Based on California practice standards
                             </div>
                             <a
                                 href="/roi-calculator"

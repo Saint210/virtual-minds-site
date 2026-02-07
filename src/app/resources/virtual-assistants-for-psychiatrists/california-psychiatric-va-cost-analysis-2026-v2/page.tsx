@@ -89,8 +89,8 @@ export default function CostAnalysisPageV2() {
                                     <h3 className="text-xl font-bold text-trust-navy mb-2">2. Hidden Cost Elimination</h3>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600">
                                         <div>• <strong>Office Space</strong>: $500-1,200/month saved</div>
-                                        <div>• <strong>Benefits Package</strong>: 25-35% eliminated</div>
-                                        <div>• <strong>Equipment</strong>: 60% reduction in costs</div>
+                                        <div>• <strong>Benefits Package</strong>: Significantly reduced</div>
+                                        <div>• <strong>Equipment</strong>: Significant reduction in costs</div>
                                         <div>• <strong>Training</strong>: Included in VA rate</div>
                                     </div>
                                 </div>
@@ -110,8 +110,8 @@ export default function CostAnalysisPageV2() {
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-slate-600">
                                         <div>• <strong>Focus Time</strong>: 6.5 hours/day reclaimed</div>
                                         <div>• <strong>Admin Capacity</strong>: 40 hours/week dedicated</div>
-                                        <div>• <strong>Error Reduction</strong>: 85% decrease in mistakes</div>
-                                        <div>• <strong>Patient Volume</strong>: 20-30% increase</div>
+                                        <div>• <strong>Error Reduction</strong>: Significant decrease in mistakes</div>
+                                        <div>• <strong>Patient Volume</strong>: Significant increase</div>
                                     </div>
                                 </div>
 

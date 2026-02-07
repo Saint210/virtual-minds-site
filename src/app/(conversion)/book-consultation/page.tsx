@@ -76,7 +76,7 @@ export default function BookConsultationPage() {
                             <p className="text-xl text-slate-600 font-display leading-relaxed max-w-xl">
                                 Schedule your <strong className="text-trust-navy">15-minute</strong> California psychiatric strategy call. We'll{' '}
                                 <span className="text-primary font-bold">analyze your clinical administrative load</span> and blueprint a{' '}
-                                <strong className="text-trust-navy">high-yield operational path</strong>.
+                                <strong className="text-trust-navy">stable operational path</strong>.
                             </p>
 
                             <div className="flex flex-col gap-2 mt-2 p-4 bg-white/50 border border-slate-200 rounded-xl">

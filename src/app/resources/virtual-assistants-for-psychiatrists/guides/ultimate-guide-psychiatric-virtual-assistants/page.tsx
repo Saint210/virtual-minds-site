@@ -194,19 +194,19 @@ export default function UltimateGuidePage() {
                             <div>
                                 <h4 className="font-bold text-terracotta mb-3">Revenue Increases</h4>
                                 <ul className="space-y-2 text-slate-600 text-sm">
-                                    <li>• +3-5 additional patients per week</li>
-                                    <li>• +95% billing accuracy</li>
-                                    <li>• +40% reduction in no-shows</li>
-                                    <li>• +25% faster claim processing</li>
+                                    <li>• Increase patient capacity</li>
+                                    <li>• Precise billing support</li>
+                                    <li>• Significant reduction in no-shows</li>
+                                    <li>• Faster claim processing</li>
                                 </ul>
                             </div>
                             <div>
                                 <h4 className="font-bold text-terracotta mb-3">Cost Savings</h4>
                                 <ul className="space-y-2 text-slate-600 text-sm">
-                                    <li>• -40% admin time for psychiatrist</li>
-                                    <li>• -60% reduced overtime costs</li>
-                                    <li>• -80% fewer billing errors</li>
-                                    <li>• -50% lower compliance risk</li>
+                                    <li>• Reduced admin time for psychiatrist</li>
+                                    <li>• Lowered operational costs</li>
+                                    <li>• Fewer billing errors</li>
+                                    <li>• Lower compliance risk</li>
                                 </ul>
                             </div>
                         </div>

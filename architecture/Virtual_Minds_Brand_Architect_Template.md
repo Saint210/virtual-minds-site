@@ -95,8 +95,9 @@ www.virtualminds.com (or current production URL)
 ## Business Objective/Goal
 To become the definitive administrative infrastructure partner for California psychiatric practices by providing elite, residency-trained virtual assistants who eliminate administrative burden while ensuring regulatory compliance, enabling psychiatrists to focus exclusively on patient care and clinical outcomes.
 
+
 ## Unique Selling Proposition (USP)
-"Virtual Minds delivers California-exclusive psychiatric virtual assistants trained through a 6-week medical residency protocol—the only service engineered by psychiatrists, for psychiatrists, with zero tolerance for compliance risk."
+"Virtual Minds delivers California-exclusive psychiatric virtual assistants backed by 20+ years of specialized practice management experience. We provide the only support system engineered to handle the unique compliance and operational demands of California psychiatry."
 
 ## Testimonials or Reviews
 - "Virtual Minds transformed my practice. My VA handles CURES lookups, prior auths, and patient scheduling flawlessly. I've reclaimed 15+ hours per week for actual patient care." – Dr. Jennifer Martinez, MD, Los Angeles
@@ -109,25 +110,25 @@ To become the definitive administrative infrastructure partner for California ps
 ### Service Tiers:
 1. **Foundation Support** - Core administrative services (scheduling, patient communication, basic EHR)
 2. **Clinical Operations** - Advanced support (medication management coordination, CURES lookups, insurance verification)
-3. **Revenue Optimization** - Full-spectrum support (billing coordination, prior authorizations, superbill generation)
+3. **Billing Support** - Administrative revenue cycle coordination (eligibility, prior auths, superbill generation - *no direct claim submission*)
 4. **Enterprise Suite** - Multi-provider practices (team coordination, standardized workflows, dedicated account management)
 
 ## Pricing and Availability
 - **Foundation Support**: Starting at $1,200/month (20 hours/week)
 - **Clinical Operations**: Starting at $2,400/month (40 hours/week)
-- **Revenue Optimization**: Custom quotes based on practice size and complexity
+- **Billing Support**: Custom quotes based on practice size and complexity
 - **Enterprise Suite**: Custom quotes for 5+ provider practices
 
 **Availability**: 
-- Monday to Friday, 8 AM - 6 PM Pacific Time
+- Monday to Friday, 9 AM - 5 PM Pacific Time
 - Extended hours available for urgent clinical coordination
 - 15-minute Strategy Audit: Free consultation to assess practice needs
 
 ## Purpose/Function
-To provide California psychiatric practices with elite, residency-trained virtual assistants who:
+To provide California psychiatric practices with elite, specialized virtual assistants who:
 1. **Eliminate Administrative Burden**: Handle scheduling, patient communication, EHR documentation, and insurance coordination
 2. **Ensure Regulatory Compliance**: Maintain expertise in CURES, CMIA, HIPAA, and Ryan Haight requirements
-3. **Optimize Revenue Cycles**: Support billing accuracy through insurance verification, prior authorization tracking, and superbill generation
+3. **Stabilize Revenue**: Support billing accuracy through insurance verification, prior authorization tracking, and superbill generation
 4. **Enable Clinical Focus**: Free psychiatrists to concentrate on patient care rather than paperwork
 5. **Scale Seamlessly**: Grow administrative capacity in lockstep with practice expansion without hiring overhead
 
@@ -150,17 +151,17 @@ To provide California psychiatric practices with elite, residency-trained virtua
 - Santa Barbara County
 
 ### Content Pillars (SEO Silo Architecture)
-1. **Services Hub**: Core service offerings (EHR, billing, patient coordination, medication management)
+1. **Services Hub**: Core service offerings (EHR, billing support, patient coordination, medication management)
 2. **Locations Hub**: City-specific landing pages for major California markets
 3. **Resources Hub**: Educational content (compliance guides, practice optimization, industry insights)
 4. **Case Studies Hub**: Success stories and ROI demonstrations
 5. **Comparison Hub**: Virtual Minds vs. in-house staff, other VA services, practice management software
 
 ### Key Differentiators
-1. **Medical Leadership**: Founded and operated by Board-Certified Psychiatrists
-2. **6-Week Residency Training**: Industry's only medical residency-style onboarding
+1. **Specialized Experience**: Founded by a psychiatric practice manager with 20+ years of deep operational expertise
+2. **Operational Excellence**: Business model built on enhancing efficiency and effectiveness for practices
 3. **California-Exclusive**: 100% focus on California regulatory environment
-4. **Top 1% Hiring**: Elite vetting process with psychometric evaluation
+4. **Top 1% Hiring**: Elite vetting process for administrative competence
 5. **Secure-Link Protocol**: Proprietary security infrastructure exceeding HIPAA requirements
 6. **Zero Offshore**: All assistants based in United States with California-specific training
 
@@ -210,10 +211,10 @@ To provide California psychiatric practices with elite, residency-trained virtua
 ## Implementation Roadmap
 
 ### Phase 1: Foundation (Months 1-3)
-- Launch location-specific landing pages for top 5 California markets
-- Publish core service pages with detailed scope documentation
-- Create lead magnet (California Psychiatric Compliance Checklist)
-- Implement 15-minute Strategy Audit booking system
+- [x] Launch location-specific landing pages for top 5 California markets (Completed: Locations Index + 35 City Pages Live)
+- [ ] Publish core service pages with detailed scope documentation
+- [ ] Create lead magnet (California Psychiatric Compliance Checklist)
+- [ ] Implement 15-minute Strategy Audit booking system
 
 ### Phase 2: Authority Building (Months 4-6)
 - Publish 12 high-value blog posts on psychiatric practice optimization

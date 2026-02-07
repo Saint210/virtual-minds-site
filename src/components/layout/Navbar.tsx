@@ -46,6 +46,9 @@ export default function Navbar({
                     <Link href="/services" className="hover:text-primary transition-colors">
                         Services
                     </Link>
+                    <Link href="/services/practice-consulting" className="hover:text-primary transition-colors">
+                        Consulting
+                    </Link>
                     <Link href="/about" className="hover:text-primary transition-colors">
                         About
                     </Link>
@@ -94,6 +97,7 @@ export default function Navbar({
                         <div className="flex flex-col p-6 gap-2">
                             {[
                                 { name: "Services", href: "/services" },
+                                { name: "Consulting", href: "/services/practice-consulting" },
                                 { name: "About", href: "/about" },
                                 { name: "Pricing", href: "/pricing" },
                                 { name: "Resources", href: "/resources" },

@@ -78,17 +78,14 @@ export default function HIPAAPage() {
                                         <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Liability Protection</p>
                                         <p className="text-base font-bold text-trust-navy">Full BAA</p>
                                     </div>
-                                    <div className="hidden md:block h-10 w-px bg-[#1A2332]/10" />
-                                    <div className="space-y-1">
-                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Security Drills</p>
-                                        <p className="text-base font-bold text-trust-navy">Annual Audit</p>
-                                    </div>
-                                    <div className="hidden md:block h-10 w-px bg-[#1A2332]/10" />
-                                    <div className="space-y-1">
-                                        <p className="text-[9px] font-black text-[#D2691E] uppercase tracking-[0.2em] leading-none">Data Storage</p>
-                                        <div className="flex items-center gap-2">
-                                            <span className="size-2 rounded-full bg-green-500 box-shadow-lg shadow-green-500/50 animate-pulse" />
-                                            <p className="text-base font-bold text-trust-navy italic">0% Local PHI</p>
+                                    <div className="space-y-4">
+                                        <div className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-trust-navy text-sm font-bold">verified_user</span>
+                                            <span className="text-slate-600 font-medium">Bespoke psychiatric-specific HIPAA infrastructure</span>
+                                        </div>
+                                        <div className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-trust-navy text-sm font-bold">verified_user</span>
+                                            <span className="text-slate-600 font-medium">Statewide California regulatory compliance</span>
                                         </div>
                                     </div>
                                 </div>
@@ -146,7 +143,7 @@ export default function HIPAAPage() {
                                 { icon: 'verified_user', title: 'Annual Certification', desc: 'Our VAs undergo mandatory annual HIPAA re-certification and regular phishing/security drills.' },
                                 { icon: 'vpn_lock', title: 'Secure VPN Access', desc: 'All clinical work is performed through encrypted, dedicated VPNs with multi-factor authentication.' },
                                 { icon: 'desktop_access_disabled', title: 'Data Sovereignty', desc: 'No patient data is ever stored on local machines. PHI remains strictly within your EHR environment.' },
-                                { icon: 'policy', title: 'SOC2 Type II', desc: 'Our administrative infrastructure is built on SOC2 compliant standards for maximum operational security.' },
+                                { icon: 'policy', title: 'Secured Infrastructure', desc: 'Our administrative infrastructure is built on industry-standard security protocols for operational stability.' },
                                 { icon: 'history', title: 'Audit Trail Logs', desc: 'Every action taken by a VA is logged and timestamped within our internal systems for full transparency.' }
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col gap-6 p-10 bg-white rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group">
@@ -212,7 +209,7 @@ export default function HIPAAPage() {
                                             </div>
                                             <div className="p-6 bg-white/5 rounded-2xl border border-white/10 backdrop-blur-sm">
                                                 <p className="text-[10px] font-black text-white/40 mb-3 uppercase tracking-widest">Integrity Check</p>
-                                                <p className="font-black text-xl italic !text-white" style={{ color: 'white' }}>Vault Integrity 100%</p>
+                                                <p className="font-black text-xl italic !text-white" style={{ color: 'white' }}>Audit Ready</p>
                                             </div>
                                         </div>
                                     </div>

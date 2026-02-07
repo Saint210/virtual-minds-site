@@ -41,7 +41,7 @@ const selectionTakeaways = [
     detail: "Your EMR—whether DrChrono, CharmHealth, or Kareo—should be your engine. Select partners who can engineer workflows directly within these platforms."
   },
   {
-    point: "Clinical Yield & ROI",
+    point: "Clinical Performance",
     detail: "Every minute of a psychiatric VA's time should be measured by its return on clinical throughput. Focus on models that increase psychiatrist salary and practice value."
   }
 ];
@@ -118,7 +118,7 @@ const selectionCriteria = [
     icon: "trending_up",
     critical: false,
     details: [
-      "Yield-per-provider analysis",
+      "Performance-per-provider analysis",
       "Collection rate optimization",
       "Admin-to-clinical hour ratio",
       "Patient retention metrics",
@@ -153,7 +153,7 @@ const comparisonTable = [
     freelancer: "Manual, slow execution"
   },
   {
-    factor: "Yield Focus",
+    factor: "Performance Focus",
     virtualMinds: "Investment ROI Optimization",
     generalVA: "Hour-for-hour labor",
     freelancer: "Pay-by-task (low value)"
@@ -172,7 +172,7 @@ const relatedArticles = [
   {
     title: "The Revenue Optimization Model for CA Psychiatrists",
     slug: "psychiatrist-salary-california-private-practice",
-    category: "Yield Strategy"
+    category: "Performance Strategy"
   },
   {
     title: "Scaling Your Infrastructure Without Burnout",
@@ -232,7 +232,7 @@ export default function HowToChoosePsychiatricVABlog() {
                   <p className="text-xl font-bold text-trust-navy">CA Native</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Yield Target</p>
+                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Performance Target</p>
                   <p className="text-xl font-bold text-trust-navy">80%+ ROI</p>
                 </div>
                 <div className="space-y-1">
@@ -252,21 +252,21 @@ export default function HowToChoosePsychiatricVABlog() {
               <div className="flex-1 min-w-0">
 
                 {/* EXECUTIVE BRIEFING BOX */}
-                <div id="executive-briefing" className="bg-[#2A2A2A] rounded-[2.5rem] p-10 lg:p-16 text-white mb-20 shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D2691E]/5 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+                <div id="executive-briefing" className="bg-[#0B1C3E] rounded-[2.5rem] p-10 lg:p-16 text-white mb-20 shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D2691E]/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
                   <div className="relative z-10">
                     <div className="flex items-center gap-4 mb-8">
                       <span className="w-12 h-px bg-[#D2691E]" />
-                      <h2 className="font-serif text-2xl lg:text-3xl font-bold italic text-white">Executive Briefing</h2>
+                      <h2 className="font-serif text-2xl lg:text-3xl font-bold italic !text-white text-white">Executive Briefing</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                       {selectionTakeaways.map((t, i) => (
                         <div key={i} className="group">
                           <h3 className="font-bold text-lg mb-3 flex items-center gap-3">
-                            <span className="text-[10px] font-black text-white/40">0{i + 1}</span>
-                            <span className="text-white group-hover:text-primary transition-colors">{t.point}</span>
+                            <span className="text-[10px] font-black text-white/60">0{i + 1}</span>
+                            <span className="text-white group-hover:text-[#D2691E] transition-colors">{t.point}</span>
                           </h3>
-                          <p className="text-slate-400 text-sm leading-relaxed group-hover:text-slate-300 transition-colors">
+                          <p className="text-slate-300 text-sm leading-relaxed group-hover:text-white transition-colors">
                             {t.detail}
                           </p>
                         </div>
@@ -312,7 +312,7 @@ export default function HowToChoosePsychiatricVABlog() {
                 <div id="vetting-criteria" className="mb-24 pt-24 border-t border-slate-200">
                   <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="font-serif text-4xl lg:text-6xl font-bold text-trust-navy mb-6 italic">The Operational Standards</h2>
-                    <p className="text-slate-500 text-lg">Six structural pillars required for high-yield California psychiatric operations.</p>
+                    <p className="text-slate-500 text-lg">Six structural pillars required for high-performance California psychiatric operations.</p>
                   </div>
 
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -344,11 +344,11 @@ export default function HowToChoosePsychiatricVABlog() {
                 </div>
 
                 {/* THE OPERATIONAL MATRIX (RE-DESIGNED TABLE) */}
-                <div id="comparison-matrix" className="mb-24 py-24 px-10 bg-[#1A1A1A] rounded-[3rem] text-white overflow-hidden relative shadow-[0_40px_80px_-20px_rgba(0,0,0,0.5)]">
+                <div id="comparison-matrix" className="mb-24 py-24 px-10 bg-[#0B1C3E] rounded-[3rem] text-white overflow-hidden relative shadow-[0_40px_80px_-20px_rgba(11,28,62,0.5)]">
                   <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#D2691E] to-transparent" />
                   <div className="text-center mb-16 relative z-10">
-                    <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 text-white">Psychiatric VA <span className="text-[#D2691E]">Comparison Matrix.</span></h2>
-                    <p className="text-slate-400 font-light">Comparing infrastructure models for board-certified specialists.</p>
+                    <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 !text-white text-white">Psychiatric VA <span className="!text-[#D2691E]">Comparison Matrix.</span></h2>
+                    <p className="!text-slate-300 font-light">Comparing infrastructure models for board-certified specialists.</p>
                   </div>
 
                   <div className="relative z-10 overflow-x-auto">
@@ -366,7 +366,7 @@ export default function HowToChoosePsychiatricVABlog() {
                             <td className="bg-white/5 backdrop-blur-sm px-8 py-6 rounded-l-2xl border-l border-y border-white/10 font-bold text-white group-hover:bg-white/10 transition-colors">
                               {row.factor}
                             </td>
-                            <td className="bg-[#D2691E]/5 px-8 py-6 border-y border-[#D2691E]/20 text-[#D2691E] font-black">
+                            <td className="bg-[#D2691E]/10 px-8 py-6 border-y border-[#D2691E]/20 text-[#D2691E] font-black">
                               {row.virtualMinds}
                             </td>
                             <td className="bg-white/5 backdrop-blur-sm px-8 py-6 rounded-r-2xl border-r border-y border-white/10 text-slate-400 font-light">
@@ -416,13 +416,13 @@ export default function HowToChoosePsychiatricVABlog() {
                   />
 
                   {/* SIDEBAR CTA CARD */}
-                  <div className="mt-12 p-8 bg-trust-navy rounded-[2rem] text-white shadow-xl relative overflow-hidden group">
+                  <div className="mt-12 p-8 bg-gradient-to-br from-[#D2691E] to-[#b05515] rounded-[2rem] text-white shadow-xl shadow-[#D2691E]/20 relative overflow-hidden group">
                     <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none" />
-                    <h3 className="font-serif text-2xl font-bold mb-4 relative z-10 transition-transform group-hover:-translate-y-1 text-white">Infrastructure Audit.</h3>
-                    <p className="text-slate-300 text-sm mb-8 relative z-10 opacity-80 leading-relaxed font-light">
-                      Get a comprehensive analysis of your practice's current operational gaps and growth potential.
+                    <h3 className="font-serif text-2xl font-bold mb-4 relative z-10 transition-transform group-hover:-translate-y-1 !text-white text-white">Unlock Practice Intelligence.</h3>
+                    <p className="!text-white/90 text-white/90 text-sm mb-8 relative z-10 font-medium leading-relaxed">
+                      Transform your clinical operations with a strategic intelligence assessment for private psychiatry.
                     </p>
-                    <Link href="/book-consultation" className="block text-center py-4 bg-primary text-trust-navy font-black rounded-xl text-xs uppercase tracking-widest hover:bg-[#C19F30] transition-colors relative z-10 shadow-lg">
+                    <Link href="/book-consultation" className="block text-center py-4 bg-[#0B1C3E] text-white font-bold rounded-xl text-xs uppercase tracking-widest hover:bg-[#15284d] transition-all hover:scale-[1.02] relative z-10 shadow-lg shadow-black/20">
                       Schedule Assessment
                     </Link>
                   </div>
@@ -434,23 +434,23 @@ export default function HowToChoosePsychiatricVABlog() {
         </section>
 
         {/* PREMIUM FOOTER CTA */}
-        <section className="py-24 bg-[#1A1A1A] relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#1A1A1A] via-[#1A1A1A] to-[#D2691E]/10 pointer-events-none" />
+        <section className="py-24 bg-[#0B1C3E] relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3E] via-[#0B1C3E] to-[#D2691E]/20 pointer-events-none" />
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
           <div className="relative z-10 max-w-[1400px] mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
-              <h2 className="font-serif text-4xl md:text-7xl font-bold text-white mb-10 leading-[0.9] tracking-tight">
+              <h2 className="font-serif text-4xl md:text-7xl font-bold !text-white mb-10 leading-[0.9] tracking-tight">
                 Design Your <br />
-                <span className="text-[#D2691E]">High-Yield </span> Practice.
+                <span className="!text-[#D2691E]">High-Performance </span> Practice.
               </h2>
-              <p className="text-xl md:text-2xl text-slate-400 font-display leading-relaxed mb-12">
+              <p className="text-xl md:text-2xl !text-slate-400 font-display leading-relaxed mb-12">
                 Stop hiring virtual assistants. Start engineering an infrastructure that works for the board-certified specialist.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/book-consultation"
-                  className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all hover:scale-105 shadow-[0_20px_40px_-5px_rgba(210,105,30,0.3)] flex items-center justify-center gap-4 group"
+                  className="bg-[#D2691E] hover:bg-[#B8860B] !text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all hover:scale-105 shadow-[0_20px_40px_-5px_rgba(210,105,30,0.3)] flex items-center justify-center gap-4 group"
                 >
                   Request Infrastructure Audit
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>

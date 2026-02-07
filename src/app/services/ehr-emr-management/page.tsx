@@ -11,7 +11,7 @@ export const metadata = {
   keywords: ["psychiatric EHR optimization", "DrChrono virtual assistant", "SimplePractice psychiatric workflow", "CharmHealth management", "medical record automation psychiatry", "HIPAA compliant EMR support"],
   openGraph: {
     title: "EHR Optimization for California Psychiatrists | Virtual Minds",
-    description: "Data-driven EHR management that recovers 8+ hours weekly. Specialized integration for DrChrono, CharmHealth, and SimplePractice.",
+    description: "Data-driven EHR management that optimizes practice performance. Specialized integration for DrChrono, CharmHealth, and SimplePractice.",
     url: "https://thevirtualminds.com/services/ehr-emr-management",
     siteName: "Virtual Minds",
     images: [
@@ -32,19 +32,19 @@ const roiData = [
     platform: "SimplePractice",
     struggle: "Manual superbill reconciliation & intake chaos.",
     solution: "Automated billing bridges & dedicated intake desk.",
-    impact: "+12% Net Revenue"
+    impact: "Revenue Optimization"
   },
   {
     platform: "DrChrono",
     struggle: "Template fatigue & iPad latency issues.",
     solution: "Custom psychiatric assessment macros & background sync.",
-    impact: "-8 Hours Admin/Week"
+    impact: "Administrative Relief"
   },
   {
     platform: "CharmHealth",
     struggle: "Complex portal onboarding for patients.",
     solution: "Managed Patient Concierge & helpdesk support.",
-    impact: "98% Patient Satisfaction"
+    impact: "Seamless Experience"
   }
 ];
 
@@ -105,7 +105,7 @@ const integrationCapabilities = [
   {
     icon: "description",
     title: "Clinical Macro Coding",
-    description: "Custom psychiatric assessment templates that reduce typing time by 60%."
+    description: "Custom psychiatric assessment templates that reduce administrative friction."
   },
   {
     icon: "calendar_today",
@@ -195,19 +195,19 @@ export default function EHRManagementPage() {
                 <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
                   <div className="space-y-1">
                     <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Workflow Redundancy</p>
-                    <p className="text-lg font-bold text-trust-navy">-80% Impact</p>
+                    <p className="text-lg font-bold text-trust-navy italic">Minimized</p>
                   </div>
                   <div className="hidden md:block h-10 w-px bg-slate-200" />
                   <div className="space-y-1">
                     <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Note Integrity</p>
-                    <p className="text-lg font-bold text-trust-navy">99.2% Audited</p>
+                    <p className="text-lg font-bold text-trust-navy italic">Consistency Verified</p>
                   </div>
                   <div className="hidden md:block h-10 w-px bg-slate-200" />
                   <div className="space-y-1">
                     <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Average Recovery</p>
                     <div className="flex items-center gap-2">
                       <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                      <p className="text-lg font-bold text-trust-navy italic">8.5 Hrs/wk</p>
+                      <p className="text-lg font-bold text-trust-navy italic">Premium Performance</p>
                     </div>
                   </div>
                 </div>

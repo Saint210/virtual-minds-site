@@ -2,191 +2,151 @@
     {
         "slug": "psychiatrists",
         "name": "General Psychiatry",
-        "metaTitle": "Psychiatric Practice Support | Virtual Minds",
-        "metaDescription": "Specialized administrative support for board-certified psychiatrists. We handle intake coordination, prior authorizations, and complex case management workflows.",
-        "heroDescription": "Focus on clinical excellence. We handle the administrative demands of high-volume psychiatric practices.",
+        "metaTitle": "General Psychiatry Practice Support | Virtual Minds",
+        "metaDescription": "Full-spectrum administrative and consulting support for board-certified psychiatrists. We manage intake, scheduling, and core operational infrastructure.",
+        "heroDescription": "Administrative and operational support for psychiatric practices. We manage your administrative tasks so you can focus on clinical excellence.",
         "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Intake Coordination",
-                "active": true
-            },
-            {
-                "name": "Prior Authorizations",
-                "active": false
-            },
-            {
-                "name": "Case Management",
-                "active": false
-            },
-            {
-                "name": "Billing Support",
-                "active": false
-            }
+        "consultingServices": [
+            "Practice Start-Up Services",
+            "Review Current Plans",
+            "HIPAA Compliance",
+            "Create Client Management and Experience Policies"
         ],
-        "resources": [
-            {
-                "category": "Workflow",
-                "readTime": "5 min read",
-                "title": "Optimizing Patient Intake",
-                "description": "Streamlining the new patient journey from initial inquiry to first appointment.",
-                "image": "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Client Intake and Onboarding",
+            "Prescription Prior Authorizations",
+            "Patient Communication and Correspondence"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Process Credit Card Transactions"
         ]
     },
     {
         "slug": "womens-mental-health",
         "name": "Women's Mental Health",
-        "metaTitle": "Reproductive Psychiatry Support | Virtual Minds",
-        "metaDescription": "Specialized support for reproductive psychiatry. Sensitive intake coordination for perinatal, postpartum, and menopausal mental health.",
-        "heroDescription": "Concierge support for sensitive cases. We understand the nuances of reproductive psychiatry scheduling and patient privacy.",
+        "metaTitle": "Women's Mental Health Admin Support | Virtual Minds",
+        "metaDescription": "Specialized support for reproductive psychiatry practices. High-touch intake, onboarding, and administrative coordination.",
+        "heroDescription": "Administrative systems for psychiatric practices. We protect your patient experience while managing your daily operations.",
         "heroImage": "https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Sensitive Intake",
-                "active": true
-            },
-            {
-                "name": "Coordination of Care",
-                "active": false
-            },
-            {
-                "name": "Privacy Protocols",
-                "active": false
-            }
+        "consultingServices": [
+            "HIPAA Compliance",
+            "Review of current processes and systems",
+            "Contract Review and Negotiation",
+            "Create Client Management and Experience Policies"
         ],
-        "resources": [
-            {
-                "category": "Practice",
-                "readTime": "6 min read",
-                "title": "Managing Reproductive Psychiatry Referrals",
-                "description": "Best practices for coordinating care with OB/GYNs and fertility specialists.",
-                "image": "https://images.unsplash.com/photo-1587854692152-cbe660dbde88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Client Intake and Onboarding",
+            "Appointment Scheduling and Calendar Management",
+            "Patient Communication and Correspondence",
+            "Document Management and Record Keeping"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Contact Insurance Companies On Request"
         ]
     },
     {
         "slug": "child-adolescent-psychiatry",
         "name": "Child & Adolescent",
-        "metaTitle": "Child Psychiatry Admin Support | Virtual Minds",
-        "metaDescription": "Administrative support for child psychiatrists. Managing parent communications, school forms, and complex family scheduling.",
-        "heroDescription": "We manage the family dynamic. From coordinating with parents to handling school forms, we support your young patients' ecosystem.",
+        "metaTitle": "Child Psychiatry Administrative Support | Virtual Minds",
+        "metaDescription": "Administrative support for child and adolescent psychiatry. Managing scheduling, intake, and patient correspondence.",
+        "heroDescription": "Operational support for pediatric psychiatric practices. We handle the administrative coordination required for clinical care.",
         "heroImage": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Parent Communication",
-                "active": true
-            },
-            {
-                "name": "School Forms",
-                "active": false
-            },
-            {
-                "name": "Family Scheduling",
-                "active": false
-            }
+        "consultingServices": [
+            "EHR Implementation",
+            "Practice Start-Up Services",
+            "Review of current processes and systems",
+            "Office Set-Up"
         ],
-        "resources": [
-            {
-                "category": "Admin",
-                "readTime": "4 min read",
-                "title": "Streamlining School Form Requests",
-                "description": "Efficient workflows for handling IEP documents and school medication authorizations.",
-                "image": "https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Client Intake and Onboarding",
+            "Patient Communication and Correspondence",
+            "Telehealth Support Services"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Process Credit Card Transactions",
+            "Billing and Payment Management"
         ]
     },
     {
         "slug": "integrative-psychiatry",
         "name": "Integrative Psychiatry",
-        "metaTitle": "Integrative Psychiatry Support | Virtual Minds",
-        "metaDescription": "Support for holistic and integrative practices. Managing functional testing kits, supplement protocols, and extended appointment types.",
-        "heroDescription": "Supporting whole-person care. We manage the logistics of functional testing and supplement coordination so you can treat the whole patient.",
+        "metaTitle": "Integrative Psychiatry Operations | Virtual Minds",
+        "metaDescription": "Operational support for integrative psychiatry practices. Managing complex scheduling and administrative documentation.",
+        "heroDescription": "Administrative logistics for psychiatry. We manage the layers of practice management so you can focus on patient care.",
         "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Lab Coordination",
-                "active": true
-            },
-            {
-                "name": "Supplement Logistics",
-                "active": false
-            },
-            {
-                "name": "Extended Visits",
-                "active": false
-            }
+        "consultingServices": [
+            "EHR Implementation",
+            "Review Current Plans",
+            "Make recommendations",
+            "Contract Review and Negotiation"
         ],
-        "resources": [
-            {
-                "category": "Operations",
-                "readTime": "5 min read",
-                "title": "Coordinating Functional Medicine Labs",
-                "description": "How we manage kit shipping and result tracking for integrative practices.",
-                "image": "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Document Management and Record Keeping",
+            "Client Intake and Onboarding",
+            "Telehealth Support Services"
+        ],
+        "billingSupport": [
+            "Generate Superbills",
+            "Process Credit Card Transactions",
+            "Billing Company Liaison"
         ]
     },
     {
         "slug": "adhd-neuropsychiatry",
         "name": "ADHD & Neuropsych",
-        "metaTitle": "ADHD & Neuropsych Admin Support | Virtual Minds",
-        "metaDescription": "Specialized support for ADHD and Neuropsychiatry. Managing testing schedules, controlled substance authorizations, and complex assessments.",
-        "heroDescription": "Precision admin for precision medicine. We handle strict C2 authorization protocols and lengthy neuropsych testing blocks.",
+        "metaTitle": "ADHD & Neuropsychiatry Admin Support | Virtual Minds",
+        "metaDescription": "Precision administrative support for ADHD and Neuropsychiatry. Managing appointments, prior authorizations, and documentation.",
+        "heroDescription": "Administrative infrastructure for psychiatry. We handle the regulatory and scheduling demands of your practice.",
         "heroImage": "https://images.unsplash.com/photo-1555633514-abceaad63e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Prior Authorizations",
-                "active": true
-            },
-            {
-                "name": "Testing Schedules",
-                "active": false
-            },
-            {
-                "name": "Controlled Substances",
-                "active": false
-            }
+        "consultingServices": [
+            "HIPAA Compliance",
+            "Review of current processes and systems",
+            "Make recommendations",
+            "Implement any new procedures"
         ],
-        "resources": [
-            {
-                "category": "Compliance",
-                "readTime": "4 min read",
-                "title": "Managing Stimulant Authorizations",
-                "description": "Proactive workflows for managing C2 refills and insurance requirements.",
-                "image": "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Prescription Prior Authorizations",
+            "Appointment Scheduling and Calendar Management",
+            "Document Management and Record Keeping",
+            "Patient Communication and Correspondence"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Contact Insurance Companies On Request",
+            "Process Credit Card Transactions"
         ]
     },
     {
         "slug": "private-practice-launch",
         "name": "Practice Launch",
-        "metaTitle": "Private Practice Launch Support | Virtual Minds",
-        "metaDescription": "Launch your California private practice with confidence. Credentialing, EHR setup, and practice formation support for psychiatrists.",
-        "heroDescription": "From hospital to private practice. We provide the operational infrastructure you need to launch your independent brand.",
+        "metaTitle": "Psychiatric Private Practice Launch | Virtual Minds",
+        "metaDescription": "Complete start-up support for psychiatrists moving to private practice. From office set-up to EHR implementation.",
+        "heroDescription": "Start-up consulting for your new California private practice. We provide the operational foundation for your launch.",
         "heroImage": "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
-        "categories": [
-            {
-                "name": "Credentialing",
-                "active": true
-            },
-            {
-                "name": "EHR Setup",
-                "active": false
-            },
-            {
-                "name": "Practice Formation",
-                "active": false
-            }
+        "consultingServices": [
+            "Practice Start-Up Services",
+            "Office Set-Up",
+            "EHR Implementation",
+            "Contract Review and Negotiation"
         ],
-        "resources": [
-            {
-                "category": "Startup",
-                "readTime": "7 min read",
-                "title": "Private Practice Checklist",
-                "description": "Essential steps for launching your psychiatric private practice in California.",
-                "image": "https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80"
-            }
+        "vaServices": [
+            "Client Intake and Onboarding",
+            "Appointment Scheduling and Calendar Management",
+            "Create Client Management and Experience Policies",
+            "Document Management and Record Keeping"
+        ],
+        "billingSupport": [
+            "Billing and Payment Management",
+            "Process Credit Card Transactions",
+            "Generate Superbills"
         ]
     }
 ]

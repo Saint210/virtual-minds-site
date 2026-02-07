@@ -17,23 +17,21 @@ export default function Hero() {
                         {/* Trust Badge */}
                         <div className="inline-flex items-center gap-2 bg-white/40 backdrop-blur-sm border border-[#b25a2a]/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium shadow-sm">
                             <span className="material-symbols-outlined text-[#b25a2a]">verified</span>
-                            <span>California's Premier Psychiatric VA Service</span>
+                            <span>California's Premier Psychiatric Management</span>
                         </div>
 
                         {/* Modern Headline - SEO + Conversion Optimized */}
                         <div className="space-y-4">
                             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-[1.1] text-trust-navy tracking-tight">
-                                California Psychiatric Virtual Assistants:
-                                <br />
+                                Executive Infrastructure for <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                    Reclaim 20+ Hours Weekly. Recover $300K+ Annually.
+                                    California Psychiatry.
                                 </span>
                             </h1>
 
                             {/* Value Proposition - Benefit-Focused */}
                             <p className="text-base md:text-lg text-slate-700 leading-relaxed max-w-lg font-medium">
-                                California psychiatric VAs who handle <strong className="text-trust-navy">prior auths, billing chaos, and no-show recovery</strong>.
-                                <span className="text-primary font-bold"> HIPAA-compliant. SimplePractice experts. Psychiatry-only focus.</span>
+                                We provide <strong className="text-trust-navy">concierge practice management</strong> designed for the specific nuances of California mental health. Whether improving <strong className="text-primary">private pay conversion</strong> or navigating <strong className="text-trust-navy">complex reimbursement</strong>, we secure your revenue.
                             </p>
                         </div>
 
@@ -45,16 +43,16 @@ export default function Hero() {
                                 className="group relative overflow-hidden bg-[#D2691E] hover:bg-[#B8860B] text-white px-6 py-3 rounded-xl font-bold text-base transition-all hover:shadow-xl hover:shadow-[#D2691E]/20 hover:-translate-y-1"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
-                                    <span className="material-symbols-outlined">trending_up</span>
-                                    See My Recovery Plan
+                                    <span className="material-symbols-outlined">analytics</span>
+                                    Request Practice Strategy
                                 </span>
                             </Link>
 
                             <Link
-                                href="/virtual-assistant-for-psychiatrists"
+                                href="/services"
                                 className="group border-2 border-primary/30 text-primary px-6 py-3 rounded-xl font-bold text-base hover:bg-primary/5 transition-colors flex items-center gap-2"
                             >
-                                <span>Explore Services</span>
+                                <span>Explore Protocols</span>
                                 <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                             </Link>
                         </div>
@@ -62,16 +60,16 @@ export default function Hero() {
                         {/* Interactive Metrics */}
                         <div className="grid grid-cols-3 gap-3 max-w-md mx-auto lg:mx-0">
                             <div className="bg-white/40 backdrop-blur-sm border border-[#b25a2a]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-xl md:text-2xl font-black text-[#b25a2a] mb-1 group-hover:scale-110 transition-transform origin-left">40%</div>
-                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Less Admin</div>
+                                <div className="text-xl md:text-2xl font-black text-[#b25a2a] mb-1 group-hover:scale-110 transition-transform origin-left">100%</div>
+                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Clinical Focus</div>
                             </div>
                             <div className="bg-white/40 backdrop-blur-sm border border-[#9CAF88]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-xl md:text-2xl font-black text-[#9CAF88] mb-1 group-hover:scale-110 transition-transform origin-left">95%</div>
-                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Accuracy</div>
+                                <div className="text-xl md:text-2xl font-black text-[#9CAF88] mb-1 group-hover:scale-110 transition-transform origin-left">High</div>
+                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Yield Accuracy</div>
                             </div>
                             <div className="bg-white/40 backdrop-blur-sm border border-[#DAA520]/20 rounded-2xl p-3 hover:bg-white/60 transition-all shadow-sm group cursor-default">
-                                <div className="text-xl md:text-2xl font-black text-[#DAA520] mb-1 group-hover:scale-110 transition-transform origin-left">20hr</div>
-                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Recovered</div>
+                                <div className="text-xl md:text-2xl font-black text-[#DAA520] mb-1 group-hover:scale-110 transition-transform origin-left">24/7</div>
+                                <div className="text-trust-navy text-xs font-bold uppercase tracking-wider">Practice Uptime</div>
                             </div>
                         </div>
                     </div>

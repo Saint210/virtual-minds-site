@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Manrope, Outfit } from "next/font/google";
+import { Manrope, Outfit, Lora } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
 import { SpeedInsights } from "@vercel/speed-insights/next";
@@ -19,6 +19,13 @@ const outfit = Outfit({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "600", "700", "800", "900"],
+});
+
+const lora = Lora({
+  variable: "--font-serif",
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  style: ["normal", "italic"],
 });
 
 export const metadata: Metadata = {
@@ -62,7 +69,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${manrope.variable} ${outfit.variable} antialiased`}
+        className={`${manrope.variable} ${outfit.variable} ${lora.variable} antialiased`}
         style={{ backgroundColor: '#FAF8F3' }}
       >
         <GoogleAnalytics />

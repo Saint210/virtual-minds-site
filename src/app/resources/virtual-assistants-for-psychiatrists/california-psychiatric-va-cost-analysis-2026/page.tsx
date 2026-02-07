@@ -71,15 +71,15 @@ export default function CostAnalysisPage() {
                                     <ul className="space-y-2 text-sm text-slate-600">
                                         <li className="flex items-start gap-2">
                                             <span className="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
-                                            <span>245% average ROI within 6 months</span>
+                                            <span>High average ROI within 6 months</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <span className="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
-                                            <span>35-55% cost savings vs. local staff</span>
+                                            <span>Significant cost savings vs. local staff</span>
                                         </li>
                                         <li className="flex items-start gap-2">
                                             <span className="material-symbols-outlined text-primary text-sm mt-0.5">check_circle</span>
-                                            <span>2.3 months average break-even point</span>
+                                            <span>Rapid average break-even point</span>
                                         </li>
                                     </ul>
                                 </div>
@@ -116,7 +116,7 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                         <li className="flex justify-between">
                                                             <span><strong>Savings</strong></span>
-                                                            <span className="text-green-600 font-bold">35-55%</span>
+                                                            <span className="text-green-600 font-bold">Significant</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -133,11 +133,11 @@ export default function CostAnalysisPage() {
                                                         </li>
                                                         <li className="flex justify-between">
                                                             <span>Benefits Package</span>
-                                                            <span className="text-green-600 font-bold">25-35% saved</span>
+                                                            <span className="text-green-600 font-bold">Significantly saved</span>
                                                         </li>
                                                         <li className="flex justify-between">
                                                             <span>Equipment</span>
-                                                            <span className="text-green-600 font-bold">60% reduction</span>
+                                                            <span className="text-green-600 font-bold">Major reduction</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -194,15 +194,15 @@ export default function CostAnalysisPage() {
                                                     <ul className="space-y-2">
                                                         <li className="flex justify-between">
                                                             <span>Break-Even Point</span>
-                                                            <span className="text-purple-600 font-bold">2.3 months</span>
+                                                            <span className="text-purple-600 font-bold">Rapid</span>
                                                         </li>
                                                         <li className="flex justify-between">
                                                             <span>Annual ROI</span>
-                                                            <span className="text-purple-600 font-bold">180-320%</span>
+                                                            <span className="text-purple-600 font-bold">Significant</span>
                                                         </li>
                                                         <li className="flex justify-between">
                                                             <span>5-Year Value</span>
-                                                            <span className="text-purple-600 font-bold">$450-850K</span>
+                                                            <span className="text-purple-600 font-bold">Substantial</span>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -249,7 +249,7 @@ export default function CostAnalysisPage() {
                                                     </div>
                                                     <div className="flex justify-between items-center p-3 bg-white rounded-lg">
                                                         <span>Medi-Cal ROI</span>
-                                                        <span className="text-primary font-bold">Enhanced</span>
+                                                        <span className="text-primary font-bold">Positive</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -280,19 +280,19 @@ export default function CostAnalysisPage() {
                                                                 <td className="border border-primary/20 px-4 py-3 font-medium">Starter</td>
                                                                 <td className="border border-primary/20 px-4 py-3 text-primary font-bold">$2,499</td>
                                                                 <td className="border border-primary/20 px-4 py-3">40 hours</td>
-                                                                <td className="border border-primary/20 px-4 py-3">3.2 months</td>
+                                                                <td className="border border-primary/20 px-4 py-3">Rapid</td>
                                                             </tr>
                                                             <tr className="bg-primary/5">
                                                                 <td className="border border-primary/20 px-4 py-3 font-medium">Professional</td>
                                                                 <td className="border border-primary/20 px-4 py-3 text-primary font-bold">$4,999</td>
                                                                 <td className="border border-primary/20 px-4 py-3">80 hours</td>
-                                                                <td className="border border-primary/20 px-4 py-3">2.1 months</td>
+                                                                <td className="border border-primary/20 px-4 py-3">Accelerated</td>
                                                             </tr>
                                                             <tr className="bg-white">
                                                                 <td className="border border-primary/20 px-4 py-3 font-medium">Enterprise</td>
                                                                 <td className="border border-primary/20 px-4 py-3 text-primary font-bold">$8,999</td>
                                                                 <td className="border border-primary/20 px-4 py-3">160 hours</td>
-                                                                <td className="border border-primary/20 px-4 py-3">1.4 months</td>
+                                                                <td className="border border-primary/20 px-4 py-3">Immediate</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -346,7 +346,7 @@ export default function CostAnalysisPage() {
                                                                 <td className="border border-green-300 px-4 py-3">Total Annual</td>
                                                                 <td className="border border-green-300 px-4 py-3 text-red-600">$107,550</td>
                                                                 <td className="border border-green-300 px-4 py-3 text-green-600">$53,920</td>
-                                                                <td className="border border-green-300 px-4 py-3 text-green-600 text-lg">$53,630</td>
+                                                                <td className="border border-green-300 px-4 py-3 text-green-600 text-lg">Significant</td>
                                                             </tr>
                                                         </tbody>
                                                     </table>
@@ -549,7 +549,7 @@ export default function CostAnalysisPage() {
                                                     <div className="flex items-center gap-3 p-3 bg-white rounded-lg">
                                                         <span className="material-symbols-outlined text-green-600">verified</span>
                                                         <div>
-                                                            <strong>Compliance Score</strong>: 100% audit readiness maintained
+                                                            <strong>Compliance Score</strong>: Full audit readiness maintained
                                                         </div>
                                                     </div>
                                                 </div>
@@ -574,7 +574,7 @@ export default function CostAnalysisPage() {
 
                                                 <hr className="my-6" />
 
-                                                <p><strong>Bottom Line</strong>: California psychiatric practices implementing virtual assistants see average ROI of 245% within 6 months, with significant improvements in provider satisfaction, patient care capacity, and regulatory compliance. The combination of cost savings, productivity gains, and risk reduction makes virtual assistance the most strategic investment for 2026 practice growth.</p>
+                                                <p><strong>Bottom Line</strong>: California psychiatric practices implementing virtual assistants see significant ROI, with substantial improvements in provider satisfaction, patient care capacity, and regulatory compliance. The combination of cost savings, productivity gains, and risk reduction makes virtual assistance the most strategic investment for 2026 practice growth.</p>
 
                                                 <p><em>Data sourced from California Medical Board, BLS wage reports, and Virtual Minds client performance metrics (2024-2025).</em></p>
                                             </div>

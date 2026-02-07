@@ -9,7 +9,7 @@ export default function MedicalSchema() {
             {
                 "@type": "MedicalOrganization",
                 "@id": "https://thevirtualminds.com/#organization",
-                "name": "Virtual Minds",
+                "name": "Virtual Minds, LLC",
                 "url": "https://thevirtualminds.com",
                 "logo": {
                     "@type": "ImageObject",
@@ -36,6 +36,44 @@ export default function MedicalSchema() {
                     "url": "https://www.wikidata.org/wiki/Q99"
                 },
                 "knowsAbout": ["DrChrono", "CharmHealth", "SimplePractice", "Luminello", "Kareo", "AdvancedMD", "California Mental Health Law"]
+            },
+            {
+                "@type": "LocalBusiness",
+                "@id": "https://thevirtualminds.com/#localbusiness",
+                "name": "Virtual Minds, LLC",
+                "image": "https://thevirtualminds.com/images/the-virtual-minds-logo-og-notext.jpg",
+                "telePhone": "+13104006266",
+                "url": "https://thevirtualminds.com",
+                "priceRange": "$$$",
+                "address": {
+                    "@type": "PostalAddress",
+                    "addressLocality": "Los Angeles",
+                    "addressRegion": "CA",
+                    "addressCountry": "US"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 34.0837415,
+                    "longitude": -119.0075401
+                },
+                "hasMap": "https://www.google.com/maps?cid=9435017122116245209",
+                "openingHoursSpecification": {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": [
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday"
+                    ],
+                    "opens": "09:00",
+                    "closes": "17:00"
+                },
+                "aggregateRating": {
+                    "@type": "AggregateRating",
+                    "ratingValue": "5",
+                    "reviewCount": "1"
+                }
             },
             {
                 "@type": "Service",

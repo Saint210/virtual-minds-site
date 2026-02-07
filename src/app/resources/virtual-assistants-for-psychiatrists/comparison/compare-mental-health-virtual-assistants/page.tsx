@@ -24,7 +24,7 @@ export default function ComparisonPage() {
             inhouse: { status: null, text: "Variable / Training Needed", type: "slate" }
         },
         {
-            category: "CPT Coding Knowledge",
+            category: "Procedure Knowledge",
             sub: "E/M codes for psychiatry",
             vm: { status: null, text: "Advanced Psychiatric", type: "success" },
             general: { status: null, text: "Basic Medical Only", type: "amber" },
@@ -172,7 +172,7 @@ export default function ComparisonPage() {
                                 Ready to specialize your practice?
                             </h2>
                             <p className="text-slate-300 text-xl leading-relaxed max-w-2xl">
-                                Join 200+ psychiatric clinics that have reduced administrative overhead by 40% with Virtual Minds.
+                                Join numerous psychiatric clinics that have significantly reduced administrative overhead with Virtual Minds.
                             </p>
                             <Link href="/contact" className="h-16 px-12 rounded-2xl bg-primary text-white font-bold text-xl hover:scale-[1.05] transition-transform shadow-2xl shadow-primary/40 flex items-center">
                                 Request a Personalized Demo

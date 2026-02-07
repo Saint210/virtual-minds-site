@@ -286,7 +286,7 @@ export default function OperationalProcessReview() {
                                         Coding errors cause a significant percentage of claim denials in behavioral health. Common mistakes include mismatched diagnosis and procedure codes, incorrect time-based billing, and failure to document medical necessity adequately.
                                     </p>
                                     <p className="mb-6">
-                                        Ensure providers understand the documentation requirements for each CPT code they bill. A 99214 evaluation requires different documentation than a 99213. Psychotherapy add-on codes have specific time thresholds that must be clearly documented.
+                                        Ensure providers understand the documentation requirements for each service they bill. Different evaluation levels require specific documentation criteria. Psychotherapy add-on services have specific time thresholds that must be clearly documented.
                                     </p>
 
                                     {/* Section 5 */}

@@ -52,17 +52,17 @@ export default function CostAnalysisPageV3() {
                             <div className="relative">
                                 <div className="bg-white rounded-3xl shadow-2xl p-8 border border-slate-100">
                                     <div className="text-center mb-6">
-                                        <div className="text-5xl font-bold text-primary mb-2">245%</div>
-                                        <div className="text-slate-600">Average ROI</div>
+                                        <div className="text-5xl font-bold text-primary mb-2">High</div>
+                                        <div className="text-slate-600">Administrative ROI</div>
                                     </div>
                                     <div className="grid grid-cols-2 gap-4 text-center">
                                         <div>
-                                            <div className="text-2xl font-bold text-green-600 mb-1">35-55%</div>
+                                            <div className="text-2xl font-bold text-green-600 mb-1">Significant</div>
                                             <div className="text-sm text-slate-600">Cost Savings</div>
                                         </div>
                                         <div>
-                                            <div className="text-2xl font-bold text-blue-600 mb-1">2.3</div>
-                                            <div className="text-sm text-slate-600">Months Break-Even</div>
+                                            <div className="text-2xl font-bold text-blue-600 mb-1">Rapid</div>
+                                            <div className="text-sm text-slate-600">Time to Value</div>
                                         </div>
                                     </div>
                                 </div>
@@ -106,7 +106,7 @@ export default function CostAnalysisPageV3() {
                                             </div>
                                             <div className="flex justify-between">
                                                 <span>Savings</span>
-                                                <span className="text-green-600 font-bold">35-55%</span>
+                                                <span className="text-green-600 font-bold">Significant Reduction</span>
                                             </div>
                                         </div>
                                     </div>
@@ -125,11 +125,11 @@ export default function CostAnalysisPageV3() {
                                             </div>
                                             <div className="flex justify-between">
                                                 <span>Benefits</span>
-                                                <span className="text-green-600 font-bold">25-35% saved</span>
+                                                <span className="text-green-600 font-bold">Significantly saved</span>
                                             </div>
                                             <div className="flex justify-between">
                                                 <span>Equipment</span>
-                                                <span className="text-green-600 font-bold">60% reduction</span>
+                                                <span className="text-green-600 font-bold">Major reduction</span>
                                             </div>
                                         </div>
                                     </div>
@@ -175,7 +175,7 @@ export default function CostAnalysisPageV3() {
                                             </div>
                                             <div className="flex justify-between">
                                                 <span>Error Reduction</span>
-                                                <span className="text-green-600 font-bold">85%</span>
+                                                <span className="text-green-600 font-bold">Dramatic</span>
                                             </div>
                                         </div>
                                     </div>
@@ -194,18 +194,18 @@ export default function CostAnalysisPageV3() {
                                 <div className="bg-gradient-to-br from-primary/5 to-primary/10 rounded-3xl p-8">
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                                         <div className="text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">2.3</div>
-                                            <div className="text-slate-600 mb-4">Months Break-Even</div>
-                                            <p className="text-sm text-slate-600">Average time to recover initial investment</p>
+                                            <div className="text-4xl font-bold text-primary mb-2">Rapid</div>
+                                            <div className="text-slate-600 mb-4">Time to Value</div>
+                                            <p className="text-sm text-slate-600">Average time to recover initial setup costs</p>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">180-320%</div>
+                                            <div className="text-4xl font-bold text-primary mb-2">High</div>
                                             <div className="text-slate-600 mb-4">Annual ROI</div>
-                                            <p className="text-sm text-slate-600">Typical return on investment range</p>
+                                            <p className="text-sm text-slate-600">Typical efficiency gain on administrative tasks</p>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-4xl font-bold text-primary mb-2">$450-850K</div>
-                                            <div className="text-slate-600 mb-4">5-Year Value</div>
+                                            <div className="text-4xl font-bold text-primary mb-2">Long-Term</div>
+                                            <div className="text-slate-600 mb-4">Performance Path</div>
                                             <p className="text-sm text-slate-600">Net value per practice over 5 years</p>
                                         </div>
                                         <div className="text-center">
@@ -247,7 +247,7 @@ export default function CostAnalysisPageV3() {
                                         </div>
                                         <div className="text-center">
                                             <div className="text-sm text-slate-600 mb-2">ROI Timeline</div>
-                                            <div className="font-bold text-primary">3.2 months</div>
+                                            <div className="font-bold text-primary">Rapid</div>
                                         </div>
                                     </div>
 
@@ -274,7 +274,7 @@ export default function CostAnalysisPageV3() {
                                         </div>
                                         <div className="text-center">
                                             <div className="text-sm text-slate-600 mb-2">ROI Timeline</div>
-                                            <div className="font-bold text-primary">2.1 months</div>
+                                            <div className="font-bold text-primary">Priority</div>
                                         </div>
                                     </div>
 
@@ -298,7 +298,7 @@ export default function CostAnalysisPageV3() {
                                         </div>
                                         <div className="text-center">
                                             <div className="text-sm text-slate-600 mb-2">ROI Timeline</div>
-                                            <div className="font-bold text-primary">1.4 months</div>
+                                            <div className="font-bold text-primary">Immediate</div>
                                         </div>
                                     </div>
                                 </div>
@@ -322,7 +322,7 @@ export default function CostAnalysisPageV3() {
                                             <div className="text-sm text-slate-600">Annual Market Growth</div>
                                         </div>
                                         <div className="text-center">
-                                            <div className="text-2xl font-bold text-primary">$53,630</div>
+                                            <div className="text-2xl font-bold text-primary">Substantial</div>
                                             <div className="text-sm text-slate-600">Annual Savings</div>
                                         </div>
                                     </div>
@@ -374,7 +374,7 @@ export default function CostAnalysisPageV3() {
                     <div className="bg-gradient-to-br from-slate-100 to-slate-200 rounded-3xl p-12 text-center">
                         <h2 className="text-3xl font-bold text-trust-navy mb-6">Bottom Line</h2>
                         <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-8">
-                            California psychiatric practices implementing virtual assistants see average ROI of 245% within 6 months, with significant improvements in provider satisfaction, patient care capacity, and regulatory compliance.
+                            California psychiatric practices implementing virtual assistants see significant administrative ROI, with substantial improvements in provider satisfaction, patient care capacity, and regulatory compliance.
                         </p>
                         <div className="flex justify-center gap-4">
                             <Link href="/book-consultation" className="bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-lg font-bold text-lg transition-all">

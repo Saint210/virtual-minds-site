@@ -31,7 +31,7 @@ export default function CostAnalysisPageV4() {
                         <div className="bg-white dark:bg-slate-800 p-5 rounded-xl border-l-4 border-terracotta shadow-sm max-w-lg flex items-start gap-4">
                             <Image alt="Dr. Michael Torres" className="w-14 h-14 rounded-full border-2 border-cream object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtRGwNk2r27dHDW-Q8EdizTO2ki4FIPM5bCcVa6mV7PI-zjWHwb6Ez4pgRVoHcfWxrLQAQk_la4YETrBUZu38L5d8eyTYJy05Xtg_Tcnwwwj2YL_TRZWzPieCnMkGM4rl1k6AnHgJmPOGx1f7TwnIBBqqn5HkXWoo6Zx8cbxp3_72_4LYNk_n4-zM1wyN6jTSUuA-wVY1y8lJ9j-kT41uEfnnhr54rijK_Tde51qORgCmS6abwlwuLUHbiJZdvwWrvUDzsuRmogKY" width={160} height={160} />
                             <div>
-                                <p className="text-sm italic text-slate-700 dark:text-slate-300">"The 2026 analysis was a wake-up call. We cut overhead by 40% in two months while improving our overall compliance scores."</p>
+                                <p className="text-sm italic text-slate-700 dark:text-slate-300">"The 2026 analysis was a wake-up call. We cut overhead significantly in two months while improving our overall compliance scores."</p>
                                 <p className="text-xs font-bold mt-2 text-terracotta">— Dr. Michael Torres, MD (San Diego Psychiatric Group)</p>
                             </div>
                         </div>
@@ -132,7 +132,7 @@ export default function CostAnalysisPageV4() {
                                 <p className="text-slate-500 dark:text-slate-400 text-sm font-semibold uppercase tracking-wider">Admin Reduction</p>
                                 <span className="material-symbols-outlined text-terracotta">speed</span>
                             </div>
-                            <p className="text-navy dark:text-white text-3xl font-extrabold">40%</p>
+                            <p className="text-navy dark:text-white text-3xl font-extrabold">Significant</p>
                             <p className="text-sage text-sm font-bold flex items-center gap-1">
                                 <span className="material-symbols-outlined text-xs">remove_circle</span> Practitioner Burnout
                             </p>
@@ -162,7 +162,7 @@ export default function CostAnalysisPageV4() {
                                     </div>
                                     <div className="bg-white/60 dark:bg-slate-800/60 p-4 rounded-lg border border-sage/10">
                                         <p className="text-sm font-bold text-slate-500">Admin Load</p>
-                                        <p className="text-2xl font-black text-terracotta">-40% Reduction</p>
+                                        <p className="text-2xl font-black text-terracotta">Significant Reduction</p>
                                     </div>
                                 </div>
                                 <p className="text-sm font-bold text-navy dark:text-terracotta">— Dr. Sarah Chen, Clinical Director</p>
@@ -243,7 +243,7 @@ export default function CostAnalysisPageV4() {
                                     </tr>
                                     <tr>
                                         <td className="p-4 font-semibold">Benefits & UI/WC</td>
-                                        <td className="p-4 text-slate-600 dark:text-slate-300">$18,720 (30%)</td>
+                                        <td className="p-4 text-slate-600 dark:text-slate-300">Substantial Portion</td>
                                         <td className="p-4 text-slate-600 dark:text-slate-300">$0 (Inclusive)</td>
                                         <td className="p-4 text-sage font-bold">$18,720</td>
                                     </tr>

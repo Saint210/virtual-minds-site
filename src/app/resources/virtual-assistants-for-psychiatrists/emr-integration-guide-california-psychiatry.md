@@ -125,11 +125,11 @@
 ## Performance Metrics
 
 ### Efficiency Indicators
-- **Appointment Utilization**: 85-95% optimal rate
+- **Appointment Utilization**: High optimal rate
 - **Claim Processing**: 48-hour submission window
 - **Denial Rate**: <5% industry standard
 - **Patient Satisfaction**: 90%+ positive feedback
-- **Documentation Quality**: 95% compliance rate
+- **Documentation Quality**: High compliance rate
 
 ### ROI Measurements
 - **Time Savings**: 20-30 hours/week reclaimed

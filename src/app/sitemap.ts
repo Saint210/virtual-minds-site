@@ -30,7 +30,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
     // HIGH-PRIORITY PILLAR PAGES (SEO-critical content)
     const pillarPages = [
-        '/virtual-assistant-for-psychiatrists',
+        '/services/virtual-assistant',
         '/resources/psychiatry-practice-startup-guide',
     ].map((route) => ({
         url: `${baseUrl}${route}`,

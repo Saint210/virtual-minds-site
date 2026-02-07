@@ -90,7 +90,7 @@ export default async function BlogPage() {
       <Breadcrumbs
         items={[
           { label: "Home", href: "/" },
-          { label: "Executive Intelligence" }
+          { label: "Practice Intelligence" }
         ]}
       />
 
@@ -107,7 +107,7 @@ export default async function BlogPage() {
               </div>
 
               <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                Executive <br />
+                Practice <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-accent animate-gradient-x">
                   Intelligence.
                 </span>

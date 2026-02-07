@@ -146,7 +146,7 @@ export default function WebsiteDesignPage() {
                                         { title: "Psychology Today Integration", desc: "Seamlessly link your profile and website to unify your brand." },
                                         { title: "EHR Portal Matching", desc: "We style your intake buttons to match your SimplePractice/DrChrono portal." },
                                         { title: "SEO Writing", desc: "We write the copy: 'Board-certified,' 'Medication Management,' 'Telehealth.'" },
-                                        { title: "Mobile-First Architecture", desc: "Over 70% of patients search on mobile. Your site will be lightning fast." }
+                                        { title: "Mobile-First Architecture", desc: "The vast majority of patients search on mobile. Your site will be lightning fast." }
                                     ].map((item, i) => (
                                         <li key={i} className="flex gap-4">
                                             <div className="size-8 rounded-full bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-sm text-primary">
@@ -204,7 +204,7 @@ export default function WebsiteDesignPage() {
                                     <div className="flex-1">
                                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-4">AI Search Optimization (AIO)</h2>
                                         <p className="text-lg text-slate-600 leading-relaxed mb-4">
-                                            In 2026, patients don't just Google—they ask <strong>ChatGPT</strong>, <strong>Perplexity</strong>, and <strong>Claude</strong>: <em>"Who's the best psychiatrist in Los Angeles?"</em>
+                                            Modern patients don't just Google—they ask AI agents and personal assistants: <em>"Who's the best psychiatrist in Los Angeles?"</em>
                                         </p>
                                         <p className="text-lg text-slate-600 leading-relaxed mb-6">
                                             We optimize your site with <strong>semantic markup</strong>, <strong>structured data</strong>, and <strong>LLM-friendly content</strong> so AI models cite YOU as the authoritative source.

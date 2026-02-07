@@ -17,7 +17,7 @@ export default function TermsPage() {
                         <h1 className="font-display text-4xl md:text-5xl font-black text-trust-navy mb-8">
                             Terms of Service
                         </h1>
-                        
+
                         <div className="space-y-8 text-slate-600">
                             <p className="text-lg leading-relaxed">
                                 <strong>Effective Date:</strong> January 16, 2026<br />
@@ -27,7 +27,7 @@ export default function TermsPage() {
                             <section>
                                 <h2 className="text-2xl font-bold text-trust-navy mb-4">1. Acceptance of Terms</h2>
                                 <p>
-                                    By accessing or using Virtual Minds services, you agree to be bound by these Terms of Service 
+                                    By accessing or using Virtual Minds services, you agree to be bound by these Terms of Service
                                     and our Privacy Policy. If you do not agree to these terms, please do not use our services.
                                 </p>
                             </section>
@@ -84,7 +84,7 @@ export default function TermsPage() {
                             <section>
                                 <h2 className="text-2xl font-bold text-trust-navy mb-4">5. Confidentiality and HIPAA</h2>
                                 <p>
-                                    <strong>Business Associate Agreement:</strong> As required by HIPAA, we sign a BAA with all covered entities 
+                                    <strong>Business Associate Agreement:</strong> As required by HIPAA, we sign a BAA with all covered entities
                                     and agree to:
                                 </p>
                                 <ul className="list-disc pl-6 space-y-2 mt-4">
@@ -102,11 +102,11 @@ export default function TermsPage() {
                             <section>
                                 <h2 className="text-2xl font-bold text-trust-navy mb-4">6. Intellectual Property</h2>
                                 <p>
-                                    <strong>Virtual Minds Property:</strong> All materials, processes, software, and methodologies developed by Virtual Minds 
+                                    <strong>Virtual Minds Property:</strong> All materials, processes, software, and methodologies developed by Virtual Minds
                                     remain our exclusive property.
                                 </p>
                                 <p>
-                                    <strong>Client Property:</strong> You retain all rights to your practice information, patient data, and proprietary systems. 
+                                    <strong>Client Property:</strong> You retain all rights to your practice information, patient data, and proprietary systems.
                                     We only access what is necessary for service delivery.
                                 </p>
                             </section>
@@ -114,7 +114,7 @@ export default function TermsPage() {
                             <section>
                                 <h2 className="text-2xl font-bold text-trust-navy mb-4">7. Service Level Agreement</h2>
                                 <p>
-                                    <strong>Availability:</strong> Standard business hours are Monday-Friday, 9:00 AM - 5:00 PM Pacific Time, 
+                                    <strong>Availability:</strong> Standard business hours are Monday-Friday, 9:00 AM - 5:00 PM Pacific Time,
                                     excluding major holidays.
                                 </p>
                                 <p>
@@ -136,7 +136,7 @@ export default function TermsPage() {
                                     <li>Practice medicine or therapy</li>
                                 </ul>
                                 <p className="mt-4">
-                                    <strong>Liability Cap:</strong> Our total liability shall not exceed the fees paid by you in the six months 
+                                    <strong>Liability Cap:</strong> Our total liability shall not exceed the fees paid by you in the six months
                                     preceding the claim.
                                 </p>
                             </section>
@@ -203,7 +203,7 @@ export default function TermsPage() {
                                         />
                                     </p>
                                     <p><strong>Phone:</strong> (310) 400-6266</p>
-                                    <p><strong>Address:</strong> 123 Professional Way, Suite 100, San Francisco, CA 94105</p>
+                                    <p><strong>Address:</strong> Los Angeles, CA</p>
                                     <p><strong>Hours:</strong> Monday-Friday, 9:00 AM - 5:00 PM PT</p>
                                 </div>
                             </section>

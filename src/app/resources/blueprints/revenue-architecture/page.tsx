@@ -4,9 +4,9 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Revenue Optimization for California Psychiatrists | Virtual Minds",
-    description: "Maximize practice revenue through optimized documentation, proper CPT coding guidance, and seamless billing company coordination.",
-    keywords: ["psychiatric billing", "90833 add-on codes", "revenue cycle management", "psychiatry documentation", "cpt optimization"],
+    title: "Administrative Excellence for California Psychiatrists | Virtual Minds",
+    description: "Enhance practice operations through optimized documentation, professional policy guidance, and seamless billing company coordination.",
+    keywords: ["psychiatric administration", "mental health operations", "workflow management", "psychiatry documentation", "practice efficiency"],
 };
 
 export default function RevenueBlueprint() {
@@ -40,24 +40,24 @@ export default function RevenueBlueprint() {
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                                    Revenue <br />
+                                    Administrative <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        Optimization.
+                                        Excellence.
                                     </span>
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
-                                    Stop the leakage. Master documentation that supports 99214+90833 optimization and streamlines your billing company's entire workflow.
+                                    Eliminate friction. Implement documentation standards that support seamless workflow and streamline your billing company&apos;s entire operation.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
                                     <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
                                         <span className="material-symbols-outlined text-green-500">trending_up</span>
-                                        <span className="text-sm font-bold text-trust-navy">+22% Yield Increase</span>
+                                        <span className="text-sm font-bold text-trust-navy">Operational Efficiency</span>
                                     </div>
                                     <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
                                         <span className="material-symbols-outlined text-blue-500">description</span>
-                                        <span className="text-sm font-bold text-trust-navy">90833 Mastery</span>
+                                        <span className="text-sm font-bold text-trust-navy">Documentation Mastery</span>
                                     </div>
                                 </div>
                             </div>
@@ -67,7 +67,7 @@ export default function RevenueBlueprint() {
                                 <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
                                     <Image
                                         src="/images/blueprint-revenue.png"
-                                        alt="Psychiatric Revenue and CPT Optimization System"
+                                        alt="Psychiatric Revenue and Operational Optimization System"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
@@ -90,10 +90,10 @@ export default function RevenueBlueprint() {
 
                                 {/* 1. The Operational Friction */}
                                 <div className="space-y-6">
-                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The CPT Optimization Opportunity</h2>
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">Documentation Excellence</h2>
                                     <div className="prose prose-slate prose-lg max-w-none">
                                         <p>
-                                            Most California psychiatrists are either under-coding their sessions or failing to document properly for "Add-on" codes that accurately reflect clinical depth. Transitioning from simple med-management to integrated therapy + med-management (99214 + 90833) can increase per-hour revenue by <strong>22-35%</strong>.
+                                            Most California psychiatric practices struggle with documentation lag or templates that don&apos;t accurately reflect clinical depth. Transitioning to a high-fidelity documentation model ensures your practice remains compliant, professional, and ready for growth.
                                         </p>
                                         <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
                                             <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
@@ -112,7 +112,7 @@ export default function RevenueBlueprint() {
                                             {
                                                 icon: "call",
                                                 title: "Intake Conversion",
-                                                desc: "Convert 95%+ of initial psychiatric inquiries into booked evaluations through empathetic, professional coordination."
+                                                desc: "Convert the vast majority of initial psychiatric inquiries into booked evaluations through empathetic, professional coordination."
                                             },
                                             {
                                                 icon: "fact_check",
@@ -131,8 +131,8 @@ export default function RevenueBlueprint() {
                                             },
                                             {
                                                 icon: "analytics",
-                                                title: "Yield Analysis",
-                                                desc: "Monthly auditing of your per-patient yield to identify coding opportunities and insurance payer trends."
+                                                title: "Process Analysis",
+                                                desc: "Monthly reviewing of your clinical workflows to identify efficiency opportunities and operational trends."
                                             }
                                         ].map((step, idx) => (
                                             <div key={idx} className="bg-[#FAF8F3] p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all group">
@@ -148,31 +148,31 @@ export default function RevenueBlueprint() {
 
                                 {/* 3. The Efficiency Table */}
                                 <div className="space-y-8">
-                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">Financial Comparison</h2>
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">Operational Comparison</h2>
                                     <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-sm">
                                         <table className="w-full text-left border-collapse">
                                             <thead>
                                                 <tr className="bg-slate-50">
                                                     <th className="p-6 text-xs font-black uppercase tracking-widest text-slate-400">Metric</th>
-                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-trust-navy">Standard Coding</th>
-                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-primary">VM Optimized Model</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-trust-navy">Standard Operations</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-primary">VM Managed Model</th>
                                                 </tr>
                                             </thead>
                                             <tbody className="divide-y divide-slate-100">
                                                 <tr>
-                                                    <td className="p-6 text-sm font-bold text-trust-navy">Avg. Visit Value</td>
-                                                    <td className="p-6 text-sm text-slate-500">$180 - $220</td>
-                                                    <td className="p-6 text-sm font-bold text-green-600">$275 - $340</td>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Admin Lag Time</td>
+                                                    <td className="p-6 text-sm text-slate-500">High</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">Minimal</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="p-6 text-sm font-bold text-trust-navy">Claim Rejection Rate</td>
-                                                    <td className="p-6 text-sm text-slate-500">8 - 12%</td>
-                                                    <td className="p-6 text-sm font-bold text-green-600">&lt; 2%</td>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Superbill Accuracy</td>
+                                                    <td className="p-6 text-sm text-slate-500">Variable</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">First-Pass Ready</td>
                                                 </tr>
                                                 <tr>
-                                                    <td className="p-6 text-sm font-bold text-trust-navy">Patient Bad Debt</td>
-                                                    <td className="p-6 text-sm text-slate-500">Significant</td>
-                                                    <td className="p-6 text-sm font-bold text-primary italic">Automated Collection</td>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Patient Communication</td>
+                                                    <td className="p-6 text-sm text-slate-500">Reactive</td>
+                                                    <td className="p-6 text-sm font-bold text-primary italic">Proactive Liaison</td>
                                                 </tr>
                                             </tbody>
                                         </table>

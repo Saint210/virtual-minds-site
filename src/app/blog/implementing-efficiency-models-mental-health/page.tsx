@@ -105,7 +105,7 @@ export default function EfficiencyModels() {
 
                                 <div className="space-y-2">
                                     <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Growth Multiplier</p>
-                                    <p className="text-xl font-bold text-trust-navy">Cognitive Yield</p>
+                                    <p className="text-xl font-bold text-trust-navy">Cognitive Output</p>
                                 </div>
 
                                 <div className="hidden md:block h-12 w-px bg-slate-200" />

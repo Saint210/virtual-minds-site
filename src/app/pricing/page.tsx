@@ -5,9 +5,9 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
-  title: "Investment Strategy | Psychiatric Practice Management Pricing | Virtual Minds",
-  description: "Transparent professional investment for California psychiatric practices. ROI-focused practice management and operational support for psychiatrists.",
-  keywords: ["psychiatric va pricing", "mental health virtual assistant cost", "psychiatric practice management pricing", "medical billing pricing", "healthcare VA investment"],
+  title: "Investment Strategy | Psychiatric Practice Management Pricing",
+  description: "Specialized professional investment for California psychiatric practices. Quality-focused practice management and operational support for psychiatrists.",
+  keywords: ["psychiatric va pricing", "mental health virtual assistant cost", "psychiatric practice management pricing", "medical billing support pricing", "healthcare VA investment"],
 };
 
 const pricingPlans = [
@@ -61,21 +61,21 @@ const pricingPlans = [
   }
 ];
 
-const yieldAnalysis = [
+const performanceAnalysis = [
   {
-    metric: "Recovered Clinical Time",
-    value: "$24,000 / mo",
-    label: "30 hours/week returned for patient sessions"
+    metric: "Recover Clinical Time",
+    value: "15+ Hrs",
+    label: "Reclaimed weekly for patient care or leadership."
   },
   {
-    metric: "Billing Loss Prevention",
-    value: "$8,500 / mo",
-    label: "Preventing denials and insurance payment loss"
+    metric: "Revenue Protection",
+    value: "$25k+",
+    label: "Annual recovered revenue via denial prevention."
   },
   {
-    metric: "Coding Optimization",
-    value: "$4,200 / mo",
-    label: "Optimizing 90833/90832 add-on utilization"
+    metric: "Audit Risk Reduction",
+    value: "High",
+    label: "Eliminating $50k+ in potential compliance exposure."
   }
 ];
 
@@ -120,11 +120,11 @@ export default function PricingPage() {
                 </p>
 
                 <div className="flex flex-wrap gap-4">
-                  <div className="flex items-center gap-2 bg-slate-50 px-5 py-3 rounded-2xl border border-slate-100">
+                  <div className="flex items-center gap-2 bg-white/60 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/50 shadow-sm">
                     <span className="material-symbols-outlined text-primary font-bold">verified</span>
                     <span className="text-sm font-bold text-slate-600 whitespace-nowrap">HIPAA Compliant Ops</span>
                   </div>
-                  <div className="flex items-center gap-2 bg-slate-50 px-5 py-3 rounded-2xl border border-slate-100">
+                  <div className="flex items-center gap-2 bg-white/60 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/50 shadow-sm">
                     <span className="material-symbols-outlined text-accent font-bold">medical_services</span>
                     <span className="text-sm font-bold text-slate-600 whitespace-nowrap">Specialized Psychiatric Support</span>
                   </div>
@@ -165,10 +165,10 @@ export default function PricingPage() {
                 {' '}<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Pricing</span>
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto font-medium">
-                <strong className="text-trust-navy">ROI-focused investment</strong> designed to{' '}
+                <strong className="text-trust-navy">Quality-focused investment</strong> designed to{' '}
                 <span className="relative inline-block text-primary font-bold">
-                  return clinical time and revenue
-                  <span className="absolute bottom-0 left-0 w-full h-[2px] bg-primary/30"></span>
+                  return clinical focus and autonomy
+                  <span className="absolute bottom-0 left-0 w-full h-2px bg-primary/30"></span>
                 </span>.
               </p>
             </div>
@@ -179,16 +179,14 @@ export default function PricingPage() {
                   // FEATURED NAVY CARD (Group Practice Support)
                   <div key={idx} className="relative group">
                     <div className="absolute -inset-2 bg-primary/20 rounded-[3rem] blur-2xl opacity-50 group-hover:opacity-75 transition-opacity"></div>
-                    <div className="relative p-12 rounded-[3rem] bg-trust-navy text-white shadow-2xl overflow-hidden border-2 border-primary/30 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between">
+                    <div className="relative p-12 rounded-[3rem] bg-trust-navy text-white shadow-2xl overflow-hidden border-2 border-primary/30 hover:-translate-y-2 transition-all duration-500 flex flex-col justify-between h-full">
                       {/* Background Glow */}
                       <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-[100px] -mr-20 -mt-20 pointer-events-none group-hover:bg-primary/30 transition-colors"></div>
 
-                      {/* Strategic Choice Badge - Premium Redesign */}
+                      {/* Strategic Choice Badge */}
                       <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
                         <div className="relative">
-                          {/* Glow effect */}
                           <div className="absolute inset-0 bg-gradient-to-r from-primary to-[#B8860B] rounded-full blur-md opacity-60"></div>
-                          {/* Badge */}
                           <div className="relative bg-gradient-to-r from-primary to-[#B8860B] text-white text-[9px] font-bold uppercase tracking-[0.25em] px-6 py-2.5 rounded-full shadow-xl border border-white/20 flex items-center gap-2">
                             <span className="material-symbols-outlined text-sm font-bold">star</span>
                             <span>Strategic Choice</span>
@@ -218,17 +216,22 @@ export default function PricingPage() {
                           </div>
                         </div>
 
-                        <div className="space-y-4 mb-12">
-                          <p className="text-[10px] font-black uppercase tracking-[0.3em] mb-4 text-primary">Infrastructure Includes:</p>
-                          {plan.features.map((feature, i) => (
-                            <div key={i} className="flex items-center gap-3">
-                              <div className="size-6 rounded-lg bg-primary/20 flex items-center justify-center flex-shrink-0">
-                                <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
-                              </div>
+                        <ul className="space-y-4 mb-12">
+                          <li className="flex gap-3 text-slate-300">
+                            <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            <span className="text-base font-bold text-white">Comprehensive administrative coverage</span>
+                          </li>
+                          <li className="flex gap-3 text-slate-300">
+                            <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                            <span className="text-base font-bold text-white">Precise billing support coordination</span>
+                          </li>
+                          {plan.features.slice(2).map((feature, i) => (
+                            <li key={i} className="flex items-center gap-3">
+                              <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
                               <span className="text-base font-bold text-white">{feature}</span>
-                            </div>
+                            </li>
                           ))}
-                        </div>
+                        </ul>
                       </div>
 
                       <Link
@@ -241,17 +244,19 @@ export default function PricingPage() {
                     </div>
                   </div>
                 ) : (
-                  // STANDARD CREAM CARDS
+                  // STANDARD GLASS CARDS
                   <div
                     key={idx}
-                    className="group p-12 bg-[#FAF8F3] rounded-[3rem] border-2 border-slate-200 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between hover:-translate-y-2"
+                    className="group p-12 bg-white/50 backdrop-blur-md rounded-[3rem] border border-slate-200 hover:border-primary/30 transition-all duration-500 hover:shadow-2xl hover:shadow-primary/5 flex flex-col justify-between hover:-translate-y-2 h-full relative overflow-hidden"
                   >
-                    <div>
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-slate-100 rounded-full blur-[60px] -mr-10 -mt-10 pointer-events-none group-hover:bg-primary/5 transition-colors"></div>
+
+                    <div className="relative z-10">
                       <div className="flex items-center justify-between mb-8">
                         <h3 className="text-2xl font-serif font-bold text-trust-navy">
                           {plan.name}
                         </h3>
-                        <span className="material-symbols-outlined text-5xl text-primary/20 group-hover:text-primary/40 transition-colors">
+                        <span className="material-symbols-outlined text-5xl text-slate-300 group-hover:text-primary/40 transition-colors">
                           {idx === 0 ? 'foundation' : 'business_center'}
                         </span>
                       </div>
@@ -276,20 +281,27 @@ export default function PricingPage() {
                         </div>
                       </div>
 
-                      <div className="space-y-4 mb-12">
-                        <p className="text-[10px] font-black uppercase tracking-[0.3em] mb-4 text-slate-400">Infrastructure Includes:</p>
-                        {plan.features.map((feature, i) => (
-                          <div key={i} className="flex items-center gap-3">
-                            <span className="material-symbols-outlined text-[18px] text-primary">check_circle</span>
+                      <ul className="space-y-4 mb-12">
+                        <li className="flex gap-3 text-slate-600">
+                          <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                          <span className="text-base font-bold">Significant reduction in administrative time</span>
+                        </li>
+                        <li className="flex gap-3 text-slate-600">
+                          <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
+                          <span className="text-base font-bold">Precise billing support coordination</span>
+                        </li>
+                        {plan.features.slice(2).map((feature, i) => (
+                          <li key={i} className="flex items-center gap-3">
+                            <span className="material-symbols-outlined text-primary text-sm">check_circle</span>
                             <span className="text-base font-bold text-slate-600">{feature}</span>
-                          </div>
+                          </li>
                         ))}
-                      </div>
+                      </ul>
                     </div>
 
                     <Link
                       href="/book-consultation"
-                      className="w-full py-4 bg-white border-2 border-slate-200 text-trust-navy font-bold rounded-xl hover:border-primary hover:text-primary transition-all shadow-sm flex items-center justify-center gap-2 group/btn"
+                      className="relative z-10 w-full py-4 bg-white border-2 border-slate-200 text-trust-navy font-bold rounded-xl hover:border-primary hover:text-primary transition-all shadow-sm flex items-center justify-center gap-2 group/btn"
                     >
                       {plan.cta}
                       <span className="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
@@ -301,7 +313,7 @@ export default function PricingPage() {
           </div>
         </section>
 
-        {/* ROI YIELD LEDGER */}
+        {/* PERFORMANCE LEDGER - BENTO GRID REFINEMENT */}
         <section className="py-32 bg-[#FAF8F3] relative overflow-hidden border-y border-slate-100">
           <div className="max-w-7xl mx-auto px-6 relative z-10">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-20 items-center">
@@ -312,30 +324,30 @@ export default function PricingPage() {
                   <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-6">
-                  Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Yield</span> Ledger
+                  Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Performance</span> Ledger
                 </h2>
                 <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
                   <strong className="text-trust-navy">Infrastructure investment</strong> is the catalyst for{' '}
-                  <span className="text-primary font-bold">practice growth</span>.
+                  <span className="text-primary font-bold">operational excellence</span>.
                 </p>
               </div>
 
-              {/* Yield Figures */}
+              {/* Performance Figures */}
               <div className="lg:col-span-7 space-y-6">
-                {yieldAnalysis.map((item, idx) => (
-                  <div key={idx} className="bg-white rounded-[2.5rem] p-10 border-2 border-slate-200 hover:border-primary/30 shadow-sm flex flex-col md:flex-row justify-between items-center group hover:shadow-xl transition-all">
+                {performanceAnalysis.map((item, idx) => (
+                  <div key={idx} className="bg-white/60 backdrop-blur-md rounded-[2.5rem] p-10 border border-slate-200 hover:border-primary/30 shadow-sm flex flex-col md:flex-row justify-between items-center group hover:shadow-xl transition-all">
                     <div className="flex items-center gap-4">
                       <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                         <span className="material-symbols-outlined text-primary text-2xl">
-                          {idx === 0 ? 'schedule' : idx === 1 ? 'shield' : 'trending_up'}
+                          {idx === 0 ? 'schedule' : idx === 1 ? 'payments' : 'shield'}
                         </span>
                       </div>
                       <div>
                         <h4 className="text-xl font-bold text-trust-navy mb-1">{item.metric}</h4>
-                        <p className="text-base text-slate-600 font-medium">{item.label}</p>
+                        <p className="text-sm md:text-base text-slate-600 font-medium">{item.label}</p>
                       </div>
                     </div>
-                    <div className="mt-4 md:mt-0 text-4xl font-serif font-bold text-primary group-hover:scale-110 transition-transform">
+                    <div className="mt-4 md:mt-0 text-3xl md:text-4xl font-serif font-bold text-primary group-hover:scale-110 transition-transform">
                       {item.value}
                     </div>
                   </div>
@@ -345,16 +357,16 @@ export default function PricingPage() {
                   <div className="absolute top-0 right-0 w-64 h-64 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/30 transition-all" />
                   <div className="flex justify-between items-center relative z-10">
                     <div>
-                      <h4 className="text-2xl font-bold !text-primary mb-2">Total Monthly Yield</h4>
-                      <p className="text-base text-slate-300 font-medium">Projected value created per psychiatrist</p>
+                      <h4 className="text-2xl font-bold !text-primary mb-2">Monthly Efficiency Gain</h4>
+                      <p className="text-base text-slate-300 font-medium max-w-xs">Projected value created per psychiatrist through administrative offloading.</p>
                     </div>
-                    <div className="text-6xl font-serif font-bold text-white tracking-tight">$36,700</div>
+                    <div className="text-5xl md:text-6xl font-serif font-bold text-white tracking-tight">Maximized</div>
                   </div>
                 </div>
               </div>
 
               {/* Comparison Matrix */}
-              <div className="lg:col-span-5 bg-gradient-to-br from-[#FAF8F3] to-white p-12 rounded-[3.5rem] border-2 border-slate-200 self-stretch shadow-sm">
+              <div className="lg:col-span-5 bg-white/80 backdrop-blur-xl p-12 rounded-[3.5rem] border border-slate-200 self-stretch shadow-2xl shadow-primary/5">
                 <div className="flex items-center gap-3 mb-8">
                   <span className="material-symbols-outlined text-primary text-2xl">compare_arrows</span>
                   <h3 className="text-2xl font-serif font-bold text-trust-navy">Competitive Reality</h3>
@@ -374,7 +386,7 @@ export default function PricingPage() {
                         </div>
                         <span className={`text-sm font-bold uppercase tracking-widest ${comp.title.includes("Minds") ? 'text-primary' : 'text-slate-400'}`}>{comp.cost}</span>
                       </div>
-                      <p className="text-base text-slate-600 pl-[52px] font-medium">{comp.note}</p>
+                      <p className="text-base text-slate-600 pl-[52px] font-medium leading-relaxed">{comp.note}</p>
                       {comp.title.includes("Minds") && (
                         <div className="pl-[52px] space-y-2 mt-4">
                           {["Turnkey RevOps", "Instant Scalability", "Psychiatric Specific"].map(t => (
@@ -413,7 +425,7 @@ export default function PricingPage() {
                 { q: "What is the commitment period?", a: "We operate on flexible monthly scales. We earn our place in your clinical workflow every 30 days." },
                 { q: "Can we scale to a group practice?", a: "Our infrastructure supports 1 to 50 providers. Multi-clinician group discounts are available." }
               ].map((faq, i) => (
-                <div key={i} className="bg-[#FAF8F3] p-8 rounded-[2rem] border-2 border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all group">
+                <div key={i} className="bg-[#FAF8F3] p-8 rounded-[2rem] border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all group">
                   <h4 className="text-lg font-bold text-trust-navy mb-4 flex items-start gap-3">
                     <span className="material-symbols-outlined text-primary text-xl flex-shrink-0">help</span>
                     {faq.q}
@@ -436,7 +448,7 @@ export default function PricingPage() {
               Claim Your <span className="text-primary">Focus</span>.
             </h2>
             <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-              Identify exactly <strong className="text-white">how much time and revenue</strong> your practice is losing to administrative friction with a{' '}
+              Identify exactly <strong className="text-white">how much focus</strong> your practice is losing to administrative friction with a{' '}
               <span className="text-primary font-bold">15-minute Recovery Plan</span>.
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -453,7 +465,7 @@ export default function PricingPage() {
       </main>
 
       <Footer />
-    </div>
+    </div >
   );
 }
 

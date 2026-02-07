@@ -112,7 +112,7 @@ export default function VaRoiPost() {
                                             </div>
                                             <div className="grid grid-cols-12 gap-4 items-center group/row hover:bg-white/5 p-3 rounded-lg transition-colors border-b border-white/5">
                                                 <div className="col-span-6 text-slate-200">Payroll Tax / Benefits</div>
-                                                <div className="col-span-3 text-right text-white font-bold">+\$960 (30%)</div>
+                                                <div className="col-span-3 text-right text-white font-bold">Significant Efficiency Gain</div>
                                                 <div className="col-span-3 text-right text-primary font-bold">\$0</div>
                                             </div>
                                             <div className="grid grid-cols-12 gap-4 items-center group/row hover:bg-white/5 p-3 rounded-lg transition-colors border-b border-white/5">

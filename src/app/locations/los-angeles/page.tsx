@@ -7,7 +7,7 @@ import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator"
 
 export const metadata: Metadata = {
     title: "Los Angeles Psychiatric Virtual Assistants | The Operational Gold Standard",
-    description: "Specialized administrative intelligence for Los Angeles psychiatrists. Cut practice overhead by 40% while maintaining elite compliance in Beverly Hills, Santa Monica, and DTLA.",
+    description: "Specialized administrative intelligence for Los Angeles psychiatrists. Cut practice overhead significantly while maintaining elite compliance in Beverly Hills, Santa Monica, and DTLA.",
 };
 
 export default function LosAngelesPage() {
@@ -76,7 +76,7 @@ export default function LosAngelesPage() {
 
                                     {/* Floating Savings Token */}
                                     <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Metro Yield Gain</p>
+                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Metro Performance Gain</p>
                                         <p className="text-4xl font-serif font-bold text-primary mb-1">$65,000 / yr</p>
                                         <p className="text-[10px] font-bold text-slate-500 leading-tight">Average overhead reduction compared to in-office staffing in Los Angeles County.</p>
                                     </div>

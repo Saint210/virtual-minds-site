@@ -25,10 +25,8 @@ export default function PriorAuthPage() {
                             <br />
                             <span className="text-red-600">Stop Losing Patients to Delays</span>
                         </h1>
-                        <p className="text-xl text-slate-600 mb-8 max-w-3xl">
-                            California's leading psychiatric practices save 20+ hours per week with specialized prior authorization virtual assistants. 
-                            Get medications approved faster, reduce dropout rates, and improve patient outcomes.
-                        </p>
+                        California's leading psychiatric practices save significant weekly hours with specialized prior authorization virtual assistants.
+                        Get medications approved faster, reduce dropout rates, and improve patient outcomes.
                         <div className="flex flex-col sm:flex-row gap-4">
                             <Link href="/book-consultation" className="flex items-center justify-center gap-2 px-8 py-4 bg-red-600 text-white rounded-lg font-black hover:scale-105 transition-all shadow-lg">
                                 <span className="material-symbols-outlined">speed</span>
@@ -48,19 +46,19 @@ export default function PriorAuthPage() {
                         <h2 className="text-3xl font-bold text-navy mb-6">The Prior Authorization Crisis</h2>
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                             <div className="text-center">
-                                <div className="text-4xl font-bold text-red-600 mb-2">73%</div>
-                                <p className="text-slate-600 text-sm">Of psychiatrists report prior auth delays affect patient care</p>
+                                <div className="text-4xl font-bold text-red-600 mb-2">High</div>
+                                <p className="text-slate-600 text-sm">Psychiatrists report prior auth delays affect patient care</p>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl font-bold text-red-600 mb-2">2-3 weeks</div>
+                                <div className="text-4xl font-bold text-red-600 mb-2">Excessive</div>
                                 <p className="text-slate-600 text-sm">Average approval time for psychiatric medications</p>
                             </div>
                             <div className="text-center">
-                                <div className="text-4xl font-bold text-red-600 mb-2">40%</div>
+                                <div className="text-4xl font-bold text-red-600 mb-2">Significant</div>
                                 <p className="text-slate-600 text-sm">Patient dropout rate during approval process</p>
                             </div>
                         </div>
-                        
+
                         <div className="bg-red-50 border border-red-200 rounded-xl p-6">
                             <h3 className="text-xl font-bold text-red-700 mb-4">Real Impact on Your Practice</h3>
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -77,10 +75,10 @@ export default function PriorAuthPage() {
                                 <div>
                                     <h4 className="font-bold text-green-700 mb-3">With Virtual Minds Prior Auth VA</h4>
                                     <ul className="space-y-2 text-green-700 text-sm">
-                                        <li>• 2-3 hours/week oversight only</li>
-                                        <li>• 50% faster approval times</li>
-                                        <li>• 75% reduction in patient dropout</li>
-                                        <li>• +15% increase in treatment starts</li>
+                                        <li>• Minimal oversight required</li>
+                                        <li>• Faster approval times</li>
+                                        <li>• Significant reduction in patient dropout</li>
+                                        <li>• Increase in treatment starts</li>
                                         <li>• Happier, more productive staff</li>
                                     </ul>
                                 </div>
@@ -182,52 +180,10 @@ export default function PriorAuthPage() {
                     </div>
                 </div>
 
-                {/* ROI Calculator */}
-                <div id="roi-calculator" className="max-w-4xl mx-auto px-6 mb-16">
-                    <div className="bg-green-50 rounded-2xl p-8">
-                        <h2 className="text-3xl font-bold text-green-800 mb-6">ROI Calculator</h2>
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                            <div>
-                                <h3 className="text-xl font-bold text-green-700 mb-4">Time Savings</h3>
-                                <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Prior auth hours saved/week</span>
-                                        <span className="font-bold text-green-600">18-22 hours</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Psychiatrist hourly value</span>
-                                        <span className="font-bold">$150-300</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Weekly time value recovered</span>
-                                        <span className="font-bold text-green-600">$2,700-6,600</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="text-xl font-bold text-green-700 mb-4">Revenue Impact</h3>
-                                <div className="space-y-3">
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Additional patients seen/month</span>
-                                        <span className="font-bold text-green-600">8-12 patients</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Average appointment revenue</span>
-                                        <span className="font-bold">$200-400</span>
-                                    </div>
-                                    <div className="flex justify-between items-center p-3 bg-white rounded-lg">
-                                        <span>Monthly revenue increase</span>
-                                        <span className="font-bold text-green-600">$1,600-4,800</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="mt-6 p-4 bg-green-100 rounded-lg text-center">
-                            <p className="text-green-800 font-bold">
-                                Total Monthly Value: $4,300-11,400 | ROI: 200-400% within first month
-                            </p>
-                        </div>
-                    </div>
+                <div className="mt-6 p-4 bg-green-100 rounded-lg text-center">
+                    <p className="text-green-800 font-bold">
+                        Maximum operational performance through specialized administrative coordination.
+                    </p>
                 </div>
 
                 {/* Insurance Expertise */}
@@ -275,7 +231,7 @@ export default function PriorAuthPage() {
                             Stop Letting Prior Authorizations Destroy Your Practice
                         </h2>
                         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                            Join California psychiatric practices that have reduced prior authorization time by 80% and improved patient outcomes. 
+                            Join California psychiatric practices that have significantly reduced prior authorization time and improved patient outcomes.
                             Let our specialized VAs handle the paperwork while you focus on patient care.
                         </p>
                         <Link href="/book-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-red-600 rounded-lg font-black hover:scale-105 transition-all shadow-lg">

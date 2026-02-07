@@ -38,8 +38,8 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                                 key={index}
                                 onClick={() => setActiveCategory(category)}
                                 className={`whitespace-nowrap px-5 py-2.5 rounded-full text-sm font-semibold transition-all duration-300 ${activeCategory === category
-                                        ? "bg-trust-navy text-white shadow-lg shadow-trust-navy/20 scale-105"
-                                        : "bg-white text-slate-600 border border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-slate-50"
+                                    ? "bg-trust-navy text-white shadow-lg shadow-trust-navy/20 scale-105"
+                                    : "bg-white text-slate-600 border border-slate-200 hover:border-primary/50 hover:text-primary hover:bg-slate-50"
                                     }`}
                             >
                                 {category}
@@ -102,12 +102,7 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                                                             <span className="text-slate-300">•</span>
                                                             <span className="text-xs text-slate-500">{post.readTime}</span>
                                                         </div>
-                                                        {upgradedSlugs.includes(post.slug) && (
-                                                            <div className="flex items-center gap-1 text-[#D2691E] font-bold uppercase tracking-tighter text-[10px]">
-                                                                <span className="material-symbols-outlined text-[12px]">verified</span>
-                                                                <span>Audit</span>
-                                                            </div>
-                                                        )}
+
                                                     </div>
                                                     <Link href={`/blog/${post.slug}`}>
                                                         <h3 className="font-display text-xl font-bold text-trust-navy mb-3 line-clamp-2 group-hover:text-primary transition-colors">
@@ -127,52 +122,70 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                                 </div>
                             </div>
 
-                            {/* Newsletter Breakout - Private Practice Growth Kit */}
                             <div className="mb-24 relative rounded-[2.5rem] overflow-hidden bg-[#2A2A2A] shadow-2xl">
                                 <div className="absolute inset-0 bg-gradient-to-br from-[#2A2A2A] to-[#1A1A1A] z-0"></div>
-                                {/* Subtle ambient heavy glow */}
                                 <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#D2691E]/10 rounded-full blur-[120px] translate-x-1/2 -translate-y-1/2 pointer-events-none"></div>
 
-                                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 p-12 lg:p-20 items-center">
+                                <div className="relative z-10 grid grid-cols-1 lg:grid-cols-2 gap-16 p-12 lg:px-20 lg:py-16 items-center">
                                     <div>
+                                        <div className="inline-flex items-center gap-2 bg-[#D2691E]/10 border border-[#D2691E]/20 rounded-full px-3 py-1 mb-6">
+                                            <span className="w-2 h-2 rounded-full bg-[#D2691E] animate-pulse"></span>
+                                            <span className="text-[#D2691E] text-[10px] font-black uppercase tracking-widest">Free Resource</span>
+                                        </div>
                                         <h2 className="font-serif text-4xl md:text-5xl font-bold !text-white mb-6 leading-tight">
                                             The Private Practice <br />
                                             <span className="text-[#D2691E]">Growth Kit</span>
                                         </h2>
-                                        <p className="text-slate-300 text-lg mb-10 leading-relaxed font-light opacity-90">
-                                            Stop moonlighting as an office manager. Get the exact blueprints used to build a scalable, high-revenue practice—without the burnout.
+                                        <p className="text-slate-300 text-lg mb-10 leading-relaxed font-light opacity-90 max-w-md">
+                                            Stop moonlighting as an office manager. Get the blueprints for a scalable, high-revenue practice.
                                         </p>
-                                        <ul className="space-y-4 mb-8">
-                                            {['Scaling Roadmap PDF', 'Hiring Checklist', 'ROI Calculator Template'].map((item, i) => (
-                                                <li key={i} className="flex items-center gap-4 text-white font-medium">
-                                                    <div className="w-6 h-6 rounded-full bg-[#D2691E]/20 flex items-center justify-center border border-[#D2691E]/50">
-                                                        <span className="material-symbols-outlined text-[#D2691E] text-sm font-bold">check</span>
+
+                                        {/* CSS DOCUMENT MOCKUP */}
+                                        <div className="flex -space-x-12 mb-8 perspective-[1000px]">
+                                            {[1, 2, 3].map((i) => (
+                                                <div key={i} className="w-24 h-32 bg-white rounded-lg shadow-2xl border border-slate-200 transform -rotate-6 hover:-translate-y-2 transition-transform duration-500 origin-bottom-left flex flex-col p-3 relative" style={{ zIndex: i }}>
+                                                    <div className="h-2 w-12 bg-slate-200 rounded mb-2"></div>
+                                                    <div className="space-y-1">
+                                                        <div className="h-1 w-full bg-slate-100 rounded"></div>
+                                                        <div className="h-1 w-full bg-slate-100 rounded"></div>
+                                                        <div className="h-1 w-2/3 bg-slate-100 rounded"></div>
                                                     </div>
-                                                    {item}
-                                                </li>
+                                                    <div className="mt-auto flex justify-end">
+                                                        <div className="size-4 rounded-full bg-[#D2691E]/20"></div>
+                                                    </div>
+                                                </div>
                                             ))}
-                                        </ul>
+                                            <div className="ml-8 self-center">
+                                                <div className="text-white font-bold text-sm">+ scaling templates</div>
+                                                <div className="text-slate-400 text-xs">PDF & Excel included</div>
+                                            </div>
+                                        </div>
                                     </div>
 
-                                    <div className="bg-white/5 backdrop-blur-md p-10 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">
+                                    <div className="bg-white/5 backdrop-blur-md p-8 md:p-10 rounded-[2rem] border border-white/10 shadow-2xl relative overflow-hidden">
                                         <div className="absolute inset-0 bg-gradient-to-b from-white/5 to-transparent opacity-50 pointer-events-none"></div>
                                         <div className="relative z-10 flex flex-col gap-5">
                                             <div>
-                                                <label className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block ml-1">Email Address</label>
+                                                <label className="text-xs font-bold text-slate-400 uppercase tracking-widest mb-2 block ml-1">Work Email</label>
                                                 <input
                                                     type="email"
-                                                    placeholder="doctor@example.com"
+                                                    placeholder="doctor@practice.com"
                                                     className="w-full px-6 py-4 rounded-xl bg-[#1A1A1A]/80 border border-white/10 text-white placeholder:text-slate-500 focus:outline-none focus:border-[#D2691E] focus:ring-1 focus:ring-[#D2691E] transition-all"
                                                 />
                                             </div>
-                                            <button className="w-full bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-[#D2691E]/20 hover:scale-[1.02] active:scale-[0.98]">
-                                                Send Me The Kit
+                                            <button className="w-full bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 rounded-xl transition-all shadow-xl hover:shadow-[#D2691E]/20 hover:scale-[1.02] active:scale-[0.98] flex items-center justify-center gap-2 group">
+                                                <span>Send Me The Kit</span>
+                                                <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">send</span>
                                             </button>
-                                            <p className="text-slate-500 text-xs text-center mt-2 italic">No spam, unsubscribe anytime.</p>
+                                            <p className="text-slate-500 text-xs text-center mt-2 italic flex items-center justify-center gap-1">
+                                                <span className="material-symbols-outlined text-[14px]">lock</span>
+                                                Secure Direct Delivery
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
                         </>
                     )}
 
@@ -219,12 +232,7 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                                                     <span className="mx-2">•</span>
                                                     <span>{post.readTime}</span>
                                                 </div>
-                                                {upgradedSlugs.includes(post.slug) && (
-                                                    <div className="flex items-center gap-1 text-[#D2691E] font-bold uppercase tracking-tighter">
-                                                        <span className="material-symbols-outlined text-[14px]">verified</span>
-                                                        <span>Semantic Audit</span>
-                                                    </div>
-                                                )}
+
                                             </div>
                                             <Link href={`/blog/${post.slug}`}>
                                                 <h3 className="font-display text-xl font-bold text-trust-navy mb-4 leading-tight group-hover:text-primary transition-colors line-clamp-2">
@@ -272,7 +280,7 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                         </div>
                     )}
                 </div>
-            </section>
+            </section >
         </>
     );
 }

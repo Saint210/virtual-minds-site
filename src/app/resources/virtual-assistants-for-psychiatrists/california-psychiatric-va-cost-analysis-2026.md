@@ -4,14 +4,14 @@
 
 ### 1. Hourly Rate Comparison: VA vs. In-Office Staff
 - **Virtual Assistant**: $25-45/hour (fully loaded cost)
-- **In-Office Administrative**: $35-65/hour (plus 30% overhead)
+- **In-Office Administrative**: High-cost local staff (plus substantial overhead)
 - **California Minimum Wage Impact**: $16.90/hour baseline (2026)
 - **Savings Range**: 35-55% compared to local staff
 
 ### 2. Hidden Cost Elimination
 - **Office Space**: $500-1,200/month saved
-- **Benefits Package**: 25-35% of salary eliminated
-- **Equipment**: Technology costs reduced by 60%
+- **Benefits Package**: Substantial portion of salary eliminated
+- **Equipment**: Technology costs significantly reduced
 - **Training**: Ongoing education included in VA rate
 
 ### 3. California-Specific Compliance Savings
@@ -23,8 +23,8 @@
 ### 4. Productivity Multipliers
 - **Focus Time**: 6.5 hours/day reclaimed for patient care
 - **Administrative Capacity**: 40 hours/week dedicated to practice growth
-- **Error Reduction**: 85% decrease in billing mistakes
-- **Patient Volume**: 20-30% increase in capacity
+- **Error Reduction**: Significant decrease in billing mistakes
+- **Patient Volume**: Significant increase in capacity
 
 ### 5. ROI Calculation Framework
 - **Break-Even Point**: 2.3 months average
@@ -122,7 +122,7 @@
 
 ### Success Metrics
 - **Time Savings**: Minimum 20 hours/week reclaimed
-- **Cost Reduction**: 30% decrease in administrative overhead
+- **Cost Reduction**: Significant decrease in administrative overhead
 - **Revenue Growth**: 15% increase in patient capacity
 - **Compliance Score**: 100% audit readiness maintained
 - **Provider Satisfaction**: 25% improvement in work-life balance

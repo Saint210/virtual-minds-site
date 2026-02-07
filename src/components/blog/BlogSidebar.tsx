@@ -82,8 +82,8 @@ export default function BlogSidebar({
                                 key={item.id}
                                 href={`#${item.id}`}
                                 className={`block text-sm py-2 px-3 rounded-lg transition-all ${activeSection === item.id
-                                        ? 'bg-primary/10 text-primary font-medium border-l-2 border-primary'
-                                        : 'text-slate-600 hover:bg-slate-50 hover:text-trust-navy'
+                                    ? 'bg-primary/10 text-primary font-medium border-l-2 border-primary'
+                                    : 'text-slate-600 hover:bg-slate-50 hover:text-trust-navy'
                                     }`}
                             >
                                 {item.title}
@@ -92,21 +92,42 @@ export default function BlogSidebar({
                     </nav>
                 </div>
 
-                {/* CTA Card */}
-                <div className="bg-gradient-to-br from-primary/10 to-primary/5 rounded-2xl shadow-sm border border-primary/20 p-6">
-                    <div className="text-center">
-                        <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/20 rounded-full mb-4">
-                            <span className="material-symbols-outlined text-primary text-2xl">calendar_today</span>
+                {/* CTA Card - Practice Intelligence Design */}
+                <div className="bg-gradient-to-br from-[#D2691E] to-[#b05515] rounded-2xl shadow-xl shadow-[#D2691E]/20 overflow-hidden relative group">
+                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
+                    <div className="absolute top-0 right-0 w-24 h-24 bg-primary/20 rounded-full blur-[40px]"></div>
+
+                    <div className="p-8 relative z-10">
+                        <div className="inline-flex items-center gap-2 mb-6">
+                            <span className="w-2 h-2 rounded-full bg-white animate-pulse"></span>
+                            <span className="text-[10px] font-black text-white uppercase tracking-widest opacity-90">Growth Engine</span>
                         </div>
-                        <h3 className="font-bold text-trust-navy mb-2">Ready to Optimize Your Practice?</h3>
-                        <p className="text-sm text-slate-600 mb-4">
-                            Get a free 30-minute consultation to discuss your practice growth strategy.
-                        </p>
+
+                        <h3 className="font-serif text-2xl font-bold text-white mb-4 leading-tight">
+                            Build Your <br />
+                            <span className="text-white/90 italic border-b-2 border-white/30">Practice Intelligence</span>
+                        </h3>
+
+                        <ul className="space-y-3 mb-8">
+                            <li className="flex items-start gap-3">
+                                <span className="material-symbols-outlined text-white text-sm mt-0.5">check_circle</span>
+                                <span className="text-white/90 text-xs font-medium leading-relaxed">Automate intake workflows</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="material-symbols-outlined text-white text-sm mt-0.5">check_circle</span>
+                                <span className="text-white/90 text-xs font-medium leading-relaxed">Optimize 90833/99214 coding</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                                <span className="material-symbols-outlined text-white text-sm mt-0.5">check_circle</span>
+                                <span className="text-white/90 text-xs font-medium leading-relaxed">Eliminate scheduling leaks</span>
+                            </li>
+                        </ul>
+
                         <Link
                             href="/book-consultation"
-                            className="block bg-primary hover:bg-[#C19F30] text-white px-6 py-3 rounded-xl font-bold text-sm transition-all hover:scale-105 shadow-lg"
+                            className="block w-full py-4 bg-[#0B1C3E] hover:bg-[#15284d] text-white font-bold text-sm text-center rounded-xl transition-all hover:scale-[1.02] shadow-xl shadow-black/20"
                         >
-                            Schedule Free Consultation
+                            Schedule Strategy Call
                         </Link>
                     </div>
                 </div>

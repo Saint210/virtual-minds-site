@@ -71,8 +71,8 @@ export default function Expertise() {
         },
         {
             icon: "trending_up",
-            title: "Results Promise",
-            description: "Guaranteed 40% admin time reduction or we work for free until achieved"
+            title: "Results Assurance",
+            description: "We commit to specific admin reduction KPIs, or we adjust service credits until targets are met."
         }
     ];
 
@@ -91,14 +91,14 @@ export default function Expertise() {
                 <div className="text-center mb-16">
                     <div className="inline-flex items-center gap-2 bg-primary/10 backdrop-blur-md border border-primary/20 rounded-full px-4 py-2 text-trust-navy text-sm font-medium mb-6">
                         <span className="material-symbols-outlined text-primary">workspace_premium</span>
-                        <span>California Psychiatric Expertise</span>
+                        <span>California Psychiatric Standards</span>
                     </div>
                     <h2 className="font-display text-3xl md:text-4xl lg:text-5xl font-bold text-trust-navy mb-6">
-                        Specialized Training & Certification
+                        Clinical-Grade Protocols
                     </h2>
                     <div className="h-1 w-20 bg-primary rounded-full mx-auto mb-6"></div>
                     <p className="text-slate-600 text-lg max-w-2xl mx-auto">
-                        Our virtual assistants undergo rigorous psychiatric-specific training and California compliance certification
+                        Our team operates with the same rigor as your clinical practice, utilizing <strong className="text-trust-navy">psychiatric-specific workflows</strong> designed for the California regulatory environment.
                     </p>
                 </div>
 
@@ -124,42 +124,12 @@ export default function Expertise() {
                     ))}
                 </div>
 
-                {/* Process Section */}
-                <div className="mb-16">
-                    <div className="text-center mb-12">
-                        <h3 className="text-2xl md:text-3xl font-bold text-trust-navy mb-4">Implementation Process</h3>
-                        <p className="text-slate-600 max-w-2xl mx-auto">
-                            Get started with a streamlined 4-week onboarding process designed for California psychiatric practices
-                        </p>
-                    </div>
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                        {processSteps.map((step, index) => (
-                            <div key={index} className="group relative">
-                                <div className="bg-white/80 backdrop-blur-md border border-slate-200 rounded-2xl p-6 hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg h-full">
-                                    <div className="flex items-center justify-between mb-4">
-                                        <span className="text-2xl font-black text-primary">{step.step}</span>
-                                        <span className="bg-green-10 text-green-700 text-xs font-bold px-2 py-1 rounded-full">
-                                            {step.duration}
-                                        </span>
-                                    </div>
-                                    <h4 className="font-bold text-trust-navy mb-2">{step.title}</h4>
-                                    <p className="text-base text-slate-600 leading-relaxed">{step.description}</p>
-                                </div>
-                                {/* Connector Line */}
-                                {index < processSteps.length - 1 && (
-                                    <div className="hidden lg:block absolute top-1/2 -right-3 w-6 h-0.5 bg-primary/30 transform -translate-y-1/2"></div>
-                                )}
-                            </div>
-                        ))}
-                    </div>
-                </div>
-
                 {/* Guarantee Section */}
                 <div className="bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 rounded-2xl p-8 mb-16">
                     <div className="text-center mb-8">
-                        <h3 className="text-2xl md:text-3xl font-bold text-trust-navy mb-4">Risk-Free Guarantee</h3>
+                        <h3 className="text-2xl md:text-3xl font-bold text-trust-navy mb-4">Performance Assurance</h3>
                         <p className="text-slate-600 max-w-2xl mx-auto">
-                            We're confident in our ability to transform your practice. Our guarantees ensure you see results without risk.
+                            We don't ask you to take risks. We align our success with the operational health of your practice.
                         </p>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">

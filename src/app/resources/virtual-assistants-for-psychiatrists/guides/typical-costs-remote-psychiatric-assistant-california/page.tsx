@@ -84,7 +84,7 @@ const roiCalculations = [
   },
   {
     metric: "Billing Accuracy Improvement",
-    calculation: "95% accuracy vs 85% × $50,000/month billing",
+    calculation: "Exceptional accuracy vs industry standard × high-volume billing",
     monthlyValue: "$5,000",
     annualValue: "$60,000",
     description: "Reduced claim denials and rework"
@@ -292,8 +292,8 @@ export default function TypicalCostsRemotePsychiatricAssistantCalifornia() {
                   </div>
 
                   <div className="text-center">
-                    <p className="text-sm text-slate-600 mb-2">Net Annual ROI:</p>
-                    <p className="text-4xl font-bold text-green-600">633%</p>
+                    <p className="text-sm text-slate-600 mb-2">Operational Performance:</p>
+                    <p className="text-4xl font-bold text-green-600">Exceptional</p>
                   </div>
                 </div>
               </div>

@@ -123,27 +123,27 @@ export default function ResourcesHub() {
                                 </div>
                             </Link>
 
-                            {/* 2. Revenue Optimization */}
+                            {/* 2. Revenue Cycle Support */}
                             <div className="group p-10 bg-[#FAF8F3] rounded-[40px] border-2 border-slate-200 hover:border-[#D2691E]/30 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-[#D2691E]/5 hover:-translate-y-2 min-h-[320px]">
                                 <div>
                                     <div className="flex items-start justify-between mb-6">
                                         <div className="w-14 h-14 bg-[#D2691E]/10 rounded-2xl flex items-center justify-center text-[#D2691E] border border-[#D2691E]/20 group-hover:bg-[#D2691E] group-hover:text-white transition-all">
                                             <span className="material-symbols-outlined text-3xl">payments</span>
                                         </div>
-                                        <span className="bg-green-100 text-green-800 text-[10px] font-black px-3 py-1 rounded-full uppercase">ROI Focused</span>
+                                        <span className="bg-green-100 text-green-800 text-[10px] font-black px-3 py-1 rounded-full uppercase">Efficiency</span>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Revenue Optimization</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Practice Efficiency</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium">
-                                        <strong className="text-trust-navy">Capture $18K+ annually</strong> in missed billing opportunities. Optimize CPT coding for <span className="text-[#D2691E] font-bold">med-management + therapy add-ons</span> (99214 + 90833).
+                                        Optimize your administrative workflows and eliminate documentation bottlenecks. Master the coordination between your <span className="text-[#D2691E] font-bold"> EHR and billing systems</span>.
                                     </p>
                                     {/* Value indicator */}
                                     <div className="bg-white border border-green-100 rounded-xl p-3 mb-6">
-                                        <p className="text-xs text-slate-500 mb-1">Avg. Revenue Increase</p>
-                                        <p className="text-2xl font-black text-green-600">+23%</p>
+                                        <p className="text-xs text-slate-500 mb-1">Infrastructure Reliability</p>
+                                        <p className="text-2xl font-black text-green-600">Enterprise Grade</p>
                                     </div>
                                 </div>
                                 <Link href="/resources/blueprints/revenue-architecture" className="text-[#D2691E] font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
-                                    Analyze Your ROI <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    Analyze Your Efficiency <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
 
@@ -197,7 +197,7 @@ export default function ResourcesHub() {
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">EHR Hardening</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium">
-                                        <strong className="text-trust-navy">Cut documentation time by 40%.</strong> Custom templates for <span className="text-blue-600 font-bold">DrChrono, CharmHealth, and AdvancedMD</span> built specifically for psychiatric evaluations and MSEs.
+                                        <strong className="text-trust-navy">Cut documentation time significantly.</strong> Custom templates for <span className="text-blue-600 font-bold">DrChrono, CharmHealth, and AdvancedMD</span> built specifically for psychiatric evaluations and MSEs.
                                     </p>
                                     {/* Time savings indicator */}
                                     <div className="bg-white border border-blue-100 rounded-xl p-3 mb-6">

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Testimonials() {
     const testimonials = [
         {
@@ -8,7 +10,8 @@ export default function Testimonials() {
             title: "Board Certified Psychiatrist",
             location: "Los Angeles, CA",
             roi: "$85K annual revenue increase",
-            practice: "Private Practice"
+            practice: "Private Practice",
+            image: "/images/avatar-sarah-chen.png"
         },
         {
             initials: "RM",
@@ -18,7 +21,8 @@ export default function Testimonials() {
             title: "Group Practice Owner (5 providers)",
             location: "San Francisco, CA",
             roi: "9% billing accuracy improvement",
-            practice: "Group Practice"
+            practice: "Group Practice",
+            image: "/images/avatar-michael-patel.png"
         },
         {
             initials: "LC",
@@ -28,7 +32,8 @@ export default function Testimonials() {
             title: "Child & Adolescent Psychiatry",
             location: "San Diego, CA",
             roi: "$120K additional revenue",
-            practice: "Telehealth Specialist"
+            practice: "Telehealth Specialist",
+            image: "/images/avatar-sarah-chen.png"
         },
     ];
 
@@ -41,7 +46,7 @@ export default function Testimonials() {
                 <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse delay-500"></div>
             </div>
-            
+
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -72,16 +77,25 @@ export default function Testimonials() {
                                         </span>
                                     ))}
                                 </div>
-                                
+
                                 {/* Quote */}
                                 <blockquote className="text-xl italic font-display leading-relaxed mb-8 text-trust-navy group-hover:text-primary transition-colors">
                                     &ldquo;{t.quote}&rdquo;
                                 </blockquote>
-                                
+
                                 {/* Author */}
                                 <div className="flex items-center gap-4">
-                                    <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center font-bold text-primary group-hover:scale-110 transition-transform">
-                                        {t.initials}
+                                    <div className="relative w-14 h-14 rounded-xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/10 flex items-center justify-center font-bold text-primary group-hover:scale-110 transition-transform shadow-sm">
+                                        {t.image ? (
+                                            <Image
+                                                src={t.image}
+                                                alt={t.name}
+                                                fill
+                                                className="object-cover"
+                                            />
+                                        ) : (
+                                            t.initials
+                                        )}
                                     </div>
                                     <div>
                                         <p className="font-bold text-trust-navy">{t.name}</p>
@@ -101,7 +115,7 @@ export default function Testimonials() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             {/* Hover Glow Effect */}
                             <div className="absolute -inset-1 bg-primary/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                         </div>

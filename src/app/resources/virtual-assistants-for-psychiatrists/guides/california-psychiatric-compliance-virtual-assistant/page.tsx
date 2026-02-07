@@ -62,7 +62,7 @@ export default function CaliforniaCompliancePage() {
                                 <h3 className="font-bold text-navy dark:text-white">Medi-Cal Expertise</h3>
                             </div>
                             <p className="text-slate-600 dark:text-slate-300 text-sm">
-                                Specialized Medi-Cal billing, documentation, and prior authorization support for psychiatric services, including CPT codes specific to mental health.
+                                Specialized Medi-Cal billing, documentation, and prior authorization support for psychiatric services, including specialized mental health documentation requirements.
                             </p>
                         </div>
 

@@ -101,7 +101,7 @@ export default function ScalingPractice() {
 
                                 <div className="space-y-2">
                                     <p className="text-[11px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Growth Multiplier</p>
-                                    <p className="text-xl font-bold text-trust-navy">2.5x — 4.0x Yield</p>
+                                    <p className="text-xl font-bold text-trust-navy">Strategic Growth</p>
                                 </div>
 
                                 <div className="hidden md:block h-12 w-px bg-slate-200" />
@@ -139,7 +139,7 @@ export default function ScalingPractice() {
                                             },
                                             {
                                                 point: "Telehealth ROI",
-                                                detail: "Maximize profit margins by eliminating physical overhead and reducing no-shows by 50%."
+                                                detail: "Maximize profit margins by eliminating physical overhead and significantly reducing no-shows."
                                             }
                                         ]}
                                     />
@@ -204,8 +204,9 @@ export default function ScalingPractice() {
                                     </p>
 
                                     <h2 id="hiring" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Expanding Clinical Capacity by Hiring Psychiatric Nurse Practitioners</h2>
-                                    <p className="mb-6">
-                                        The fastest path to scaling clinical capacity is hiring psychiatric nurse practitioners. A single experienced PMHNP can see 80-120 patients monthly for medication management, effectively doubling or tripling your practice's capacity without requiring you to see more patients yourself.
+                                    <p className="text-xl font-bold text-trust-navy">Substantial Caseloads</p>
+                                    <p className="text-slate-600 leading-relaxed mb-6">
+                                        An experienced psychiatric NP can manage significant caseloads for medication management, effectively increasing your practice's capacity without requiring you to see more patients yourself.
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">The Financial Benefits of the NP-Led Care Model</h3>
@@ -256,8 +257,8 @@ export default function ScalingPractice() {
                                     <p className="mb-6">
                                         Automated intake systems send patients secure links to complete paperwork before appointments. Information flows directly into your EHR without manual data entry. This approach reduces staff time to 5-10 minutes per new patient while improving data accuracy.
                                     </p>
-                                    <p className="mb-6">
-                                        Online scheduling with automated reminders reduces no-show rates by 20-30% in most practices. Patients who book their own appointments and receive text reminders show up more reliably than those scheduled by phone without follow-up. Given that a single no-show costs $150-300 in lost revenue, even modest improvements in show rates add up quickly.
+                                    <p className="text-slate-600 leading-relaxed mb-6">
+                                        Online scheduling with automated reminders significantly reduces no-show rates in most practices. Patients who book their own appointments and receive text reminders show up more reliably than those scheduled by phone without follow-up. Given that even a single no-show costs substantial revenue in lost time, even modest improvements in show rates add up quickly.
                                     </p>
 
                                     <h2 id="telehealth" className="text-3xl font-bold text-trust-navy mt-12 mb-6">Maximizing ROI Through Telehealth Service Integration</h2>
@@ -269,8 +270,8 @@ export default function ScalingPractice() {
                                     <p className="mb-6">
                                         Telehealth appointments require no physical space beyond what the clinician needs for a private video call. A practice that's maxed out on exam rooms can add significant capacity through virtual visits without leasing additional space. At commercial real estate rates of $25-40 per square foot annually, avoiding even one additional exam room saves thousands yearly.
                                     </p>
-                                    <p className="mb-6">
-                                        No-show rates for telehealth appointments run 30-50% lower than in-person visits in most psychiatric practices. Patients who would miss appointments due to transportation issues, childcare challenges, or work conflicts can attend from home or their car during lunch. This improvement in show rates directly increases revenue without requiring additional marketing or patient acquisition.
+                                    <p className="text-slate-600 leading-relaxed mb-6">
+                                        No-show rates for telehealth appointments run significantly lower than in-person visits in most psychiatric practices. Patients who would miss appointments due to transportation issues, childcare challenges, or work conflicts can attend from home or their car during lunch. This improvement in show rates directly increases revenue without requiring additional marketing or patient acquisition.
                                     </p>
 
                                     <h3 className="text-2xl font-bold text-trust-navy mt-8 mb-4">Navigating Compliance and Reimbursement for Remote Psychiatry</h3>

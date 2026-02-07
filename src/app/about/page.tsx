@@ -33,10 +33,9 @@ export default function AboutPage() {
 
                             {/* Left Column (60%) */}
                             <div className="lg:w-[60%]">
-
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4">
                                     <span className="material-symbols-outlined text-primary text-[16px]">verified</span>
-                                    California Medical Excellence
+                                    Operational Excellence
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
@@ -47,9 +46,7 @@ export default function AboutPage() {
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl">
-                                    Virtual Minds provides <strong className="text-trust-navy">specialized virtual assistant and practice management services</strong>{' '}
-                                    <span className="text-primary font-bold">exclusively for California psychiatrists</span>, with{' '}
-                                    <strong className="text-trust-navy">deep expertise</strong> in remote and hybrid practice models.
+                                    Virtual Minds offers <strong className="text-trust-navy">decades of specialized experience</strong> in mental health practice management. We provide top-tier administrative infrastructure designed to <span className="text-primary font-bold">streamline complexity</span> so you can focus entirely on patient care.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">

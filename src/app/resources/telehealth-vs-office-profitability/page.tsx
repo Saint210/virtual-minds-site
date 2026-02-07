@@ -70,15 +70,15 @@ export default function TelehealthProfitabilityPost() {
                                     Executive Summary
                                 </h3>
                                 <div className="space-y-2 text-slate-700 leading-relaxed">
-                                    <p><strong>The Verdict:</strong> Pure Telehealth models yield 18-22% higher net margins due to eliminated real estate overhead ($1,500+/mo).</p>
-                                    <p><strong>The Hybrid Edge:</strong> However, "Hybrid" models (initial in-person intake) show 30% lower patient churn, potentially offsetting the rent cost via higher Lifetime Value (LTV).</p>
-                                    <p><strong>Regulatory Note:</strong> California's reimbursement parity laws ensure equal payment for both, making the decision securely operational, not financial.</p>
+                                    <p><strong>The Verdict:</strong> Pure Telehealth models generate significantly higher net margins due to eliminated real estate overhead.</p>
+                                    <p><strong>The Hybrid Edge:</strong> However, &quot;Hybrid&quot; models (initial in-person intake) show meaningfully lower patient churn, potentially offsetting the rent cost via higher Lifetime Value (LTV).</p>
+                                    <p><strong>Regulatory Note:</strong> California's reimbursement parity laws ensure equal payment for both, making the decision securely operational.</p>
                                 </div>
                             </div>
 
                             <article className="prose prose-lg prose-slate max-w-none">
                                 <p className="text-xl leading-8 text-slate-600 mb-12 font-medium">
-                                    Ten years ago, a physical office was mandatory for legitimacy. Today, it is a strategic choice. With California SB 855 and federal parity laws, insurance pays the same CPT rate for 99205 (Intake) whether it happens on Zoom or on a couch. The difference lies entirely in your overhead stack.
+                                    Ten years ago, a physical office was mandatory for legitimacy. Today, it is a strategic choice. With California SB 855 and federal parity laws, insurance provides reimbursement parity for intakes whether they happen on Zoom or on a couch. The difference lies entirely in your overhead stack.
                                 </p>
 
                                 <h2 className="text-3xl font-serif font-bold text-trust-navy mt-16 mb-8">1. The "Fixed Cost" Delta</h2>
@@ -141,7 +141,7 @@ export default function TelehealthProfitabilityPost() {
                                     While the virtual model saves \$2,000/month, it exposes you to <strong className="text-trust-navy">Ghosting Risk</strong>.
                                 </p>
                                 <p>
-                                    Data suggests that patients who have never physically met their providers are 30% more likely to "ghost" (drop out) after the first 3 sessions. A physical handshake creates psychological buy-in that a screen cannot fully replicate.
+                                    Data suggests that patients who have never physically met their providers are more likely to "ghost" (drop out) after the first few sessions. A physical handshake creates psychological buy-in that a screen cannot fully replicate.
                                 </p>
                                 <blockquote className="p-8 bg-[#FAF8F3] border-l-4 border-primary rounded-r-xl my-10 not-italic">
                                     <p className="text-xl font-medium text-trust-navy leading-relaxed mb-4">

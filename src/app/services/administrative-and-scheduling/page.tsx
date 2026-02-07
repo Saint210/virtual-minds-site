@@ -76,19 +76,19 @@ export default function SchedulingPage() {
                                 <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
                                     <div className="space-y-1">
                                         <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Schedule Saturation</p>
-                                        <p className="text-lg font-bold text-trust-navy">+15% Capacity</p>
+                                        <p className="text-lg font-bold text-trust-navy">Maximum Efficiency</p>
                                     </div>
                                     <div className="hidden md:block h-10 w-px bg-slate-200" />
                                     <div className="space-y-1">
                                         <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">No-Show Mitigation</p>
-                                        <p className="text-lg font-bold text-trust-navy">94% Retention</p>
+                                        <p className="text-lg font-bold text-trust-navy">Engaged Retention</p>
                                     </div>
                                     <div className="hidden md:block h-10 w-px bg-slate-200" />
                                     <div className="space-y-1">
                                         <p className="text-[10px] font-black !text-primary uppercase tracking-[0.2em] leading-none">Provider Recovery</p>
                                         <div className="flex items-center gap-2">
                                             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-                                            <p className="text-lg font-bold text-trust-navy italic">12+ Hrs/wk</p>
+                                            <p className="text-lg font-bold text-trust-navy italic">High Impact</p>
                                         </div>
                                     </div>
                                 </div>
@@ -151,7 +151,8 @@ export default function SchedulingPage() {
                                 { icon: 'contact_phone', title: 'Patient Communication & Correspondence', desc: 'Secure, empathetic handling of patient calls, emails, and portal messages.' },
                                 { icon: 'folder_managed', title: 'Document Management & Record Keeping', desc: 'Organized filing of clinical notes, lab results, and external reports within your HIPAA-compliant system.' },
                                 { icon: 'duo', title: 'Telehealth Support Services', desc: 'Troubleshooting connection issues and managing virtual waiting rooms for smooth sessions.' },
-                                { icon: 'medication', title: 'Prescription Prior Authorizations', desc: 'Navigating insurance hurdles to ensure medication coverage for your patients.' }
+                                { icon: 'medication', title: 'Prescription Prior Authorizations', desc: 'Navigating insurance hurdles to ensure medication coverage for your patients.' },
+                                { icon: 'payments', title: 'Billing & Payment Management', desc: 'Generating Superbills, processing credit card transactions, and contacting insurance companies on request.' }
                             ].map((item, i) => (
                                 <div key={i} className="bg-white p-10 rounded-3xl border border-[#D2691E]/20 shadow-sm hover:shadow-xl transition-all h-full flex flex-col">
                                     <span className="material-symbols-outlined text-[#D2691E] text-4xl mb-6">{item.icon}</span>
@@ -188,17 +189,17 @@ export default function SchedulingPage() {
                             <h3 className="font-display text-3xl font-bold mb-8 italic !text-white" style={{ color: 'white' }}>Practice Impact</h3>
                             <div className="space-y-12">
                                 <div className="flex gap-8">
-                                    <div className="text-5xl font-black text-[#D2691E]">40%</div>
+                                    <div className="text-5xl font-black text-[#D2691E] italic">Significant</div>
                                     <div>
                                         <p className="font-bold text-xl">Reduction in Admin Load</p>
-                                        <p className="text-slate-400 text-sm mt-1">Average reduction in weekly administrative tasks for solo practitioners.</p>
+                                        <p className="text-slate-400 text-sm mt-1">Freeing solo practitioners from the burden of daily administrative tasks.</p>
                                     </div>
                                 </div>
                                 <div className="flex gap-8">
-                                    <div className="text-5xl font-black text-[#9CAF88]">15+</div>
+                                    <div className="text-5xl font-black text-[#9CAF88] italic">Major</div>
                                     <div>
-                                        <p className="font-bold text-xl">Hours Reclaimed Weekly</p>
-                                        <p className="text-slate-400 text-sm mt-1">Time returned to providers for clinical care or personal wellness.</p>
+                                        <p className="font-bold text-xl">Time Reclaimed Weekly</p>
+                                        <p className="text-slate-400 text-sm mt-1">Time returned to providers for clinical care or professional deep work.</p>
                                     </div>
                                 </div>
                             </div>

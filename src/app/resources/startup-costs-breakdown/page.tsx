@@ -70,7 +70,7 @@ export default function StartupCostsPost() {
                                     Executive Summary
                                 </h3>
                                 <div className="space-y-2 text-slate-700 leading-relaxed">
-                                    <p><strong>The Core Problem:</strong> Most new psychiatrists underestimate startup capital by 40% due to regulatory friction.</p>
+                                    <p><strong>The Core Problem:</strong> Most new psychiatrists underestimate startup capital significantly due to regulatory friction.</p>
                                     <p><strong>Key Drivers:</strong> Professional Corporation taxes ($800/yr min), Malpractice Tail Coverage ($15k+), and a 4-month insurance reimbursement delay.</p>
                                     <p><strong>Recommendation:</strong> Secure 6 months of operating runway before leaving hospital employment.</p>
                                 </div>

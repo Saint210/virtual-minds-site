@@ -53,7 +53,7 @@ export default function ContactPage() {
                                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Secure Messaging</p>
                                     <p className="font-bold text-trust-navy">
                                         <ProtectedEmail
-                                            localPart="Cheryl"
+                                            localPart="cheryl"
                                             domain="thevirtualminds.com"
                                             buttonClassName="rounded-md bg-slate-100 px-3 py-1 text-xs font-bold text-trust-navy hover:bg-primary hover:text-white transition-all"
                                             revealedClassName="underline underline-offset-4 decoration-primary/30 hover:decoration-primary"
@@ -75,7 +75,7 @@ export default function ContactPage() {
                                     <h3 className="font-serif text-2xl font-bold italic">The Operational Promise</h3>
                                 </div>
                                 <p className="text-slate-300 text-lg leading-relaxed italic mb-8">
-                                    "We don't just 'send a person'. We deploy a hardened administrative layer that understands the difference between a 90791 and a 99214 on day one."
+                                    &quot;We don&apos;t just &apos;send a person&apos;. We deploy a hardened administrative layer that understands the specialized documentation and billing requirements of California psychiatry on day one.&quot;
                                 </p>
                                 <div className="flex items-center gap-3">
                                     <div className="w-10 h-1 bg-primary rounded-full" />

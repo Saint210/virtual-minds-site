@@ -9,8 +9,9 @@ import { getPostBySlug, getPosts } from "@/lib/blog-service";
 import { urlFor } from "@/lib/sanity";
 import PortableText from "@/components/blog/PortableText";
 
-export async function generateMetadata({ params }: { params: { slug: string } }) {
-    const post = await getPostBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = await getPostBySlug(slug);
     if (!post) return {};
 
     return {
@@ -24,8 +25,9 @@ export async function generateMetadata({ params }: { params: { slug: string } })
     };
 }
 
-export default async function BlogPostPage({ params }: { params: { slug: string } }) {
-    const post = await getPostBySlug(params.slug);
+export default async function BlogPostPage({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const post = await getPostBySlug(slug);
 
     if (!post) {
         notFound();
@@ -34,7 +36,7 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
     // Get some related posts (simple approach: just get latest posts)
     const allPosts = await getPosts();
     const relatedArticles = allPosts
-        .filter((p) => p.slug.current !== params.slug)
+        .filter((p) => p.slug.current !== slug)
         .slice(0, 3)
         .map((p) => ({
             title: p.title,
@@ -133,18 +135,18 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                                     <BlogSidebar
                                         tableOfContents={tableOfContents}
                                         relatedArticles={relatedArticles}
-                                        currentUrl={`https://thevirtualminds.com/blog/${params.slug}`}
+                                        currentUrl={`https://thevirtualminds.com/blog/${slug}`}
                                         articleTitle={post.title}
                                     />
 
                                     {/* SIDEBAR CTA CARD */}
-                                    <div className="mt-12 p-8 bg-trust-navy rounded-[2rem] text-white shadow-xl relative overflow-hidden group">
+                                    <div className="mt-12 p-8 bg-gradient-to-br from-[#D2691E] to-[#b05515] rounded-[2rem] text-white shadow-xl shadow-[#D2691E]/20 relative overflow-hidden group">
                                         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none" />
-                                        <h3 className="font-serif text-2xl font-bold mb-4 relative z-10 transition-transform group-hover:-translate-y-1 text-white">Infrastructure Audit.</h3>
-                                        <p className="text-slate-300 text-sm mb-8 relative z-10 opacity-80 leading-relaxed font-light">
-                                            Get a comprehensive analysis of your practice's current operational gaps and growth potential.
+                                        <h3 className="font-serif text-2xl font-bold mb-4 relative z-10 transition-transform group-hover:-translate-y-1 text-white">Unlock Practice Intelligence.</h3>
+                                        <p className="text-white/90 text-sm mb-8 relative z-10 font-medium leading-relaxed">
+                                            Transform your clinical operations with a strategic intelligence assessment for private psychiatry.
                                         </p>
-                                        <Link href="/book-consultation" className="block text-center py-4 bg-primary text-trust-navy font-black rounded-xl text-xs uppercase tracking-widest hover:bg-[#C19F30] transition-colors relative z-10 shadow-lg">
+                                        <Link href="/book-consultation" className="block text-center py-4 bg-[#0B1C3E] text-white font-bold rounded-xl text-xs uppercase tracking-widest hover:bg-[#15284d] transition-all hover:scale-[1.02] relative z-10 shadow-lg shadow-black/20">
                                             Schedule Assessment
                                         </Link>
                                     </div>
@@ -154,6 +156,16 @@ export default async function BlogPostPage({ params }: { params: { slug: string 
                     </div>
                 </section>
             </main>
+            {/* STICKY MOBILE CONVERSION BAR (Hidden on Desktop) */}
+            <div className="fixed bottom-0 left-0 right-0 p-4 bg-white/80 backdrop-blur-lg border-t border-slate-200 lg:hidden z-50">
+                <Link
+                    href="/book-consultation"
+                    className="flex items-center justify-center gap-3 w-full bg-[#D2691E] text-white font-bold py-4 rounded-xl shadow-lg shadow-[#D2691E]/20 active:scale-[0.98] transition-transform"
+                >
+                    <span className="material-symbols-outlined">calendar_add_on</span>
+                    Schedule Free Strategy Call
+                </Link>
+            </div>
             <Footer />
         </div>
     );

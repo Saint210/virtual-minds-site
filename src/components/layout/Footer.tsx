@@ -30,7 +30,7 @@ export default function Footer() {
                         </Link>
 
                         <p className="text-slate-600 text-base font-medium leading-relaxed pr-8">
-                            California's premier <strong className="text-trust-navy font-bold">psychiatric practice management</strong> firm. We specialize in revenue cycle optimization, HIPAA-compliant automation, and operational excellence for mental health providers.
+                            California's premier <strong className="text-trust-navy font-bold">psychiatric practice management</strong> firm. We specialize in billing support coordination, HIPAA-compliant automation, and operational excellence for mental health providers.
                         </p>
 
                         {/* Credentials Grid */}
@@ -49,8 +49,8 @@ export default function Footer() {
                                     <span className="material-symbols-outlined text-blue-600 text-xl">workspace_premium</span>
                                 </span>
                                 <div>
-                                    <div className="font-black text-sm text-trust-navy">50+ Practices Managed</div>
-                                    <div className="text-xs text-slate-600 font-semibold">Across California</div>
+                                    <div className="font-black text-sm text-trust-navy">Bespoke Support</div>
+                                    <div className="text-xs text-slate-600 font-semibold">Psychiatric Specialized</div>
                                 </div>
                             </div>
                             <div className="flex items-center gap-3 p-3 rounded-xl bg-primary/5 border border-primary/20">
@@ -58,8 +58,8 @@ export default function Footer() {
                                     <span className="material-symbols-outlined text-primary text-xl">trending_up</span>
                                 </span>
                                 <div>
-                                    <div className="font-black text-sm text-trust-navy">$15M+ Revenue Recovered</div>
-                                    <div className="text-xs text-slate-600 font-semibold">For our clients since 2020</div>
+                                    <div className="font-black text-sm text-trust-navy">Revenue Sovereignty</div>
+                                    <div className="text-xs text-slate-600 font-semibold">Excellence in Coordination</div>
                                 </div>
                             </div>
                         </div>
@@ -69,7 +69,7 @@ export default function Footer() {
                             <Link href="#" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
                                 <span className="material-symbols-outlined text-lg">language</span>
                             </Link>
-                            <Link href="mailto:contact@virtualminds.com" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
+                            <Link href="mailto:cheryl@thevirtualminds.com" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
                                 <span className="material-symbols-outlined text-lg">alternate_email</span>
                             </Link>
                             <Link href="#" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
@@ -214,7 +214,7 @@ export default function Footer() {
                 <div className="pt-10 border-t border-slate-200 flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
                     <p className="text-sm text-slate-500 font-medium max-w-2xl">
                         © 2026 Virtual Minds, LLC. All rights reserved. <span className="hidden md:inline">|</span><br className="md:hidden" />
-                        <span className="font-semibold text-slate-700">California Psychiatric Practice Management & Revenue Cycle Optimization</span>
+                        <span className="font-semibold text-slate-700">California Psychiatric Practice Management & Billing Support Coordination</span>
                     </p>
                     <div className="flex flex-wrap justify-center gap-6">
                         <Link href="/privacy" className="text-sm font-bold text-slate-500 hover:text-trust-navy transition-colors">Privacy Policy</Link>

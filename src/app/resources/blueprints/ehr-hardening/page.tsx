@@ -127,7 +127,7 @@ export default function EHRHardeningBlueprint() {
                                             {
                                                 icon: "sync",
                                                 title: "Zero-Click Billing",
-                                                desc: "Mapping your Note Templates directly to CPT-code auto-filing, ensuring your claims are generated the moment you sign the note."
+                                                desc: "Mapping your Note Templates directly to billing-ready documentation, ensuring your claims are generated the moment you sign the note."
                                             },
                                             {
                                                 icon: "monitoring",

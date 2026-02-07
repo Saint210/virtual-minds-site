@@ -3,30 +3,40 @@
 /* Restrict scanning to src to avoid collisions in docs/tools */
 
 @theme {
-  --color-primary: #B25A2A;
-  --color-primary-hover: #964A22;
-  --color-accent: #67927A;
-  --color-secondary: #2D3E35;
+  --color-primary: #B4500A;
+  /* Deep Orange (Warm) */
+  --color-primary-hover: #963D05;
+  --color-accent: #508C6E;
+  /* Deep Sage (Cool Organic) */
+  --color-secondary: #032640;
+  /* Deep Teal/Green (Tech + Nature) - Replaces Navy */
   --color-cream: #FAF8F3;
   --color-soft-brown: #2A2A2A;
-  --color-trust-navy: #1A2332;
-  --color-calm-sage: #67927A;
+  --color-trust-navy: #032640;
+  /* Re-mapped to Deep Teal per user instruction */
+  --color-calm-sage: #508C6E;
   --color-medical-gray: #F1F5F9;
-  --color-clinical-teal: #67927A;
+  --color-clinical-teal: #0891B2;
+  /* Keeping Cyan for web-safe contrast */
+  --color-healthcare-cyan: #0891B2;
 
   /* HTML Design Colors */
-  --color-terracotta: #B25A2A;
-  --color-sage: #67927A;
+  --color-terracotta: #B4500A;
+  --color-sage: #508C6E;
   --color-cream-html: #FAF8F3;
-  --color-navy: #1A2332;
+  --color-navy: #032640;
+  /* Deep Teal */
 
   /* Premium Design System Colors */
   --color-gold: #D4AF37;
-  --color-navy-900: #1A2332;
+  /* Golden Yellow Accent */
+  --color-navy-900: #02243E;
+  /* Darker shade of Teal */
   --color-slate-900: #0F172A;
 
   --font-display: "Outfit", sans-serif;
-  --font-serif: "Outfit", sans-serif;
+  --font-display: "Outfit", sans-serif;
+  --font-serif: "Lora", serif;
   --font-sans: "Manrope", sans-serif;
 }
 
@@ -57,7 +67,6 @@ h4,
 h5,
 h6 {
   font-family: var(--font-display);
-  color: var(--color-trust-navy);
   font-weight: 700;
   line-height: 1.2;
   letter-spacing: -0.02em;

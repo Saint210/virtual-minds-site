@@ -3,383 +3,271 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
-import ServiceArchitectureGraphic from "@/components/services/ServiceArchitectureGraphic";
-
-import { getServices } from "@/lib/services-service";
-import { urlFor } from "@/lib/sanity";
 
 export const metadata = {
-    title: "Psychiatric Practice Support Services | Virtual Minds",
-    description: "Specialized virtual assistant and practice management support for California psychiatrists. From practice start-ups to medication management workflows.",
+    title: "Clinical Operations for California Psychiatry | Virtual Minds",
+    description: "Precision infrastructure for high-complexity psychiatric practices. Operational backbone for psychiatrists practicing at the highest clinical levels.",
 };
 
-const staticServiceBlueprints = [
+const serviceBlueprints = [
     {
-        title: "Virtual Assistants",
-        desc: "Specialized assistants trained in psychiatric-specific workflows, medication refill coordination, and professional patient communication.",
-        descMarkup: (
-            <>
-                <strong>Psychiatric-trained assistants</strong> who handle intake, refills, and patient communication—
-                <span className="text-[#D2691E]"> so you can focus on clinical care</span>.
-            </>
-        ),
-        icon: "person_search",
-        color: "text-primary",
-        link: "/services/virtual-assistant",
-        tags: ["Intake Management", "Telehealth Comms"],
-        yield: "Recover $25k/yr in Admin Overhead",
-        isPopular: true
+        title: "Psychiatric-Trained Assistants",
+        subtitle: "Specialized Clinical Support",
+        desc: "Specialized support for intake, refills, and high-acuity patient communication. Your patients are complex; their needs are nuanced. Our assistants are trained specifically in psychiatric workflows — not generic medical admin.",
+        features: ["Intake management and triage", "Telehealth coordination", "Medication-related communication", "Refill routing and pharmacy liaison", "High-acuity patient correspondence"],
+        clinicalImpact: "Recover $25k/year in administrative overhead.",
+        icon: "monitor_heart",
+        link: "/services/virtual-assistant"
     },
     {
-        title: "Billing & RCM",
-        desc: "Dedicated support for insurance verification, superbill creation, and revenue cycle management to ensure practice stability.",
-        descMarkup: (
-            <>
-                <strong>Maximize revenue</strong> with dedicated insurance verification, prior auths, and claims management—
-                <span className="text-[#D2691E]"> ensuring practice stability</span>.
-            </>
-        ),
+        title: "Strategic Operational Review",
+        subtitle: "Practice Diagnostics",
+        desc: "A comprehensive diagnostic for established psychiatric practices. We conduct a full-scale evaluation of your systems, policies, and workflows to identify friction points, compliance vulnerabilities, and operational inefficiencies.",
+        features: ["Process and workflow analysis", "Management policy refinement", "Operational restructuring"],
+        clinicalImpact: "Achieve firm-wide operational clarity.",
+        icon: "analytics",
+        link: "/services/practice-consulting",
+        highlight: true
+    },
+    {
+        title: "Billing & Revenue Cycle Coordination",
+        subtitle: "Revenue Stabilization",
+        desc: "Stabilize revenue with dedicated verification, prior auths, and superbills. We don’t replace your billing company — we ensure they perform at their highest level. Our team manages the administrative components that directly impact revenue reliability.",
+        features: ["Insurance verification", "Prior authorizations", "Superbills", "Claims coordination and issue resolution"],
+        clinicalImpact: "Recover 4–7% in lost revenue.",
         icon: "receipt_long",
-        color: "text-accent",
-        link: "/services/billing-and-rcm",
-        tags: ["Prior Auths", "Superbills"],
-        yield: "Recover 4-7% Lost Revenue"
+        link: "/services/billing-and-rcm"
     },
     {
-        title: "Practice Start-Up",
-        desc: "Turnkey operational setup for new California psychiatric practices. EHR implementation, policy development, and logistical support.",
-        descMarkup: (
-            <>
-                <strong>Turnkey setup</strong> for new practices—EHR, credentialing, policies, and telehealth infrastructure.{' '}
-                <span className="text-[#D2691E]">Launch in 30 days</span>.
-            </>
-        ),
+        title: "Practice Start-Up (California-Specific)",
+        subtitle: "Turnkey Launch",
+        desc: "Turnkey operational launch for new psychiatric practices. We build the operational foundation required for a compliant, efficient, California-ready practice. From EHR implementation to policy development, we ensure your launch is seamless.",
+        features: ["EHR setup and configuration", "Credentialing support", "Policy and SOP development", "Telepsychiatry infrastructure"],
+        clinicalImpact: "Launch $15k under budget.",
         icon: "rocket_launch",
-        color: "text-primary",
-        link: "/services/practice-start-up",
-        tags: ["Credentialing", "Telepsych Setup"],
-        yield: "Launch $15k Under Budget"
+        link: "/services/practice-start-up"
     },
     {
-        title: "HIPAA Compliance",
-        desc: "Secure data handling protocols and HIPAA compliance auditing designed specifically for California patient privacy requirements.",
-        descMarkup: (
-            <>
-                <strong>Secure infrastructure</strong> with audit-ready protocols designed for{' '}
-                <span className="text-[#D2691E]">California privacy compliance</span>.
-            </>
-        ),
+        title: "HIPAA & Privacy Compliance",
+        subtitle: "Audit-Ready Infrastructure",
+        desc: "Audit-ready infrastructure designed for California’s privacy landscape. We build and maintain secure, compliant systems that protect your practice, your license, and your patients. Our protocols exceed baseline HIPAA requirements.",
+        features: ["Privacy protocols", "HIPAA audits", "Secure data workflows", "Documentation standards"],
+        clinicalImpact: "Eliminate $50k in audit risk.",
         icon: "shield_moon",
-        color: "text-accent",
-        link: "/services/hipaa-compliance-support",
-        tags: ["Privacy Protected", "Audit Ready"],
-        yield: "Eliminate $50k Audit Risk"
+        link: "/services/hipaa-compliance-support"
     },
     {
-        title: "Medication Management",
-        desc: "Streamlined coordination between your practice and pharmacies. Handling refill requests and prior authorization documentation.",
-        descMarkup: (
-            <>
-                <strong>Streamlined pharmacy coordination</strong>—handling refills and prior auths{' '}
-                <span className="text-[#D2691E]">90% faster</span>.
-            </>
-        ),
+        title: "Medication Management Coordination",
+        subtitle: "Streamlined Pharmacy Ops",
+        desc: "Streamlined pharmacy workflows — 90% faster. Medication management is one of the highest-risk, highest-volume components of psychiatric care. We handle the logistics so you can focus on clinical decision-making.",
+        features: ["Refill coordination", "Pharmacy communication", "Prior authorization documentation", "Medication workflow optimization"],
+        clinicalImpact: "Recover 8+ billable hours/month.",
         icon: "medication",
-        color: "text-primary",
-        link: "/services/patient-intake-and-followup",
-        tags: ["Refill Logistics", "Pharmacy Liaison"],
-        yield: "Recover 8+ Billable Hrs/Mo"
+        link: "/services/patient-intake-and-followup"
     },
     {
         title: "EHR Optimization",
-        desc: "Expert configuration of SimplePractice, Kareo, and other leading EHR platforms to match your practice's unique clinical workflow.",
-        descMarkup: (
-            <>
-                <strong>Expert EHR configuration</strong> for SimplePractice, Kareo, and more—
-                <span className="text-[#D2691E]"> reduce clicks by 50%</span>.
-            </>
-        ),
+        subtitle: "System Configuration",
+        desc: "Expert configuration for SimplePractice, Kareo, and more. Your EHR should support your clinical flow — not slow it down. We configure your system to match the way you practice, ensuring efficiency, accuracy, and ease of use.",
+        features: ["Workflow automation", "Template optimization", "System support and troubleshooting"],
+        clinicalImpact: "Save $12k/year in clinician time.",
         icon: "computer",
-        color: "text-accent",
-        link: "/services/ehr-emr-management",
-        tags: ["Automation", "Workflow Support"],
-        yield: "Save $12k/yr in Clinician Time"
+        link: "/services/ehr-emr-management"
+    },
+    {
+        title: "Administrative Support",
+        subtitle: "Professional Precision",
+        desc: "Professional precision for scheduling, documentation, and correspondence. We manage the administrative load with the level of professionalism your patients expect and your practice requires. Every touchpoint is handled with discretion.",
+        features: ["Scheduling and calendar management", "Document management", "Patient correspondence", "Practice communication systems"],
+        clinicalImpact: "Achieve operational precision across the practice.",
+        icon: "calendar_month",
+        link: "/services/administrative-and-scheduling"
     }
 ];
 
-export default async function ServicesPage() {
-    // Fetch live services from Sanity
-    const sanityServicesData = await getServices();
-
-    // Transform Sanity services to match UI layout
-    const liveServices = sanityServicesData.map((service) => ({
-        title: service.name,
-        desc: service.description,
-        descMarkup: (
-            <>
-                {service.tagline && <strong>{service.tagline}</strong>} {service.tagline && "— "}
-                <span className="text-[#D2691E]">{service.description}</span>
-            </>
-        ),
-        icon: service.icon || "settings",
-        color: "text-primary",
-        link: `/services/${service.slug.current}`,
-        tags: service.tags || [],
-        yield: service.yield || "High ROI Analysis",
-        isPopular: false, // Default
-        isLive: true
-    }));
-
-    // Combine static and live (filter out static if live version exists by slug)
-    const allServices = [...liveServices];
-
-    // Fallback logic: if no live services are published yet, show the static ones
-    // Otherwise, we could merge them. For now, let's merge them but prefer live.
-    staticServiceBlueprints.forEach(staticService => {
-        const liveMatch = liveServices.find(live => live.link === staticService.link);
-        if (!liveMatch) {
-            allServices.push(staticService as any);
-        }
-    });
-
+export default function ServicesPage() {
     return (
         <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
             <Navbar />
             <Breadcrumbs
                 items={[
                     { label: "Home", href: "/" },
-                    { label: "Services" }
+                    { label: "Clinical Operations", href: "/services" }
                 ]}
             />
 
             <main className="flex-grow">
-                {/* 1. HERO SECTION */}
-                <section className="relative pt-4 md:pt-6 pb-10 overflow-hidden bg-[#FAF8F3]">
-                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-                        <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#B25A2A_1px,transparent_1px)] [background-size:40px_40px]" />
-                    </div>
+                {/* HERO */}
+                <section className="relative pt-16 pb-24 overflow-hidden">
+                    {/* Ambient Background */}
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-healthcare-cyan/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
-                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
-                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="flex flex-col lg:flex-row gap-16 items-start">
 
-                            {/* Left Column: The Proposition (60%) */}
-                            <div className="lg:w-[60%]">
-
-                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-2">
-                                    <span className="material-symbols-outlined text-primary text-[16px]">verified</span>
-                                    California Psychiatric Support
-                                </div>
-
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[0.95] tracking-tight">
-                                    Specialized <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                        Practice Support.
-                                    </span>
+                            {/* Text Content */}
+                            <div className="lg:w-3/5">
+                                <span className="text-healthcare-cyan font-bold tracking-widest uppercase text-sm mb-4 block">Clinical Operations for California Psychiatry</span>
+                                <h1 className="font-serif text-5xl md:text-6xl text-trust-navy mb-8 leading-[1.05]">
+                                    Precision Infrastructure for <br />
+                                    <span className="text-terracotta italic">High-Complexity Practices.</span>
                                 </h1>
-
-                                <p className="text-xl md:text-2xl text-slate-500 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    Functional administrative infrastructure and clinical coordination built exclusively for California psychiatric practices.
+                                <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mb-8 border-l-4 border-healthcare-cyan pl-6">
+                                    Virtual Minds provides the operational backbone for psychiatrists practicing at the highest clinical and academic levels.
+                                </p>
+                                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-12">
+                                    Our systems are engineered for the realities of California psychiatry — high acuity, high liability, high expectations, and zero tolerance for operational drift.
                                 </p>
 
-                                {/* Institutional Social Proof */}
-                                <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
-                                    <div className="flex -space-x-4">
-                                        {[1, 2, 3, 4].map((i) => (
-                                            <div key={i} className="w-12 h-12 rounded-full bg-white border-[3px] border-white flex items-center justify-center overflow-hidden shadow-lg relative z-[10]">
-                                                <Image
-                                                    src={`https://i.pravatar.cc/150?u=${i + 85}`}
-                                                    alt="Board-Certified Specialist"
-                                                    width={48}
-                                                    height={48}
-                                                    className="grayscale hover:grayscale-0 transition-all duration-500"
-                                                />
-                                            </div>
-                                        ))}
+                                <div className="grid sm:grid-cols-2 gap-8 mb-12">
+                                    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
+                                        <h3 className="font-serif text-lg text-trust-navy mb-2">The Standard VA</h3>
+                                        <ul className="text-sm text-slate-500 space-y-2">
+                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Generic "Admin" tasks</li>
+                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Reactive communication</li>
+                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Misses clinical nuances</li>
+                                        </ul>
                                     </div>
-                                    <div className="text-sm text-slate-500 font-medium leading-tight text-center sm:text-left">
-                                        <p><strong className="text-trust-navy">The Authority in California Psychiatric Ops</strong></p>
-                                        <p>Trusted by Solo Practices and Multi-Provider Groups.</p>
+                                    <div className="bg-trust-navy p-6 rounded-2xl border border-trust-navy shadow-xl text-white relative overflow-hidden">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-healthcare-cyan/10 rounded-full blur-2xl"></div>
+                                        <h3 className="font-serif text-lg text-white mb-2">Virtual Minds Standard</h3>
+                                        <ul className="text-sm text-slate-300 space-y-2 relative z-10">
+                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> Clinical coordination</li>
+                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> HIPAA-hardened workflows</li>
+                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> Administrative intelligence</li>
+                                        </ul>
                                     </div>
-                                </div>
-
-                                {/* FIRM-WIDE IMPACT BAR */}
-                                <div className="flex flex-wrap items-center gap-x-12 gap-y-6 py-6 border-y border-slate-200/60 mb-8">
-                                    <div className="space-y-1">
-                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Firm-Wide Impact</p>
-                                        <p className="text-lg font-bold text-trust-navy">Recover 20+ Hours/wk</p>
-                                    </div>
-                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
-                                    <div className="space-y-1">
-                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Regional Focus</p>
-                                        <p className="text-lg font-bold text-trust-navy">California Specialized</p>
-                                    </div>
-                                    <div className="hidden md:block h-10 w-px bg-slate-200" />
-                                    <div className="space-y-1">
-                                        <p className="text-[10px] font-black text-slate-400 uppercase tracking-[0.2em] leading-none">Status</p>
-                                        <p className="text-lg font-bold text-trust-navy italic">HIPAA Infrastructure</p>
-                                    </div>
-                                </div>
-
-                                <div className="flex flex-col sm:flex-row gap-5">
-                                    <Link
-                                        href="/book-consultation"
-                                        className="px-10 py-5 bg-primary hover:bg-primary-hover text-white font-bold text-lg rounded-2xl shadow-xl shadow-primary/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2 group"
-                                    >
-                                        <span className="material-symbols-outlined group-hover:rotate-12 transition-transform">schedule</span>
-                                        See My Recovery Plan
-                                    </Link>
-                                    <Link
-                                        href="/pricing"
-                                        className="px-10 py-5 bg-white border border-slate-200 text-trust-navy font-bold text-lg rounded-2xl hover:bg-slate-50 transition-all flex items-center justify-center gap-2 shadow-sm"
-                                    >
-                                        View All Solutions
-                                        <span className="material-symbols-outlined text-primary">arrow_forward</span>
-                                    </Link>
                                 </div>
                             </div>
 
-                            {/* Right Column: Visual (40%) */}
-                            <div className="lg:w-[40%] group w-full">
-                                <ServiceArchitectureGraphic />
+                            {/* Hero Image / Visual */}
+                            <div className="lg:w-2/5 relative pt-12">
+                                <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative">
+                                    <Image
+                                        src="/images/psychiatrist-startup-planning.png"
+                                        alt="Strategic Psychiatric Planning"
+                                        fill
+                                        className="object-cover"
+                                    />
+                                    <div className="absolute inset-0 bg-trust-navy/10"></div>
+                                </div>
                             </div>
-
                         </div>
                     </div>
                 </section>
 
-                {/* 2. THE SERVICES GRID - PREMIUM REDESIGN */}
-                <section className="py-32 bg-white relative">
-                    <div className="max-w-7xl mx-auto px-6">
-                        <div className="text-center mb-20">
-                            <div className="inline-flex items-center gap-2 mb-6">
-                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Service Solutions</span>
-                                <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
-                            </div>
-                            <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-trust-navy mt-4 mb-6 tracking-tight leading-[1.1]">
-                                <span className="relative inline-block">
-                                    Professional Support
-                                    <span className="absolute bottom-0 left-0 w-full h-[3px] bg-[#D2691E]/20"></span>
-                                </span>
-                                {' '}for <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">
-                                    Every Practice Need.
-                                </span>
-                            </h2>
-                            <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-                                <strong className="text-trust-navy">Comprehensive administrative support</strong> designed specifically for the unique needs of{' '}
-                                <span className="relative inline-block text-[#D2691E] font-bold">
-                                    California psychiatric practices
-                                    <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#D2691E]/30"></span>
-                                </span>.
+                {/* SERVICES GRID */}
+                <section className="py-24 bg-[#FAF8F3] relative">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center max-w-3xl mx-auto mb-20">
+                            <h2 className="font-serif text-4xl text-trust-navy mb-6">Operational Capabilities</h2>
+                            <p className="text-lg text-slate-500">
+                                We support solo clinicians and multi-provider groups with structured operational excellence.
                             </p>
                         </div>
 
-                        <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
-                            {allServices.map((service, idx) => {
-                                // Featured cards (navy background): Virtual Assistants OR if marked as popular
-                                const isFeatured = (service as any).isPopular || idx === 0;
-
-                                if (isFeatured) {
-                                    return (
-                                        <div key={idx} className="group relative p-10 bg-trust-navy rounded-[3rem] text-white shadow-2xl shadow-trust-navy/30 hover:-translate-y-2 transition-all duration-500 overflow-hidden flex flex-col border border-white/10">
-                                            {/* Background Glow */}
-                                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#D2691E]/20 rounded-full blur-[100px] -mr-20 -mt-20 pointer-events-none group-hover:bg-[#D2691E]/30 transition-colors" />
-
-                                            <div className="relative z-10 mb-8">
-                                                {isFeatured && (
-                                                    <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#D2691E] text-white text-[10px] font-bold uppercase tracking-widest mb-6">
-                                                        <span className="material-symbols-outlined text-sm">star</span>
-                                                        {(service as any).isLive ? "Live Strategy" : "Most Popular"}
-                                                    </div>
-                                                )}
-
-                                                <span className={`material-symbols-outlined text-5xl text-[#D2691E] block mb-4`}>{service.icon}</span>
-                                                <h3 className="text-3xl font-serif font-bold !text-white mb-4">{service.title}</h3>
-                                                <p className="text-slate-300 font-medium leading-relaxed text-base">
-                                                    {service.descMarkup}
-                                                </p>
-                                            </div>
-
-                                            <div className="mt-auto relative z-10">
-                                                <div className="flex flex-wrap gap-2 mb-8">
-                                                    {service.tags.map((tag, tIdx) => (
-                                                        <span key={tIdx} className="text-[9px] font-black uppercase tracking-widest px-3 py-1.5 bg-white/10 border border-white/20 rounded-full text-slate-200">
-                                                            {tag}
-                                                        </span>
-                                                    ))}
-                                                </div>
-                                                <div className="pt-6 border-t border-white/10 mb-6">
-                                                    <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 block mb-2">Clinical Impact</span>
-                                                    <span className="text-xl font-bold text-[#D2691E]">{service.yield}</span>
-                                                </div>
-                                                <Link href={service.link} className="w-full py-4 bg-[#D2691E] hover:bg-[#B8860B] text-white rounded-xl font-bold transition-all shadow-lg shadow-[#D2691E]/20 flex items-center justify-center gap-2 group/btn">
-                                                    View Service Details <span className="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-                                                </Link>
-                                            </div>
+                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                            {serviceBlueprints.map((service, idx) => (
+                                <div
+                                    key={idx}
+                                    className={`group bg-white rounded-[2.5rem] p-10 transition-all duration-300 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 flex flex-col relative overflow-hidden ${service.highlight ? "ring-2 ring-primary/20" : ""
+                                        }`}
+                                >
+                                    {/* Highlight Badge */}
+                                    {service.highlight && (
+                                        <div className="absolute top-6 right-6 bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border border-primary/10">
+                                            Signature Audit
                                         </div>
-                                    );
-                                }
+                                    )}
 
-                                // Standard cards (cream background)
-                                return (
-                                    <div key={idx} className="group p-10 bg-[#FAF8F3] rounded-[3rem] border border-slate-100 hover:border-[#D2691E]/30 transition-all duration-500 hover:shadow-2xl hover:shadow-[#D2691E]/5 flex flex-col hover:-translate-y-2">
-                                        <div className="mb-8">
-                                            <span className={`material-symbols-outlined text-5xl text-[#D2691E] block mb-6 group-hover:scale-110 transition-transform origin-left`}>{service.icon}</span>
-                                            <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">{service.title}</h3>
-                                            <p className="text-slate-600 font-medium leading-relaxed text-base">
-                                                {service.descMarkup}
-                                            </p>
-                                        </div>
+                                    {/* Hover Top Border */}
+                                    <div className={`absolute top-0 inset-x-0 h-1.5 opacity-0 group-hover:opacity-100 transition-opacity ${service.highlight ? "bg-primary" : "bg-trust-navy"
+                                        }`} />
 
-                                        <div className="mt-auto">
-                                            <div className="flex flex-wrap gap-2 mb-8">
-                                                {service.tags.map((tag, tIdx) => (
-                                                    <span key={tIdx} className="text-[9px] font-black uppercase tracking-widest px-3 py-1.5 bg-white border border-slate-200 rounded-full text-slate-500">
-                                                        {tag}
-                                                    </span>
-                                                ))}
-                                            </div>
-                                            <div className="pt-6 border-t border-slate-200 mb-6">
-                                                <span className="text-[9px] font-black uppercase tracking-widest text-slate-400 block mb-2">Clinical Impact</span>
-                                                <span className="text-lg font-bold text-trust-navy">{service.yield}</span>
-                                            </div>
-                                            <Link href={service.link} className="w-full py-4 bg-white border border-slate-200 text-trust-navy font-bold rounded-xl hover:border-[#D2691E] hover:text-[#D2691E] transition-all shadow-sm flex items-center justify-center gap-2 group/btn">
-                                                Learn More <span className="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-                                            </Link>
-                                        </div>
+                                    {/* Icon */}
+                                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 text-3xl transition-transform duration-300 group-hover:scale-110 ${service.highlight ? "bg-primary/5 text-primary" : "bg-trust-navy/5 text-trust-navy"
+                                        }`}>
+                                        <span className="material-symbols-outlined">{service.icon}</span>
                                     </div>
-                                );
-                            })}
+
+                                    <div className="mb-2">
+                                        <p className="text-xs font-bold uppercase tracking-widest mb-2 text-slate-400">
+                                            {service.subtitle}
+                                        </p>
+                                        <h3 className="font-serif text-3xl font-bold mb-4 text-trust-navy">
+                                            {service.title}
+                                        </h3>
+                                        <p className="text-base leading-relaxed mb-8 text-slate-600 border-l-4 border-primary/20 pl-4 py-1">
+                                            {service.desc}
+                                        </p>
+                                    </div>
+
+                                    <div className="mt-auto">
+                                        <div className="pt-6 border-t border-slate-50 mb-6">
+                                            <span className="text-[10px] font-black uppercase tracking-widest block mb-2 text-slate-400">Clinical Impact</span>
+                                            <span className={`text-lg font-bold ${service.highlight ? "text-primary" : "text-trust-navy"
+                                                }`}>
+                                                {service.clinicalImpact}
+                                            </span>
+                                        </div>
+
+                                        {/* Service Chips */}
+                                        <div className="flex flex-wrap gap-2 mb-8">
+                                            {service.features.map((feature, fIdx) => (
+                                                <span key={fIdx} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100 group-hover:border-slate-200 transition-colors">
+                                                    {feature}
+                                                </span>
+                                            ))}
+                                        </div>
+
+                                        <Link
+                                            href={service.link}
+                                            className={`inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider border-b-2 pb-1 transition-all ${service.highlight
+                                                ? "text-primary border-primary/20 hover:border-primary hover:text-primary"
+                                                : "text-trust-navy border-slate-200 hover:border-terracotta hover:text-terracotta"
+                                                }`}
+                                        >
+                                            Explore Capabilities <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                                        </Link>
+                                    </div>
+                                </div>
+                            ))}
                         </div>
                     </div>
                 </section>
 
-                {/* 3. FINAL CTA */}
-                <section className="bg-trust-navy py-32 relative overflow-hidden">
-                    <div className="absolute inset-0 opacity-10 pointer-events-none">
-                        <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
-                    </div>
-
-                    <div className="relative z-10 max-w-4xl mx-auto px-6 text-center text-white">
-                        <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 italic leading-tight !text-white">
-                            Recover Your <br /> Clinical Focus.
+                {/* TARGET AUDIENCE / CREDIBILITY */}
+                <section className="py-24 bg-trust-navy text-white relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[url('/images/noise.png')] opacity-5 mix-blend-overlay"></div>
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10 text-center">
+                        <h2 className="font-serif text-3xl md:text-5xl mb-8">
+                            California’s Premier <br />
+                            <span className="text-healthcare-cyan">Psychiatric Operations Firm.</span>
                         </h2>
-                        <p className="text-xl text-slate-400 mb-12 max-w-2xl mx-auto leading-relaxed font-medium">
-                            Handle medication management, prior authorizations, and administrative workflows with specialized support.
+                        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-12">
+                            We deliver HIPAA‑compliant automation, billing coordination, and clinical‑grade administrative support for mental‑health providers statewide.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-6 justify-center">
-                            <Link
-                                href="/book-consultation"
-                                className="px-12 py-5 bg-primary text-white font-black text-xl rounded-2xl shadow-2xl shadow-primary/20 hover:bg-primary-hover transition-all hover:scale-105"
-                            >
-                                See My Recovery Plan
+
+                        <div className="flex justify-center gap-4 flex-wrap">
+                            <span className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-sm font-medium">Solo Clinicians</span>
+                            <span className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-sm font-medium">Multi-Provider Groups</span>
+                            <span className="px-6 py-3 bg-white/5 border border-white/10 rounded-full text-sm font-medium">Academic Practices</span>
+                        </div>
+                    </div>
+                </section>
+
+                {/* CTA */}
+                <section className="py-24 bg-[#FAF8F3]">
+                    <div className="max-w-4xl mx-auto px-6">
+                        <div className="bg-white rounded-[3rem] p-12 lg:p-16 border border-slate-100 shadow-xl text-center">
+                            <h2 className="font-serif text-4xl text-trust-navy mb-6">Ready to Operationalize Your Practice?</h2>
+                            <p className="text-slate-600 text-lg mb-10 max-w-2xl mx-auto">
+                                If you are a psychiatrist who views your practice as a high-performance vehicle, we are your pit crew.
+                            </p>
+                            <Link href="/book-consultation" className="bg-terracotta hover:bg-[#964A22] text-white px-10 py-5 rounded-xl font-bold text-lg shadow-xl shadow-terracotta/20 transition-all inline-block hover:scale-[1.02]">
+                                Request an Executive Consultation
                             </Link>
-                            <Link
-                                href="/contact"
-                                className="px-12 py-5 bg-transparent border border-white/20 text-white font-bold text-xl rounded-2xl hover:bg-white/5 transition-all"
-                            >
-                                Contact Support
-                            </Link>
+                            <p className="text-xs text-slate-400 mt-6 uppercase tracking-widest font-bold">Limited Engagement Availability</p>
                         </div>
                     </div>
                 </section>

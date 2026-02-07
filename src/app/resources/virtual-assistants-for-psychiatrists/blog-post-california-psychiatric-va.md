@@ -4,7 +4,7 @@ Let's cut through the noise and get to the data.
 
 Most California psychiatrists are drowning in administrative work. The numbers don't lie: 15+ hours per week spent on tasks that generate zero revenue.
 
-But here's what the testing shows - practices using specialized virtual assistants see a 40% reduction in admin time while increasing patient capacity by 25%.
+But here's what the testing shows - practices using specialized virtual assistants see a significant reduction in admin time while increasing patient capacity.
 
 ## The Mathematical Reality
 

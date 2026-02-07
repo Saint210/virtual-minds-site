@@ -116,7 +116,7 @@ export const locations: LocationData[] = [
         slug: "santa-monica",
         name: "Santa Monica",
         metaTitle: "Santa Monica Psychiatric Virtual Assistant | Silicon Beach Telehealth",
-        metaDesc: "Santa Monica Psychiatric Virtual Assistants for competitive private practices. Reduce overhead by 40% with remote intake coordinators specialized in diverse patient demographics.",
+        metaDesc: "Santa Monica Psychiatric Virtual Assistants for competitive private practices. Significantly reduce administrative overhead with remote intake coordinators specialized in diverse patient demographics.",
         rentAvg: "$6.00/sqft",
         rentSavings: "$78,000/yr",
         hospitals: "UCLA Santa Monica and Saint John's Health Center",

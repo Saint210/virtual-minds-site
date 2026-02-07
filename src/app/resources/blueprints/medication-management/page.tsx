@@ -5,7 +5,7 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata = {
     title: "Medication Management Infrastructure for Psychiatrists | 2026 Executive Blueprint",
-    description: "Elite operational blueprint for automating refills and pharmacy liaison workflows in California psychiatric practices. Reclaim 10+ hours weekly.",
+    description: "Elite operational blueprint for automating refills and pharmacy liaison workflows in California psychiatric practices. Reclaim significant clinical hours weekly.",
     keywords: ["psychiatric medication management", "refill automation", "pharmacy liaison", "psychiatry operations", "EMR refill workflow"],
 };
 
@@ -40,14 +40,13 @@ export default function MedManagementBlueprint() {
                                 </div>
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
-                                    The Refill <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
                                         Infrastructure.
                                     </span>
                                 </h1>
 
                                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-xl">
-                                    Automating the "Refill Vortex" to reclaim 10+ clinical hours weekly while hardening patient safety protocols in California practices.
+                                    Automating the refill infrastructure to reclaim significant clinical hours weekly while hardening patient safety protocols in California practices.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
@@ -64,7 +63,7 @@ export default function MedManagementBlueprint() {
                                     </div>
                                     <div className="flex items-center gap-2 bg-white px-3 py-1.5 rounded-lg shadow-sm border border-slate-100">
                                         <span className="material-symbols-outlined text-blue-500 text-lg">analytics</span>
-                                        <span className="text-[11px] font-bold text-trust-navy uppercase tracking-wider">ROI: 12.5 hrs/week</span>
+                                        <span className="text-[11px] font-bold text-trust-navy uppercase tracking-wider">High Administrative ROI</span>
                                     </div>
                                 </div>
                             </div>
@@ -97,14 +96,14 @@ export default function MedManagementBlueprint() {
 
                                 {/* 1. The Operational Friction */}
                                 <div className="space-y-6">
-                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The Refill Vortex Problem</h2>
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The Refill Infrastructure Challenge</h2>
                                     <div className="prose prose-slate prose-lg max-w-none">
                                         <p>
                                             For the high-performance psychiatrist, medication management is often the most significant administrative drain. Pharmacy phone trees, prior authorization denials, and inconsistent patient requests create a fragmented workflow that degrades clinical focus.
                                         </p>
                                         <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
                                             <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
-                                                "If you are handling pharmacy liaising yourself, you aren't just a doctor—you're a high-priced secretary. This administration leakage costs the average solo practitioner over $40,000 in lost billable time annually."
+                                                "If you are handling pharmacy liaising yourself, you aren't just a doctor—you're an administrative coordinator. This administration leakage costs practitioners substantial billable time annually."
                                             </p>
                                             <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Clinical Director, Virtual Minds</cite>
                                         </blockquote>
@@ -168,19 +167,19 @@ export default function MedManagementBlueprint() {
                                             <tbody className="divide-y divide-slate-100">
                                                 <tr className="group hover:bg-slate-50 transition-colors">
                                                     <td className="p-8 text-sm font-bold text-trust-navy">Weekly Admin Spend</td>
-                                                    <td className="p-8 text-sm text-slate-500">12 - 15 Hours</td>
+                                                    <td className="p-8 text-sm text-slate-500">Unmanaged</td>
                                                     <td className="p-8">
                                                         <span className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-black border border-green-100">
-                                                            &lt; 2 Hours
+                                                            Fully Managed
                                                         </span>
                                                     </td>
                                                 </tr>
                                                 <tr className="group hover:bg-slate-50 transition-colors">
                                                     <td className="p-8 text-sm font-bold text-trust-navy">Refill TAT (Turnaround)</td>
-                                                    <td className="p-8 text-sm text-slate-500">24 - 72 Hours</td>
+                                                    <td className="p-8 text-sm text-slate-500">Variable</td>
                                                     <td className="p-8">
                                                         <span className="inline-flex items-center gap-2 bg-green-50 text-green-700 px-3 py-1 rounded-full text-xs font-black border border-green-100">
-                                                            &lt; 4 Hours
+                                                            Accelerated
                                                         </span>
                                                     </td>
                                                 </tr>

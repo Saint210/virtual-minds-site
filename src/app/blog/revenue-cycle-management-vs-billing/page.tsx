@@ -127,7 +127,7 @@ export default function RCMvsBilling() {
                             </h1>
 
                             <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-12 max-w-2xl">
-                                Why simple billing is a tactical tool, but Revenue Cycle Management (RCM) is the strategic engine of high-yield psychiatric practices.
+                                Why simple billing is a tactical tool, but Revenue Cycle Management (RCM) is the strategic engine of high-performance psychiatric practices.
                             </p>
 
                             {/* PRACTICE ECONOMICS BRIEFING BAR */}
@@ -173,7 +173,7 @@ export default function RCMvsBilling() {
                                                 Many psychiatrists use the terms &quot;billing&quot; and &quot;Revenue Cycle Management&quot; (RCM) interchangeably. However, treating them as synonyms is a costly mistake that leads to revenue leakage and administrative burnout.
                                             </p>
                                             <p className="text-slate-600 leading-relaxed mb-0">
-                                                <strong>Billing</strong> is a clerical task—filling a form and hitting send. <strong>RCM</strong> is a strategic financial process that begins the moment a patient calls and ends when the final dollar is in your bank account, ensuring every clinical hour yields its maximum economic value.
+                                                <strong>Billing</strong> is a clerical task—filling a form and hitting send. <strong>RCM</strong> is a strategic financial process that begins the moment a patient calls and ends when the final dollar is in your bank account, ensuring every clinical hour is accurately captured and processed.
                                             </p>
                                         </div>
 
