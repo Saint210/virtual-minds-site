@@ -22,6 +22,36 @@
             "Billing Company Liaison",
             "Generate Superbills",
             "Process Credit Card Transactions"
+        ],
+        "categories": [
+            {
+                "name": "Practice Guides",
+                "active": true
+            },
+            {
+                "name": "Documentation",
+                "active": false
+            },
+            {
+                "name": "Compliance",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "2026 Intake Coordination Playbook",
+                "category": "Practice Guides",
+                "readTime": "5 min read",
+                "description": "Standardize your patient intake flow to reduce administrative burden and improve capture rates.",
+                "image": "https://images.unsplash.com/photo-1606857521015-7f9fcf423740?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            },
+            {
+                "title": "HIPAA-Compliant Communication Checklist",
+                "category": "Compliance",
+                "readTime": "3 min read",
+                "description": "Ensure every patient interaction meets strict California privacy standards with this audit checklist.",
+                "image": "https://images.unsplash.com/photo-1576091160550-2187d80aeff2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     },
     {
@@ -47,6 +77,25 @@
             "Billing Company Liaison",
             "Generate Superbills",
             "Contact Insurance Companies On Request"
+        ],
+        "categories": [
+            {
+                "name": "Reproductive Psych",
+                "active": true
+            },
+            {
+                "name": "Patient Experience",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Perinatal Intake Protocols",
+                "category": "Reproductive Psych",
+                "readTime": "6 min read",
+                "description": "Specialized intake workflows for handling high-sensitivity perinatal and postpartum referrals.",
+                "image": "https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     },
     {
@@ -72,6 +121,25 @@
             "Billing Company Liaison",
             "Process Credit Card Transactions",
             "Billing and Payment Management"
+        ],
+        "categories": [
+            {
+                "name": "Family Coordination",
+                "active": true
+            },
+            {
+                "name": "Forms",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Guardian Consent & Communication S.O.P.",
+                "category": "Family Coordination",
+                "readTime": "4 min read",
+                "description": "Best practices for managing communication between clinicians, minor patients, and guardians.",
+                "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     },
     {
@@ -97,6 +165,25 @@
             "Generate Superbills",
             "Process Credit Card Transactions",
             "Billing Company Liaison"
+        ],
+        "categories": [
+            {
+                "name": "Functional Labs",
+                "active": true
+            },
+            {
+                "name": "Supplements",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Functional Lab Panel Logistics",
+                "category": "Functional Labs",
+                "readTime": "5 min read",
+                "description": "Streamlining the administrative side of functional lab ordering, kits, and results tracking.",
+                "image": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     },
     {
@@ -147,6 +234,25 @@
             "Billing and Payment Management",
             "Process Credit Card Transactions",
             "Generate Superbills"
+        ],
+        "categories": [
+            {
+                "name": "Start-Up",
+                "active": true
+            },
+            {
+                "name": "Legal/Formation",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Private Practice Launch Timeline",
+                "category": "Start-Up",
+                "readTime": "8 min read",
+                "description": "Week-by-week operational checklist for launching a compliant California psychiatric practice.",
+                "image": "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
         ]
     }
 ]
