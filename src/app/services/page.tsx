@@ -98,58 +98,76 @@ export default function ServicesPage() {
 
             <main className="flex-grow">
                 {/* HERO */}
-                <section className="relative pt-16 pb-24 overflow-hidden">
+                {/* HERO */}
+                <section className="relative pt-6 pb-12 md:pt-12 md:pb-20 overflow-hidden bg-[#FAF8F3]">
                     {/* Ambient Background */}
-                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-healthcare-cyan/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[100px] translate-y-1/2 -translate-x-1/2 pointer-events-none" />
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-                        <div className="flex flex-col lg:flex-row gap-16 items-start">
+                        <div className="flex flex-col lg:flex-row gap-8 lg:gap-16 items-center">
 
                             {/* Text Content */}
-                            <div className="lg:w-3/5">
-                                <span className="text-healthcare-cyan font-bold tracking-widest uppercase text-sm mb-4 block">Clinical Operations for California Psychiatry</span>
-                                <h1 className="font-serif text-5xl md:text-6xl text-trust-navy mb-8 leading-[1.05]">
+                            <div className="lg:w-3/5 pt-4">
+                                <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block border-l-2 border-primary pl-3">Clinical Operations for California Psychiatry</span>
+                                <h1 className="font-serif text-4xl md:text-6xl text-trust-navy mb-6 leading-[1.1]">
                                     Precision Infrastructure for <br />
-                                    <span className="text-terracotta italic">High-Complexity Practices.</span>
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-secondary italic">High-Complexity Practices.</span>
                                 </h1>
-                                <p className="text-xl text-slate-600 leading-relaxed max-w-2xl mb-8 border-l-4 border-healthcare-cyan pl-6">
+                                <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mb-6 font-light">
                                     Virtual Minds provides the operational backbone for psychiatrists practicing at the highest clinical and academic levels.
                                 </p>
-                                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-12">
-                                    Our systems are engineered for the realities of California psychiatry — high acuity, high liability, high expectations, and zero tolerance for operational drift.
+                                <p className="text-base md:text-lg text-slate-500 leading-relaxed max-w-2xl mb-8">
+                                    Our systems are engineered for the realities of California psychiatry—high acuity, high liability, high expectations, and zero tolerance for operational drift.
                                 </p>
 
-                                <div className="grid sm:grid-cols-2 gap-8 mb-12">
-                                    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm">
-                                        <h3 className="font-serif text-lg text-trust-navy mb-2">The Standard VA</h3>
-                                        <ul className="text-sm text-slate-500 space-y-2">
-                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Generic "Admin" tasks</li>
-                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Reactive communication</li>
-                                            <li className="flex items-center gap-2"><span className="text-red-400">×</span> Misses clinical nuances</li>
+                                <div className="grid sm:grid-cols-2 gap-6 mb-12">
+                                    <div className="bg-white p-8 rounded-2xl border border-slate-100 shadow-sm relative group overflow-hidden">
+                                        <div className="absolute top-0 left-0 w-1 h-full bg-slate-200 group-hover:bg-red-400 transition-colors" />
+                                        <h3 className="font-serif text-xl text-trust-navy mb-4">The Standard VA</h3>
+                                        <ul className="text-sm text-slate-500 space-y-3">
+                                            <li className="flex items-center gap-3"><span className="text-red-400 font-bold">×</span> Generic "Admin" tasks</li>
+                                            <li className="flex items-center gap-3"><span className="text-red-400 font-bold">×</span> Reactive communication</li>
+                                            <li className="flex items-center gap-3"><span className="text-red-400 font-bold">×</span> Misses clinical nuances</li>
                                         </ul>
                                     </div>
-                                    <div className="bg-trust-navy p-6 rounded-2xl border border-trust-navy shadow-xl text-white relative overflow-hidden">
-                                        <div className="absolute top-0 right-0 w-32 h-32 bg-healthcare-cyan/10 rounded-full blur-2xl"></div>
-                                        <h3 className="font-serif text-lg text-white mb-2">Virtual Minds Standard</h3>
-                                        <ul className="text-sm text-slate-300 space-y-2 relative z-10">
-                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> Clinical coordination</li>
-                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> HIPAA-hardened workflows</li>
-                                            <li className="flex items-center gap-2"><span className="text-healthcare-cyan">✓</span> Administrative intelligence</li>
+                                    <div className="bg-trust-navy p-8 rounded-2xl border border-trust-navy shadow-2xl relative overflow-hidden group">
+                                        <div className="absolute inset-0 bg-gradient-to-br from-primary/20 via-transparent to-transparent opacity-30" />
+                                        <div className="absolute top-0 left-0 w-1 h-full bg-primary" />
+
+                                        <h3 className="font-serif text-xl text-white mb-4 relative z-10">Virtual Minds Standard</h3>
+                                        <ul className="text-sm text-white space-y-3 relative z-10 font-medium">
+                                            <li className="flex items-center gap-3"><span className="text-primary">✓</span> Clinical coordination</li>
+                                            <li className="flex items-center gap-3"><span className="text-primary">✓</span> HIPAA-hardened workflows</li>
+                                            <li className="flex items-center gap-3"><span className="text-primary">✓</span> Administrative intelligence</li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
 
                             {/* Hero Image / Visual */}
-                            <div className="lg:w-2/5 relative pt-12">
-                                <div className="aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl relative">
+                            <div className="lg:w-2/5 relative">
+                                <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/10 group">
                                     <Image
                                         src="/images/psychiatrist-startup-planning.png"
                                         alt="Strategic Psychiatric Planning"
                                         fill
-                                        className="object-cover"
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
                                     />
-                                    <div className="absolute inset-0 bg-trust-navy/10"></div>
+                                    <div className="absolute inset-0 bg-trust-navy/20 mix-blend-multiply transition-opacity group-hover:opacity-0" />
+
+                                    {/* Floating Glass Badge */}
+                                    <div className="absolute bottom-10 left-10 right-10 bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-2xl">
+                                        <div className="flex items-center gap-4">
+                                            <div className="bg-accent/20 p-3 rounded-xl">
+                                                <span className="material-symbols-outlined text-accent">verified</span>
+                                            </div>
+                                            <div>
+                                                <p className="text-xs text-white/60 uppercase tracking-widest">System Status</p>
+                                                <p className="text-white font-serif text-lg">Operational Excellence</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -157,11 +175,12 @@ export default function ServicesPage() {
                 </section>
 
                 {/* SERVICES GRID */}
-                <section className="py-24 bg-[#FAF8F3] relative">
+                <section className="py-32 bg-slate-50 relative">
                     <div className="max-w-[1400px] mx-auto px-6">
-                        <div className="text-center max-w-3xl mx-auto mb-20">
-                            <h2 className="font-serif text-4xl text-trust-navy mb-6">Operational Capabilities</h2>
-                            <p className="text-lg text-slate-500">
+                        <div className="text-center max-w-3xl mx-auto mb-24">
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs mb-4 block">Our Expertise</span>
+                            <h2 className="font-serif text-5xl text-trust-navy mb-6">Operational Capabilities</h2>
+                            <p className="text-xl text-slate-600 font-light leading-relaxed">
                                 We support solo clinicians and multi-provider groups with structured operational excellence.
                             </p>
                         </div>
@@ -170,51 +189,62 @@ export default function ServicesPage() {
                             {serviceBlueprints.map((service, idx) => (
                                 <div
                                     key={idx}
-                                    className={`group bg-white rounded-[2.5rem] p-10 transition-all duration-300 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-2 flex flex-col relative overflow-hidden ${service.highlight ? "ring-2 ring-primary/20" : ""
+                                    className={`group bg-white rounded-[2rem] p-8 transition-all duration-300 border flex flex-col relative overflow-hidden hover:-translate-y-1 ${service.highlight
+                                        ? "border-primary/20 shadow-lg shadow-primary/5 ring-1 ring-primary/10"
+                                        : "border-slate-100 shadow-sm hover:shadow-xl hover:border-slate-200"
                                         }`}
                                 >
                                     {/* Highlight Badge */}
                                     {service.highlight && (
-                                        <div className="absolute top-6 right-6 bg-primary/10 text-primary px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-widest border border-primary/10">
+                                        <div className="absolute top-0 right-0 bg-primary text-white px-3 py-1 rounded-bl-xl text-[10px] font-bold uppercase tracking-widest shadow-sm z-20">
                                             Signature Audit
                                         </div>
                                     )}
 
                                     {/* Hover Top Border */}
-                                    <div className={`absolute top-0 inset-x-0 h-1.5 opacity-0 group-hover:opacity-100 transition-opacity ${service.highlight ? "bg-primary" : "bg-trust-navy"
-                                        }`} />
+                                    <div className="absolute top-0 inset-x-0 h-1 opacity-0 group-hover:opacity-100 transition-opacity bg-primary" />
 
-                                    {/* Icon */}
-                                    <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-8 text-3xl transition-transform duration-300 group-hover:scale-110 ${service.highlight ? "bg-primary/5 text-primary" : "bg-trust-navy/5 text-trust-navy"
-                                        }`}>
-                                        <span className="material-symbols-outlined">{service.icon}</span>
+                                    {/* Header: Icon + Title */}
+                                    <div className="flex items-start gap-4 mb-6">
+                                        <div className="w-12 h-12 shrink-0 rounded-xl flex items-center justify-center text-2xl transition-transform duration-300 group-hover:scale-105 bg-primary/5 text-primary">
+                                            <span className="material-symbols-outlined">{service.icon}</span>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] font-bold uppercase tracking-widest mb-1 text-slate-400">
+                                                {service.subtitle}
+                                            </p>
+                                            <h3 className="font-serif text-2xl font-bold text-primary leading-tight">
+                                                {service.title}
+                                            </h3>
+                                        </div>
                                     </div>
 
-                                    <div className="mb-2">
-                                        <p className="text-xs font-bold uppercase tracking-widest mb-2 text-slate-400">
-                                            {service.subtitle}
-                                        </p>
-                                        <h3 className="font-serif text-3xl font-bold mb-4 text-trust-navy">
-                                            {service.title}
-                                        </h3>
-                                        <p className="text-base leading-relaxed mb-8 text-slate-600 border-l-4 border-primary/20 pl-4 py-1">
+                                    {/* Description */}
+                                    <div className="mb-6 flex-grow">
+                                        <p className="text-sm leading-relaxed text-slate-600">
                                             {service.desc}
                                         </p>
                                     </div>
 
-                                    <div className="mt-auto">
-                                        <div className="pt-6 border-t border-slate-50 mb-6">
-                                            <span className="text-[10px] font-black uppercase tracking-widest block mb-2 text-slate-400">Clinical Impact</span>
-                                            <span className={`text-lg font-bold ${service.highlight ? "text-primary" : "text-trust-navy"
-                                                }`}>
-                                                {service.clinicalImpact}
-                                            </span>
+                                    {/* Divider */}
+                                    <div className="border-t border-slate-100 pt-4 mt-auto">
+                                        {/* Compact Impact Row (Minimalist) */}
+                                        <div className="flex items-center gap-3 mb-4 pl-1">
+                                            <div className="text-primary">
+                                                <span className="material-symbols-outlined text-xl">trending_up</span>
+                                            </div>
+                                            <div>
+                                                <p className="text-[9px] font-black uppercase tracking-widest text-slate-400 leading-none mb-1">Clinical Impact</p>
+                                                <p className="text-sm font-bold leading-none text-trust-navy">
+                                                    {service.clinicalImpact}
+                                                </p>
+                                            </div>
                                         </div>
 
-                                        {/* Service Chips */}
-                                        <div className="flex flex-wrap gap-2 mb-8">
-                                            {service.features.map((feature, fIdx) => (
-                                                <span key={fIdx} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100 group-hover:border-slate-200 transition-colors">
+                                        {/* Compact Chips */}
+                                        <div className="flex flex-wrap gap-1.5 mb-6">
+                                            {service.features.slice(0, 4).map((feature, fIdx) => (
+                                                <span key={fIdx} className="bg-slate-50 text-slate-500 px-2.5 py-1 rounded-md text-[10px] font-bold border border-slate-100 group-hover:border-primary/20 transition-colors uppercase tracking-wide">
                                                     {feature}
                                                 </span>
                                             ))}
@@ -222,12 +252,9 @@ export default function ServicesPage() {
 
                                         <Link
                                             href={service.link}
-                                            className={`inline-flex items-center gap-2 font-bold text-sm uppercase tracking-wider border-b-2 pb-1 transition-all ${service.highlight
-                                                ? "text-primary border-primary/20 hover:border-primary hover:text-primary"
-                                                : "text-trust-navy border-slate-200 hover:border-terracotta hover:text-terracotta"
-                                                }`}
+                                            className="group/btn inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-primary hover:text-trust-navy transition-colors"
                                         >
-                                            Explore Capabilities <span className="material-symbols-outlined text-lg">arrow_forward</span>
+                                            View Details <span className="material-symbols-outlined text-base transform group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
                                         </Link>
                                     </div>
                                 </div>

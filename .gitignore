@@ -56,3 +56,6 @@ next-env.d.ts
 .archive/
 .tmp/
 .windsurf/
+
+.vercel
+.env*.local
