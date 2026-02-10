@@ -49,22 +49,22 @@ export default function Home() {
             <div className="flex flex-col lg:flex-row items-center gap-16">
 
               {/* Copy (Left) */}
-              <div className="lg:w-[55%] space-y-3 md:space-y-4">
+              <div className="lg:w-[55%] space-y-6">
 
-                <h1 className="font-serif text-4xl md:text-7xl font-medium text-trust-navy leading-[1.15] tracking-tight mb-4">
+                <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6">
                   Operate at the Top of Your License with <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold pl-6 pr-2">California's Premier Psychiatric Virtual Assistant</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-4">
+                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6">
                   Recover 15+ hours weekly with specialized psychiatric support. HIPAA-compliant practice management for California psychiatrists.
                 </p>
 
-                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-6">
+                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8">
                   Generic VAs fail in complex care settings. We engineer <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-3 pt-1 md:pt-2">
+                <div className="flex flex-col sm:flex-row gap-3 pt-2">
                   <div className="grid grid-cols-2 gap-3 sm:flex w-full sm:w-auto">
                     <Link href="/book-consultation" className="col-span-2 sm:col-span-1 bg-primary hover:bg-primary-hover text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] text-center flex items-center justify-center">
                       Request Audit
