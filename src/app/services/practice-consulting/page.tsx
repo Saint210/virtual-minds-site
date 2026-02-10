@@ -52,6 +52,9 @@ export default function ConsultingPage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">specialized operational support</span>
                                     California mental health professionals need to streamline their practice and focus on care.
                                 </p>
+                                <p className="text-base text-slate-500 font-medium mb-8 max-w-2xl">
+                                    Serving psychiatrists in <Link href="/locations/beverly-hills" className="text-primary hover:underline font-bold">Beverly Hills</Link>, <Link href="/locations/palo-alto" className="text-primary hover:underline font-bold">Palo Alto</Link>, <Link href="/locations/san-diego" className="text-primary hover:underline font-bold">San Diego</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">across California</Link>.
+                                </p>
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">

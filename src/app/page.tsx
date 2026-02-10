@@ -1,8 +1,10 @@
 
+
 import Link from "next/link";
 import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import ServingCaliforniaSection from "@/components/home/ServingCaliforniaSection";
 
 export const metadata = {
   title: "California Psychiatric Virtual Assistant | Virtual Minds",
@@ -293,6 +295,9 @@ export default function Home() {
             </div>
           </div>
         </section>
+
+        {/* SERVING CALIFORNIA SECTION */}
+        <ServingCaliforniaSection />
 
         {/* VERIFIED SERVICE PILLARS */}
         <section className="py-24 bg-[#FAF8F3]">

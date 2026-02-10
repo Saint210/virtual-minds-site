@@ -50,6 +50,9 @@ export default function HIPAAPage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">secure psychiatric workflows</span>
                                     that protect your liability and patient trust.
                                 </p>
+                                <p className="text-base text-slate-500 font-medium mb-8 max-w-2xl">
+                                    Protecting practices in <Link href="/locations/los-angeles" className="text-primary hover:underline font-bold">Los Angeles</Link>, <Link href="/locations/san-francisco" className="text-primary hover:underline font-bold">San Francisco</Link>, <Link href="/locations/orange" className="text-primary hover:underline font-bold">Orange County</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">throughout California</Link>.
+                                </p>
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">

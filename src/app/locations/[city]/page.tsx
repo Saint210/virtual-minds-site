@@ -4,6 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import NearbyCitiesWidget from "@/components/locations/NearbyCitiesWidget";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -197,6 +198,9 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                         </div>
                     </div>
                 </section>
+
+                {/* NEARBY CITIES WIDGET */}
+                <NearbyCitiesWidget currentCitySlug={location.slug} />
 
                 {/* FINAL STRATEGIC CTA */}
                 <section className="bg-trust-navy py-32 relative overflow-hidden">

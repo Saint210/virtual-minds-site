@@ -45,6 +45,9 @@ export default function BillingPage() {
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                                     The gap between your clinical notes and your billing company is where revenue is lost. We act as your <span className="text-trust-navy font-bold">Revenue Cycle Liaison</span>, managing prior auths, superbills, and billing inquiries so you don't have to.
                                 </p>
+                                <p className="text-base text-slate-500 font-medium mb-6 max-w-2xl">
+                                    Serving practices in <Link href="/locations/los-angeles" className="text-primary hover:underline font-bold">Los Angeles</Link>, <Link href="/locations/san-francisco" className="text-primary hover:underline font-bold">San Francisco</Link>, <Link href="/locations/san-diego" className="text-primary hover:underline font-bold">San Diego</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">50+ California cities</Link>.
+                                </p>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
@@ -62,8 +65,8 @@ export default function BillingPage() {
                                 <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
                                     <div className="absolute inset-0 bg-slate-900/5 z-10"></div>
                                     <Image
-                                        src="/images/billing-liaison-dashboard.jpg"
-                                        alt="Billing Liaison Dashboard"
+                                        src="/images/visual-intel-rcm.png"
+                                        alt="Revenue Cycle Management Dashboard"
                                         width={800}
                                         height={600}
                                         className="object-cover"
