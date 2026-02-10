@@ -80,8 +80,8 @@ export default function BookConsultationPage() {
                                 <strong className="text-trust-navy">15-minute</strong> psychiatric workflow analysis. We'll blueprint your <span className="text-primary font-bold">stable operational path</span>.
                             </p>
 
-                            {/* CTA Buttons - Prominent Above-Fold */}
-                            <div className="flex flex-col gap-3 mt-2">
+                            {/* CTA Buttons - Prominent Above-Fold - MOBILE ONLY */}
+                            <div className="flex flex-col gap-3 mt-2 lg:hidden">
                                 {/* Phone CTA - Primary */}
                                 <a
                                     href="tel:+13104006266"
