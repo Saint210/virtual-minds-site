@@ -5,9 +5,9 @@ import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
-  title: "Investment Strategy | Psychiatric Practice Management Pricing",
-  description: "Specialized professional investment for California psychiatric practices. Quality-focused practice management and operational support for psychiatrists.",
-  keywords: ["psychiatric va pricing", "mental health virtual assistant cost", "psychiatric practice management pricing", "medical billing support pricing", "healthcare VA investment"],
+  title: "California Psychiatric Virtual Assistant Pricing | Virtual Minds",
+  description: "Transparent pricing for California psychiatric virtual assistant services. From $5,000/month for solo practices. HIPAA-compliant support with no setup fees or contracts.",
+  keywords: ["psychiatric va pricing", "mental health virtual assistant cost", "psychiatric practice management pricing", "California psychiatric assistant cost", "healthcare VA investment"],
 };
 
 const pricingPlans = [
@@ -109,9 +109,9 @@ export default function PricingPage() {
                 </div>
 
                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                  Invest in <br />
+                  California Psychiatric Virtual Assistant <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                    Clinical Autonomy.
+                    Pricing & Investment
                   </span>
                 </h1>
 
@@ -162,7 +162,7 @@ export default function PricingPage() {
                   Strategic
                   <span className="absolute bottom-0 left-0 w-full h-[3px] bg-primary/20"></span>
                 </span>
-                {' '}<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Pricing</span>
+                {' '}<span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Pricing</span>
               </h2>
               <p className="text-lg text-slate-600 max-w-3xl mx-auto font-medium">
                 <strong className="text-trust-navy">Quality-focused investment</strong> designed to{' '}
@@ -186,8 +186,8 @@ export default function PricingPage() {
                       {/* Strategic Choice Badge */}
                       <div className="absolute -top-4 left-1/2 -translate-x-1/2 z-20">
                         <div className="relative">
-                          <div className="absolute inset-0 bg-gradient-to-r from-primary to-[#B8860B] rounded-full blur-md opacity-60"></div>
-                          <div className="relative bg-gradient-to-r from-primary to-[#B8860B] text-white text-[9px] font-bold uppercase tracking-[0.25em] px-6 py-2.5 rounded-full shadow-xl border border-white/20 flex items-center gap-2">
+                          <div className="absolute inset-0 bg-gradient-to-r from-primary to-primary/80 rounded-full blur-md opacity-60"></div>
+                          <div className="relative bg-gradient-to-r from-primary to-primary/80 text-white text-[9px] font-bold uppercase tracking-[0.25em] px-6 py-2.5 rounded-full shadow-xl border border-white/20 flex items-center gap-2">
                             <span className="material-symbols-outlined text-sm font-bold">star</span>
                             <span>Strategic Choice</span>
                           </div>
@@ -324,7 +324,7 @@ export default function PricingPage() {
                   <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                 </div>
                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-6">
-                  Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Performance</span> Ledger
+                  Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Performance</span> Ledger
                 </h2>
                 <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
                   <strong className="text-trust-navy">Infrastructure investment</strong> is the catalyst for{' '}
@@ -415,7 +415,7 @@ export default function PricingPage() {
                 <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
               </div>
               <h2 className="text-4xl font-serif font-bold text-trust-navy tracking-tight">
-                Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Q&A</span>
+                Strategic <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Q&A</span>
               </h2>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -433,6 +433,224 @@ export default function PricingPage() {
                   <p className="text-slate-600 text-base leading-relaxed pl-9 font-medium">{faq.a}</p>
                 </div>
               ))}
+            </div>
+          </div>
+        </section>
+
+        {/* WHAT'S INCLUDED - Service Links */}
+        <section className="py-24 bg-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+          <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Explore Our Services</span>
+              <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                What's <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Included</span>
+              </h2>
+              <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
+                Comprehensive psychiatric virtual assistant services tailored to your practice
+              </p>
+            </div>
+
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Service 1 */}
+              <Link href="/services/virtual-assistant" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                <div className="p-8">
+                  <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-2xl text-primary">support_agent</span>
+                  </div>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                    Virtual Assistant Services
+                  </h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
+                    Dedicated psychiatric assistants for intake, patient communication, and administrative support.
+                  </p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Service 2 */}
+              <Link href="/services/practice-consulting" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                <div className="p-8">
+                  <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-2xl text-accent">analytics</span>
+                  </div>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                    Practice Consulting
+                  </h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
+                    Strategic operational review and practice optimization for established psychiatrists.
+                  </p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </div>
+              </Link>
+
+              {/* Service 3 */}
+              <Link href="/services/billing-and-rcm" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                <div className="p-8">
+                  <div className="bg-trust-navy/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                    <span className="material-symbols-outlined text-2xl text-trust-navy">payments</span>
+                  </div>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                    Billing & Revenue Cycle
+                  </h3>
+                  <p className="text-slate-600 mb-6 leading-relaxed">
+                    Revenue stabilization through verification, prior auths, and billing coordination.
+                  </p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </div>
+              </Link>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link href="/services" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                View All Services <span className="material-symbols-outlined">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* PRICING FAQS */}
+        <section className="py-24 bg-[#FAF8F3]">
+          <div className="max-w-4xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Common Questions</span>
+              <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                Pricing <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">FAQs</span>
+              </h2>
+            </div>
+
+            <div className="space-y-6">
+              {/* FAQ 1 */}
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                <h3 className="font-serif text-xl text-trust-navy mb-3 font-bold">
+                  How much does a psychiatric virtual assistant cost in California?
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Pricing starts at $5,000/month for solo practices with dedicated full-time support. Group practices typically invest $8,500/month for multi-provider teams. Custom enterprise solutions are available for large health systems. All plans include no setup fees, no contracts, and comprehensive HIPAA-compliant workflows.
+                </p>
+              </div>
+
+              {/* FAQ 2 */}
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                <h3 className="font-serif text-xl text-trust-navy mb-3 font-bold">
+                  Are there setup fees or contracts?
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  No. We believe in earning your business every month. There are no setup fees, no long-term contracts, and no hidden costs. You can cancel anytime with 30 days notice. Our pricing is transparent and all-inclusive.
+                </p>
+              </div>
+
+              {/* FAQ 3 */}
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                <h3 className="font-serif text-xl text-trust-navy mb-3 font-bold">
+                  What's included in the monthly price?
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Everything. Your monthly investment includes a dedicated psychiatric virtual assistant, comprehensive HIPAA training, EHR setup and optimization, ongoing support, practice management consulting, and all administrative workflows. No additional fees for software, training, or support.
+                </p>
+              </div>
+
+              {/* FAQ 4 */}
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                <h3 className="font-serif text-xl text-trust-navy mb-3 font-bold">
+                  How does pricing compare to hiring in-house?
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Hiring an in-house psychiatric assistant in California typically costs $60,000-$80,000/year plus benefits (20-30%), payroll taxes, training, and management overhead—totaling $75,000-$105,000 annually. Our solo practice plan at $5,000/month ($60,000/year) provides specialized psychiatric expertise with no benefits, taxes, or HR overhead. <Link href="/blog/psychiatrist-salary-california-private-practice" className="text-primary font-bold hover:underline">See detailed cost analysis</Link>.
+                </p>
+              </div>
+
+              {/* FAQ 5 */}
+              <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                <h3 className="font-serif text-xl text-trust-navy mb-3 font-bold">
+                  What's the ROI on a virtual assistant?
+                </h3>
+                <p className="text-slate-600 leading-relaxed">
+                  Most psychiatrists recover 15+ billable hours per week, worth $25,000-$50,000+ annually at California reimbursement rates. Additionally, practices typically recover 4-7% in lost revenue through better billing coordination and denial prevention. The average practice sees positive ROI within 60-90 days. <Link href="/book-consultation" className="text-primary font-bold hover:underline">Request your custom ROI analysis</Link>.
+                </p>
+              </div>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link href="/faq" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                View All FAQs <span className="material-symbols-outlined">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        {/* CALIFORNIA COVERAGE - Location Pages */}
+        <section className="py-24 bg-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+          <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+            <div className="text-center mb-16">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Available Locations</span>
+              <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                Serving <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 italic">California Practices</span>
+              </h2>
+              <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
+                Specialized psychiatric virtual assistant services across California's major metropolitan areas
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
+              {/* Los Angeles */}
+              <Link href="/locations/los-angeles" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
+                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
+                </div>
+                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
+                  Los Angeles
+                </h3>
+                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
+              </Link>
+
+              {/* San Francisco */}
+              <Link href="/locations/san-francisco" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
+                <div className="bg-accent/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-xl text-accent">location_city</span>
+                </div>
+                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
+                  San Francisco
+                </h3>
+                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
+              </Link>
+
+              {/* San Diego */}
+              <Link href="/locations/san-diego" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
+                <div className="bg-trust-navy/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-xl text-trust-navy">location_city</span>
+                </div>
+                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
+                  San Diego
+                </h3>
+                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
+              </Link>
+
+              {/* Sacramento */}
+              <Link href="/locations/sacramento" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
+                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
+                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
+                </div>
+                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
+                  Sacramento
+                </h3>
+                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
+              </Link>
+            </div>
+
+            <div className="text-center mt-12">
+              <Link href="/locations" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                View All Locations <span className="material-symbols-outlined">arrow_forward</span>
+              </Link>
             </div>
           </div>
         </section>

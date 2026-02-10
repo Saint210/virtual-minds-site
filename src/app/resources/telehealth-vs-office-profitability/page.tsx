@@ -48,7 +48,7 @@ export default function TelehealthProfitabilityPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 Telehealth vs. Physical Office: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The Margin Analysis.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">The Margin Analysis.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 Rent is the obvious cost. But reimbursement parity, no-show rates, and "hybrid" intake models are where the actual profit margins are determined in California.

@@ -35,7 +35,9 @@ export default function ConsultingPage() {
                             {/* LEFT: Copy & Authority (60%) */}
                             <div className="lg:w-[60%]">
                                 <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black mb-4 shadow-sm">
-                                    <span className="material-symbols-outlined text-primary text-[18px]">diamond</span>
+                                    <svg className="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                                        <path d="M10 2L2 7l8 5 8-5-8-5zM2 17l8 5 8-5M2 12l8 5 8-5" />
+                                    </svg>
                                     <span className="tracking-[0.2em] uppercase">Practice Intelligence</span>
                                 </div>
 
@@ -98,7 +100,9 @@ export default function ConsultingPage() {
 
                                 <div className="flex flex-col sm:flex-row gap-5">
                                     <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-[#D2691E]/20 flex items-center justify-center gap-3">
-                                        <span className="material-symbols-outlined">description</span>
+                                        <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                        </svg>
                                         Request Operational Audit
                                     </Link>
                                 </div>
@@ -135,7 +139,9 @@ export default function ConsultingPage() {
                                     {/* Floating badge */}
                                     <div className="absolute -top-6 -right-6 bg-white/90 backdrop-blur-xl p-5 rounded-[2rem] shadow-2xl border border-white/60 flex items-center gap-4 animate-bounce-slow z-30">
                                         <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary">
-                                            <span className="material-symbols-outlined font-bold">insights</span>
+                                            <svg className="w-6 h-6 font-bold" fill="currentColor" viewBox="0 0 20 20">
+                                                <path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zM14 4a1 1 0 011-1h2a1 1 0 011 1v12a1 1 0 01-1 1h-2a1 1 0 01-1-1V4z" />
+                                            </svg>
                                         </div>
                                         <div>
                                             <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest leading-none">Growth Status</p>
@@ -157,7 +163,7 @@ export default function ConsultingPage() {
                                 <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                We Solve for <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Sustainable Excellence</span>.
+                                We Solve for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Sustainable Excellence</span>.
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
                                 Generic medical consulting fails psychiatrists because it ignores the unique nuances of mental health liability and medication management. We design for the <strong className="text-trust-navy">psychiatric-specific ecosystem</strong>.
@@ -173,8 +179,8 @@ export default function ConsultingPage() {
                                 { title: "Systems Integration", icon: "settings", desc: "Expert guidance on selecting and implementing the right software stack, from EMRs to patient portals." },
                                 { title: "Strategic Development", icon: "diamond", desc: "Long-term operational planning to ensure your practice remains sustainable and scalable in the California market." }
                             ].map((item, idx) => (
-                                <div key={idx} className="bg-[#FAF8F3] p-10 rounded-[2.5rem] border-2 border-slate-200 hover:border-[#D2691E]/30 group hover:shadow-2xl hover:shadow-[#D2691E]/5 transition-all duration-500 hover:-translate-y-2">
-                                    <div className="size-16 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] mb-8 border border-[#D2691E]/20 group-hover:bg-[#D2691E] group-hover:text-white transition-all">
+                                <div key={idx} className="bg-gradient-to-br from-white via-[#FAF8F3] to-slate-50/50 p-10 rounded-[2.5rem] border-2 border-slate-200/60 hover:border-[#D2691E]/40 group hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+                                    <div className="size-16 rounded-2xl bg-gradient-to-br from-primary/10 to-primary/10 flex items-center justify-center text-primary mb-8 border border-primary/20 group-hover:from-primary group-hover:to-primary/80 group-hover:text-white group-hover:shadow-lg group-hover:shadow-primary/30 transition-all duration-300 group-hover:scale-110">
                                         <span className="material-symbols-outlined text-3xl">{item.icon}</span>
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">{item.title}</h3>

@@ -48,7 +48,7 @@ export default function IntakeDelegationPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 Stop Playing Phone Tag: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The Streamlined Intake Protocol.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">The Streamlined Intake Protocol.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 You should not speak to a patient until they are booked, insured, and deposit-paid. Here is the exact workflow to delegate the noise.

@@ -12,7 +12,7 @@ interface NavbarProps {
 
 export default function Navbar({
     practiceName = "Virtual Minds",
-    logoSrc = "/images/the-virtual-minds-logo-og-notext.jpg"
+    logoSrc = "/images/virtual-minds-logo-opt.png"
 }: NavbarProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [mounted, setMounted] = useState(false);

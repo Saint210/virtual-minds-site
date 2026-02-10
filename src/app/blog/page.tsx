@@ -108,7 +108,7 @@ export default async function BlogPage() {
 
               <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                 Practice <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-accent animate-gradient-x">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                   Intelligence.
                 </span>
               </h1>
@@ -125,6 +125,107 @@ export default async function BlogPage() {
           categories={allCategories as string[]}
           upgradedSlugs={upgradedSlugs}
         />
+
+        {/* OUR SERVICES - Sidebar Style */}
+        <section className="py-16 bg-white">
+          <div className="max-w-[1400px] mx-auto px-6">
+            <div className="bg-gradient-to-br from-trust-navy to-slate-800 rounded-3xl p-12 text-white">
+              <div className="text-center mb-12">
+                <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Need Support?</span>
+                <h2 className="font-serif text-3xl md:text-4xl mb-4">
+                  Our <span className="text-primary italic">Services</span>
+                </h2>
+                <p className="text-slate-300 max-w-2xl mx-auto">
+                  Specialized psychiatric virtual assistant services for California practices
+                </p>
+              </div>
+
+              <div className="grid md:grid-cols-3 gap-6 mb-8">
+                <Link href="/services/virtual-assistant" className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-primary/50 transition-all">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="material-symbols-outlined text-primary text-2xl">support_agent</span>
+                    <h3 className="font-serif text-lg font-bold">Virtual Assistant</h3>
+                  </div>
+                  <p className="text-slate-300 text-sm mb-3">Dedicated psychiatric assistants for your practice</p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </Link>
+
+                <Link href="/services/practice-consulting" className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-primary/50 transition-all">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="material-symbols-outlined text-primary text-2xl">analytics</span>
+                    <h3 className="font-serif text-lg font-bold">Practice Consulting</h3>
+                  </div>
+                  <p className="text-slate-300 text-sm mb-3">Strategic operational review and optimization</p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </Link>
+
+                <Link href="/services/billing-and-rcm" className="group bg-white/10 hover:bg-white/20 backdrop-blur-sm rounded-xl p-6 border border-white/20 hover:border-primary/50 transition-all">
+                  <div className="flex items-center gap-3 mb-3">
+                    <span className="material-symbols-outlined text-primary text-2xl">payments</span>
+                    <h3 className="font-serif text-lg font-bold">Billing & RCM</h3>
+                  </div>
+                  <p className="text-slate-300 text-sm mb-3">Revenue stabilization and billing coordination</p>
+                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                    Learn More <span className="material-symbols-outlined text-base group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  </div>
+                </Link>
+              </div>
+
+              <div className="text-center">
+                <Link href="/services" className="inline-flex items-center gap-2 bg-primary hover:bg-[#B8860B] text-white px-8 py-3 rounded-xl font-bold shadow-xl transition-all hover:scale-[1.02]">
+                  View All Services <span className="material-symbols-outlined">arrow_forward</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* CALIFORNIA COVERAGE */}
+        <section className="py-16 bg-[#FAF8F3]">
+          <div className="max-w-[1400px] mx-auto px-6">
+            <div className="text-center mb-12">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Serving California</span>
+              <h2 className="font-serif text-3xl md:text-4xl text-trust-navy mb-4">
+                Available <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 italic">Statewide</span>
+              </h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                Specialized psychiatric virtual assistant services across California's major metropolitan areas
+              </p>
+            </div>
+
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-4xl mx-auto">
+              <Link href="/locations/los-angeles" className="group bg-white rounded-xl p-4 border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-lg transition-all text-center">
+                <span className="material-symbols-outlined text-primary text-xl mb-2 block">location_city</span>
+                <h3 className="font-serif text-sm font-bold text-trust-navy group-hover:text-primary transition-colors">Los Angeles</h3>
+              </Link>
+
+              <Link href="/locations/san-francisco" className="group bg-white rounded-xl p-4 border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-lg transition-all text-center">
+                <span className="material-symbols-outlined text-accent text-xl mb-2 block">location_city</span>
+                <h3 className="font-serif text-sm font-bold text-trust-navy group-hover:text-primary transition-colors">San Francisco</h3>
+              </Link>
+
+              <Link href="/locations/san-diego" className="group bg-white rounded-xl p-4 border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-lg transition-all text-center">
+                <span className="material-symbols-outlined text-trust-navy text-xl mb-2 block">location_city</span>
+                <h3 className="font-serif text-sm font-bold text-trust-navy group-hover:text-primary transition-colors">San Diego</h3>
+              </Link>
+
+              <Link href="/locations/sacramento" className="group bg-white rounded-xl p-4 border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-lg transition-all text-center">
+                <span className="material-symbols-outlined text-primary text-xl mb-2 block">location_city</span>
+                <h3 className="font-serif text-sm font-bold text-trust-navy group-hover:text-primary transition-colors">Sacramento</h3>
+              </Link>
+            </div>
+
+            <div className="text-center mt-8">
+              <Link href="/locations" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-6 py-3 rounded-xl font-bold shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                View All Locations <span className="material-symbols-outlined">arrow_forward</span>
+              </Link>
+            </div>
+          </div>
+        </section>
       </main>
       <Footer />
     </div>

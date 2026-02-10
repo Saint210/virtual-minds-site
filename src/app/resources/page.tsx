@@ -75,7 +75,7 @@ export default function ResourcesHub() {
                                         <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
                                     </div>
                                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-4">
-                                        The Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Matrix</span>.
+                                        The Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Matrix</span>.
                                     </h2>
                                     <p className="text-base md:text-lg text-slate-600 max-w-2xl font-medium">
                                         <strong className="text-trust-navy">Specialized toolkits</strong> designed exclusively for the <span className="text-[#D2691E] font-bold">modern psychiatrist</span>.
@@ -289,7 +289,7 @@ export default function ResourcesHub() {
                         </div>
 
                         <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif font-bold mb-8 leading-tight text-trust-navy">
-                            Design Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Future Practice</span>.
+                            Design Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Future Practice</span>.
                         </h2>
                         <p className="text-lg md:text-xl text-slate-600 mb-6 max-w-2xl mx-auto font-medium leading-relaxed">
                             <strong className="text-trust-navy">Stop managing the chaos.</strong> Start <span className="text-[#D2691E] font-bold">leading your practice</span>.

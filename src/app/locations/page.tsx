@@ -41,7 +41,7 @@ export default function LocationsIndexPage() {
 
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                                 The California <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                                     Psychiatric Network.
                                 </span>
                             </h1>

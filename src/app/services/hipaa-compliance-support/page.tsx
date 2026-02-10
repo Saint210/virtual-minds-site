@@ -40,7 +40,7 @@ export default function HIPAAPage() {
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-5 leading-[0.95] tracking-tight">
                                     HIPAA-Compliant <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                                         Clinical Support.
                                     </span>
                                 </h1>

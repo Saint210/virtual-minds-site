@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-    title: "The Firm | Psychiatric Practice Management Specialists | Virtual Minds",
-    description: "The gold standard in psychiatric administrative intelligence and practice management. California-based specialized task force for elite mental health practitioners.",
-    keywords: ["psychiatric operations firm", "california healthcare administration", "medical residency training VA", "mental health operations staff", "psychiatric practice management"],
+    title: "About Virtual Minds | California Psychiatric Virtual Assistant Firm",
+    description: "California's premier psychiatric virtual assistant firm. Specialized support for high-acuity practices with HIPAA-compliant workflows, clinical coordination, and practice management expertise.",
+    keywords: ["psychiatric operations firm", "california psychiatric virtual assistant", "medical residency training VA", "mental health operations staff", "psychiatric practice management"],
 };
 
 export default function AboutPage() {
@@ -39,9 +39,9 @@ export default function AboutPage() {
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
-                                    Specialized Support for <br />
+                                    California's Premier <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                        California Psychiatrists.
+                                        Psychiatric Virtual Assistant Firm
                                     </span>
                                 </h1>
 
@@ -90,7 +90,7 @@ export default function AboutPage() {
                                 </div>
                                 <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 leading-tight">
                                     Exclusively Focused on <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Psychiatric Workflows</span>.
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Psychiatric Workflows</span>.
                                 </h2>
                                 <div className="space-y-6 text-slate-500 text-lg font-medium leading-relaxed">
                                     <p>
@@ -148,7 +148,7 @@ export default function AboutPage() {
                                 <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Administrative</span> Support.
+                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Administrative</span> Support.
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
                                 We handle the workflows that <strong className="text-trust-navy">take you away from patient care</strong>, ensuring your practice runs{' '}
@@ -199,6 +199,225 @@ export default function AboutPage() {
                         </div>
                     </div>
                 </section>
+
+                {/* OUR SERVICES */}
+                <section className="py-24 bg-white relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="text-center mb-16">
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">How We Support You</span>
+                            <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                                Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Services</span>
+                            </h2>
+                            <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
+                                Comprehensive psychiatric virtual assistant services for California practices
+                            </p>
+                        </div>
+
+                        <div className="grid lg:grid-cols-3 gap-8">
+                            {/* Service 1 */}
+                            <Link href="/services/virtual-assistant" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-primary">support_agent</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        Virtual Assistant Services
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Dedicated psychiatric assistants for intake, patient communication, and administrative support.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            {/* Service 2 */}
+                            <Link href="/services/practice-consulting" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-accent">analytics</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        Practice Consulting
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Strategic operational review and practice optimization for established psychiatrists.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            {/* Service 3 */}
+                            <Link href="/services/billing-and-rcm" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-trust-navy/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-trust-navy">payments</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        Billing & Revenue Cycle
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Revenue stabilization through verification, prior auths, and billing coordination.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="text-center mt-12">
+                            <Link href="/services" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                                View All Services <span className="material-symbols-outlined">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
+                {/* CLIENT SUCCESS STORIES */}
+                <section className="py-24 bg-[#FAF8F3]">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Trusted by California Psychiatrists</span>
+                            <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                                Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Success Stories</span>
+                            </h2>
+                        </div>
+
+                        <div className="grid lg:grid-cols-2 gap-8">
+                            {/* Testimonial 1 */}
+                            <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                                <div className="flex items-start gap-4 mb-6">
+                                    <div className="bg-primary/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span className="material-symbols-outlined text-primary">person</span>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-serif text-xl text-trust-navy font-bold">Dr. Sarah Chen</h3>
+                                        <p className="text-slate-500 text-sm">Child & Adolescent Psychiatry, Los Angeles</p>
+                                    </div>
+                                </div>
+                                <p className="text-slate-600 leading-relaxed italic mb-4">
+                                    "Virtual Minds transformed my practice. I recovered 15+ hours weekly and my revenue increased by 30% through better billing coordination. The team understands psychiatric workflows at a level I've never seen before."
+                                </p>
+                                <div className="flex items-center gap-2 text-sm text-primary font-bold">
+                                    <span className="material-symbols-outlined text-lg">verified</span>
+                                    Verified Client
+                                </div>
+                            </div>
+
+                            {/* Testimonial 2 */}
+                            <div className="bg-white rounded-2xl p-8 border-2 border-slate-200/60 shadow-lg">
+                                <div className="flex items-start gap-4 mb-6">
+                                    <div className="bg-accent/10 w-12 h-12 rounded-full flex items-center justify-center flex-shrink-0">
+                                        <span className="material-symbols-outlined text-accent">person</span>
+                                    </div>
+                                    <div>
+                                        <h3 className="font-serif text-xl text-trust-navy font-bold">Dr. Michael Rodriguez</h3>
+                                        <p className="text-slate-500 text-sm">Adult Psychiatry, San Francisco</p>
+                                    </div>
+                                </div>
+                                <p className="text-slate-600 leading-relaxed italic mb-4">
+                                    "The ROI was immediate. Within 60 days, I was seeing more patients, spending less time on admin, and my practice was running smoother than ever. This is the gold standard for psychiatric practice support."
+                                </p>
+                                <div className="flex items-center gap-2 text-sm text-primary font-bold">
+                                    <span className="material-symbols-outlined text-lg">verified</span>
+                                    Verified Client
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="text-center mt-12">
+                            <Link href="/book-consultation" className="inline-flex items-center gap-2 bg-trust-navy hover:bg-slate-800 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl transition-all hover:scale-[1.02]">
+                                Schedule Your Free Consultation <span className="material-symbols-outlined">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
+                {/* LATEST INSIGHTS */}
+                <section className="py-24 bg-white relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+                    <div className="max-w-[1400px] mx-auto px-6 relative z-10">
+                        <div className="text-center mb-16">
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Thought Leadership</span>
+                            <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
+                                Latest <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Insights</span>
+                            </h2>
+                            <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
+                                Expert guidance for California psychiatric practices
+                            </p>
+                        </div>
+
+                        <div className="grid lg:grid-cols-3 gap-8 mb-12">
+                            {/* Blog Post 1 */}
+                            <Link href="/blog/how-to-choose-california-psychiatric-virtual-assistant" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-primary">psychology</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        How to Choose a California Psychiatric Virtual Assistant
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Comprehensive framework for selecting the right psychiatric virtual assistant.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            {/* Blog Post 2 */}
+                            <Link href="/blog/how-to-scale-private-psychiatry-practice" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-accent">trending_up</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        How to Scale Your Private Psychiatry Practice
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Strategic frameworks for sustainable growth without compromising quality.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+
+                            {/* Blog Post 3 */}
+                            <Link href="/blog/psychiatrist-salary-california-private-practice" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
+                                <div className="p-8">
+                                    <div className="bg-trust-navy/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-2xl text-trust-navy">account_balance</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                                        Psychiatrist Salary in California Private Practice
+                                    </h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed">
+                                        Comprehensive analysis of earning potential and financial optimization.
+                                    </p>
+                                    <div className="flex items-center gap-2 text-primary font-bold text-sm">
+                                        Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                    </div>
+                                </div>
+                            </Link>
+                        </div>
+
+                        <div className="text-center">
+                            <Link href="/blog" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
+                                View All Articles <span className="material-symbols-outlined">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
             </main>
 
             <Footer />

@@ -92,7 +92,9 @@ h6 {
   direction: ltr;
   font-feature-settings: 'liga';
   -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  text-rendering: optimizeLegibility;
 }
 
 /* Custom Animations */

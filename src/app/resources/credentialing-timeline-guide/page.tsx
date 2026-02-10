@@ -48,7 +48,7 @@ export default function CredentialingTimelinePost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 The "No-Revenue" Window: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">Insurance Credentialing Timelines.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Insurance Credentialing Timelines.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 Why new practices in California face a 120-day cash flow drought, and why "retroactive billing" is rarely a safety net.

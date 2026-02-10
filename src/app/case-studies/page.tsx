@@ -186,7 +186,7 @@ export default function CaseStudiesPage() {
             <div className="mb-20">
               <span className="text-[#D2691E] font-black uppercase tracking-[0.4em] text-xs mb-6 block">Firm-Wide Performance Aggregates</span>
               <h2 className="text-5xl md:text-7xl font-display font-bold mb-6" style={{ color: '#FFFFFF' }}>
-                The Quality <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Matrix.</span>
+                The Quality <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Matrix.</span>
               </h2>
               <p className="text-xl text-slate-400 max-w-2xl font-medium leading-relaxed">
                 Average operational improvements across the Virtual Minds specialized psychiatric network.

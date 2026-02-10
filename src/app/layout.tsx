@@ -13,12 +13,16 @@ const manrope = Manrope({
   variable: "--font-sans",
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
+  display: "swap",
+  preload: true,
 });
 
 const outfit = Outfit({
   variable: "--font-display",
   subsets: ["latin"],
   weight: ["400", "600", "700", "800", "900"],
+  display: "swap",
+  preload: true,
 });
 
 const lora = Lora({
@@ -26,6 +30,8 @@ const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
   style: ["normal", "italic"],
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
@@ -63,9 +69,18 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preload hero image for faster LCP */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/virtual-assistant-hero.png"
+          type="image/png"
+          fetchPriority="high"
+        />
+        {/* Material Icons - Critical for UI */}
         <link
           rel="stylesheet"
-          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap"
         />
       </head>
       <body

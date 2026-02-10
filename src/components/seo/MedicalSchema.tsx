@@ -1,8 +1,19 @@
 "use client";
 
 import Script from "next/script";
+import { locations } from "@/data/locations";
 
 export default function MedicalSchema() {
+    const areaServed = locations.map((city) => ({
+        "@type": "City",
+        "name": city.name,
+        "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "CA",
+            "addressCountry": "US"
+        }
+    }));
+
     const schema = {
         "@context": "https://schema.org",
         "@graph": [
@@ -13,7 +24,7 @@ export default function MedicalSchema() {
                 "url": "https://thevirtualminds.com",
                 "logo": {
                     "@type": "ImageObject",
-                    "url": "https://thevirtualminds.com/images/the-virtual-minds-logo-og-notext.jpg"
+                    "url": "https://thevirtualminds.com/images/virtual-minds-logo-opt.png"
                 },
                 "brand": {
                     "@type": "Brand",
@@ -30,18 +41,21 @@ export default function MedicalSchema() {
                         "url": "https://www.wikidata.org/wiki/Q18866"
                     }
                 ],
-                "areaServed": {
-                    "@type": "State",
-                    "name": "California",
-                    "url": "https://www.wikidata.org/wiki/Q99"
-                },
+                "areaServed": [
+                    {
+                        "@type": "State",
+                        "name": "California",
+                        "url": "https://www.wikidata.org/wiki/Q99"
+                    },
+                    ...areaServed
+                ],
                 "knowsAbout": ["DrChrono", "CharmHealth", "SimplePractice", "Luminello", "Kareo", "AdvancedMD", "California Mental Health Law"]
             },
             {
-                "@type": "LocalBusiness",
+                "@type": "ProfessionalService",
                 "@id": "https://thevirtualminds.com/#localbusiness",
                 "name": "Virtual Minds, LLC",
-                "image": "https://thevirtualminds.com/images/the-virtual-minds-logo-og-notext.jpg",
+                "image": "https://thevirtualminds.com/images/virtual-minds-logo-opt.png",
                 "telePhone": "+13104006266",
                 "url": "https://thevirtualminds.com",
                 "priceRange": "$$$",
@@ -69,6 +83,13 @@ export default function MedicalSchema() {
                     "opens": "09:00",
                     "closes": "17:00"
                 },
+                "areaServed": [
+                    {
+                        "@type": "State",
+                        "name": "California"
+                    },
+                    ...areaServed
+                ],
                 "aggregateRating": {
                     "@type": "AggregateRating",
                     "ratingValue": "5",

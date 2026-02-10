@@ -126,7 +126,7 @@ export default function AdminDashboard() {
             <div className="text-center mb-8">
               <div className="w-20 h-20 bg-white rounded-xl flex items-center justify-center mx-auto mb-4 p-2">
                 <Image
-                  src="/images/the-virtual-minds-logo-og-notext.jpg"
+                  src="/images/virtual-minds-logo-opt.png"
                   alt="Virtual Minds"
                   width={64}
                   height={64}

@@ -9,14 +9,14 @@ import PracticeAuditWizard from "@/components/conversion/PracticeAuditWizard";
 import ConsultationServiceSchema from "@/components/seo/ConsultationServiceSchema";
 
 export const metadata: Metadata = {
-    title: "Book Your Strategy Call | Virtual Minds",
-    description: "Schedule your 15-minute psychiatric strategy call. We'll analyze your workflow and match you with a specialized, HIPAA-trained VA.",
+    title: "Book California Psychiatric Virtual Assistant Consultation | Virtual Minds",
+    description: "Schedule your free consultation with California's premier psychiatric virtual assistant service. 15-minute strategy call to analyze your workflow and match you with HIPAA-trained support.",
     alternates: {
         canonical: 'https://thevirtualminds.com/book-consultation'
     },
     openGraph: {
-        title: "Book Your Strategy Call | Virtual Minds",
-        description: "Schedule your 15-minute psychiatric strategy call for California practices.",
+        title: "Book California Psychiatric Virtual Assistant Consultation | Virtual Minds",
+        description: "Schedule your free 15-minute psychiatric strategy call for California practices.",
         url: "https://thevirtualminds.com/book-consultation",
         siteName: "Virtual Minds",
         images: [{
@@ -30,8 +30,8 @@ export const metadata: Metadata = {
     },
     twitter: {
         card: "summary_large_image",
-        title: "Book Your Strategy Call | Virtual Minds",
-        description: "Schedule your 15-minute psychiatric strategy call for California practices.",
+        title: "Book California Psychiatric Virtual Assistant Consultation | Virtual Minds",
+        description: "Schedule your free 15-minute psychiatric strategy call for California practices.",
         images: ["https://thevirtualminds.com/images/og-virtual-assistant.png"],
     },
 };
@@ -70,8 +70,8 @@ export default function BookConsultationPage() {
                             </div>
 
                             <h1 className="font-serif text-5xl lg:text-[5rem] font-bold text-trust-navy leading-[0.95] tracking-tight">
-                                Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Gold Standard</span> <br />
-                                Recovery Plan.
+                                Book Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">California Psychiatric Virtual Assistant</span> <br />
+                                Consultation
                             </h1>
 
                             <p className="text-xl text-slate-600 font-display leading-relaxed max-w-xl">

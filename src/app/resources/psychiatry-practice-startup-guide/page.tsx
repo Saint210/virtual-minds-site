@@ -1006,7 +1006,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
 
                     <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
                         <h2 className="font-serif text-4xl md:text-6xl font-bold mb-6">
-                            <span className="text-white">Ready to </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] to-[#B8860B]">Launch Your Practice?</span>
+                            <span className="text-white">Ready to </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Launch Your Practice?</span>
                         </h2>
                         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto font-medium">
                             Virtual Minds handles <strong className="text-primary">licensing, credentialing, billing setup, and administrative infrastructure</strong> so you can focus on patient care.

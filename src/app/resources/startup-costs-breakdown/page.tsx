@@ -48,7 +48,7 @@ export default function StartupCostsPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 The Hidden Capital Requirements of <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">California Private Practice.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">California Private Practice.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 Why the standard "$10k startup budget" fails in California's high-regulatory environment. A breakdown of the Moscone-Knox tax trap, zoning laws, and the credentialing liquidity gap.

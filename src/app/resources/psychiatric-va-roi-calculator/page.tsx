@@ -48,7 +48,7 @@ export default function VaRoiPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 The "Unfair Advantage" of <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The 15-Hour Workweek.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">The 15-Hour Workweek.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 How reclaiming administrative time creates a 78% reduction in overhead and unlocks \$6,000/mo in additional clinical revenue.

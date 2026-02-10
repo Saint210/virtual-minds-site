@@ -48,7 +48,7 @@ export default function HipaaDelegationPost() {
                             </div>
                             <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1]">
                                 Delegating Without Risk: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">The HIPAA Playbook.</span>
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">The HIPAA Playbook.</span>
                             </h1>
                             <p className="text-xl md:text-2xl text-slate-600 leading-relaxed font-medium max-w-3xl">
                                 Can an offshore VA legally access your EHR? Yes, but only if you follow the "BAA + Least Privilege" framework.
