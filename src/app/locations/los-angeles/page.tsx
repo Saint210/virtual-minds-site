@@ -6,8 +6,8 @@ import Image from "next/image";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata: Metadata = {
-    title: "Los Angeles Psychiatric Virtual Assistants | The Operational Gold Standard",
-    description: "Specialized administrative intelligence for Los Angeles psychiatrists. Cut practice overhead significantly while maintaining elite compliance in Beverly Hills, Santa Monica, and DTLA.",
+    title: "Virtual Assistant for Psychiatrists in Los Angeles | Medical Admin & Billing",
+    description: "Virtual assistant services for Los Angeles psychiatrists. HIPAA-compliant medical billing, patient intake, and EHR management. Save $65,000/year vs. in-office staff. Serving Beverly Hills & Santa Monica.",
 };
 
 export default function LosAngelesPage() {
@@ -41,9 +41,9 @@ export default function LosAngelesPage() {
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                                    Strategic Practice Management <br />
+                                    Virtual Receptionist & Admin Support <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        for L.A. Clinicians.
+                                        for Los Angeles Psychiatrists
                                     </span>
                                 </h1>
 
