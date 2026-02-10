@@ -71,9 +71,9 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                                    Strategic Practice Management <br />
+                                    Virtual Receptionist & Admin Support <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        for {location.name} Clinicians.
+                                        for {location.name} Psychiatrists
                                     </span>
                                 </h1>
 
