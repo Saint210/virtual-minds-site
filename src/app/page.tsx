@@ -51,16 +51,16 @@ export default function Home() {
               {/* Copy (Left) */}
               <div className="lg:w-[55%] space-y-3 md:space-y-4">
 
-                <h1 className="font-serif text-4xl md:text-7xl font-medium text-trust-navy leading-[1.05] tracking-tight mb-1">
+                <h1 className="font-serif text-4xl md:text-7xl font-medium text-trust-navy leading-[1.15] tracking-tight mb-4">
                   Operate at the Top of Your License with <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 italic pl-3 pr-2">California's Premier Psychiatric Virtual Assistant</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-1 md:mb-2">
+                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-4">
                   Recover 15+ hours weekly with specialized psychiatric support. HIPAA-compliant practice management for California psychiatrists.
                 </p>
 
-                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl">
+                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-6">
                   Generic VAs fail in complex care settings. We engineer <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
                 </p>
 
