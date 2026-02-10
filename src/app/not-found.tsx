@@ -4,68 +4,143 @@ import Footer from "@/components/layout/Footer";
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
-      <Navbar />
-      <main className="flex-grow flex items-center justify-center">
-        <div className="max-w-[600px] mx-auto px-6 text-center">
-          {/* 404 Number */}
-          <div className="text-8xl md:text-9xl font-black text-[#D2691E] mb-8">404</div>
+    <div className="flex flex-col min-h-screen bg-white">
+      <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
+        <Navbar />
+      </div>
+
+      <main className="flex-grow flex items-center justify-center py-8 px-6">
+        <div className="max-w-5xl mx-auto text-center">
+          {/* 404 Illustration */}
+          <div className="relative mb-6">
+            <div className="text-[120px] md:text-[160px] font-black text-transparent bg-clip-text bg-gradient-to-r from-primary via-accent to-primary leading-none">
+              404
+            </div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center">
+                <span className="material-symbols-outlined text-4xl text-primary">search_off</span>
+              </div>
+            </div>
+          </div>
 
           {/* Error Message */}
-          <h1 className="text-3xl md:text-4xl font-bold text-trust-navy mb-6">
-            Page Not Found
-          </h1>
+          <div className="mb-8">
+            <h1 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-3">
+              Page Not Found
+            </h1>
+            <p className="text-base md:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+              The page you're looking for doesn't exist or has been moved. Let's get you back to finding the perfect administrative support for your California psychiatric practice.
+            </p>
+          </div>
 
-          <p className="text-lg text-slate-600 mb-8 max-w-md mx-auto">
-            The page you're looking for doesn't exist or has been moved.
-            Let's get you back to finding the perfect virtual assistant for your California psychiatric practice.
-          </p>
-
-          {/* Action Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          {/* Primary Action Buttons */}
+          <div className="flex flex-col sm:flex-row gap-3 justify-center mb-8">
             <Link
               href="/"
-              className="group bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl inline-flex items-center justify-center gap-2"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary hover:bg-primary-hover text-white font-bold rounded-xl transition-all hover:scale-[1.02] shadow-xl shadow-primary/20"
             >
-              <span className="material-symbols-outlined">home</span>
+              <span className="material-symbols-outlined text-xl">home</span>
               Back to Homepage
             </Link>
 
             <Link
               href="/services"
-              className="group border-2 border-[#D2691E] text-[#D2691E] px-8 py-4 rounded-xl font-bold text-lg hover:bg-[#D2691E]/5 transition-colors inline-flex items-center justify-center gap-2"
+              className="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-slate-200 text-trust-navy font-bold rounded-xl hover:border-primary hover:text-primary transition-all"
             >
-              <span className="material-symbols-outlined">services</span>
+              <span className="material-symbols-outlined text-xl">apps</span>
               View Services
             </Link>
           </div>
 
-          {/* Helpful Links */}
-          <div className="mt-12 p-6 bg-white/80 backdrop-blur-md border border-[#D2691E]/20 rounded-2xl">
-            <h3 className="font-bold text-trust-navy mb-4">Looking for something specific?</h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
-              <Link href="/pricing" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → Pricing Plans
+          {/* Helpful Links Grid */}
+          <div className="bg-[#FAF8F3] rounded-2xl p-6 border border-slate-200">
+            <h3 className="font-serif text-xl font-bold text-trust-navy mb-4">
+              Looking for something specific?
+            </h3>
+
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+              <Link
+                href="/specialties"
+                className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary">psychology</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-trust-navy group-hover:text-primary transition-colors">Specialties</div>
+                  <div className="text-xs text-slate-500">All subspecialties</div>
+                </div>
               </Link>
-              <Link href="/services" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → All Services
+
+              <Link
+                href="/pricing"
+                className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary">payments</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-trust-navy group-hover:text-primary transition-colors">Pricing</div>
+                  <div className="text-xs text-slate-500">Plans & packages</div>
+                </div>
               </Link>
-              <Link href="/about" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → About Virtual Minds
+
+              <Link
+                href="/tools/roi-calculator"
+                className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary">calculate</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-trust-navy group-hover:text-primary transition-colors">ROI Calculator</div>
+                  <div className="text-xs text-slate-500">See your savings</div>
+                </div>
               </Link>
-              <Link href="/contact" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → Contact Us
+
+              <Link
+                href="/resources"
+                className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary">library_books</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-trust-navy group-hover:text-primary transition-colors">Resources</div>
+                  <div className="text-xs text-slate-500">Guides & articles</div>
+                </div>
               </Link>
-              <Link href="/roi-calculator" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → ROI Calculator
+
+              <Link
+                href="/blog"
+                className="group flex items-center gap-3 p-4 bg-white rounded-xl border border-slate-200 hover:border-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary">article</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-trust-navy group-hover:text-primary transition-colors">Blog</div>
+                  <div className="text-xs text-slate-500">Industry insights</div>
+                </div>
               </Link>
-              <Link href="/book-consultation" className="text-[#D2691E] hover:text-[#B8860B] transition-colors">
-                → Book Consultation
+
+              <Link
+                href="/book-consultation"
+                className="group flex items-center gap-3 p-4 bg-primary/5 rounded-xl border-2 border-primary hover:bg-primary hover:shadow-lg transition-all"
+              >
+                <div className="w-10 h-10 rounded-lg bg-primary/20 group-hover:bg-white/20 flex items-center justify-center shrink-0">
+                  <span className="material-symbols-outlined text-primary group-hover:text-white">calendar_today</span>
+                </div>
+                <div className="text-left">
+                  <div className="font-bold text-primary group-hover:text-white transition-colors">Book Consultation</div>
+                  <div className="text-xs text-primary/70 group-hover:text-white/70">Get started today</div>
+                </div>
               </Link>
             </div>
           </div>
         </div>
       </main>
+
       <Footer />
     </div>
   );

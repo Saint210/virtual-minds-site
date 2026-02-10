@@ -5,6 +5,7 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import RelatedInsights from "@/components/services/RelatedInsights";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
     title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
@@ -301,6 +302,31 @@ export default function IntakePage() {
                         }
                     ]}
                 />
+
+                {/* INTAKE COST CALCULATOR */}
+                <section className="py-32 bg-white relative overflow-hidden">
+                    <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+                    <div className="max-w-5xl mx-auto px-6 relative z-10">
+                        <div className="text-center mb-20">
+                            <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Calculate Your Intake Costs</span>
+                            <h2 className="font-serif text-4xl md:text-5xl font-bold text-trust-navy mb-8 leading-tight">
+                                How Much Could You <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Save on Patient Intake?</span>
+                            </h2>
+                            <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+                                See exactly how much professional intake support could save your practice
+                            </p>
+                        </div>
+
+                        <PracticeLeaksCalculator />
+
+                        <div className="text-center mt-12">
+                            <Link href="/book-consultation" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02]">
+                                Schedule Intake Audit <span className="material-symbols-outlined">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
 
                 <ServiceNavigationTray />
             </main >

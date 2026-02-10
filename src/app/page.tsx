@@ -5,6 +5,8 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServingCaliforniaSection from "@/components/home/ServingCaliforniaSection";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+
 
 export const metadata = {
   title: "California Psychiatric Virtual Assistant | Virtual Minds",
@@ -160,29 +162,54 @@ export default function Home() {
             {/* Specialties Grid - Premium Glass Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
-                "Neuropsychiatry", "Child & Adolescent", "Women’s Mental Health",
-                "Integrative Psychiatry", "Sleep Medicine", "ADHD & Executive Function",
-                "OCD & Anxiety Disorders", "Eating Disorders", "Consult-Liaison"
+                { name: "Neuropsychiatry", slug: "neuropsychiatry", preview: "Neurological testing & specialized assessments" },
+                { name: "Child & Adolescent", slug: "child-adolescent-psychiatry", preview: "School coordination & family communication" },
+                { name: "Women's Mental Health", slug: "womens-mental-health", preview: "Reproductive psychiatry & perinatal care" },
+                { name: "Integrative Psychiatry", slug: "integrative-psychiatry", preview: "Functional labs & holistic coordination" },
+                { name: "Sleep Medicine", slug: "sleep-medicine", preview: "Sleep study coordination & scheduling" },
+                { name: "ADHD & Executive Function", slug: "adhd-neuropsychiatry", preview: "Prior authorizations & testing coordination" },
+                { name: "OCD & Anxiety Disorders", slug: "ocd-anxiety-disorders", preview: "ERP protocols & intensive treatment support" },
+                { name: "Eating Disorders", slug: "eating-disorders", preview: "Multidisciplinary team coordination" },
+                { name: "Consult-Liaison", slug: "consult-liaison", preview: "Hospital consultation & medical team liaison" }
               ].map((spec) => (
-                <div key={spec} className="group relative bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex items-center justify-between cursor-default overflow-hidden">
+                <Link
+                  key={spec.slug}
+                  href={`/specialties/${spec.slug}`}
+                  className="group relative bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex flex-col gap-3 overflow-hidden cursor-pointer"
+                >
                   {/* Subtle gradient overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
 
-                  <div className="flex items-center gap-4 relative z-10">
-                    {/* Icon badge */}
-                    <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-sm">
-                      <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-accent group-hover:shadow-lg group-hover:shadow-primary/50 transition-all" />
+                  <div className="flex items-center justify-between relative z-10">
+                    <div className="flex items-center gap-4">
+                      {/* Icon badge */}
+                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-sm">
+                        <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-accent group-hover:shadow-lg group-hover:shadow-primary/50 transition-all" />
+                      </div>
+                      <span className="font-serif text-xl font-semibold text-trust-navy group-hover:text-primary transition-colors">{spec.name}</span>
                     </div>
-                    <span className="font-serif text-xl font-semibold text-trust-navy group-hover:text-primary transition-colors">{spec}</span>
+
+                    {/* Arrow indicator */}
+                    <div className="relative z-10 w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-primary/10 flex items-center justify-center transition-all duration-300 opacity-60 group-hover:opacity-100">
+                      <svg className="w-5 h-5 text-slate-400 group-hover:text-primary transition-all group-hover:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                      </svg>
+                    </div>
                   </div>
 
-                  {/* Verified badge */}
-                  <div className="relative z-10 w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-primary/10 flex items-center justify-center transition-all duration-300 opacity-60 group-hover:opacity-100">
-                    <svg className="w-5 h-5 text-slate-400 group-hover:text-primary transition-colors" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  {/* Preview text */}
+                  <p className="text-sm text-slate-500 group-hover:text-slate-600 transition-colors relative z-10 leading-relaxed">
+                    {spec.preview}
+                  </p>
+
+                  {/* "Learn more" hint */}
+                  <div className="flex items-center gap-1.5 text-xs font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 relative z-10">
+                    <span>View specialty details</span>
+                    <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
           </div>
@@ -248,6 +275,31 @@ export default function Home() {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* PRACTICE OVERHEAD CALCULATOR */}
+        <section className="py-32 bg-white relative overflow-hidden">
+          <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+
+          <div className="max-w-5xl mx-auto px-6 relative z-10">
+            <div className="text-center mb-20">
+              <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Calculate Your Savings</span>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-trust-navy mb-8 leading-tight">
+                How Much Are You <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Losing to Overhead?</span>
+              </h2>
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto">
+                See exactly how much administrative inefficiency is costing your practice every year
+              </p>
+            </div>
+
+            <PracticeLeaksCalculator />
+
+            <div className="text-center mt-12">
+              <Link href="/book-consultation" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02]">
+                Get Your Free Practice Audit <span className="material-symbols-outlined">arrow_forward</span>
+              </Link>
             </div>
           </div>
         </section>
@@ -446,77 +498,6 @@ export default function Home() {
             <div className="text-center">
               <Link href="/blog" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
                 View All Articles <span className="material-symbols-outlined">arrow_forward</span>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        {/* CALIFORNIA COVERAGE - Location Pages */}
-        <section className="py-24 bg-[#FAF8F3] relative overflow-hidden">
-          <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
-            <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#B25A2A_1px,transparent_1px)] [background-size:40px_40px]" />
-          </div>
-
-          <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-            <div className="text-center mb-16">
-              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Statewide Support</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
-                Serving <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 italic">California Psychiatrists</span>
-              </h2>
-              <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
-                Specialized psychiatric virtual assistant services across California's major metropolitan areas
-              </p>
-            </div>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {/* Los Angeles */}
-              <Link href="/locations/los-angeles" className="group bg-white rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  Los Angeles
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
-
-              {/* San Francisco */}
-              <Link href="/locations/san-francisco" className="group bg-white rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-accent/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-accent">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  San Francisco
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
-
-              {/* San Diego */}
-              <Link href="/locations/san-diego" className="group bg-white rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-trust-navy/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-trust-navy">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  San Diego
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
-
-              {/* Sacramento */}
-              <Link href="/locations/sacramento" className="group bg-white rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  Sacramento
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
-            </div>
-
-            <div className="text-center mt-12">
-              <Link href="/locations" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
-                View All Locations <span className="material-symbols-outlined">arrow_forward</span>
               </Link>
             </div>
           </div>

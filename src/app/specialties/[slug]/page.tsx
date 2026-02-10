@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import { Metadata } from "next";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import SpecialtyHero from "@/components/marketing/SpecialtyHero";
 import ServiceMatrix from "@/components/marketing/ServiceMatrix";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
@@ -60,6 +61,14 @@ export default async function SpecialtyPage({ params }: Props) {
             <div className="sticky top-0 z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
                 <Navbar />
             </div>
+
+            <Breadcrumbs
+                items={[
+                    { label: "Home", href: "/" },
+                    { label: "Specialties", href: "/#specialties" },
+                    { label: specialty.name }
+                ]}
+            />
 
             <main className="flex-grow">
                 {/* 1. Specialized Hero */}

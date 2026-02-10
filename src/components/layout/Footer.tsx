@@ -172,7 +172,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/insights" className="group flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-primary transition-colors">
+                                <Link href="/blog" className="group flex items-center gap-2 text-sm font-bold text-slate-600 hover:text-primary transition-colors">
                                     <span className="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
                                     <span>Industry Insights</span>
                                 </Link>

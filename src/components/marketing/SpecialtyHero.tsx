@@ -9,36 +9,28 @@ interface SpecialtyHeroProps {
 
 export default function SpecialtyHero({ name, description, image }: SpecialtyHeroProps) {
     return (
-        <section className="relative pt-32 pb-20 bg-[#FAF8F3] overflow-hidden">
+        <section className="relative pt-12 pb-16 bg-[#FAF8F3] overflow-hidden">
             {/* Background Accents */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-primary/5 rounded-full blur-[100px] pointer-events-none" />
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#D2691E]/5 rounded-full blur-[80px] pointer-events-none" />
 
             <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-                <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div className="grid lg:grid-cols-2 gap-12 items-center">
                     {/* Left: Content */}
                     <div>
-                        <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
-                            <Link href="/" className="hover:text-primary transition-colors">Home</Link>
-                            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                            <Link href="/#specialties" className="hover:text-primary transition-colors">Specialties</Link>
-                            <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                            <span className="text-trust-navy">{name}</span>
-                        </nav>
-
                         <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6 shadow-sm">
                             <span className="material-symbols-outlined text-primary text-[16px]">verified</span>
                             Specialized Administrative Support
                         </div>
 
-                        <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[1.1] tracking-tight">
+                        <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
                             Infrastructure for <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#B8860B] to-primary">
                                 {name}.
                             </span>
                         </h1>
 
-                        <p className="text-xl text-slate-600 leading-relaxed font-medium max-w-xl mb-10">
+                        <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium max-w-xl mb-8">
                             {description}
                         </p>
 

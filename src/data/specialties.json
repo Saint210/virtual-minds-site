@@ -273,5 +273,225 @@
                 "image": "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
             }
         ]
+    },
+    {
+        "slug": "sleep-medicine",
+        "name": "Sleep Medicine",
+        "metaTitle": "Sleep Medicine Psychiatry Admin Support | Virtual Minds",
+        "metaDescription": "Specialized administrative support for sleep medicine psychiatry practices. Managing complex scheduling, sleep study coordination, and patient follow-up.",
+        "heroDescription": "Administrative coordination for sleep psychiatry practices. We manage the scheduling complexity and documentation requirements of sleep medicine.",
+        "heroImage": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "consultingServices": [
+            "EHR Implementation",
+            "Review of current processes and systems",
+            "HIPAA Compliance",
+            "Create Client Management and Experience Policies"
+        ],
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Sleep Study Coordination",
+            "Patient Communication and Correspondence",
+            "Document Management and Record Keeping"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Contact Insurance Companies On Request"
+        ],
+        "categories": [
+            {
+                "name": "Sleep Studies",
+                "active": true
+            },
+            {
+                "name": "Patient Coordination",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Sleep Study Coordination Protocol",
+                "category": "Sleep Studies",
+                "readTime": "5 min read",
+                "description": "Streamlining the administrative workflow for sleep study referrals, scheduling, and results management.",
+                "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "ocd-anxiety-disorders",
+        "name": "OCD & Anxiety Disorders",
+        "metaTitle": "OCD & Anxiety Disorder Practice Support | Virtual Minds",
+        "metaDescription": "Administrative support for OCD and anxiety disorder specialists. Managing intensive treatment scheduling, ERP coordination, and patient communication.",
+        "heroDescription": "Operational support for anxiety and OCD-focused practices. We handle the administrative demands of intensive treatment protocols.",
+        "heroImage": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "consultingServices": [
+            "Practice Start-Up Services",
+            "Review Current Plans",
+            "HIPAA Compliance",
+            "Create Client Management and Experience Policies"
+        ],
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Client Intake and Onboarding",
+            "ERP Session Coordination",
+            "Patient Communication and Correspondence"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Process Credit Card Transactions"
+        ],
+        "categories": [
+            {
+                "name": "ERP Protocols",
+                "active": true
+            },
+            {
+                "name": "Intensive Treatment",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "ERP Session Scheduling Best Practices",
+                "category": "ERP Protocols",
+                "readTime": "6 min read",
+                "description": "Administrative workflows for managing intensive exposure and response prevention treatment schedules.",
+                "image": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "eating-disorders",
+        "name": "Eating Disorders",
+        "metaTitle": "Eating Disorder Psychiatry Admin Support | Virtual Minds",
+        "metaDescription": "Specialized support for eating disorder psychiatry. Managing multidisciplinary coordination, meal support scheduling, and family communication.",
+        "heroDescription": "Administrative infrastructure for eating disorder treatment. We coordinate the complex scheduling and communication required for comprehensive care.",
+        "heroImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "consultingServices": [
+            "EHR Implementation",
+            "Review of current processes and systems",
+            "Contract Review and Negotiation",
+            "Create Client Management and Experience Policies"
+        ],
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Multidisciplinary Team Coordination",
+            "Client Intake and Onboarding",
+            "Family Communication Support"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Contact Insurance Companies On Request"
+        ],
+        "categories": [
+            {
+                "name": "Team Coordination",
+                "active": true
+            },
+            {
+                "name": "Family Support",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Multidisciplinary Care Coordination Guide",
+                "category": "Team Coordination",
+                "readTime": "7 min read",
+                "description": "Best practices for coordinating care between psychiatrists, therapists, dietitians, and medical providers.",
+                "image": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "consult-liaison",
+        "name": "Consult-Liaison",
+        "metaTitle": "Consult-Liaison Psychiatry Admin Support | Virtual Minds",
+        "metaDescription": "Administrative support for consult-liaison psychiatry. Managing hospital coordination, consultation scheduling, and medical team communication.",
+        "heroDescription": "Operational support for consultation-liaison psychiatry. We handle the administrative coordination between psychiatric and medical services.",
+        "heroImage": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "consultingServices": [
+            "Review of current processes and systems",
+            "HIPAA Compliance",
+            "Make recommendations",
+            "Implement any new procedures"
+        ],
+        "vaServices": [
+            "Consultation Scheduling and Coordination",
+            "Medical Team Communication",
+            "Document Management and Record Keeping",
+            "Patient Communication and Correspondence"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Contact Insurance Companies On Request"
+        ],
+        "categories": [
+            {
+                "name": "Hospital Coordination",
+                "active": true
+            },
+            {
+                "name": "Medical Liaison",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Hospital Consultation Workflow Optimization",
+                "category": "Hospital Coordination",
+                "readTime": "6 min read",
+                "description": "Streamlining administrative processes for psychiatric consultations in medical settings.",
+                "image": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ]
+    },
+    {
+        "slug": "neuropsychiatry",
+        "name": "Neuropsychiatry",
+        "metaTitle": "Neuropsychiatry Practice Admin Support | Virtual Minds",
+        "metaDescription": "Specialized administrative support for neuropsychiatry practices. Managing complex assessments, neurological coordination, and specialized documentation.",
+        "heroDescription": "Administrative infrastructure for neuropsychiatric practices. We manage the specialized coordination required for neurological and psychiatric care integration.",
+        "heroImage": "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "consultingServices": [
+            "EHR Implementation",
+            "Review of current processes and systems",
+            "HIPAA Compliance",
+            "Create Client Management and Experience Policies"
+        ],
+        "vaServices": [
+            "Appointment Scheduling and Calendar Management",
+            "Neurological Testing Coordination",
+            "Document Management and Record Keeping",
+            "Patient Communication and Correspondence"
+        ],
+        "billingSupport": [
+            "Billing Company Liaison",
+            "Generate Superbills",
+            "Contact Insurance Companies On Request"
+        ],
+        "categories": [
+            {
+                "name": "Neurological Testing",
+                "active": true
+            },
+            {
+                "name": "Specialized Assessments",
+                "active": false
+            }
+        ],
+        "resources": [
+            {
+                "title": "Neuropsychological Testing Coordination",
+                "category": "Neurological Testing",
+                "readTime": "7 min read",
+                "description": "Administrative workflows for managing neuropsychological assessments, referrals, and results integration.",
+                "image": "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+            }
+        ]
     }
 ]
