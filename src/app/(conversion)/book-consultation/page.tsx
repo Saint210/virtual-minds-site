@@ -45,19 +45,20 @@ export default function BookConsultationPage() {
             <main className="flex-grow flex flex-col items-center py-12 md:py-20 px-6">
                 <div className="max-w-[1300px] w-full grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
                     {/* Left Side: Content & Timeline */}
-                    <div className="flex flex-col gap-10">
-                        <div className="flex flex-col gap-6">
-                            <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-4">
+                    <div className="flex flex-col gap-8">
+                        <div className="flex flex-col gap-5">
+                            {/* Breadcrumbs - Hidden on Mobile */}
+                            <nav className="hidden md:flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
                                 <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                 <span className="material-symbols-outlined text-[14px]">chevron_right</span>
                                 <span className="text-trust-navy">Book Consultation</span>
                             </nav>
 
-                            {/* Trust Badges - High Conversion */}
-                            <div className="flex items-center gap-3">
-                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-5 py-2 text-trust-navy text-xs font-black w-fit shadow-sm">
-                                    <span className="material-symbols-outlined text-primary text-[18px]">analytics</span>
-                                    <span className="tracking-[0.2em] uppercase">2026 Strategy</span>
+                            {/* Trust Badges - Condensed on Mobile */}
+                            <div className="flex flex-wrap items-center gap-2">
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-xs font-black shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-base">analytics</span>
+                                    <span className="tracking-wider uppercase">2026 Strategy</span>
                                 </div>
                                 <div className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-green-50 border border-green-100">
                                     <span className="material-symbols-outlined text-green-600 text-sm">verified_user</span>
@@ -69,18 +70,39 @@ export default function BookConsultationPage() {
                                 </div>
                             </div>
 
-                            <h1 className="font-serif text-5xl lg:text-[5rem] font-bold text-trust-navy leading-[0.95] tracking-tight">
-                                Book Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">California Psychiatric Virtual Assistant</span> <br />
-                                Consultation
+                            {/* Headline - Smaller on Mobile */}
+                            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trust-navy leading-tight tracking-tight">
+                                Schedule Your Free <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Strategy Call</span>
                             </h1>
 
-                            <p className="text-xl text-slate-600 font-display leading-relaxed max-w-xl">
-                                Schedule your <strong className="text-trust-navy">15-minute</strong> California psychiatric strategy call. We'll{' '}
-                                <span className="text-primary font-bold">analyze your clinical administrative load</span> and blueprint a{' '}
-                                <strong className="text-trust-navy">stable operational path</strong>.
+                            {/* Description - Condensed */}
+                            <p className="text-base md:text-lg text-slate-600 leading-relaxed">
+                                <strong className="text-trust-navy">15-minute</strong> psychiatric workflow analysis. We'll blueprint your <span className="text-primary font-bold">stable operational path</span>.
                             </p>
 
-                            <div className="flex flex-col gap-2 mt-2 p-4 bg-white/50 border border-slate-200 rounded-xl">
+                            {/* CTA Buttons - Prominent Above-Fold */}
+                            <div className="flex flex-col gap-3 mt-2">
+                                {/* Phone CTA - Primary */}
+                                <a
+                                    href="tel:+13104006266"
+                                    className="w-full bg-primary hover:bg-primary-hover text-white px-6 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] flex items-center justify-center gap-3 group"
+                                >
+                                    <svg className="w-6 h-6 group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                                        <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <span>Call (310) 400-6266</span>
+                                </a>
+
+                                {/* OR Divider */}
+                                <div className="flex items-center gap-3">
+                                    <div className="flex-1 h-px bg-slate-200"></div>
+                                    <span className="text-xs font-bold text-slate-400 uppercase tracking-widest">Or Schedule Online</span>
+                                    <div className="flex-1 h-px bg-slate-200"></div>
+                                </div>
+                            </div>
+
+                            {/* Elite Training Callout - Moved Below CTAs */}
+                            <div className="hidden md:flex flex-col gap-2 p-4 bg-white/50 border border-slate-200 rounded-xl">
                                 <div className="flex items-center gap-2 text-trust-navy font-bold">
                                     <span className="material-symbols-outlined text-primary text-xl">school</span>
                                     <span className="text-sm uppercase tracking-wider">UCLA, UCSF, Stanford-Trained?</span>
