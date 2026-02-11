@@ -252,7 +252,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 <span className="text-xl font-bold text-green-400">+{formatCurrency(annualAdminCost)}</span>
                             </div>
                             <div className="flex justify-between items-end border-b border-white/10 pb-4">
-                                <span className="text-slate-300 text-sm">Office Space Savings</span>
+                                <span className="text-slate-300 text-sm">Facility & Overhead Savings</span>
                                 <span className="text-xl font-bold text-green-400">+{formatCurrency(annualRentSavings)}</span>
                             </div>
                             <div className="flex justify-between items-end border-b border-white/10 pb-4">

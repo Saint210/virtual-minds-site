@@ -49,7 +49,7 @@ export default function LosAngelesPage() {
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-10 max-w-2xl">
-                                    Lease administrative intelligence, not Beverly Hills square footage. We provide high-performance virtual staff ensuring boutique-level perception with remote-optimized economics.
+                                    Augment your practice with administrative intelligence—whether you operate in-office or via telehealth. We provide high-performance virtual staff ensuring boutique-level perception with remote-optimized economics.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
@@ -81,7 +81,7 @@ export default function LosAngelesPage() {
                                     <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
                                         <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Metro Performance Gain</p>
                                         <p className="text-4xl font-serif font-bold text-primary mb-1">$65,000 / yr</p>
-                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Average overhead reduction compared to in-office staffing in Los Angeles County.</p>
+                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Average administrative overhead reduction compared to traditional staffing in Los Angeles County.</p>
                                     </div>
                                 </div>
                             </div>
