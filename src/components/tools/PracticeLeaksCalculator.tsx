@@ -184,7 +184,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                         {/* Input 2: Monthly Rent */}
                         <div>
                             <div className="flex justify-between mb-2">
-                                <label className="text-sm font-bold text-slate-700">Monthly Office Expense</label>
+                                <label className="text-sm font-bold text-slate-700">Monthly Facility & Overhead</label>
                                 <span className="text-[#D2691E] font-bold">${monthlyRent.toLocaleString()}</span>
                             </div>
                             <input
@@ -196,7 +196,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 onChange={(e) => setMonthlyRent(parseInt(e.target.value))}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
-                            <p className="text-xs text-slate-400 mt-1">Rent, utilities, parking, cleaning for office space.</p>
+                            <p className="text-xs text-slate-400 mt-1">Rent, utilities, software, or home office equivalent.</p>
                         </div>
 
                         {/* Input 3: Hourly Rate */}

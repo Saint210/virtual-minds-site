@@ -18,7 +18,7 @@ export default function LosAngelesPage() {
 
             <main className="flex-grow">
                 {/* EXECUTIVE STRATEGIC HERO */}
-                <section className="relative pt-12 md:pt-24 pb-24 overflow-hidden">
+                <section className="relative pt-8 md:pt-16 pb-24 overflow-hidden">
                     <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
                         <div className="absolute top-0 right-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
                     </div>
@@ -28,7 +28,7 @@ export default function LosAngelesPage() {
 
                             {/* Left Column (60%) */}
                             <div className="lg:w-[60%]">
-                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-10">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-6">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
                                     <Link href="/locations" className="hover:text-primary transition-colors">Locations</Link>
@@ -36,19 +36,19 @@ export default function LosAngelesPage() {
                                     <span className="text-trust-navy">Los Angeles</span>
                                 </nav>
 
-                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-8">
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                     <span className="material-symbols-outlined text-primary text-[16px]">location_on</span>
                                     Direct Deployment: Los Angeles County
                                 </div>
 
-                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
                                     Virtual Receptionist & Admin Support <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
                                         for Los Angeles Psychiatrists
                                     </span>
                                 </h1>
 
-                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-10 max-w-2xl">
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
                                     Augment your practice with administrative intelligence—whether you operate in-office or via telehealth. We provide high-performance virtual staff ensuring boutique-level perception with remote-optimized economics.
                                 </p>
 
