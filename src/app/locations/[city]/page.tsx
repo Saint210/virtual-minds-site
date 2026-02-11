@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import NearbyCitiesWidget from "@/components/locations/NearbyCitiesWidget";
+import TrackedLink from "@/components/ui/TrackedLink";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
 
@@ -82,13 +83,15 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
-                                    <Link
+                                    <TrackedLink
                                         href="/book-consultation"
+                                        ctaName={`Audit Your ${location.name} Practice`}
+                                        source="location_city_hero"
                                         className="px-8 py-5 bg-trust-navy hover:bg-trust-navy/90 text-white font-bold text-lg rounded-2xl shadow-xl hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
                                     >
                                         <span className="material-symbols-outlined">analytics</span>
                                         Audit Your {location.name} Practice
-                                    </Link>
+                                    </TrackedLink>
                                 </div>
                             </div>
 

@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "California Psychiatric Scheduling Virtual Assistants | Virtual Minds",
@@ -97,10 +98,15 @@ export default function SchedulingPage() {
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-5">
-                                    <Link href="/book-consultation" className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Get a Scheduling Audit"
+                                        source="service_scheduling_hero"
+                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3"
+                                    >
                                         <span className="material-symbols-outlined">calendar_today</span>
                                         Get a Scheduling Audit
-                                    </Link>
+                                    </TrackedLink>
                                 </div>
                             </div>
 

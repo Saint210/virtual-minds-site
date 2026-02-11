@@ -1,4 +1,9 @@
+"use client";
+
+import { useTracking } from "@/hooks/useTracking";
+
 export default function OnboardingProcess() {
+    const { trackCTAClick } = useTracking();
     const steps = [
         {
             id: "1",
@@ -35,7 +40,7 @@ export default function OnboardingProcess() {
                 <div className="absolute bottom-10 right-10 w-96 h-96 bg-white/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
                 <div className="absolute top-1/2 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-2xl animate-pulse delay-500"></div>
             </div>
-            
+
             <div className="relative z-10 max-w-[1200px] mx-auto px-6">
                 {/* Section Header */}
                 <div className="text-center mb-16">
@@ -61,22 +66,20 @@ export default function OnboardingProcess() {
                             <div key={step.id} className="flex flex-col items-center text-center group">
                                 <div className="relative">
                                     {/* Glassmorphism Icon Container */}
-                                    <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 transition-all shadow-lg group-hover:-translate-y-2 group-hover:scale-110 ${
-                                        index === 3
+                                    <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 transition-all shadow-lg group-hover:-translate-y-2 group-hover:scale-110 ${index === 3
                                             ? "bg-primary shadow-xl shadow-primary/30"
                                             : "bg-white/80 backdrop-blur-md border border-slate-200 hover:bg-white"
-                                    }`}>
-                                        <span className={`material-symbols-outlined text-4xl transition-colors ${
-                                            index === 3 ? "text-white" : "text-primary"
                                         }`}>
+                                        <span className={`material-symbols-outlined text-4xl transition-colors ${index === 3 ? "text-white" : "text-primary"
+                                            }`}>
                                             {step.icon}
                                         </span>
                                     </div>
-                                    
+
                                     {/* Hover Glow Effect */}
                                     <div className="absolute -inset-2 bg-primary/10 rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                                 </div>
-                                
+
                                 <div className="bg-white/60 backdrop-blur-md border border-slate-200 rounded-xl p-6 hover:bg-white transition-all duration-300">
                                     <h3 className="text-xl font-bold text-trust-navy mb-3 group-hover:text-primary transition-colors">
                                         {step.id}. {step.title}
@@ -97,6 +100,7 @@ export default function OnboardingProcess() {
                         <p className="text-slate-600 mb-6">Begin your transformation with our streamlined California-focused onboarding process</p>
                         <a
                             href="/book-consultation"
+                            onClick={() => trackCTAClick('Start Your Onboarding', '/book-consultation', 'onboarding_process')}
                             className="group relative overflow-hidden bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center"
                         >
                             <span className="relative z-10 flex items-center gap-2">

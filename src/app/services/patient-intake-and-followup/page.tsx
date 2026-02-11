@@ -7,6 +7,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
@@ -98,10 +99,15 @@ export default function IntakePage() {
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-5">
-                                    <Link href="/book-consultation" className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Book Setup Call"
+                                        source="service_intake_hero"
+                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3"
+                                    >
                                         <span className="material-symbols-outlined">person_add</span>
                                         Book Setup Call
-                                    </Link>
+                                    </TrackedLink>
                                 </div>
                             </div>
 

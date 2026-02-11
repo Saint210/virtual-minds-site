@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "Psychiatric Practice Management & Strategic Launch | California",
@@ -102,12 +103,17 @@ export default function ConsultingPage() {
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-5">
-                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-[#D2691E]/20 flex items-center justify-center gap-3">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Request Operational Audit"
+                                        source="service_consulting_hero"
+                                        className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-[#D2691E]/20 flex items-center justify-center gap-3"
+                                    >
                                         <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                         </svg>
                                         Request Operational Audit
-                                    </Link>
+                                    </TrackedLink>
                                 </div>
                             </div>
 

@@ -1,6 +1,10 @@
+"use client";
+
 import Link from "next/link";
+import { useTracking } from "@/hooks/useTracking";
 
 export default function ServiceNavigationTray() {
+    const { trackCTAClick } = useTracking();
     return (
         <section className="py-24 bg-[#FAF8F3]">
             <div className="max-w-7xl mx-auto px-6">
@@ -23,7 +27,11 @@ export default function ServiceNavigationTray() {
                                     <span className="material-symbols-outlined text-[#D2691E] group-hover:scale-110 transition-transform">analytics</span>
                                     <span className="font-bold text-trust-navy">Yield Analysis</span>
                                 </Link>
-                                <Link href="/book-consultation" className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl transition-all shadow-xl shadow-primary/20 hover:shadow-2xl hover:-translate-y-1 hover:scale-105">
+                                <Link
+                                    href="/book-consultation"
+                                    onClick={() => trackCTAClick('See My Recovery Plan', '/book-consultation', 'service_navigation_tray')}
+                                    className="group flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-primary to-primary/90 text-white rounded-2xl transition-all shadow-xl shadow-primary/20 hover:shadow-2xl hover:-translate-y-1 hover:scale-105"
+                                >
                                     <span className="material-symbols-outlined group-hover:rotate-12 transition-transform text-white">calendar_today</span>
                                     <span className="font-bold">See My Recovery Plan</span>
                                 </Link>

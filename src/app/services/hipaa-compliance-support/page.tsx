@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
@@ -94,10 +95,15 @@ export default function HIPAAPage() {
                                 </div>
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Request Compliance Audit"
+                                        source="service_hipaa_hero"
+                                        className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5"
+                                    >
                                         <span className="material-symbols-outlined text-[20px]">enhanced_encryption</span>
                                         Request Compliance Audit
-                                    </Link>
+                                    </TrackedLink>
                                 </div>
                             </div>
 

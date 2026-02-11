@@ -7,6 +7,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import ROICalculator from "@/components/marketing/ROICalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 
 export const metadata = {
@@ -49,10 +50,15 @@ export default function VirtualAssistantPage() {
                                 <LocationTagline variant="service" serviceName="Clinical Operations Support" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Schedule Consult"
+                                        source="service_va_hero"
+                                        className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                                    >
                                         <span className="material-symbols-outlined">schedule</span>
                                         Schedule Consult
-                                    </Link>
+                                    </TrackedLink>
                                     <Link href="#capabilities" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center">
                                         View Capabilities
                                     </Link>

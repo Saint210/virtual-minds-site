@@ -3,6 +3,7 @@
 import { submitConsultation, ActionState } from "@/server/actions/consultation";
 import { useActionState, useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
+import { useTracking } from "@/hooks/useTracking";
 
 const INITIAL_STATE: ActionState = {
     success: false,
@@ -14,13 +15,18 @@ export default function ConsultationForm() {
     const [state, formAction, isPending] = useActionState(submitConsultation, INITIAL_STATE);
     const [selectedPracticeSize, setSelectedPracticeSize] = useState("");
     const router = useRouter();
+    const { trackFormSubmit } = useTracking();
 
     // Redirect to thank-you page on success
     useEffect(() => {
         if (state.success) {
+            trackFormSubmit("consultation_booking", {
+                practice_size: selectedPracticeSize,
+                ehr: document.getElementById('ehrPlatform') ? (document.getElementById('ehrPlatform') as HTMLSelectElement).value : 'unknown'
+            });
             router.push("/thank-you");
         }
-    }, [state.success, router]);
+    }, [state.success, router, trackFormSubmit, selectedPracticeSize]);
 
     // Helper for controlled buttons (hidden input)
     const handleSizeSelect = (size: string) => {

@@ -6,6 +6,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
   title: "Psychiatric EHR Optimization & Management | California Specialists",

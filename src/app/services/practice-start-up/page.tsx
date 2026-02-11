@@ -7,6 +7,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata: Metadata = {
     title: "Psychiatric Practice Start-Up Consulting | California",
@@ -48,10 +49,15 @@ export default function PracticeStartUpPage() {
                                 <LocationTagline variant="service" serviceName="Practice Start-Up" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Book Launch Strategy"
+                                        source="service_startup_hero"
+                                        className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                                    >
                                         <span className="material-symbols-outlined">calendar_add_on</span>
                                         Book Launch Strategy
-                                    </Link>
+                                    </TrackedLink>
                                     <Link href="#roadmap" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center">
                                         View Roadmap
                                     </Link>

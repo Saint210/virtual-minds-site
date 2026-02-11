@@ -8,6 +8,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import BillingServiceSchema from "@/components/seo/BillingServiceSchema";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata: Metadata = {
     title: "Psychiatric Billing Liaison & RCM Support | California",
@@ -50,10 +51,15 @@ export default function BillingPage() {
                                 <LocationTagline variant="service" serviceName="Billing & RCM" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
-                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Schedule Usage Audit"
+                                        source="service_billing_hero"
+                                        className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                                    >
                                         <span className="material-symbols-outlined">calendar_add_on</span>
                                         Schedule Usage Audit
-                                    </Link>
+                                    </TrackedLink>
                                     <Link href="#scope" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center">
                                         View Scope of Work
                                     </Link>
@@ -203,9 +209,14 @@ export default function BillingPage() {
                         <PracticeLeaksCalculator />
 
                         <div className="text-center mt-12">
-                            <Link href="/book-consultation" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02]">
+                            <TrackedLink
+                                href="/book-consultation"
+                                ctaName="Schedule Billing Audit"
+                                source="service_billing_calculator"
+                                className="inline-flex items-center gap-2 bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02]"
+                            >
                                 Schedule Billing Audit <span className="material-symbols-outlined">arrow_forward</span>
-                            </Link>
+                            </TrackedLink>
                         </div>
                     </div>
                 </section>

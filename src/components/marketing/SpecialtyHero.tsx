@@ -1,4 +1,5 @@
-```typescript
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import LocationTagline from "./LocationTagline";
@@ -13,6 +14,7 @@ interface SpecialtyHeroProps {
 
 export default function SpecialtyHero({ name, tagline, description, imageSrc }: SpecialtyHeroProps) {
     const { trackCTAClick } = useTracking();
+
     return (
         <section className="relative pt-12 pb-16 bg-[#FAF8F3] overflow-hidden">
             {/* Background Accents */}
@@ -41,9 +43,9 @@ export default function SpecialtyHero({ name, tagline, description, imageSrc }: 
                         <LocationTagline variant="specialty" specialtyName={name} className="mb-8" />
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
-                            <Link 
-                                href="/book-consultation" 
-                                onClick={() => trackCTAClick('Book Strategy Session', '/book-consultation', `specialty_${ name.toLowerCase().replace(/\s+/g, '_') } `)}
+                            <Link
+                                href="/book-consultation"
+                                onClick={() => trackCTAClick('Book Strategy Session', '/book-consultation', `specialty_${name.toLowerCase().replace(/\s+/g, '_')}`)}
                                 className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
@@ -60,7 +62,7 @@ export default function SpecialtyHero({ name, tagline, description, imageSrc }: 
                     <div className="relative group">
                         <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 bg-white">
                             <Image
-                                src={image}
+                                src={imageSrc}
                                 alt={name}
                                 fill
                                 className="object-cover"

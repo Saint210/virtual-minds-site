@@ -5,6 +5,7 @@ import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "Psychiatric Website Design & SEO | Virtual Minds",
@@ -53,13 +54,15 @@ export default function WebsiteDesignPage() {
                                 <LocationTagline variant="service" serviceName="Website Design" className="mb-6" />
 
                                 <div className="flex flex-col sm:flex-row gap-5 pt-4">
-                                    <Link
+                                    <TrackedLink
                                         href="/book-consultation"
+                                        ctaName="Audit My Website"
+                                        source="service_webdesign_hero"
                                         className="px-8 py-4 bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold text-lg rounded-xl shadow-xl shadow-[#D2691E]/20 hover:-translate-y-1 transition-all flex items-center justify-center gap-2"
                                     >
                                         <span className="material-symbols-outlined">laptop_mac</span>
                                         Audit My Website
-                                    </Link>
+                                    </TrackedLink>
                                     <Link
                                         href="#portfolio"
                                         className="px-8 py-4 bg-white border border-slate-200 text-trust-navy font-bold text-lg rounded-xl hover:bg-slate-50 transition-all flex items-center justify-center gap-2"

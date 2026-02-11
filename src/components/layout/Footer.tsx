@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import TrackedContactLink from "@/components/ui/TrackedContactLink";
 
 export default function Footer() {
     return (
@@ -69,9 +70,14 @@ export default function Footer() {
                             <Link href="#" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
                                 <span className="material-symbols-outlined text-lg">language</span>
                             </Link>
-                            <Link href="mailto:cheryl@thevirtualminds.com" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
+                            <TrackedContactLink
+                                href="mailto:cheryl@thevirtualminds.com"
+                                contactType="email"
+                                value="cheryl@thevirtualminds.com"
+                                className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg"
+                            >
                                 <span className="material-symbols-outlined text-lg">alternate_email</span>
-                            </Link>
+                            </TrackedContactLink>
                             <Link href="#" className="size-11 rounded-xl bg-slate-100 hover:bg-primary flex items-center justify-center text-slate-500 hover:text-white transition-all border border-slate-200 hover:border-primary hover:-translate-y-1 shadow-sm hover:shadow-lg">
                                 <span className="material-symbols-outlined text-lg">share</span>
                             </Link>
@@ -187,7 +193,12 @@ export default function Footer() {
                             Contact
                         </h4>
                         <div className="space-y-4">
-                            <a href="tel:+13104006266" className="group flex items-start gap-3 p-4 rounded-xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover:border-primary/40 hover:shadow-lg transition-all">
+                            <TrackedContactLink
+                                href="tel:+13104006266"
+                                contactType="phone"
+                                value="+13104006266"
+                                className="group flex items-start gap-3 p-4 rounded-xl bg-gradient-to-br from-primary/5 to-primary/10 border border-primary/20 hover:border-primary/40 hover:shadow-lg transition-all"
+                            >
                                 <span className="size-10 rounded-lg bg-primary/20 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-white transition-all shrink-0">
                                     <span className="material-symbols-outlined text-lg">call</span>
                                 </span>
@@ -195,7 +206,7 @@ export default function Footer() {
                                     <div className="font-black text-trust-navy text-base group-hover:text-primary transition-colors">(310) 400-6266</div>
                                     <div className="text-xs text-slate-600 font-semibold">Click to call now</div>
                                 </div>
-                            </a>
+                            </TrackedContactLink>
 
                             <div className="flex items-start gap-3 p-4 rounded-xl bg-slate-50 border border-slate-200">
                                 <span className="size-10 rounded-lg bg-slate-200 flex items-center justify-center text-slate-600 shrink-0">
