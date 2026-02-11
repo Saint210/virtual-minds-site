@@ -31,7 +31,7 @@ export default function LosAngelesPage() {
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-10">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <span className="text-trust-navy">Locations</span>
+                                    <Link href="/locations" className="hover:text-primary transition-colors">Locations</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
                                     <span className="text-trust-navy">Los Angeles</span>
                                 </nav>
@@ -69,20 +69,13 @@ export default function LosAngelesPage() {
                             <div className="lg:w-[40%] group w-full">
                                 <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
                                     <Image
-                                        src="/images/elite_psychiatry_hub.png"
-                                        alt="Los Angeles Psychiatric Operations Command"
+                                        src="/images/virtual-assistant-hero.png"
+                                        alt="Los Angeles Psychiatric Virtual Assistant - Professional support managing practice workflows"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
-
-                                    {/* Floating Savings Token */}
-                                    <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Metro Performance Gain</p>
-                                        <p className="text-4xl font-serif font-bold text-primary mb-1">$65,000 / yr</p>
-                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Average administrative overhead reduction compared to traditional staffing in Los Angeles County.</p>
-                                    </div>
                                 </div>
                             </div>
 

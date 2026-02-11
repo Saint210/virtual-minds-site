@@ -99,20 +99,13 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                             <div className="lg:w-[40%] group w-full">
                                 <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
                                     <Image
-                                        src={location.heroImage || "/images/hero-dashboard.png"}
-                                        alt={location.heroImageAlt}
+                                        src="/images/virtual-assistant-hero.png"
+                                        alt={`${location.name} Psychiatric Virtual Assistant - Professional support managing practice workflows`}
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
-
-                                    {/* Floating Savings Token */}
-                                    <div className="absolute -bottom-8 -left-8 bg-white p-8 rounded-[2rem] shadow-2xl border border-slate-100 max-w-xs z-20 group-hover:-translate-y-2 transition-transform duration-500">
-                                        <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Regional Performance Gain</p>
-                                        <p className="text-4xl font-serif font-bold text-primary mb-1">{location.rentSavings}</p>
-                                        <p className="text-[10px] font-bold text-slate-500 leading-tight">Average administrative overhead reduction compared to traditional staffing in {location.name}.</p>
-                                    </div>
                                 </div>
                             </div>
                         </div>

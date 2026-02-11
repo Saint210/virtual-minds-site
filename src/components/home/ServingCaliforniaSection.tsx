@@ -68,10 +68,7 @@ export default function ServingCaliforniaSection() {
                             </p>
 
                             {/* Footer */}
-                            <div className="flex items-center justify-between pt-4 border-t border-slate-100">
-                                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
-                                    {location.rentAvg}
-                                </span>
+                            <div className="flex items-center justify-end pt-4 border-t border-slate-100">
                                 <div className="size-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all duration-300">
                                     <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </div>
