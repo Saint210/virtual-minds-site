@@ -1,7 +1,8 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { useTracking } from "@/hooks/useTracking";
 
 interface PracticeLeaksCalculatorProps {
     initialRent?: number;
@@ -9,6 +10,11 @@ interface PracticeLeaksCalculatorProps {
 }
 
 export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }: PracticeLeaksCalculatorProps) {
+    // Tracking
+    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult } = useTracking();
+    const calculatorRef = useRef<HTMLDivElement>(null);
+    const [hasTrackedView, setHasTrackedView] = useState(false);
+
     // State for user inputs
     const [adminHours, setAdminHours] = useState(15);
     const [activePatients, setActivePatients] = useState(40);
@@ -51,6 +57,85 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
 
     }, [adminHours, activePatients, monthlyRent, hourlyRate]);
 
+    // Track when calculator enters viewport
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting && !hasTrackedView) {
+                    trackCalculatorView('practice_leaks');
+                    setHasTrackedView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (calculatorRef.current) {
+            observer.observe(calculatorRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, [hasTrackedView, trackCalculatorView]);
+
+    // Track slider changes (debounced) - Admin Hours
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('practice_leaks', 'admin_hours', adminHours);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [adminHours, hasTrackedView, trackCalculatorInteraction]);
+
+    // Track slider changes - Active Patients
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('practice_leaks', 'active_patients', activePatients);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [activePatients, hasTrackedView, trackCalculatorInteraction]);
+
+    // Track slider changes - Monthly Rent
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('practice_leaks', 'monthly_rent', monthlyRent);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [monthlyRent, hasTrackedView, trackCalculatorInteraction]);
+
+    // Track slider changes - Hourly Rate
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('practice_leaks', 'hourly_rate', hourlyRate);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [hourlyRate, hasTrackedView, trackCalculatorInteraction]);
+
+    // Track final results (after 3 seconds of no interaction)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView && totalAnnualImpact > 0) {
+                trackCalculatorResult('practice_leaks', {
+                    admin_hours: adminHours,
+                    monthly_rent: monthlyRent,
+                    hourly_rate: hourlyRate,
+                    active_patients: activePatients,
+                }, {
+                    admin_savings: annualAdminCost,
+                    rent_savings: annualRentSavings,
+                    revenue_gain: potentialRevenueGain,
+                    totalAnnualImpact: totalAnnualImpact,
+                });
+            }
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, [totalAnnualImpact, hasTrackedView, adminHours, monthlyRent, hourlyRate, activePatients, annualAdminCost, annualRentSavings, potentialRevenueGain, trackCalculatorResult]);
+
     // Formatting helper
     const formatCurrency = (amount: number) => {
         return new Intl.NumberFormat('en-US', {
@@ -61,7 +146,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     };
 
     return (
-        <div className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200">
+        <div ref={calculatorRef} className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200">
             <div className="flex flex-col lg:flex-row">
 
                 {/* LEFT: Inputs Section */}

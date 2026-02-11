@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
@@ -52,6 +53,7 @@ export default function IntakePage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">onboarding, screening, and refill logistics</span>
                                     that ensure patients remain engaged and clinicians remain focused.
                                 </p>
+                                <LocationTagline variant="service" serviceName="Patient Intake & Follow-Up" />
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">

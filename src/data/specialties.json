@@ -5,7 +5,7 @@
         "metaTitle": "General Psychiatry Practice Support | Virtual Minds",
         "metaDescription": "Full-spectrum administrative and consulting support for board-certified psychiatrists. We manage intake, scheduling, and core operational infrastructure.",
         "heroDescription": "Administrative and operational support for psychiatric practices. We manage your administrative tasks so you can focus on clinical excellence.",
-        "heroImage": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "Practice Start-Up Services",
             "Review Current Plans",
@@ -60,7 +60,7 @@
         "metaTitle": "Women's Mental Health Admin Support | Virtual Minds",
         "metaDescription": "Specialized support for reproductive psychiatry practices. High-touch intake, onboarding, and administrative coordination.",
         "heroDescription": "Administrative systems for psychiatric practices. We protect your patient experience while managing your daily operations.",
-        "heroImage": "https://images.unsplash.com/photo-1551076805-e1869033e561?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "HIPAA Compliance",
             "Review of current processes and systems",
@@ -104,7 +104,7 @@
         "metaTitle": "Child Psychiatry Administrative Support | Virtual Minds",
         "metaDescription": "Administrative support for child and adolescent psychiatry. Managing scheduling, intake, and patient correspondence.",
         "heroDescription": "Operational support for pediatric psychiatric practices. We handle the administrative coordination required for clinical care.",
-        "heroImage": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/about-hero.png",
         "consultingServices": [
             "EHR Implementation",
             "Practice Start-Up Services",
@@ -148,7 +148,7 @@
         "metaTitle": "Integrative Psychiatry Operations | Virtual Minds",
         "metaDescription": "Operational support for integrative psychiatry practices. Managing complex scheduling and administrative documentation.",
         "heroDescription": "Administrative logistics for psychiatry. We manage the layers of practice management so you can focus on patient care.",
-        "heroImage": "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/hero-dashboard.png",
         "consultingServices": [
             "EHR Implementation",
             "Review Current Plans",
@@ -192,7 +192,7 @@
         "metaTitle": "ADHD & Neuropsychiatry Admin Support | Virtual Minds",
         "metaDescription": "Precision administrative support for ADHD and Neuropsychiatry. Managing appointments, prior authorizations, and documentation.",
         "heroDescription": "Administrative infrastructure for psychiatry. We handle the regulatory and scheduling demands of your practice.",
-        "heroImage": "https://images.unsplash.com/photo-1555633514-abceaad63e27?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/practice-consulting-dashboard.png",
         "consultingServices": [
             "HIPAA Compliance",
             "Review of current processes and systems",
@@ -236,7 +236,7 @@
         "metaTitle": "Psychiatric Private Practice Launch | Virtual Minds",
         "metaDescription": "Complete start-up support for psychiatrists moving to private practice. From office set-up to EHR implementation.",
         "heroDescription": "Start-up consulting for your new California private practice. We provide the operational foundation for your launch.",
-        "heroImage": "https://images.unsplash.com/photo-1497215842964-222b430dc094?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/scheduling-hero.png",
         "consultingServices": [
             "Practice Start-Up Services",
             "Office Set-Up",
@@ -280,7 +280,7 @@
         "metaTitle": "Sleep Medicine Psychiatry Admin Support | Virtual Minds",
         "metaDescription": "Specialized administrative support for sleep medicine psychiatry practices. Managing complex scheduling, sleep study coordination, and patient follow-up.",
         "heroDescription": "Administrative coordination for sleep psychiatry practices. We manage the scheduling complexity and documentation requirements of sleep medicine.",
-        "heroImage": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/medication-management-hero.png",
         "consultingServices": [
             "EHR Implementation",
             "Review of current processes and systems",
@@ -324,7 +324,7 @@
         "metaTitle": "OCD & Anxiety Disorder Practice Support | Virtual Minds",
         "metaDescription": "Administrative support for OCD and anxiety disorder specialists. Managing intensive treatment scheduling, ERP coordination, and patient communication.",
         "heroDescription": "Operational support for anxiety and OCD-focused practices. We handle the administrative demands of intensive treatment protocols.",
-        "heroImage": "https://images.unsplash.com/photo-1499209974431-9dddcece7f88?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/virtual-assistant-hero.png",
         "consultingServices": [
             "Practice Start-Up Services",
             "Review Current Plans",
@@ -368,7 +368,7 @@
         "metaTitle": "Eating Disorder Psychiatry Admin Support | Virtual Minds",
         "metaDescription": "Specialized support for eating disorder psychiatry. Managing multidisciplinary coordination, meal support scheduling, and family communication.",
         "heroDescription": "Administrative infrastructure for eating disorder treatment. We coordinate the complex scheduling and communication required for comprehensive care.",
-        "heroImage": "https://images.unsplash.com/photo-1490645935967-10de6ba17061?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/psychiatry-consultation-room.png",
         "consultingServices": [
             "EHR Implementation",
             "Review of current processes and systems",
@@ -412,7 +412,7 @@
         "metaTitle": "Consult-Liaison Psychiatry Admin Support | Virtual Minds",
         "metaDescription": "Administrative support for consult-liaison psychiatry. Managing hospital coordination, consultation scheduling, and medical team communication.",
         "heroDescription": "Operational support for consultation-liaison psychiatry. We handle the administrative coordination between psychiatric and medical services.",
-        "heroImage": "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/ehr-optimization-mockup-v2.png",
         "consultingServices": [
             "Review of current processes and systems",
             "HIPAA Compliance",
@@ -456,7 +456,7 @@
         "metaTitle": "Neuropsychiatry Practice Admin Support | Virtual Minds",
         "metaDescription": "Specialized administrative support for neuropsychiatry practices. Managing complex assessments, neurological coordination, and specialized documentation.",
         "heroDescription": "Administrative infrastructure for neuropsychiatric practices. We manage the specialized coordination required for neurological and psychiatric care integration.",
-        "heroImage": "https://images.unsplash.com/photo-1559757175-5700dde675bc?ixlib=rb-4.0.3&auto=format&fit=crop&w=1740&q=80",
+        "heroImage": "/images/contact-hero.png",
         "consultingServices": [
             "EHR Implementation",
             "Review of current processes and systems",

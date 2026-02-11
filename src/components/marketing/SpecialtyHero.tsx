@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import LocationTagline from "@/components/marketing/LocationTagline";
 
 interface SpecialtyHeroProps {
     name: string;
@@ -30,9 +31,10 @@ export default function SpecialtyHero({ name, description, image }: SpecialtyHer
                             </span>
                         </h1>
 
-                        <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium max-w-xl mb-8">
+                        <p className="text-lg md:text-xl text-slate-600 leading-relaxed font-medium max-w-xl mb-4">
                             {description}
                         </p>
+                        <LocationTagline variant="specialty" specialtyName={name} className="mb-8" />
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
                             <Link href="/book-consultation" className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">

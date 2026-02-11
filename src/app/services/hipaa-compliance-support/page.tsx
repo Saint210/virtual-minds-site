@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
     title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
@@ -50,9 +52,7 @@ export default function HIPAAPage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">secure psychiatric workflows</span>
                                     that protect your liability and patient trust.
                                 </p>
-                                <p className="text-base text-slate-500 font-medium mb-8 max-w-2xl">
-                                    Protecting practices in <Link href="/locations/los-angeles" className="text-primary hover:underline font-bold">Los Angeles</Link>, <Link href="/locations/san-francisco" className="text-primary hover:underline font-bold">San Francisco</Link>, <Link href="/locations/orange" className="text-primary hover:underline font-bold">Orange County</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">throughout California</Link>.
-                                </p>
+                                <LocationTagline variant="service" serviceName="HIPAA Compliance Support" />
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
@@ -219,6 +219,19 @@ export default function HIPAAPage() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* CALCULATOR SECTION */}
+                <section className="py-24 bg-white">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your Compliance ROI</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                See how much time and risk you can eliminate with proper HIPAA workflows.
+                            </p>
+                        </div>
+                        <PracticeLeaksCalculator />
                     </div>
                 </section>
 

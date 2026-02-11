@@ -4,6 +4,8 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
   title: "Psychiatric EHR Optimization & Management | California Specialists",
@@ -169,6 +171,7 @@ export default function EHRManagementPage() {
                   <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">DrChrono, Charm, or SimplePractice</span>
                   workflows built for psychiatric care.
                 </p>
+                <LocationTagline variant="service" serviceName="EHR/EMR Management" />
 
                 {/* Institutional Social Proof */}
                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
@@ -414,6 +417,19 @@ export default function EHRManagementPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* CALCULATOR SECTION */}
+        <section className="py-24 bg-white">
+          <div className="max-w-[1400px] mx-auto px-6">
+            <div className="text-center mb-16">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your EHR Efficiency Gains</h2>
+              <p className="text-slate-600 max-w-2xl mx-auto">
+                See how much time and revenue you can recover with optimized EHR workflows.
+              </p>
+            </div>
+            <PracticeLeaksCalculator />
           </div>
         </section>
 

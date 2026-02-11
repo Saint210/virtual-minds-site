@@ -159,14 +159,14 @@ export default function PracticeAuditWizard() {
                             <button
                                 key={model.id}
                                 onClick={() => handleNext("practiceModel", model.id)}
-                                className="group text-left p-6 rounded-2xl border-2 border-slate-200 bg-gradient-to-br from-white to-slate-50/50 shadow-md hover:border-primary/50 hover:bg-primary/5 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex items-center gap-4"
+                                className="group text-left p-6 rounded-2xl border-2 border-primary/20 bg-gradient-to-br from-white via-primary/5 to-primary/10 shadow-lg shadow-primary/10 hover:border-primary/60 hover:bg-gradient-to-br hover:from-primary/10 hover:via-primary/15 hover:to-primary/20 hover:shadow-2xl hover:shadow-primary/20 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex items-center gap-4"
                             >
-                                <div className="size-12 rounded-xl bg-gradient-to-br from-slate-100 to-slate-200/50 shadow-inner flex items-center justify-center text-slate-500 group-hover:bg-primary group-hover:from-primary group-hover:to-primary group-hover:text-white transition-all duration-300">
-                                    <span className="material-symbols-outlined text-2xl">{model.icon}</span>
+                                <div className="size-14 rounded-xl bg-gradient-to-br from-primary/20 to-primary/30 shadow-lg shadow-primary/20 flex items-center justify-center text-primary group-hover:from-primary group-hover:to-primary-hover group-hover:text-white group-hover:shadow-xl group-hover:shadow-primary/30 group-hover:scale-110 transition-all duration-300">
+                                    <span className="material-symbols-outlined text-3xl font-bold">{model.icon}</span>
                                 </div>
                                 <div>
-                                    <p className="font-bold text-trust-navy text-lg">{model.label}</p>
-                                    <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">{model.size} Providers</p>
+                                    <p className="font-bold text-trust-navy text-lg group-hover:text-primary transition-colors">{model.label}</p>
+                                    <p className="text-xs text-primary/70 font-black uppercase tracking-wider group-hover:text-primary">{model.size} Providers</p>
                                 </div>
                             </button>
                         ))}

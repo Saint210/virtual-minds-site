@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import ROICalculator from "@/components/marketing/ROICalculator";
 
@@ -45,6 +46,7 @@ export default function VirtualAssistantPage() {
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                                     Stop training generalists on what an "intake" is. Our staff arrives fluent in <span className="text-trust-navy font-bold">SimplePractice, Prior Auths, and HIPAA protocols</span>—so you can focus on complex care.
                                 </p>
+                                <LocationTagline variant="service" serviceName="Clinical Operations Support" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">

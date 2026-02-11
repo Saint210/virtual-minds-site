@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Manrope, Outfit, Lora } from "next/font/google";
 import "./globals.css";
 import GoogleAnalytics from "@/components/analytics/GoogleAnalytics";
+import PlausibleProvider from "@/components/analytics/PlausibleProvider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 // import PostHogAnalytics from "@/components/analytics/PostHogAnalytics";
 
@@ -87,11 +88,13 @@ export default function RootLayout({
         className={`${manrope.variable} ${outfit.variable} ${lora.variable} antialiased`}
         style={{ backgroundColor: '#FAF8F3' }}
       >
-        <GoogleAnalytics />
-        <MedicalSchema />
-        <SpeedInsights />
-        {/* <PostHogAnalytics /> */}
-        {children}
+        <PlausibleProvider>
+          <GoogleAnalytics />
+          <MedicalSchema />
+          <SpeedInsights />
+          {/* <PostHogAnalytics /> */}
+          {children}
+        </PlausibleProvider>
       </body>
     </html>
   );

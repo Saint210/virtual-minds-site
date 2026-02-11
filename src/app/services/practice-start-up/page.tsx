@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata: Metadata = {
     title: "Psychiatric Practice Start-Up Consulting | California",
@@ -32,17 +34,18 @@ export default function PracticeStartUpPage() {
                             <div className="lg:w-1/2">
                                 <div className="inline-flex items-center gap-2 bg-trust-navy/5 border border-trust-navy/10 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-4">
                                     <span className="material-symbols-outlined text-sm">rocket_launch</span>
-                                    Executive Launch Systems
+                                    30-Day Launch System
                                 </div>
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
-                                    From Fellowship to <br />
+                                    You Trained to Heal Patients. <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                                        Founder.
+                                        Not Build a Business.
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    You know the medicine. We know the business. Our "Practice Operating System" handles <span className="text-trust-navy font-bold">EHR Setup, Compliance, and Payer Logistics</span>—so you open your doors with confidence.
+                                    Most new psychiatrists waste 6-12 months Googling "how to start a practice" while watching their savings drain. Our <span className="text-trust-navy font-bold">Practice Operating System</span> handles the infrastructure—<span className="text-trust-navy font-bold">EHR setup, payer credentialing, HIPAA compliance</span>—so you open your doors in 30 days, not 6 months.
                                 </p>
+                                <LocationTagline variant="service" serviceName="Practice Start-Up" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">
@@ -146,6 +149,19 @@ export default function PracticeStartUpPage() {
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* CALCULATOR SECTION */}
+                <section className="py-24 bg-white">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your Launch ROI</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                See the financial impact of launching your practice the right way.
+                            </p>
+                        </div>
+                        <PracticeLeaksCalculator />
                     </div>
                 </section>
 

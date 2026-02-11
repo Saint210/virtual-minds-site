@@ -5,6 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
 import BillingServiceSchema from "@/components/seo/BillingServiceSchema";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
@@ -46,9 +47,7 @@ export default function BillingPage() {
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                                     The gap between your clinical notes and your billing company is where revenue is lost. We act as your <span className="text-trust-navy font-bold">Revenue Cycle Liaison</span>, managing prior auths, superbills, and billing inquiries so you don't have to.
                                 </p>
-                                <p className="text-base text-slate-500 font-medium mb-6 max-w-2xl">
-                                    Serving practices in <Link href="/locations/los-angeles" className="text-primary hover:underline font-bold">Los Angeles</Link>, <Link href="/locations/san-francisco" className="text-primary hover:underline font-bold">San Francisco</Link>, <Link href="/locations/san-diego" className="text-primary hover:underline font-bold">San Diego</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">50+ California cities</Link>.
-                                </p>
+                                <LocationTagline variant="service" serviceName="Billing & RCM" />
 
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2">

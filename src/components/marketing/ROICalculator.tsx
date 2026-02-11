@@ -1,8 +1,14 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+import { useTracking } from "@/hooks/useTracking";
 
 export default function ROICalculator() {
+    // Tracking
+    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult } = useTracking();
+    const calculatorRef = useRef<HTMLDivElement>(null);
+    const [hasTrackedView, setHasTrackedView] = useState(false);
+
     const [adminHours, setAdminHours] = useState(20);
     const [hourlyRate, setHourlyRate] = useState(400);
     const [errorRate, setErrorRate] = useState(5);
@@ -27,8 +33,95 @@ export default function ROICalculator() {
 
     const savings = calculateSavings();
 
+    // Track when calculator enters viewport
+    useEffect(() => {
+        const observer = new IntersectionObserver(
+            (entries) => {
+                if (entries[0].isIntersecting && !hasTrackedView) {
+                    trackCalculatorView('roi_calculator');
+                    setHasTrackedView(true);
+                }
+            },
+            { threshold: 0.5 }
+        );
+
+        if (calculatorRef.current) {
+            observer.observe(calculatorRef.current);
+        }
+
+        return () => observer.disconnect();
+    }, [hasTrackedView, trackCalculatorView]);
+
+    // Track slider changes (debounced)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('roi_calculator', 'admin_hours', adminHours);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [adminHours, hasTrackedView, trackCalculatorInteraction]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('roi_calculator', 'prior_auth_hours', priorAuthHours);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [priorAuthHours, hasTrackedView, trackCalculatorInteraction]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('roi_calculator', 'hourly_rate', hourlyRate);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [hourlyRate, hasTrackedView, trackCalculatorInteraction]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('roi_calculator', 'billing_error_rate', errorRate);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [errorRate, hasTrackedView, trackCalculatorInteraction]);
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('roi_calculator', 'monthly_revenue', monthlyRevenue);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [monthlyRevenue, hasTrackedView, trackCalculatorInteraction]);
+
+    // Track final results
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView && savings.totalSavings > 0) {
+                trackCalculatorResult('roi_calculator', {
+                    admin_hours: adminHours,
+                    prior_auth_hours: priorAuthHours,
+                    hourly_rate: hourlyRate,
+                    billing_error_rate: errorRate,
+                    monthly_revenue: monthlyRevenue,
+                }, {
+                    admin_savings: savings.adminSavings,
+                    prior_auth_savings: savings.priorAuthSavings,
+                    billing_savings: savings.billingSavings,
+                    totalSavings: savings.totalSavings,
+                    annualSavings: savings.annualSavings,
+                });
+            }
+        }, 3000);
+        return () => clearTimeout(timer);
+    }, [savings.totalSavings, hasTrackedView, adminHours, priorAuthHours, hourlyRate, errorRate, monthlyRevenue, savings.adminSavings, savings.priorAuthSavings, savings.billingSavings, savings.annualSavings, trackCalculatorResult]);
+
     return (
-        <section className="relative py-20 overflow-hidden bg-[#F8FAFC]">
+        <section ref={calculatorRef} className="relative py-20 overflow-hidden bg-[#F8FAFC]">
             {/* Modern Background */}
             <div className="absolute inset-0 bg-gradient-to-br from-white via-slate-50 to-primary/10">
                 {/* Animated Elements */}
@@ -126,7 +219,7 @@ export default function ROICalculator() {
                             <div className="group">
                                 <label className="block text-sm font-semibold text-trust-navy mb-2 flex items-center gap-2">
                                     <span className="material-symbols-outlined text-primary text-sm">error</span>
-                                    Billing Error Rate (%)
+                                    Current Billing Error Rate (%)
                                 </label>
                                 <input
                                     type="range"
@@ -202,7 +295,7 @@ export default function ROICalculator() {
                                 <div className="flex justify-between items-center pb-4 border-b border-slate-200">
                                     <span className="text-sm md:text-base text-slate-600 flex items-center gap-2">
                                         <span className="material-symbols-outlined text-primary text-sm">payments</span>
-                                        Billing Error Recovery
+                                        Revenue Recovered from Error Reduction
                                     </span>
                                     <span className="font-bold text-trust-navy">${savings.billingSavings.toLocaleString()}/mo</span>
                                 </div>

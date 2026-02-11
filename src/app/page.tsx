@@ -175,7 +175,7 @@ export default function Home() {
                 <Link
                   key={spec.slug}
                   href={`/specialties/${spec.slug}`}
-                  className="group relative bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex flex-col gap-3 overflow-hidden cursor-pointer"
+                  className="group relative bg-gradient-to-br from-white via-primary/5 to-primary/10 rounded-2xl p-6 border-2 border-primary/20 shadow-lg shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex flex-col gap-3 overflow-hidden cursor-pointer"
                 >
                   {/* Subtle gradient overlay on hover */}
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -183,8 +183,8 @@ export default function Home() {
                   <div className="flex items-center justify-between relative z-10">
                     <div className="flex items-center gap-4">
                       {/* Icon badge */}
-                      <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-primary/10 to-accent/10 group-hover:from-primary/20 group-hover:to-accent/20 flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-sm">
-                        <div className="w-2.5 h-2.5 rounded-full bg-gradient-to-br from-primary to-accent group-hover:shadow-lg group-hover:shadow-primary/50 transition-all" />
+                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/30 group-hover:from-primary group-hover:to-primary-hover flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-md shadow-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30">
+                        <div className="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:from-white group-hover:to-white group-hover:shadow-lg group-hover:shadow-white/50 transition-all" />
                       </div>
                       <span className="font-serif text-xl font-semibold text-trust-navy group-hover:text-primary transition-colors">{spec.name}</span>
                     </div>
@@ -198,7 +198,7 @@ export default function Home() {
                   </div>
 
                   {/* Preview text */}
-                  <p className="text-sm text-slate-500 group-hover:text-slate-600 transition-colors relative z-10 leading-relaxed">
+                  <p className="text-sm text-primary/70 group-hover:text-primary transition-colors relative z-10 leading-relaxed font-medium">
                     {spec.preview}
                   </p>
 

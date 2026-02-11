@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
     title: "Psychiatric Practice Management & Strategic Launch | California",
@@ -52,9 +54,7 @@ export default function ConsultingPage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">specialized operational support</span>
                                     California mental health professionals need to streamline their practice and focus on care.
                                 </p>
-                                <p className="text-base text-slate-500 font-medium mb-8 max-w-2xl">
-                                    Serving psychiatrists in <Link href="/locations/beverly-hills" className="text-primary hover:underline font-bold">Beverly Hills</Link>, <Link href="/locations/palo-alto" className="text-primary hover:underline font-bold">Palo Alto</Link>, <Link href="/locations/san-diego" className="text-primary hover:underline font-bold">San Diego</Link>, and <Link href="/locations" className="text-primary hover:underline font-bold">across California</Link>.
-                                </p>
+                                <LocationTagline variant="service" serviceName="Practice Consulting" />
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
@@ -194,6 +194,18 @@ export default function ConsultingPage() {
                     </div>
                 </section>
 
+                {/* CALCULATOR SECTION */}
+                <section className="py-24 bg-white">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your Practice ROI</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                See the financial impact of optimizing your practice operations.
+                            </p>
+                        </div>
+                        <PracticeLeaksCalculator />
+                    </div>
+                </section>
 
                 <ServiceNavigationTray />
             </main>

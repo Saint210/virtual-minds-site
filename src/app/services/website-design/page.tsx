@@ -3,6 +3,8 @@ import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
     title: "Psychiatric Website Design & SEO | Virtual Minds",
@@ -48,6 +50,7 @@ export default function WebsiteDesignPage() {
                                 <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-xl">
                                     Most psychiatric websites look 15 years old and scare away cash-pay patients. We build AI-optimized, HIPAA-aware digital environments that rank on Google AND ChatGPT/Perplexity.
                                 </p>
+                                <LocationTagline variant="service" serviceName="Website Design" className="mb-6" />
 
                                 <div className="flex flex-col sm:flex-row gap-5 pt-4">
                                     <Link
@@ -317,6 +320,19 @@ export default function WebsiteDesignPage() {
                             <span className="material-symbols-outlined">calendar_today</span>
                             Schedule Website Audit
                         </Link>
+                    </div>
+                </section>
+
+                {/* CALCULATOR SECTION */}
+                <section className="py-24 bg-white">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your Digital ROI</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                See how much revenue a professional website can generate for your practice.
+                            </p>
+                        </div>
+                        <PracticeLeaksCalculator />
                     </div>
                 </section>
             </main>

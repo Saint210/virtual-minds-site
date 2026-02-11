@@ -4,6 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
+import LocationTagline from "@/components/marketing/LocationTagline";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 
 export const metadata = {
     title: "California Psychiatric Scheduling Virtual Assistants | Virtual Minds",
@@ -50,6 +52,7 @@ export default function SchedulingPage() {
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">waitlists, titration windows, and urgent reschedules</span>
                                     so you can focus exclusively on patient care.
                                 </p>
+                                <LocationTagline variant="service" serviceName="Administrative & Scheduling" />
 
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
@@ -204,6 +207,19 @@ export default function SchedulingPage() {
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </section>
+
+                {/* CALCULATOR SECTION */}
+                <section className="py-24 bg-white">
+                    <div className="max-w-[1400px] mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <h2 className="font-serif text-3xl md:text-4xl font-bold text-trust-navy mb-4">Calculate Your Time Recovery</h2>
+                            <p className="text-slate-600 max-w-2xl mx-auto">
+                                See exactly how much revenue you lose to administrative tasks every week.
+                            </p>
+                        </div>
+                        <PracticeLeaksCalculator />
                     </div>
                 </section>
 
