@@ -71,6 +71,47 @@ export const useTracking = () => {
         }).catch(err => console.error('Failed to track lead:', err));
     };
 
+    const trackCTAClick = (ctaName: string, destination: string, source?: string) => {
+        trackEvent('CTA Click', {
+            type: ctaName,
+            destination: destination,
+            source: source || window.location.pathname,
+        });
+    };
+
+    const trackPhoneClick = (phoneNumber: string) => {
+        trackEvent('Click', {
+            type: 'Phone Number',
+            number: phoneNumber,
+            source: window.location.pathname,
+        });
+    };
+
+    const trackEmailClick = (email: string) => {
+        trackEvent('Click', {
+            type: 'Email',
+            email: email,
+            source: window.location.pathname,
+        });
+    };
+
+    const trackFormSubmit = (formType: string, formData?: Record<string, any>) => {
+        trackEvent('Form Submit', {
+            type: formType,
+            source: window.location.pathname,
+            ...formData,
+        });
+    };
+
+    const trackNavigation = (destination: string, linkType: string, linkText?: string) => {
+        trackEvent('Navigation', {
+            type: linkType,
+            destination: destination,
+            text: linkText,
+            source: window.location.pathname,
+        });
+    };
+
     return {
         trackEvent,
         trackPageView,
@@ -78,5 +119,10 @@ export const useTracking = () => {
         trackCalculatorView,
         trackCalculatorInteraction,
         trackCalculatorResult,
+        trackCTAClick,
+        trackPhoneClick,
+        trackEmailClick,
+        trackFormSubmit,
+        trackNavigation,
     };
 };

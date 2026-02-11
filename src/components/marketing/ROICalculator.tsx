@@ -5,7 +5,7 @@ import { useTracking } from "@/hooks/useTracking";
 
 export default function ROICalculator() {
     // Tracking
-    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult } = useTracking();
+    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult, trackCTAClick } = useTracking();
     const calculatorRef = useRef<HTMLDivElement>(null);
     const [hasTrackedView, setHasTrackedView] = useState(false);
 
@@ -312,6 +312,7 @@ export default function ROICalculator() {
                         <div className="text-center">
                             <a
                                 href="/book-consultation"
+                                onClick={() => trackCTAClick('Start Saving Today', '/book-consultation', 'roi_calculator')}
                                 className="group relative overflow-hidden bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center"
                             >
                                 <span className="relative z-10 flex items-center gap-2">

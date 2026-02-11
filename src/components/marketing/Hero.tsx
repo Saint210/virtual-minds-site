@@ -1,7 +1,9 @@
 import Link from "next/link";
 import Image from "next/image";
+import { useTracking } from "@/hooks/useTracking";
 
 export default function Hero() {
+    const { trackCTAClick } = useTracking();
     return (
         <section className="relative min-h-[auto] lg:min-h-[90vh] flex items-start lg:items-center overflow-hidden">
             {/* Premium Matte Cream Background (Matches Services Hub) */}
@@ -36,10 +38,10 @@ export default function Hero() {
                         </div>
 
 
-                        {/* Modern CTA */}
                         <div className="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start pt-2">
                             <Link
                                 href="/book-consultation"
+                                onClick={() => trackCTAClick('Book Consultation', '/book-consultation', 'homepage_hero')}
                                 className="group relative overflow-hidden bg-[#D2691E] hover:bg-[#B8860B] text-white px-6 py-3 rounded-xl font-bold text-base transition-all hover:shadow-xl hover:shadow-[#D2691E]/20 hover:-translate-y-1"
                             >
                                 <span className="relative z-10 flex items-center gap-2">
@@ -50,6 +52,7 @@ export default function Hero() {
 
                             <Link
                                 href="/services"
+                                onClick={() => trackCTAClick('Explore Services', '/services', 'homepage_hero')}
                                 className="group border-2 border-primary/30 text-primary px-6 py-3 rounded-xl font-bold text-base hover:bg-primary/5 transition-colors flex items-center gap-2"
                             >
                                 <span>Explore Protocols</span>

@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { createPortal } from "react-dom";
+import { useTracking } from "@/hooks/useTracking";
 
 interface NavbarProps {
     practiceName?: string;
@@ -16,6 +17,8 @@ export default function Navbar({
 }: NavbarProps) {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
     const [mounted, setMounted] = useState(false);
+    const { trackCTAClick } = useTracking();
+
 
     useEffect(() => {
         setMounted(true);
@@ -61,7 +64,11 @@ export default function Navbar({
                     <Link href="/blog" className="hover:text-primary transition-colors">
                         Blog
                     </Link>
-                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-primary/10">
+                    <Link
+                        href="/book-consultation"
+                        onClick={() => trackCTAClick('Schedule Call', '/book-consultation', 'navbar_desktop')}
+                        className="bg-primary hover:bg-primary-hover text-white px-5 py-2.5 rounded-xl font-bold transition-all shadow-md shadow-primary/10"
+                    >
                         Schedule Call
                     </Link>
                 </div>
@@ -116,7 +123,10 @@ export default function Navbar({
                             <Link
                                 href="/book-consultation"
                                 className="bg-primary hover:bg-primary-hover text-white px-6 py-4 rounded-2xl text-lg font-bold transition-all shadow-xl shadow-primary/20 text-center mt-6"
-                                onClick={() => setMobileMenuOpen(false)}
+                                onClick={() => {
+                                    trackCTAClick('Schedule Call', '/book-consultation', 'navbar_mobile');
+                                    setMobileMenuOpen(false);
+                                }}
                             >
                                 Schedule Call
                             </Link>

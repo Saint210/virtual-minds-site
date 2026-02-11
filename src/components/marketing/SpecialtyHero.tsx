@@ -1,14 +1,18 @@
-import Image from "next/image";
+```typescript
 import Link from "next/link";
-import LocationTagline from "@/components/marketing/LocationTagline";
+import Image from "next/image";
+import LocationTagline from "./LocationTagline";
+import { useTracking } from "@/hooks/useTracking";
 
 interface SpecialtyHeroProps {
     name: string;
+    tagline: string;
     description: string;
-    image: string;
+    imageSrc: string;
 }
 
-export default function SpecialtyHero({ name, description, image }: SpecialtyHeroProps) {
+export default function SpecialtyHero({ name, tagline, description, imageSrc }: SpecialtyHeroProps) {
+    const { trackCTAClick } = useTracking();
     return (
         <section className="relative pt-12 pb-16 bg-[#FAF8F3] overflow-hidden">
             {/* Background Accents */}
@@ -37,7 +41,11 @@ export default function SpecialtyHero({ name, description, image }: SpecialtyHer
                         <LocationTagline variant="specialty" specialtyName={name} className="mb-8" />
 
                         <div className="flex flex-col sm:flex-row items-center gap-4">
-                            <Link href="/book-consultation" className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20">
+                            <Link 
+                                href="/book-consultation" 
+                                onClick={() => trackCTAClick('Book Strategy Session', '/book-consultation', `specialty_${ name.toLowerCase().replace(/\s+/g, '_') } `)}
+                                className="w-full sm:w-auto px-8 py-4 bg-primary text-white font-bold rounded-xl hover:bg-primary-hover transition-all flex items-center justify-center gap-2 shadow-xl shadow-primary/20"
+                            >
                                 <span className="material-symbols-outlined">calendar_today</span>
                                 Book Strategy Session
                             </Link>

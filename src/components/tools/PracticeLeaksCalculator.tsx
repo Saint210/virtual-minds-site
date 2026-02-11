@@ -11,7 +11,7 @@ interface PracticeLeaksCalculatorProps {
 
 export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }: PracticeLeaksCalculatorProps) {
     // Tracking
-    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult } = useTracking();
+    const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult, trackCTAClick } = useTracking();
     const calculatorRef = useRef<HTMLDivElement>(null);
     const [hasTrackedView, setHasTrackedView] = useState(false);
 
@@ -270,6 +270,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
 
                         <Link
                             href="/book-consultation"
+                            onClick={() => trackCTAClick('Start Recovering Revenue', '/book-consultation', 'practice_leaks_calculator')}
                             className="block w-full text-center bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1"
                         >
                             Start Recovering This Revenue
