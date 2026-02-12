@@ -2,10 +2,22 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import dynamic from "next/dynamic";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServingCaliforniaSection from "@/components/home/ServingCaliforniaSection";
-import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+
+// Lazy load calculator to improve initial page load
+const PracticeLeaksCalculator = dynamic(() => import("@/components/tools/PracticeLeaksCalculator"), {
+  loading: () => (
+    <div className="w-full max-w-5xl mx-auto h-96 rounded-3xl overflow-hidden shadow-2xl bg-slate-100 border border-slate-200 animate-pulse">
+      <div className="flex flex-col lg:flex-row h-full">
+        <div className="lg:w-1/2 p-12 bg-slate-50"></div>
+        <div className="lg:w-1/2 p-12 bg-slate-200"></div>
+      </div>
+    </div>
+  )
+});
 
 
 export const metadata = {
