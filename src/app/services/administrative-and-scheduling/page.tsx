@@ -48,6 +48,7 @@ export default function SchedulingPage() {
                                     </span>
                                 </h1>
 
+                                <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
                                     We manage the
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">intake conversion, titration windows, and patient retention</span>
                                     so you can focus exclusively on clinical care.

@@ -48,6 +48,7 @@ export default function WebsiteDesignPage() {
                                     </span>
                                 </h1>
 
+                                <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
                                     We don't just "design websites"—we engineer
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">high-conversion digital assets</span>
                                     that secure your referral pipeline from Google to Intake.

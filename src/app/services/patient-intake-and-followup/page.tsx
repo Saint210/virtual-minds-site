@@ -49,6 +49,7 @@ export default function IntakePage() {
                                     </span>
                                 </h1>
 
+                                <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
                                     We don't just "schedule"—we manage the
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">intake funnel and retention logic</span>
                                     that stabilizes your patient census.
