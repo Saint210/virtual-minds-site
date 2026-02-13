@@ -42,12 +42,7 @@ export default function ServingCaliforniaSection() {
                             href={`/locations/${location.slug}`}
                             className="group relative bg-gradient-to-br from-white via-[#FAF8F3] to-slate-50/50 p-8 rounded-[2rem] border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 flex flex-col"
                         >
-                            {/* Savings Badge */}
-                            <div className="absolute top-4 right-4 bg-primary/10 backdrop-blur-sm px-3 py-1 rounded-full">
-                                <span className="text-[10px] font-black uppercase tracking-widest text-primary">
-                                    {location.rentSavings}
-                                </span>
-                            </div>
+
 
                             {/* City Icon */}
                             <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">

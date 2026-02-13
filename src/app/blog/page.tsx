@@ -18,7 +18,7 @@ export const metadata = {
     siteName: "Virtual Minds",
     images: [
       {
-        url: "https://thevirtualminds.com/images/hero-new.png",
+        url: "https://thevirtualminds.com/images/hero-new.webp",
         width: 1200,
         height: 900,
         alt: "California Psychiatric VA Blog",
@@ -72,7 +72,7 @@ export default async function BlogPage() {
       ? new Date(post.publishedAt).toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
       : "Coming Soon",
     readTime: calculateReadTime(post.body),
-    image: post.mainImage ? urlFor(post.mainImage).url() : "/images/hero-new.png",
+    image: post.mainImage ? urlFor(post.mainImage).url() : "/images/hero-new.webp",
     slug: post.slug?.current || "",
     featured: false // You can add logic to set this from Sanity if desired
   }));

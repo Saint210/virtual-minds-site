@@ -81,7 +81,7 @@ export default function EnhancedHero() {
                         {/* Main Image with Glassmorphism */}
                         <div className="relative aspect-[4/3] w-full rounded-2xl overflow-hidden shadow-2xl border-4 border-[#D2691E]/20">
                             <Image
-                                src="/images/homepage-hero.png"
+                                src="/images/homepage-hero.webp"
                                 alt="California Psychiatrist Collaborating with Virtual Minds Assistant"
                                 fill
                                 className="object-cover"

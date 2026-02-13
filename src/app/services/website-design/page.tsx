@@ -9,7 +9,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "Psychiatric Website Design & SEO | Virtual Minds",
-    description: "AI-optimized, HIPAA-aware website design for California psychiatrists. Rank on Google AND ChatGPT/Perplexity. Convert high-value patients with a digital presence that reflects your clinical expertise.",
+    description: "California psychiatric patient acquisition infrastructure. AI-optimized digital real estate that converts traffic into qualified intake leads.",
 };
 
 export default function WebsiteDesignPage() {
@@ -42,14 +42,15 @@ export default function WebsiteDesignPage() {
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy leading-[0.95] tracking-tight">
-                                    Your Digital <br />
+                                    Digital Patient <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                        Front Office.
+                                        Acquisition.
                                     </span>
                                 </h1>
 
-                                <p className="text-xl text-slate-500 font-medium leading-relaxed max-w-xl">
-                                    Most psychiatric websites look 15 years old and scare away cash-pay patients. We build AI-optimized, HIPAA-aware digital environments that rank on Google AND ChatGPT/Perplexity.
+                                    We don't just "design websites"—we engineer
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">high-conversion digital assets</span>
+                                    that secure your referral pipeline from Google to Intake.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Website Design" className="mb-6" />
 
@@ -340,6 +341,6 @@ export default function WebsiteDesignPage() {
                 </section>
             </main>
             <Footer />
-        </div>
+        </div >
     );
 }

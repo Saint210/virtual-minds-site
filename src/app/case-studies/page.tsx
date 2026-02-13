@@ -14,7 +14,7 @@ const caseStudies = [
     title: "San Francisco Practice - VA Shutdown Rescue",
     category: "Crisis Recovery",
     location: "San Francisco, CA",
-    image: "/images/case-crisis-recovery.png",
+    image: "/images/case-crisis-recovery.webp",
     stat: "Operational Stability",
     challenge: "A sudden agency closure left this high-volume practice without administrative coverage overnight. Medication refill requests were pending, and the pharmacy coordination pipeline was completely severed.",
     solution: "Virtual Minds deployed an emergency stabilization team within 24 hours, hardened the EHR infrastructure, and restored pharmacy liaison workflows with zero clinical downtime.",

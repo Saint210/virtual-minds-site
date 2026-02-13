@@ -41,7 +41,7 @@ export default function VirtualAssistantPage() {
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
                                     Not a "Virtual Assistant."<br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                                        Clinical Ops Support.
+                                        Clinical Operations Support.
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">

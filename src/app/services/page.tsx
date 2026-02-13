@@ -149,7 +149,7 @@ export default function ServicesPage() {
                             <div className="lg:w-2/5 relative">
                                 <div className="aspect-[4/5] rounded-[3rem] overflow-hidden shadow-2xl relative border border-white/10 group">
                                     <Image
-                                        src="/images/psychiatrist-startup-planning.png"
+                                        src="/images/psychiatrist-startup-planning.webp"
                                         alt="Strategic Psychiatric Planning"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"

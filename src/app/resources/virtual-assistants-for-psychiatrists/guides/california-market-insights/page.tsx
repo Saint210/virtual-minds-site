@@ -14,7 +14,7 @@ export const metadata = {
     siteName: "Virtual Minds",
     images: [
       {
-        url: "https://thevirtualminds.com/images/hero-new.png",
+        url: "https://thevirtualminds.com/images/hero-new.webp",
         width: 1200,
         height: 900,
         alt: "California Psychiatric Market Analysis",

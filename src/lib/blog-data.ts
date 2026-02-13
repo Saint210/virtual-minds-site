@@ -97,7 +97,7 @@ export const blogPosts = [
         category: "ROI Analysis",
         date: "January 2026",
         readTime: "7 min read",
-        image: "/images/case-launch-crisis.png",
+        image: "/images/case-launch-crisis.webp",
         slug: "roi-calculator-virtual-assistant-psychiatry"
     },
     {

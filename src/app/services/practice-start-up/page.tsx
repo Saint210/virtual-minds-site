@@ -38,13 +38,13 @@ export default function PracticeStartUpPage() {
                                     30-Day Launch System
                                 </div>
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
-                                    You Trained to Heal Patients. <br />
+                                    The Private Practice <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                                        Not Build a Business.
+                                        Operating System.
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    Most new psychiatrists waste 6-12 months Googling "how to start a practice" while watching their savings drain. Our <span className="text-trust-navy font-bold">Practice Operating System</span> handles the infrastructure—<span className="text-trust-navy font-bold">EHR setup, payer credentialing, HIPAA compliance</span>—so you open your doors in 30 days, not 6 months.
+                                    Don't waste 6 months Googling "how to start a practice." We deploy a turnkey <span className="text-trust-navy font-bold">Executive Infrastructure</span>—EHR, credentialing, and compliance—so you open your doors in 30 days.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Practice Start-Up" />
 

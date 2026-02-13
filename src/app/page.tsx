@@ -66,12 +66,12 @@ export default function Home() {
               <div className="lg:w-[55%] space-y-6">
 
                 <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6">
-                  Operate at the Top of Your License with <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">California's Premier Psychiatric Virtual Assistant</span>
+                  The Clinical Operations<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">Partner for Private Psychiatry</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6">
-                  Recover 15+ hours weekly with specialized psychiatric support. HIPAA-compliant practice management for California psychiatrists.
+                  Stop managing tasks. Start engineering your practice. California's most specialized <strong>Psychiatric Virtual Assistant</strong> service.
                 </p>
 
                 <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8">

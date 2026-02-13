@@ -85,7 +85,7 @@ export default function Hero() {
                             <div className="absolute top-0 right-0 w-64 h-64 bg-[#b25a2a]/10 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none" />
 
                             <Image
-                                src="/images/homepage-hero.png"
+                                src="/images/homepage-hero.webp"
                                 alt="California Psychiatrist Collaborating with Virtual Minds Assistant"
                                 fill
                                 sizes="(max-width: 768px) 100vw, 50vw"

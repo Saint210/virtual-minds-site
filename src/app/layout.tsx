@@ -45,7 +45,7 @@ export const metadata: Metadata = {
     siteName: "Virtual Minds",
     images: [
       {
-        url: "https://thevirtualminds.com/images/hero-new.png",
+        url: "https://thevirtualminds.com/images/hero-new.webp",
         width: 1200,
         height: 900,
         alt: "Virtual Minds Assistant Working with Psychiatrist",
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Virtual Minds - Los Angeles Virtual Assistants for California Psychiatrists",
     description: "Los Angeles-based virtual assistants for California psychiatrists. Local experts trained in psychiatric workflows, HIPAA compliance, and California mental health regulations.",
-    images: ["https://thevirtualminds.com/images/hero-new.png"],
+    images: ["https://thevirtualminds.com/images/hero-new.webp"],
   },
 };
 

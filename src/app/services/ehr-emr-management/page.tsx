@@ -19,7 +19,7 @@ export const metadata = {
     siteName: "Virtual Minds",
     images: [
       {
-        url: "https://thevirtualminds.com/images/hero-new.png",
+        url: "https://thevirtualminds.com/images/hero-new.webp",
         width: 1200,
         height: 900,
         alt: "Psychiatric EHR Optimization Visualization",
@@ -163,14 +163,14 @@ export default function EHRManagementPage() {
                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
                   Psychiatric <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                    EHR Support.
+                    Workflow Architecture.
                   </span>
                 </h1>
 
                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">
-                  We don&apos;t just &quot;login&quot;—we customize and support your
-                  <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">DrChrono, Charm, or SimplePractice</span>
-                  workflows built for psychiatric care.
+                  We don&apos;t just &quot;type notes&quot;—we engineer
+                  <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">DrChrono, Charm, and SimplePractice</span>
+                  macros that cut your documentation time in half.
                 </p>
                 <LocationTagline variant="service" serviceName="EHR/EMR Management" />
 

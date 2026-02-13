@@ -2,26 +2,26 @@
     {
         "slug": "psychiatrists",
         "name": "General Psychiatry",
-        "metaTitle": "General Psychiatry Practice Support | Virtual Minds",
-        "metaDescription": "Full-spectrum administrative and consulting support for board-certified psychiatrists. We manage intake, scheduling, and core operational infrastructure.",
-        "heroDescription": "Administrative and operational support for psychiatric practices. We manage your administrative tasks so you can focus on clinical excellence.",
-        "heroImage": "/images/homepage-hero.png",
+        "metaTitle": "General Psychiatry Practice Architecture | Virtual Minds",
+        "metaDescription": "Full-spectrum operational infrastructure for board-certified psychiatrists. We manage intake conversion, titration logic, and practice workflow.",
+        "heroDescription": "We engineer the operational infrastructure so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
+        "heroImage": "/images/homepage-hero.webp",
         "consultingServices": [
-            "Practice Start-Up Services",
-            "Review Current Plans",
-            "HIPAA Compliance",
-            "Create Client Management and Experience Policies"
+            "Practice Infrastructure Design",
+            "Workflow Architecture Review",
+            "HIPAA Risk Mitigation",
+            "Client Experience Engineering"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
-            "Client Intake and Onboarding",
-            "Prescription Prior Authorizations",
-            "Patient Communication and Correspondence"
+            "High-Acuity Calendar Logic",
+            "Intake Conversion & Onboarding",
+            "Prior Authorization Defense",
+            "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Process Credit Card Transactions"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Payment Processing Management"
         ],
         "categories": [
             {
@@ -57,26 +57,26 @@
     {
         "slug": "womens-mental-health",
         "name": "Women's Mental Health",
-        "metaTitle": "Women's Mental Health Admin Support | Virtual Minds",
-        "metaDescription": "Specialized support for reproductive psychiatry practices. High-touch intake, onboarding, and administrative coordination.",
-        "heroDescription": "Administrative systems for psychiatric practices. We protect your patient experience while managing your daily operations.",
-        "heroImage": "/images/homepage-hero.png",
+        "metaTitle": "Women's Mental Health Operations | Virtual Minds",
+        "metaDescription": "Specialized infrastructure for reproductive psychiatry. High-sensitivity intake coordination and titration tracking.",
+        "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We engineer the intake and scheduling infrastructure to protect your patient experience.",
+        "heroImage": "/images/homepage-hero.webp",
         "consultingServices": [
-            "HIPAA Compliance",
-            "Review of current processes and systems",
+            "HIPAA Risk Mitigation",
+            "Clinical Workflow Audit",
             "Contract Review and Negotiation",
-            "Create Client Management and Experience Policies"
+            "Patient Experience Design"
         ],
         "vaServices": [
-            "Client Intake and Onboarding",
-            "Appointment Scheduling and Calendar Management",
-            "Patient Communication and Correspondence",
-            "Document Management and Record Keeping"
+            "High-Sensitivity Intake Coordination",
+            "Titration-Aware Scheduling",
+            "Patient Retention & Correspondence",
+            "Clinical Documentation Management"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Contact Insurance Companies On Request"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Insurance Coordination (On Request)"
         ],
         "categories": [
             {
@@ -101,26 +101,26 @@
     {
         "slug": "child-adolescent-psychiatry",
         "name": "Child & Adolescent",
-        "metaTitle": "Child Psychiatry Administrative Support | Virtual Minds",
-        "metaDescription": "Administrative support for child and adolescent psychiatry. Managing scheduling, intake, and patient correspondence.",
-        "heroDescription": "Operational support for pediatric psychiatric practices. We handle the administrative coordination required for clinical care.",
-        "heroImage": "/images/about-hero.png",
+        "metaTitle": "Child Psychiatry Practice Systems | Virtual Minds",
+        "metaDescription": "Operational infrastructure for child psychiatry. Managing family coordination, guardian consent workflows, and school correspondence.",
+        "heroDescription": "We manage the complex family coordination and guardian consent workflows required for seamless pediatric clinical care.",
+        "heroImage": "/images/about-hero.webp",
         "consultingServices": [
-            "EHR Implementation",
-            "Practice Start-Up Services",
-            "Review of current processes and systems",
-            "Office Set-Up"
+            "EHR Optimization",
+            "Practice Infrastructure Design",
+            "Workflow Architecture Review",
+            "Physical/Remote Office Setup"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
-            "Client Intake and Onboarding",
-            "Patient Communication and Correspondence",
-            "Telehealth Support Services"
+            "Family Calendar Coordination",
+            "Guardian & School Correspondence",
+            "Intake Conversion & Onboarding",
+            "Telehealth Platform Support"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Process Credit Card Transactions",
-            "Billing and Payment Management"
+            "Revenue Cycle Liaison",
+            "Payment Processing Management",
+            "Billing Support"
         ],
         "categories": [
             {
@@ -135,7 +135,7 @@
         "resources": [
             {
                 "title": "Guardian Consent & Communication S.O.P.",
-                "category": "Family Coordination",
+                "category": "Family Cooridnation",
                 "readTime": "4 min read",
                 "description": "Best practices for managing communication between clinicians, minor patients, and guardians.",
                 "image": "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
@@ -146,25 +146,25 @@
         "slug": "integrative-psychiatry",
         "name": "Integrative Psychiatry",
         "metaTitle": "Integrative Psychiatry Operations | Virtual Minds",
-        "metaDescription": "Operational support for integrative psychiatry practices. Managing complex scheduling and administrative documentation.",
-        "heroDescription": "Administrative logistics for psychiatry. We manage the layers of practice management so you can focus on patient care.",
+        "metaDescription": "Operational support for integrative psychiatry. Managing functional lab logistics, supplement tracking, and complex scheduling.",
+        "heroDescription": "We manage the multi-modality logistics of functional labs and supplements so you can focus on holistic, root-cause care.",
         "heroImage": "/images/hero-dashboard.png",
         "consultingServices": [
-            "EHR Implementation",
-            "Review Current Plans",
-            "Make recommendations",
+            "EHR Optimization",
+            "Workflow Architecture Review",
+            "Protocol Optimization Strategy",
             "Contract Review and Negotiation"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
-            "Document Management and Record Keeping",
-            "Client Intake and Onboarding",
-            "Telehealth Support Services"
+            "Complex Modality Scheduling",
+            "Functional Lab Logistics",
+            "Intake Conversion & Onboarding",
+            "Telehealth Platform Support"
         ],
         "billingSupport": [
-            "Generate Superbills",
-            "Process Credit Card Transactions",
-            "Billing Company Liaison"
+            "Superbill Generation",
+            "Payment Processing Management",
+            "Revenue Cycle Liaison"
         ],
         "categories": [
             {
@@ -189,26 +189,26 @@
     {
         "slug": "adhd-neuropsychiatry",
         "name": "ADHD & Neuropsych",
-        "metaTitle": "ADHD & Neuropsychiatry Admin Support | Virtual Minds",
-        "metaDescription": "Precision administrative support for ADHD and Neuropsychiatry. Managing appointments, prior authorizations, and documentation.",
-        "heroDescription": "Administrative infrastructure for psychiatry. We handle the regulatory and scheduling demands of your practice.",
+        "metaTitle": "ADHD & Neuropsychiatry Infrastructure | Virtual Minds",
+        "metaDescription": "Precision infrastructure for ADHD practices. Managing controlled substance workflows, prior authorizations, and testing logistics.",
+        "heroDescription": "We engineer the controlled substance workflows and prior authorization logic required for high-volume ADHD and Neuropsych practices.",
         "heroImage": "/images/practice-consulting-dashboard.png",
         "consultingServices": [
-            "HIPAA Compliance",
-            "Review of current processes and systems",
-            "Make recommendations",
-            "Implement any new procedures"
+            "HIPAA Risk Mitigation",
+            "High-Volume Workflow Audit",
+            "Protocol Optimization Strategy",
+            "Standard Operating Procedures"
         ],
         "vaServices": [
-            "Prescription Prior Authorizations",
-            "Appointment Scheduling and Calendar Management",
-            "Document Management and Record Keeping",
-            "Patient Communication and Correspondence"
+            "Prior Authorization Defense",
+            "High-Volume Calendar Logic",
+            "Clinical Documentation Management",
+            "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Contact Insurance Companies On Request",
-            "Process Credit Card Transactions"
+            "Revenue Cycle Liaison",
+            "Insurance Coordination (On Request)",
+            "Payment Processing Management"
         ],
         "categories": [
             {
@@ -233,26 +233,26 @@
     {
         "slug": "private-practice-launch",
         "name": "Practice Launch",
-        "metaTitle": "Psychiatric Private Practice Launch | Virtual Minds",
-        "metaDescription": "Complete start-up support for psychiatrists moving to private practice. From office set-up to EHR implementation.",
-        "heroDescription": "Start-up consulting for your new California private practice. We provide the operational foundation for your launch.",
+        "metaTitle": "Psychiatric Practice Architecture | Virtual Minds",
+        "metaDescription": "Complete operational chassis for new private practices. From entity formation logistics to EHR engineering.",
+        "heroDescription": "We engineer the entire operational chassis for your new California private practice launch, ensuring a stable foundation from day one.",
         "heroImage": "/images/scheduling-hero.png",
         "consultingServices": [
-            "Practice Start-Up Services",
-            "Office Set-Up",
-            "EHR Implementation",
+            "Practice Infrastructure Design",
+            "Physical/Remote Office Setup",
+            "EHR Engineering",
             "Contract Review and Negotiation"
         ],
         "vaServices": [
-            "Client Intake and Onboarding",
-            "Appointment Scheduling and Calendar Management",
-            "Create Client Management and Experience Policies",
-            "Document Management and Record Keeping"
+            "Intake Conversion & Onboarding",
+            "Founder-Led Calendar Logic",
+            "Policy & Protocol Implementation",
+            "Clinical Documentation Management"
         ],
         "billingSupport": [
-            "Billing and Payment Management",
-            "Process Credit Card Transactions",
-            "Generate Superbills"
+            "Billing Liaison Setup",
+            "Payment Processing Management",
+            "Superbill Generation"
         ],
         "categories": [
             {
@@ -277,26 +277,26 @@
     {
         "slug": "sleep-medicine",
         "name": "Sleep Medicine",
-        "metaTitle": "Sleep Medicine Psychiatry Admin Support | Virtual Minds",
-        "metaDescription": "Specialized administrative support for sleep medicine psychiatry practices. Managing complex scheduling, sleep study coordination, and patient follow-up.",
-        "heroDescription": "Administrative coordination for sleep psychiatry practices. We manage the scheduling complexity and documentation requirements of sleep medicine.",
+        "metaTitle": "Sleep Medicine Operations | Virtual Minds",
+        "metaDescription": "Specialized infrastructure for sleep psychiatry. Managing sleep study logistics, results tracking, and patient follow-up.",
+        "heroDescription": "We manage the sleep study logistics and result tracking infrastructure required for high-fidelity sleep medicine practices.",
         "heroImage": "/images/medication-management-hero.png",
         "consultingServices": [
-            "EHR Implementation",
-            "Review of current processes and systems",
-            "HIPAA Compliance",
-            "Create Client Management and Experience Policies"
+            "EHR Optimization",
+            "Workflow Architecture Review",
+            "HIPAA Risk Mitigation",
+            "Patient Experience Design"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
             "Sleep Study Coordination",
-            "Patient Communication and Correspondence",
-            "Document Management and Record Keeping"
+            "Result Tracking Infrastructure",
+            "Patient Retention & Correspondence",
+            "Clinical Documentation Management"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Contact Insurance Companies On Request"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Insurance Coordination (On Request)"
         ],
         "categories": [
             {
@@ -321,26 +321,26 @@
     {
         "slug": "ocd-anxiety-disorders",
         "name": "OCD & Anxiety Disorders",
-        "metaTitle": "OCD & Anxiety Disorder Practice Support | Virtual Minds",
-        "metaDescription": "Administrative support for OCD and anxiety disorder specialists. Managing intensive treatment scheduling, ERP coordination, and patient communication.",
-        "heroDescription": "Operational support for anxiety and OCD-focused practices. We handle the administrative demands of intensive treatment protocols.",
+        "metaTitle": "OCD & Anxiety Workflow Systems | Virtual Minds",
+        "metaDescription": "Operational infrastructure for OCD/Anxiety specialists. Managing intensive treatment scheduling and ERP protocol coordination.",
+        "heroDescription": "We engineer the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to treatment plans.",
         "heroImage": "/images/virtual-assistant-hero.png",
         "consultingServices": [
-            "Practice Start-Up Services",
-            "Review Current Plans",
-            "HIPAA Compliance",
-            "Create Client Management and Experience Policies"
+            "Practice Infrastructure Design",
+            "Workflow Architecture Review",
+            "HIPAA Risk Mitigation",
+            "Client Experience Engineering"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
-            "Client Intake and Onboarding",
-            "ERP Session Coordination",
-            "Patient Communication and Correspondence"
+            "Intensive Treatment Scheduling",
+            "ERP Protocol Coordination",
+            "Intake Conversion & Onboarding",
+            "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Process Credit Card Transactions"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Payment Processing Management"
         ],
         "categories": [
             {
@@ -365,26 +365,26 @@
     {
         "slug": "eating-disorders",
         "name": "Eating Disorders",
-        "metaTitle": "Eating Disorder Psychiatry Admin Support | Virtual Minds",
-        "metaDescription": "Specialized support for eating disorder psychiatry. Managing multidisciplinary coordination, meal support scheduling, and family communication.",
-        "heroDescription": "Administrative infrastructure for eating disorder treatment. We coordinate the complex scheduling and communication required for comprehensive care.",
-        "heroImage": "/images/psychiatry-consultation-room.png",
+        "metaTitle": "Eating Disorder Care Systems | Virtual Minds",
+        "metaDescription": "Specialized infrastructure for eating disorder psychiatry. Coordinating multidisciplinary teams and meal support tracking.",
+        "heroDescription": "We coordinate the multidisciplinary communication and meal support tracking required for comprehensive recovery and team-based care.",
+        "heroImage": "/images/psychiatry-consultation-room.webp",
         "consultingServices": [
-            "EHR Implementation",
-            "Review of current processes and systems",
+            "EHR Optimization",
+            "Clinical Workflow Audit",
             "Contract Review and Negotiation",
-            "Create Client Management and Experience Policies"
+            "Client Experience Engineering"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
             "Multidisciplinary Team Coordination",
-            "Client Intake and Onboarding",
-            "Family Communication Support"
+            "Family Communication Support",
+            "Titration-Aware Scheduling",
+            "Intake Conversion & Onboarding"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Contact Insurance Companies On Request"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Insurance Coordination (On Request)"
         ],
         "categories": [
             {
@@ -409,26 +409,26 @@
     {
         "slug": "consult-liaison",
         "name": "Consult-Liaison",
-        "metaTitle": "Consult-Liaison Psychiatry Admin Support | Virtual Minds",
-        "metaDescription": "Administrative support for consult-liaison psychiatry. Managing hospital coordination, consultation scheduling, and medical team communication.",
-        "heroDescription": "Operational support for consultation-liaison psychiatry. We handle the administrative coordination between psychiatric and medical services.",
+        "metaTitle": "Consult-Liaison Operations | Virtual Minds",
+        "metaDescription": "Administrative infrastructure for consult-liaison psychiatry. Bridging hospital systems and private consulting workflows.",
+        "heroDescription": "We act as the administrative bridge between hospital systems and your private consulting practice, ensuring seamless communication.",
         "heroImage": "/images/ehr-optimization-mockup-v2.png",
         "consultingServices": [
-            "Review of current processes and systems",
-            "HIPAA Compliance",
-            "Make recommendations",
-            "Implement any new procedures"
+            "Workflow Architecture Review",
+            "HIPAA Risk Mitigation",
+            "Protocol Optimization Strategy",
+            "Procedure Implementation"
         ],
         "vaServices": [
-            "Consultation Scheduling and Coordination",
-            "Medical Team Communication",
-            "Document Management and Record Keeping",
-            "Patient Communication and Correspondence"
+            "Consultation Logistics",
+            "Medical Team Liaison",
+            "Clinical Documentation Management",
+            "Provider Communication"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Contact Insurance Companies On Request"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Insurance Coordination (On Request)"
         ],
         "categories": [
             {
@@ -453,26 +453,26 @@
     {
         "slug": "neuropsychiatry",
         "name": "Neuropsychiatry",
-        "metaTitle": "Neuropsychiatry Practice Admin Support | Virtual Minds",
-        "metaDescription": "Specialized administrative support for neuropsychiatry practices. Managing complex assessments, neurological coordination, and specialized documentation.",
-        "heroDescription": "Administrative infrastructure for neuropsychiatric practices. We manage the specialized coordination required for neurological and psychiatric care integration.",
+        "metaTitle": "Neuropsychiatry Practice Infrastructure | Virtual Minds",
+        "metaDescription": "Precision infrastructure for neuropsychiatry. Managing testing batteries, report integration, and neurological coordination.",
+        "heroDescription": "We manage the complex testing batteries and report integration required for neuropsychiatric care and cognitive assessment.",
         "heroImage": "/images/contact-hero.png",
         "consultingServices": [
-            "EHR Implementation",
-            "Review of current processes and systems",
-            "HIPAA Compliance",
-            "Create Client Management and Experience Policies"
+            "EHR Optimization",
+            "Workflow Architecture Review",
+            "HIPAA Risk Mitigation",
+            "Client Experience Engineering"
         ],
         "vaServices": [
-            "Appointment Scheduling and Calendar Management",
             "Neurological Testing Coordination",
-            "Document Management and Record Keeping",
-            "Patient Communication and Correspondence"
+            "Report Integration Logistics",
+            "Clinical Documentation Management",
+            "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Billing Company Liaison",
-            "Generate Superbills",
-            "Contact Insurance Companies On Request"
+            "Revenue Cycle Liaison",
+            "Superbill Generation",
+            "Insurance Coordination (On Request)"
         ],
         "categories": [
             {

@@ -10,7 +10,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
-    description: "HIPAA compliant virtual assistants for psychiatrists with BAA coverage, secure workflows, audit trails, and clinical-grade data security.",
+    description: "HIPAA compliant clinical support for psychiatrists. We provide BAA coverage, secure workflows, and risk mitigation infrastructure.",
 };
 
 export default function HIPAAPage() {
@@ -48,10 +48,9 @@ export default function HIPAAPage() {
                                     </span>
                                 </h1>
 
-                                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    We don&apos;t just &quot;follow&quot; HIPAA—we implement hardened
-                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">secure psychiatric workflows</span>
-                                    that protect your liability and patient trust.
+                                    We don't just "follow" HIPAA—we engineer hardened
+                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">secure clinical environments</span>
+                                    that mitigate your liability and protect patient trust.
                                 </p>
                                 <LocationTagline variant="service" serviceName="HIPAA Compliance Support" />
 
@@ -244,6 +243,6 @@ export default function HIPAAPage() {
                 <ServiceNavigationTray />
             </main>
             <Footer />
-        </div>
+        </div >
     );
 }

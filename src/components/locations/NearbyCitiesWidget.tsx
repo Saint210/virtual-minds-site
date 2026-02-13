@@ -76,12 +76,12 @@ export default function NearbyCitiesWidget({ currentCitySlug }: NearbyCitiesWidg
                             {/* Savings */}
                             <div className="flex items-center gap-2 mb-3">
                                 <span className="text-2xl font-bold text-primary">{location.rentSavings}</span>
-                                <span className="text-xs text-slate-500 uppercase tracking-wider">Avg. Savings</span>
+                                <span className="text-xs text-slate-500 uppercase tracking-wider">Overhead Reduction</span>
                             </div>
 
                             {/* Rent Info */}
                             <p className="text-sm text-slate-500 mb-4">
-                                Office rent: <span className="font-bold text-trust-navy">{location.rentAvg}</span>
+                                Market Rent: <span className="font-bold text-trust-navy">{location.rentAvg}</span>
                             </p>
 
                             {/* Arrow */}

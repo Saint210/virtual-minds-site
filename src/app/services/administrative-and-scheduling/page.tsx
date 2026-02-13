@@ -10,7 +10,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "California Psychiatric Scheduling Virtual Assistants | Virtual Minds",
-    description: "California psychiatric scheduling and calendar management virtual assistants for intake coordination, reschedules, and multi-provider practice administration.",
+    description: "California psychiatric patient retention and calendar logic. specialized intake coordination, titration tracking, and waitlist conversion.",
 };
 
 export default function SchedulingPage() {
@@ -48,10 +48,9 @@ export default function SchedulingPage() {
                                     </span>
                                 </h1>
 
-                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
                                     We manage the
-                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">waitlists, titration windows, and urgent reschedules</span>
-                                    so you can focus exclusively on patient care.
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">intake conversion, titration windows, and patient retention</span>
+                                    so you can focus exclusively on clinical care.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Administrative & Scheduling" />
 
@@ -246,6 +245,6 @@ export default function SchedulingPage() {
                 <ServiceNavigationTray />
             </main>
             <Footer />
-        </div>
+        </div >
     );
 }

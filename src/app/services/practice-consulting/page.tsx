@@ -10,7 +10,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 
 export const metadata = {
     title: "Psychiatric Practice Management & Strategic Launch | California",
-    description: "Specialized practice management for mental health professionals. From launch logistics to operational audits and high-fidelity policy creation.",
+    description: "Specialized practice architecture for mental health professionals. From launch logistics to operational audits and high-fidelity policy creation.",
     keywords: ["psychiatric practice management", "california mental health strategy", "practice start-up services", "EHR implementation", "HIPAA compliance support"],
 };
 
@@ -47,13 +47,13 @@ export default function ConsultingPage() {
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
                                     Strategic Practice <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        Management.
+                                        Architecture.
                                     </span>
                                 </h1>
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
                                     We provide the
-                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">specialized operational support</span>
-                                    California mental health professionals need to streamline their practice and focus on care.
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">operational infrastructure</span>
+                                    that allows California psychiatrists to scale without administrative friction.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Practice Consulting" />
 
@@ -181,7 +181,7 @@ export default function ConsultingPage() {
 
                         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {[
-                                { title: "Practice Start-Up & Launch", icon: "rocket_launch", desc: "Complete foundation engineering including office setup, EHR implementation, and operational roadmap development for new practices." },
+                                { title: "Practice Start-Up & Launch", icon: "rocket_launch", desc: "Complete foundation engineering including clinical infrastructure (physical or remote), EHR implementation, and operational roadmap development." },
                                 { title: "Operational Diagnostics", icon: "troubleshoot", desc: "A systematic review of your current systems and workflows to identify bottlenecks and implement new, efficient procedures." },
                                 { title: "Policy & Compliance", icon: "gavel", desc: "Developing HIPAA-compliant SOPs, client management policies, and contract review to harden your practice's legal and ethical foundation." },
                                 { title: "Workflow Automation", icon: "hub", desc: "Recommendations and implementation of procedures that reduce administrative friction and enhance patient outcomes." },

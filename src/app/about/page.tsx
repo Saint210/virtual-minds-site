@@ -65,7 +65,7 @@ export default function AboutPage() {
                             <div className="lg:w-[40%] group w-full">
                                 <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/20 transition-colors">
                                     <Image
-                                        src="/images/about-hero-premium.png"
+                                        src="/images/about-hero-premium.webp"
                                         alt="Virtual Minds Psychiatric Support Team"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
