@@ -160,7 +160,7 @@ export default function Home() {
                   <div className="absolute bottom-8 left-8 right-8 bg-white/90 backdrop-blur-md rounded-2xl p-6 border border-white/40 shadow-xl z-20">
                     <div className="flex items-start gap-4">
                       <div className="bg-primary/10 p-3 rounded-xl">
-                        <span className="material-symbols-outlined text-primary" aria-hidden="true">verified_user</span>
+                        <span className="material-symbols-outlined text-primary text-[24px] w-6 h-6 inline-block overflow-hidden" aria-hidden="true">verified_user</span>
                       </div>
                       <div>
                         <p className="text-xs font-bold text-slate-500 uppercase tracking-wider">Compliance Status</p>
@@ -181,7 +181,7 @@ export default function Home() {
             <div className="bg-gradient-to-br from-white to-slate-50 rounded-3xl p-8 md:p-12 border-2 border-primary/20 shadow-2xl hover:shadow-3xl hover:border-primary/40 transition-all">
               <div className="flex flex-col md:flex-row items-start gap-6">
                 <div className="bg-primary/10 p-4 rounded-2xl flex-shrink-0">
-                  <span className="material-symbols-outlined text-primary text-4xl">shield_with_heart</span>
+                  <span className="material-symbols-outlined text-primary text-4xl w-9 h-9 inline-block overflow-hidden">shield_with_heart</span>
                 </div>
                 <div className="flex-1">
                   <p className="text-sm font-bold text-primary uppercase tracking-widest mb-3">Our Founding Story</p>
@@ -189,7 +189,7 @@ export default function Home() {
                     "When our previous VA company suddenly closed, <strong className="text-trust-navy">Cheryl ensured we never missed a beat</strong>. She'd been managing our operations, and she made sure every patient was cared for. I followed her to Virtual Minds without hesitation."
                   </p>
                   <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary text-sm">verified</span>
+                    <span className="material-symbols-outlined text-primary text-sm w-3.5 h-3.5 inline-block overflow-hidden">verified</span>
                     <p className="text-sm font-bold text-slate-500">Founding Client, Los Angeles</p>
                   </div>
                 </div>
