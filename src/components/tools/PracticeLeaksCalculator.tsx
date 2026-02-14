@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { useTracking } from "@/hooks/useTracking";
+import { submitCalculatorData } from "@/app/actions/submitCalculatorData";
 
 interface PracticeLeaksCalculatorProps {
     initialRent?: number;
@@ -14,6 +15,9 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     const { trackCalculatorView, trackCalculatorInteraction, trackCalculatorResult, trackCTAClick } = useTracking();
     const calculatorRef = useRef<HTMLDivElement>(null);
     const [hasTrackedView, setHasTrackedView] = useState(false);
+
+    // Modals & State
+    const [showEmailModal, setShowEmailModal] = useState(false);
 
     // State for user inputs
     const [adminHours, setAdminHours] = useState(15);
@@ -116,10 +120,14 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
         return () => clearTimeout(timer);
     }, [hourlyRate, hasTrackedView, trackCalculatorInteraction]);
 
+
+    // ... inside useEffect ...
     // Track final results (after 3 seconds of no interaction)
     useEffect(() => {
         const timer = setTimeout(() => {
             if (hasTrackedView && totalAnnualImpact > 0) {
+
+                // 1. Analytics Tracking (Plausible)
                 trackCalculatorResult('practice_leaks', {
                     admin_hours: adminHours,
                     monthly_rent: monthlyRent,
@@ -131,10 +139,23 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                     revenue_gain: potentialRevenueGain,
                     totalAnnualImpact: totalAnnualImpact,
                 });
+
+                // 2. The Data Siphon (Sanity Database)
+                // We keep this purely for anonymous agg data, even if they don't submit email
+                submitCalculatorData({
+                    adminHours,
+                    monthlyRent,
+                    hourlyRate,
+                    activePatients,
+                    projectedRevenueGain: potentialRevenueGain,
+                    city: cityName || "Unknown",
+                    source: document.location.pathname.includes('embed') ? 'embed' : 'website'
+                });
+
             }
         }, 3000);
         return () => clearTimeout(timer);
-    }, [totalAnnualImpact, hasTrackedView, adminHours, monthlyRent, hourlyRate, activePatients, annualAdminCost, annualRentSavings, potentialRevenueGain, trackCalculatorResult]);
+    }, [totalAnnualImpact, hasTrackedView, adminHours, monthlyRent, hourlyRate, activePatients, annualAdminCost, annualRentSavings, potentialRevenueGain, trackCalculatorResult, cityName]);
 
     // Formatting helper
     const formatCurrency = (amount: number) => {
@@ -144,9 +165,121 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
             maximumFractionDigits: 0,
         }).format(amount);
     };
+    const [email, setEmail] = useState("");
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const router = require("next/navigation").useRouter(); // Using require to avoid top-level import conflict if any
+
+    // Handle "Calculate" Click
+    const handleCalculateClick = () => {
+        trackCalculatorInteraction('practice_leaks', 'calculate_click', totalAnnualImpact);
+        setShowEmailModal(true);
+    };
+
+    // Handle Form Submit
+    const handleFormSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        // 1. Analytics
+        trackCalculatorResult('practice_leaks', {
+            admin_hours: adminHours,
+            monthly_rent: monthlyRent,
+            hourly_rate: hourlyRate,
+            active_patients: activePatients,
+            email_captured: 1
+        }, {
+            totalAnnualImpact: totalAnnualImpact,
+        });
+
+        // 2. Submit to Sanity & Redirect
+        const result = await submitCalculatorData({
+            adminHours,
+            monthlyRent,
+            hourlyRate,
+            activePatients,
+            projectedRevenueGain: potentialRevenueGain,
+            city: cityName || "Unknown",
+            source: document.location.pathname.includes('embed') ? 'embed' : 'website',
+            email: email
+        });
+
+        if (result.success && result.id) {
+            // Redirect to Report Page
+            router.push(`/tools/practice-leaks/report/${result.id}`);
+        } else {
+            console.error("Submission failed", result.error);
+            setIsSubmitting(false);
+            // Fallback: just show results inline if error? 
+            // For now, let's just alert or keep them here.
+            alert("Something went wrong generating your report. Please try again.");
+        }
+    };
+
 
     return (
-        <div ref={calculatorRef} className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200">
+        <div ref={calculatorRef} className="w-full max-w-5xl mx-auto rounded-3xl overflow-hidden shadow-2xl bg-white border border-slate-200 relative">
+
+            {/* EMAIL MODAL OVERLAY */}
+            {showEmailModal && (
+                <div className="absolute inset-0 z-50 bg-trust-navy/95 backdrop-blur-sm flex items-center justify-center p-4 animate-in fade-in duration-300">
+                    <div className="bg-white rounded-2xl p-8 max-w-md w-full shadow-2xl relative">
+                        <button
+                            onClick={() => setShowEmailModal(false)}
+                            className="absolute top-4 right-4 text-slate-400 hover:text-slate-600"
+                        >
+                            <span className="material-symbols-outlined">close</span>
+                        </button>
+
+                        <div className="text-center mb-6">
+                            <div className="size-12 rounded-full bg-green-100 mx-auto flex items-center justify-center text-green-600 mb-4">
+                                <span className="material-symbols-outlined text-2xl">lock</span>
+                            </div>
+                            <h3 className="text-2xl font-serif font-bold text-trust-navy mb-2">Unlock Your Confidential Audit</h3>
+                            <p className="text-slate-600 text-sm">
+                                We have generated your custom efficiency report. Where should we send the secure link?
+                            </p>
+                        </div>
+
+                        <form onSubmit={handleFormSubmit} className="space-y-4">
+                            <div>
+                                <label className="sr-only">Work Email</label>
+                                <div className="relative">
+                                    <span className="absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 material-symbols-outlined text-sm">mail</span>
+                                    <input
+                                        type="email"
+                                        required
+                                        placeholder="Enter your work email..."
+                                        className="w-full pl-10 pr-4 py-3 border border-slate-300 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                    />
+                                </div>
+                            </div>
+                            <button
+                                type="submit"
+                                disabled={isSubmitting}
+                                className="w-full bg-primary hover:bg-primary-hover text-white font-bold py-3 rounded-xl shadow-lg transition-all flex items-center justify-center gap-2"
+                            >
+                                {isSubmitting ? (
+                                    <>
+                                        <span className="size-4 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                                        Generating...
+                                    </>
+                                ) : (
+                                    <>
+                                        <span>Reveal My Report</span>
+                                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </>
+                                )}
+                            </button>
+                        </form>
+                        <p className="text-[10px] text-slate-400 text-center mt-4">
+                            We respect your privacy. Your data is encrypted and never shared.
+                        </p>
+                    </div>
+                </div>
+            )}
+
             <div className="flex flex-col lg:flex-row">
 
                 {/* LEFT: Inputs Section */}
@@ -237,47 +370,41 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                 </div>
 
                 {/* RIGHT: Results Section (Dark Mode) */}
-                <div className="lg:w-1/2 p-8 md:p-12 bg-[#2A2A2A] text-white flex flex-col justify-center relative overflow-hidden">
+                <div className="lg:w-1/2 p-8 md:p-12 bg-[#2A2A2A] text-white flex flex-col justify-center relative overflow-hidden group">
                     {/* Background Pattern */}
                     <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
 
-                    <div className="relative z-10">
-                        <h4 className="text-white font-black uppercase tracking-[0.2em] text-sm mb-8 border-l-4 border-[#D2691E] pl-4">
-                            Projected Annual Impact
-                        </h4>
+                    {/* BLUR OVERLAY - REVEALED ON HOVER/INTERACTION IF WE WANTED, BUT HERE WE JUST SHOW A TEASER */}
+                    {/* Actually, user wants flow: Adjust numbers -> See preview -> Click Calculate -> Gate -> Report. */}
+                    {/* Since existing codebase showed results live, let's keep live results but GATE the "Actionable" part? */}
+                    {/* Better: "Calculate" button replaces the live results to induce curiosity? */}
+                    {/* COMPROMISE: Show "Potential Impact" but blur the exact final number until they click? */}
+                    {/* User request: "Once they calculate... take them to page with report". */}
+                    {/* So let's hide the BIG number and show "Calculation Ready". */}
 
-                        <div className="space-y-6">
-                            <div className="flex justify-between items-end border-b border-white/10 pb-4">
-                                <span className="text-slate-300 text-sm">Staff Overhead Savings</span>
-                                <span className="text-xl font-bold text-green-400">+{formatCurrency(annualAdminCost)}</span>
-                            </div>
-                            <div className="flex justify-between items-end border-b border-white/10 pb-4">
-                                <span className="text-slate-300 text-sm">Facility & Overhead Savings</span>
-                                <span className="text-xl font-bold text-green-400">+{formatCurrency(annualRentSavings)}</span>
-                            </div>
-                            <div className="flex justify-between items-end border-b border-white/10 pb-4">
-                                <span className="text-slate-300 text-sm">Reclaimed Clinical Revenue</span>
-                                <span className="text-xl font-bold text-[#D2691E]">+{formatCurrency(potentialRevenueGain)}</span>
-                            </div>
+                    <div className="relative z-10 flex flex-col items-center justify-center h-full text-center space-y-6">
+
+                        <div className="size-20 rounded-full bg-white/5 border border-white/10 flex items-center justify-center animate-pulse">
+                            <span className="material-symbols-outlined text-4xl text-[#D2691E]">analytics</span>
                         </div>
 
-                        <div className="mt-10 mb-8">
-                            <p className="text-slate-400 text-sm mb-1">Total Annual Value Unlocked</p>
-                            <div className="text-5xl md:text-6xl font-serif font-bold text-white tracking-tight">
-                                {formatCurrency(totalAnnualImpact)}
-                            </div>
+                        <div>
+                            <h3 className="text-3xl font-serif font-bold mb-2">Audit Ready</h3>
+                            <p className="text-slate-400 text-sm max-w-xs mx-auto">
+                                Based on your inputs, we have identified <span className="text-white font-bold">3 critical efficiency leaks</span>.
+                            </p>
                         </div>
 
-                        <Link
-                            href="/book-consultation"
-                            onClick={() => trackCTAClick('Start Recovering Revenue', '/book-consultation', 'practice_leaks_calculator')}
-                            className="block w-full text-center bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1"
+                        <button
+                            onClick={handleCalculateClick}
+                            className="bg-[#D2691E] hover:bg-[#B8860B] text-white font-bold py-4 px-10 rounded-xl shadow-lg hover:shadow-2xl transition-all transform hover:-translate-y-1 flex items-center gap-3"
                         >
-                            Start Recovering This Revenue
-                        </Link>
+                            <span>Generate Efficiency Report</span>
+                            <span className="material-symbols-outlined">arrow_forward</span>
+                        </button>
 
-                        <p className="text-center text-xs text-slate-500 mt-4">
-                            *Illustrative estimates based on California market trends. Not a guarantee of results.
+                        <p className="text-xs text-slate-500">
+                            *Includes full revenue analysis & recovery plan.
                         </p>
                     </div>
                 </div>

@@ -128,6 +128,10 @@ export default function Home() {
                       <span key={school} className="font-serif text-xl text-trust-navy">{school}</span>
                     ))}
                   </div>
+                  <div className="mt-6 flex items-center gap-2 bg-trust-navy/5 w-fit px-4 py-2 rounded-lg border border-trust-navy/10">
+                    <span className="material-symbols-outlined text-trust-navy text-lg">school</span>
+                    <span className="text-xs font-bold text-trust-navy">Engineered for Academic-level Workflows</span>
+                  </div>
                 </div>
 
               </div>

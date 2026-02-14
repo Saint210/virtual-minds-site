@@ -1,6 +1,16 @@
 
 export const blogPosts = [
     {
+        title: "How to Start a Private Psychiatric Practice in California: The Cash-Pay Guide",
+        excerpt: "Don't build a replica of the insurance anxiety you just left. Build a compliant, high-margin concierge practice. Legal structure, opting out of Medicare, and operational setup.",
+        category: "Practice Launch",
+        date: "February 2026",
+        readTime: "15 min read",
+        image: "/images/practice-startup-blueprint-v4.png",
+        slug: "how-to-start-private-psychiatric-practice-california-guide",
+        featured: true
+    },
+    {
         title: "How to Choose a California Psychiatric Virtual Assistant Service",
         excerpt: "Complete guide to selecting the right virtual assistant service for your California psychiatric practice. Key factors, red flags, and decision framework.",
         category: "Selection Guide",
@@ -111,4 +121,4 @@ export const blogPosts = [
     }
 ];
 
-export const categories = ["All", "Practice Growth", "Efficiency", "Selection Guide", "Billing", "EMR Integration", "HIPAA Compliance", "Cost Analysis", "ROI Analysis"];
+export const categories = ["All", "Practice Launch", "Practice Growth", "Efficiency", "Selection Guide", "Billing", "EMR Integration", "HIPAA Compliance", "Cost Analysis", "ROI Analysis"];

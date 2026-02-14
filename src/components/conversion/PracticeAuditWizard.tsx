@@ -133,6 +133,18 @@ export default function PracticeAuditWizard() {
                 <div className={`h-full bg-primary transition-all duration-500 ease-out ${getProgress()}`} />
             </div>
 
+            {/* REVENUE LEAK BANNER (If detected from Calculator) */}
+            {searchParams.get('leak') && parseInt(searchParams.get('leak') || '0') > 0 && (
+                <div className="bg-red-50 border-b border-red-100 p-4 flex items-center justify-center gap-3 animate-in slide-in-from-top duration-500">
+                    <div className="size-8 rounded-full bg-red-100 flex items-center justify-center text-red-600 shrink-0">
+                        <span className="material-symbols-outlined text-lg">warning</span>
+                    </div>
+                    <p className="text-sm text-red-900 font-medium">
+                        <strong>Revenue Alert:</strong> We detected a potential <span className="font-bold underline decoration-red-300 decoration-2 underline-offset-2">${parseInt(searchParams.get('leak')!).toLocaleString()}/yr</span> leak in your practice.
+                    </p>
+                </div>
+            )}
+
             {/* CONTENT AREA */}
             <div className="p-8 md:p-12 flex-grow flex flex-col">
 

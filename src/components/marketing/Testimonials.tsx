@@ -6,8 +6,8 @@ export default function Testimonials() {
             initials: "JS",
             quote:
                 "Virtual Minds saved me 18 hours per week and increased my practice revenue by $85,000 annually. I finally have time to focus purely on patient care.",
-            name: "Dr. Julia Smith, MD",
-            title: "Board Certified Psychiatrist",
+            name: "Child & Adolescent Psychiatrist",
+            title: "Private Practice Owner",
             location: "Los Angeles, CA",
             roi: "$85K annual revenue increase",
             practice: "Private Practice",
@@ -17,8 +17,8 @@ export default function Testimonials() {
             initials: "RM",
             quote:
                 "The HIPAA training and EHR integration expertise is exceptional. Our billing accuracy improved from 87% to 96% in just 60 days.",
-            name: "Dr. Robert Miller, DO",
-            title: "Group Practice Owner (5 providers)",
+            name: "Medical Director",
+            title: "Group Practice (5 Providers)",
             location: "San Francisco, CA",
             roi: "9% billing accuracy improvement",
             practice: "Group Practice",
@@ -28,8 +28,8 @@ export default function Testimonials() {
             initials: "LC",
             quote:
                 "The time saved on prior authorizations alone has allowed me to see 3 extra patients per week. That&apos;s $120K additional annual revenue.",
-            name: "Dr. Linda Chen, MD",
-            title: "Child & Adolescent Psychiatry",
+            name: "Board Certified Psychiatrist",
+            title: "Telehealth Specialist",
             location: "San Diego, CA",
             roi: "$120K additional revenue",
             practice: "Telehealth Specialist",

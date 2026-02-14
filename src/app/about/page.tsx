@@ -93,7 +93,7 @@ export default function AboutPage() {
 
                         <div className="space-y-6">
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Virtual Minds was founded when <strong className="text-trust-navy">Cheryl</strong>, who had been managing operations for a psychiatric virtual assistant company, faced an unexpected transition: <span className="text-primary font-bold">the company suddenly closed</span>.
+                                Virtual Minds was founded when <strong className="text-trust-navy">Cheryl</strong>, who had been managing operations for a psychiatric virtual assistant company, faced an unexpected transition: <span className="text-primary font-bold">the company's owner suddenly passed away</span>.
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
@@ -114,8 +114,131 @@ export default function AboutPage() {
                     </div>
                 </section>
 
+                {/* CLINICAL PEDIGREE - NEW SECTION */}
+                <section className="py-24 bg-slate-50 border-y border-slate-200">
+                    <div className="max-w-7xl mx-auto px-6">
+                        <div className="text-center mb-16">
+                            <span className="text-primary font-bold uppercase tracking-widest text-[11px] mb-4 block">Unmatched Experience</span>
+                            <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-6">
+                                Operations for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Elite Psychiatry</span>
+                            </h2>
+                            <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
+                                Before founding Virtual Minds, Cheryl managed operations for a network of California's most distinguished psychiatrists. We understand the standards required by clinicians trained at the world's top institutions.
+                            </p>
+                        </div>
+
+                        {/* ACADEMIC & CLINICAL DNA */}
+                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                            {/* Card 1: Academic Pedigree */}
+                            <div className="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <span className="material-symbols-outlined text-8xl text-trust-navy">school</span>
+                                </div>
+                                <div className="bg-trust-navy/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-trust-navy">
+                                    <span className="material-symbols-outlined text-3xl">school</span>
+                                </div>
+                                <h3 className="font-serif text-2xl text-trust-navy font-bold mb-4">Academic DNA</h3>
+                                <p className="text-slate-600 mb-6 leading-relaxed">
+                                    Our operational protocols were forged in high-stakes environments, supporting faculty and alumni from California's premier medical centers.
+                                </p>
+                                <div className="space-y-3 border-t border-slate-100 pt-6">
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        Stanford University
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        UCLA Neuropsychiatric Institute
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        UCSF Health
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        USC Keck School of Medicine
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 2: High-Acuity Capabilities */}
+                            <div className="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-lg transition-all duration-300">
+                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
+                                    <span className="material-symbols-outlined text-8xl text-primary">psychology</span>
+                                </div>
+                                <div className="bg-primary/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-primary">
+                                    <span className="material-symbols-outlined text-3xl">clinical_notes</span>
+                                </div>
+                                <h3 className="font-serif text-2xl text-trust-navy font-bold mb-4">High-Acuity Scope</h3>
+                                <p className="text-slate-600 mb-6 leading-relaxed">
+                                    We go beyond basic scheduling. Our team is trained to handle the complex, sensitive workflows of advanced psychiatric care.
+                                </p>
+                                <div className="space-y-3 border-t border-slate-100 pt-6">
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        Treatment-Resistant Mood Disorders
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        Ketamine & TMS Coordination
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        Forensic Psychiatry Cases
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                        Inpatient/Outpatient Transitions
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Card 3: Executive Discretion */}
+                            <div className="bg-trust-navy p-10 rounded-2xl border border-trust-navy shadow-lg relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
+                                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
+                                    <span className="material-symbols-outlined text-8xl text-white">diversity_1</span>
+                                </div>
+                                <div className="bg-white/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-white backdrop-blur-sm">
+                                    <span className="material-symbols-outlined text-3xl">verified_user</span>
+                                </div>
+                                <h3 className="font-serif text-2xl text-white font-bold mb-4">Executive Discretion</h3>
+                                <p className="text-white/80 mb-6 leading-relaxed">
+                                    For practices serving high-profile clientele, standard VAs are a liability. We provide the "ironclad" discretion required by California's elite.
+                                </p>
+                                <div className="space-y-3 border-t border-white/10 pt-6">
+                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
+                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
+                                        C-Suite Executives & Founders
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
+                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
+                                        Public Figures & Entertainment
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
+                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
+                                        High-Net-Worth Families
+                                    </div>
+                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
+                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
+                                        Court-Involved Individuals
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="mt-16 text-center">
+                            <p className="text-slate-500 italic max-w-2xl mx-auto text-lg mb-8">
+                                "We don't just answer phones. We protect the time, license, and reputation of physicians operating at the highest level of the field."
+                            </p>
+                            <Link href="/contact" className="inline-flex items-center gap-2 bg-primary hover:bg-primary-dark text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+                                Upgrade Your Infrastructure <span className="material-symbols-outlined">arrow_forward</span>
+                            </Link>
+                        </div>
+                    </div>
+                </section>
+
                 {/* OUR SPECIALIZATION */}
-                <section className="py-32 bg-slate-50/50 border-t border-slate-100">
+                < section className="py-32 bg-slate-50/50 border-t border-slate-100" >
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
                             <div>
@@ -172,10 +295,10 @@ export default function AboutPage() {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section >
 
                 {/* 3. CORE MESSAGING */}
-                <section className="py-32 bg-white">
+                < section className="py-32 bg-white" >
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <div className="inline-flex items-center gap-2 mb-6">
@@ -207,10 +330,10 @@ export default function AboutPage() {
                             ))}
                         </div>
                     </div>
-                </section>
+                </section >
 
                 {/* 4. FINAL CTA */}
-                <section className="bg-trust-navy py-32 relative overflow-hidden">
+                < section className="bg-trust-navy py-32 relative overflow-hidden" >
                     <div className="absolute inset-0 opacity-20 pointer-events-none">
                         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
                     </div>
@@ -233,10 +356,10 @@ export default function AboutPage() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section >
 
                 {/* OUR SERVICES */}
-                <section className="py-24 bg-white relative overflow-hidden">
+                < section className="py-24 bg-white relative overflow-hidden" >
                     <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -312,10 +435,10 @@ export default function AboutPage() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section >
 
                 {/* CLIENT SUCCESS STORIES */}
-                <section className="py-24 bg-[#FAF8F3]">
+                < section className="py-24 bg-[#FAF8F3]" >
                     <div className="max-w-[1400px] mx-auto px-6">
                         <div className="text-center mb-16">
                             <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Trusted by California Psychiatrists</span>
@@ -332,8 +455,8 @@ export default function AboutPage() {
                                         <span className="material-symbols-outlined text-primary">person</span>
                                     </div>
                                     <div>
-                                        <h3 className="font-serif text-xl text-trust-navy font-bold">Dr. Sarah Chen</h3>
-                                        <p className="text-slate-500 text-sm">Child & Adolescent Psychiatry, Los Angeles</p>
+                                        <h3 className="font-serif text-xl text-trust-navy font-bold">Child & Adolescent Psychiatrist</h3>
+                                        <p className="text-slate-500 text-sm">Private Practice, Los Angeles</p>
                                     </div>
                                 </div>
                                 <p className="text-slate-600 leading-relaxed italic mb-4">
@@ -372,10 +495,10 @@ export default function AboutPage() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section >
 
                 {/* LATEST INSIGHTS */}
-                <section className="py-24 bg-white relative overflow-hidden">
+                < section className="py-24 bg-white relative overflow-hidden" >
                     <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -451,11 +574,11 @@ export default function AboutPage() {
                             </Link>
                         </div>
                     </div>
-                </section>
+                </section >
 
-            </main>
+            </main >
 
             <Footer />
-        </div>
+        </div >
     );
 }
