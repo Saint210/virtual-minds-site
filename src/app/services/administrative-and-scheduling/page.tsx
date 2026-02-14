@@ -7,6 +7,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "California Psychiatric Scheduling Virtual Assistants | Virtual Minds",
@@ -55,6 +56,21 @@ export default function SchedulingPage() {
                                 </p>
                                 <LocationTagline variant="service" serviceName="Administrative & Scheduling" />
 
+                                <div className="flex flex-col sm:flex-row gap-4 mb-8">
+                                    <TrackedLink
+                                        href="/book-consultation"
+                                        ctaName="Get a Scheduling Audit"
+                                        source="service_scheduling_hero"
+                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2"
+                                    >
+                                        <span className="material-symbols-outlined">calendar_today</span>
+                                        Get a Scheduling Audit
+                                    </TrackedLink>
+                                    <Link href="#roadmap" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center">
+                                        View Workflow
+                                    </Link>
+                                </div>
+
                                 {/* Institutional Social Proof */}
                                 <div className="flex flex-col sm:flex-row items-center gap-6 mb-8">
                                     <div className="flex -space-x-4">
@@ -97,17 +113,7 @@ export default function SchedulingPage() {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row gap-5">
-                                    <TrackedLink
-                                        href="/book-consultation"
-                                        ctaName="Get a Scheduling Audit"
-                                        source="service_scheduling_hero"
-                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3"
-                                    >
-                                        <span className="material-symbols-outlined">calendar_today</span>
-                                        Get a Scheduling Audit
-                                    </TrackedLink>
-                                </div>
+
                             </div>
 
                             {/* RIGHT: Visual System Card (40%) */}
@@ -243,6 +249,7 @@ export default function SchedulingPage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main>
             <Footer />

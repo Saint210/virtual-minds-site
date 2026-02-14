@@ -3,6 +3,9 @@ import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import Breadcrumbs from "@/components/layout/Breadcrumbs";
+import TrackedLink from "@/components/ui/TrackedLink";
+import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
   title: "California Psychiatric Virtual Assistant Pricing | Virtual Minds",
@@ -234,13 +237,15 @@ export default function PricingPage() {
                         </ul>
                       </div>
 
-                      <Link
+                      <TrackedLink
                         href="/book-consultation"
+                        ctaName="Pricing Page - Start Group Support"
+                        source="pricing_group_plan"
                         className="relative z-10 w-full py-4 bg-primary hover:bg-[#B8860B] text-white rounded-xl font-bold transition-all shadow-lg flex items-center justify-center gap-2 group/btn"
                       >
                         {plan.cta}
                         <span className="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-                      </Link>
+                      </TrackedLink>
                     </div>
                   </div>
                 ) : (
@@ -299,13 +304,15 @@ export default function PricingPage() {
                       </ul>
                     </div>
 
-                    <Link
+                    <TrackedLink
                       href="/book-consultation"
+                      ctaName={idx === 0 ? "Pricing Page - Start Solo Support" : "Pricing Page - Request Custom Audit"}
+                      source={idx === 0 ? "pricing_solo_plan" : "pricing_custom_plan"}
                       className="relative z-10 w-full py-4 bg-white border-2 border-slate-200 text-trust-navy font-bold rounded-xl hover:border-primary hover:text-primary transition-all shadow-sm flex items-center justify-center gap-2 group/btn"
                     >
                       {plan.cta}
                       <span className="material-symbols-outlined text-sm group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
-                    </Link>
+                    </TrackedLink>
                   </div>
                 )
               ))}
@@ -406,8 +413,28 @@ export default function PricingPage() {
           </div>
         </section>
 
+        {/* INVESTMENT ROI CALCULATOR */}
+        <section className="py-24 bg-white border-b border-slate-100">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="text-center mb-16">
+              <div className="inline-flex items-center gap-2 mb-6">
+                <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Your Savings</span>
+                <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
+              </div>
+              <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-6">
+                Calculate Your <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 italic">ROI</span>
+              </h2>
+              <p className="text-xl text-slate-600 max-w-2xl mx-auto font-medium leading-relaxed">
+                See exactly how the <strong className="text-trust-navy">Solo Practice Support</strong> plan pays for itself by reclaiming your clinical time and reducing overhead.
+              </p>
+            </div>
+
+            <PracticeLeaksCalculator />
+          </div>
+        </section >
+
         {/* FAQ - REFINED */}
-        <section className="py-32 bg-white border-y border-slate-100">
+        < section className="py-32 bg-white border-y border-slate-100" >
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-16">
               <div className="inline-flex items-center gap-2 mb-6">
@@ -435,10 +462,10 @@ export default function PricingPage() {
               ))}
             </div>
           </div>
-        </section>
+        </section >
 
         {/* WHAT'S INCLUDED - Service Links */}
-        <section className="py-24 bg-white relative overflow-hidden">
+        < section className="py-24 bg-white relative overflow-hidden" >
           <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -514,10 +541,10 @@ export default function PricingPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* PRICING FAQS */}
-        <section className="py-24 bg-[#FAF8F3]">
+        < section className="py-24 bg-[#FAF8F3]" >
           <div className="max-w-4xl mx-auto px-6">
             <div className="text-center mb-16">
               <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Common Questions</span>
@@ -584,10 +611,10 @@ export default function PricingPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section >
 
         {/* CALIFORNIA COVERAGE - Location Pages */}
-        <section className="py-24 bg-white relative overflow-hidden">
+        < section className="py-24 bg-white relative overflow-hidden" >
           <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -653,34 +680,10 @@ export default function PricingPage() {
               </Link>
             </div>
           </div>
-        </section>
+        </section >
 
-        {/* FINAL STRATEGIC CTA */}
-        <section className="bg-trust-navy py-32 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-20 pointer-events-none">
-            <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
-          </div>
-
-          <div className="max-w-4xl mx-auto px-6 text-center relative z-10 text-white">
-            <h2 className="text-4xl md:text-6xl font-serif font-bold mb-8 italic leading-tight !text-white">
-              Claim Your <span className="text-primary">Focus</span>.
-            </h2>
-            <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-              Identify exactly <strong className="text-white">how much focus</strong> your practice is losing to administrative friction with a{' '}
-              <span className="text-primary font-bold">15-minute Recovery Plan</span>.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <Link
-                href="/book-consultation"
-                className="px-12 py-5 bg-primary hover:bg-[#B8860B] text-white font-bold text-xl rounded-2xl shadow-2xl shadow-primary/20 hover:shadow-primary/40 hover:-translate-y-1 transition-all flex items-center justify-center gap-3"
-              >
-                <span className="material-symbols-outlined">calendar_today</span>
-                See My Recovery Plan
-              </Link>
-            </div>
-          </div>
-        </section>
-      </main>
+        <BottomCTA />
+      </main >
 
       <Footer />
     </div >

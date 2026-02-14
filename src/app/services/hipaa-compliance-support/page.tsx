@@ -7,6 +7,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
@@ -104,6 +105,9 @@ export default function HIPAAPage() {
                                         <span className="material-symbols-outlined text-[20px]">enhanced_encryption</span>
                                         Request Compliance Audit
                                     </TrackedLink>
+                                    <Link href="#calculator" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-base hover:bg-white hover:border-[#D2691E]/20 transition-all flex items-center justify-center">
+                                        Calculate Liability Risk
+                                    </Link>
                                 </div>
                             </div>
 
@@ -241,6 +245,7 @@ export default function HIPAAPage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main>
             <Footer />

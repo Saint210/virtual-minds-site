@@ -7,6 +7,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
   title: "Psychiatric EHR Optimization & Management | California Specialists",
@@ -217,20 +218,23 @@ export default function EHRManagementPage() {
                 </div>
 
                 <div className="flex flex-col sm:flex-row gap-5">
-                  <Link
+                  <TrackedLink
                     href="/book-consultation"
-                    className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-primary/20 flex items-center justify-center gap-3 group"
+                    ctaName="Analyze Workflow ROI"
+                    source="service_ehr_hero"
+                    className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 group"
                   >
                     <span className="material-symbols-outlined group-hover:rotate-12 transition-transform">analytics</span>
-                    Analyze My Workflow ROI
-                  </Link>
-                  <Link
-                    href="/services/virtual-assistant"
-                    className="bg-white border border-slate-200 text-trust-navy px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-50 transition-all flex items-center justify-center gap-3"
+                    Analyze Workflow ROI
+                  </TrackedLink>
+                  <TrackedLink
+                    href="#matrix"
+                    ctaName="Compare Platforms"
+                    source="service_ehr_hero_matrix"
+                    className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center gap-2"
                   >
-                    Staffing Components
-                    <span className="material-symbols-outlined text-primary">arrow_forward</span>
-                  </Link>
+                    Compare Platforms
+                  </TrackedLink>
                 </div>
               </div>
 
@@ -434,6 +438,7 @@ export default function EHRManagementPage() {
           </div>
         </section>
 
+        <BottomCTA />
         <ServiceNavigationTray />
       </main>
       <Footer />

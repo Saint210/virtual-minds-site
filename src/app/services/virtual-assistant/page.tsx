@@ -8,6 +8,7 @@ import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import ROICalculator from "@/components/marketing/ROICalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 
 export const metadata = {
@@ -185,6 +186,7 @@ export default function VirtualAssistantPage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main>
             <Footer />

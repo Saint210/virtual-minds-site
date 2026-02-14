@@ -6,6 +6,8 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
+import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray";
 
 export const metadata = {
     title: "Psychiatric Website Design & SEO | Virtual Minds",
@@ -340,6 +342,8 @@ export default function WebsiteDesignPage() {
                         <PracticeLeaksCalculator />
                     </div>
                 </section>
+                <BottomCTA />
+                <ServiceNavigationTray />
             </main>
             <Footer />
         </div >

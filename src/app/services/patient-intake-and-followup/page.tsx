@@ -8,6 +8,7 @@ import LocationTagline from "@/components/marketing/LocationTagline";
 import RelatedInsights from "@/components/services/RelatedInsights";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
@@ -98,16 +99,19 @@ export default function IntakePage() {
                                     </div>
                                 </div>
 
-                                <div className="flex flex-col sm:flex-row gap-5">
+                                <div className="flex flex-col sm:flex-row gap-4 mb-8">
                                     <TrackedLink
                                         href="/book-consultation"
                                         ctaName="Book Setup Call"
                                         source="service_intake_hero"
-                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3"
+                                        className="bg-trust-navy hover:bg-trust-navy/90 text-white px-8 py-4 rounded-xl font-bold text-lg hover:shadow-2xl transition-all shadow-xl shadow-trust-navy/20 flex items-center justify-center gap-3"
                                     >
                                         <span className="material-symbols-outlined">person_add</span>
                                         Book Setup Call
                                     </TrackedLink>
+                                    <Link href="#calculator" className="px-8 py-4 rounded-xl border-2 border-slate-200 text-trust-navy font-bold text-lg hover:bg-white hover:border-primary/20 transition-all flex items-center justify-center">
+                                        Calculate Intake ROI
+                                    </Link>
                                 </div>
                             </div>
 
@@ -336,6 +340,7 @@ export default function IntakePage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main >
             <Footer />

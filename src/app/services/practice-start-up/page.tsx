@@ -8,6 +8,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 import LocationTagline from "@/components/marketing/LocationTagline";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata: Metadata = {
     title: "Psychiatric Practice Start-Up Consulting | California",
@@ -171,6 +172,7 @@ export default function PracticeStartUpPage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main>
             <Footer />

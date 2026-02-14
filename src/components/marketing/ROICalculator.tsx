@@ -234,6 +234,9 @@ export default function ROICalculator() {
                                     <span className="font-bold text-primary bg-primary/10 px-2 py-1 rounded">{errorRate}%</span>
                                     <span>15%</span>
                                 </div>
+                                <p className="text-xs text-slate-400 mt-2">
+                                    Estimates the monthly revenue you currently lose to denials/errors (industry avg 5-10%).
+                                </p>
                             </div>
 
                             <div className="group">

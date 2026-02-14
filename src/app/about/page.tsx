@@ -79,7 +79,42 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* 2. OUR SPECIALIZATION */}
+                {/* OUR ORIGIN STORY */}
+                <section className="py-24 bg-white border-y border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6">
+                        <div className="inline-flex items-center gap-2 mb-6">
+                            <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Our Origin</span>
+                            <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
+                        </div>
+
+                        <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 leading-tight">
+                            Born from <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Necessity</span>.
+                        </h2>
+
+                        <div className="space-y-6">
+                            <p className="text-lg text-slate-600 leading-relaxed">
+                                Virtual Minds was founded when <strong className="text-trust-navy">Cheryl</strong>, who had been managing operations for a psychiatric virtual assistant company, faced an unexpected transition: <span className="text-primary font-bold">the company suddenly closed</span>.
+                            </p>
+
+                            <p className="text-lg text-slate-600 leading-relaxed">
+                                California psychiatrists who depended on that support needed <strong className="text-trust-navy">seamless continuity of care</strong>. Cheryl had been the operational backbone all along, managing everything from medication coordination to billing workflows.
+                            </p>
+
+                            <p className="text-lg text-slate-600 leading-relaxed">
+                                Rather than let these practices face disruption, Cheryl launched Virtual Minds and <span className="text-primary font-bold">ensured every patient continued to receive uninterrupted care</span>. That foundation of <strong className="text-trust-navy">reliability and continuity</strong> remains our core mission today.
+                            </p>
+
+                            <div className="bg-slate-50 border-l-4 border-primary p-6 rounded-r-2xl mt-8">
+                                <p className="text-base text-slate-600 italic leading-relaxed">
+                                    "I've seen what happens when administrative support fails. Virtual Minds was built to ensure continuity—so your patients always receive the care they need, no matter what."
+                                </p>
+                                <p className="text-sm font-bold text-slate-500 mt-3">— Cheryl, Founder</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                {/* OUR SPECIALIZATION */}
                 <section className="py-32 bg-slate-50/50 border-t border-slate-100">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">

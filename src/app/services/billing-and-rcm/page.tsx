@@ -9,6 +9,7 @@ import LocationTagline from "@/components/marketing/LocationTagline";
 import BillingServiceSchema from "@/components/seo/BillingServiceSchema";
 import PracticeLeaksCalculator from "@/components/tools/PracticeLeaksCalculator";
 import TrackedLink from "@/components/ui/TrackedLink";
+import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata: Metadata = {
     title: "Psychiatric Billing Liaison & RCM Support | California",
@@ -221,6 +222,7 @@ export default function BillingPage() {
                     </div>
                 </section>
 
+                <BottomCTA />
                 <ServiceNavigationTray />
             </main>
             <Footer />
