@@ -1,5 +1,5 @@
 import { createClient } from "next-sanity";
-import imageUrlBuilder from "@sanity/image-url";
+import createImageUrlBuilder from "@sanity/image-url";
 
 export const projectId = process.env.NEXT_PUBLIC_SANITY_PROJECT_ID;
 export const dataset = process.env.NEXT_PUBLIC_SANITY_DATASET;
@@ -25,7 +25,7 @@ export const client = isMissingEnv
     });
 
 // Only initialize builder if client is valid
-const builder = isMissingEnv ? null : imageUrlBuilder(client);
+const builder = isMissingEnv ? null : createImageUrlBuilder(client);
 
 export function urlFor(source: any) {
     if (!builder || !source) {

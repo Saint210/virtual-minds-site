@@ -8,6 +8,7 @@ import NearbyCitiesWidget from "@/components/locations/NearbyCitiesWidget";
 import TrackedLink from "@/components/ui/TrackedLink";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { CITY_METRICS, DEFAULT_METRICS } from "@/data/city_metrics";
 
 // 1. Generate Static Params for SSG
 export async function generateStaticParams() {
@@ -119,15 +120,9 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                             <span className="text-primary font-black uppercase tracking-[0.4em] text-xs mb-6 block italic">Regional Economic Analysis</span>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 italic leading-tight">Quantify the Administrative <br /> Drag in {location.name}.</h2>
                         </div>
-                        import {CITY_METRICS, DEFAULT_METRICS} from "@/data/city_metrics";
-
-                        // ... inside component ...
-                        const metrics = CITY_METRICS[city] || DEFAULT_METRICS;
-
-                        // ... inside return ...
                         <PracticeLeaksCalculator
                             cityName={location.name}
-                            initialRent={metrics.rent}
+                            initialRent={(CITY_METRICS[city] || DEFAULT_METRICS).rent}
                         />
 
                     </div>
