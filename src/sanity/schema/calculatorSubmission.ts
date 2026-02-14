@@ -56,14 +56,24 @@ export default defineType({
     ],
     preview: {
         select: {
-            title: 'city',
-            subtitle: 'timestamp',
+            city: 'city',
+            email: 'email',
+            timestamp: 'timestamp',
         },
         prepare(selection) {
-            const { title, subtitle } = selection
+            const { city, email, timestamp } = selection
+            // Prioritize Valid Email -> City -> Generic Linked
+            let title = 'Anonymous Visitor'
+
+            if (email) {
+                title = email
+            } else if (city && city !== 'Unknown') {
+                title = `${city} Practice`
+            }
+
             return {
-                title: title || 'Unknown Location',
-                subtitle: subtitle ? new Date(subtitle).toLocaleDateString() : 'No date',
+                title: title,
+                subtitle: timestamp ? new Date(timestamp).toLocaleString() : 'No date',
             }
         },
     },

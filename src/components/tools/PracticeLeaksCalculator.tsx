@@ -18,6 +18,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
 
     // Modals & State
     const [showEmailModal, setShowEmailModal] = useState(false);
+    const [hasInteracted, setHasInteracted] = useState(false); // Track if user actually used the tool
 
     // State for user inputs
     const [adminHours, setAdminHours] = useState(15);
@@ -125,7 +126,8 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     // Track final results (after 3 seconds of no interaction)
     useEffect(() => {
         const timer = setTimeout(() => {
-            if (hasTrackedView && totalAnnualImpact > 0) {
+            // Only submit if they've actually interacted with the tool (prevents spam on page load)
+            if (hasTrackedView && hasInteracted && totalAnnualImpact > 0) {
 
                 // 1. Analytics Tracking (Plausible)
                 trackCalculatorResult('practice_leaks', {
@@ -148,14 +150,14 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                     hourlyRate,
                     activePatients,
                     projectedRevenueGain: potentialRevenueGain,
-                    city: cityName || "Unknown",
-                    source: document.location.pathname.includes('embed') ? 'embed' : 'website'
+                    city: cityName || "Website Visitor", // Better default than "Unknown"
+                    source: window.location.pathname
                 });
 
             }
         }, 3000);
         return () => clearTimeout(timer);
-    }, [totalAnnualImpact, hasTrackedView, adminHours, monthlyRent, hourlyRate, activePatients, annualAdminCost, annualRentSavings, potentialRevenueGain, trackCalculatorResult, cityName]);
+    }, [totalAnnualImpact, hasTrackedView, hasInteracted, adminHours, monthlyRent, hourlyRate, activePatients, annualAdminCost, annualRentSavings, potentialRevenueGain, trackCalculatorResult, cityName]);
 
     // Formatting helper
     const formatCurrency = (amount: number) => {
@@ -198,8 +200,8 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
             hourlyRate,
             activePatients,
             projectedRevenueGain: potentialRevenueGain,
-            city: cityName || "Unknown",
-            source: document.location.pathname.includes('embed') ? 'embed' : 'website',
+            city: cityName || "Website Visitor",
+            source: window.location.pathname,
             email: email
         });
 
@@ -308,7 +310,10 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 min="5"
                                 max="60"
                                 value={adminHours}
-                                onChange={(e) => setAdminHours(parseInt(e.target.value))}
+                                onChange={(e) => {
+                                    setAdminHours(parseInt(e.target.value));
+                                    setHasInteracted(true);
+                                }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
                             <p className="text-xs text-slate-400 mt-1">Time spent on scheduling, billing, & intake (staff + you).</p>
@@ -326,7 +331,10 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 max="10000"
                                 step="100"
                                 value={monthlyRent}
-                                onChange={(e) => setMonthlyRent(parseInt(e.target.value))}
+                                onChange={(e) => {
+                                    setMonthlyRent(parseInt(e.target.value));
+                                    setHasInteracted(true);
+                                }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
                             <p className="text-xs text-slate-400 mt-1">Rent, utilities, software, or home office equivalent.</p>
@@ -344,7 +352,10 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 max="800"
                                 step="10"
                                 value={hourlyRate}
-                                onChange={(e) => setHourlyRate(parseInt(e.target.value))}
+                                onChange={(e) => {
+                                    setHourlyRate(parseInt(e.target.value));
+                                    setHasInteracted(true);
+                                }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
                             <p className="text-xs text-slate-400 mt-1">Estimates the value of your clinical time lost to admin work.</p>
@@ -361,7 +372,10 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 min="10"
                                 max="150"
                                 value={activePatients}
-                                onChange={(e) => setActivePatients(parseInt(e.target.value))}
+                                onChange={(e) => {
+                                    setActivePatients(parseInt(e.target.value));
+                                    setHasInteracted(true);
+                                }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
                             <p className="text-xs text-slate-400 mt-1">Estimates billing complexity and "Lost Revenue" potential.</p>
