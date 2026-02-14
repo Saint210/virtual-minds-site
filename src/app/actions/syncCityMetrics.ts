@@ -63,6 +63,26 @@ export async function syncCityMetricsAction() {
         if (updates.length > 0) {
             console.log(`Committing ${updates.length} updates...`);
             await transaction.commit();
+
+            // Placeholder for email sending logic as per instruction.
+            // The provided email sending logic snippet relies on variables (data.email, data.city, etc.)
+            // that are not available in this `syncCityMetricsAction` function's scope.
+            // To make this syntactically correct and avoid breaking the existing function,
+            // a generic placeholder is added here.
+            if (process.env.RESEND_API_KEY) {
+                try {
+                    // Example: If you wanted to send a notification email about the sync completion
+                    // await resend.emails.send({
+                    //     from: 'System Notification <notifications@yourdomain.com>',
+                    //     to: 'admin@yourdomain.com',
+                    //     subject: `City Metrics Sync Completed: ${updates.length} cities updated`,
+                    //     react: <div>Sync completed successfully!</div>,
+                    // });
+                    // console.log("Sync completion email sent.");
+                } catch (emailError) {
+                    console.error("Failed to send sync notification email:", emailError);
+                }
+            }
         }
 
         return {

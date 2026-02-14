@@ -23,6 +23,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
     // State for user inputs
     const [adminHours, setAdminHours] = useState(15);
     const [activePatients, setActivePatients] = useState(40);
+    const [targetPatients, setTargetPatients] = useState(60); // Default to 50% growth
     const [monthlyRent, setMonthlyRent] = useState(initialRent);
     const [hourlyRate, setHourlyRate] = useState(300);
 
@@ -34,16 +35,45 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
 
     // Constants for calculation
     const IN_HOUSE_ADMIN_COST = 45; // Hourly cost of in-house staff (w/ benefits)
-    const VIRTUAL_ADMIN_COST = 24; // Hourly cost of Virtual Minds VA
-    const ADMIN_EFFICIENCY_MULTIPLIER = 1.4; // Virtual VAs are faster/focused
+    const VIRTUAL_ADMIN_COST = 60000 / 52 / 15; // Normalized to ~$77/hr based on $5k/mo avg for 15hrs/wk pack
+    // SIMPLIFIED LOGIC: If we want to show $60k/yr as the cost for the "solution" regardless of hours, we should just use that.
+    // BUT, the calculator allows 5-60 hours.
+    // Let's keep it dynamic but scaled to the $5k/mo anchor for the default 15 hours.
+    // $60,000 / 52 weeks / 15 hours = $76.92/hr effective rate for the "Executive" service.
+
+    // const ADMIN_EFFICIENCY_MULTIPLIER = 1.4; // Virtual VAs are faster/focused
 
     useEffect(() => {
         // 1. Calculate Admin Staff Savings
-        // In-house yearly cost vs Virtual yearly cost
+        // In-house yearly cost
         const inHouseYearly = adminHours * IN_HOUSE_ADMIN_COST * 52;
-        // Virtual efficient hours (assuming they do same work in less time or straight trade)
-        const virtualYearly = adminHours * VIRTUAL_ADMIN_COST * 52;
+
+        // Virtual yearly cost (Dynamic based on "Average $5k/mo for 15 hours")
+        // If they need more hours, we scale it up.
+        // Base rate: $77/hr (approx).
+        const virtualRate = 77;
+        const virtualYearly = adminHours * virtualRate * 52;
+
         const adminSavings = inHouseYearly - virtualYearly;
+        // Note: This might turn negative if "in-house" is $45 and "virtual" is $77.
+        // But the "Value" is in the REVENUE GAIN, not just staff arbitrage.
+        // Let's stick to the user's "Revenue Recovery" focus.
+
+        // Actually, if the cost is $5k/mo, and they are saving $20k/mo in leaks... it works.
+        // BUT, if we show "Admin Savings" as negative, it might look bad.
+        // Let's re-frame "Admin Savings" to just "Cost of Solution" in the UI calculations?
+        // The calculator logic `totalAnnualImpact` = `adminSavings` + `rentSavings` + `revenueGain`.
+        // If `adminSavings` is negative, it reduces the total impact.
+        // Let's set `VIRTUAL_ADMIN_COST` to be competitive or just rely on the Revenue Gain to drive the "Total Impact"
+
+        // RE-READ: User said "charges on average 5k a month".
+        // If we use $77/hr, `adminSavings` (Cost diff) will be: ($45 - $77) * 15 * 52 = -$25k.
+        // This effectively says "It costs MORE to hire us than a cheap in-house person".
+        // WHICH IS TRUE for "Executive" talent.
+        // The ROI comes from `revenueGain`.
+        // Let's use the actual numbers.
+
+        const adminCostDiff = (adminHours * 45 * 52) - (adminHours * 77 * 52);
 
         // 2. Rent Savings (Assumes you could downsize or sub-lease space)
         // Illustrative estimate: significant portion of rent is typically for admin/waiting space overhead
@@ -96,10 +126,24 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
         const timer = setTimeout(() => {
             if (hasTrackedView) {
                 trackCalculatorInteraction('practice_leaks', 'active_patients', activePatients);
+                // Auto-adjust target if active > target
+                if (activePatients >= targetPatients) {
+                    setTargetPatients(Math.ceil(activePatients * 1.5));
+                }
             }
         }, 1000);
         return () => clearTimeout(timer);
-    }, [activePatients, hasTrackedView, trackCalculatorInteraction]);
+    }, [activePatients, hasTrackedView, trackCalculatorInteraction, targetPatients]);
+
+    // Track slider changes - Target Patients
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            if (hasTrackedView) {
+                trackCalculatorInteraction('practice_leaks', 'target_patients', targetPatients);
+            }
+        }, 1000);
+        return () => clearTimeout(timer);
+    }, [targetPatients, hasTrackedView, trackCalculatorInteraction]);
 
     // Track slider changes - Monthly Rent
     useEffect(() => {
@@ -135,6 +179,8 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                     monthly_rent: monthlyRent,
                     hourly_rate: hourlyRate,
                     active_patients: activePatients,
+                    target_patients: targetPatients,
+                    growth_gap: targetPatients - activePatients,
                 }, {
                     admin_savings: annualAdminCost,
                     rent_savings: annualRentSavings,
@@ -151,7 +197,8 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                     activePatients,
                     projectedRevenueGain: potentialRevenueGain,
                     city: cityName || "Website Visitor", // Better default than "Unknown"
-                    source: window.location.pathname
+                    source: window.location.pathname,
+                    targetPatients: targetPatients
                 });
 
             }
@@ -202,6 +249,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
             projectedRevenueGain: potentialRevenueGain,
             city: cityName || "Website Visitor",
             source: window.location.pathname,
+            targetPatients: targetPatients,
             email: email
         });
 
@@ -213,7 +261,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
             setIsSubmitting(false);
             // Fallback: just show results inline if error? 
             // For now, let's just alert or keep them here.
-            alert("Something went wrong generating your report. Please try again.");
+            alert(`Error: ${result.error || "Submission failed"}. Please try again.`);
         }
     };
 
@@ -380,6 +428,31 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             />
                             <p className="text-xs text-slate-400 mt-1">Estimates billing complexity and "Lost Revenue" potential.</p>
                         </div>
+
+                        {/* Input 5: Growth Goal (Target Patients) */}
+                        <div className="bg-primary/5 p-4 rounded-xl border border-primary/10">
+                            <div className="flex justify-between mb-2">
+                                <label className="text-sm font-bold text-trust-navy flex items-center gap-2">
+                                    <span className="material-symbols-outlined text-primary text-lg">trending_up</span>
+                                    12-Month Patient Goal
+                                </label>
+                                <span className="text-primary font-bold">{targetPatients} patients</span>
+                            </div>
+                            <input
+                                type="range"
+                                min={activePatients}
+                                max="300"
+                                value={targetPatients}
+                                onChange={(e) => {
+                                    setTargetPatients(parseInt(e.target.value));
+                                    setHasInteracted(true);
+                                }}
+                                className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
+                            />
+                            <p className="text-xs text-slate-500 mt-1">
+                                Gap: <span className="font-bold">{targetPatients - activePatients} new patients</span> needed.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
@@ -403,9 +476,12 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                         </div>
 
                         <div>
-                            <h3 className="text-3xl font-serif font-bold mb-2">Audit Ready</h3>
-                            <p className="text-slate-400 text-sm max-w-xs mx-auto">
-                                Based on your inputs, we have identified <span className="text-white font-bold">3 critical efficiency leaks</span>.
+                            <h3 className="text-lg font-bold text-slate-400 mb-1 uppercase tracking-widest">Potential Annual Revenue Leak</h3>
+                            <div className="text-5xl md:text-6xl font-serif font-bold text-white mb-4 transition-all duration-300">
+                                {formatCurrency(totalAnnualImpact)}
+                            </div>
+                            <p className="text-slate-400 text-sm max-w-xs mx-auto mb-6">
+                                Based on your inputs, we have identified <span className="text-white font-bold">3 critical efficiency leaks</span> in your practice.
                             </p>
                         </div>
 
@@ -417,7 +493,22 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             <span className="material-symbols-outlined">arrow_forward</span>
                         </button>
 
-                        <p className="text-xs text-slate-500">
+                        <div className="mt-8 bg-amber-950/40 rounded-lg p-5 border border-amber-500/30 text-left max-w-sm mx-auto shadow-lg relative overflow-hidden group hover:border-amber-500/50 transition-all">
+                            <div className="absolute top-0 left-0 w-1 h-full bg-amber-500"></div>
+                            <div className="flex gap-4">
+                                <span className="material-symbols-outlined text-amber-500 shrink-0 text-2xl animate-pulse">warning</span>
+                                <div>
+                                    <p className="text-xs font-black text-amber-500 uppercase tracking-widest mb-1">Reality Check</p>
+                                    <p className="text-xs text-amber-100/90 leading-relaxed font-medium">
+                                        We assume just <strong>3 mins/patient</strong>.
+                                        Industry data suggests <strong>15 mins</strong> (5x higher). <br />
+                                        <span className="text-white/90 border-b border-amber-500/50 pb-0.5">Your actual leak is likely much larger.</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p className="text-xs text-slate-500 mt-4">
                             *Includes full revenue analysis & recovery plan.
                         </p>
                     </div>

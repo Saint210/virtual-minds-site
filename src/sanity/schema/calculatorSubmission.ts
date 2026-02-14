@@ -43,6 +43,11 @@ export default defineType({
             type: 'number',
         }),
         defineField({
+            name: 'targetPatients',
+            title: 'Target Patient Load (12 Months)',
+            type: 'number',
+        }),
+        defineField({
             name: 'projectedRevenueGain',
             title: 'Projected Revenue Gain',
             type: 'number',
