@@ -355,6 +355,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             </div>
                             <input
                                 type="range"
+                                aria-label="Weekly Admin Hours"
                                 min="5"
                                 max="60"
                                 value={adminHours}
@@ -364,7 +365,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
-                            <p className="text-xs text-slate-400 mt-1">Time spent on scheduling, billing, & intake (staff + you).</p>
+                            <p className="text-xs text-slate-500 mt-1">Time spent on scheduling, billing, & intake (staff + you).</p>
                         </div>
 
                         {/* Input 2: Monthly Rent */}
@@ -375,6 +376,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             </div>
                             <input
                                 type="range"
+                                aria-label="Monthly Facility & Overhead"
                                 min="0"
                                 max="10000"
                                 step="100"
@@ -385,7 +387,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
-                            <p className="text-xs text-slate-400 mt-1">Rent, utilities, software, or home office equivalent.</p>
+                            <p className="text-xs text-slate-500 mt-1">Rent, utilities, software, or home office equivalent.</p>
                         </div>
 
                         {/* Input 3: Hourly Rate */}
@@ -396,6 +398,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             </div>
                             <input
                                 type="range"
+                                aria-label="Your Hourly Clinical Rate"
                                 min="100"
                                 max="800"
                                 step="10"
@@ -406,7 +409,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
-                            <p className="text-xs text-slate-400 mt-1">Estimates the value of your clinical time lost to admin work.</p>
+                            <p className="text-xs text-slate-500 mt-1">Estimates the value of your clinical time lost to admin work.</p>
                         </div>
 
                         {/* Input 4: Active Patients (Proxy for complexity) */}
@@ -417,6 +420,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             </div>
                             <input
                                 type="range"
+                                aria-label="Active Patient Load"
                                 min="10"
                                 max="150"
                                 value={activePatients}
@@ -426,7 +430,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-[#D2691E]"
                             />
-                            <p className="text-xs text-slate-400 mt-1">Estimates billing complexity and "Lost Revenue" potential.</p>
+                            <p className="text-xs text-slate-500 mt-1">Estimates billing complexity and "Lost Revenue" potential.</p>
                         </div>
 
                         {/* Input 5: Growth Goal (Target Patients) */}
@@ -440,6 +444,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                             </div>
                             <input
                                 type="range"
+                                aria-label="12-Month Patient Goal"
                                 min={activePatients}
                                 max="300"
                                 value={targetPatients}
@@ -449,7 +454,7 @@ export default function PracticeLeaksCalculator({ initialRent = 2500, cityName }
                                 }}
                                 className="w-full h-2 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-primary"
                             />
-                            <p className="text-xs text-slate-500 mt-1">
+                            <p className="text-xs text-slate-600 mt-1">
                                 Gap: <span className="font-bold">{targetPatients - activePatients} new patients</span> needed.
                             </p>
                         </div>
