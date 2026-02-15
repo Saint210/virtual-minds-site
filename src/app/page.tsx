@@ -456,20 +456,20 @@ export default function Home() {
         {/* SERVING CALIFORNIA SECTION */}
         <ServingCaliforniaSection />
 
-        {/* VERIFIED SERVICE PILLARS */}
+        {/* VERIFIED SERVICE PILLARS - ALIGNED WITH SILOS */}
         <section className="py-24 bg-[#FAF8F3]">
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl text-trust-navy mb-4">Verified Service Capabilities</h2>
+              <h2 className="font-serif text-4xl text-trust-navy mb-4">Verified Service Architecture</h2>
               <p className="text-slate-500 max-w-2xl mx-auto">Three pillars of support designed to scale your practice while minimizing liability.</p>
             </div>
 
             <div className="grid lg:grid-cols-3 gap-8">
-              {/* Card 1: Consulting */}
+              {/* Card 1: Clinical Ops (Silo 1) */}
               <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
                   <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
-                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest">Strategy</span>
+                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest">Silo 1: Ops</span>
                   </div>
                   <Image
                     src="/images/practice-consulting-dashboard.png"
@@ -481,7 +481,7 @@ export default function Home() {
                 </div>
 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Practice Consulting</h3>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Clinical Operations Strategy</h3>
                   <p className="text-slate-600 mb-6 text-sm leading-relaxed">Strategic architecture for psychiatrists requiring a stable, compliant, and scalable foundation.</p>
 
                   <div className="flex flex-wrap gap-2 mb-8 mt-auto">
@@ -498,11 +498,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 2: Virtual Assistant (Primary) */}
+              {/* Card 2: Virtual Support (Silo 2) */}
               <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col ring-1 ring-trust-navy/5">
                 <div className="relative h-48 w-full overflow-hidden">
                   <div className="absolute top-4 left-4 z-20 bg-trust-navy/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 shadow-sm">
-                    <span className="text-[10px] font-bold text-white uppercase tracking-widest">Core Support</span>
+                    <span className="text-[10px] font-bold text-white uppercase tracking-widest">Silo 2: Support</span>
                   </div>
                   <Image
                     src="/images/psychiatrist-va-hero.png"
@@ -514,7 +514,7 @@ export default function Home() {
                 </div>
 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Virtual Assistant</h3>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Virtual Support Systems</h3>
                   <p className="text-slate-600 mb-6 text-sm leading-relaxed">Administrative execution delivered with clinical nuance and absolute reliability.</p>
 
                   <div className="flex flex-wrap gap-2 mb-8 mt-auto">
@@ -531,11 +531,11 @@ export default function Home() {
                 </div>
               </div>
 
-              {/* Card 3: Billing Liaison */}
+              {/* Card 3: Revenue (Silo 3) */}
               <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col">
                 <div className="relative h-48 w-full overflow-hidden">
                   <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
-                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Revenue</span>
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Silo 3: Revenue</span>
                   </div>
                   <Image
                     src="/images/visual-intel-rcm.png"
@@ -547,7 +547,7 @@ export default function Home() {
                 </div>
 
                 <div className="p-8 flex flex-col flex-grow">
-                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Revenue Cycle Liaison</h3>
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Revenue Protection Liaison</h3>
                   <p className="text-slate-600 mb-6 text-sm leading-relaxed">We coordinate with your biller to resolve issues. <span className="text-primary font-bold">We do NOT submit claims.</span></p>
 
                   <div className="flex flex-wrap gap-2 mb-8 mt-auto">
