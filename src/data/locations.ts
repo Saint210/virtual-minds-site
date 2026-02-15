@@ -24,7 +24,7 @@ export const locations: LocationData[] = [
         hospitals: "Cedars-Sinai, UCLA Health, and Keck Medicine",
         neighborhoods: ["Beverly Hills", "Santa Monica", "West Hollywood", "Downtown LA", "Pasadena", "Sherman Oaks", "Encino", "Brentwood", "Venice", "Malibu"],
         painPoint: "Navigating a fragmented healthcare market where patient demand outpaces administrative capacity.",
-        heroImage: "/images/elite_psychiatry_hub.png",
+        heroImage: "/images/los-angeles.jpeg",
         heroImageAlt: "High-end Los Angeles psychiatric consultation office with skyline view",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -38,8 +38,8 @@ export const locations: LocationData[] = [
         hospitals: "UCSF Health, CPMC, and Zuckerberg SF General",
         neighborhoods: ["Pacific Heights", "Noe Valley", "Marina District", "Presidio Heights", "Mission Bay", "Sea Cliff", "Russian Hill", "Financial District"],
         painPoint: "Protecting clinical focus in a high-cost environment that demands rigorous efficiency.",
-        heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
-        heroImageAlt: "Modern San Francisco medical executive suite for psychiatric practitioners",
+        heroImage: "/images/about-hero-premium.png",
+        heroImageAlt: "Dedicated psychiatric executive team supporting San Francisco practices",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -52,7 +52,7 @@ export const locations: LocationData[] = [
         hospitals: "UCSD Health, Scripps, and Sharp Memorial",
         neighborhoods: ["La Jolla", "Del Mar", "Point Loma", "Rancho Santa Fe", "Little Italy", "Coronado", "Torrey Pines", "Mission Hills"],
         painPoint: "Balancing practice growth with the need for high-touch, concierge-level patient coordination.",
-        heroImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Calm and bright San Diego psychiatric clinic interior designed for patient wellness",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -66,7 +66,7 @@ export const locations: LocationData[] = [
         hospitals: "Cedars-Sinai Medical Center",
         neighborhoods: ["The Flats", "Trousdale Estates", "Golden Triangle", "Rodeo", "Benedict Canyon"],
         painPoint: "Delivering flawless, concierge-level service without the management burden of on-site staff.",
-        heroImage: "https://images.unsplash.com/photo-1538108149393-fdfd816d2362?q=80&w=2089&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Luxury Beverly Hills medical suite for discrete concierge psychiatry services",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -80,7 +80,7 @@ export const locations: LocationData[] = [
         hospitals: "Stanford Health Care",
         neighborhoods: ["Professorville", "Crescent Park", "Midtown", "University South", "Old Palo Alto"],
         painPoint: "Retaining high-quality administrative support in the nation's most competitive labor market.",
-        heroImage: "https://images.unsplash.com/photo-1556761175-5973cf0f32e7?q=80&w=2032&auto=format&fit=crop",
+        heroImage: "/images/psychiatrist-va-hero.png",
         heroImageAlt: "Silicon Valley tech-inspired psychiatric office interior in Palo Alto",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -94,8 +94,8 @@ export const locations: LocationData[] = [
         hospitals: "Hoag Hospital and UCI Health",
         neighborhoods: ["Fashion Island", "Corona Del Mar", "Balboa Island", "Newport Coast", "Lido Isle"],
         painPoint: "Ensuring administrative responsiveness matches the high expectations of a private-pay demographic.",
-        heroImage: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2069&auto=format&fit=crop",
-        heroImageAlt: "Coastal Newport Beach medical facility representing mental health practice excellence",
+        heroImage: "/images/contact-hero.png",
+        heroImageAlt: "Professional medical concierge team for Newport Beach psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -108,8 +108,8 @@ export const locations: LocationData[] = [
         hospitals: "UC Davis Health and Sutter Medical Center",
         neighborhoods: ["East Sacramento", "Land Park", "Midtown", "Fab 40s", "Pocket-Greenhaven"],
         painPoint: "Navigating complex insurance and referral networks without overwhelming your clinical schedule.",
-        heroImage: "/images/psychiatry-consultation-room.webp",
-        heroImageAlt: "Professional Sacramento psychiatric practice office in a historic district",
+        heroImage: "/images/case-study-dr-chen.png",
+        heroImageAlt: "Professional Sacramento psychiatric practice coordinator",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -122,8 +122,8 @@ export const locations: LocationData[] = [
         hospitals: "UCLA Santa Monica and Saint John's Health Center",
         neighborhoods: ["North of Montana", "Ocean Park", "Sunset Park", "Silicon Beach", "Wilshire Montana"],
         painPoint: "Adapting private practice operations to meet the digital-first expectations of a modern patient base.",
-        heroImage: "https://images.unsplash.com/photo-1563911892149-47bb10190ed0?q=80&w=1974&auto=format&fit=crop",
-        heroImageAlt: "Bright and airy Silicon Beach inspired mental health office in Santa Monica",
+        heroImage: "/images/contact-hero.png",
+        heroImageAlt: "Tech-enabled intake team for Santa Monica psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -136,7 +136,7 @@ export const locations: LocationData[] = [
         hospitals: "Huntington Hospital",
         neighborhoods: ["Old Town", "South Lake", "Madison Heights", "Oak Knoll", "Linda Vista"],
         painPoint: "Balancing traditional practice values with modern efficiency needs.",
-        heroImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Stately Pasadena psychiatric office balancing heritage and modern medical technology",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -150,8 +150,8 @@ export const locations: LocationData[] = [
         hospitals: "Santa Barbara Cottage Hospital",
         neighborhoods: ["Montecito", "The Riviera", "Hope Ranch", "Upper East", "Mission Canyon"],
         painPoint: "Geographic isolation limiting talent pool and high cost of living.",
-        heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
-        heroImageAlt: "Spanish colonial revival style psychiatric clinic in Santa Barbara",
+        heroImage: "/images/virtual-assistant-hero.png",
+        heroImageAlt: "Remote psychiatric case manager supporting Santa Barbara clinicians",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -164,8 +164,8 @@ export const locations: LocationData[] = [
         hospitals: "Santa Clara Valley Medical Center, Regional Medical Center",
         neighborhoods: ["Willow Glen", "Silver Creek", "Rose Garden", "Almaden Valley", "West San Jose"],
         painPoint: "High local staff turnover due to tech industry competition.",
-        heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
-        heroImageAlt: "Modern glass architectural psychiatric clinic in downtown San Jose",
+        heroImage: "/images/homepage-hero.png",
+        heroImageAlt: "Tech-enabled psychiatric practice management in San Jose",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -178,8 +178,8 @@ export const locations: LocationData[] = [
         hospitals: "Community Regional Medical Center, Saint Agnes Medical Center",
         neighborhoods: ["Woodward Park", "Sunnyside", "Tower District", "Fig Garden", "Bullard"],
         painPoint: "Difficulty finding specialized psychiatric admin staff locally.",
-        heroImage: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop",
-        heroImageAlt: "Spacious Central Valley medical facility for psychiatric care in Fresno",
+        heroImage: "/images/case-study-dr-patel.png",
+        heroImageAlt: "Dedicated medical case manager for Fresno psychiatric services",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -192,8 +192,8 @@ export const locations: LocationData[] = [
         hospitals: "Highland Hospital, Summit Medical Center",
         neighborhoods: ["Rockridge", "Montclair", "Grand Lake", "Temescal", "Adams Point"],
         painPoint: "High cost of office space and competitive East Bay market.",
-        heroImage: "/images/elite_psychiatry_hub.png",
-        heroImageAlt: "Modern East Bay medical professional building for psychiatry in Oakland",
+        heroImage: "/images/hero-new.png",
+        heroImageAlt: "Oakland psychiatric administrative team member",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -206,8 +206,8 @@ export const locations: LocationData[] = [
         hospitals: "Hoag Hospital Irvine, UC Irvine Medical Center",
         neighborhoods: ["Turtle Ridge", "Quail Hill", "Woodbridge", "Oak Creek", "Portola Springs"],
         painPoint: "High living costs making local administrative hiring difficult.",
-        heroImage: "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?q=80&w=2070&auto=format&fit=crop",
-        heroImageAlt: "Futuristic medical campus setting for Irvine psychiatric practices",
+        heroImage: "/images/psychiatrist-va-hero.png",
+        heroImageAlt: "Dedicated virtual assistant team for Irvine medical practices",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -233,9 +233,9 @@ export const locations: LocationData[] = [
         rentSavings: "$51,000/yr",
         hospitals: "Long Beach Medical Center, St. Mary Medical Center",
         neighborhoods: ["Belmont Shore", "Bixby Knolls", "Naples", "El Dorado Park", "California Heights"],
-        painPoint: "Staffing challenges due to proximity to LA and OC markets.",
-        heroImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
-        heroImageAlt: "Serene Long Beach medical office interior with coastal influences",
+        painPoint: "Need for billing compliance across diverse payer mix.",
+        heroImage: "/images/contact-hero.png",
+        heroImageAlt: "Long Beach medical reception team",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -247,9 +247,9 @@ export const locations: LocationData[] = [
         rentSavings: "$32,000/yr",
         hospitals: "Mercy Hospital, Kern Medical",
         neighborhoods: ["Seven Oaks", "Stockdale", "Riverlakes", "City Hills", "Oleander"],
-        painPoint: "Lack of experienced local psychiatric administrative talent.",
-        heroImage: "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2070&auto=format&fit=crop",
-        heroImageAlt: "Modern and efficient medical clinic setting in Bakersfield",
+        painPoint: "High administrative turnover impacting patient retention.",
+        heroImage: "/images/psychiatrist-va-hero.png",
+        heroImageAlt: "Bakersfield psychiatric virtual assistant",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -261,9 +261,9 @@ export const locations: LocationData[] = [
         rentSavings: "$53,000/yr",
         hospitals: "Anaheim Global Medical Center, West Anaheim Medical Center",
         neighborhoods: ["Anaheim Hills", "Platinum Triangle", "The Colony", "Southwest Anaheim", "Euclid"],
-        painPoint: "High patient churn and the need for rigorous intake processes.",
-        heroImage: "https://images.unsplash.com/photo-1551076805-e1869033e561?q=80&w=2032&auto=format&fit=crop",
-        heroImageAlt: "Professional Anaheim medical office building for specialist psychiatry",
+        painPoint: "Managing Disneyland-area traffic impact on in-person cancellations.",
+        heroImage: "/images/virtual-assistant-hero.png",
+        heroImageAlt: "Anaheim medical scheduler managing patient appointments",
         faqZone: "Pacific Standard Time (PST)"
     },
     {
@@ -276,7 +276,7 @@ export const locations: LocationData[] = [
         hospitals: "Dameron Hospital, St. Joseph's Medical Center",
         neighborhoods: ["Brookside", "Spanos Park", "Lincoln Village", "Victory Park", "Sherwood Manor"],
         painPoint: "Difficulty finding bilingual staff for diverse patient needs.",
-        heroImage: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Clean and bright medical consulting rooms in Stockton",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -290,7 +290,7 @@ export const locations: LocationData[] = [
         hospitals: "Sharp Chula Vista, Scripps Mercy Hospital",
         neighborhoods: ["Otay Ranch", "Eastlake", "Rancho Del Rey", "Bonita", "Terra Nova"],
         painPoint: "Managing overflow from San Diego's dense mental health market.",
-        heroImage: "https://images.unsplash.com/photo-1563911892149-47bb10190ed0?q=80&w=1974&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Modern Chula Vista medical facility for mental health excellence",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -304,7 +304,7 @@ export const locations: LocationData[] = [
         hospitals: "Washington Hospital, Kaiser Permanente Fremont",
         neighborhoods: ["Mission San Jose", "Ardenwood", "Warm Springs", "Niles", "Irvington"],
         painPoint: "High salary expectations from local administrative candidates.",
-        heroImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "High-tech Fremont medical office interior in the Silicon Valley corridor",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -318,7 +318,7 @@ export const locations: LocationData[] = [
         hospitals: "St. Bernardine Medical Center, Community Hospital of San Bernardino",
         neighborhoods: ["Arrowhead", "University District", "Mount Vernon", "Del Rosa", "Muscoy"],
         painPoint: "Need for high-volume intake and specialized authorization management.",
-        heroImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Robust San Bernardino medical campus for psychiatric care",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -332,7 +332,7 @@ export const locations: LocationData[] = [
         hospitals: "Memorial Medical Center, Doctors Medical Center",
         neighborhoods: ["La Loma", "Del Rio", "Roseburg", "Woodland West", "Sylvan"],
         painPoint: "Under-staffed administrative teams leading to provider burnout.",
-        heroImage: "https://images.unsplash.com/photo-1519494140681-8917ad11a020?q=80&w=2074&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Peaceful medical consulting facility in Modesto",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -346,7 +346,7 @@ export const locations: LocationData[] = [
         hospitals: "Kaiser Permanente Fontana Medical Center",
         neighborhoods: ["Sierra Lakes", "North Fontana", "South Village", "West End", "Citrus Heights"],
         painPoint: "Rapidly growing population requiring fast practice scaling.",
-        heroImage: "https://images.unsplash.com/photo-1554734867-bf3c00a49371?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Modern Fontana medical center setting for psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -360,7 +360,7 @@ export const locations: LocationData[] = [
         hospitals: "St. John's Regional Medical Center",
         neighborhoods: ["River Ridge", "Silver Strand", "Hollywood Beach", "Marina West", "Windsor North"],
         painPoint: "High staff turnover in the competitive Ventura County corridor.",
-        heroImage: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Bright Oxnard medical office designed for professional psychiatric care",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -374,7 +374,7 @@ export const locations: LocationData[] = [
         hospitals: "Riverside University Health System, Kaiser Permanente",
         neighborhoods: ["Sunnymead", "Edgemont", "March Air Reserve Base area", "Moreno Village", "Hidden Springs"],
         painPoint: "High volume of state-insured patients requiring complex benefit verification.",
-        heroImage: "https://images.unsplash.com/photo-1629161048491-9e7ec273673f?q=80&w=1974&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Spacious Moreno Valley medical facility for psychiatric services",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -388,7 +388,7 @@ export const locations: LocationData[] = [
         hospitals: "Huntington Beach Hospital, Hoag",
         neighborhoods: ["Seacliff", "Huntington Harbour", "Beltaire", "Sunset Beach", "Warner Avenue"],
         painPoint: "Competition for talent with nearby luxury markets like Newport Beach.",
-        heroImage: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Coastal Huntington Beach medical consulting rooms with modern design",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -402,7 +402,7 @@ export const locations: LocationData[] = [
         hospitals: "Glendale Adventist, Glendale Memorial Hospital",
         neighborhoods: ["Rossmoyne", "Verdugo Woodlands", "Brockmont", "Adams Hill", "Cumberland Heights"],
         painPoint: "High cost of bilingual staff in the local Glendale market.",
-        heroImage: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Professional Glendale medical office building in a high-traffic district",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -416,7 +416,7 @@ export const locations: LocationData[] = [
         hospitals: "Henry Mayo Newhall Hospital",
         neighborhoods: ["Valencia", "Stevenson Ranch", "Saugus", "Canyon Country", "Castaic"],
         painPoint: "Staffing difficulty due to long commute times for local employees.",
-        heroImage: "https://images.unsplash.com/photo-1538108149393-fdfd816d2362?q=80&w=2089&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Modern Santa Clarita medical clinic for advanced psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -430,7 +430,7 @@ export const locations: LocationData[] = [
         hospitals: "Medical Center of Garden Grove, Garden Grove Hospital",
         neighborhoods: ["Garden Grove West", "Pointe", "Ferdinand", "Gilbert", "Brookhurst"],
         painPoint: "Complex patient demographics requiring precise documentation.",
-        heroImage: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Clean and welcoming Garden Grove medical facility",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -444,7 +444,7 @@ export const locations: LocationData[] = [
         hospitals: "Tri-City Medical Center",
         neighborhoods: ["Fire Mountain", "South Oceanside", "Rancho Del Oro", "MiraCosta", "Guajome"],
         painPoint: "High staff turnover in the competitive coastal San Diego corridor.",
-        heroImage: "https://images.unsplash.com/photo-1448932223556-3acb2135ba44?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Coastal Oceanside medical professional building for psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -458,7 +458,7 @@ export const locations: LocationData[] = [
         hospitals: "San Antonio Regional Hospital",
         neighborhoods: ["Victoria Gardens", "Alta Loma", "Etiwanda", "Grapeland", "Cucamonga"],
         painPoint: "Rapid practice growth hitting administrative capacity limits.",
-        heroImage: "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Upscale Rancho Cucamonga medical office interior",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -472,7 +472,7 @@ export const locations: LocationData[] = [
         hospitals: "Santa Rosa Memorial Hospital, Kaiser Permanente",
         neighborhoods: ["Fountaingrove", "Rincon Valley", "Bennett Valley", "Oakmont", "Proctor Terrace"],
         painPoint: "Geographic isolation limiting the pool of specialized psychiatric staff.",
-        heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Modern Sonoma County medical facility in Santa Rosa",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -486,7 +486,7 @@ export const locations: LocationData[] = [
         hospitals: "Kindred Hospital Ontario, Kaiser Permanente",
         neighborhoods: ["Guasti", "Creekside", "Archibald Avenue", "Merrill", "Galvin"],
         painPoint: "High patient volume from surrounding industrial and logistics hubs.",
-        heroImage: "https://images.unsplash.com/photo-1431540015161-0bf868a2d407?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Professional Ontario medical office for high-volume psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -500,7 +500,7 @@ export const locations: LocationData[] = [
         hospitals: "Antelope Valley Medical Center",
         neighborhoods: ["Quartz Hill", "West Lancaster", "Sun Village", "Antelope Acres", "Desert Sands"],
         painPoint: "Severe lack of local experienced psychiatric administrative professionals.",
-        heroImage: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Modern Antelope Valley medical facility in Lancaster",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -514,7 +514,7 @@ export const locations: LocationData[] = [
         hospitals: "Kaiser Permanente Elk Grove, Methodist Hospital",
         neighborhoods: ["Stone Lake", "Lakeside", "Laguna West", "East Elk Grove", "Sheldon"],
         painPoint: "Rapidly growing family demographics requiring meticulous intake/follow-up.",
-        heroImage: "https://images.unsplash.com/photo-1542362567-b051c63b9a56?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Modern Elk Grove medical clinic for families and psychiatric care",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -528,7 +528,7 @@ export const locations: LocationData[] = [
         hospitals: "Corona Regional Medical Center",
         neighborhoods: ["Eagle Glen", "Sierra Del Oro", "Orange Heights", "The Retreat", "Sycamore Creek"],
         painPoint: "High staff turnover due to competition from the Orange County market.",
-        heroImage: "https://images.unsplash.com/photo-1519494140681-8917ad11a020?q=80&w=2074&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Soothing Corona medical office environment for psychiatry",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -542,7 +542,7 @@ export const locations: LocationData[] = [
         hospitals: "Palmdale Regional Medical Center",
         neighborhoods: ["Anaverde", "Quartz Hill", "Palmdale East", "Sun Village", "Pearblossom"],
         painPoint: "High patient volume and complex insurance authorization workflows.",
-        heroImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Functional Palmdale medical facility for psychiatric services",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -556,7 +556,7 @@ export const locations: LocationData[] = [
         hospitals: "Salinas Valley Health, Natividad Medical Center",
         neighborhoods: ["Creekbridge", "Harden Ranch", "Mission Park", "Toro Park", "South Salinas"],
         painPoint: "Managing diverse agricultural and professional patient demographics.",
-        heroImage: "https://images.unsplash.com/photo-1629161048491-9e7ec273673f?q=80&w=1974&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Central Coast medical consulting facility in Salinas",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -570,7 +570,7 @@ export const locations: LocationData[] = [
         hospitals: "St. Rose Hospital, Kaiser Permanente",
         neighborhoods: ["Fairview", "Mt. Eden", "Mission-Garin", "Burbank", "Longwood"],
         painPoint: "Competitive salary pressure from nearby San Jose and Oakland.",
-        heroImage: "https://images.unsplash.com/photo-1576091160550-217359f42f8c?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Modern East Bay psychiatric office in Hayward",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -584,7 +584,7 @@ export const locations: LocationData[] = [
         hospitals: "El Camino Health",
         neighborhoods: ["Heritage Park", "Cherry Chase", "Cumberland South", "Morse Park", "Lakewood"],
         painPoint: "Extreme competition from local tech firms for all administrative talent.",
-        heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "High-end Silicon Valley medical suite in Sunnyvale",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -598,7 +598,7 @@ export const locations: LocationData[] = [
         hospitals: "Palomar Medical Center Escondido",
         neighborhoods: ["Hidden Trails", "Del Lago", "Lomas Serenas", "Felicita Park", "Old Escondido"],
         painPoint: "Managing overflow from San Diego's dense mental health corridor.",
-        heroImage: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Bright Escondido medical consulting rooms",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -612,7 +612,7 @@ export const locations: LocationData[] = [
         hospitals: "Pomona Valley Hospital Medical Center",
         neighborhoods: ["Phillips Ranch", "Lincoln Park", "Ganesha Hills", "Pomona North", "Yorba"],
         painPoint: "Heavy volume of insurance coordination and prior authorizations.",
-        heroImage: "https://images.unsplash.com/photo-1551193394-ff57685600c2?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Sturdy Pomona medical facility for psychiatric care",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -626,7 +626,7 @@ export const locations: LocationData[] = [
         hospitals: "Kaweah Health Medical Center",
         neighborhoods: ["Shannon Ranch", "Giddings", "Green Acres", "Beverly Glen", "Windmill"],
         painPoint: "Isolation from large metros makes finding specialized staff difficult.",
-        heroImage: "https://images.unsplash.com/photo-1544164559-9943f090dbf0?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Welcoming Central Valley medical office in Visalia",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -640,7 +640,7 @@ export const locations: LocationData[] = [
         hospitals: "St. Jude Medical Center",
         neighborhoods: ["Sunny Hills", "Sunny Ridge", "Heritage Hills", "Fullerton Hills", "Acacia"],
         painPoint: "High volume of student-related mental health documentation needs.",
-        heroImage: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=2047&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Modern Fullerton medical professional rooms",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -654,7 +654,7 @@ export const locations: LocationData[] = [
         hospitals: "Desert Valley Hospital, St. Mary Medical Center",
         neighborhoods: ["Spring Valley Lake", "Eagle Ranch", "Hesperia North", "Desert Knolls", "High Desert"],
         painPoint: "Critical shortage of medical administrative staff in the high desert.",
-        heroImage: "https://images.unsplash.com/photo-1517502884422-41eaead166d4?q=80&w=1925&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Reliable Victorville medical facility interior",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -668,7 +668,7 @@ export const locations: LocationData[] = [
         hospitals: "UCI Medical Center, CHOC, St. Joseph Hospital",
         neighborhoods: ["Orange Park Acres", "Old Towne", "Villa Park area", "McPherson", "Cambridge"],
         painPoint: "Complex revenue cycle verification involving multiple local health systems.",
-        heroImage: "https://images.unsplash.com/photo-1533090161767-e6ffed986c88?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Clean and focused medical office in Orange, CA",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -682,7 +682,7 @@ export const locations: LocationData[] = [
         hospitals: "Torrance Memorial, Providence Little Company of Mary",
         neighborhoods: ["Hollywood Riviera", "Southwood", "Walteria", "Old Torrance", "Pacific South"],
         painPoint: "Staffing difficulty due to high living costs in the South Bay.",
-        heroImage: "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Upscale South Bay medical clinic in Torrance",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -696,7 +696,7 @@ export const locations: LocationData[] = [
         hospitals: "Scripps Memorial Hospital Encinitas (nearby)",
         neighborhoods: ["Aviara", "Bressi Ranch", "La Costa", "Old Carlsbad", "Terramar"],
         painPoint: "High staff turnover in the competitive coastal biotech corridor.",
-        heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Luminous Carlsbad coastal medical suite",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -710,7 +710,7 @@ export const locations: LocationData[] = [
         hospitals: "Temecula Valley Hospital",
         neighborhoods: ["De Luz", "Wolf Creek", "Redhawk", "Morgan Hill", "Crowne Hill"],
         painPoint: "Rapidly growing professional demographic requiring advanced practice management.",
-        heroImage: "https://images.unsplash.com/photo-1544161515-4ab6ce6db874?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Peaceful Temecula Valley medical consulting room",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -724,7 +724,7 @@ export const locations: LocationData[] = [
         hospitals: "UCSD Health, Scripps Memorial",
         neighborhoods: ["The Village", "Bird Rock", "La Jolla Shores", "Mt. Soledad", "Torrey Pines"],
         painPoint: "Competing with biotech for premium office space.",
-        heroImage: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Luxury coastal medical suite in La Jolla",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -738,7 +738,7 @@ export const locations: LocationData[] = [
         hospitals: "Scripps Memorial La Jolla",
         neighborhoods: ["Del Mar Heights", "Olde Del Mar", "Flower Hill", "Del Mar Woods", "Carmel Valley"],
         painPoint: "Extremely high cost of operation per square foot.",
-        heroImage: "https://images.unsplash.com/photo-1520607162513-77705c0f0d4a?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Boutique psychiatric office in Del Mar",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -752,7 +752,7 @@ export const locations: LocationData[] = [
         hospitals: "Providence Little Company of Mary",
         neighborhoods: ["The Strand", "Hermosa Hills", "Sand Section", "Valley Park", "Prospect"],
         painPoint: "Balancing beach lifestyle with practice availability demands.",
-        heroImage: "https://images.unsplash.com/photo-1563911892149-47bb10190ed0?q=80&w=1974&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Relaxed professional medical office in Hermosa Beach",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -766,7 +766,7 @@ export const locations: LocationData[] = [
         hospitals: "Torrance Memorial",
         neighborhoods: ["Riviera Village", "South Redondo", "North Redondo", "Golden Hills", "Trash Can Beach area"],
         painPoint: "Managing diverse patient base from aerospace and tech sectors.",
-        heroImage: "https://images.unsplash.com/photo-1497215842964-222b430dc094?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Professional Redondo Beach medical consulting space",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -780,7 +780,7 @@ export const locations: LocationData[] = [
         hospitals: "Cedars-Sinai Marina del Rey Hospital",
         neighborhoods: ["Silicon Beach", "Marina Peninsula", "Villa Marina", "Arts District", "Silver Strand"],
         painPoint: "Fast-paced tech patients requiring digital-first scheduling.",
-        heroImage: "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Modern Marina Del Rey psychiatric office overlooking the harbor",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -794,7 +794,7 @@ export const locations: LocationData[] = [
         hospitals: "Good Samaritan Hospital",
         neighborhoods: ["Silver Lake", "Angelino Heights", "Elysian Park", "Historic Filipinotown", "Dodger Stadium area"],
         painPoint: "High demand for therapy from creative industry professionals.",
-        heroImage: "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?q=80&w=2053&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Artistic and welcoming psychiatric space in Echo Park",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -808,7 +808,7 @@ export const locations: LocationData[] = [
         hospitals: "Cedars-Sinai",
         neighborhoods: ["Park La Brea", "Mid-Wilshire", "Carthay Circle", "Beverly Grove", "Fairfax"],
         painPoint: "Density and parking issues complicating in-person staffing.",
-        heroImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/medication-management-hero.png",
         heroImageAlt: "Art Deco inspired medical office in Miracle Mile",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -822,7 +822,7 @@ export const locations: LocationData[] = [
         hospitals: "Providence Saint Joseph Medical Center",
         neighborhoods: ["Fryman Canyon", "Coldwater Canyon", "Silver Triangle", "Tujunga Village", "Colfax Meadows"],
         painPoint: "Need for strict privacy protocols for industry clients.",
-        heroImage: "https://images.unsplash.com/photo-1516549655169-df83a0774514?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/virtual-assistant-hero.png",
         heroImageAlt: "Private and secluded psychiatric office in Studio City",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -836,7 +836,7 @@ export const locations: LocationData[] = [
         hospitals: "CPMC Pacific Heights",
         neighborhoods: ["Gold Coast", "Lower Pac Heights", "Cow Hollow", "Presidio Heights", "Marina"],
         painPoint: "Highest medical office rents in San Francisco.",
-        heroImage: "https://images.unsplash.com/photo-1556761175-5973dd0f32e7?q=80&w=2032&auto=format&fit=crop",
+        heroImage: "/images/psychiatry-consultation-room.webp",
         heroImageAlt: "Victorian elegance meets modern psychiatry in Pacific Heights",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -850,7 +850,7 @@ export const locations: LocationData[] = [
         hospitals: "Zuckerberg San Francisco General",
         neighborhoods: ["Castro", "Eureka Valley", "Mission Dolores", "Diamond Heights", "Glen Park"],
         painPoint: "Scheduling complexity for dual-income professional families.",
-        heroImage: "https://images.unsplash.com/photo-1505751172876-fa1923c5c528?q=80&w=2070&auto=format&fit=crop",
+        heroImage: "/images/scheduling-hero.png",
         heroImageAlt: "Warm and inviting family psychiatric practice in Noe Valley",
         faqZone: "Pacific Standard Time (PST)"
     },
@@ -864,7 +864,7 @@ export const locations: LocationData[] = [
         hospitals: "Stanford, El Camino, Kaiser",
         neighborhoods: ["Menlo Park", "Mountain View", "Cupertino", "Redwood City", "Los Altos"],
         painPoint: "Burnout-focused patient base requiring responsive care coordination.",
-        heroImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop",
+        heroImage: "/images/elite_psychiatry_hub.png",
         heroImageAlt: "Innovative mental health workspace in Silicon Valley",
         faqZone: "Pacific Standard Time (PST)"
     }

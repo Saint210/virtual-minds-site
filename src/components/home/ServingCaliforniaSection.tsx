@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { locations } from "@/data/locations";
 
 export default function ServingCaliforniaSection() {
@@ -35,37 +36,49 @@ export default function ServingCaliforniaSection() {
                 </div>
 
                 {/* Featured Cities Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-8 gap-y-10 mb-16">
                     {featured.map((location) => (
                         <Link
                             key={location.slug}
                             href={`/locations/${location.slug}`}
-                            className="group relative bg-gradient-to-br from-white via-[#FAF8F3] to-slate-50/50 p-8 rounded-[2rem] border-2 border-slate-200/60 hover:border-primary/40 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 hover:-translate-y-2 flex flex-col"
+                            className="group flex flex-col bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-trust-navy transition-all duration-300 hover:-translate-y-1"
                         >
-
-
-                            {/* City Icon */}
-                            <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                <span className="material-symbols-outlined text-2xl">location_city</span>
+                            {/* Cinematic Image Header */}
+                            <div className="relative h-48 w-full overflow-hidden">
+                                <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors z-10" />
+                                <Image
+                                    src={location.heroImage}
+                                    alt={location.heroImageAlt}
+                                    fill
+                                    className="object-cover transition-transform duration-700 group-hover:scale-110"
+                                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                                />
+                                {/* Location Badge Overlay */}
+                                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/80 to-transparent z-20">
+                                    <h3 className="text-xl font-serif font-bold text-white shadow-sm">
+                                        {location.name}
+                                    </h3>
+                                </div>
                             </div>
 
-                            {/* City Name */}
-                            <h3 className="text-2xl font-serif font-bold text-trust-navy mb-2 group-hover:text-primary transition-colors">
-                                {location.name}
-                            </h3>
+                            {/* Card Body */}
+                            <div className="p-6 flex flex-col flex-grow">
+                                {/* Key Metric */}
+                                <div className="flex items-center gap-2 mb-4 text-xs font-bold text-primary uppercase tracking-wider">
+                                    <span className="material-symbols-outlined text-sm">trending_up</span>
+                                    save ~{location.rentSavings}
+                                </div>
 
-                            {/* Divider */}
-                            <div className="w-12 h-1 bg-slate-100 group-hover:bg-primary transition-colors duration-500 mb-4"></div>
+                                <p className="text-sm text-slate-600 leading-relaxed mb-6 font-medium line-clamp-3 flex-grow">
+                                    {location.metaDesc}
+                                </p>
 
-                            {/* Description */}
-                            <p className="text-sm text-slate-500 leading-relaxed mb-6 flex-grow line-clamp-2">
-                                {location.metaDesc.split('.')[0]}.
-                            </p>
-
-                            {/* Footer */}
-                            <div className="flex items-center justify-end pt-4 border-t border-slate-100">
-                                <div className="size-8 rounded-full bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                {/* Footer */}
+                                <div className="pt-4 border-t border-slate-100 flex items-center justify-between mt-auto group/btn">
+                                    <span className="text-xs font-bold text-trust-navy uppercase tracking-wider group-hover:text-primary transition-colors">Market Analysis</span>
+                                    <div className="size-8 rounded-full bg-slate-50 flex items-center justify-center text-trust-navy group-hover:bg-trust-navy group-hover:text-white transition-all">
+                                        <span className="material-symbols-outlined text-sm">arrow_forward</span>
+                                    </div>
                                 </div>
                             </div>
                         </Link>
@@ -76,11 +89,10 @@ export default function ServingCaliforniaSection() {
                 <div className="text-center">
                     <Link
                         href="/locations"
-                        className="inline-flex items-center gap-3 px-8 py-4 bg-trust-navy hover:bg-trust-navy/90 text-white font-bold text-lg rounded-xl shadow-lg hover:shadow-xl hover:-translate-y-1 transition-all"
+                        className="inline-flex items-center gap-3 px-8 py-4 bg-trust-navy hover:bg-slate-800 text-white font-bold text-lg rounded-xl shadow-xl shadow-trust-navy/20 hover:-translate-y-1 transition-all"
                     >
                         <span className="material-symbols-outlined">map</span>
                         View All 50+ California Locations
-                        <span className="material-symbols-outlined">arrow_forward</span>
                     </Link>
                 </div>
             </div>

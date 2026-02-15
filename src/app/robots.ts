@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/portal/',
+            disallow: ['/portal/', '/tools/practice-leaks/report/', '/embed/'],
         },
         sitemap: 'https://thevirtualminds.com/sitemap.xml',
     }

@@ -69,5 +69,23 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }))
 
-    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts]
+    // High-priority Glossary Terms
+    const glossaryTerms = [
+        'appointment-scheduling',
+        'claim-denial',
+        'hipaa-compliant-zoom',
+        'intake-workflows',
+        'medical-records-compliance',
+        'patient-screening',
+        'prior-authorization',
+        'provider-credentialing',
+        'superbill',
+    ].map((slug) => ({
+        url: `${baseUrl}/glossary/${slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'monthly' as const,
+        priority: 0.6,
+    }))
+
+    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts, ...glossaryTerms]
 }

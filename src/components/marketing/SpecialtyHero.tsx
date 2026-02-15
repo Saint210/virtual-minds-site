@@ -62,7 +62,7 @@ export default function SpecialtyHero({ name, tagline, description, imageSrc }: 
                     <div className="relative group">
                         <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 bg-white">
                             <Image
-                                src={imageSrc}
+                                src={imageSrc || "/images/homepage-hero.png"}
                                 alt={name}
                                 fill
                                 className="object-cover"

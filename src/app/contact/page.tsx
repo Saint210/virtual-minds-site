@@ -48,20 +48,20 @@ export default function ContactPage() {
                             </div>
 
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                <div className="flex flex-col gap-3 p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                                <div className="flex flex-col gap-3 p-10 rounded-[2rem] bg-white border border-slate-200 shadow-sm hover:border-trust-navy hover:shadow-xl transition-all group hover:-translate-y-1">
                                     <span className="material-symbols-outlined text-primary text-4xl mb-2 group-hover:scale-110 transition-transform">mail</span>
                                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Secure Messaging</p>
                                     <p className="font-bold text-trust-navy">
                                         <ProtectedEmail
                                             localPart="cheryl"
                                             domain="thevirtualminds.com"
-                                            buttonClassName="rounded-md bg-slate-100 px-3 py-1 text-xs font-bold text-trust-navy hover:bg-primary hover:text-white transition-all"
+                                            buttonClassName="rounded-md bg-slate-100 px-4 py-3 md:px-3 md:py-1 text-xs font-bold text-trust-navy hover:bg-primary hover:text-white transition-all"
                                             revealedClassName="underline underline-offset-4 decoration-primary/30 hover:decoration-primary"
                                             label="Reveal Protocol"
                                         />
                                     </p>
                                 </div>
-                                <div className="flex flex-col gap-3 p-10 rounded-[2.5rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all group">
+                                <div className="flex flex-col gap-3 p-10 rounded-[2rem] bg-white border border-slate-200 shadow-sm hover:border-trust-navy hover:shadow-xl transition-all group hover:-translate-y-1">
                                     <span className="material-symbols-outlined text-primary text-4xl mb-2 group-hover:scale-110 transition-transform">call</span>
                                     <p className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Encryption Line</p>
                                     <p className="font-bold text-trust-navy">(310) 400-6266</p>
@@ -86,26 +86,27 @@ export default function ContactPage() {
 
                         {/* THE DEPLOYMENT FORM (40%) */}
                         <div className="sticky top-12">
-                            <div className="relative bg-white border border-slate-100 rounded-[3.5rem] p-10 md:p-14 shadow-2xl">
+                            <div className="relative bg-white border border-slate-200 rounded-[2.5rem] p-10 md:p-14 shadow-2xl">
+                                <div className="absolute top-0 inset-x-0 h-1 bg-gradient-to-r from-trust-navy via-primary to-trust-navy" />
                                 <div className="flex items-center gap-3 mb-10">
-                                    <div className="size-3 bg-red-500 rounded-full animate-pulse" />
-                                    <h2 className="text-2xl font-serif font-bold text-trust-navy italic">See My Recovery Plan</h2>
+                                    <div className="size-3 bg-red-500 rounded-full animate-pulse shadow-[0_0_8px_rgba(239,68,68,0.5)]" />
+                                    <h2 className="text-2xl font-serif font-bold text-trust-navy">Secure Terminal Access</h2>
                                 </div>
 
                                 <form className="space-y-8">
                                     <div className="space-y-6">
                                         <div className="space-y-3">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Lead Practitioner</label>
-                                            <input type="text" placeholder="Dr. Jane Doe" className="w-full h-16 px-8 rounded-2xl bg-[#FAF8F3] border border-transparent focus:bg-white focus:border-primary/30 focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300" required />
+                                            <input type="text" placeholder="Dr. Jane Doe" className="w-full h-16 px-8 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-trust-navy focus:ring-1 focus:ring-trust-navy focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300" required />
                                         </div>
                                         <div className="space-y-3">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Secure Network Email</label>
-                                            <input type="email" placeholder="jane@practice.com" className="w-full h-16 px-8 rounded-2xl bg-[#FAF8F3] border border-transparent focus:bg-white focus:border-primary/30 focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300" required />
+                                            <input type="email" placeholder="jane@practice.com" className="w-full h-16 px-8 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-trust-navy focus:ring-1 focus:ring-trust-navy focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300" required />
                                         </div>
                                         <div className="space-y-3">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Practice Scale</label>
                                             <div className="relative">
-                                                <select className="w-full h-16 px-8 rounded-2xl bg-[#FAF8F3] border border-transparent focus:bg-white focus:border-primary/30 focus:outline-none transition-all font-bold text-trust-navy appearance-none">
+                                                <select className="w-full h-16 px-8 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-trust-navy focus:ring-1 focus:ring-trust-navy focus:outline-none transition-all font-bold text-trust-navy appearance-none">
                                                     <option>Solo Practice (1 Provider)</option>
                                                     <option>Group Practice (2-5 Providers)</option>
                                                     <option>Clinical Enterprise (6+ Providers)</option>
@@ -115,7 +116,7 @@ export default function ContactPage() {
                                         </div>
                                         <div className="space-y-3">
                                             <label className="text-[10px] font-black text-slate-400 uppercase tracking-widest ml-4">Operational Bottleneck</label>
-                                            <textarea rows={4} placeholder="E.g. pharmacy coordination, insurance denials, intake lag..." className="w-full p-8 rounded-2xl bg-[#FAF8F3] border border-transparent focus:bg-white focus:border-primary/30 focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300 resize-none"></textarea>
+                                            <textarea rows={4} placeholder="E.g. pharmacy coordination, insurance denials, intake lag..." className="w-full p-8 rounded-2xl bg-slate-50 border border-slate-200 focus:bg-white focus:border-trust-navy focus:ring-1 focus:ring-trust-navy focus:outline-none transition-all font-bold text-trust-navy placeholder:text-slate-300 resize-none"></textarea>
                                         </div>
                                     </div>
 
@@ -124,9 +125,10 @@ export default function ContactPage() {
                                         <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">analytics</span>
                                     </button>
 
-                                    <p className="text-center text-[10px] text-slate-400 font-bold uppercase tracking-widest">
-                                        Standard Response Time: &lt; 24 Hours
-                                    </p>
+                                    <div className="flex items-center justify-center gap-2 text-[10px] text-slate-400 font-bold uppercase tracking-widest">
+                                        <span className="material-symbols-outlined text-sm">lock</span>
+                                        Encrypted Transmission
+                                    </div>
                                 </form>
                             </div>
 

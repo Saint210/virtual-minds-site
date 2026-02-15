@@ -6,6 +6,7 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import ServingCaliforniaSection from "@/components/home/ServingCaliforniaSection";
+import AnimatedCounter from "@/components/ui/AnimatedCounter";
 
 // Lazy load calculator to improve initial page load
 const PracticeLeaksCalculator = dynamic(() => import("@/components/tools/PracticeLeaksCalculator"), {
@@ -57,7 +58,7 @@ export default function Home() {
         {/* HERO SECTION */}
         <section className="relative pt-4 pb-8 md:pt-8 md:pb-16 overflow-hidden">
           {/* Ambient Background */}
-          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-healthcare-cyan/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+          <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-healthcare-cyan/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none animate-pulse-slow" />
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
             <div className="flex flex-col lg:flex-row items-center gap-16">
@@ -65,57 +66,47 @@ export default function Home() {
               {/* Copy (Left) */}
               <div className="lg:w-[55%] space-y-6">
 
-                <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6">
+                <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6 animate-fade-in-up">
                   The Clinical Operations<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">Partner for Private Psychiatry</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6">
+                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6 animate-fade-in-up [animation-delay:200ms]">
                   Stop managing tasks. Start engineering your practice. California's most specialized <strong>Psychiatric Virtual Assistant</strong> service.
                 </p>
 
-                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8">
+                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8 animate-fade-in-up [animation-delay:400ms]">
                   Generic VAs fail in complex care settings. We engineer <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                  <div className="grid grid-cols-2 gap-3 sm:flex w-full sm:w-auto">
-                    <Link href="/book-consultation" className="col-span-2 sm:col-span-1 bg-primary hover:bg-primary-hover text-white px-6 py-3 md:px-8 md:py-4 rounded-xl font-bold text-base md:text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] text-center flex items-center justify-center">
-                      Request Audit
-                    </Link>
-                    <div className="sm:hidden flex flex-col items-center gap-1">
-                      <a
-                        href="tel:+13104006266"
-                        className="w-full bg-gradient-to-br from-white to-slate-50 text-trust-navy border-2 border-primary/20 px-6 py-3 rounded-xl font-bold text-base shadow-lg shadow-primary/10 hover:shadow-xl hover:border-primary/40 transition-all text-center flex items-center justify-center gap-2 group"
-                      >
-                        <svg className="w-5 h-5 text-primary group-hover:scale-110 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                        </svg>
-                        <span>Call Now</span>
-                      </a>
-                      <p className="text-xs text-slate-500 text-center">(310) 400-6266</p>
-                    </div>
-                  </div>
-                  <Link href="/services" className="hidden sm:inline-flex bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:border-trust-navy/30 items-center justify-center">
-                    View Verified Services
+                <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up [animation-delay:600ms]">
+                  <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] text-center flex items-center justify-center gap-2 group">
+                    <span>Request Audit</span>
+                    <span className="material-symbols-outlined text-white/80 group-hover:translate-x-1 transition-transform">arrow_forward</span>
                   </Link>
-                  <Link href="/services" className="sm:hidden text-trust-navy font-bold text-sm underline decoration-primary/30 underline-offset-4 text-center mt-2">
-                    Or View Verified Services
+                  <Link href="/services" className="bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-8 py-4 rounded-xl font-bold text-lg transition-all hover:border-trust-navy/30 hover:shadow-lg text-center flex items-center justify-center">
+                    View Verified Services
                   </Link>
                 </div>
 
                 {/* Micro-Stats Bar */}
-                <div className="grid grid-cols-3 gap-4 py-6 mt-6">
+                <div className="grid grid-cols-3 gap-4 py-6 mt-6 animate-fade-in-up [animation-delay:800ms]">
                   <div className="text-center">
-                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary">15+</p>
+                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary flex justify-center">
+                      <AnimatedCounter end={15} suffix="+" duration={2000} />
+                    </p>
                     <p className="text-xs text-slate-500 uppercase tracking-wide font-bold">Hours Saved Weekly</p>
                   </div>
                   <div className="text-center border-x border-slate-200">
-                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary">98%</p>
+                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary flex justify-center">
+                      <AnimatedCounter end={98} suffix="%" duration={2000} />
+                    </p>
                     <p className="text-xs text-slate-500 uppercase tracking-wide font-bold">Billing Accuracy</p>
                   </div>
                   <div className="text-center">
-                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary">$25k+</p>
+                    <p className="text-3xl md:text-4xl font-serif font-bold text-primary flex justify-center">
+                      <AnimatedCounter end={25} prefix="$" suffix="k+" duration={2000} />
+                    </p>
                     <p className="text-xs text-slate-500 uppercase tracking-wide font-bold">Revenue Protected</p>
                   </div>
                 </div>
@@ -139,14 +130,14 @@ export default function Home() {
               {/* Hero Image (Right) - OPTIMIZED FOR MOBILE PERFORMANCE */}
               <div className="lg:w-[45%] relative">
                 <div
-                  className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/50 bg-slate-100"
+                  className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/50 bg-slate-100 animate-fade-in-up [animation-delay:800ms] hover:scale-[1.02] transition-transform duration-700 ease-out"
                   style={{ aspectRatio: '4/5' }}
                 >
                   {/* Organic Tech Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-trust-navy/40 via-transparent to-accent/20 z-10 pointer-events-none mix-blend-multiply" />
 
                   <Image
-                    src="/images/virtual-assistant-hero.png"
+                    src="/images/homepage-hero.webp"
                     alt="Executive Psychiatric Virtual Consultation - Professional virtual assistant managing practice workflows"
                     width={800}
                     height={1000}
@@ -176,21 +167,53 @@ export default function Home() {
         </section>
 
         {/* FOUNDING STORY - DEDICATED SECTION */}
-        <section className="py-16 bg-gradient-to-b from-slate-50 to-white border-y border-slate-100">
-          <div className="max-w-5xl mx-auto px-6">
-            <div className="bg-gradient-to-br from-white to-slate-50 rounded-3xl p-8 md:p-12 border-2 border-primary/20 shadow-2xl hover:shadow-3xl hover:border-primary/40 transition-all">
-              <div className="flex flex-col md:flex-row items-start gap-6">
-                <div className="bg-primary/10 p-4 rounded-2xl flex-shrink-0">
-                  <span className="material-symbols-outlined text-primary text-4xl w-9 h-9 inline-block overflow-hidden">shield_with_heart</span>
-                </div>
-                <div className="flex-1">
-                  <p className="text-sm font-bold text-primary uppercase tracking-widest mb-3">Our Founding Story</p>
-                  <p className="text-xl md:text-2xl text-slate-700 leading-relaxed font-medium mb-4">
-                    "When our previous VA company suddenly closed, <strong className="text-trust-navy">Cheryl ensured we never missed a beat</strong>. She'd been managing our operations, and she made sure every patient was cared for. I followed her to Virtual Minds without hesitation."
-                  </p>
-                  <div className="flex items-center gap-2">
-                    <span className="material-symbols-outlined text-primary text-sm w-3.5 h-3.5 inline-block overflow-hidden">verified</span>
-                    <p className="text-sm font-bold text-slate-500">Founding Client, Los Angeles</p>
+        {/* FOUNDING STORY - DARK MODE EXECUTIVE RESKIN */}
+        <section className="py-24 bg-white relative overflow-hidden">
+          {/* Background Texture/Blob */}
+          <div className="absolute top-0 left-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-x-1/2 -translate-y-1/2 pointer-events-none" />
+
+          <div className="max-w-5xl mx-auto px-6 relative z-10">
+            <div className="text-center mb-10 animate-fade-in-up [animation-delay:200ms]">
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-3 block">The Origin Story</span>
+              <h2 className="font-serif text-3xl md:text-5xl text-trust-navy leading-tight">
+                "I followed her to Virtual Minds <br className="hidden md:block" />
+                <span className="text-primary italic">without hesitation.</span>"
+              </h2>
+            </div>
+
+            <div className="bg-trust-navy p-8 md:p-12 rounded-3xl shadow-2xl shadow-trust-navy/20 border border-white/10 relative animate-fade-in-up [animation-delay:400ms] overflow-hidden group">
+              {/* Background Decoration - Subtle Glow */}
+              <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none opacity-50 group-hover:opacity-100 transition-opacity duration-700" />
+
+              <div className="relative z-10 max-w-4xl mx-auto text-center md:text-left">
+                {/* Subtle Watermark Quote */}
+                <span className="text-8xl text-white/5 font-serif absolute -top-10 -left-6 md:-left-12 select-none pointer-events-none">"</span>
+
+                <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-serif italic relative">
+                  Cheryl engineered a masterclass in independent psychiatric practice management. Her team stabilized our operations overnight, ensuring consistent revenue and seamless patient intake. With the admin chaos eliminated, I’m finally free to scale—and I’ve already commissioned Virtual Minds to build our new <strong className="text-white font-bold not-italic decoration-primary/50 underline underline-offset-4">high-conversion website</strong>.
+                </p>
+
+                <div className="mt-10 flex flex-col md:flex-row items-center gap-6 pt-8 md:justify-between border-t border-white/10">
+                  {/* Signature Block */}
+                  <div className="flex items-center gap-5">
+                    <div className="size-16 rounded-full bg-white/10 border border-white/10 flex items-center justify-center text-white font-serif font-bold text-3xl shrink-0 backdrop-blur-sm">
+                      C
+                    </div>
+                    <div className="text-center md:text-left">
+                      <p className="font-bold text-white text-lg">Founding Client</p>
+                      <p className="text-sm text-slate-400 font-medium">Board-Certified Reproductive Psychiatrist</p>
+                    </div>
+                  </div>
+
+                  {/* Verified Badge - Glassmorphic Dark Mode */}
+                  <div className="bg-white/5 border border-white/10 rounded-full px-4 py-2 flex items-center gap-3 shadow-lg backdrop-blur-md hover:bg-white/10 transition-colors">
+                    <div className="bg-primary/20 p-1.5 rounded-full">
+                      <span className="material-symbols-outlined text-primary text-[18px] block">verified_user</span>
+                    </div>
+                    <div className="flex flex-col items-start leading-none gap-0.5">
+                      <span className="text-[9px] font-bold text-slate-400 uppercase tracking-widest">Verified</span>
+                      <span className="text-xs font-bold text-white">100% Client Retention</span>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -214,56 +237,49 @@ export default function Home() {
               </p>
             </div>
 
-            {/* Specialties Grid - Premium Glass Cards */}
+            {/* Specialties Grid - Clinical Precision Cards */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-6xl mx-auto">
               {[
-                { name: "Neuropsychiatry", slug: "neuropsychiatry", preview: "Neurological testing & specialized assessments" },
-                { name: "Child & Adolescent", slug: "child-adolescent-psychiatry", preview: "School coordination & family communication" },
-                { name: "Women's Mental Health", slug: "womens-mental-health", preview: "Reproductive psychiatry & perinatal care" },
-                { name: "Integrative Psychiatry", slug: "integrative-psychiatry", preview: "Functional labs & holistic coordination" },
-                { name: "Sleep Medicine", slug: "sleep-medicine", preview: "Sleep study coordination & scheduling" },
-                { name: "ADHD & Executive Function", slug: "adhd-neuropsychiatry", preview: "Prior authorizations & testing coordination" },
-                { name: "OCD & Anxiety Disorders", slug: "ocd-anxiety-disorders", preview: "ERP protocols & intensive treatment support" },
-                { name: "Eating Disorders", slug: "eating-disorders", preview: "Multidisciplinary team coordination" },
-                { name: "Consult-Liaison", slug: "consult-liaison", preview: "Hospital consultation & medical team liaison" }
+                { name: "Neuropsychiatry", slug: "neuropsychiatry", preview: "Neurological testing & specialized assessments", icon: "neurology" },
+                { name: "Child & Adolescent", slug: "child-adolescent-psychiatry", preview: "School coordination & family communication", icon: "child_care" },
+                { name: "Women's Mental Health", slug: "womens-mental-health", preview: "Reproductive psychiatry & perinatal care", icon: "female" },
+                { name: "Integrative Psychiatry", slug: "integrative-psychiatry", preview: "Functional labs & holistic coordination", icon: "science" },
+                { name: "Sleep Medicine", slug: "sleep-medicine", preview: "Sleep study coordination & scheduling", icon: "bedtime" },
+                { name: "ADHD & Executive Function", slug: "adhd-neuropsychiatry", preview: "Prior authorizations & testing coordination", icon: "psychology" },
+                { name: "OCD & Anxiety Disorders", slug: "ocd-anxiety-disorders", preview: "ERP protocols & intensive treatment support", icon: "waves" },
+                { name: "Eating Disorders", slug: "eating-disorders", preview: "Multidisciplinary team coordination", icon: "restaurant_menu" },
+                { name: "Consult-Liaison", slug: "consult-liaison", preview: "Hospital consultation & medical team liaison", icon: "medical_services" }
               ].map((spec) => (
                 <Link
                   key={spec.slug}
                   href={`/specialties/${spec.slug}`}
-                  className="group relative bg-gradient-to-br from-white via-primary/5 to-primary/10 rounded-2xl p-6 border-2 border-primary/20 shadow-lg shadow-primary/10 hover:shadow-2xl hover:shadow-primary/20 hover:border-primary/50 hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 flex flex-col gap-3 overflow-hidden cursor-pointer"
+                  className="group relative bg-white rounded-xl p-8 border border-slate-200 shadow-sm hover:shadow-xl hover:border-trust-navy transition-all duration-300 flex flex-col gap-4 overflow-hidden cursor-pointer hover:-translate-y-1"
                 >
-                  {/* Subtle gradient overlay on hover */}
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/0 via-primary/0 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                  {/* Hover Beam Effect */}
+                  <div className="absolute inset-0 bg-gradient-to-br from-trust-navy/0 via-trust-navy/0 to-trust-navy/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-                  <div className="flex items-center justify-between relative z-10">
-                    <div className="flex items-center gap-4">
-                      {/* Icon badge */}
-                      <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-primary/30 group-hover:from-primary group-hover:to-primary-hover flex items-center justify-center transition-all duration-300 group-hover:scale-110 shadow-md shadow-primary/20 group-hover:shadow-lg group-hover:shadow-primary/30">
-                        <div className="w-3 h-3 rounded-full bg-gradient-to-br from-primary to-accent group-hover:from-white group-hover:to-white group-hover:shadow-lg group-hover:shadow-white/50 transition-all" />
-                      </div>
-                      <span className="font-serif text-xl font-semibold text-trust-navy group-hover:text-primary transition-colors">{spec.name}</span>
+                  <div className="flex items-start justify-between relative z-10 w-full">
+                    {/* Icon badge */}
+                    <div className="w-14 h-14 rounded-lg bg-slate-50 border border-slate-100 group-hover:bg-trust-navy group-hover:border-trust-navy flex items-center justify-center transition-all duration-300 shadow-sm">
+                      <span className="material-symbols-outlined text-trust-navy group-hover:text-white text-3xl transition-colors duration-300">{spec.icon}</span>
                     </div>
 
                     {/* Arrow indicator */}
-                    <div className="relative z-10 w-8 h-8 rounded-lg bg-slate-100 group-hover:bg-primary/10 flex items-center justify-center transition-all duration-300 opacity-60 group-hover:opacity-100">
-                      <svg className="w-5 h-5 text-slate-400 group-hover:text-primary transition-all group-hover:translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                      </svg>
+                    <div className="flex items-center gap-1 opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0">
+                      <span className="text-xs font-bold text-trust-navy uppercase tracking-wider">Explore</span>
+                      <span className="material-symbols-outlined text-trust-navy text-sm">arrow_forward</span>
                     </div>
                   </div>
 
-                  {/* Preview text */}
-                  <p className="text-sm text-primary/70 group-hover:text-primary transition-colors relative z-10 leading-relaxed font-medium">
-                    {spec.preview}
-                  </p>
-
-                  {/* "Learn more" hint */}
-                  <div className="flex items-center gap-1.5 text-xs font-bold text-primary opacity-0 group-hover:opacity-100 transition-all duration-300 relative z-10">
-                    <span>View specialty details</span>
-                    <svg className="w-3 h-3 group-hover:translate-x-0.5 transition-transform" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
+                  <div className="relative z-10 mt-2">
+                    <h3 className="font-serif text-xl font-bold text-trust-navy group-hover:text-primary transition-colors mb-2">{spec.name}</h3>
+                    <p className="text-sm text-slate-500 leading-relaxed font-medium group-hover:text-slate-600 transition-colors">
+                      {spec.preview}
+                    </p>
                   </div>
+
+                  {/* Bottom Border Accent */}
+                  <div className="absolute bottom-0 left-0 w-full h-1 bg-primary scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left" />
                 </Link>
               ))}
             </div>
@@ -284,7 +300,12 @@ export default function Home() {
                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
                   Generic virtual assistants cannot support high-acuity psychiatry. They miss critical intake details, fumble prior authorizations, and create revenue leakage.
                 </p>
-                <div className="pl-6 border-l-4 border-primary">
+                <div className="pl-6 border-l-4 border-primary relative">
+                  <div className="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full border-2 border-white shadow-sm" />
+                  <div className="flex items-center gap-2 mb-4 opacity-80">
+                    <span className="material-symbols-outlined text-primary text-lg">security</span>
+                    <span className="text-xs font-bold text-trust-navy uppercase tracking-widest">Clinical Clearance Verified</span>
+                  </div>
                   <p className="text-xl font-serif text-trust-navy mb-2 italic">
                     "We protect your license, your time, and your patient relationships."
                   </p>
@@ -298,15 +319,16 @@ export default function Home() {
 
               {/* Light Theme Card */}
               {/* Premium Glass Card */}
+              {/* Dark Mode Feature Card - High Contrast */}
               <div className="relative group rounded-[2.5rem] p-1 scale-[1.02]">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-trust-navy/5 to-accent/10 rounded-[2.5rem] blur-xl" />
-                <div className="bg-white/80 backdrop-blur-md rounded-[2.5rem] p-10 border border-white/50 shadow-2xl relative z-10 overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-trust-navy via-trust-navy/90 to-primary/20 rounded-[2.5rem] blur-xl opacity-50" />
+                <div className="bg-trust-navy rounded-[2.5rem] p-10 border border-white/10 shadow-2xl relative z-10 overflow-hidden">
                   {/* Decorative Abstract Shapes */}
-                  <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
+                  <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
                   <div className="relative z-10">
-                    <h3 className="text-sm font-bold text-trust-navy/60 uppercase tracking-widest mb-8 flex items-center gap-3">
-                      <span className="w-8 h-[1px] bg-trust-navy/30"></span>
+                    <h3 className="text-sm font-bold text-white/60 uppercase tracking-widest mb-8 flex items-center gap-3">
+                      <span className="w-8 h-[1px] bg-primary/50"></span>
                       The Virtual Minds Standard
                     </h3>
                     <ul className="space-y-5">
@@ -318,12 +340,10 @@ export default function Home() {
                         "Zero Administrative Drift"
                       ].map((req, i) => (
                         <li key={i} className="flex items-center gap-4 group/item hover:translate-x-1 transition-transform">
-                          <div className="bg-gradient-to-br from-[#059669] to-[#047857] text-white p-2 rounded-full shadow-lg shadow-emerald-300/50 flex items-center justify-center">
-                            <svg className="w-5 h-5" fill="none" stroke="currentColor" strokeWidth="3" viewBox="0 0 24 24">
-                              <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
+                          <div className="bg-white/10 text-primary p-2 rounded-full shadow-inner flex items-center justify-center border border-white/5">
+                            <span className="material-symbols-outlined text-sm">check</span>
                           </div>
-                          <span className="text-lg font-bold text-trust-navy bg-gradient-to-r from-trust-navy to-trust-navy/80 bg-clip-text">{req}</span>
+                          <span className="text-lg font-bold text-white">{req}</span>
                         </li>
                       ))}
                     </ul>
@@ -375,24 +395,54 @@ export default function Home() {
 
               <div className="grid md:grid-cols-3 gap-8 mb-16 text-left max-w-6xl mx-auto">
                 {/* Phase 1 */}
-                <div className="bg-[#FAF8F3] p-8 rounded-2xl border-2 border-white/30 relative group hover:bg-white hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl">
-                  <div className="absolute -top-4 left-8 bg-gradient-to-r from-primary to-primary/80 text-white font-bold px-4 py-1.5 rounded-full text-xs shadow-lg uppercase tracking-wider">Phase 1</div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-4 font-bold">Diagnostic Review</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-medium">We audit your current processes, identify bottlenecks, and review your practice goals to build a custom roadmap.</p>
+                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative group hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl overflow-hidden">
+                  {/* Technical Grid Background */}
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                  <div className="relative z-10">
+                    <div className="absolute -top-5 -left-5 bg-trust-navy text-white p-4 rounded-br-2xl shadow-lg group-hover:bg-primary transition-colors border-r border-b border-white/20">
+                      <span className="material-symbols-outlined text-2xl relative top-1 left-1">inventory</span>
+                    </div>
+                    <div className="flex justify-end mb-10">
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_01</span>
+                    </div>
+                    <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Diagnostic Review</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed font-medium">We audit your current processes, identify bottlenecks, and review your practice goals to build a custom roadmap.</p>
+                  </div>
                 </div>
 
                 {/* Phase 2 */}
-                <div className="bg-[#FAF8F3] p-8 rounded-2xl border-2 border-white/30 relative group hover:bg-white hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl">
-                  <div className="absolute -top-4 left-8 bg-gradient-to-r from-primary to-primary/80 text-white font-bold px-4 py-1.5 rounded-full text-xs shadow-lg uppercase tracking-wider">Phase 2</div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-4 font-bold">Implementation</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-medium">We deploy EHR optimization, set up HIPAA-compliant workflows, and establish clear client management policies.</p>
+                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative group hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl overflow-hidden">
+                  {/* Technical Grid Background */}
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                  <div className="relative z-10">
+                    <div className="absolute -top-5 -left-5 bg-trust-navy text-white p-4 rounded-br-2xl shadow-lg group-hover:bg-primary transition-colors border-r border-b border-white/20">
+                      <span className="material-symbols-outlined text-2xl relative top-1 left-1">engineering</span>
+                    </div>
+                    <div className="flex justify-end mb-10">
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_02</span>
+                    </div>
+                    <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Implementation</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed font-medium">We deploy EHR optimization, set up HIPAA-compliant workflows, and establish clear client management policies.</p>
+                  </div>
                 </div>
 
                 {/* Phase 3 */}
-                <div className="bg-[#FAF8F3] p-8 rounded-2xl border-2 border-white/30 relative group hover:bg-white hover:border-primary/50 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl shadow-xl">
-                  <div className="absolute -top-4 left-8 bg-gradient-to-r from-primary to-primary/80 text-white font-bold px-4 py-1.5 rounded-full text-xs shadow-lg uppercase tracking-wider">Phase 3</div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-4 font-bold">Executive Maintenance</h3>
-                  <p className="text-slate-600 text-sm leading-relaxed font-medium">Daily administrative management, billing liaison support, and ongoing operational refinement to prevent drift.</p>
+                <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 relative group hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl overflow-hidden">
+                  {/* Technical Grid Background */}
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                  <div className="relative z-10">
+                    <div className="absolute -top-5 -left-5 bg-trust-navy text-white p-4 rounded-br-2xl shadow-lg group-hover:bg-primary transition-colors border-r border-b border-white/20">
+                      <span className="material-symbols-outlined text-2xl relative top-1 left-1">verified</span>
+                    </div>
+                    <div className="flex justify-end mb-10">
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_03</span>
+                    </div>
+                    <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Executive Maintenance</h3>
+                    <p className="text-slate-600 text-sm leading-relaxed font-medium">Daily administrative management, billing liaison support, and ongoing operational refinement to prevent drift.</p>
+                  </div>
                 </div>
               </div>
 
@@ -416,63 +466,102 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Card 1: Consulting */}
-              <div className="group bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-0 inset-x-0 h-1.5 bg-accent opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-accent/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined text-3xl text-accent">rocket_launch</span>
+              <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-bold text-accent uppercase tracking-widest">Strategy</span>
+                  </div>
+                  <Image
+                    src="/images/practice-consulting-dashboard.png"
+                    alt="Psychiatric Practice Consulting Dashboard"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <h3 className="font-serif text-2xl text-trust-navy mb-3">Practice Consulting</h3>
-                <p className="text-slate-600 mb-8 h-[3rem] text-sm leading-relaxed">Strategic architecture for psychiatrists requiring a stable, compliant, and scalable foundation.</p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {["Start-up Launch", "EHR Setup", "HIPAA Policy", "Contract Analysis"].map((item) => (
-                    <span key={item} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100">
-                      {item}
-                    </span>
-                  ))}
+
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Practice Consulting</h3>
+                  <p className="text-slate-600 mb-6 text-sm leading-relaxed">Strategic architecture for psychiatrists requiring a stable, compliant, and scalable foundation.</p>
+
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {["Start-up Launch", "EHR Setup", "HIPAA Policy", "Contract Analysis"].map((item) => (
+                      <span key={item} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  <Link href="/services/practice-consulting" className="inline-flex items-center gap-2 text-accent font-bold text-sm tracking-wide group/link hover:text-accent/80 transition-colors">
+                    View Consulting Scopes <span className="material-symbols-outlined text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                  </Link>
                 </div>
-                <Link href="/services/practice-consulting" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-accent border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm shadow-sm transition-all hover:border-accent/30 hover:scale-[1.02]">
-                  View Consulting Scopes <span className="material-symbols-outlined text-lg">arrow_forward</span>
-                </Link>
               </div>
 
               {/* Card 2: Virtual Assistant (Primary) */}
-              <div className="group bg-white rounded-[2rem] p-8 border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden ring-1 ring-trust-navy/5">
-                <div className="absolute top-0 inset-x-0 h-1.5 bg-trust-navy opacity-100" />
-                <div className="bg-trust-navy/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined text-3xl text-trust-navy">support_agent</span>
+              <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-lg hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col ring-1 ring-trust-navy/5">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-trust-navy/90 backdrop-blur-md px-3 py-1 rounded-full border border-white/20 shadow-sm">
+                    <span className="text-[10px] font-bold text-white uppercase tracking-widest">Core Support</span>
+                  </div>
+                  <Image
+                    src="/images/psychiatrist-va-hero.png"
+                    alt="Psychiatric Virtual Assistant"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <h3 className="font-serif text-2xl text-trust-navy mb-3">Virtual Assistant</h3>
-                <p className="text-slate-600 mb-8 h-[3rem] text-sm leading-relaxed">Administrative execution delivered with clinical nuance and absolute reliability.</p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {["Intake Selection", "Patient Comms", "Doc Management", "Prior Auths"].map((item) => (
-                    <span key={item} className="bg-trust-navy/5 text-trust-navy px-3 py-1.5 rounded-lg text-xs font-bold border border-trust-navy/5">
-                      {item}
-                    </span>
-                  ))}
+
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Virtual Assistant</h3>
+                  <p className="text-slate-600 mb-6 text-sm leading-relaxed">Administrative execution delivered with clinical nuance and absolute reliability.</p>
+
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {["Intake Selection", "Patient Comms", "Doc Management", "Prior Auths"].map((item) => (
+                      <span key={item} className="bg-trust-navy/5 text-trust-navy px-3 py-1.5 rounded-lg text-xs font-bold border border-trust-navy/5">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  <Link href="/services/virtual-assistant" className="inline-flex items-center gap-2 text-trust-navy font-bold text-sm tracking-wide group/link hover:text-trust-navy/80 transition-colors">
+                    View Clinical Support <span className="material-symbols-outlined text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                  </Link>
                 </div>
-                <Link href="/services/virtual-assistant" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-trust-navy border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm shadow-sm transition-all hover:border-trust-navy/30 hover:scale-[1.02]">
-                  View Clinical Support <span className="material-symbols-outlined text-lg">arrow_forward</span>
-                </Link>
               </div>
 
               {/* Card 3: Billing Liaison */}
-              <div className="group bg-white rounded-[2rem] p-8 border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-                <div className="absolute top-0 inset-x-0 h-1.5 bg-primary opacity-0 group-hover:opacity-100 transition-opacity" />
-                <div className="bg-primary/5 w-16 h-16 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="material-symbols-outlined text-3xl text-primary">payments</span>
+              <div className="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-2xl hover:-translate-y-1 transition-all duration-300 relative overflow-hidden flex flex-col">
+                <div className="relative h-48 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-bold text-primary uppercase tracking-widest">Revenue</span>
+                  </div>
+                  <Image
+                    src="/images/visual-intel-rcm.png"
+                    alt="Revenue Cycle Management Intelligence"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <h3 className="font-serif text-2xl text-trust-navy mb-3">Revenue Cycle Liaison</h3>
-                <p className="text-slate-600 mb-8 h-[3rem] text-sm leading-relaxed">We coordinate with your biller to resolve issues. <span className="text-primary font-bold">We do NOT submit claims.</span></p>
-                <div className="flex flex-wrap gap-2 mb-8">
-                  {["Superbills", "Eligibility", "Biller Comms", "Cards & Payments"].map((item) => (
-                    <span key={item} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100">
-                      {item}
-                    </span>
-                  ))}
+
+                <div className="p-8 flex flex-col flex-grow">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-3">Revenue Cycle Liaison</h3>
+                  <p className="text-slate-600 mb-6 text-sm leading-relaxed">We coordinate with your biller to resolve issues. <span className="text-primary font-bold">We do NOT submit claims.</span></p>
+
+                  <div className="flex flex-wrap gap-2 mb-8 mt-auto">
+                    {["Superbills", "Eligibility", "Biller Comms", "Cards & Payments"].map((item) => (
+                      <span key={item} className="bg-slate-50 text-slate-600 px-3 py-1.5 rounded-lg text-xs font-bold border border-slate-100">
+                        {item}
+                      </span>
+                    ))}
+                  </div>
+
+                  <Link href="/services/billing-and-rcm" className="inline-flex items-center gap-2 text-primary font-bold text-sm tracking-wide group/link hover:text-primary/80 transition-colors">
+                    View Liaison Scope <span className="material-symbols-outlined text-lg group-hover/link:translate-x-1 transition-transform">arrow_forward</span>
+                  </Link>
                 </div>
-                <Link href="/services/billing-and-rcm" className="inline-flex items-center gap-2 bg-white hover:bg-slate-50 text-primary border border-slate-200 px-6 py-3 rounded-xl font-bold text-sm shadow-sm transition-all hover:border-primary/30 hover:scale-[1.02]">
-                  View Liaison Scope <span className="material-symbols-outlined text-lg">arrow_forward</span>
-                </Link>
               </div>
             </div>
           </div>
@@ -496,55 +585,82 @@ export default function Home() {
 
             <div className="grid lg:grid-cols-3 gap-8 mb-12">
               {/* Blog Post 1 */}
-              <Link href="/blog/how-to-choose-california-psychiatric-virtual-assistant" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-primary">psychology</span>
+              <Link href="/blog/how-to-choose-california-psychiatric-virtual-assistant" className="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-trust-navy hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <div className="relative h-56 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-bold text-trust-navy uppercase tracking-widest">Operations</span>
                   </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                  <Image
+                    src="/images/operational-process-review-mental-health.jpg"
+                    alt="Psychiatric practice operations review"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                <div className="p-8 flex flex-col h-full">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors flex-grow leading-tight">
                     How to Choose a California Psychiatric Virtual Assistant
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-slate-600 mb-6 leading-relaxed text-sm line-clamp-2">
                     A comprehensive guide to selecting the right psychiatric virtual assistant for your California practice.
                   </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <div className="flex items-center gap-2 text-trust-navy font-bold text-xs uppercase tracking-wider group-hover:text-primary transition-colors mt-auto border-t border-slate-100 pt-6">
+                    Read Analysis <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                   </div>
                 </div>
               </Link>
 
               {/* Blog Post 2 */}
-              <Link href="/blog/how-to-scale-private-psychiatry-practice" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-accent">trending_up</span>
+              <Link href="/blog/how-to-scale-private-psychiatry-practice" className="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-trust-navy hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <div className="relative h-56 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-bold text-trust-navy uppercase tracking-widest">Growth Strategy</span>
                   </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                  <Image
+                    src="/images/how-to-scale-psychiatry-practice.jpg"
+                    alt="Scaling a private psychiatry practice"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                <div className="p-8 flex flex-col h-full">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors flex-grow leading-tight">
                     How to Scale Your Private Psychiatry Practice
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-slate-600 mb-6 leading-relaxed text-sm line-clamp-2">
                     Strategic frameworks for sustainable growth without compromising clinical quality.
                   </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <div className="flex items-center gap-2 text-trust-navy font-bold text-xs uppercase tracking-wider group-hover:text-primary transition-colors mt-auto border-t border-slate-100 pt-6">
+                    Read Analysis <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                   </div>
                 </div>
               </Link>
 
               {/* Blog Post 3 */}
-              <Link href="/blog/psychiatrist-salary-california-private-practice" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-trust-navy/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-trust-navy">account_balance</span>
+              <Link href="/blog/psychiatrist-salary-california-private-practice" className="group bg-white rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-2xl hover:border-trust-navy hover:-translate-y-1 transition-all duration-300 flex flex-col">
+                <div className="relative h-56 w-full overflow-hidden">
+                  <div className="absolute top-4 left-4 z-20 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full border border-slate-200 shadow-sm">
+                    <span className="text-[10px] font-bold text-trust-navy uppercase tracking-widest">Financial Intelligence</span>
                   </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
+                  <Image
+                    src="/images/psychiatrist-salary-california.jpg"
+                    alt="California Psychiatrist Salary Analysis"
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-trust-navy/10 group-hover:bg-transparent transition-colors duration-500" />
+                </div>
+                <div className="p-8 flex flex-col h-full">
+                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors flex-grow leading-tight">
                     Psychiatrist Salary in California Private Practice
                   </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
+                  <p className="text-slate-600 mb-6 leading-relaxed text-sm line-clamp-2">
                     Comprehensive analysis of earning potential and financial optimization strategies.
                   </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Read Article <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                  <div className="flex items-center gap-2 text-trust-navy font-bold text-xs uppercase tracking-wider group-hover:text-primary transition-colors mt-auto border-t border-slate-100 pt-6">
+                    Read Analysis <span className="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                   </div>
                 </div>
               </Link>

@@ -93,48 +93,80 @@ export default function Navbar({
                 </div>
 
                 {/* Mobile Menu Overlay - Portaled to Body */}
-                {mounted && mobileMenuOpen && createPortal(
-                    <div className="relative z-[99999]">
+                {mounted && (
+                    createPortal(
                         <div
-                            className="fixed inset-0 bg-slate-900/10 backdrop-blur-sm"
-                            onClick={() => setMobileMenuOpen(false)}
-                        />
+                            className={`fixed inset-0 z-[99999] transition-all duration-500 ${mobileMenuOpen ? 'pointer-events-auto' : 'pointer-events-none'}`}
+                        >
+                            {/* Backdrop */}
+                            <div
+                                className={`absolute inset-0 bg-slate-900/20 backdrop-blur-sm transition-opacity duration-500 ${mobileMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+                                onClick={() => setMobileMenuOpen(false)}
+                            />
 
-                        {/* Slide-out Menu */}
-                        <div className="fixed top-28 right-0 bottom-0 w-80 max-w-[85vw] bg-white shadow-2xl overflow-y-auto border-l border-slate-100">
-                            <div className="flex flex-col p-6 gap-2">
-                                {[
-                                    { name: "Services", href: "/services" },
-                                    { name: "Consulting", href: "/services/practice-consulting" },
-                                    { name: "About", href: "/about" },
-                                    { name: "Pricing", href: "/pricing" },
-                                    { name: "Resources", href: "/resources" },
-                                    { name: "Blog", href: "/blog" }
-                                ].map((item) => (
-                                    <Link
-                                        key={item.name}
-                                        href={item.href}
-                                        className="text-lg font-bold text-trust-navy hover:text-primary transition-colors py-4 border-b border-slate-50 flex justify-between items-center"
-                                        onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                        {item.name}
-                                        <span className="material-symbols-outlined text-slate-200">chevron_right</span>
-                                    </Link>
-                                ))}
-                                <Link
-                                    href="/book-consultation"
-                                    className="bg-primary hover:bg-primary-hover text-white px-6 py-4 rounded-2xl text-lg font-bold transition-all shadow-xl shadow-primary/20 text-center mt-6"
-                                    onClick={() => {
-                                        trackCTAClick('Schedule Call', '/book-consultation', 'navbar_mobile');
-                                        setMobileMenuOpen(false);
-                                    }}
-                                >
-                                    Schedule Call
-                                </Link>
+                            {/* Slide-out Menu */}
+                            <div
+                                className={`absolute top-0 right-0 h-full w-[85vw] max-w-sm bg-white/95 backdrop-blur-2xl shadow-2xl border-l border-white/20 transition-transform duration-500 ease-[cubic-bezier(0.32,0.72,0,1)] ${mobileMenuOpen ? 'translate-x-0' : 'translate-x-full'}`}
+                            >
+                                <div className="flex flex-col h-full">
+                                    {/* Header */}
+                                    <div className="p-8 pb-4 flex justify-between items-center border-b border-slate-100/50">
+                                        <div className="text-xl font-serif font-bold text-trust-navy">
+                                            Menu
+                                        </div>
+                                        <button
+                                            onClick={() => setMobileMenuOpen(false)}
+                                            className="p-2 -mr-2 text-slate-400 hover:text-trust-navy transition-colors"
+                                        >
+                                            <span className="material-symbols-outlined">close</span>
+                                        </button>
+                                    </div>
+
+                                    {/* Links */}
+                                    <div className="flex-1 overflow-y-auto p-8 pt-4 gap-2 flex flex-col">
+                                        {[
+                                            { name: "Services", href: "/services" },
+                                            { name: "Consulting", href: "/services/practice-consulting" },
+                                            { name: "About", href: "/about" },
+                                            { name: "Pricing", href: "/pricing" },
+                                            { name: "Resources", href: "/resources" },
+                                            { name: "Blog", href: "/blog" }
+                                        ].map((item) => (
+                                            <Link
+                                                key={item.name}
+                                                href={item.href}
+                                                className="group flex justify-between items-center py-5 border-b border-slate-50 text-xl font-serif font-medium text-trust-navy hover:text-primary transition-all hover:pl-2"
+                                                onClick={() => setMobileMenuOpen(false)}
+                                            >
+                                                {item.name}
+                                                <span className="material-symbols-outlined text-slate-200 group-hover:text-primary transition-colors">arrow_forward</span>
+                                            </Link>
+                                        ))}
+                                    </div>
+
+                                    {/* Footer CTA */}
+                                    <div className="p-8 border-t border-slate-100 bg-slate-50/50">
+                                        <Link
+                                            href="/book-consultation"
+                                            className="w-full flex items-center justify-center gap-2 bg-trust-navy text-white px-6 py-5 rounded-2xl text-lg font-bold shadow-xl shadow-trust-navy/20 hover:scale-[1.02] active:scale-[0.98] transition-all"
+                                            onClick={() => {
+                                                trackCTAClick('Schedule Call', '/book-consultation', 'navbar_mobile');
+                                                setMobileMenuOpen(false);
+                                            }}
+                                        >
+                                            Schedule Call
+                                            <span className="material-symbols-outlined">calendar_month</span>
+                                        </Link>
+                                        <div className="mt-6 text-center">
+                                            <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-1">Direct Line</p>
+                                            <a href="tel:+13104006266" className="text-lg font-bold text-trust-navy hover:text-primary transition-colors">(310) 400-6266</a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>,
-                    document.body
+                        </div>,
+                        document.body
+                    )
                 )}
             </nav>
         </div>

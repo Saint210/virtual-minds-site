@@ -40,9 +40,9 @@ export default function BillingPage() {
                                     <span className="material-symbols-outlined text-sm">verified</span>
                                     Verified Liaison Service
                                 </div>
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
+                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1]">
                                     We Don't Submit Claims.<br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-secondary animate-gradient-x">
                                         We Ensure They Get Paid.
                                     </span>
                                 </h1>
@@ -110,13 +110,21 @@ export default function BillingPage() {
                         </div>
 
                         <div className="grid md:grid-cols-2 gap-12">
-                            {/* WHAT WE DO */}
-                            <div className="bg-[#F0FDF4] rounded-[2rem] p-10 border border-green-100">
-                                <div className="flex items-center gap-3 mb-8">
-                                    <span className="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
-                                    <h3 className="font-serif text-2xl font-bold text-trust-navy">In Scope (The Liaison)</h3>
+                            {/* WHAT WE DO - SYSTEM LIAISON */}
+                            <div className="bg-slate-50 rounded-[2.5rem] p-10 border border-emerald-100 shadow-xl shadow-emerald-900/5 relative overflow-hidden group">
+                                <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-400 to-emerald-600" />
+                                <div className="absolute -right-6 -top-6 size-32 bg-emerald-50 rounded-full blur-3xl opacity-50 pointer-events-none" />
+
+                                <div className="flex items-center gap-4 mb-8 relative z-10">
+                                    <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-emerald-600 shadow-sm border border-emerald-100">
+                                        <span className="material-symbols-outlined text-3xl">verified_user</span>
+                                    </div>
+                                    <div>
+                                        <div className="text-[10px] font-black text-emerald-600 uppercase tracking-widest mb-1">In Scope</div>
+                                        <h3 className="font-serif text-2xl font-bold text-trust-navy">The Revenue Liaison</h3>
+                                    </div>
                                 </div>
-                                <ul className="space-y-4">
+                                <ul className="space-y-4 relative z-10">
                                     {[
                                         "Prior Authorization Management (CoverMyMeds/Availity)",
                                         "Detailed Benefits Verification & Eligibility Checks",
@@ -125,19 +133,26 @@ export default function BillingPage() {
                                         "Coordinating directly with your Billing Company",
                                         "Resolving Patient Billing Inquiries"
                                     ].map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3">
-                                            <span className="material-symbols-outlined text-green-600 text-lg mt-0.5">check</span>
+                                        <li key={i} className="flex items-start gap-4 p-3 rounded-xl hover:bg-white transition-colors border border-transparent hover:border-emerald-100">
+                                            <span className="material-symbols-outlined text-emerald-500 text-xl mt-0.5 shrink-0">check_circle</span>
                                             <span className="text-slate-700 font-medium">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
                             </div>
 
-                            {/* WHAT WE DON'T DO */}
-                            <div className="bg-[#FEF2F2] rounded-[2rem] p-10 border border-red-100">
-                                <div className="flex items-center gap-3 mb-8">
-                                    <span className="material-symbols-outlined text-red-500 text-3xl">cancel</span>
-                                    <h3 className="font-serif text-2xl font-bold text-trust-navy">Out of Scope (The Biller)</h3>
+                            {/* WHAT WE DON'T DO - THE BILLER */}
+                            <div className="bg-white rounded-[2.5rem] p-10 border border-slate-100 shadow-sm relative overflow-hidden opacity-80 hover:opacity-100 transition-opacity">
+                                <div className="absolute top-0 left-0 w-full h-1 bg-slate-200" />
+
+                                <div className="flex items-center gap-4 mb-8">
+                                    <div className="size-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 border border-slate-100">
+                                        <span className="material-symbols-outlined text-3xl">dns</span>
+                                    </div>
+                                    <div>
+                                        <div className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Out of Scope</div>
+                                        <h3 className="font-serif text-2xl font-bold text-slate-600">The Biller's Role</h3>
+                                    </div>
                                 </div>
                                 <ul className="space-y-4">
                                     {[
@@ -148,9 +163,9 @@ export default function BillingPage() {
                                         "Credentialing Applications (unless contracted separately)",
                                         "Appealing Denied Claims (Clinical)"
                                     ].map((item, i) => (
-                                        <li key={i} className="flex items-start gap-3">
-                                            <span className="material-symbols-outlined text-red-400 text-lg mt-0.5">close</span>
-                                            <span className="text-slate-700 font-medium">{item}</span>
+                                        <li key={i} className="flex items-start gap-4 p-3">
+                                            <span className="material-symbols-outlined text-slate-300 text-xl mt-0.5 shrink-0">remove_circle_outline</span>
+                                            <span className="text-slate-500 font-medium">{item}</span>
                                         </li>
                                     ))}
                                 </ul>
@@ -180,8 +195,8 @@ export default function BillingPage() {
                                     icon: "leaderboard"
                                 }
                             ].map((feature, i) => (
-                                <div key={i} className="bg-white p-8 rounded-3xl border border-slate-100 shadow-sm hover:shadow-lg transition-all">
-                                    <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6">
+                                <div key={i} className="bg-white p-8 rounded-[2rem] border border-slate-200 shadow-sm hover:border-trust-navy transition-all duration-300 hover:-translate-y-1 hover:shadow-xl group">
+                                    <div className="size-12 bg-primary/10 rounded-xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-colors">
                                         <span className="material-symbols-outlined text-2xl">{feature.icon}</span>
                                     </div>
                                     <h3 className="font-serif text-xl font-bold text-trust-navy mb-3">{feature.title}</h3>

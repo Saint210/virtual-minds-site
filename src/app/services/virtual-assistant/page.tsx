@@ -35,8 +35,8 @@ export default function VirtualAssistantPage() {
 
                             {/* Copy */}
                             <div className="lg:w-1/2">
-                                <div className="inline-flex items-center gap-2 bg-trust-navy/5 border border-trust-navy/10 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-4">
-                                    <span className="material-symbols-outlined text-sm">psychology</span>
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-4 shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-sm">psychology</span>
                                     High-Acuity Operations
                                 </div>
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
@@ -109,53 +109,104 @@ export default function VirtualAssistantPage() {
                         </div>
 
                         <div className="grid md:grid-cols-3 gap-8">
-                            {/* Card 1: Intake */}
-                            <div className="bg-[#FAF8F3] p-8 rounded-[2.5rem] border border-slate-200 hover:border-primary/30 transition-all group">
-                                <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                                    <span className="material-symbols-outlined text-3xl">contact_mail</span>
+                            {/* Card 1: Intake - System Module */}
+                            <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group relative overflow-hidden">
+                                {/* Technical Grid Background */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                                <div className="relative z-10">
+                                    <div className="absolute top-0 right-0 bg-white/80 backdrop-blur-sm border-l border-b border-slate-200 rounded-tr-[2.5rem] px-4 py-2">
+                                        <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">SYS_INTAKE_01</span>
+                                    </div>
+
+                                    <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-trust-navy mb-6 shadow-sm border border-slate-100 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
+                                        <span className="material-symbols-outlined text-3xl">contact_mail</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3 group-hover:text-primary transition-colors">Intake Triage</h3>
+                                    <p className="text-slate-600 leading-relaxed font-medium mb-6 text-sm">
+                                        We don't just "schedule appointments." We screen for fit, collect insurance cards, and ensure intake packets are signed 24 hours before the session.
+                                    </p>
+                                    <ul className="space-y-3 text-sm text-slate-500 border-t border-slate-200 pt-6">
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Verify Insurance Eligibility</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Collect Credit Cards</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Send Welcome Packets</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3">Intake Triage</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium mb-4">
-                                    We don't just "schedule appointments." We screen for fit, collect insurance cards, and ensure intake packets are signed 24 hours before the session.
-                                </p>
-                                <ul className="space-y-2 text-sm text-slate-500">
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Verify Insurance Eligibility</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Collect Credit Cards</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Send Welcome Packets</li>
-                                </ul>
                             </div>
 
-                            {/* Card 2: Clinical Admin */}
-                            <div className="bg-white p-8 rounded-[2.5rem] border-2 border-primary/10 shadow-xl relative overflow-hidden group">
-                                <div className="absolute top-0 right-0 bg-primary text-white text-[10px] font-black px-3 py-1 rounded-bl-xl uppercase tracking-widest">Core Focus</div>
-                                <div className="size-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                                    <span className="material-symbols-outlined text-3xl">medical_services</span>
+                            {/* Card 2: Clinical Admin - Hero Module */}
+                            <div className="bg-white p-8 rounded-[2.5rem] border-2 border-primary/20 shadow-xl relative overflow-hidden group hover:-translate-y-2 transition-transform duration-300">
+                                {/* Technical Grid Background */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-20" />
+
+                                <div className="absolute top-0 right-0 bg-primary text-white text-[10px] font-black px-4 py-2 rounded-bl-xl uppercase tracking-widest shadow-md z-20">Core Focus</div>
+
+                                <div className="relative z-10">
+                                    <div className="size-14 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform">
+                                        <span className="material-symbols-outlined text-3xl">medical_services</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3">Clinical Coordination</h3>
+                                    <p className="text-slate-600 leading-relaxed font-medium mb-6 text-sm">
+                                        The "invisible work" that burns you out. We handle the logistics so you can handle the patients.
+                                    </p>
+                                    <ul className="space-y-3 text-sm text-slate-600 border-t border-slate-100 pt-6">
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Prior Authorizations</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Pharmacy Calls/Faxes</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Lab Result Tracking</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3">Clinical Coordination</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium mb-4">
-                                    The "invisible work" that burns you out. We handle the logistics so you can handle the patients.
-                                </p>
-                                <ul className="space-y-2 text-sm text-slate-500">
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Prior Authorizations</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Pharmacy Calls/Faxes</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Lab Result Tracking</li>
-                                </ul>
                             </div>
 
-                            {/* Card 3: Retention */}
-                            <div className="bg-[#FAF8F3] p-8 rounded-[2.5rem] border border-slate-200 hover:border-primary/30 transition-all group">
-                                <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm group-hover:scale-110 transition-transform">
-                                    <span className="material-symbols-outlined text-3xl">psychology</span>
+                            {/* Card 3: Retention - System Module */}
+                            <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group relative overflow-hidden">
+                                {/* Technical Grid Background */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                                <div className="relative z-10">
+                                    <div className="absolute top-0 right-0 bg-white/80 backdrop-blur-sm border-l border-b border-slate-200 rounded-tr-[2.5rem] px-4 py-2">
+                                        <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">SYS_RETENTION_03</span>
+                                    </div>
+
+                                    <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-trust-navy mb-6 shadow-sm border border-slate-100 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
+                                        <span className="material-symbols-outlined text-3xl">psychology</span>
+                                    </div>
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3 group-hover:text-primary transition-colors">Patient Retention</h3>
+                                    <p className="text-slate-600 leading-relaxed font-medium mb-6 text-sm">
+                                        A warm, competent human voice when patients are anxious. We reduce no-shows through compassionate consistency.
+                                    </p>
+                                    <ul className="space-y-3 text-sm text-slate-500 border-t border-slate-200 pt-6">
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Rescheduling Calls</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Waitlist Management</span>
+                                        </li>
+                                        <li className="flex items-center gap-3">
+                                            <span className="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                            <span className="font-bold">Recall for Follow-ups</span>
+                                        </li>
+                                    </ul>
                                 </div>
-                                <h3 className="font-serif text-2xl font-bold text-trust-navy mb-3">Patient Retention</h3>
-                                <p className="text-slate-600 leading-relaxed font-medium mb-4">
-                                    A warm, competent human voice when patients are anxious. We reduce no-shows through compassionate consistency.
-                                </p>
-                                <ul className="space-y-2 text-sm text-slate-500">
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Rescheduling Calls</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Waitlist Management</li>
-                                    <li className="flex gap-2"><span className="text-primary font-bold">✓</span> Recall for Follow-ups</li>
-                                </ul>
                             </div>
                         </div>
                     </div>

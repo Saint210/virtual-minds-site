@@ -78,26 +78,29 @@ export default function FAQClient() {
 
                 {/* Right: Search Box (40%) */}
                 <div className="lg:w-[40%] w-full">
-                    <div className="p-8 bg-white rounded-[2.5rem] border border-slate-100 shadow-2xl relative overflow-hidden group">
-                        <div className="absolute top-0 right-0 w-32 h-32 bg-[#D2691E]/5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-[#D2691E]/10 transition-all" />
+                    <div className="p-1 bg-gradient-to-br from-slate-200 to-white rounded-3xl shadow-2xl relative group">
+                        <div className="absolute inset-0 bg-white rounded-3xl m-[1px]" />
+                        <div className="relative z-10 p-8">
+                            <div className="absolute top-0 right-0 w-32 h-32 bg-[#D2691E]/5 rounded-full blur-3xl -mr-10 -mt-10 group-hover:bg-[#D2691E]/10 transition-all" />
 
-                        <p className="text-[10px] font-black uppercase tracking-widest text-[#1A2332]/60 mb-6 flex items-center gap-2 relative z-10">
-                            <span className="w-1 h-3 bg-[#D2691E] rounded-full" /> Query The Firm
-                        </p>
-                        <div className="relative z-10">
-                            <span className="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">search</span>
-                            <input
-                                type="text"
-                                value={searchQuery}
-                                onChange={(e) => setSearchQuery(e.target.value)}
-                                placeholder="Search Compliance, Billing, Scaling..."
-                                className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-100 rounded-2xl focus:ring-2 focus:ring-[#D2691E]/20 focus:border-[#D2691E] transition-all outline-none text-sm font-bold text-trust-navy placeholder:text-slate-400"
-                            />
-                        </div>
-                        <div className="mt-6 flex flex-wrap gap-2 relative z-10">
-                            <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">HIPAA</span>
-                            <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">BAA</span>
-                            <span className="text-[9px] font-black text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-100 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">EHR Sync</span>
+                            <p className="text-[10px] font-mono font-bold uppercase tracking-widest text-trust-navy/60 mb-6 flex items-center gap-2 relative z-10">
+                                <span className="w-1.5 h-1.5 bg-[#D2691E] rounded-full animate-pulse" /> QUERY_DATABASE::V1
+                            </p>
+                            <div className="relative z-10">
+                                <span className="material-symbols-outlined absolute left-5 top-1/2 -translate-y-1/2 text-slate-400">search</span>
+                                <input
+                                    type="text"
+                                    value={searchQuery}
+                                    onChange={(e) => setSearchQuery(e.target.value)}
+                                    placeholder="Search Protocols..."
+                                    className="w-full pl-12 pr-4 py-4 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-[#D2691E]/20 focus:border-[#D2691E] transition-all outline-none text-sm font-mono font-bold text-trust-navy placeholder:text-slate-400"
+                                />
+                            </div>
+                            <div className="mt-6 flex flex-wrap gap-2 relative z-10">
+                                <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">HIPAA</span>
+                                <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">BAA</span>
+                                <span className="text-[9px] font-mono font-bold text-slate-400 uppercase tracking-widest px-3 py-1.5 bg-slate-50 border border-slate-200 rounded-lg hover:border-[#D2691E]/30 hover:text-[#D2691E] transition-colors cursor-default">EHR_SYNC</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -153,16 +156,18 @@ export default function FAQClient() {
 
                                 <div className="space-y-5">
                                     {section.items.map((item, idx) => (
-                                        <details key={idx} className="group bg-white rounded-[2rem] border border-slate-100 shadow-sm hover:shadow-xl hover:shadow-[#D2691E]/5 transition-all duration-300 overflow-hidden">
-                                            <summary className="flex cursor-pointer items-center justify-between p-8 select-none">
-                                                <p className="text-trust-navy font-bold text-lg font-display">{item.q}</p>
-                                                <div className="size-10 rounded-full bg-slate-50 flex items-center justify-center group-open:bg-[#D2691E] transition-colors">
+                                        <details key={idx} className="group bg-white rounded-2xl border border-slate-200 shadow-sm hover:border-trust-navy hover:shadow-lg transition-all duration-300 overflow-hidden">
+                                            <summary className="flex cursor-pointer items-center justify-between p-6 select-none relative z-10">
+                                                <p className="text-trust-navy font-bold text-lg font-display pr-8">{item.q}</p>
+                                                <div className="size-10 rounded-xl bg-slate-50 border border-slate-100 flex items-center justify-center group-hover:border-trust-navy/30 group-open:bg-trust-navy group-open:border-trust-navy transition-all duration-300 shrink-0">
                                                     <span className="material-symbols-outlined text-slate-400 group-open:text-white group-open:rotate-180 transition-all duration-300">expand_more</span>
                                                 </div>
                                             </summary>
-                                            <div className="px-8 pb-8 text-slate-600 text-base leading-relaxed max-w-3xl">
+                                            <div className="px-6 pb-6 text-slate-600 text-base leading-relaxed max-w-3xl relative z-10 border-t border-slate-50 pt-4 mt-2 mx-6">
                                                 {item.a}
                                             </div>
+                                            {/* Tech Grid Background on Open */}
+                                            <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:16px_16px] opacity-0 group-open:opacity-100 transition-opacity pointer-events-none" />
                                         </details>
                                     ))}
                                 </div>

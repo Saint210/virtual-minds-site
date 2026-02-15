@@ -5,7 +5,7 @@
         "metaTitle": "General Psychiatry Practice Architecture | Virtual Minds",
         "metaDescription": "Full-spectrum operational infrastructure for board-certified psychiatrists. We manage intake conversion, titration logic, and practice workflow.",
         "heroDescription": "We engineer the operational infrastructure so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
-        "heroImage": "/images/homepage-hero.webp",
+        "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "Practice Infrastructure Design",
             "Workflow Architecture Review",
@@ -60,7 +60,7 @@
         "metaTitle": "Women's Mental Health Operations | Virtual Minds",
         "metaDescription": "Specialized infrastructure for reproductive psychiatry. High-sensitivity intake coordination and titration tracking.",
         "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We engineer the intake and scheduling infrastructure to protect your patient experience.",
-        "heroImage": "/images/homepage-hero.webp",
+        "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "HIPAA Risk Mitigation",
             "Clinical Workflow Audit",
@@ -104,7 +104,7 @@
         "metaTitle": "Child Psychiatry Practice Systems | Virtual Minds",
         "metaDescription": "Operational infrastructure for child psychiatry. Managing family coordination, guardian consent workflows, and school correspondence.",
         "heroDescription": "We manage the complex family coordination and guardian consent workflows required for seamless pediatric clinical care.",
-        "heroImage": "/images/about-hero.webp",
+        "heroImage": "/images/about-hero.png",
         "consultingServices": [
             "EHR Optimization",
             "Practice Infrastructure Design",
@@ -368,7 +368,7 @@
         "metaTitle": "Eating Disorder Care Systems | Virtual Minds",
         "metaDescription": "Specialized infrastructure for eating disorder psychiatry. Coordinating multidisciplinary teams and meal support tracking.",
         "heroDescription": "We coordinate the multidisciplinary communication and meal support tracking required for comprehensive recovery and team-based care.",
-        "heroImage": "/images/psychiatry-consultation-room.webp",
+        "heroImage": "/images/psychiatrist-startup-planning.png",
         "consultingServices": [
             "EHR Optimization",
             "Clinical Workflow Audit",

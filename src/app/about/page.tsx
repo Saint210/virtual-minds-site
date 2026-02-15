@@ -33,8 +33,8 @@ export default function AboutPage() {
 
                             {/* Left Column (60%) */}
                             <div className="lg:w-[60%]">
-                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-4">
-                                    <span className="material-symbols-outlined text-primary text-[16px]">verified</span>
+                                <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-6 shadow-sm">
+                                    <span className="material-symbols-outlined text-primary text-sm">verified</span>
                                     Operational Excellence
                                 </div>
 
@@ -129,98 +129,86 @@ export default function AboutPage() {
 
                         {/* ACADEMIC & CLINICAL DNA */}
                         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                            {/* Card 1: Academic Pedigree */}
-                            <div className="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-lg transition-all duration-300">
-                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <span className="material-symbols-outlined text-8xl text-trust-navy">school</span>
-                                </div>
-                                <div className="bg-trust-navy/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-trust-navy">
-                                    <span className="material-symbols-outlined text-3xl">school</span>
-                                </div>
-                                <h3 className="font-serif text-2xl text-trust-navy font-bold mb-4">Academic DNA</h3>
-                                <p className="text-slate-600 mb-6 leading-relaxed">
-                                    Our operational protocols were forged in high-stakes environments, supporting faculty and alumni from California's premier medical centers.
-                                </p>
-                                <div className="space-y-3 border-t border-slate-100 pt-6">
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        Stanford University
+                            {/* Card 1: Academic Pedigree - System Module */}
+                            <div className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group relative overflow-hidden">
+                                {/* Technical Grid Background */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-40" />
+
+                                <div className="relative z-10">
+                                    <div className="absolute top-0 right-0 bg-white/80 backdrop-blur-sm border-l border-b border-slate-200 rounded-tr-[2.5rem] px-4 py-2">
+                                        <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">SYS_DNA_01</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        UCLA Neuropsychiatric Institute
+
+                                    <div className="size-14 bg-white rounded-2xl flex items-center justify-center text-trust-navy mb-6 shadow-sm border border-slate-100 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
+                                        <span className="material-symbols-outlined text-3xl">school</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        UCSF Health
-                                    </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        USC Keck School of Medicine
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Academic DNA</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed font-medium text-sm">
+                                        Our operational protocols were forged in high-stakes environments, supporting faculty and alumni from California's premier medical centers.
+                                    </p>
+                                    <div className="space-y-3 border-t border-slate-200 pt-6">
+                                        {["Stanford University", "UCLA Neuropsychiatric Institute", "UCSF Health", "USC Keck School of Medicine"].map((item, i) => (
+                                            <div key={i} className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                                <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                                {item}
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Card 2: High-Acuity Capabilities */}
-                            <div className="bg-white p-10 rounded-2xl border border-slate-200 shadow-sm relative overflow-hidden group hover:shadow-lg transition-all duration-300">
-                                <div className="absolute top-0 right-0 p-6 opacity-5 group-hover:opacity-10 transition-opacity">
-                                    <span className="material-symbols-outlined text-8xl text-primary">psychology</span>
-                                </div>
-                                <div className="bg-primary/5 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-primary">
-                                    <span className="material-symbols-outlined text-3xl">clinical_notes</span>
-                                </div>
-                                <h3 className="font-serif text-2xl text-trust-navy font-bold mb-4">High-Acuity Scope</h3>
-                                <p className="text-slate-600 mb-6 leading-relaxed">
-                                    We go beyond basic scheduling. Our team is trained to handle the complex, sensitive workflows of advanced psychiatric care.
-                                </p>
-                                <div className="space-y-3 border-t border-slate-100 pt-6">
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        Treatment-Resistant Mood Disorders
+                            {/* Card 2: High-Acuity Capabilities - System Module */}
+                            <div className="bg-white p-8 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-300 hover:-translate-y-2 hover:shadow-xl group relative overflow-hidden">
+                                {/* Technical Grid Background */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#e2e8f0_1px,transparent_1px),linear-gradient(to_bottom,#e2e8f0_1px,transparent_1px)] bg-[size:24px_24px] opacity-20" />
+
+                                <div className="relative z-10">
+                                    <div className="absolute top-0 right-0 bg-slate-50/80 backdrop-blur-sm border-l border-b border-slate-200 rounded-tr-[2.5rem] px-4 py-2">
+                                        <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest">SYS_SCOPE_02</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        Ketamine & TMS Coordination
+
+                                    <div className="size-14 bg-primary/5 rounded-2xl flex items-center justify-center text-primary mb-6 shadow-sm border border-primary/10 group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                                        <span className="material-symbols-outlined text-3xl">clinical_notes</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        Forensic Psychiatry Cases
-                                    </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
-                                        <span className="material-symbols-outlined text-primary text-base">verified</span>
-                                        Inpatient/Outpatient Transitions
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">High-Acuity Scope</h3>
+                                    <p className="text-slate-600 mb-6 leading-relaxed font-medium text-sm">
+                                        We go beyond basic scheduling. Our team is trained to handle the complex, sensitive workflows of advanced psychiatric care.
+                                    </p>
+                                    <div className="space-y-3 border-t border-slate-100 pt-6">
+                                        {["Treatment-Resistant Mood Disorders", "Ketamine & TMS Coordination", "Forensic Psychiatry Cases", "Inpatient/Outpatient Transitions"].map((item, i) => (
+                                            <div key={i} className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
+                                                <span className="material-symbols-outlined text-primary text-base">verified</span>
+                                                {item}
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
 
-                            {/* Card 3: Executive Discretion */}
-                            <div className="bg-trust-navy p-10 rounded-2xl border border-trust-navy shadow-lg relative overflow-hidden group hover:shadow-2xl transition-all duration-300">
-                                <div className="absolute top-0 right-0 p-6 opacity-10 group-hover:opacity-20 transition-opacity">
-                                    <span className="material-symbols-outlined text-8xl text-white">diversity_1</span>
-                                </div>
-                                <div className="bg-white/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 text-white backdrop-blur-sm">
-                                    <span className="material-symbols-outlined text-3xl">verified_user</span>
-                                </div>
-                                <h3 className="font-serif text-2xl text-white font-bold mb-4">Executive Discretion</h3>
-                                <p className="text-white/80 mb-6 leading-relaxed">
-                                    For practices serving high-profile clientele, standard VAs are a liability. We provide the "ironclad" discretion required by California's elite.
-                                </p>
-                                <div className="space-y-3 border-t border-white/10 pt-6">
-                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
-                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
-                                        C-Suite Executives & Founders
+                            {/* Card 3: Executive Discretion - System Module (Dark) */}
+                            <div className="bg-trust-navy p-8 rounded-[2.5rem] border border-trust-navy shadow-xl shadow-trust-navy/20 relative overflow-hidden group hover:-translate-y-2 transition-all duration-300">
+                                {/* Technical Grid Background (Dark Mode) */}
+                                <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e293b_1px,transparent_1px),linear-gradient(to_bottom,#1e293b_1px,transparent_1px)] bg-[size:24px_24px] opacity-20" />
+
+                                <div className="relative z-10">
+                                    <div className="absolute top-0 right-0 bg-white/5 backdrop-blur-sm border-l border-b border-white/10 rounded-tr-[2.5rem] px-4 py-2">
+                                        <span className="text-[10px] font-mono font-bold text-white/40 uppercase tracking-widest">SYS_EXEC_03</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
-                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
-                                        Public Figures & Entertainment
+
+                                    <div className="size-14 bg-white/10 rounded-2xl flex items-center justify-center text-white mb-6 backdrop-blur-sm border border-white/10 group-hover:bg-white group-hover:text-trust-navy transition-colors duration-300">
+                                        <span className="material-symbols-outlined text-3xl">verified_user</span>
                                     </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
-                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
-                                        High-Net-Worth Families
-                                    </div>
-                                    <div className="flex items-center gap-3 text-sm font-bold text-white/90">
-                                        <span className="material-symbols-outlined text-accent text-base">check_circle</span>
-                                        Court-Involved Individuals
+                                    <h3 className="font-serif text-2xl font-bold text-white mb-4">Executive Discretion</h3>
+                                    <p className="text-white/80 mb-6 leading-relaxed font-medium text-sm">
+                                        For practices serving high-profile clientele, standard VAs are a liability. We provide the "ironclad" discretion required by California's elite.
+                                    </p>
+                                    <div className="space-y-3 border-t border-white/10 pt-6">
+                                        {["C-Suite Executives & Founders", "Public Figures & Entertainment", "High-Net-Worth Families", "Court-Involved Individuals"].map((item, i) => (
+                                            <div key={i} className="flex items-center gap-3 text-sm font-bold text-white/90">
+                                                <span className="material-symbols-outlined text-accent text-base">check_circle</span>
+                                                {item}
+                                            </div>
+                                        ))}
                                     </div>
                                 </div>
                             </div>
