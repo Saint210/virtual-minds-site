@@ -464,75 +464,105 @@ export default function PricingPage() {
           </div>
         </section >
 
-        {/* WHAT'S INCLUDED - Service Links */}
-        < section className="py-24 bg-white relative overflow-hidden" >
-          <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
+        {/* WHAT'S INCLUDED - SYSTEM MODULES */}
+        <section className="py-24 bg-white relative overflow-hidden border-t border-slate-100">
+          <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent" />
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
-            <div className="text-center mb-16">
-              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Explore Our Services</span>
-              <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
-                What's <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Included</span>
-              </h2>
-              <p className="text-xl text-slate-600 leading-relaxed font-light max-w-2xl mx-auto">
-                Comprehensive psychiatric virtual assistant services tailored to your practice
+            <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+              <div>
+                <span className="text-primary font-bold tracking-widest uppercase text-xs mb-3 block">System Capabilities</span>
+                <h2 className="font-serif text-4xl text-trust-navy leading-tight">Included <span className="italic text-slate-400">Modules</span></h2>
+              </div>
+              <p className="text-slate-500 max-w-sm text-sm font-medium leading-relaxed">
+                Comprehensive psychiatric virtual assistant services tailored to your practice infrastructure.
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Service 1 */}
-              <Link href="/services/virtual-assistant" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-primary">support_agent</span>
-                  </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
-                    Virtual Assistant Services
-                  </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    Dedicated psychiatric assistants for intake, patient communication, and administrative support.
-                  </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                  </div>
-                </div>
-              </Link>
+            <div className="grid lg:grid-cols-3 gap-6">
+              {[
+                {
+                  id: "SYS_CLINICAL_01",
+                  title: "Virtual Assistant Services",
+                  subtitle: "Clinical Operations",
+                  desc: "Dedicated psychiatric assistants for intake, patient communication, and administrative support.",
+                  impact: "Recover 25k/yr overhead.",
+                  icon: "support_agent",
+                  link: "/services/virtual-assistant"
+                },
+                {
+                  id: "SYS_AUDIT_02",
+                  title: "Practice Consulting",
+                  subtitle: "Operational Diagnostics",
+                  desc: "Strategic operational review and practice optimization for established psychiatrists.",
+                  impact: "Achieve firm-wide clarity.",
+                  icon: "analytics",
+                  link: "/services/practice-consulting",
+                  highlight: true
+                },
+                {
+                  id: "SYS_RCM_03",
+                  title: "Billing & Revenue Cycle",
+                  subtitle: "Revenue Stabilization",
+                  desc: "Revenue stabilization through verification, prior auths, and billing coordination.",
+                  impact: "Recover 4-7% lost revenue.",
+                  icon: "payments",
+                  link: "/services/billing-and-rcm"
+                }
+              ].map((service, idx) => (
+                <Link
+                  key={idx}
+                  href={service.link}
+                  className={`group relative flex flex-col bg-white rounded-[2rem] p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden
+                        ${service.highlight
+                      ? "border-2 border-primary/20 shadow-xl shadow-primary/5 ring-1 ring-primary/10"
+                      : "border border-slate-200 hover:border-trust-navy hover:shadow-xl hover:shadow-trust-navy/5"
+                    }`}
+                >
+                  {/* Technical Grid Background */}
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:16px_16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* Service 2 */}
-              <Link href="/services/practice-consulting" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-accent/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-accent">analytics</span>
+                  {/* ID Tag */}
+                  <div className="flex justify-between items-start mb-6 relative z-10">
+                    <div className={`size-12 rounded-xl flex items-center justify-center transition-colors duration-300 
+                            ${service.highlight ? "bg-primary text-white" : "bg-slate-50 text-trust-navy group-hover:bg-trust-navy group-hover:text-white"}`}>
+                      <span className="material-symbols-outlined text-2xl">{service.icon}</span>
+                    </div>
+                    <span className="text-[9px] font-mono font-bold text-slate-300 uppercase tracking-widest group-hover:text-primary transition-colors">
+                      {service.id}
+                    </span>
                   </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
-                    Practice Consulting
-                  </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    Strategic operational review and practice optimization for established psychiatrists.
-                  </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
-                  </div>
-                </div>
-              </Link>
 
-              {/* Service 3 */}
-              <Link href="/services/billing-and-rcm" className="group bg-gradient-to-br from-white via-white to-slate-50/30 rounded-2xl overflow-hidden border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300">
-                <div className="p-8">
-                  <div className="bg-trust-navy/10 w-14 h-14 rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
-                    <span className="material-symbols-outlined text-2xl text-trust-navy">payments</span>
+                  {/* Content */}
+                  <div className="mb-6 relative z-10">
+                    <h3 className="font-serif text-xl font-bold text-trust-navy mb-2 leading-tight group-hover:text-primary transition-colors">
+                      {service.title}
+                    </h3>
+                    <p className="text-xs font-bold text-slate-400 uppercase tracking-wider mb-4">
+                      {service.subtitle}
+                    </p>
+                    <p className="text-sm text-slate-600 leading-relaxed font-medium line-clamp-3">
+                      {service.desc}
+                    </p>
                   </div>
-                  <h3 className="font-serif text-2xl text-trust-navy mb-4 group-hover:text-primary transition-colors">
-                    Billing & Revenue Cycle
-                  </h3>
-                  <p className="text-slate-600 mb-6 leading-relaxed">
-                    Revenue stabilization through verification, prior auths, and billing coordination.
-                  </p>
-                  <div className="flex items-center gap-2 text-primary font-bold text-sm">
-                    Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+
+                  {/* Footer */}
+                  <div className="mt-auto pt-6 border-t border-slate-100 relative z-10">
+                    <div className="flex items-center gap-2 mb-3">
+                      <span className="material-symbols-outlined text-primary text-sm">verified</span>
+                      <span className="text-[10px] font-bold text-trust-navy uppercase tracking-wide">
+                        Impact
+                      </span>
+                    </div>
+                    <p className="text-xs text-slate-500 font-medium">
+                      {service.impact}
+                    </p>
                   </div>
-                </div>
-              </Link>
+
+                  {/* Active State Indicator */}
+                  <div className="absolute bottom-0 left-0 h-1 bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out" />
+                </Link>
+              ))}
             </div>
 
             <div className="text-center mt-12">
@@ -541,7 +571,7 @@ export default function PricingPage() {
               </Link>
             </div>
           </div>
-        </section >
+        </section>
 
         {/* PRICING FAQS */}
         < section className="py-24 bg-[#FAF8F3]" >
@@ -613,8 +643,8 @@ export default function PricingPage() {
           </div>
         </section >
 
-        {/* CALIFORNIA COVERAGE - Location Pages */}
-        < section className="py-24 bg-white relative overflow-hidden" >
+        {/* CALIFORNIA COVERAGE - SYSTEM LOCATIONS */}
+        <section className="py-24 bg-white relative overflow-hidden">
           <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -628,50 +658,56 @@ export default function PricingPage() {
               </p>
             </div>
 
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-5xl mx-auto">
-              {/* Los Angeles */}
-              <Link href="/locations/los-angeles" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  Los Angeles
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+              {[
+                { name: "Los Angeles", slug: "los-angeles", savings: "$65,000/yr", id: "01" },
+                { name: "San Francisco", slug: "san-francisco", savings: "$82,000/yr", id: "02" },
+                { name: "San Diego", slug: "san-diego", savings: "$58,000/yr", id: "03" },
+                { name: "Sacramento", slug: "sacramento", savings: "$45,000/yr", id: "04" }
+              ].map((loc, idx) => (
+                <Link
+                  key={idx}
+                  href={`/locations/${loc.slug}`}
+                  className="group relative flex flex-col bg-white rounded-[2rem] p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200 hover:border-trust-navy hover:shadow-xl hover:shadow-trust-navy/5 text-left"
+                >
+                  {/* Technical Grid Background */}
+                  <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:16px_16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
-              {/* San Francisco */}
-              <Link href="/locations/san-francisco" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-accent/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-accent">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  San Francisco
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
+                  {/* ID Tag */}
+                  <div className="flex justify-between items-start mb-6 relative z-10">
+                    <div className="size-10 rounded-xl flex items-center justify-center transition-colors duration-300 bg-slate-50 text-trust-navy group-hover:bg-trust-navy group-hover:text-white">
+                      <span className="material-symbols-outlined text-xl">location_city</span>
+                    </div>
+                    <span className="text-[9px] font-mono font-bold text-slate-300 uppercase tracking-widest group-hover:text-primary transition-colors">
+                      SYS_LOC_{loc.id}
+                    </span>
+                  </div>
 
-              {/* San Diego */}
-              <Link href="/locations/san-diego" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-trust-navy/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-trust-navy">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  San Diego
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
+                  {/* Content */}
+                  <div className="mb-6 relative z-10">
+                    <h3 className="font-serif text-xl font-bold text-trust-navy mb-2 leading-tight group-hover:text-primary transition-colors">
+                      {loc.name}
+                    </h3>
+                    <div className="flex items-center gap-2">
+                      <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider"> Avg Savings:</span>
+                      <span className="text-[10px] font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded-full border border-emerald-100">
+                        {loc.savings}
+                      </span>
+                    </div>
+                  </div>
 
-              {/* Sacramento */}
-              <Link href="/locations/sacramento" className="group bg-gradient-to-br from-white to-slate-50/30 rounded-2xl p-6 border-2 border-slate-200/60 shadow-lg hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/40 hover:-translate-y-2 transition-all duration-300 text-center">
-                <div className="bg-primary/10 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform">
-                  <span className="material-symbols-outlined text-xl text-primary">location_city</span>
-                </div>
-                <h3 className="font-serif text-xl text-trust-navy font-bold group-hover:text-primary transition-colors">
-                  Sacramento
-                </h3>
-                <p className="text-sm text-slate-500 mt-2">Virtual Assistant Services</p>
-              </Link>
+                  {/* Footer */}
+                  <div className="mt-auto pt-4 border-t border-slate-100 relative z-10 flex items-center justify-between">
+                    <span className="text-[10px] font-bold text-trust-navy uppercase tracking-wide">
+                      Active Node
+                    </span>
+                    <span className="material-symbols-outlined text-slate-300 text-sm group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
+                  </div>
+
+                  {/* Active State Indicator */}
+                  <div className="absolute bottom-0 left-0 h-1 bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out" />
+                </Link>
+              ))}
             </div>
 
             <div className="text-center mt-12">

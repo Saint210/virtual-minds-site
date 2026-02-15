@@ -103,7 +103,7 @@ export default function StartPrivatePracticeGuide() {
                             <h1 className="font-serif text-5xl md:text-6xl lg:text-[5rem] font-bold text-trust-navy mb-8 leading-[1] tracking-tight">
                                 How to Start a Private <br />
                                 Psychiatric Practice: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-hover to-primary animate-gradient-x">
                                     The Cash-Pay Guide.
                                 </span>
                             </h1>
@@ -157,7 +157,7 @@ export default function StartPrivatePracticeGuide() {
                                         <div className="lg:w-[40%] order-1 lg:order-2 group w-full">
                                             <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-xl aspect-[4/5] bg-slate-50">
                                                 <Image
-                                                    src="/images/visual-intel-startup.png"
+                                                    src="/images/psychiatrist-startup-planning.png"
                                                     alt="Starting a Concierge Practice"
                                                     fill
                                                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -380,7 +380,7 @@ export default function StartPrivatePracticeGuide() {
                         </p>
                         <Link
                             href="/book-consultation"
-                            className="bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center gap-2"
+                            className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg inline-flex items-center gap-2"
                         >
                             <span className="material-symbols-outlined">rocket_launch</span>
                             Start Your Practice Today

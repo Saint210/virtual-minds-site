@@ -213,46 +213,61 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                                 {/* For 'All', we slice(3). For Filtered, we show all. */}
                                 {(activeCategory === "All" ? filteredPosts.slice(3) : filteredPosts).map((post, index) => (
-                                    <article key={index} className="group flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-1 animate-in fade-in zoom-in-50 duration-500" style={{ animationDelay: `${index * 50}ms` }}>
-                                        <div className="relative aspect-[16/10] overflow-hidden bg-slate-100">
-                                            <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-trust-navy/20 mix-blend-overlay z-10 opacity-0 group-hover:opacity-100 transition-opacity" />
-                                            <div className="w-full h-full bg-slate-200 flex items-center justify-center text-slate-300">
-                                                <img src={post.image} alt={post.title} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700" />
-                                            </div>
-                                            <div className="absolute top-4 left-4 z-20">
-                                                <span className="bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-trust-navy shadow-sm">
-                                                    {post.category}
-                                                </span>
-                                            </div>
-                                        </div>
-                                        <div className="p-8 flex flex-col flex-grow">
-                                            <div className="mb-4 flex items-center justify-between text-xs text-slate-500 font-medium">
-                                                <div className="flex items-center">
-                                                    <span>{post.date}</span>
-                                                    <span className="mx-2">•</span>
-                                                    <span>{post.readTime}</span>
-                                                </div>
+                                    <Link
+                                        key={index}
+                                        href={`/blog/${post.slug}`}
+                                        className="group relative flex flex-col bg-white rounded-[2rem] p-8 transition-all duration-300 hover:-translate-y-1 overflow-hidden border border-slate-200 hover:border-trust-navy hover:shadow-xl hover:shadow-trust-navy/5 animate-in fade-in zoom-in-50 duration-500"
+                                        style={{ animationDelay: `${index * 50}ms` }}
+                                    >
+                                        {/* Technical Grid Background */}
+                                        <div className="absolute inset-0 bg-[linear-gradient(to_right,#f1f5f9_1px,transparent_1px),linear-gradient(to_bottom,#f1f5f9_1px,transparent_1px)] bg-[size:16px_16px] opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
 
+                                        {/* ID Tag & Icon */}
+                                        <div className="flex justify-between items-start mb-6 relative z-10">
+                                            <div className="size-12 rounded-xl flex items-center justify-center transition-colors duration-300 bg-slate-50 text-trust-navy group-hover:bg-trust-navy group-hover:text-white">
+                                                <span className="material-symbols-outlined text-2xl">article</span>
                                             </div>
-                                            <Link href={`/blog/${post.slug}`}>
-                                                <h3 className="font-display text-xl font-bold text-trust-navy mb-4 leading-tight group-hover:text-primary transition-colors line-clamp-2">
-                                                    {post.title}
-                                                </h3>
-                                            </Link>
-                                            <p className="text-slate-600 text-sm line-clamp-3 mb-6 leading-relaxed flex-grow">
+                                            <span className="text-[9px] font-mono font-bold text-slate-300 uppercase tracking-widest group-hover:text-primary transition-colors">
+                                                SYS_INTEL_{String(index + 1).padStart(2, '0')}
+                                            </span>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="mb-6 relative z-10 flex flex-col flex-grow">
+                                            <div className="flex items-center gap-2 mb-4">
+                                                <span className="text-xs font-bold text-primary uppercase tracking-wider">{post.category}</span>
+                                                <span className="w-1 h-1 rounded-full bg-slate-300" />
+                                                <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">{post.readTime}</span>
+                                            </div>
+
+                                            <h3 className="font-serif text-xl font-bold text-trust-navy mb-3 leading-tight group-hover:text-primary transition-colors line-clamp-2">
+                                                {post.title}
+                                            </h3>
+
+                                            <p className="text-sm text-slate-600 leading-relaxed font-medium line-clamp-3 mb-6">
                                                 {post.excerpt}
                                             </p>
-                                            <div className="pt-6 border-t border-slate-100 flex items-center justify-between">
-                                                <div className="flex items-center gap-2">
-                                                    <div className="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-xs font-bold text-trust-navy">VM</div>
-                                                    <span className="text-xs text-slate-500 font-medium">Virtual Minds Team</span>
-                                                </div>
-                                                <Link href={`/blog/${post.slug}`} className="w-8 h-8 rounded-full border border-slate-200 flex items-center justify-center text-slate-400 group-hover:bg-primary group-hover:border-primary group-hover:text-white transition-all">
-                                                    <span className="material-symbols-outlined text-sm">arrow_forward</span>
-                                                </Link>
+                                        </div>
+
+                                        {/* Footer */}
+                                        <div className="mt-auto pt-6 border-t border-slate-100 relative z-10">
+                                            <div className="flex items-center gap-2 mb-3">
+                                                <span className="material-symbols-outlined text-primary text-sm">verified</span>
+                                                <span className="text-[10px] font-bold text-trust-navy uppercase tracking-wide">
+                                                    Clinical Verified
+                                                </span>
+                                            </div>
+                                            <div className="flex items-center justify-between w-full">
+                                                <p className="text-[10px] text-slate-400 font-mono">
+                                                    {post.date}
+                                                </p>
+                                                <span className="material-symbols-outlined text-slate-300 text-sm group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
                                             </div>
                                         </div>
-                                    </article>
+
+                                        {/* Active State Indicator */}
+                                        <div className="absolute bottom-0 left-0 h-1 bg-primary w-0 group-hover:w-full transition-all duration-500 ease-out" />
+                                    </Link>
                                 ))}
                             </div>
                         ) : (

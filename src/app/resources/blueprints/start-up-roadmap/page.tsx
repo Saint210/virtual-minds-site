@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function StartUpBlueprint() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+        <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
 
             <main className="flex-grow">
@@ -41,7 +41,7 @@ export default function StartUpBlueprint() {
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                                     The Independence <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
                                         Roadmap.
                                     </span>
                                 </h1>
@@ -125,7 +125,7 @@ export default function StartUpBlueprint() {
                                                 desc: "Integrating your Executive VA into your EHR, launching your authority marketing site, and opening your calendar to the California market for the first intake."
                                             }
                                         ].map((item, idx) => (
-                                            <div key={idx} className="bg-[#FAF8F3] p-10 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-all group">
+                                            <div key={idx} className="bg-slate-50 p-10 rounded-[3rem] border border-slate-100 flex flex-col md:flex-row gap-8 items-start hover:shadow-xl transition-all group">
                                                 <div className="bg-white px-6 py-3 rounded-2xl shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
                                                     <span className="text-lg font-black uppercase tracking-widest whitespace-nowrap">{item.phase}</span>
                                                 </div>

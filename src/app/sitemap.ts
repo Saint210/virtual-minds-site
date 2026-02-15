@@ -2,6 +2,7 @@
 import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
 import { locations } from '@/data/locations'
+import { glossaryTerms } from '@/data/glossary'
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://thevirtualminds.com'
@@ -69,23 +70,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7,
     }))
 
-    // High-priority Glossary Terms
-    const glossaryTerms = [
-        'appointment-scheduling',
-        'claim-denial',
-        'hipaa-compliant-zoom',
-        'intake-workflows',
-        'medical-records-compliance',
-        'patient-screening',
-        'prior-authorization',
-        'provider-credentialing',
-        'superbill',
-    ].map((slug) => ({
-        url: `${baseUrl}/glossary/${slug}`,
+    // Dynamic Glossary Terms
+    const glossaryRoutes = glossaryTerms.map((term) => ({
+        url: `${baseUrl}/glossary/${term.slug}`,
         lastModified: new Date(),
         changeFrequency: 'monthly' as const,
         priority: 0.6,
     }))
 
-    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts, ...glossaryTerms]
+    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts, ...glossaryRoutes]
 }

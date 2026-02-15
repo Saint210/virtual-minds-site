@@ -206,13 +206,13 @@ export default function HowToChoosePsychiatricVABlog() {
               </nav>
 
               <div className="inline-flex items-center gap-3 bg-trust-navy/[0.03] border border-trust-navy/10 rounded-lg px-4 py-2 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-8">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#D2691E] animate-pulse" />
+                <span className="w-1.5 h-1.5 rounded-full bg-primary animate-pulse" />
                 2026 Operational Framework
               </div>
 
               <h1 className="font-serif text-5xl md:text-8xl font-bold text-trust-navy mb-8 leading-[0.9] tracking-tight text-balance">
                 California <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#B8860B] to-primary animate-gradient-x">
                   Psychiatric VA.
                 </span>
               </h1>
@@ -224,19 +224,19 @@ export default function HowToChoosePsychiatricVABlog() {
               {/* STATS BAR */}
               <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 py-10 border-y border-slate-200/60">
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Focus</p>
+                  <p className="text-[10px] font-black !text-primary uppercase tracking-widest">Focus</p>
                   <p className="text-xl font-bold text-trust-navy">Infrastructure</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Compliance</p>
+                  <p className="text-[10px] font-black !text-primary uppercase tracking-widest">Compliance</p>
                   <p className="text-xl font-bold text-trust-navy">CA Native</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Performance Target</p>
+                  <p className="text-[10px] font-black !text-primary uppercase tracking-widest">Performance Target</p>
                   <p className="text-xl font-bold text-trust-navy">80%+ ROI</p>
                 </div>
                 <div className="space-y-1">
-                  <p className="text-[10px] font-black !text-[#D2691E] uppercase tracking-widest">Authority</p>
+                  <p className="text-[10px] font-black !text-primary uppercase tracking-widest">Authority</p>
                   <p className="text-xl font-bold text-trust-navy">Verified BAA</p>
                 </div>
               </div>
@@ -252,11 +252,11 @@ export default function HowToChoosePsychiatricVABlog() {
               <div className="flex-1 min-w-0">
 
                 {/* EXECUTIVE BRIEFING BOX */}
-                <div id="executive-briefing" className="bg-[#0B1C3E] rounded-[2.5rem] p-10 lg:p-16 text-white mb-20 shadow-2xl relative overflow-hidden">
-                  <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-[#D2691E]/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
+                <div id="executive-briefing" className="bg-trust-navy rounded-[2.5rem] p-10 lg:p-16 text-white mb-20 shadow-2xl relative overflow-hidden">
+                  <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2" />
                   <div className="relative z-10">
                     <div className="flex items-center gap-4 mb-8">
-                      <span className="w-12 h-px bg-[#D2691E]" />
+                      <span className="w-12 h-px bg-primary" />
                       <h2 className="font-serif text-2xl lg:text-3xl font-bold italic !text-white text-white">Executive Briefing</h2>
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
@@ -264,7 +264,7 @@ export default function HowToChoosePsychiatricVABlog() {
                         <div key={i} className="group">
                           <h3 className="font-bold text-lg mb-3 flex items-center gap-3">
                             <span className="text-[10px] font-black text-white/60">0{i + 1}</span>
-                            <span className="text-white group-hover:text-[#D2691E] transition-colors">{t.point}</span>
+                            <span className="text-white group-hover:text-primary transition-colors">{t.point}</span>
                           </h3>
                           <p className="text-slate-300 text-sm leading-relaxed group-hover:text-white transition-colors">
                             {t.detail}
@@ -333,7 +333,7 @@ export default function HowToChoosePsychiatricVABlog() {
                           <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-4">Vetting Checklist:</p>
                           {c.details.map((d, di) => (
                             <div key={di} className="flex items-center gap-3 text-sm text-slate-600">
-                              <span className="w-1.5 h-1.5 rounded-full bg-[#D2691E]" />
+                              <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                               {d}
                             </div>
                           ))}
@@ -344,10 +344,10 @@ export default function HowToChoosePsychiatricVABlog() {
                 </div>
 
                 {/* THE OPERATIONAL MATRIX (RE-DESIGNED TABLE) */}
-                <div id="comparison-matrix" className="mb-24 py-24 px-10 bg-[#0B1C3E] rounded-[3rem] text-white overflow-hidden relative shadow-[0_40px_80px_-20px_rgba(11,28,62,0.5)]">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-[#D2691E] to-transparent" />
+                <div id="comparison-matrix" className="mb-24 py-24 px-10 bg-trust-navy rounded-[3rem] text-white overflow-hidden relative shadow-[0_40px_80px_-20px_rgba(11,28,62,0.5)]">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-primary to-transparent" />
                   <div className="text-center mb-16 relative z-10">
-                    <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 !text-white text-white">Psychiatric VA <span className="!text-[#D2691E]">Comparison Matrix.</span></h2>
+                    <h2 className="font-serif text-3xl md:text-5xl font-bold mb-4 !text-white text-white">Psychiatric VA <span className="!text-primary">Comparison Matrix.</span></h2>
                     <p className="!text-slate-300 font-light">Comparing infrastructure models for board-certified specialists.</p>
                   </div>
 
@@ -356,7 +356,7 @@ export default function HowToChoosePsychiatricVABlog() {
                       <thead>
                         <tr className="text-[10px] font-black uppercase tracking-[0.3em] text-slate-400">
                           <th className="px-8 pb-4">Structural Factor</th>
-                          <th className="px-8 pb-4 text-[#D2691E]">Virtual Minds Model</th>
+                          <th className="px-8 pb-4 text-primary">Virtual Minds Model</th>
                           <th className="px-8 pb-4">Standard Agency</th>
                         </tr>
                       </thead>
@@ -366,7 +366,7 @@ export default function HowToChoosePsychiatricVABlog() {
                             <td className="bg-white/5 backdrop-blur-sm px-8 py-6 rounded-l-2xl border-l border-y border-white/10 font-bold text-white group-hover:bg-white/10 transition-colors">
                               {row.factor}
                             </td>
-                            <td className="bg-[#D2691E]/10 px-8 py-6 border-y border-[#D2691E]/20 text-[#D2691E] font-black">
+                            <td className="bg-primary/10 px-8 py-6 border-y border-primary/20 text-primary font-black">
                               {row.virtualMinds}
                             </td>
                             <td className="bg-white/5 backdrop-blur-sm px-8 py-6 rounded-r-2xl border-r border-y border-white/10 text-slate-400 font-light">
@@ -416,13 +416,13 @@ export default function HowToChoosePsychiatricVABlog() {
                   />
 
                   {/* SIDEBAR CTA CARD */}
-                  <div className="mt-12 p-8 bg-gradient-to-br from-[#D2691E] to-[#b05515] rounded-[2rem] text-white shadow-xl shadow-[#D2691E]/20 relative overflow-hidden group">
-                    <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent pointer-events-none" />
+                  <div className="mt-12 p-8 bg-gradient-to-br from-primary to-primary-hover rounded-[2rem] text-white shadow-xl shadow-primary/20 relative overflow-hidden group">
+                    <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent pointer-events-none" />
                     <h3 className="font-serif text-2xl font-bold mb-4 relative z-10 transition-transform group-hover:-translate-y-1 !text-white text-white">Unlock Practice Intelligence.</h3>
                     <p className="!text-white/90 text-white/90 text-sm mb-8 relative z-10 font-medium leading-relaxed">
                       Transform your clinical operations with a strategic intelligence assessment for private psychiatry.
                     </p>
-                    <Link href="/book-consultation" className="block text-center py-4 bg-[#0B1C3E] text-white font-bold rounded-xl text-xs uppercase tracking-widest hover:bg-[#15284d] transition-all hover:scale-[1.02] relative z-10 shadow-lg shadow-black/20">
+                    <Link href="/book-consultation" className="block text-center py-4 bg-trust-navy text-white font-bold rounded-xl text-xs uppercase tracking-widest hover:bg-secondary transition-all hover:scale-[1.02] relative z-10 shadow-lg shadow-black/20">
                       Schedule Assessment
                     </Link>
                   </div>
@@ -434,15 +434,15 @@ export default function HowToChoosePsychiatricVABlog() {
         </section>
 
         {/* PREMIUM FOOTER CTA */}
-        <section className="py-24 bg-[#0B1C3E] relative overflow-hidden">
-          <div className="absolute inset-0 bg-gradient-to-br from-[#0B1C3E] via-[#0B1C3E] to-[#D2691E]/20 pointer-events-none" />
+        <section className="py-24 bg-trust-navy relative overflow-hidden">
+          <div className="absolute inset-0 bg-gradient-to-br from-trust-navy via-trust-navy to-primary/20 pointer-events-none" />
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
 
           <div className="relative z-10 max-w-[1400px] mx-auto px-6 text-center">
             <div className="max-w-3xl mx-auto">
               <h2 className="font-serif text-4xl md:text-7xl font-bold !text-white mb-10 leading-[0.9] tracking-tight">
                 Design Your <br />
-                <span className="!text-[#D2691E]">High-Performance </span> Practice.
+                <span className="!text-primary">High-Performance </span> Practice.
               </h2>
               <p className="text-xl md:text-2xl !text-slate-400 font-display leading-relaxed mb-12">
                 Stop hiring virtual assistants. Start engineering an infrastructure that works for the board-certified specialist.
@@ -450,7 +450,7 @@ export default function HowToChoosePsychiatricVABlog() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
                   href="/book-consultation"
-                  className="bg-[#D2691E] hover:bg-[#B8860B] !text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all hover:scale-105 shadow-[0_20px_40px_-5px_rgba(210,105,30,0.3)] flex items-center justify-center gap-4 group"
+                  className="bg-primary hover:bg-primary-hover !text-white px-12 py-6 rounded-2xl font-bold text-xl transition-all hover:scale-105 shadow-[0_20px_40px_-5px_rgba(210,105,30,0.3)] flex items-center justify-center gap-4 group"
                 >
                   Request Infrastructure Audit
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>

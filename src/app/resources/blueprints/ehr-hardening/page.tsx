@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function EHRHardeningBlueprint() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+        <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
 
             <main className="flex-grow">
@@ -41,7 +41,7 @@ export default function EHRHardeningBlueprint() {
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                                     EHR <br />
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
                                         Hardening.
                                     </span>
                                 </h1>
@@ -135,7 +135,7 @@ export default function EHRHardeningBlueprint() {
                                                 desc: "Automated delivery of PHQ-9 and GAD-7 assessments before the visit, with scores pre-populated in your clinical encounter screen."
                                             }
                                         ].map((step, idx) => (
-                                            <div key={idx} className="bg-[#FAF8F3] p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all group">
+                                            <div key={idx} className="bg-slate-50 p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all group">
                                                 <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-primary mb-6 shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
                                                     <span className="material-symbols-outlined">{step.icon}</span>
                                                 </div>

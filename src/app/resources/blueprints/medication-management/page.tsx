@@ -11,7 +11,7 @@ export const metadata = {
 
 export default function MedManagementBlueprint() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+        <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
 
             <main className="flex-grow">
@@ -40,7 +40,7 @@ export default function MedManagementBlueprint() {
                                 </div>
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
-                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
                                         Infrastructure.
                                     </span>
                                 </h1>
@@ -50,7 +50,7 @@ export default function MedManagementBlueprint() {
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
-                                    <Link href="/book-consultation" className="bg-[#D2691E] hover:bg-[#B8860B] text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-[#D2691E]/20 transition-all flex items-center justify-center gap-2.5 w-full sm:w-auto">
+                                    <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-base hover:shadow-xl hover:shadow-primary/20 transition-all flex items-center justify-center gap-2.5 w-full sm:w-auto">
                                         <span className="material-symbols-outlined">network_check</span>
                                         Audit My Refill Workflow
                                     </Link>
@@ -141,8 +141,8 @@ export default function MedManagementBlueprint() {
                                                 desc: "Automated logging of every refill action to ensure adherence to California state medical privacy standards."
                                             }
                                         ].map((step, idx) => (
-                                            <div key={idx} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group">
-                                                <div className="size-16 rounded-2xl bg-[#D2691E]/10 flex items-center justify-center text-[#D2691E] mb-6 shadow-sm group-hover:bg-[#D2691E] group-hover:text-white transition-all duration-300">
+                                            <div key={idx} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-primary/10 transition-all duration-500 group">
+                                                <div className="size-16 rounded-2xl bg-primary/10 flex items-center justify-center text-primary mb-6 shadow-sm group-hover:bg-primary group-hover:text-white transition-all duration-300">
                                                     <span className="material-symbols-outlined text-3xl">{step.icon}</span>
                                                 </div>
                                                 <h4 className="font-display font-bold text-xl text-trust-navy mb-3">{step.title}</h4>
@@ -161,7 +161,7 @@ export default function MedManagementBlueprint() {
                                                 <tr className="bg-slate-50/50 border-b border-slate-100">
                                                     <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Metric</th>
                                                     <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-trust-navy">Solo/Manual</th>
-                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-[#D2691E]">VM Infrastructure</th>
+                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-primary">VM Infrastructure</th>
                                                 </tr>
                                             </thead>
                                             <tbody className="divide-y divide-slate-100">
@@ -191,7 +191,7 @@ export default function MedManagementBlueprint() {
                                                             High Lag
                                                         </span>
                                                     </td>
-                                                    <td className="p-8 text-sm font-bold text-[#D2691E] italic">Negligible</td>
+                                                    <td className="p-8 text-sm font-bold text-primary italic">Negligible</td>
                                                 </tr>
                                             </tbody>
                                         </table>

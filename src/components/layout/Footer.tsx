@@ -144,7 +144,7 @@ export default function Footer() {
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/locations/california" className="group flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-primary transition-colors">
+                                <Link href="/locations" className="group flex items-center gap-2 text-sm font-bold text-slate-400 hover:text-primary transition-colors">
                                     <span className="material-symbols-outlined text-base opacity-0 group-hover:opacity-100 transition-opacity">arrow_forward</span>
                                     <span>All California</span>
                                 </Link>

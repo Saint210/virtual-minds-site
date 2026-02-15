@@ -83,7 +83,7 @@ export default function PsychiatristSalaryCA() {
                 <section className="relative pt-16 pb-20 overflow-hidden bg-[#FAF8F3]">
                     {/* Immersive Background Tokens */}
                     <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-[120px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
-                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-[#D2691E]/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
+                    <div className="absolute bottom-0 left-10 w-[300px] h-[300px] bg-primary/5 rounded-full blur-[100px] translate-y-1/2 pointer-events-none" />
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
                         <div className="max-w-4xl">
@@ -103,7 +103,7 @@ export default function PsychiatristSalaryCA() {
 
                             <h1 className="font-serif text-5xl md:text-7xl lg:text-[5.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
                                 Psychiatrist Salary in California: <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-hover to-primary animate-gradient-x">
                                     Expectations vs. Reality.
                                 </span>
                             </h1>
@@ -381,7 +381,7 @@ export default function PsychiatristSalaryCA() {
                         <div className="flex justify-center">
                             <Link
                                 href="/book-consultation"
-                                className="bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center gap-2"
+                                className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center gap-2"
                             >
                                 <span className="material-symbols-outlined">account_balance</span>
                                 Schedule Practice Strategy Call

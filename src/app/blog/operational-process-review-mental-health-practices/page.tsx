@@ -56,7 +56,7 @@ import KeyTakeaways from "@/components/blog/KeyTakeaways";
 
 export default function OperationalProcessReview() {
     return (
-        <div className="flex flex-col min-h-screen bg-[#FAF8F3]">
+        <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
 
             <main className="flex-grow">
@@ -81,7 +81,7 @@ export default function OperationalProcessReview() {
 
                             <h1 className="font-serif text-5xl md:text-7xl lg:text-8xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                                 Operational Process <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary-hover to-primary animate-gradient-x">
                                     Review Framework.
                                 </span>
                             </h1>
@@ -346,7 +346,7 @@ export default function OperationalProcessReview() {
                         <div className="flex justify-center">
                             <Link
                                 href="/book-consultation"
-                                className="bg-primary hover:bg-[#C19F30] text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center gap-2"
+                                className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg transition-all hover:scale-105 shadow-xl shadow-black/20 inline-flex items-center gap-2"
                             >
                                 <span className="material-symbols-outlined">calendar_today</span>
                                 Schedule Your Process Review
