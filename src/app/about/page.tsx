@@ -5,9 +5,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 export const metadata = {
-    title: "About Virtual Minds | California Psychiatric Virtual Assistant Firm",
-    description: "California's premier psychiatric virtual assistant firm. Specialized support for high-acuity practices with HIPAA-compliant workflows, clinical coordination, and practice management expertise.",
-    keywords: ["psychiatric operations firm", "california psychiatric virtual assistant", "medical residency training VA", "mental health operations staff", "psychiatric practice management"],
+    title: "About Virtual Minds | Specialized Psychiatric Practice Management & Virtual Assistants",
+    description: "California's premier psychiatric practice management firm. We provide director-level virtual assistants and operational infrastructure for high-acuity private practices.",
+    keywords: ["psychiatric virtual assistant", "mental health operations director", "psychiatric practice management", "medical residency training VA", "mental health operations staff"],
 };
 
 export default function AboutPage() {
@@ -35,28 +35,28 @@ export default function AboutPage() {
                             <div className="lg:w-[60%]">
                                 <div className="inline-flex items-center gap-2 bg-white border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-6 shadow-sm">
                                     <span className="material-symbols-outlined text-primary text-sm">verified</span>
-                                    Operational Excellence
+                                    Operational Authority
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
-                                    California's Premier <br />
+                                    Director-Level <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                        Psychiatric Virtual Assistant Firm
+                                        Psychiatric Operations
                                     </span>
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl">
-                                    Virtual Minds offers <strong className="text-trust-navy">decades of specialized experience</strong> in mental health practice management. We provide top-tier administrative infrastructure designed to <span className="text-primary font-bold">streamline complexity</span> so you can focus entirely on patient care.
+                                    Your practice needs a director, not just an assistant. Virtual Minds delivers <strong className="text-trust-navy">specialized practice management</strong> infrastructure designed to <span className="text-primary font-bold">stabilize and scale</span> high-acuity psychiatric practices.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
                                     <div className="flex items-center gap-2 bg-slate-50 px-5 py-3 rounded-2xl border border-slate-100">
                                         <span className="material-symbols-outlined text-primary font-bold">corporate_fare</span>
-                                        <span className="text-sm font-bold text-slate-600 whitespace-nowrap">Specialized Support</span>
+                                        <span className="text-sm font-bold text-slate-600 whitespace-nowrap">Practice Management</span>
                                     </div>
                                     <div className="flex items-center gap-2 bg-slate-50 px-5 py-3 rounded-2xl border border-slate-100">
                                         <span className="material-symbols-outlined text-accent font-bold">psychology</span>
-                                        <span className="text-sm font-bold text-slate-600 whitespace-nowrap">Psychiatric Expertise</span>
+                                        <span className="text-sm font-bold text-slate-600 whitespace-nowrap">Psychiatric Specialists</span>
                                     </div>
                                 </div>
                             </div>
@@ -66,7 +66,7 @@ export default function AboutPage() {
                                 <div className="relative rounded-[2.5rem] overflow-hidden border border-slate-100 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/20 transition-colors">
                                     <Image
                                         src="/images/about-hero-premium.webp"
-                                        alt="Virtual Minds Psychiatric Support Team"
+                                        alt="Virtual Minds Psychiatric Operations Director Team"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
@@ -79,51 +79,55 @@ export default function AboutPage() {
                     </div>
                 </section>
 
-                {/* OUR ORIGIN STORY */}
+                {/* OUR ORIGIN STORY: THE DIRECTOR NARRATIVE */}
                 <section className="py-24 bg-white border-y border-slate-100">
                     <div className="max-w-4xl mx-auto px-6">
                         <div className="inline-flex items-center gap-2 mb-6">
-                            <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Our Origin</span>
+                            <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Leadership Profile</span>
                             <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                         </div>
 
                         <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8 leading-tight">
-                            Born from <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Necessity</span>.
+                            Battle-Tested <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Operational Leadership</span>.
                         </h2>
 
                         <div className="space-y-6">
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Virtual Minds was founded when <strong className="text-trust-navy">Cheryl</strong>, who had been managing operations for a psychiatric virtual assistant company, faced an unexpected transition: <span className="text-primary font-bold">the company's owner suddenly passed away</span>.
+                                Virtual Minds wasn't built by generalist administrators. It was forged in the fires of crisis management. When a major California psychiatric network faced a <strong className="text-trust-navy">critical leadership transition</strong>, dozens of practices were at risk of immediate operational disruption.
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                California psychiatrists who depended on that support needed <strong className="text-trust-navy">seamless continuity of care</strong>. Cheryl had been the operational backbone all along, managing everything from medication coordination to billing workflows.
+                                <strong className="text-trust-navy">Cheryl</strong>, serving as the Director of Operations, took command of the infrastructure. She didn't just manage the transition—she <span className="text-primary font-bold">guaranteed the continuity of care</span> for hundreds of patients, stabilizing the network when it mattered most.
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Rather than let these practices face disruption, Cheryl launched Virtual Minds and <span className="text-primary font-bold">ensured every patient continued to receive uninterrupted care</span>. That foundation of <strong className="text-trust-navy">reliability and continuity</strong> remains our core mission today.
+                                She rebuilt the infrastructure from the ground up, ensuring that <strong className="text-trust-navy">her partner practices didn't miss a single patient interaction</strong>. That level of reliability—the kind that holds firm when everything else falls apart—is the foundation of Virtual Minds.
+                            </p>
+
+                            <p className="text-lg text-slate-600 leading-relaxed">
+                                Today, for the first time, this exclusive operational infrastructure is open to select new partners.
                             </p>
 
                             <div className="bg-slate-50 border-l-4 border-primary p-6 rounded-r-2xl mt-8">
                                 <p className="text-base text-slate-600 italic leading-relaxed">
-                                    "I've seen what happens when administrative support fails. Virtual Minds was built to ensure continuity—so your patients always receive the care they need, no matter what."
+                                    "I learned exactly what breaks when a practice faces a crisis, and I built systems to prevent it. We don't just answer phones; we protect the operational integrity of your medical practice."
                                 </p>
-                                <p className="text-sm font-bold text-slate-500 mt-3">— Cheryl, Founder</p>
+                                <p className="text-sm font-bold text-slate-500 mt-3">— Cheryl, Founder & Director of Operations</p>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* CLINICAL PEDIGREE - NEW SECTION */}
+                {/* CLINICAL PEDIGREE - RENAMED */}
                 <section className="py-24 bg-slate-50 border-y border-slate-200">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-16">
-                            <span className="text-primary font-bold uppercase tracking-widest text-[11px] mb-4 block">Unmatched Experience</span>
+                            <span className="text-primary font-bold uppercase tracking-widest text-[11px] mb-4 block">Why Hire A Specialist?</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-6">
                                 Operations for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Elite Psychiatry</span>
                             </h2>
                             <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
-                                Before founding Virtual Minds, Cheryl managed operations for a network of California's most distinguished psychiatrists. We understand the standards required by clinicians trained at the world's top institutions.
+                                Generalist VAs require endless training and oversight. We arrive fully operational, with deep expertise in the specific demands of California psychiatry.
                             </p>
                         </div>
 
@@ -144,7 +148,7 @@ export default function AboutPage() {
                                     </div>
                                     <h3 className="font-serif text-2xl font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Academic DNA</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium text-sm">
-                                        Our operational protocols were forged in high-stakes environments, supporting faculty and alumni from California's premier medical centers.
+                                        Our protocols are designed to support faculty and alumni from California's top medical centers. We speak the language of academic medicine.
                                     </p>
                                     <div className="space-y-3 border-t border-slate-200 pt-6">
                                         {["Stanford University", "UCLA Neuropsychiatric Institute", "UCSF Health", "USC Keck School of Medicine"].map((item, i) => (
@@ -286,7 +290,7 @@ export default function AboutPage() {
                 </section >
 
                 {/* 3. CORE MESSAGING */}
-                < section className="py-32 bg-white" >
+                <section className="py-32 bg-white">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <div className="inline-flex items-center gap-2 mb-6">
@@ -294,11 +298,10 @@ export default function AboutPage() {
                                 <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                Professional <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Administrative</span> Support.
+                                Director-Level <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Operational Infrastructure</span>.
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
-                                We handle the workflows that <strong className="text-trust-navy">take you away from patient care</strong>, ensuring your practice runs{' '}
-                                <span className="text-primary font-bold">smoothly while you focus on clinical excellence</span>.
+                                We handle the workflows that <strong className="text-trust-navy">take you away from patient care</strong>, ensuring your practice runs <span className="text-primary font-bold">smoothly while you focus on clinical excellence</span>.
                             </p>
                         </div>
 
@@ -318,10 +321,10 @@ export default function AboutPage() {
                             ))}
                         </div>
                     </div>
-                </section >
+                </section>
 
                 {/* 4. FINAL CTA */}
-                < section className="bg-trust-navy py-32 relative overflow-hidden" >
+                <section className="bg-trust-navy py-32 relative overflow-hidden">
                     <div className="absolute inset-0 opacity-20 pointer-events-none">
                         <div className="absolute top-0 right-0 w-[800px] h-[800px] bg-primary/30 rounded-full blur-[160px] translate-x-1/2 -translate-y-1/2" />
                     </div>
@@ -331,8 +334,7 @@ export default function AboutPage() {
                             Return to <span className="text-primary">Patient Care</span>.
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-medium leading-relaxed">
-                            Experience the difference of a <strong className="text-white">specialized psychiatric support team</strong>. Request your{' '}
-                            <span className="text-primary font-bold">15-minute Recovery Plan</span> to get started.
+                            Experience the difference of a <strong className="text-white">specialized psychiatric operations team</strong>. Request your <span className="text-primary font-bold">15-minute Recovery Plan</span> to get started.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
@@ -344,10 +346,10 @@ export default function AboutPage() {
                             </Link>
                         </div>
                     </div>
-                </section >
+                </section>
 
                 {/* OUR SERVICES */}
-                < section className="py-24 bg-white relative overflow-hidden" >
+                <section className="py-24 bg-white relative overflow-hidden">
                     <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] opacity-20" />
 
                     <div className="max-w-[1400px] mx-auto px-6 relative z-10">
@@ -372,7 +374,7 @@ export default function AboutPage() {
                                         Virtual Assistant Services
                                     </h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed">
-                                        Dedicated psychiatric assistants for intake, patient communication, and administrative support.
+                                        Dedicated psychiatric operations specialists for intake, patient communication, and administrative support.
                                     </p>
                                     <div className="flex items-center gap-2 text-primary font-bold text-sm">
                                         Learn More <span className="material-symbols-outlined text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
