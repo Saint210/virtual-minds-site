@@ -151,7 +151,7 @@ export default function AboutPage() {
                                         Our protocols are designed to support faculty and alumni from California's top medical centers. We speak the language of academic medicine.
                                     </p>
                                     <div className="space-y-3 border-t border-slate-200 pt-6">
-                                        {["Stanford University", "UCLA Neuropsychiatric Institute", "UCSF Health", "USC Keck School of Medicine"].map((item, i) => (
+                                        {["Harvard Medical School", "Stanford University", "UCSF", "Princeton", "UCLA Department of Psychiatry", "Duke University", "Baylor College of Medicine", "USC Keck School of Medicine"].map((item, i) => (
                                             <div key={i} className="flex items-center gap-3 text-sm font-bold text-trust-navy/80">
                                                 <span className="material-symbols-outlined text-primary text-base">verified</span>
                                                 {item}
@@ -431,7 +431,7 @@ export default function AboutPage() {
                 < section className="py-24 bg-[#FAF8F3]" >
                     <div className="max-w-[1400px] mx-auto px-6">
                         <div className="text-center mb-16">
-                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Trusted by California Psychiatrists</span>
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Infrastructure for Elite Private Practice</span>
                             <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
                                 Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Success Stories</span>
                             </h2>

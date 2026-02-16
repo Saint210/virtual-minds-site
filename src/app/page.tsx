@@ -115,7 +115,7 @@ export default function Home() {
                 <div className="pt-4 border-t border-slate-200/60 mt-4">
                   <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Supporting Clinicians Trained At</p>
                   <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-60">
-                    {["UCSF", "Stanford", "UCLA", "USC", "Harvard"].map(school => (
+                    {["UCSF", "Stanford", "Harvard", "UCLA", "Princeton", "Duke", "Baylor"].map(school => (
                       <span key={school} className="font-serif text-xl text-trust-navy">{school}</span>
                     ))}
                   </div>

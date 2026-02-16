@@ -73,7 +73,7 @@ export default function LocationTagline({
             case 'social-proof':
                 return (
                     <>
-                        Trusted by California psychiatrists in {renderLocationLinks()}, and 45+ cities.
+                        Director-level infrastructure for psychiatrists in {renderLocationLinks()}, and 45+ cities.
                     </>
                 );
 

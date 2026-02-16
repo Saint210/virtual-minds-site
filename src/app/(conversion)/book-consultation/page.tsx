@@ -105,7 +105,7 @@ export default function BookConsultationPage() {
                             <div className="hidden md:flex flex-col gap-2 p-4 bg-white/50 border border-slate-200 rounded-xl">
                                 <div className="flex items-center gap-2 text-trust-navy font-bold">
                                     <span className="material-symbols-outlined text-primary text-xl">school</span>
-                                    <span className="text-sm uppercase tracking-wider">UCLA, UCSF, Stanford-Trained?</span>
+                                    <span className="text-sm uppercase tracking-wider">UCLA, Stanford, Harvard-Trained?</span>
                                 </div>
                                 <p className="text-sm text-slate-600 font-medium">
                                     We speak your language. Our VAs are trained to support the high-complexity workflows of elite, board-certified practices.
@@ -176,8 +176,8 @@ export default function BookConsultationPage() {
                                 ))}
                             </div>
                             <div className="text-sm text-slate-500 font-medium leading-tight">
-                                <p><strong className="text-trust-navy">Trusted by California Psychiatrists</strong></p>
-                                <p>Specialized <span className="text-primary font-bold">psychiatric virtual assistants</span> for HIPAA-compliant practice management.</p>
+                                <p><strong className="text-trust-navy">Infrastructure for Elite Private Practice</strong></p>
+                                <p>Director-level support for <span className="text-primary font-bold">distinguished, high-acuity</span> California psychiatrists.</p>
                             </div>
                         </div>
                     </div>
