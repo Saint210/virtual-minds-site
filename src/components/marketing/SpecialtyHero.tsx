@@ -7,12 +7,11 @@ import { useTracking } from "@/hooks/useTracking";
 
 interface SpecialtyHeroProps {
     name: string;
-    tagline: string;
     description: string;
-    imageSrc: string;
+    image: string;
 }
 
-export default function SpecialtyHero({ name, tagline, description, imageSrc }: SpecialtyHeroProps) {
+export default function SpecialtyHero({ name, description, image }: SpecialtyHeroProps) {
     const { trackCTAClick } = useTracking();
 
     return (
@@ -62,7 +61,7 @@ export default function SpecialtyHero({ name, tagline, description, imageSrc }: 
                     <div className="relative group">
                         <div className="relative aspect-[4/5] rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-200 bg-white">
                             <Image
-                                src={imageSrc || "/images/homepage-hero.png"}
+                                src={image || "/images/homepage-hero.png"}
                                 alt={name}
                                 fill
                                 className="object-cover"

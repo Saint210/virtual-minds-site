@@ -12,7 +12,7 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata: Metadata = {
-    title: "Psychiatric Billing Liaison & RCM Support | California",
+    title: "Psychiatric Billing Administration & RCM Support | California",
     description: "We are the bridge between your clinical notes and your billing company. Specialized support for prior authorizations, superbills, and denial liaison.",
 };
 
@@ -25,7 +25,7 @@ export default function BillingPage() {
                 items={[
                     { label: "Home", href: "/" },
                     { label: "Services", href: "/services" },
-                    { label: "Revenue Cycle Liaison" }
+                    { label: "Billing Administration" }
                 ]}
             />
             <main className="flex-grow">
@@ -47,7 +47,7 @@ export default function BillingPage() {
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    The gap between your clinical notes and your billing company is where revenue is lost. We act as your <span className="text-trust-navy font-bold">Revenue Cycle Liaison</span>, managing prior auths, superbills, and billing inquiries so you don't have to.
+                                    The gap between your clinical notes and your billing company is where revenue is lost. We act as your <span className="text-trust-navy font-bold">Administrative Liaison</span>, managing prior auths, superbills, and billing inquiries so you don't have to.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Billing & RCM" />
 

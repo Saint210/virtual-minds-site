@@ -70,18 +70,35 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Preload hero image for faster LCP */}
+        {/* Preconnect to critical origins */}
+        <link rel="preconnect" href="https://www.transparenttextures.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+        {/* Material Icons - Critical for UI */}
+        {/* Material Icons - Optimized for Non-Blocking Loading */}
         <link
           rel="preload"
-          as="image"
-          href="/images/virtual-assistant-hero.png"
-          type="image/png"
-          fetchPriority="high"
-        />
-        {/* Material Icons - Critical for UI */}
-        <link
-          rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+          as="style"
+        />
+        <noscript>
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap"
+          />
+        </noscript>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              (function() {
+                var link = document.createElement('link');
+                link.rel = 'stylesheet';
+                link.href = 'https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&display=swap';
+                document.head.appendChild(link);
+              })();
+            `
+          }}
         />
       </head>
       <body

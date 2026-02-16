@@ -8,6 +8,10 @@
     "start": "next start",
     "lint": "eslint"
   },
+  "browserslist": [
+    "defaults",
+    "not IE 11"
+  ],
   "dependencies": {
     "@notionhq/client": "^5.7.0",
     "@portabletext/react": "^6.0.2",

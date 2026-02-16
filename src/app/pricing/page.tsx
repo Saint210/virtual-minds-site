@@ -502,7 +502,7 @@ export default function PricingPage() {
                 },
                 {
                   id: "SYS_RCM_03",
-                  title: "Billing & Revenue Cycle",
+                  title: "Billing Administration & Revenue Support",
                   subtitle: "Revenue Stabilization",
                   desc: "Revenue stabilization through verification, prior auths, and billing coordination.",
                   impact: "Recover 4-7% lost revenue.",

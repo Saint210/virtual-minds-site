@@ -1,41 +1,27 @@
 const fs = require('fs');
-const report = JSON.parse(fs.readFileSync('lighthouse-report.json', 'utf8'));
+const report = JSON.parse(fs.readFileSync('lighthouse-report-new.json', 'utf8'));
 
-console.log('--- LCP Analysis ---');
-const lcpAudit = report.audits['largest-contentful-paint-element'];
-if (lcpAudit && lcpAudit.details && lcpAudit.details.items && lcpAudit.details.items.length > 0) {
-    const item = lcpAudit.details.items[0];
-    if (item.node && item.node.snippet) {
-        console.log('LCP Element HTML:', item.node.snippet);
-    }
-    if (item.node && item.node.selector) {
-        console.log('LCP Selector:', item.node.selector);
-    }
-} else {
-    console.log('LCP Element details not found.');
-}
+console.log('--- Critical Network Requests (Blocking) ---');
+const networkRequests = report.audits['network-requests'];
+if (networkRequests && networkRequests.details && networkRequests.details.items) {
+    const items = networkRequests.details.items;
 
-console.log('\n--- Server Response Time (TTFB) ---');
-const ttfbAudit = report.audits['server-response-time'];
-if (ttfbAudit) {
-    console.log('TTFB:', ttfbAudit.displayValue);
-    if (ttfbAudit.details && ttfbAudit.details.items && ttfbAudit.details.items.length > 0) {
-        console.log('Initial URL:', ttfbAudit.details.items[0].url);
-        console.log('Response Time:', ttfbAudit.details.items[0].responseTime, 'ms');
-    }
-}
+    // Sort by endTime to see what finished last
+    // But for blocking, we care about what *started* early and *finished* late
+    const blocking = items;
 
-console.log('\n--- Network Payloads (Top 5 by size) ---');
-const networkAudit = report.audits['network-requests'];
-if (networkAudit && networkAudit.details && networkAudit.details.items) {
-    const network = networkAudit.details.items;
+    blocking.sort((a, b) => b.endTime - a.endTime);
 
-    // Sort by transferSize (what went over the wire)
-    const sorted = [...network].sort((a, b) => b.transferSize - a.transferSize);
-
-    sorted.slice(0, 5).forEach(req => {
-        const sizeKB = (req.transferSize / 1024).toFixed(1);
-        const name = req.url.length > 80 ? req.url.substring(0, 77) + '...' : req.url;
-        console.log(`${sizeKB} KB - ${name}`);
+    blocking.slice(0, 10).forEach(req => {
+        const duration = req.endTime - req.startTime;
+        console.log(`URL: ${req.url}`);
+        console.log(`   Transfer Size: ${req.transferSize}`);
+        console.log(`   Start Time: ${req.startTime}`);
+        console.log(`   End Time: ${req.endTime}`);
+        console.log(`   Duration: ${duration} ms`);
+        console.log(`   MimeType: ${req.mimeType}`);
+        console.log('---');
     });
+} else {
+    console.log('No network requests found in audit.');
 }

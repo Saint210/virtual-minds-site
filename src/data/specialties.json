@@ -19,7 +19,7 @@
             "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Payment Processing Management"
         ],
@@ -69,12 +69,12 @@
         ],
         "vaServices": [
             "High-Sensitivity Intake Coordination",
-            "Titration-Aware Scheduling",
+            "Scheduling for Titration Check-ins",
             "Patient Retention & Correspondence",
             "Clinical Documentation Management"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Insurance Coordination (On Request)"
         ],
@@ -113,12 +113,12 @@
         ],
         "vaServices": [
             "Family Calendar Coordination",
-            "Guardian & School Correspondence",
+            "Guardian & School Admin Correspondence",
             "Intake Conversion & Onboarding",
             "Telehealth Platform Support"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Payment Processing Management",
             "Billing Support"
         ],
@@ -147,7 +147,7 @@
         "name": "Integrative Psychiatry",
         "metaTitle": "Integrative Psychiatry Operations | Virtual Minds",
         "metaDescription": "Operational support for integrative psychiatry. Managing functional lab logistics, supplement tracking, and complex scheduling.",
-        "heroDescription": "We manage the multi-modality logistics of functional labs and supplements so you can focus on holistic, root-cause care.",
+        "heroDescription": "We manage the administrative logistics of functional labs and supplement protocols, organizing kits, results, and complex scheduling.",
         "heroImage": "/images/hero-dashboard.png",
         "consultingServices": [
             "EHR Optimization",
@@ -157,14 +157,14 @@
         ],
         "vaServices": [
             "Complex Modality Scheduling",
-            "Functional Lab Logistics",
+            "Lab Result Administrative Filing",
             "Intake Conversion & Onboarding",
             "Telehealth Platform Support"
         ],
         "billingSupport": [
             "Superbill Generation",
             "Payment Processing Management",
-            "Revenue Cycle Liaison"
+            "Revenue Cycle Coordination (Non-Claims)"
         ],
         "categories": [
             {
@@ -200,13 +200,13 @@
             "Standard Operating Procedures"
         ],
         "vaServices": [
-            "Prior Authorization Defense",
+            "Prior Authorization Administration",
             "High-Volume Calendar Logic",
             "Clinical Documentation Management",
             "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Insurance Coordination (On Request)",
             "Payment Processing Management"
         ],
@@ -279,7 +279,7 @@
         "name": "Sleep Medicine",
         "metaTitle": "Sleep Medicine Operations | Virtual Minds",
         "metaDescription": "Specialized infrastructure for sleep psychiatry. Managing sleep study logistics, results tracking, and patient follow-up.",
-        "heroDescription": "We manage the sleep study logistics and result tracking infrastructure required for high-fidelity sleep medicine practices.",
+        "heroDescription": "We manage the referral coordination and administrative follow-up for sleep studies, ensuring reports are filed and appointments are booked.",
         "heroImage": "/images/medication-management-hero.png",
         "consultingServices": [
             "EHR Optimization",
@@ -288,13 +288,13 @@
             "Patient Experience Design"
         ],
         "vaServices": [
-            "Sleep Study Coordination",
-            "Result Tracking Infrastructure",
+            "Sleep Study Referral Coordination",
+            "Result Filing System",
             "Patient Retention & Correspondence",
             "Clinical Documentation Management"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Insurance Coordination (On Request)"
         ],
@@ -323,7 +323,7 @@
         "name": "OCD & Anxiety Disorders",
         "metaTitle": "OCD & Anxiety Workflow Systems | Virtual Minds",
         "metaDescription": "Operational infrastructure for OCD/Anxiety specialists. Managing intensive treatment scheduling and ERP protocol coordination.",
-        "heroDescription": "We engineer the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to treatment plans.",
+        "heroDescription": "We engineer the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to the administrative side of treatment plans.",
         "heroImage": "/images/virtual-assistant-hero.png",
         "consultingServices": [
             "Practice Infrastructure Design",
@@ -333,12 +333,12 @@
         ],
         "vaServices": [
             "Intensive Treatment Scheduling",
-            "ERP Protocol Coordination",
+            "ERP Scheduling Coordination",
             "Intake Conversion & Onboarding",
             "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Payment Processing Management"
         ],
@@ -367,7 +367,7 @@
         "name": "Eating Disorders",
         "metaTitle": "Eating Disorder Care Systems | Virtual Minds",
         "metaDescription": "Specialized infrastructure for eating disorder psychiatry. Coordinating multidisciplinary teams and meal support tracking.",
-        "heroDescription": "We coordinate the multidisciplinary communication and meal support tracking required for comprehensive recovery and team-based care.",
+        "heroDescription": "We coordinate the administrative communication between multidisciplinary teams, ensuring seamless updates between providers.",
         "heroImage": "/images/psychiatrist-startup-planning.png",
         "consultingServices": [
             "EHR Optimization",
@@ -376,13 +376,13 @@
             "Client Experience Engineering"
         ],
         "vaServices": [
-            "Multidisciplinary Team Coordination",
+            "Multidisciplinary Admin Coordination",
             "Family Communication Support",
-            "Titration-Aware Scheduling",
+            "Scheduling for Titration",
             "Intake Conversion & Onboarding"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Insurance Coordination (On Request)"
         ],
@@ -426,7 +426,7 @@
             "Provider Communication"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Insurance Coordination (On Request)"
         ],
@@ -455,8 +455,8 @@
         "name": "Neuropsychiatry",
         "metaTitle": "Neuropsychiatry Practice Infrastructure | Virtual Minds",
         "metaDescription": "Precision infrastructure for neuropsychiatry. Managing testing batteries, report integration, and neurological coordination.",
-        "heroDescription": "We manage the complex testing batteries and report integration required for neuropsychiatric care and cognitive assessment.",
-        "heroImage": "/images/contact-hero.png",
+        "heroDescription": "We manage the administrative coordination of testing batteries, ensuring reports are received, filed, and ready for your review.",
+        "heroImage": "/images/psychiatry-consultation-room.png",
         "consultingServices": [
             "EHR Optimization",
             "Workflow Architecture Review",
@@ -464,13 +464,13 @@
             "Client Experience Engineering"
         ],
         "vaServices": [
-            "Neurological Testing Coordination",
-            "Report Integration Logistics",
+            "Testing Referral Coordination",
+            "Report Administrative Filing",
             "Clinical Documentation Management",
             "Patient Retention & Correspondence"
         ],
         "billingSupport": [
-            "Revenue Cycle Liaison",
+            "Revenue Cycle Coordination (Non-Claims)",
             "Superbill Generation",
             "Insurance Coordination (On Request)"
         ],

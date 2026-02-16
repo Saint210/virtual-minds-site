@@ -47,9 +47,9 @@ export default function Features() {
                         <div className="w-16 h-16 rounded-2xl bg-[#FAF8F3] flex items-center justify-center text-[#D2691E] mb-8 group-hover:scale-110 transition-transform duration-500">
                             <span className="material-symbols-outlined text-4xl">account_balance</span>
                         </div>
-                        <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Revenue Cycle</h3>
+                        <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">Revenue Cycle Support</h3>
                         <p className="text-slate-600 leading-relaxed">
-                            From navigating Prior Authorizations for TMS/Spravato to managing Superbills and private pay collections. We fight for every dollar, insurance or cash.
+                            We act as the liaison between your clinical work and your billing team. From managing Superbills to coordinating Prior Authorizations, we ensure the administrative side of revenue is airtight.
                         </p>
                     </Link>
 

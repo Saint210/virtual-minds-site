@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Script from "next/script";
 import { useState } from "react";
 
 const faqSections = [
@@ -54,8 +55,30 @@ export default function FAQClient() {
         )
     })).filter(section => section.items.length > 0);
 
+    // Generate FAQ Schema for AI/SEO
+    const structuredData = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqSections.flatMap(section =>
+            section.items.map(item => ({
+                "@type": "Question",
+                "name": item.q,
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": item.a
+                }
+            }))
+        )
+    };
+
     return (
         <div className="max-w-[1400px] mx-auto px-6">
+            <Script
+                id="faq-schema"
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+                strategy="afterInteractive"
+            />
             <div className="flex flex-col lg:flex-row gap-16 items-center mb-16">
                 {/* Left: Heading (60%) */}
                 <div className="lg:w-[60%]">

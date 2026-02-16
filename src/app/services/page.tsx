@@ -33,7 +33,7 @@ const serviceBlueprints = [
     },
     {
         id: "SYS_RCM_03",
-        title: "Billing & Revenue Cycle",
+        title: "Billing & Revenue Cycle Support",
         subtitle: "Revenue Stabilization",
         desc: "We don’t replace your biller — we ensure they perform. Dedicated verification, prior auths, and superbill generation to stabilize cash flow.",
         features: ["Benefit Verification", "Prior Authorizations", "Claims Liaison", "Denial Management"],

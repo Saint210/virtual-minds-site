@@ -17,7 +17,7 @@ export default function BillingServiceSchema() {
                 "addressCountry": "US"
             }
         },
-        "serviceType": "Medical Billing Support",
+        "serviceType": "Medical Billing Administration",
         "areaServed": {
             "@type": "State",
             "name": "California"
@@ -28,7 +28,7 @@ export default function BillingServiceSchema() {
         },
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
-            "name": "Billing & RCM Services",
+            "name": "Billing Administration Services",
             "itemListElement": [
                 {
                     "@type": "Offer",
