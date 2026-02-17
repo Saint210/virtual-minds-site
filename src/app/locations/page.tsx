@@ -180,7 +180,7 @@ export default function LocationsIndexPage() {
                                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-slate-200 to-slate-500">Knowledge Matters.</span>
                                     </h2>
                                     <p className="text-lg text-slate-400 leading-relaxed border-l-2 border-primary/30 pl-6">
-                                        A VA in Manila doesn't know that Kaiser predominates in Sacramento or how SB 525 impacts your overhead. <strong className="text-white font-medium">We engineer our systems with deep local intelligence.</strong>
+                                        A VA in Manila doesn't know that Kaiser predominates in Sacramento or how SB 525 impacts your overhead. <strong className="text-white font-medium">We build our systems with deep local intelligence.</strong>
                                     </p>
                                 </div>
 

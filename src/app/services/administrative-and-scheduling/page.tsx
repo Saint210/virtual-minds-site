@@ -183,7 +183,7 @@ export default function SchedulingPage() {
                 <section className="max-w-[1280px] mx-auto px-6 py-32">
                     <div className="grid lg:grid-cols-2 gap-20 items-center">
                         <div className="space-y-8">
-                            <h2 className="font-display text-5xl font-bold text-trust-navy leading-tight italic">Engineered for <br />Psychiatry</h2>
+                            <h2 className="font-display text-5xl font-bold text-trust-navy leading-tight italic">Built for <br />Psychiatry</h2>
                             <p className="text-lg text-slate-600 leading-relaxed">Mental health scheduling is inherently dynamic. Patients require recurring slots, medication titration follow-ups, and urgent rescheduling. Our VAs use a 'Clinical-First' logic to protect your time.</p>
                             <div className="space-y-4">
                                 {[

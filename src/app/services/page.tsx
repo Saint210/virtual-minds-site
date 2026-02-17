@@ -6,7 +6,7 @@ import Breadcrumbs from "@/components/layout/Breadcrumbs";
 
 export const metadata = {
     title: "California Psychiatric Virtual Assistant Services | Virtual Minds",
-    description: "Specialized psychiatric virtual assistant services for California practices. HIPAA-compliant support for billing, intake, EHR management, and practice consulting. Engineered for complex care.",
+    description: "Specialized psychiatric virtual assistant services for California practices. HIPAA-compliant support for billing, intake, EHR management, and practice consulting. Built for complex care.",
 };
 
 const serviceCategories = [

@@ -4,13 +4,13 @@
         "name": "General Psychiatry",
         "metaTitle": "General Psychiatry Practice Systems | Virtual Minds",
         "metaDescription": "Full-spectrum operational support for board-certified psychiatrists. We manage intake conversion, titration logic, and practice workflow.",
-        "heroDescription": "We engineer the operational systems so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
+        "heroDescription": "We build the operational systems so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
         "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "Practice Systems Design",
             "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
-            "Client Experience Engineering"
+            "Client Experience Design"
         ],
         "vaServices": [
             "High-Acuity Calendar Logic",
@@ -59,7 +59,7 @@
         "name": "Women's Mental Health",
         "metaTitle": "Women's Mental Health Operations | Virtual Minds",
         "metaDescription": "Specialized support for reproductive psychiatry. High-sensitivity intake coordination and titration tracking.",
-        "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We engineer the intake and scheduling systems to protect your patient experience.",
+        "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We build the intake and scheduling systems to protect your patient experience.",
         "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "HIPAA Risk Mitigation",
@@ -191,7 +191,7 @@
         "name": "ADHD & Neuropsych",
         "metaTitle": "ADHD & Neuropsychiatry Support | Virtual Minds",
         "metaDescription": "Precision support for ADHD practices. Managing controlled substance workflows, prior authorizations, and testing logistics.",
-        "heroDescription": "We engineer the controlled substance workflows and prior authorization logic required for high-volume ADHD and Neuropsych practices.",
+        "heroDescription": "We handle the controlled substance workflows and prior authorization logic required for high-volume ADHD and Neuropsych practices.",
         "heroImage": "/images/practice-consulting-dashboard.png",
         "consultingServices": [
             "HIPAA Risk Mitigation",
@@ -234,13 +234,13 @@
         "slug": "private-practice-launch",
         "name": "Practice Launch",
         "metaTitle": "Psychiatric Practice Systems | Virtual Minds",
-        "metaDescription": "Complete operational chassis for new private practices. From entity formation logistics to EHR engineering.",
-        "heroDescription": "We engineer the entire operational chassis for your new California private practice launch, ensuring a stable foundation from day one.",
+        "metaDescription": "Complete operational chassis for new private practices. From entity formation logistics to EHR setup.",
+        "heroDescription": "We build the entire operational chassis for your new California private practice launch, ensuring a stable foundation from day one.",
         "heroImage": "/images/scheduling-hero.png",
         "consultingServices": [
             "Practice Systems Design",
             "Physical/Remote Office Setup",
-            "EHR Engineering",
+            "EHR Setup",
             "Contract Review and Negotiation"
         ],
         "vaServices": [
@@ -323,13 +323,13 @@
         "name": "OCD & Anxiety Disorders",
         "metaTitle": "OCD & Anxiety Workflow Systems | Virtual Minds",
         "metaDescription": "Operational support for OCD/Anxiety specialists. Managing intensive treatment scheduling and ERP protocol coordination.",
-        "heroDescription": "We engineer the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to the administrative side of treatment plans.",
+        "heroDescription": "We build the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to the administrative side of treatment plans.",
         "heroImage": "/images/virtual-assistant-hero.png",
         "consultingServices": [
             "Practice Systems Design",
             "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
-            "Client Experience Engineering"
+            "Client Experience Design"
         ],
         "vaServices": [
             "Intensive Treatment Scheduling",
@@ -373,7 +373,7 @@
             "EHR Optimization",
             "Clinical Workflow Audit",
             "Contract Review and Negotiation",
-            "Client Experience Engineering"
+            "Client Experience Design"
         ],
         "vaServices": [
             "Multidisciplinary Admin Coordination",
@@ -461,7 +461,7 @@
             "EHR Optimization",
             "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
-            "Client Experience Engineering"
+            "Client Experience Design"
         ],
         "vaServices": [
             "Testing Referral Coordination",

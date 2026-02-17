@@ -25,7 +25,7 @@ export default defineType({
             name: 'tagline',
             title: 'Tagline',
             type: 'string',
-            description: 'A brief, punchy description of the service (e.g., "Elite Revenue Engineering").',
+            description: 'A brief, punchy description of the service (e.g., "Revenue Optimization").',
         }),
         defineField({
             name: 'description',

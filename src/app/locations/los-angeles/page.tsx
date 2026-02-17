@@ -100,7 +100,7 @@ export default function LosAngelesPage() {
                         <div className="grid lg:grid-cols-2 gap-24 items-center">
                             <div className="space-y-12">
                                 <span className="text-primary font-black uppercase tracking-[0.4em] text-xs block italic">Metro Specificity</span>
-                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy leading-tight italic">Engineered for the <br /> L.A. Clinician.</h2>
+                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy leading-tight italic">Built for the <br /> L.A. Clinician.</h2>
                                 <div className="space-y-8">
                                     {[
                                         { icon: "commute", title: "Zero Commute Latency", desc: "405 gridlock and Metro delays don't affect our synchronized task force. Your practice operations start on time, every time." },

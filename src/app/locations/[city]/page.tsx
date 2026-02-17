@@ -146,7 +146,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                         <div className="grid lg:grid-cols-2 gap-24 items-center">
                             <div className="space-y-12">
                                 <span className="text-primary font-black uppercase tracking-[0.4em] text-xs block italic">Market Specificity</span>
-                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy leading-tight italic">Engineered for the <br /> {location.name} Clinician.</h2>
+                                <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy leading-tight italic">Built for the <br /> {location.name} Clinician.</h2>
                                 <div className="space-y-8">
                                     {[
                                         { icon: "verified", title: "Compliance Mastery", desc: "Native understanding of California's state privacy protocols compared to federal baseline standards." },

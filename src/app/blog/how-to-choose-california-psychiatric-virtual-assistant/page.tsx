@@ -38,7 +38,7 @@ const selectionTakeaways = [
   },
   {
     point: "EMR-Native Architecture",
-    detail: "Your EMR—whether DrChrono, CharmHealth, or Kareo—should be your engine. Select partners who can engineer workflows directly within these platforms."
+    detail: "Your EMR—whether DrChrono, CharmHealth, or Kareo—should be your engine. Select partners who can build workflows directly within these platforms."
   },
   {
     point: "Clinical Performance",
@@ -88,14 +88,14 @@ const selectionCriteria = [
   },
   {
     title: "EMR Optimization",
-    description: "Masters-level proficiency in psychiatric-native EMR platforms and template engineering.",
+    description: "Masters-level proficiency in psychiatric-native EMR platforms and template design.",
     icon: "database_settings",
     critical: true,
     details: [
       "DrChrono template design",
       "CharmHealth workflow logic",
       "Luminello custom fields",
-      "Direct EMR integration engineering",
+      "Direct EMR integration setup",
       "Automated charting protocols"
     ]
   },
@@ -130,7 +130,7 @@ const selectionCriteria = [
 const comparisonTable = [
   {
     factor: "Philosophical Approach",
-    virtualMinds: "Infrastructure Engineering",
+    virtualMinds: "Operational Design",
     generalVA: "Basic Administrative Tasks",
     freelancer: "Ad-hoc task management"
   },
@@ -148,7 +148,7 @@ const comparisonTable = [
   },
   {
     factor: "Technical Depth",
-    virtualMinds: "EMR Template Engineering",
+    virtualMinds: "EMR Template Design",
     generalVA: "Basic software entry",
     freelancer: "Manual, slow execution"
   },
@@ -284,7 +284,7 @@ export default function HowToChoosePsychiatricVABlog() {
                         <span className="text-primary italic">Psychiatric VAs are Essential in California.</span>
                       </h2>
                       <p className="text-xl text-slate-600 font-display leading-relaxed mb-8">
-                        Elite psychiatric practices do not "hire general VAs." They engineer operational layers with a specialized California psychiatric virtual assistant who understands HIPAA, state privacy laws, and the legal nuances of Medi-Cal billing.
+                        Leading psychiatric practices do not "hire general VAs." They build operational layers with a specialized California psychiatric virtual assistant who understands HIPAA, state privacy laws, and the legal nuances of Medi-Cal billing.
                       </p>
                       <p className="text-slate-500 leading-relaxed mb-6">
                         When you hire a virtual assistant for your psychiatric clinic, you are adding more than just labor—you are adding a specialized system. This infrastructure handles psychiatric terminology, medication management, and complex EMR workflows (like DrChrono or CharmHealth) that general virtual assistants simply cannot navigate.
@@ -412,7 +412,7 @@ export default function HowToChoosePsychiatricVABlog() {
                     tableOfContents={tableOfContents}
                     relatedArticles={relatedArticles}
                     currentUrl="https://thevirtualminds.com/blog/how-to-choose-california-psychiatric-virtual-assistant"
-                    articleTitle="Engineering Vetting Standards"
+                    articleTitle="Setting Vetting Standards"
                   />
 
                   {/* SIDEBAR CTA CARD */}
@@ -445,7 +445,7 @@ export default function HowToChoosePsychiatricVABlog() {
                 <span className="!text-primary">High-Performance </span> Practice.
               </h2>
               <p className="text-xl md:text-2xl !text-slate-400 font-display leading-relaxed mb-12">
-                Stop hiring virtual assistants. Start engineering an infrastructure that works for the board-certified specialist.
+                Stop hiring virtual assistants. Start building a system that works for the board-certified specialist.
               </p>
               <div className="flex flex-col sm:flex-row gap-6 justify-center">
                 <Link
@@ -456,7 +456,7 @@ export default function HowToChoosePsychiatricVABlog() {
                   <span className="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
                 </Link>
               </div>
-              <p className="mt-8 text-slate-500 text-xs font-black uppercase tracking-[0.3em]">Built specifically for elite California Psychiatrists</p>
+              <p className="mt-8 text-slate-500 text-xs font-black uppercase tracking-[0.3em]">Built specifically for leading California Psychiatrists</p>
             </div>
           </div>
         </section>

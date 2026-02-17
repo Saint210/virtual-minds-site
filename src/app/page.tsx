@@ -72,11 +72,11 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6 animate-fade-in-up [animation-delay:200ms]">
-                  Stop managing tasks. Start engineering your practice. California's most specialized <strong>Psychiatric Virtual Assistant</strong> service.
+                  Stop managing tasks. Start growing your practice. California's most specialized <strong>Psychiatric Virtual Assistant</strong> service.
                 </p>
 
                 <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8 animate-fade-in-up [animation-delay:400ms]">
-                  Generic VAs fail in complex care settings. We engineer <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
+                  Generic VAs fail in complex care settings. We deliver <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up [animation-delay:600ms]">
@@ -121,7 +121,7 @@ export default function Home() {
                   </div>
                   <div className="mt-6 flex items-center gap-2 bg-trust-navy/5 w-fit px-4 py-2 rounded-lg border border-trust-navy/10">
                     <span className="material-symbols-outlined text-trust-navy text-lg">school</span>
-                    <span className="text-xs font-bold text-trust-navy">Engineered for Academic-level Workflows</span>
+                    <span className="text-xs font-bold text-trust-navy">Built for Academic-Level Workflows</span>
                   </div>
                 </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
                 <span className="text-8xl text-white/5 font-serif absolute -top-10 -left-6 md:-left-12 select-none pointer-events-none">"</span>
 
                 <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-serif italic relative">
-                  Cheryl engineered a masterclass in independent psychiatric practice management. Her team stabilized our operations overnight, ensuring consistent revenue and seamless patient intake. With the admin chaos eliminated, I’m finally free to scale—and I’ve already commissioned Virtual Minds to build our new <strong className="text-white font-bold not-italic decoration-primary/50 underline underline-offset-4">high-conversion website</strong>.
+                  Cheryl delivered a masterclass in independent psychiatric practice management. Her team stabilized our operations overnight, ensuring consistent revenue and seamless patient intake. With the admin chaos eliminated, I’m finally free to scale—and I’ve already commissioned Virtual Minds to build our new <strong className="text-white font-bold not-italic decoration-primary/50 underline underline-offset-4">high-conversion website</strong>.
                 </p>
 
                 <div className="mt-10 flex flex-col md:flex-row items-center gap-6 pt-8 md:justify-between border-t border-white/10">
@@ -230,7 +230,7 @@ export default function Home() {
             <div className="text-center max-w-3xl mx-auto mb-20">
               <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Clinical Specialization</span>
               <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
-                Engineered for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Complex Care</span>
+                Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Complex Care</span>
               </h2>
               <p className="text-xl text-slate-600 leading-relaxed font-light">
                 Refined operational protocols for <strong className="font-medium text-trust-navy">academically trained</strong>, subspecialty-focused psychiatrists.

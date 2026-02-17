@@ -108,7 +108,7 @@ export default function EHROptimizationGuide() {
                                         </p>
                                         <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
                                             <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
-                                                "If you spend more than 5 minutes documenting a 30-minute session, your EHR is working against you. Optimization isn't just about features — it's about engineering the friction out of every clinical encounter."
+                                                "If you spend more than 5 minutes documenting a 30-minute session, your EHR is working against you. Optimization isn't just about features — it's about removing the friction from every clinical encounter."
                                             </p>
                                             <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Head of Systems, Virtual Minds</cite>
                                         </blockquote>
