@@ -64,7 +64,7 @@ export default function StartupGuideSchema() {
                 "@type": "HowToStep",
                 "position": 5,
                 "name": "Launch Practice",
-                "text": "Implement EHR system, set up billing infrastructure, establish marketing presence, and begin accepting patients.",
+                "text": "Implement EHR system, set up billing systems, establish marketing presence, and begin accepting patients.",
                 "url": "https://thevirtualminds.com/resources/psychiatry-practice-startup-guide#launch"
             }
         ],

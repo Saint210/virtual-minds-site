@@ -7,7 +7,7 @@ import ProtectedEmail from "@/components/ui/ProtectedEmail";
 
 export const metadata = {
     title: "Request Your Recovery Plan | Virtual Minds Psychiatric Ops",
-    description: "Connect with California's elite psychiatric operational firm. Audit your EHR workflows, billing infrastructure, and compliance guardrails.",
+    description: "Connect with California's specialized psychiatric operational firm. Audit your EHR workflows, billing systems, and compliance guardrails.",
 };
 
 export default function ContactPage() {
@@ -157,9 +157,9 @@ export default function ContactPage() {
                     <div className="max-w-[1400px] mx-auto px-6 text-center">
                         <div className="max-w-3xl mx-auto mb-20 text-center">
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-6 italic leading-tight">
-                                Serving California's Clinical Elite <br /> from Los Angeles.
+                                Serving California's Clinical Leaders <br /> from Los Angeles.
                             </h2>
-                            <p className="text-xl text-slate-500 italic">Our headquarters manage infrastructure for practices from San Diego to the Bay Area.</p>
+                            <p className="text-xl text-slate-500 italic">Our headquarters support practices from San Diego to the Bay Area.</p>
                         </div>
 
                         <div className="bg-[#FAF8F3] rounded-[4rem] overflow-hidden shadow-2xl border border-slate-100 relative group">

@@ -33,7 +33,7 @@ export default function MedicalSchema() {
                 "sameAs": [
                     "https://www.linkedin.com/company/virtual-minds-ca"
                 ],
-                "description": "Elite specialized virtual assistant services for California psychiatrists. Experts in Telehealth workflows, HIPAA compliance, and EHR optimization.",
+                "description": "Specialized virtual assistant services for California psychiatrists. Experts in Telehealth workflows, HIPAA compliance, and EHR optimization.",
                 "medicalSpecialty": [
                     {
                         "@type": "MedicalSpecialty",
@@ -110,7 +110,7 @@ export default function MedicalSchema() {
                 "provider": { "@id": "https://thevirtualminds.com/#organization" },
                 "areaServed": "California",
                 "serviceType": "Medical Staffing",
-                "description": "Elite HIPAA-compliant virtual assistants trained specifically for psychiatry workflows."
+                "description": "HIPAA-compliant virtual assistants trained specifically for psychiatry workflows."
             },
             {
                 "@type": "Service",
@@ -122,7 +122,7 @@ export default function MedicalSchema() {
             },
             {
                 "@type": "Service",
-                "name": "Telepsychiatry Infrastructure Operations",
+                "name": "Telepsychiatry Support Operations",
                 "provider": { "@id": "https://thevirtualminds.com/#organization" },
                 "areaServed": "California",
                 "serviceType": "Telehealth Support",

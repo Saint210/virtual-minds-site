@@ -87,7 +87,7 @@ export default function SchedulingPage() {
                                         ))}
                                     </div>
                                     <div className="text-sm text-slate-500 font-medium leading-tight text-center sm:text-left">
-                                        <p><strong className="text-trust-navy">Orchestrating Time for California's Elite Practices</strong></p>
+                                        <p><strong className="text-trust-navy">Managing Time for California's Leading Practices</strong></p>
                                         <p>Standardized workflow management for psychiatrists and clinical directors.</p>
                                     </div>
                                 </div>

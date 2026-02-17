@@ -204,7 +204,7 @@ export default function ResourcesPage() {
                                         <div className="space-y-3">
                                             <div className="flex items-center gap-2 text-xs text-slate-600">
                                                 <span className="material-symbols-outlined text-xs text-primary">check_circle</span>
-                                                <span>Elite Listings</span>
+                                                <span>Featured Listings</span>
                                             </div>
                                             <div className="flex items-center gap-2 text-xs text-slate-600">
                                                 <span className="material-symbols-outlined text-xs text-primary">check_circle</span>

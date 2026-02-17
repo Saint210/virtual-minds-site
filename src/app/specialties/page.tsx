@@ -33,7 +33,7 @@ export default function SpecialtiesPage() {
                         <div className="text-center max-w-3xl mx-auto mb-16">
                             <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                 <span className="material-symbols-outlined text-primary text-[16px]">psychology</span>
-                                Executive Specialization
+                                Clinical Specialization
                             </div>
 
                             <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-6 leading-tight">
@@ -42,7 +42,7 @@ export default function SpecialtiesPage() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-                                We provide tailored administrative infrastructure for California psychiatrists across all subspecialties. Select your specialty to see how we support your unique practice needs.
+                                We provide tailored administrative support for California psychiatrists across all subspecialties. Select your specialty to see how we support your unique practice needs.
                             </p>
                         </div>
 

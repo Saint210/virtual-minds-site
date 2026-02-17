@@ -46,7 +46,7 @@ const costOptions = [
     training: "Basic admin",
     hipaaCompliance: "Sometimes",
     support: "Limited",
-    pros: ["Dedicated support", "Basic processes", "Some infrastructure"],
+    pros: ["Dedicated support", "Basic processes", "Some systems"],
     cons: ["No psychiatric expertise", "Generic training", "Limited EMR knowledge"],
     riskLevel: "Medium",
     valueScore: 3.2

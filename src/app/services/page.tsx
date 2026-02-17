@@ -9,7 +9,7 @@ export const metadata = {
     description: "Specialized psychiatric virtual assistant services for California practices. HIPAA-compliant support for billing, intake, EHR management, and practice consulting. Engineered for complex care.",
 };
 
-const serviceBlueprints = [
+const serviceCategories = [
     {
         id: "SYS_CLINICAL_01",
         title: "Psychiatric-Trained Assistants",
@@ -25,7 +25,7 @@ const serviceBlueprints = [
         title: "Strategic Practice Consulting",
         subtitle: "Operational Diagnostics",
         desc: "A comprehensive diagnostic for established psychiatric practices. We identify friction points, compliance vulnerabilities, and operational inefficiencies.",
-        features: ["Workflow Analysis", "Policy Refinement", "Risk Mitigation", "System Architecture"],
+        features: ["Workflow Analysis", "Policy Refinement", "Risk Mitigation", "System Optimization"],
         clinicalImpact: "Achieve firm-wide clarity.",
         icon: "analytics",
         link: "/services/practice-consulting",
@@ -44,7 +44,7 @@ const serviceBlueprints = [
     {
         id: "SYS_LAUNCH_04",
         title: "Practice Start-Up",
-        subtitle: "Turnkey Infrastructure",
+        subtitle: "Turnkey Setup",
         desc: "Turnkey operational launch for new California practices. We build the compliant foundation required for a successful private practice launch.",
         features: ["EHR Configuration", "Credentialing", "SOP Development", "Telehealth Setup"],
         clinicalImpact: "Launch $15k under budget.",
@@ -55,7 +55,7 @@ const serviceBlueprints = [
         id: "SYS_HIPAA_05",
         title: "HIPAA & Compliance",
         subtitle: "Risk Mitigation",
-        desc: "Audit-ready infrastructure designed for California’s privacy landscape. We build secure systems that protect your license and your patients.",
+        desc: "Audit-ready systems built for California’s privacy landscape. We build secure systems that protect your license and your patients.",
         features: ["BAA Execution", "Secure Workflows", "Audit Prep", "Data Governance"],
         clinicalImpact: "Eliminate regulatory risk.",
         icon: "shield_moon",
@@ -74,7 +74,7 @@ const serviceBlueprints = [
     {
         id: "SYS_EHR_07",
         title: "EHR Optimization",
-        subtitle: "Digital Architecture",
+        subtitle: "Digital Optimization",
         desc: "Expert configuration for SimplePractice, Kareo, and intake platforms. We make your software work for you, not against you.",
         features: ["Template Design", "Automation Rules", "Portal Setup", "Integration Logic"],
         clinicalImpact: "Reduce screen time by 30%.",
@@ -83,7 +83,7 @@ const serviceBlueprints = [
     },
     {
         id: "SYS_ADMIN_08",
-        title: "Executive Administration",
+        title: "Practice Administration",
         subtitle: "Professional Support",
         desc: "Precision management for scheduling and correspondence. We handle the administrative load with the discretion high-profile patients expect.",
         features: ["Calendar Ops", "Secure Messaging", "Document Control", "Referral Mgmt"],
@@ -119,7 +119,7 @@ export default function ServicesPage() {
                             <div className="lg:w-[55%] pt-4">
                                 <div className="inline-flex items-center gap-2 bg-white border border-trust-navy/10 rounded-full px-4 py-1.5 text-trust-navy text-[11px] font-black uppercase tracking-widest mb-6 shadow-sm">
                                     <span className="material-symbols-outlined text-primary text-sm">verified</span>
-                                    Operational Infrastructure
+                                    Practice Operations
                                 </div>
 
                                 <h1 className="font-serif text-4xl md:text-6xl text-trust-navy mb-6 leading-[1.05] tracking-tight">
@@ -187,7 +187,7 @@ export default function ServicesPage() {
                     <div className="max-w-[1400px] mx-auto px-6">
                         <div className="text-center max-w-3xl mx-auto mb-20">
                             <span className="text-primary font-bold tracking-widest uppercase text-xs mb-3 block">The Ecosystem</span>
-                            <h2 className="font-serif text-4xl text-trust-navy leading-tight mb-4">Operational <span className="italic text-slate-400">Architecture</span></h2>
+                            <h2 className="font-serif text-4xl text-trust-navy leading-tight mb-4">Operational <span className="italic text-slate-400">Services</span></h2>
                             <p className="text-slate-500 text-sm font-medium leading-relaxed">
                                 Our services are organized into three integrated systems designed to stabilize, operate, and protect your practice.
                             </p>
@@ -201,12 +201,12 @@ export default function ServicesPage() {
                                 </div>
                                 <div>
                                     <h3 className="font-serif text-2xl text-trust-navy">Clinical Operations Systems</h3>
-                                    <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">Infrastructure & Compliance</p>
+                                    <p className="text-xs text-slate-400 font-bold uppercase tracking-wider">Systems & Compliance</p>
                                 </div>
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {serviceBlueprints.filter(s => ["SYS_AUDIT_02", "SYS_LAUNCH_04", "SYS_HIPAA_05", "SYS_EHR_07"].includes(s.id)).map((service, idx) => (
+                                {serviceCategories.filter(s => ["SYS_AUDIT_02", "SYS_LAUNCH_04", "SYS_HIPAA_05", "SYS_EHR_07"].includes(s.id)).map((service, idx) => (
                                     <Link
                                         key={idx}
                                         href={service.link}
@@ -262,7 +262,7 @@ export default function ServicesPage() {
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {serviceBlueprints.filter(s => ["SYS_CLINICAL_01", "SYS_RX_06", "SYS_ADMIN_08"].includes(s.id)).map((service, idx) => (
+                                {serviceCategories.filter(s => ["SYS_CLINICAL_01", "SYS_RX_06", "SYS_ADMIN_08"].includes(s.id)).map((service, idx) => (
                                     <Link
                                         key={idx}
                                         href={service.link}
@@ -313,7 +313,7 @@ export default function ServicesPage() {
                             </div>
 
                             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-                                {serviceBlueprints.filter(s => ["SYS_RCM_03"].includes(s.id)).map((service, idx) => (
+                                {serviceCategories.filter(s => ["SYS_RCM_03"].includes(s.id)).map((service, idx) => (
                                     <Link
                                         key={idx}
                                         href={service.link}
@@ -364,7 +364,7 @@ export default function ServicesPage() {
 
                             <div className="relative z-10">
                                 <h2 className="font-serif text-3xl md:text-5xl text-white mb-6 leading-tight">
-                                    Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-gold italic">Upgrade</span> Your Infrastructure?
+                                    Ready to <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-gold italic">Upgrade</span> Your Operations?
                                 </h2>
                                 <p className="text-slate-300 text-lg md:text-xl mb-10 max-w-2xl mx-auto font-light leading-relaxed">
                                     Stop managing administrative chaos. Implement a clinical-grade operating system designed for the specific demands of your practice.

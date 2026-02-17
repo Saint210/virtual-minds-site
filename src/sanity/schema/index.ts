@@ -1,5 +1,6 @@
 import { type SchemaTypeDefinition } from 'sanity'
 import post from './post'
+import author from './author'
 import service from './service'
 import location from './location'
 import calculatorSubmission from './calculatorSubmission' // Import
@@ -16,6 +17,7 @@ import page, {
 
 export const schemaTypes: SchemaTypeDefinition[] = [
     post,
+    author,
     service,
     location,
     calculatorSubmission, // Register

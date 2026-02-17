@@ -12,7 +12,7 @@ export default function PortalDashboard() {
                     <h2 className="text-3xl font-serif font-bold text-slate-900 mb-4">Start Your Digital Migration.</h2>
                     <p className="text-slate-500 text-lg leading-relaxed">
                         Our AI engine is ready to transform your existing marketing into an
-                        <span className="text-[#D2691E] font-bold"> Elite Practice </span> ecosystem.
+                        <span className="text-[#D2691E] font-bold"> Premium Practice </span> ecosystem.
                     </p>
                     <div className="mt-8 flex gap-4">
                         <Link
@@ -94,7 +94,7 @@ export default function PortalDashboard() {
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                     {[
-                        { id: 'cms', name: 'Elite Website', status: 'Inactive', icon: 'web' },
+                        { id: 'cms', name: 'Premium Website', status: 'Inactive', icon: 'web' },
                         { id: 'seo', name: 'pSEO Locations', status: 'Inactive', icon: 'map' },
                         { id: 'calc', name: 'Patient Calculator', status: 'Inactive', icon: 'calculate' },
                         { id: 'auth', name: 'Patient Portal', status: 'Coming Soon', icon: 'login' },

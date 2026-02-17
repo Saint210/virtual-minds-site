@@ -11,6 +11,7 @@ interface BlogPost {
     readTime: string;
     image: string;
     slug: string;
+    authorName?: string;
     featured?: boolean;
 }
 
@@ -258,9 +259,14 @@ export default function BlogFeed({ posts, categories, upgradedSlugs }: BlogFeedP
                                                 </span>
                                             </div>
                                             <div className="flex items-center justify-between w-full">
-                                                <p className="text-[10px] text-slate-400 font-mono">
-                                                    {post.date}
-                                                </p>
+                                                <div className="flex flex-col">
+                                                    <p className="text-[10px] text-slate-400 font-mono">
+                                                        {post.date}
+                                                    </p>
+                                                    {post.authorName && (
+                                                        <p className="text-[10px] text-primary font-bold uppercase tracking-wider">By {post.authorName}</p>
+                                                    )}
+                                                </div>
                                                 <span className="material-symbols-outlined text-slate-300 text-sm group-hover:text-primary group-hover:translate-x-1 transition-all">arrow_forward</span>
                                             </div>
                                         </div>

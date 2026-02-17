@@ -42,7 +42,7 @@ export default function IntakeDelegationPost() {
                         <div className="max-w-4xl">
                             <div className="inline-flex items-center gap-3 mb-8">
                                 <span className="px-3 py-1 border border-primary/30 text-primary text-[10px] font-black uppercase tracking-[0.2em] rounded-full bg-white/50 backdrop-blur-sm">
-                                    Operational Blueprint
+                                    Operational Guide
                                 </span>
                                 <span className="text-slate-400 text-sm font-serif italic">Feb 2026 Edition</span>
                             </div>

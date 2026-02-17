@@ -12,7 +12,7 @@ import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
-    description: "California psychiatric patient retention and intake infrastructure. We stabilize your census with screening, onboarding, and continuity logic.",
+    description: "California psychiatric patient retention and intake systems. We stabilize your census with screening, onboarding, and continuity logic.",
 };
 
 export default function IntakePage() {
@@ -46,7 +46,7 @@ export default function IntakePage() {
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
                                     Patient Intake <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        Infrastructure.
+                                        Systems.
                                     </span>
                                 </h1>
 

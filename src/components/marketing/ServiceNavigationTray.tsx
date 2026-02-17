@@ -15,7 +15,7 @@ export default function ServiceNavigationTray() {
                             <span className="text-[#D2691E] font-black uppercase tracking-[0.3em] text-[10px] mb-6 block">Practice Intelligence Hub</span>
                             <h2 className="text-3xl md:text-5xl font-serif font-bold text-trust-navy mb-6 italic">Looking for a <br />specific protocol?</h2>
                             <p className="text-slate-500 text-lg mb-10 max-w-2xl mx-auto leading-relaxed font-display">
-                                Access our specialized infrastructure resources to compare management models, verify clinical yield, or plan your practice roadmap.
+                                Access our specialized practice resources to compare management models, verify clinical yield, or plan your practice roadmap.
                             </p>
 
                             <div className="flex flex-wrap justify-center gap-4">

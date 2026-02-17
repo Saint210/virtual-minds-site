@@ -11,7 +11,7 @@ import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
-    description: "HIPAA compliant clinical support for psychiatrists. We provide BAA coverage, secure workflows, and risk mitigation infrastructure.",
+    description: "HIPAA compliant clinical support for psychiatrists. We provide BAA coverage, secure workflows, and risk mitigation systems.",
 };
 
 export default function HIPAAPage() {
@@ -86,7 +86,7 @@ export default function HIPAAPage() {
                                     <div className="space-y-4">
                                         <div className="flex items-center gap-3">
                                             <span className="material-symbols-outlined text-trust-navy text-sm font-bold">verified_user</span>
-                                            <span className="text-slate-600 font-medium">Bespoke psychiatric-specific HIPAA infrastructure</span>
+                                            <span className="text-slate-600 font-medium">Custom psychiatric-specific HIPAA systems</span>
                                         </div>
                                         <div className="flex items-center gap-3">
                                             <span className="material-symbols-outlined text-trust-navy text-sm font-bold">verified_user</span>
@@ -156,7 +156,7 @@ export default function HIPAAPage() {
                                 { icon: 'verified_user', title: 'Annual Certification', desc: 'Our VAs undergo mandatory annual HIPAA re-certification and regular phishing/security drills.' },
                                 { icon: 'vpn_lock', title: 'Secure VPN Access', desc: 'All clinical work is performed through encrypted, dedicated VPNs with multi-factor authentication.' },
                                 { icon: 'desktop_access_disabled', title: 'Data Sovereignty', desc: 'No patient data is ever stored on local machines. PHI remains strictly within your EHR environment.' },
-                                { icon: 'policy', title: 'Secured Infrastructure', desc: 'Our administrative infrastructure is built on industry-standard security protocols for operational stability.' },
+                                { icon: 'policy', title: 'Security Systems', desc: 'Our administrative systems are built on industry-standard security protocols for operational stability.' },
                                 { icon: 'history', title: 'Audit Trail Logs', desc: 'Every action taken by a VA is logged and timestamped within our internal systems for full transparency.' }
                             ].map((item, i) => (
                                 <div key={i} className="flex flex-col gap-6 p-10 bg-white rounded-[2.5rem] border border-slate-100 hover:shadow-2xl hover:shadow-[#D2691E]/10 transition-all duration-500 group">
@@ -185,7 +185,7 @@ export default function HIPAAPage() {
                                     <div className="space-y-6">
                                         {[
                                             'Encrypted End-to-End PHI Handling',
-                                            'Dedicated Clinical Infrastructure',
+                                            'Dedicated Clinical Systems',
                                             'Rigorous Background Screenings',
                                             'Ongoing Security Oversight'
                                         ].map((step, i) => (

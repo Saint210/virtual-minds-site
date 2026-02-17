@@ -31,8 +31,20 @@ export async function generateMetadata({ params }: { params: Promise<{ city: str
     return {
         title: location.metaTitle,
         description: location.metaDesc,
+        alternates: {
+            canonical: `https://thevirtualminds.com/locations/${location.slug}`,
+        },
+        openGraph: {
+            title: location.metaTitle,
+            description: location.metaDesc,
+            url: `https://thevirtualminds.com/locations/${location.slug}`,
+            siteName: "Virtual Minds",
+            locale: "en_US",
+            type: "website",
+        },
     };
 }
+
 
 // 3. Page Component
 export default async function LocationPage({ params }: { params: Promise<{ city: string }> }) {
@@ -214,7 +226,7 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                             Secure Your <br /> {location.name} Perimeter.
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-display leading-relaxed">
-                            Join the elite psychiatric practitioners in {location.name} who have transitioned to the Virtual Minds operational standard.
+                            Join the leading psychiatric practitioners in {location.name} who have transitioned to the Virtual Minds operational standard.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link
@@ -225,6 +237,20 @@ export default async function LocationPage({ params }: { params: Promise<{ city:
                                 Schedule {location.name} Audit
                             </Link>
                         </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/locations"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            View All California Psychiatric Service Locations
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Explore our full network of virtual assistant coverage areas across California.</p>
                     </div>
                 </section>
             </main>

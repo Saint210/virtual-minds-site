@@ -5,7 +5,7 @@ import FaqClient from "@/components/faq/FaqClient";
 
 export const metadata = {
     title: "Operational Intelligence FAQ | Psychiatric Practice Management",
-    description: "Technical and operational answers for specialized psychiatric practices. Compliance, scaling, and infrastructure support protocols.",
+    description: "Technical and operational answers for specialized psychiatric practices. Compliance, scaling, and operational support protocols.",
 };
 
 export default function FAQPage() {

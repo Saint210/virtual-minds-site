@@ -7,7 +7,7 @@ import specialties from "@/data/specialties.json";
 
 export const metadata = {
     title: "California Psychiatric Practice Resource Hub | Virtual Minds",
-    description: "Elite operational blueprints, HIPAA compliance guides, and practice scaling resources for California mental health professionals.",
+    description: "Expert guides, HIPAA compliance resources, and practice scaling tools for California mental health professionals.",
 };
 
 export default function ResourcesHub() {
@@ -94,25 +94,25 @@ export default function ResourcesHub() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                             {/* 1. Medication Management Hub - HERO CARD */}
-                            <Link href="/resources/blueprints/medication-management" className="group relative overflow-hidden rounded-[40px] bg-slate-900 border border-white/10 hover:border-primary/40 transition-all shadow-2xl hover:shadow-primary/10 lg:col-span-2">
+                            <Link href="/resources/guides/medication-management" className="group relative overflow-hidden rounded-[40px] bg-slate-900 border border-white/10 hover:border-primary/40 transition-all shadow-2xl hover:shadow-primary/10 lg:col-span-2">
                                 <div className="aspect-[21/9] bg-cover bg-center transition-transform group-hover:scale-105 duration-700" style={{ backgroundImage: 'url("/images/medication-management-hero.png")' }}>
                                     <div className="absolute inset-0 bg-gradient-to-t from-black via-black/90 to-black/50"></div>
                                 </div>
                                 <div className="absolute inset-0 flex flex-col justify-end p-12 text-white z-10">
                                     <div className="flex items-center gap-3 mb-4">
-                                        <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary drop-shadow-md">Elite Blueprint</span>
+                                        <span className="text-[10px] font-black uppercase tracking-[0.4em] text-primary drop-shadow-md">Expert Guide</span>
                                         <span className="bg-primary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-wider">Most Popular</span>
                                     </div>
                                     <h3 className="text-4xl md:text-5xl font-serif font-bold italic mb-6 leading-tight !text-white drop-shadow-xl" style={{ textShadow: '0 4px 12px rgba(0,0,0,0.8), 0 2px 6px rgba(0,0,0,0.9)' }}>
                                         Medication Management <br />
-                                        & Refill Infrastructure
+                                        & Refill Automation
                                     </h3>
                                     <p className="text-slate-100 max-w-xl mb-8 font-medium leading-relaxed opacity-0 group-hover:opacity-100 transition-opacity duration-500">
                                         <strong className="text-white">Stop losing 8+ hours/week</strong> on pharmacy calls and refill chaos. Master the pharmacy liaison workflow with our automated refill system.
                                     </p>
                                     <div className="flex items-center gap-6">
                                         <div className="flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] group-hover:gap-5 transition-all text-white">
-                                            Explore the Blueprint <span className="material-symbols-outlined text-sm font-bold bg-primary p-1.5 rounded-full shadow-lg group-hover:rotate-45 transition-transform">arrow_forward</span>
+                                            Explore the Guide <span className="material-symbols-outlined text-sm font-bold bg-primary p-1.5 rounded-full shadow-lg group-hover:rotate-45 transition-transform">arrow_forward</span>
                                         </div>
                                         {/* Engagement indicator */}
                                         <div className="flex items-center gap-2 text-slate-400 text-sm">
@@ -138,11 +138,11 @@ export default function ResourcesHub() {
                                     </p>
                                     {/* Value indicator */}
                                     <div className="bg-white border border-green-100 rounded-xl p-3 mb-6">
-                                        <p className="text-xs text-slate-500 mb-1">Infrastructure Reliability</p>
+                                        <p className="text-xs text-slate-500 mb-1">System Reliability</p>
                                         <p className="text-2xl font-black text-green-600">Enterprise Grade</p>
                                     </div>
                                 </div>
-                                <Link href="/resources/blueprints/revenue-architecture" className="text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <Link href="/resources/guides/billing-and-collections" className="text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Analyze Your Efficiency <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
@@ -161,7 +161,7 @@ export default function ResourcesHub() {
                                         <strong className="text-trust-navy">Protect your DEA license.</strong> A specialized guide to managing <span className="text-[#67927A] font-bold">stimulant prescribing workflows</span> and California compliance for remote practices.
                                     </p>
                                 </div>
-                                <Link href="/resources/blueprints/controlled-substance-ops" className="text-[#67927A] font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <Link href="/resources/guides/controlled-substance-ops" className="text-[#67927A] font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Secure Your Workflow <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
@@ -176,18 +176,18 @@ export default function ResourcesHub() {
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold mb-4 italic leading-tight !text-white">
                                         Psychiatrist <br />
-                                        Start-Up Blueprint
+                                        Start-Up Guide
                                     </h3>
                                     <p className="text-slate-100 mb-8 leading-relaxed font-medium">
                                         <strong className="text-white">Transitioning from hospital to solo?</strong> The exact operational roadmap for setting up your private practice in 90 days.
                                     </p>
                                 </div>
-                                <Link href="/resources/blueprints/start-up-roadmap" className="text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2 hover:text-white transition-colors">
+                                <Link href="/resources/guides/start-up-roadmap" className="text-primary font-black text-xs uppercase tracking-widest flex items-center gap-2 hover:text-white transition-colors">
                                     View Roadmap <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
 
-                            {/* 5. EHR Hardening */}
+                            {/* 5. EHR Optimization */}
                             <div className="group p-10 bg-slate-50 rounded-[40px] border-2 border-slate-200 hover:border-blue-500/30 transition-all duration-500 flex flex-col justify-between shadow-sm hover:shadow-xl hover:shadow-blue-500/5 hover:-translate-y-2 min-h-[320px]">
                                 <div>
                                     <div className="flex items-start justify-between mb-6">
@@ -195,7 +195,7 @@ export default function ResourcesHub() {
                                             <span className="material-symbols-outlined text-3xl">database</span>
                                         </div>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">EHR Hardening</h3>
+                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4">EHR Optimization</h3>
                                     <p className="text-slate-600 mb-6 leading-relaxed font-medium">
                                         <strong className="text-trust-navy">Cut documentation time significantly.</strong> Custom templates for <span className="text-blue-600 font-bold">DrChrono, CharmHealth, and AdvancedMD</span> built specifically for psychiatric evaluations and MSEs.
                                     </p>
@@ -205,7 +205,7 @@ export default function ResourcesHub() {
                                         <p className="text-2xl font-black text-blue-600">~32 Hours</p>
                                     </div>
                                 </div>
-                                <Link href="/resources/blueprints/ehr-hardening" className="text-blue-600 font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
+                                <Link href="/resources/guides/ehr-optimization" className="text-blue-600 font-black text-xs uppercase tracking-widest flex items-center gap-2 group-hover:gap-4 transition-all">
                                     Optimize Your EHR <span className="material-symbols-outlined text-sm">arrow_forward</span>
                                 </Link>
                             </div>
@@ -295,7 +295,7 @@ export default function ResourcesHub() {
                             <strong className="text-trust-navy">Stop managing the chaos.</strong> Start <span className="text-primary font-bold">leading your practice</span>.
                         </p>
                         <p className="text-base md:text-lg text-slate-600 mb-12 max-w-xl mx-auto leading-relaxed">
-                            Book your <strong className="text-trust-navy">15-minute Recovery Plan</strong> to define your infrastructure roadmap and claim your <strong className="text-primary">free compliance review</strong>.
+                            Book your <strong className="text-trust-navy">15-minute Recovery Plan</strong> to define your practice roadmap and claim your <strong className="text-primary">free compliance review</strong>.
                         </p>
 
                         {/* Benefit list */}

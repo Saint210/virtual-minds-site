@@ -2,13 +2,13 @@
     {
         "slug": "psychiatrists",
         "name": "General Psychiatry",
-        "metaTitle": "General Psychiatry Practice Architecture | Virtual Minds",
-        "metaDescription": "Full-spectrum operational infrastructure for board-certified psychiatrists. We manage intake conversion, titration logic, and practice workflow.",
-        "heroDescription": "We engineer the operational infrastructure so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
+        "metaTitle": "General Psychiatry Practice Systems | Virtual Minds",
+        "metaDescription": "Full-spectrum operational support for board-certified psychiatrists. We manage intake conversion, titration logic, and practice workflow.",
+        "heroDescription": "We engineer the operational systems so you can focus on clinical excellence, managing the administrative weight of high-acuity practice.",
         "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
-            "Practice Infrastructure Design",
-            "Workflow Architecture Review",
+            "Practice Systems Design",
+            "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
             "Client Experience Engineering"
         ],
@@ -58,8 +58,8 @@
         "slug": "womens-mental-health",
         "name": "Women's Mental Health",
         "metaTitle": "Women's Mental Health Operations | Virtual Minds",
-        "metaDescription": "Specialized infrastructure for reproductive psychiatry. High-sensitivity intake coordination and titration tracking.",
-        "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We engineer the intake and scheduling infrastructure to protect your patient experience.",
+        "metaDescription": "Specialized support for reproductive psychiatry. High-sensitivity intake coordination and titration tracking.",
+        "heroDescription": "Reproductive psychiatry requires high-touch sensitivity. We engineer the intake and scheduling systems to protect your patient experience.",
         "heroImage": "/images/homepage-hero.png",
         "consultingServices": [
             "HIPAA Risk Mitigation",
@@ -102,13 +102,13 @@
         "slug": "child-adolescent-psychiatry",
         "name": "Child & Adolescent",
         "metaTitle": "Child Psychiatry Practice Systems | Virtual Minds",
-        "metaDescription": "Operational infrastructure for child psychiatry. Managing family coordination, guardian consent workflows, and school correspondence.",
+        "metaDescription": "Operational support for child psychiatry. Managing family coordination, guardian consent workflows, and school correspondence.",
         "heroDescription": "We manage the complex family coordination and guardian consent workflows required for seamless pediatric clinical care.",
         "heroImage": "/images/about-hero.png",
         "consultingServices": [
             "EHR Optimization",
-            "Practice Infrastructure Design",
-            "Workflow Architecture Review",
+            "Practice Systems Design",
+            "Workflow Optimization Review",
             "Physical/Remote Office Setup"
         ],
         "vaServices": [
@@ -151,7 +151,7 @@
         "heroImage": "/images/hero-dashboard.png",
         "consultingServices": [
             "EHR Optimization",
-            "Workflow Architecture Review",
+            "Workflow Optimization Review",
             "Protocol Optimization Strategy",
             "Contract Review and Negotiation"
         ],
@@ -189,8 +189,8 @@
     {
         "slug": "adhd-neuropsychiatry",
         "name": "ADHD & Neuropsych",
-        "metaTitle": "ADHD & Neuropsychiatry Infrastructure | Virtual Minds",
-        "metaDescription": "Precision infrastructure for ADHD practices. Managing controlled substance workflows, prior authorizations, and testing logistics.",
+        "metaTitle": "ADHD & Neuropsychiatry Support | Virtual Minds",
+        "metaDescription": "Precision support for ADHD practices. Managing controlled substance workflows, prior authorizations, and testing logistics.",
         "heroDescription": "We engineer the controlled substance workflows and prior authorization logic required for high-volume ADHD and Neuropsych practices.",
         "heroImage": "/images/practice-consulting-dashboard.png",
         "consultingServices": [
@@ -233,12 +233,12 @@
     {
         "slug": "private-practice-launch",
         "name": "Practice Launch",
-        "metaTitle": "Psychiatric Practice Architecture | Virtual Minds",
+        "metaTitle": "Psychiatric Practice Systems | Virtual Minds",
         "metaDescription": "Complete operational chassis for new private practices. From entity formation logistics to EHR engineering.",
         "heroDescription": "We engineer the entire operational chassis for your new California private practice launch, ensuring a stable foundation from day one.",
         "heroImage": "/images/scheduling-hero.png",
         "consultingServices": [
-            "Practice Infrastructure Design",
+            "Practice Systems Design",
             "Physical/Remote Office Setup",
             "EHR Engineering",
             "Contract Review and Negotiation"
@@ -278,12 +278,12 @@
         "slug": "sleep-medicine",
         "name": "Sleep Medicine",
         "metaTitle": "Sleep Medicine Operations | Virtual Minds",
-        "metaDescription": "Specialized infrastructure for sleep psychiatry. Managing sleep study logistics, results tracking, and patient follow-up.",
+        "metaDescription": "Specialized support for sleep psychiatry. Managing sleep study logistics, results tracking, and patient follow-up.",
         "heroDescription": "We manage the referral coordination and administrative follow-up for sleep studies, ensuring reports are filed and appointments are booked.",
         "heroImage": "/images/medication-management-hero.png",
         "consultingServices": [
             "EHR Optimization",
-            "Workflow Architecture Review",
+            "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
             "Patient Experience Design"
         ],
@@ -322,12 +322,12 @@
         "slug": "ocd-anxiety-disorders",
         "name": "OCD & Anxiety Disorders",
         "metaTitle": "OCD & Anxiety Workflow Systems | Virtual Minds",
-        "metaDescription": "Operational infrastructure for OCD/Anxiety specialists. Managing intensive treatment scheduling and ERP protocol coordination.",
+        "metaDescription": "Operational support for OCD/Anxiety specialists. Managing intensive treatment scheduling and ERP protocol coordination.",
         "heroDescription": "We engineer the intensive scheduling logic required for ERP protocols and frequent touchpoints, ensuring adherence to the administrative side of treatment plans.",
         "heroImage": "/images/virtual-assistant-hero.png",
         "consultingServices": [
-            "Practice Infrastructure Design",
-            "Workflow Architecture Review",
+            "Practice Systems Design",
+            "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
             "Client Experience Engineering"
         ],
@@ -366,7 +366,7 @@
         "slug": "eating-disorders",
         "name": "Eating Disorders",
         "metaTitle": "Eating Disorder Care Systems | Virtual Minds",
-        "metaDescription": "Specialized infrastructure for eating disorder psychiatry. Coordinating multidisciplinary teams and meal support tracking.",
+        "metaDescription": "Specialized support for eating disorder psychiatry. Coordinating multidisciplinary teams and meal support tracking.",
         "heroDescription": "We coordinate the administrative communication between multidisciplinary teams, ensuring seamless updates between providers.",
         "heroImage": "/images/psychiatrist-startup-planning.png",
         "consultingServices": [
@@ -410,11 +410,11 @@
         "slug": "consult-liaison",
         "name": "Consult-Liaison",
         "metaTitle": "Consult-Liaison Operations | Virtual Minds",
-        "metaDescription": "Administrative infrastructure for consult-liaison psychiatry. Bridging hospital systems and private consulting workflows.",
+        "metaDescription": "Administrative support for consult-liaison psychiatry. Bridging hospital systems and private consulting workflows.",
         "heroDescription": "We act as the administrative bridge between hospital systems and your private consulting practice, ensuring seamless communication.",
         "heroImage": "/images/ehr-optimization-mockup-v2.png",
         "consultingServices": [
-            "Workflow Architecture Review",
+            "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
             "Protocol Optimization Strategy",
             "Procedure Implementation"
@@ -453,13 +453,13 @@
     {
         "slug": "neuropsychiatry",
         "name": "Neuropsychiatry",
-        "metaTitle": "Neuropsychiatry Practice Infrastructure | Virtual Minds",
-        "metaDescription": "Precision infrastructure for neuropsychiatry. Managing testing batteries, report integration, and neurological coordination.",
+        "metaTitle": "Neuropsychiatry Practice Support | Virtual Minds",
+        "metaDescription": "Precision support for neuropsychiatry. Managing testing batteries, report integration, and neurological coordination.",
         "heroDescription": "We manage the administrative coordination of testing batteries, ensuring reports are received, filed, and ready for your review.",
         "heroImage": "/images/psychiatry-consultation-room.png",
         "consultingServices": [
             "EHR Optimization",
-            "Workflow Architecture Review",
+            "Workflow Optimization Review",
             "HIPAA Risk Mitigation",
             "Client Experience Engineering"
         ],

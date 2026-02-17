@@ -25,7 +25,7 @@ export default function Hero() {
                         {/* Modern Headline - SEO + Conversion Optimized */}
                         <div className="space-y-4">
                             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-black leading-[1.1] text-trust-navy tracking-tight">
-                                Executive Infrastructure for <br />
+                                Specialized Support for <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                                     California Psychiatry.
                                 </span>

@@ -77,7 +77,7 @@ export default function BookConsultationPage() {
 
                             {/* Description - Condensed */}
                             <p className="text-base md:text-lg text-slate-600 leading-relaxed">
-                                <strong className="text-trust-navy">15-minute</strong> psychiatric workflow analysis. We'll blueprint your <span className="text-primary font-bold">stable operational path</span>.
+                                <strong className="text-trust-navy">15-minute</strong> psychiatric workflow analysis. We'll outline your <span className="text-primary font-bold">stable operational path</span>.
                             </p>
 
                             {/* CTA Buttons - Prominent Above-Fold - MOBILE ONLY */}
@@ -108,7 +108,7 @@ export default function BookConsultationPage() {
                                     <span className="text-sm uppercase tracking-wider">UCLA, Stanford, Harvard-Trained?</span>
                                 </div>
                                 <p className="text-sm text-slate-600 font-medium">
-                                    We speak your language. Our VAs are trained to support the high-complexity workflows of elite, board-certified practices.
+                                    We speak your language. Our VAs are trained to support the high-complexity workflows of leading, board-certified practices.
                                 </p>
                             </div>
                         </div>
@@ -176,7 +176,7 @@ export default function BookConsultationPage() {
                                 ))}
                             </div>
                             <div className="text-sm text-slate-500 font-medium leading-tight">
-                                <p><strong className="text-trust-navy">Infrastructure for Elite Private Practice</strong></p>
+                                <p><strong className="text-trust-navy">Support for Leading Private Practices</strong></p>
                                 <p>Director-level support for <span className="text-primary font-bold">distinguished, high-acuity</span> California psychiatrists.</p>
                             </div>
                         </div>

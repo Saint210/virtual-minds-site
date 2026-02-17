@@ -2,7 +2,7 @@ import ClusterArticleTemplate from "@/templates/ClusterArticleTemplate";
 
 export const metadata = {
     title: "Psychiatric Telehealth Tech Support | HIPAA Zoom Setup",
-    description: "Look and sound like an executive. We handle the technical setup of your telehealth practice, from HIPAA-Zoom configuration to lighting and audio.",
+    description: "Look and sound professional. We handle the technical setup of your telehealth practice, from HIPAA-Zoom configuration to lighting and audio.",
 };
 
 export default function TelehealthSetupPage() {

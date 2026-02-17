@@ -116,7 +116,7 @@ export default async function SpecialtyPage({ params }: Props) {
                                         California Compliance Shield
                                     </div>
                                     <h2 className="font-serif text-3xl md:text-5xl font-bold mb-8 italic">
-                                        The Infrastructure <br />
+                                        The Support System <br />
                                         Your Patients Deserve.
                                     </h2>
                                     <p className="text-xl text-slate-300 mb-10 leading-relaxed font-medium">
@@ -158,7 +158,7 @@ export default async function SpecialtyPage({ params }: Props) {
                             Ready to Modernize Your <br /> {specialty.name} Operations?
                         </h2>
                         <p className="text-slate-500 text-lg mb-10 font-medium">
-                            Join the elite California psychiatrists who have delegated their administrative burden to Virtual Minds.
+                            Join the leading California psychiatrists who have delegated their administrative burden to Virtual Minds.
                         </p>
                         <Link href="/book-consultation" className="px-12 py-5 bg-trust-navy text-white font-black text-xl rounded-2xl hover:bg-primary transition-all shadow-xl">
                             Start Your Recovery Plan

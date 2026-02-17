@@ -4,12 +4,23 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Administrative Excellence for California Psychiatrists | Virtual Minds",
-    description: "Enhance practice operations through optimized documentation, professional policy guidance, and seamless billing company coordination.",
+    title: "Billing & Collections Guide for California Psychiatrists | Virtual Minds",
+    description: "Reduce denied claims and get paid faster. Optimized documentation, billing coordination, and collections workflows for psychiatric practices.",
     keywords: ["psychiatric administration", "mental health operations", "workflow management", "psychiatry documentation", "practice efficiency"],
+    alternates: {
+        canonical: "https://thevirtualminds.com/resources/guides/billing-and-collections",
+    },
+    openGraph: {
+        title: "Billing & Collections Guide for California Psychiatrists",
+        description: "Reduce denied claims and get paid faster. Optimized documentation, billing coordination, and collections workflows for psychiatric practices.",
+        url: "https://thevirtualminds.com/resources/guides/billing-and-collections",
+        siteName: "Virtual Minds",
+        locale: "en_US",
+        type: "article",
+    },
 };
 
-export default function RevenueBlueprint() {
+export default function BillingAndCollectionsGuide() {
     return (
         <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
@@ -29,31 +40,31 @@ export default function RevenueBlueprint() {
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Guides</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <span className="text-trust-navy">Revenue Optimization</span>
+                                    <span className="text-trust-navy">Billing & Collections</span>
                                 </nav>
 
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                     <span className="material-symbols-outlined text-primary text-[16px]">account_balance_wallet</span>
-                                    Strategic Blueprint #02
+                                    Guide 02
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
-                                    Administrative <br />
+                                    Billing &<br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
-                                        Excellence.
+                                        Collections.
                                     </span>
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
-                                    Eliminate friction. Implement documentation standards that support seamless workflow and streamline your billing company&apos;s entire operation.
+                                    Stop leaving money on the table. Clean documentation, faster claims, and proactive follow-up so you get paid for every session.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
                                     <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
                                         <span className="material-symbols-outlined text-green-500">trending_up</span>
-                                        <span className="text-sm font-bold text-trust-navy">Operational Efficiency</span>
+                                        <span className="text-sm font-bold text-trust-navy">Faster Payments</span>
                                     </div>
                                     <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
                                         <span className="material-symbols-outlined text-blue-500">description</span>
@@ -80,7 +91,7 @@ export default function RevenueBlueprint() {
                     </div>
                 </section>
 
-                {/* CORE BLUEPRINT CONTENT */}
+                {/* CORE GUIDE CONTENT */}
                 <section className="py-24 bg-white border-t border-slate-100">
                     <div className="max-w-[1200px] mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
@@ -106,7 +117,7 @@ export default function RevenueBlueprint() {
 
                                 {/* 2. The 5 Pillars of Revenue Protection */}
                                 <div className="space-y-12">
-                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Revenue Infrastructure</h2>
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Revenue System</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {[
                                             {
@@ -201,6 +212,20 @@ export default function RevenueBlueprint() {
                             </div>
 
                         </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/resources"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Explore All Practice Guides & Resources
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Return to the full resource library for California psychiatric practices.</p>
                     </div>
                 </section>
 

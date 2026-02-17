@@ -51,6 +51,13 @@ export default defineType({
             type: 'datetime',
         }),
         defineField({
+            name: 'author',
+            title: 'Author',
+            type: 'reference',
+            to: [{ type: 'author' }],
+            description: 'Link this post to a verified expert profile.',
+        }),
+        defineField({
             name: 'body',
             title: 'Body',
             type: 'array',

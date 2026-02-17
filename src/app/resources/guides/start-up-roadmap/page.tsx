@@ -4,12 +4,23 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Psychiatrist Practice Start-Up Blueprint | Virtual Minds",
+    title: "Psychiatrist Practice Start-Up Guide | Virtual Minds",
     description: "The complete operational roadmap for transitioning from hospital group to solo private practice in California.",
-    keywords: ["psychiatry startup", "solo practice roadmap", "private practice infrastructure", "psychiatrist business plan", "private practice california"],
+    keywords: ["psychiatry startup", "solo practice roadmap", "starting a private practice", "psychiatrist business plan", "private practice california"],
+    alternates: {
+        canonical: "https://thevirtualminds.com/resources/guides/start-up-roadmap",
+    },
+    openGraph: {
+        title: "Psychiatrist Practice Start-Up Guide",
+        description: "The complete operational roadmap for transitioning from hospital group to solo private practice in California.",
+        url: "https://thevirtualminds.com/resources/guides/start-up-roadmap",
+        siteName: "Virtual Minds",
+        locale: "en_US",
+        type: "article",
+    },
 };
 
-export default function StartUpBlueprint() {
+export default function StartUpGuide() {
     return (
         <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
@@ -29,14 +40,14 @@ export default function StartUpBlueprint() {
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Guides</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
                                     <span className="text-trust-navy">Start-Up Roadmap</span>
                                 </nav>
 
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                     <span className="material-symbols-outlined text-primary text-[16px]">rocket_launch</span>
-                                    Strategic Blueprint #03
+                                    Guide 03
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
@@ -47,7 +58,7 @@ export default function StartUpBlueprint() {
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
-                                    The exact 90-day operational sprint designed for hospital-based psychiatrists transitioning to elite, solo private practice in California.
+                                    The exact 90-day operational sprint designed for hospital-based psychiatrists transitioning to a thriving, solo private practice in California.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
@@ -67,7 +78,7 @@ export default function StartUpBlueprint() {
                                 <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
                                     <Image
                                         src="/images/blueprint-startup.png"
-                                        alt="Solo Practice Launch Roadmap and Infrastructure"
+                                        alt="Solo Practice Launch Roadmap and Checklist"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
@@ -80,7 +91,7 @@ export default function StartUpBlueprint() {
                     </div>
                 </section>
 
-                {/* CORE BLUEPRINT CONTENT */}
+                {/* CORE GUIDE CONTENT */}
                 <section className="py-24 bg-white border-t border-slate-100">
                     <div className="max-w-[1200px] mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
@@ -93,7 +104,7 @@ export default function StartUpBlueprint() {
                                     <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The "W2 to CEO" Transition</h2>
                                     <div className="prose prose-slate prose-lg max-w-none">
                                         <p>
-                                            Most psychiatrists stay in restrictive hospital systems (W2) far longer than intended because the "business of medicine" feels like a liability-filled black box. The reality? A tech-enabled solo practice requires significantly less overhead than a traditional office—provided you have a hardened operational core.
+                                            Most psychiatrists stay in restrictive hospital systems (W2) far longer than intended because the "business of medicine" feels like a liability-filled black box. The reality? A tech-enabled solo practice requires significantly less overhead than a traditional office—provided you have a solid operational foundation.
                                         </p>
                                         <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
                                             <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
@@ -111,7 +122,7 @@ export default function StartUpBlueprint() {
                                         {[
                                             {
                                                 phase: "Days 1-30",
-                                                title: "Infrastructure Hardening",
+                                                title: "Foundation Setup",
                                                 desc: "LLC/PLLC selection, Malpractice tail coverage, and selecting the 'Golden Triangle' of psychiatric tech: EMR, Secure Telehealth, and HIPAA-Compliant Voice/Fax."
                                             },
                                             {
@@ -182,7 +193,7 @@ export default function StartUpBlueprint() {
                                         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
                                         <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Start Your 90-Day Sprint</h3>
                                         <p className="text-slate-300 text-sm leading-relaxed mb-8">
-                                            We've helped dozens of psychiatrists transition from burnout to autonomy. Let us handle the infrastructure while you focus on the medicine.
+                                            We've helped dozens of psychiatrists transition from burnout to autonomy. Let us handle the operations while you focus on the medicine.
                                         </p>
                                         <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
                                             Request Launch Roadmap
@@ -193,6 +204,20 @@ export default function StartUpBlueprint() {
                             </div>
 
                         </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/resources"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Explore All Practice Guides & Resources
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Return to the full resource library for California psychiatric practices.</p>
                     </div>
                 </section>
 

@@ -3,9 +3,18 @@ import { MetadataRoute } from 'next'
 import { blogPosts } from '@/lib/blog-data'
 import { locations } from '@/data/locations'
 import { glossaryTerms } from '@/data/glossary'
+import { getAllPostSlugs } from '@/lib/blog-service'
 
-export default function sitemap(): MetadataRoute.Sitemap {
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const baseUrl = 'https://thevirtualminds.com'
+
+    // Fetch live posts from Sanity
+    let liveSlugs: string[] = []
+    try {
+        liveSlugs = await getAllPostSlugs()
+    } catch (error) {
+        console.error('Failed to fetch Sanity slugs for sitemap:', error)
+    }
 
     // Core pages
     const routes = [
@@ -48,13 +57,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }))
 
-    // High-value resource blueprints
-    const blueprints = [
-        '/resources/blueprints/medication-management',
-        '/resources/blueprints/revenue-architecture',
-
-        '/resources/blueprints/ehr-hardening',
-        '/resources/blueprints/start-up-roadmap',
+    // High-value resource guides
+    const guides = [
+        '/resources/guides/medication-management',
+        '/resources/guides/billing-and-collections',
+        '/resources/guides/ehr-optimization',
+        '/resources/guides/start-up-roadmap',
     ].map((route) => ({
         url: `${baseUrl}${route}`,
         lastModified: new Date(),
@@ -62,9 +70,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.9,
     }))
 
-    // Dynamic blog posts
-    const posts = blogPosts.map((post) => ({
-        url: `${baseUrl}/blog/${post.slug}`,
+    // Dynamic blog posts - merged from Sanity and Local
+    const allSlugs = [...new Set([...liveSlugs, ...blogPosts.map(p => p.slug)])]
+    const posts = allSlugs.map((slug) => ({
+        url: `${baseUrl}/blog/${slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.7,
@@ -78,5 +87,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.6,
     }))
 
-    return [...routes, ...pillarPages, ...locationRoutes, ...blueprints, ...posts, ...glossaryRoutes]
+    return [...routes, ...pillarPages, ...locationRoutes, ...guides, ...posts, ...glossaryRoutes]
 }
+

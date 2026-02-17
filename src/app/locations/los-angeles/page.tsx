@@ -181,7 +181,7 @@ export default function LosAngelesPage() {
                             Secure Your <br /> L.A. Perimeter.
                         </h2>
                         <p className="text-xl text-slate-300 mb-12 max-w-2xl mx-auto font-display leading-relaxed">
-                            Join the elite psychiatric practitioners in Los Angeles who have transitioned to the Virtual Minds operational standard.
+                            Join the leading psychiatric practitioners in Los Angeles who have transitioned to the Virtual Minds operational standard.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-6 justify-center">
                             <Link

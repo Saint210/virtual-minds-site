@@ -178,7 +178,7 @@ export default function OnboardingWizard() {
                                     <span className="material-symbols-outlined text-4xl">dashboard_customize</span>
                                 </div>
                                 <h4 className="text-[10px] font-black text-[#D2691E] uppercase tracking-widest mb-4">Suggested Design Template</h4>
-                                <h3 className="text-2xl font-serif font-bold mb-4">Elite Clinical Clarity</h3>
+                                <h3 className="text-2xl font-serif font-bold mb-4">Premium Clinical Clarity</h3>
                                 <p className="text-sm text-slate-400 leading-relaxed mb-8">
                                     Based on your high-end service list and focus on privacy, we recommend our premium split-screen layout.
                                 </p>
@@ -195,7 +195,7 @@ export default function OnboardingWizard() {
                                     Edit Identity Manualy
                                 </Link>
                                 <button className="px-10 py-4 bg-[#D2691E] text-white font-bold rounded-2xl text-center flex-grow md:flex-none shadow-xl shadow-[#D2691E]/20 hover:scale-105 transition-transform">
-                                    Generate My Elite Site
+                                    Generate My Premium Site
                                 </button>
                             </div>
                         </div>

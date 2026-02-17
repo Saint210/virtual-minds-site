@@ -30,7 +30,7 @@ export default function SpecialtyHero({ name, description, image }: SpecialtyHer
                         </div>
 
                         <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
-                            Infrastructure for <br />
+                            Support for <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-[#B8860B] to-primary">
                                 {name}.
                             </span>

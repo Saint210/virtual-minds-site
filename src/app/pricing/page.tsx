@@ -48,7 +48,7 @@ const pricingPlans = [
   },
   {
     name: "Custom Enterprise",
-    description: "Bespoke operational design for large health systems and specialized psychiatric networks.",
+    description: "Custom operational design for large health systems and specialized psychiatric networks.",
     price: "Custom",
     period: "quote",
     features: [
@@ -119,7 +119,7 @@ export default function PricingPage() {
                 </h1>
 
                 <p className="text-xl md:text-2xl text-slate-500 font-medium leading-relaxed mb-10 max-w-2xl">
-                  Strategic pricing for California&apos;s elite psychiatric practices. High-fidelity infrastructure designed to return clinical time and revenue.
+                  Strategic pricing for California&apos;s leading psychiatric practices. High-fidelity systems designed to return clinical time and revenue.
                 </p>
 
                 <div className="flex flex-wrap gap-4">
@@ -275,7 +275,7 @@ export default function PricingPage() {
                             </>
                           ) : (
                             <>
-                              <strong className="text-trust-navy">Bespoke operational design</strong> for large health systems and{' '}
+                              <strong className="text-trust-navy">Custom operational design</strong> for large health systems and{' '}
                               <span className="text-primary font-bold">specialized psychiatric networks</span>.
                             </>
                           )}
@@ -334,7 +334,7 @@ export default function PricingPage() {
                   Operational <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Performance</span> Ledger
                 </h2>
                 <p className="text-xl text-slate-600 max-w-3xl mx-auto font-medium leading-relaxed">
-                  <strong className="text-trust-navy">Infrastructure investment</strong> is the catalyst for{' '}
+                  <strong className="text-trust-navy">Strategic investment</strong> is the catalyst for{' '}
                   <span className="text-primary font-bold">operational excellence</span>.
                 </p>
               </div>
@@ -447,10 +447,10 @@ export default function PricingPage() {
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {[
-                { q: "Are there setup or training fees?", a: "No. Our professional fees include onboarding, EHR integration, and initial policy hardening audits." },
+                { q: "Are there setup or training fees?", a: "No. Our professional fees include onboarding, EHR integration, and initial compliance audits." },
                 { q: "Is the VA specialized in Psychiatry?", a: "Exclusively. All assistants are trained in psychiatric pharmacology and California-specific compliance." },
                 { q: "What is the commitment period?", a: "We operate on flexible monthly scales. We earn our place in your clinical workflow every 30 days." },
-                { q: "Can we scale to a group practice?", a: "Our infrastructure supports 1 to 50 providers. Multi-clinician group discounts are available." }
+                { q: "Can we scale to a group practice?", a: "Our platform supports 1 to 50 providers. Multi-clinician group discounts are available." }
               ].map((faq, i) => (
                 <div key={i} className="bg-[#FAF8F3] p-8 rounded-[2rem] border border-slate-200 hover:border-primary/30 hover:shadow-lg transition-all group">
                   <h4 className="text-lg font-bold text-trust-navy mb-4 flex items-start gap-3">
@@ -475,7 +475,7 @@ export default function PricingPage() {
                 <h2 className="font-serif text-4xl text-trust-navy leading-tight">Included <span className="italic text-slate-400">Modules</span></h2>
               </div>
               <p className="text-slate-500 max-w-sm text-sm font-medium leading-relaxed">
-                Comprehensive psychiatric virtual assistant services tailored to your practice infrastructure.
+                Comprehensive psychiatric virtual assistant services tailored to your practice needs.
               </p>
             </div>
 

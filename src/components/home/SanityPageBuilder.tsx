@@ -591,7 +591,7 @@ const EliteCredibilitySection = () => (
             <div className="text-center mb-10">
                 <div className="inline-flex items-center gap-2 bg-primary/10 border-2 border-primary/20 rounded-full px-4 py-1.5 mb-4">
                     <span className="material-symbols-outlined text-primary text-xs">workspace_premium</span>
-                    <span className="text-primary text-[9px] font-black uppercase tracking-[0.2em]">Elite Expertise</span>
+                    <span className="text-primary text-[9px] font-black uppercase tracking-[0.2em]">Clinical Expertise</span>
                 </div>
                 <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-trust-navy mb-4 leading-tight">
                     <span className="text-primary">UCLA, UCSF, Stanford-Trained?</span><br />
@@ -696,40 +696,40 @@ const FeaturedResourcesSection = () => (
 
             {/* Resources Grid */}
             <div className="grid md:grid-cols-3 gap-6">
-                {/* Resource 1: Revenue Architecture Blueprint */}
-                <Link href="/resources/blueprints/revenue-architecture" className="group bg-white rounded-2xl p-8 border-2 border-slate-200/60 hover:border-primary/50 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                {/* Resource 1: Billing & Collections Guide */}
+                <Link href="/resources/guides/billing-and-collections" className="group bg-white rounded-2xl p-8 border-2 border-slate-200/60 hover:border-primary/50 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
                     <div className="flex items-start gap-4 mb-4">
                         <div className="size-12 rounded-xl bg-primary/10 flex items-center justify-center shrink-0 group-hover:bg-primary/20 transition-colors">
                             <span className="material-symbols-outlined text-primary text-2xl">architecture</span>
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-2">
-                                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-wider rounded">Blueprint</span>
+                                <span className="px-2 py-0.5 bg-emerald-100 text-emerald-700 text-[10px] font-black uppercase tracking-wider rounded">Guide</span>
                                 <span className="text-xs text-slate-400 font-semibold">8 min read</span>
                             </div>
                             <h3 className="font-bold text-lg text-trust-navy group-hover:text-primary transition-colors mb-2">
-                                Revenue Architecture Blueprint
+                                Billing & Collections Guide
                             </h3>
                         </div>
                     </div>
                     <p className="text-sm text-slate-600 leading-relaxed mb-4 font-medium">
-                        Strategic framework for maximizing practice revenue through optimized billing workflows and administrative efficiency.
+                        Strategic framework for maximizing practice revenue through optimized billing workflows and collections tracking.
                     </p>
                     <div className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all">
-                        <span>Read Blueprint</span>
+                        <span>Read Guide</span>
                         <span className="material-symbols-outlined text-lg">arrow_forward</span>
                     </div>
                 </Link>
 
                 {/* Resource 2: Start-Up Roadmap */}
-                <Link href="/resources/blueprints/start-up-roadmap" className="group bg-white rounded-2xl p-8 border-2 border-slate-200/60 hover:border-primary/50 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
+                <Link href="/resources/guides/start-up-roadmap" className="group bg-white rounded-2xl p-8 border-2 border-slate-200/60 hover:border-primary/50 shadow-sm hover:shadow-xl transition-all hover:-translate-y-1">
                     <div className="flex items-start gap-4 mb-4">
                         <div className="size-12 rounded-xl bg-emerald-100 flex items-center justify-center shrink-0 group-hover:bg-emerald-200 transition-colors">
                             <span className="material-symbols-outlined text-emerald-600 text-2xl">rocket_launch</span>
                         </div>
                         <div className="flex-1">
                             <div className="flex items-center gap-2 mb-2">
-                                <span className="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-black uppercase tracking-wider rounded">Blueprint</span>
+                                <span className="px-2 py-0.5 bg-primary/10 text-primary text-[10px] font-black uppercase tracking-wider rounded">Guide</span>
                                 <span className="text-xs text-slate-400 font-semibold">12 min read</span>
                             </div>
                             <h3 className="font-bold text-lg text-trust-navy group-hover:text-primary transition-colors mb-2">
@@ -741,7 +741,7 @@ const FeaturedResourcesSection = () => (
                         Complete guide to launching a California psychiatric practice with compliance, billing setup, and operational systems.
                     </p>
                     <div className="flex items-center gap-2 text-primary font-bold text-sm group-hover:gap-3 transition-all">
-                        <span>Read Blueprint</span>
+                        <span>Read Guide</span>
                         <span className="material-symbols-outlined text-lg">arrow_forward</span>
                     </div>
                 </Link>

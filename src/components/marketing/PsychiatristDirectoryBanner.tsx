@@ -17,7 +17,7 @@ export default function PsychiatristDirectoryBanner() {
                 <div className="flex flex-col sm:flex-row items-center gap-3">
                     <div className="hidden sm:flex items-center gap-2 text-sm text-slate-600">
                         <span className="material-symbols-outlined text-sm">workspace_premium</span>
-                        <span className="font-semibold">Elite Listings</span>
+                        <span className="font-semibold">Featured Listings</span>
                     </div>
                     <div className="hidden sm:flex items-center gap-2 text-sm text-slate-600">
                         <span className="material-symbols-outlined text-sm">workspace_premium</span>

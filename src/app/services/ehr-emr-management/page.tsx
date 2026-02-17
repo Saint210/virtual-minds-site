@@ -164,7 +164,7 @@ export default function EHRManagementPage() {
                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
                   Psychiatric <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                    Workflow Architecture.
+                    Workflow Optimization.
                   </span>
                 </h1>
 

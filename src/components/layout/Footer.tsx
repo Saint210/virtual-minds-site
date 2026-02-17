@@ -50,7 +50,7 @@ export default function Footer() {
                                     <span className="material-symbols-outlined text-blue-400 text-xl">workspace_premium</span>
                                 </span>
                                 <div>
-                                    <div className="font-black text-sm text-white">Bespoke Support</div>
+                                    <div className="font-black text-sm text-white">Tailored Support</div>
                                     <div className="text-xs text-slate-400 font-semibold">Psychiatric Specialized</div>
                                 </div>
                             </div>

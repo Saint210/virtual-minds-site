@@ -5,7 +5,7 @@ import Image from 'next/image';
 const articles = [
     {
         title: "The 2026 Vetting Framework for California Psychiatric VAs",
-        excerpt: "Why specialized infrastructure is replacing general staffing for board-certified specialists.",
+        excerpt: "Why specialized support is replacing general staffing for board-certified specialists.",
         category: "Strategic Vetting",
         href: "/blog/how-to-choose-california-psychiatric-virtual-assistant",
         image: "/images/how-to-scale-psychiatry-practice.jpg",

@@ -145,7 +145,7 @@ export default function GlossaryIndexPage() {
                         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8">Master Your Operations.</h2>
 
                         <p className="text-xl text-slate-300 leading-relaxed max-w-2xl mx-auto mb-12">
-                            Understanding the terminology is the first step. Building the infrastructure to manage it is the next.
+                            Understanding the terminology is the first step. Building the systems to manage it is the next.
                         </p>
 
                         <div className="flex flex-col sm:flex-row justify-center gap-4">

@@ -45,7 +45,7 @@ export default function PracticeStartUpPage() {
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    Don't waste 6 months Googling "how to start a practice." We deploy a turnkey <span className="text-trust-navy font-bold">Executive Infrastructure</span>—EHR, credentialing, and compliance—so you open your doors in 30 days.
+                                    Don't waste 6 months Googling "how to start a practice." We deploy a turnkey <span className="text-trust-navy font-bold">operational setup</span>—EHR, credentialing, and compliance—so you open your doors in 30 days.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Practice Start-Up" />
 
@@ -71,7 +71,7 @@ export default function PracticeStartUpPage() {
                                     <div className="absolute inset-0 bg-slate-900/5 z-10"></div>
                                     <Image
                                         src="/images/practice-startup-blueprint-v4.png"
-                                        alt="Psychiatric Practice Launch Blueprint"
+                                        alt="Psychiatric Practice Launch Guide"
                                         width={800}
                                         height={600}
                                         className="object-cover"
@@ -111,7 +111,7 @@ export default function PracticeStartUpPage() {
                             {/* OPERATIONAL SETUP */}
                             <div className="bg-[#FAF8F3] rounded-[2rem] p-10 border border-slate-200">
                                 <div className="inline-flex items-center gap-2 mb-6">
-                                    <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Infrastructure</span>
+                                    <span className="text-primary font-bold uppercase tracking-widest text-[11px]">Setup</span>
                                     <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                                 </div>
                                 <h3 className="font-serif text-2xl font-bold text-trust-navy mb-6">Systems Configuration</h3>

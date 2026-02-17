@@ -11,7 +11,7 @@ import ServiceNavigationTray from "@/components/marketing/ServiceNavigationTray"
 
 export const metadata = {
     title: "Psychiatric Website Design & SEO | Virtual Minds",
-    description: "California psychiatric patient acquisition infrastructure. AI-optimized digital real estate that converts traffic into qualified intake leads.",
+    description: "California psychiatric patient acquisition systems. AI-optimized digital presence that converts traffic into qualified intake leads.",
 };
 
 export default function WebsiteDesignPage() {
@@ -156,7 +156,7 @@ export default function WebsiteDesignPage() {
                                         { title: "Psychology Today Integration", desc: "Seamlessly link your profile and website to unify your brand." },
                                         { title: "EHR Portal Matching", desc: "We style your intake buttons to match your SimplePractice/DrChrono portal." },
                                         { title: "SEO Writing", desc: "We write the copy: 'Board-certified,' 'Medication Management,' 'Telehealth.'" },
-                                        { title: "Mobile-First Architecture", desc: "The vast majority of patients search on mobile. Your site will be lightning fast." }
+                                        { title: "Mobile-First Design", desc: "The vast majority of patients search on mobile. Your site will be lightning fast." }
                                     ].map((item, i) => (
                                         <li key={i} className="flex gap-4">
                                             <div className="size-8 rounded-full bg-white border border-slate-200 flex items-center justify-center shrink-0 shadow-sm text-primary">

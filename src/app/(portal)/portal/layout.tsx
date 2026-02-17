@@ -64,7 +64,7 @@ export default function PortalLayout({
                     <div className="bg-gradient-to-br from-white/10 to-transparent rounded-3xl p-5 border border-white/10">
                         <p className="text-[10px] text-slate-500 font-black uppercase tracking-widest mb-3">Service Tier</p>
                         <div className="flex items-center justify-between">
-                            <span className="text-sm font-bold">Elite Concierge</span>
+                            <span className="text-sm font-bold">Premium Concierge</span>
                             <span className="material-symbols-outlined text-[#D2691E] text-lg">verified</span>
                         </div>
                     </div>

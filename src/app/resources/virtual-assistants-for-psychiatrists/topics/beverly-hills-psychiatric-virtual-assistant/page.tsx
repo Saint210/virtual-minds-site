@@ -4,7 +4,7 @@ import Footer from "@/components/layout/Footer";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-    title: "Beverly Hills Psychiatric Virtual Assistant | Elite Practice Support",
+    title: "Beverly Hills Psychiatric Virtual Assistant | Premium Practice Support",
     description: "Premium virtual assistants for Beverly Hills psychiatric practices serving discerning clientele. HIPAA and privacy compliant, specializing in confidentiality and high-profile patient care.",
 };
 
@@ -24,7 +24,7 @@ export default function BeverlyHillsPage() {
                             Beverly Hills Psychiatric Virtual Assistants
                         </h1>
                         <p className="text-xl text-slate-600 mb-8 max-w-3xl mx-auto">
-                            Elite virtual assistant services for Beverly Hills psychiatric practices serving industry leaders, public figures, and families who demand exceptional care and absolute confidentiality.
+                            Premium virtual assistant services for Beverly Hills psychiatric practices serving industry leaders, public figures, and families who demand exceptional care and absolute confidentiality.
                         </p>
                         <Link href="/book-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-terracotta text-white rounded-lg font-black hover:scale-105 transition-all shadow-lg">
                             <span className="material-symbols-outlined">calendar_today</span>
@@ -39,7 +39,7 @@ export default function BeverlyHillsPage() {
                         <h2 className="text-3xl font-bold text-navy mb-6">The Beverly Hills Advantage</h2>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                             <div>
-                                <h3 className="text-xl font-bold text-terracotta mb-4">Elite Practice Expertise</h3>
+                                <h3 className="text-xl font-bold text-terracotta mb-4">Premium Practice Expertise</h3>
                                 <p className="text-slate-600 mb-4">
                                     Our virtual assistants understand the unique demands of Beverly Hills psychiatric practices:
                                 </p>
@@ -96,7 +96,7 @@ export default function BeverlyHillsPage() {
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div className="bg-white border border-cream rounded-xl p-6 shadow-sm">
                             <span className="material-symbols-outlined text-terracotta text-3xl mb-4">privacy_tip</span>
-                            <h3 className="font-bold text-navy mb-3">Elite Patient Coordination</h3>
+                            <h3 className="font-bold text-navy mb-3">Concierge Patient Coordination</h3>
                             <p className="text-slate-600 text-sm mb-4">
                                 Discreet scheduling, communication with personal assistants, and coordination with family members while maintaining strict confidentiality.
                             </p>
@@ -216,7 +216,7 @@ export default function BeverlyHillsPage() {
                             Elevate Your Beverly Hills Practice
                         </h2>
                         <p className="text-white/90 mb-6 max-w-2xl mx-auto">
-                            Join Beverly Hills' most prestigious psychiatric practices that trust Virtual Minds for elite virtual assistant services.
+                            Join Beverly Hills' most prestigious psychiatric practices that trust Virtual Minds for premium virtual assistant services.
                             Experience the difference that specialized, discreet support can make.
                         </p>
                         <Link href="/book-consultation" className="inline-flex items-center gap-2 px-8 py-4 bg-white text-terracotta rounded-lg font-black hover:scale-105 transition-all shadow-lg">

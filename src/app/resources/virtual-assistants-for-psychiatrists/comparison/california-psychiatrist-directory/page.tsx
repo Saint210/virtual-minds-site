@@ -54,7 +54,7 @@ export default function CaliforniaPsychiatristDirectoryPage() {
                                     </div>
                                     <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 hover:bg-primary/20 transition-all">
                                         <div className="text-2xl md:text-3xl font-black text-primary mb-1">SEO</div>
-                                        <div className="text-trust-navy text-sm font-medium">Elite Tools</div>
+                                        <div className="text-trust-navy text-sm font-medium">Professional Tools</div>
                                     </div>
                                     <div className="bg-primary/10 border border-primary/20 rounded-xl p-4 hover:bg-primary/20 transition-all">
                                         <div className="text-2xl md:text-3xl font-black text-primary mb-1">VIDEO</div>

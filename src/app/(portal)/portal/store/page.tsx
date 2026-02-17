@@ -27,7 +27,7 @@ export default function GrowthStore() {
             <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
                 <div className="max-w-xl">
                     <h2 className="text-4xl font-serif font-bold text-slate-900 mb-4">Growth Store</h2>
-                    <p className="text-lg text-slate-500">Enable advanced modules to scale your practice infrastructure.</p>
+                    <p className="text-lg text-slate-500">Enable advanced modules to scale your practice operations.</p>
                 </div>
                 <div className="bg-white px-6 py-3 rounded-2xl border border-slate-100 flex items-center gap-4">
                     <span className="text-sm font-bold text-slate-400">CREDITS AVAILABLE</span>

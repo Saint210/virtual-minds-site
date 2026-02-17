@@ -17,7 +17,7 @@ const caseStudies = [
     image: "/images/case-crisis-recovery.webp",
     stat: "Operational Stability",
     challenge: "A sudden agency closure left this high-volume practice without administrative coverage overnight. Medication refill requests were pending, and the pharmacy coordination pipeline was completely severed.",
-    solution: "Virtual Minds deployed an emergency stabilization team within 24 hours, hardened the EHR infrastructure, and restored pharmacy liaison workflows with zero clinical downtime.",
+    solution: "Virtual Minds deployed an emergency stabilization team within 24 hours, hardened the EHR systems, and restored pharmacy liaison workflows with zero clinical downtime.",
     metric: { label: "Stabilization Time", value: "< 48 Hours" }
   },
   {
@@ -235,7 +235,7 @@ export default function CaseStudiesPage() {
               >
                 <div className="relative z-10 flex items-center gap-3">
                   <span className="material-symbols-outlined">calendar_today</span>
-                  Review Your Infrastructure
+                  Review Your Operations
                 </div>
               </Link>
             </div>

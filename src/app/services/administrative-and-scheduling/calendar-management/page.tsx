@@ -1,8 +1,8 @@
 import ClusterArticleTemplate from "@/templates/ClusterArticleTemplate";
 
 export const metadata = {
-    title: "Psychiatric Calendar Management | Executive Scheduling",
-    description: "Executive scheduling for busy psychiatrists. We manage your patient appointments, resolve conflicts, and fill cancellations to maximize your billable time.",
+    title: "Psychiatric Calendar Management | Smart Scheduling",
+    description: "Professional scheduling for busy psychiatrists. We manage your patient appointments, resolve conflicts, and fill cancellations to maximize your billable time.",
 };
 
 export default function CalendarManagementPage() {
@@ -12,7 +12,7 @@ export default function CalendarManagementPage() {
             hero={{
                 badge: "Scheduling & Logistics",
                 title: "Your Calendar, Optimized.",
-                subtitle: "Stop playing 'email tag' with patients. We manage your schedule with executive precision, ensuring no double-bookings and zero wasted time.",
+                subtitle: "Stop playing 'email tag' with patients. We manage your schedule with clinical precision, ensuring no double-bookings and zero wasted time.",
                 primaryCtaText: "Optimize My Schedule",
                 primaryCtaLink: "/book-consultation"
             }}

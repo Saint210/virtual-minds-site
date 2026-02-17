@@ -37,7 +37,7 @@ export default function HipaaZoomGlossaryPage() {
             }}
             bridge={{
                 problem: "Configuring encryption settings and signing BAAs is a technical headache.",
-                solution: "We set up your entire telehealth infrastructure to be 100% HIPAA compliant and professionally optimized.",
+                solution: "We set up your entire telehealth systems to be 100% HIPAA compliant and professionally optimized.",
                 ctaText: "Secure My Zoom",
                 ctaLink: "/services/patient-intake-and-followup/telehealth-setup"
             }}

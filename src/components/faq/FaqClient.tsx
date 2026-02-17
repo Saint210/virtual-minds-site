@@ -17,7 +17,7 @@ const faqSections = [
             },
             {
                 q: "Is all practice data encrypted to military-grade standards?",
-                a: "Correct. All infrastructure interactions utilize AES-256 bit encryption. Our specialists access your EHR through dedicated, secure protocols—no PHI is ever stored locally on firm devices."
+                a: "Correct. All system interactions utilize AES-256 bit encryption. Our specialists access your EHR through dedicated, secure protocols—no PHI is ever stored locally on firm devices."
             },
             {
                 q: "Are the specialists trained in California-specific telehealth parity?",
@@ -95,7 +95,7 @@ export default function FAQClient() {
                     </h1>
 
                     <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-xl">
-                        Technical data and operational answers for California psychiatric practices scaling on the Virtual Minds infrastructure.
+                        Technical data and operational answers for California psychiatric practices scaling on the Virtual Minds platform.
                     </p>
                 </div>
 

@@ -4,12 +4,23 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Psychiatric EHR Hardening & Template Optimization | Virtual Minds",
+    title: "Psychiatric EHR Optimization & Template Setup | Virtual Minds",
     description: "Turn your basic EMR into an automated EHR engine. Custom templates, macros, and decision trees for SimplePractice, Kareo, and DrChrono.",
     keywords: ["psychiatric EHR", "EMR optimization", "SimplePractice templates", "psychiatry automation", "clinical macros"],
+    alternates: {
+        canonical: "https://thevirtualminds.com/resources/guides/ehr-optimization",
+    },
+    openGraph: {
+        title: "Psychiatric EHR Optimization & Template Setup",
+        description: "Turn your basic EMR into an automated EHR engine. Custom templates, macros, and decision trees for SimplePractice, Kareo, and DrChrono.",
+        url: "https://thevirtualminds.com/resources/guides/ehr-optimization",
+        siteName: "Virtual Minds",
+        locale: "en_US",
+        type: "article",
+    },
 };
 
-export default function EHRHardeningBlueprint() {
+export default function EHROptimizationGuide() {
     return (
         <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
@@ -29,20 +40,20 @@ export default function EHRHardeningBlueprint() {
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Guides</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <span className="text-trust-navy">EHR Hardening</span>
+                                    <span className="text-trust-navy">EHR Optimization</span>
                                 </nav>
 
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                     <span className="material-symbols-outlined text-primary text-[16px]">terminal</span>
-                                    Strategic Blueprint #04
+                                    Guide 04
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
                                     EHR <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
-                                        Hardening.
+                                        Optimization.
                                     </span>
                                 </h1>
 
@@ -80,7 +91,7 @@ export default function EHRHardeningBlueprint() {
                     </div>
                 </section>
 
-                {/* CORE BLUEPRINT CONTENT */}
+                {/* CORE GUIDE CONTENT */}
                 <section className="py-24 bg-white border-t border-slate-100">
                     <div className="max-w-[1200px] mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
@@ -97,7 +108,7 @@ export default function EHRHardeningBlueprint() {
                                         </p>
                                         <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
                                             <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
-                                                "If you spend more than 5 minutes documenting a 30-minute session, your EHR is physically broken. Hardening isn't just about features; it's about engineering the friction out of the clinical encounter."
+                                                "If you spend more than 5 minutes documenting a 30-minute session, your EHR is working against you. Optimization isn't just about features — it's about engineering the friction out of every clinical encounter."
                                             </p>
                                             <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Head of Systems, Virtual Minds</cite>
                                         </blockquote>
@@ -106,7 +117,7 @@ export default function EHRHardeningBlueprint() {
 
                                 {/* 2. The 5 Pillars of EHR Optimization */}
                                 <div className="space-y-12">
-                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Hardening Framework</h2>
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Optimization Framework</h2>
                                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                         {[
                                             {
@@ -169,7 +180,7 @@ export default function EHRHardeningBlueprint() {
                                         <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
                                         <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Optimize Your Dashboard</h3>
                                         <p className="text-slate-300 text-sm leading-relaxed mb-8">
-                                            Turn your software from a burden into a clinical force multiplier. Let us audit your configuration for free.
+                                            Turn your software from a burden into a time-saving clinical tool. Let us audit your configuration for free.
                                         </p>
                                         <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
                                             Audit My EHR Config
@@ -180,6 +191,20 @@ export default function EHRHardeningBlueprint() {
                             </div>
 
                         </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/resources"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Explore All Practice Guides & Resources
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Return to the full resource library for California psychiatric practices.</p>
                     </div>
                 </section>
 

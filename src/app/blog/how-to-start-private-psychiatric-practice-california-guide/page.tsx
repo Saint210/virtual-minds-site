@@ -8,7 +8,7 @@ import LazyPracticeLeaksCalculator from "@/components/tools/LazyPracticeLeaksCal
 
 export const metadata = {
     title: "How to Start a Private Psychiatric Practice in California | Cash-Pay Guide",
-    description: "The 2026 blueprint for starting a concierge or cash-pay psychiatric practice in California. Legal structure, opting out of Medicare, and operational setup.",
+    description: "The 2026 guide to starting a concierge or cash-pay psychiatric practice in California. Legal structure, opting out of Medicare, and operational setup.",
     keywords: ["how to start a private psychiatric practice in California", "concierge psychiatry business model", "cash-pay psychiatry practice", "psychiatric professional corporation california", "opting out of medicare psychiatry"],
     openGraph: {
         title: "How to Start a Private Psychiatric Practice in California: The Cash-Pay Guide",
@@ -109,7 +109,7 @@ export default function StartPrivatePracticeGuide() {
                             </h1>
 
                             <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-12 max-w-2xl">
-                                Don't trade hospital bureaucracy for insurance paperwork. Here is the blueprint for building a high-margin, autonomy-first practice in California.
+                                Don't trade hospital bureaucracy for insurance paperwork. Here is the guide for building a high-margin, autonomy-first practice in California.
                             </p>
 
                             {/* METRICS BAR */}

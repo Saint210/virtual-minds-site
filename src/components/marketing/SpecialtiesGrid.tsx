@@ -20,7 +20,7 @@ export default function SpecialtiesHistory() {
                             Clinical Specialization
                         </div>
                         <h2 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy leading-[1.1] mb-6 italic">
-                            Bespoke Support for <br />
+                            Tailored Support for <br />
                             <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-[#B8860B]">
                                 Every Niche.
                             </span>

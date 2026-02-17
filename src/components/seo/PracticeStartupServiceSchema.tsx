@@ -5,7 +5,7 @@ export default function PracticeStartupServiceSchema() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Psychiatry Practice Start-Up Services",
-        "description": "Comprehensive start-up support for California psychiatric practices. EHR implementation, contract negotiation, HIPAA compliance setup, and operational infrastructure for day-one readiness.",
+        "description": "Comprehensive start-up support for California psychiatric practices. EHR implementation, contract negotiation, HIPAA compliance setup, and operational systems for day-one readiness.",
         "provider": {
             "@type": "Organization",
             "name": "Virtual Minds",

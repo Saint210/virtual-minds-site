@@ -4,12 +4,23 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata = {
-    title: "Medication Management Infrastructure for Psychiatrists | 2026 Executive Blueprint",
-    description: "Elite operational blueprint for automating refills and pharmacy liaison workflows in California psychiatric practices. Reclaim significant clinical hours weekly.",
+    title: "Medication Management for Psychiatrists | Complete Guide",
+    description: "Step-by-step guide to automating refills and pharmacy liaison workflows in California psychiatric practices. Reclaim significant clinical hours weekly.",
     keywords: ["psychiatric medication management", "refill automation", "pharmacy liaison", "psychiatry operations", "EMR refill workflow"],
+    alternates: {
+        canonical: "https://thevirtualminds.com/resources/guides/medication-management",
+    },
+    openGraph: {
+        title: "Medication Management for Psychiatrists | Complete Guide",
+        description: "Step-by-step guide to automating refills and pharmacy liaison workflows in California psychiatric practices.",
+        url: "https://thevirtualminds.com/resources/guides/medication-management",
+        siteName: "Virtual Minds",
+        locale: "en_US",
+        type: "article",
+    },
 };
 
-export default function MedManagementBlueprint() {
+export default function MedManagementGuide() {
     return (
         <div className="flex flex-col min-h-screen bg-slate-50">
             <Navbar />
@@ -29,24 +40,24 @@ export default function MedManagementBlueprint() {
                                 <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
                                     <Link href="/" className="hover:text-primary transition-colors">Home</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <Link href="/resources" className="hover:text-primary transition-colors">Blueprints</Link>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Guides</Link>
                                     <span className="material-symbols-outlined text-[14px]">chevron_right</span>
-                                    <span className="text-trust-navy">Medication Infrastructure</span>
+                                    <span className="text-trust-navy">Medication Management</span>
                                 </nav>
 
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
                                     <span className="material-symbols-outlined text-primary text-[16px]">pill</span>
-                                    Strategic Blueprint #01
+                                    Guide 01
                                 </div>
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-6 leading-[0.95] tracking-tight">
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
-                                        Infrastructure.
+                                        Automation.
                                     </span>
                                 </h1>
 
                                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-8 max-w-xl">
-                                    Automating the refill infrastructure to reclaim significant clinical hours weekly while hardening patient safety protocols in California practices.
+                                    Automating your refill workflow to reclaim significant clinical hours weekly while strengthening patient safety protocols in California practices.
                                 </p>
 
                                 <div className="flex flex-col sm:flex-row items-center gap-4 mb-10">
@@ -73,7 +84,7 @@ export default function MedManagementBlueprint() {
                                 <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
                                     <Image
                                         src="/images/blueprint-medication.png"
-                                        alt="Psychiatric Medication Management Infrastructure"
+                                        alt="Psychiatric Medication Management Workflow"
                                         fill
                                         className="object-cover transition-transform duration-700 group-hover:scale-105"
                                         priority
@@ -86,7 +97,7 @@ export default function MedManagementBlueprint() {
                     </div>
                 </section>
 
-                {/* CORE BLUEPRINT CONTENT */}
+                {/* CORE GUIDE CONTENT */}
                 <section className="py-24 bg-white border-t border-slate-100">
                     <div className="max-w-[1200px] mx-auto px-6">
                         <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
@@ -96,7 +107,7 @@ export default function MedManagementBlueprint() {
 
                                 {/* 1. The Operational Friction */}
                                 <div className="space-y-6">
-                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The Refill Infrastructure Challenge</h2>
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">The Refill Workflow Challenge</h2>
                                     <div className="prose prose-slate prose-lg max-w-none">
                                         <p>
                                             For the high-performance psychiatrist, medication management is often the most significant administrative drain. Pharmacy phone trees, prior authorization denials, and inconsistent patient requests create a fragmented workflow that degrades clinical focus.
@@ -132,7 +143,7 @@ export default function MedManagementBlueprint() {
                                             },
                                             {
                                                 icon: "mail_lock",
-                                                title: "Portal Hardening",
+                                                title: "Portal Optimization",
                                                 desc: "Standardize patient communication templates for dosage questions and refill policies to reduce 'portal ping-pong'."
                                             },
                                             {
@@ -161,7 +172,7 @@ export default function MedManagementBlueprint() {
                                                 <tr className="bg-slate-50/50 border-b border-slate-100">
                                                     <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">Metric</th>
                                                     <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-trust-navy">Solo/Manual</th>
-                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-primary">VM Infrastructure</th>
+                                                    <th className="p-8 text-[10px] font-black uppercase tracking-[0.2em] text-primary">With Virtual Minds</th>
                                                 </tr>
                                             </thead>
                                             <tbody className="divide-y divide-slate-100">
@@ -237,6 +248,20 @@ export default function MedManagementBlueprint() {
                             </div>
 
                         </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/resources"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Explore All Practice Guides & Resources
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Return to the full resource library for California psychiatric practices.</p>
                     </div>
                 </section>
 

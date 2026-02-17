@@ -5,7 +5,7 @@ export default function ConsultationServiceSchema() {
         "@context": "https://schema.org",
         "@type": "Service",
         "name": "Psychiatric Practice Strategy Consultation",
-        "description": "15-minute California psychiatric strategy call to analyze clinical administrative load and blueprint a high-yield operational path.",
+        "description": "15-minute California psychiatric strategy call to analyze clinical administrative load and map out a high-yield operational path.",
         "provider": {
             "@type": "Organization",
             "name": "Virtual Minds",

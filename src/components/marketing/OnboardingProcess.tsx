@@ -14,7 +14,7 @@ export default function OnboardingProcess() {
         {
             id: "2",
             title: "Match",
-            description: "Hand-picked selection from our elite psychiatric-specialized VA pool.",
+            description: "Hand-picked selection from our specialized psychiatric VA pool.",
             icon: "person_search",
         },
         {
@@ -67,8 +67,8 @@ export default function OnboardingProcess() {
                                 <div className="relative">
                                     {/* Glassmorphism Icon Container */}
                                     <div className={`w-24 h-24 rounded-2xl flex items-center justify-center mb-8 transition-all shadow-lg group-hover:-translate-y-2 group-hover:scale-110 ${index === 3
-                                            ? "bg-primary shadow-xl shadow-primary/30"
-                                            : "bg-white/80 backdrop-blur-md border border-slate-200 hover:bg-white"
+                                        ? "bg-primary shadow-xl shadow-primary/30"
+                                        : "bg-white/80 backdrop-blur-md border border-slate-200 hover:bg-white"
                                         }`}>
                                         <span className={`material-symbols-outlined text-4xl transition-colors ${index === 3 ? "text-white" : "text-primary"
                                             }`}>

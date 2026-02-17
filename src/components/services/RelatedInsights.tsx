@@ -18,7 +18,7 @@ interface RelatedInsightsProps {
 }
 
 export default function RelatedInsights({
-    title = "Related Executive Briefings",
+    title = "Related Clinical Briefings",
     subtitle = "Strategic insights to optimize your practice operations.",
     insights,
     className = "",

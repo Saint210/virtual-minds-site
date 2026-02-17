@@ -57,21 +57,21 @@ export default function PsychiatryPracticeStartupGuidePage() {
                             <div className="lg:col-span-5 flex flex-col justify-center pr-0 lg:pr-12">
                                 <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-primary text-[10px] font-black uppercase tracking-[0.2em] mb-8 w-fit shadow-sm">
                                     <span className="material-symbols-outlined text-[16px]">menu_book</span>
-                                    The Executive Blueprint
+                                    The Complete Guide
                                 </div>
                                 <h1 className="font-serif text-5xl md:text-7xl font-black text-trust-navy mb-8 leading-[1.15] tracking-tight">
                                     Strategic Practice <br />
                                     <span className="text-primary">Architecture.</span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-10 max-w-lg">
-                                    A professional-grade <strong className="text-trust-navy">3,500-word roadmap</strong> for psychiatrists ready to engineer an elite private practice in California.
+                                    A professional-grade <strong className="text-trust-navy">3,500-word roadmap</strong> for psychiatrists ready to build a thriving private practice in California.
                                 </p>
                                 <div className="flex flex-col sm:flex-row gap-4">
                                     <Link
                                         href="#guide-intro"
                                         className="inline-flex items-center gap-3 px-10 py-5 bg-primary border border-primary hover:bg-[#B8860B] text-white font-bold text-lg rounded-2xl shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] justify-center"
                                     >
-                                        Read The Blueprint
+                                        Read The Guide
                                         <span className="material-symbols-outlined">arrow_forward</span>
                                     </Link>
                                 </div>
@@ -84,7 +84,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                                 <div className="md:col-span-4 md:row-span-1 bg-white rounded-[2.5rem] shadow-2xl border border-slate-100 overflow-hidden relative group">
                                     <Image
                                         src="/images/practice-startup-blueprint-v4.png"
-                                        alt="Psychiatry Practice Startup Blueprint Physical"
+                                        alt="Psychiatry Practice Startup Guide"
                                         fill
                                         className="object-cover transition-transform duration-1000 group-hover:scale-110"
                                         priority
@@ -831,7 +831,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                             <div className="bg-white p-8 rounded-[2rem] border-l-4 border-primary">
                                 <div className="flex items-center gap-4 mb-4">
                                     <div className="bg-primary text-white font-black text-xl px-6 py-3 rounded-2xl">Months 3-4</div>
-                                    <h3 className="font-serif text-2xl font-bold text-trust-navy">Credentialing & Infrastructure</h3>
+                                    <h3 className="font-serif text-2xl font-bold text-trust-navy">Credentialing & Systems</h3>
                                 </div>
                                 <ul className="space-y-2 ml-4">
                                     <li className="flex items-start gap-2">
@@ -1009,7 +1009,7 @@ export default function PsychiatryPracticeStartupGuidePage() {
                             <span className="text-white">Ready to </span><span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Launch Your Practice?</span>
                         </h2>
                         <p className="text-xl md:text-2xl text-slate-300 mb-12 max-w-3xl mx-auto font-medium">
-                            Virtual Minds handles <strong className="text-primary">licensing, credentialing, billing setup, and administrative infrastructure</strong> so you can focus on patient care.
+                            Virtual Minds handles <strong className="text-primary">licensing, credentialing, billing setup, and administrative systems</strong> so you can focus on patient care.
                         </p>
 
                         <div className="flex flex-col sm:flex-row gap-6 justify-center mb-12">

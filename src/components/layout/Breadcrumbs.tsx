@@ -9,9 +9,28 @@ interface BreadcrumbsProps {
   items: BreadcrumbItem[];
 }
 
+const BASE_URL = "https://thevirtualminds.com";
+
 export default function Breadcrumbs({ items }: BreadcrumbsProps) {
+  // Build JSON-LD BreadcrumbList schema
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.label,
+      ...(item.href ? { item: `${BASE_URL}${item.href}` } : {}),
+    })),
+  };
+
   return (
-    <nav className="bg-[#FAF8F3]">
+    <nav className="bg-[#FAF8F3]" aria-label="Breadcrumb">
+      {/* JSON-LD BreadcrumbList Schema for SEO */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <div className="max-w-[1400px] mx-auto px-6 py-2">
         <div className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400">
           {items.map((item, index) => (

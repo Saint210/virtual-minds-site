@@ -103,16 +103,16 @@ export default function ThankYouPage() {
                             While You Wait: Free Resources
                         </h2>
                         <p className="text-white/90 mb-8">
-                            Explore our operational blueprints to start optimizing your practice today.
+                            Explore our practice guides to start optimizing your practice today.
                         </p>
 
                         <div className="grid sm:grid-cols-2 gap-4">
                             <Link
-                                href="/resources/blueprints/medication-management"
+                                href="/resources/guides/medication-management"
                                 className="bg-white/10 border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all group"
                             >
                                 <span className="material-symbols-outlined text-[#D2691E] text-3xl mb-3 block">medication</span>
-                                <h3 className="font-bold text-lg mb-2 text-white">Medication Mgmt Blueprint</h3>
+                                <h3 className="font-bold text-lg mb-2 text-white">Medication Mgmt Guide</h3>
                                 <p className="text-sm text-white/80 mb-3">Stop losing 8+ hours/week on pharmacy calls.</p>
                                 <span className="text-[#D2691E] text-xs font-bold uppercase tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all">
                                     Read Now <span className="material-symbols-outlined text-sm">arrow_forward</span>
@@ -120,11 +120,11 @@ export default function ThankYouPage() {
                             </Link>
 
                             <Link
-                                href="/resources/blueprints/revenue-architecture"
+                                href="/resources/guides/billing-and-collections"
                                 className="bg-white/10 border border-white/20 rounded-2xl p-6 hover:bg-white/15 transition-all group"
                             >
                                 <span className="material-symbols-outlined text-[#D2691E] text-3xl mb-3 block">payments</span>
-                                <h3 className="font-bold text-lg mb-2 text-white">Revenue Optimization</h3>
+                                <h3 className="font-bold text-lg mb-2 text-white">Billing & Collections</h3>
                                 <p className="text-sm text-white/80 mb-3">Capture $18K+ in missed billing opportunities.</p>
                                 <span className="text-[#D2691E] text-xs font-bold uppercase tracking-wider flex items-center gap-2 group-hover:gap-3 transition-all">
                                     Read Now <span className="material-symbols-outlined text-sm">arrow_forward</span>

@@ -33,7 +33,7 @@ export default function Home() {
     "name": "Virtual Minds",
     "url": "https://virtualminds.com",
     "logo": "https://virtualminds.com/images/logo.png",
-    "description": "Executive operational management for mental health professionals in California.",
+    "description": "Specialized practice management for mental health professionals in California.",
     "address": {
       "@type": "PostalAddress",
       "addressLocality": "Los Angeles",
@@ -138,7 +138,7 @@ export default function Home() {
 
                   <Image
                     src="/images/homepage-hero.webp"
-                    alt="Executive Psychiatric Virtual Consultation - Professional virtual assistant managing practice workflows"
+                    alt="Professional Psychiatric Virtual Consultation - Virtual assistant managing practice workflows"
                     width={800}
                     height={1000}
                     sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 45vw"
@@ -228,7 +228,7 @@ export default function Home() {
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-20">
-              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Executive Specialization</span>
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Clinical Specialization</span>
               <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
                 Engineered for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Complex Care</span>
               </h2>
@@ -336,7 +336,7 @@ export default function Home() {
                         "Flawless Patient Communication",
                         "Detailed Document Management",
                         "Reliable Refill & PA Workflows",
-                        "HIPAA-Hardened Systems",
+                        "HIPAA-Verified Systems",
                         "Zero Administrative Drift"
                       ].map((req, i) => (
                         <li key={i} className="flex items-center gap-4 group/item hover:translate-x-1 transition-transform">
@@ -440,7 +440,7 @@ export default function Home() {
                     <div className="flex justify-end mb-10">
                       <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_03</span>
                     </div>
-                    <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Executive Maintenance</h3>
+                    <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Ongoing Management</h3>
                     <p className="text-slate-600 text-sm leading-relaxed font-medium">Daily administrative management, billing liaison support, and ongoing operational refinement to prevent drift.</p>
                   </div>
                 </div>
@@ -460,7 +460,7 @@ export default function Home() {
         <section className="py-24 bg-[#FAF8F3]">
           <div className="max-w-[1400px] mx-auto px-6">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl text-trust-navy mb-4">Verified Service Architecture</h2>
+              <h2 className="font-serif text-4xl text-trust-navy mb-4">Verified Service Pillars</h2>
               <p className="text-slate-500 max-w-2xl mx-auto">Three pillars of support designed to scale your practice while minimizing liability.</p>
             </div>
 
@@ -482,7 +482,7 @@ export default function Home() {
 
                 <div className="p-8 flex flex-col flex-grow">
                   <h3 className="font-serif text-2xl text-trust-navy mb-3">Clinical Operations Strategy</h3>
-                  <p className="text-slate-600 mb-6 text-sm leading-relaxed">Strategic architecture for psychiatrists requiring a stable, compliant, and scalable foundation.</p>
+                  <p className="text-slate-600 mb-6 text-sm leading-relaxed">Strategic consulting for psychiatrists requiring a stable, compliant, and scalable foundation.</p>
 
                   <div className="flex flex-wrap gap-2 mb-8 mt-auto">
                     {["Start-up Launch", "EHR Setup", "HIPAA Policy", "Contract Analysis"].map((item) => (

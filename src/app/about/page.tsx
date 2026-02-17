@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export const metadata = {
     title: "About Virtual Minds | Specialized Psychiatric Practice Management & Virtual Assistants",
-    description: "California's premier psychiatric practice management firm. We provide director-level virtual assistants and operational infrastructure for high-acuity private practices.",
+    description: "California's premier psychiatric practice management firm. We provide director-level virtual assistants and operational systems for high-acuity private practices.",
     keywords: ["psychiatric virtual assistant", "mental health operations director", "psychiatric practice management", "medical residency training VA", "mental health operations staff"],
 };
 
@@ -46,7 +46,7 @@ export default function AboutPage() {
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-8 max-w-2xl">
-                                    Your practice needs a director, not just an assistant. Virtual Minds delivers <strong className="text-trust-navy">specialized practice management</strong> infrastructure designed to <span className="text-primary font-bold">stabilize and scale</span> high-acuity psychiatric practices.
+                                    Your practice needs a director, not just an assistant. Virtual Minds delivers <strong className="text-trust-navy">specialized practice management</strong> systems designed to <span className="text-primary font-bold">stabilize and scale</span> high-acuity psychiatric practices.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">
@@ -97,15 +97,15 @@ export default function AboutPage() {
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                <strong className="text-trust-navy">Cheryl</strong>, serving as the Director of Operations, took command of the infrastructure. She didn't just manage the transition—she <span className="text-primary font-bold">guaranteed the continuity of care</span> for hundreds of patients, stabilizing the network when it mattered most.
+                                <strong className="text-trust-navy">Cheryl</strong>, serving as the Director of Operations, took command of the operations. She didn't just manage the transition—she <span className="text-primary font-bold">guaranteed the continuity of care</span> for hundreds of patients, stabilizing the network when it mattered most.
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                She rebuilt the infrastructure from the ground up, ensuring that <strong className="text-trust-navy">her partner practices didn't miss a single patient interaction</strong>. That level of reliability—the kind that holds firm when everything else falls apart—is the foundation of Virtual Minds.
+                                She rebuilt the operations from the ground up, ensuring that <strong className="text-trust-navy">her partner practices didn't miss a single patient interaction</strong>. That level of reliability—the kind that holds firm when everything else falls apart—is the foundation of Virtual Minds.
                             </p>
 
                             <p className="text-lg text-slate-600 leading-relaxed">
-                                Today, for the first time, this exclusive operational infrastructure is open to select new partners.
+                                Today, for the first time, this exclusive operational system is open to select new partners.
                             </p>
 
                             <div className="bg-slate-50 border-l-4 border-primary p-6 rounded-r-2xl mt-8">
@@ -124,7 +124,7 @@ export default function AboutPage() {
                         <div className="text-center mb-16">
                             <span className="text-primary font-bold uppercase tracking-widest text-[11px] mb-4 block">Why Hire A Specialist?</span>
                             <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy mb-6">
-                                Operations for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Elite Psychiatry</span>
+                                Operations for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Modern Psychiatry</span>
                             </h2>
                             <p className="text-lg text-slate-600 max-w-3xl mx-auto leading-relaxed">
                                 Generalist VAs require endless training and oversight. We arrive fully operational, with deep expertise in the specific demands of California psychiatry.
@@ -204,7 +204,7 @@ export default function AboutPage() {
                                     </div>
                                     <h3 className="font-serif text-2xl font-bold text-white mb-4">Executive Discretion</h3>
                                     <p className="text-white/80 mb-6 leading-relaxed font-medium text-sm">
-                                        For practices serving high-profile clientele, standard VAs are a liability. We provide the "ironclad" discretion required by California's elite.
+                                        For practices serving high-profile clientele, standard VAs are a liability. We provide the "ironclad" discretion required by California's top-tier practitioners.
                                     </p>
                                     <div className="space-y-3 border-t border-white/10 pt-6">
                                         {["C-Suite Executives & Founders", "Public Figures & Entertainment", "High-Net-Worth Families", "Court-Involved Individuals"].map((item, i) => (
@@ -298,7 +298,7 @@ export default function AboutPage() {
                                 <span className="w-12 h-[2px] bg-gradient-to-r from-primary to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                Director-Level <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Operational Infrastructure</span>.
+                                Director-Level <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Operational Support</span>.
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
                                 We handle the workflows that <strong className="text-trust-navy">take you away from patient care</strong>, ensuring your practice runs <span className="text-primary font-bold">smoothly while you focus on clinical excellence</span>.
@@ -431,7 +431,7 @@ export default function AboutPage() {
                 < section className="py-24 bg-[#FAF8F3]" >
                     <div className="max-w-[1400px] mx-auto px-6">
                         <div className="text-center mb-16">
-                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Infrastructure for Elite Private Practice</span>
+                            <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Support for Leading Private Practices</span>
                             <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
                                 Client <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Success Stories</span>
                             </h2>

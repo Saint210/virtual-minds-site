@@ -79,7 +79,7 @@ export default function Navbar({
                                             </div>
                                             <div>
                                                 <div className="text-sm font-bold text-trust-navy group-hover/link:text-primary transition-colors">New Practice Launch</div>
-                                                <div className="text-xs text-slate-400 mt-0.5 leading-relaxed">Turnkey startup infrastructure & credentialing</div>
+                                                <div className="text-xs text-slate-400 mt-0.5 leading-relaxed">Turnkey startup systems & credentialing</div>
                                             </div>
                                         </Link>
                                         <Link href="/services/hipaa-compliance-support" className="flex items-start gap-4 p-3 rounded-xl hover:bg-slate-50 transition-colors group/link">
@@ -87,8 +87,8 @@ export default function Navbar({
                                                 <span className="material-symbols-outlined text-[20px]">shield_lock</span>
                                             </div>
                                             <div>
-                                                <div className="text-sm font-bold text-trust-navy group-hover/link:text-primary transition-colors">Compliance Architecture</div>
-                                                <div className="text-xs text-slate-400 mt-0.5 leading-relaxed">HIPAA hardening & regulatory protection</div>
+                                                <div className="text-sm font-bold text-trust-navy group-hover/link:text-primary transition-colors">HIPAA Compliance</div>
+                                                <div className="text-xs text-slate-400 mt-0.5 leading-relaxed">HIPAA compliance & regulatory protection</div>
                                             </div>
                                         </Link>
                                     </div>

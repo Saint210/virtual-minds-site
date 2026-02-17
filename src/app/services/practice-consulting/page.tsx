@@ -11,7 +11,7 @@ import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
     title: "Psychiatric Practice Management & Strategic Launch | California",
-    description: "Specialized practice architecture for mental health professionals. From launch logistics to operational audits and high-fidelity policy creation.",
+    description: "Specialized practice consulting for California psychiatrists. From launch logistics to operational audits and compliance-ready policy creation.",
     keywords: ["psychiatric practice management", "california mental health strategy", "practice start-up services", "EHR implementation", "HIPAA compliance support"],
 };
 
@@ -46,13 +46,13 @@ export default function ConsultingPage() {
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
                                     Strategic Practice <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        Architecture.
+                                        Consulting.
                                     </span>
                                 </h1>
                                 <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
-                                    We provide the
-                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">operational infrastructure</span>
-                                    that allows California psychiatrists to scale without administrative friction.
+                                    We build the
+                                    <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">operational systems</span>
+                                    that let California psychiatrists scale without administrative friction.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Practice Consulting" />
 
@@ -87,8 +87,8 @@ export default function ConsultingPage() {
                                         ))}
                                     </div>
                                     <div className="text-sm text-slate-500 font-medium leading-tight text-center sm:text-left">
-                                        <p><strong className="text-trust-navy">Advising the Architects of Modern Psychiatry</strong></p>
-                                        <p>Bespoke operational strategy for clinic directors and solo innovators.</p>
+                                        <p><strong className="text-trust-navy">Trusted by California Psychiatrists</strong></p>
+                                        <p>Hands-on operational consulting for group practices and solo providers.</p>
                                     </div>
                                 </div>
 
@@ -170,7 +170,7 @@ export default function ConsultingPage() {
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
                             <div className="inline-flex items-center gap-2 mb-6">
-                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">The Aurum Method</span>
+                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Our Approach</span>
                                 <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
                             </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
@@ -191,7 +191,7 @@ export default function ConsultingPage() {
                                         <span className="material-symbols-outlined text-3xl">rocket_launch</span>
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Practice Start-Up & Launch</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Complete foundation engineering including clinical infrastructure (physical or remote), EHR implementation, and operational roadmap development.</p>
+                                    <p className="text-slate-600 leading-relaxed font-medium">Complete practice setup including clinical systems (physical or remote), EHR implementation, and operational roadmap development.</p>
                                 </div>
                             </div>
 
@@ -215,7 +215,7 @@ export default function ConsultingPage() {
                                         <span className="material-symbols-outlined text-3xl">gavel</span>
                                     </div>
                                     <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Policy & Compliance</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Developing HIPAA-compliant SOPs, client management policies, and contract review to harden your practice's legal and ethical foundation.</p>
+                                    <p className="text-slate-600 leading-relaxed font-medium">Developing HIPAA-compliant SOPs, client management policies, and contract review to protect your practice's legal and ethical foundation.</p>
                                 </div>
                             </div>
 

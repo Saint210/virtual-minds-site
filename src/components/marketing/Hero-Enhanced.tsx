@@ -21,7 +21,7 @@ export default function EnhancedHero() {
                         {/* Modern Headline */}
                         <div className="space-y-4">
                             <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] text-trust-navy">
-                                Executive Infrastructure for
+                                Specialized Support for
                                 <br />
                                 <span className="text-[#D2691E]">
                                     California Psychiatry.
@@ -30,7 +30,7 @@ export default function EnhancedHero() {
 
                             {/* Enhanced Value Proposition */}
                             <p className="text-xl md:text-2xl text-trust-navy leading-relaxed max-w-lg">
-                                Bespoke administrative intelligence for psychiatrists who manage elite practices.
+                                Tailored administrative intelligence for psychiatrists who manage leading practices.
                                 We provide <span className="text-[#D2691E] font-bold italic">hardened operational support</span> so you can reclaim your clinical focus.
                             </p>
                         </div>

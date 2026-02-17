@@ -74,11 +74,14 @@ export default async function BlogPage() {
     readTime: calculateReadTime(post.body),
     image: post.mainImage ? urlFor(post.mainImage).url() : "/images/hero-new.webp",
     slug: post.slug?.current || "",
+    authorName: post.author?.name,
     featured: false // You can add logic to set this from Sanity if desired
   }));
 
-  // Combine static and live posts (Live posts first)
-  const allPosts = [...livePosts, ...staticPosts];
+  // Combine static and live posts (Live posts first, deduplicated by slug)
+  const liveSlugs = new Set(livePosts.map(p => p.slug));
+  const filteredStatic = staticPosts.filter(p => !liveSlugs.has(p.slug));
+  const allPosts = [...livePosts, ...filteredStatic];
 
   // Logic to ensure all categories are represented
   const liveCategories = [...new Set(livePosts.map(p => p.category))];
@@ -137,7 +140,7 @@ export default async function BlogPage() {
                 <h2 className="font-serif text-4xl text-trust-navy leading-tight">Practice <span className="italic text-slate-400">Services</span></h2>
               </div>
               <p className="text-slate-500 max-w-sm text-sm font-medium leading-relaxed">
-                Deploy specialized psychiatric infrastructure to your practice.
+                Deploy specialized psychiatric support systems to your practice.
               </p>
             </div>
 
