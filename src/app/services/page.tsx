@@ -125,12 +125,12 @@ export default function ServicesPage() {
                                 <h1 className="font-serif text-4xl md:text-6xl text-trust-navy mb-6 leading-[1.05] tracking-tight">
                                     California Psychiatric <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary italic">
-                                        Operations Suite
+                                        Virtual Assistant & Operations Suite
                                     </span>
                                 </h1>
 
                                 <p className="text-lg md:text-xl text-slate-600 leading-relaxed max-w-2xl mb-8 font-medium">
-                                    Virtual Minds provides the <strong className="text-trust-navy">operational backbone</strong> for psychiatrists practicing at the highest clinical and academic levels.
+                                    Virtual Minds provides the <strong className="text-trust-navy">virtual assistant & operational backbone</strong> for psychiatrists practicing at the highest clinical and academic levels.
                                 </p>
 
                                 <div className="flex flex-wrap gap-4">

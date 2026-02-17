@@ -37,8 +37,8 @@ export default function SpecialtiesPage() {
                             </div>
 
                             <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-6 leading-tight">
-                                Specialized Support for <br />
-                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Every Psychiatric Subspecialty</span>
+                                Psychiatric Virtual Assistant Support for <br />
+                                <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Every Subspecialty</span>
                             </h1>
 
                             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">

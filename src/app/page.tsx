@@ -72,7 +72,7 @@ export default function Home() {
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6 animate-fade-in-up [animation-delay:200ms]">
-                  20+ hours a week on calls, forms, and follow-ups — that's time you should be spending with patients. We handle the admin so you don't have to.
+                  20+ hours a week on calls, forms, and follow-ups — that's time you should be spending with patients. We handle the admin with a dedicated <strong>Psychiatric Virtual Assistant</strong> so you don't have to.
                 </p>
 
                 <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8 animate-fade-in-up [animation-delay:400ms]">
