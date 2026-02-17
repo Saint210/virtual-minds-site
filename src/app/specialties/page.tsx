@@ -42,7 +42,7 @@ export default function SpecialtiesPage() {
                             </h1>
 
                             <p className="text-lg md:text-xl text-slate-600 leading-relaxed">
-                                We provide tailored administrative support for California psychiatrists across all subspecialties. Select your specialty to see how we support your unique practice needs.
+                                Your subspecialty has unique admin headaches. We've handled them before.
                             </p>
                         </div>
 

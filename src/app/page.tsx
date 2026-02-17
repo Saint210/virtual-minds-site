@@ -67,16 +67,16 @@ export default function Home() {
               <div className="lg:w-[55%] space-y-6">
 
                 <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6 animate-fade-in-up">
-                  The Clinical Operations<br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">Partner for Private Psychiatry</span>
+                  You Didn't Go to Medical School<br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">to Chase Prior Authorizations.</span>
                 </h1>
 
                 <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6 animate-fade-in-up [animation-delay:200ms]">
-                  Stop managing tasks. Start growing your practice. California's most specialized <strong>Psychiatric Virtual Assistant</strong> service.
+                  20+ hours a week on calls, forms, and follow-ups — that's time you should be spending with patients. We handle the admin so you don't have to.
                 </p>
 
                 <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8 animate-fade-in-up [animation-delay:400ms]">
-                  Generic VAs fail in complex care settings. We deliver <strong>airtight compliance</strong>, <strong>precision intake workflows</strong>, and <strong>seamless patient coordination</strong>.
+                  Generic VAs don't understand <strong>psychiatric billing</strong>, <strong>HIPAA</strong>, or how your <strong>EHR actually works</strong>. We do.
                 </p>
 
                 <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up [animation-delay:600ms]">
@@ -121,7 +121,7 @@ export default function Home() {
                   </div>
                   <div className="mt-6 flex items-center gap-2 bg-trust-navy/5 w-fit px-4 py-2 rounded-lg border border-trust-navy/10">
                     <span className="material-symbols-outlined text-trust-navy text-lg">school</span>
-                    <span className="text-xs font-bold text-trust-navy">Built for Academic-Level Workflows</span>
+                    <span className="text-xs font-bold text-trust-navy">Trusted by Psychiatrists from Top Residency Programs</span>
                   </div>
                 </div>
 
@@ -190,7 +190,7 @@ export default function Home() {
                 <span className="text-8xl text-white/5 font-serif absolute -top-10 -left-6 md:-left-12 select-none pointer-events-none">"</span>
 
                 <p className="text-xl md:text-2xl text-slate-300 leading-relaxed font-serif italic relative">
-                  Cheryl delivered a masterclass in independent psychiatric practice management. Her team stabilized our operations overnight, ensuring consistent revenue and seamless patient intake. With the admin chaos eliminated, I’m finally free to scale—and I’ve already commissioned Virtual Minds to build our new <strong className="text-white font-bold not-italic decoration-primary/50 underline underline-offset-4">high-conversion website</strong>.
+                  I was spending half my day on admin &mdash; prior auths, phone calls, insurance headaches. Cheryl&apos;s team took over and stabilized everything overnight. With that off my plate, I finally have time to scale &mdash; and I&apos;ve already commissioned Virtual Minds to build our new <strong className="text-white font-bold not-italic decoration-primary/50 underline underline-offset-4">high-conversion website</strong>.
                 </p>
 
                 <div className="mt-10 flex flex-col md:flex-row items-center gap-6 pt-8 md:justify-between border-t border-white/10">
@@ -228,12 +228,12 @@ export default function Home() {
 
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
             <div className="text-center max-w-3xl mx-auto mb-20">
-              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">Clinical Specialization</span>
+              <span className="text-primary font-bold tracking-widest uppercase text-xs md:text-sm mb-4 block">We Know Your Specialty</span>
               <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-6">
                 Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy to-primary italic">Complex Care</span>
               </h2>
               <p className="text-xl text-slate-600 leading-relaxed font-light">
-                Refined operational protocols for <strong className="font-medium text-trust-navy">academically trained</strong>, subspecialty-focused psychiatrists.
+                Every subspecialty has different scheduling, billing, and compliance demands. We've seen them all.
               </p>
             </div>
 
@@ -292,22 +292,22 @@ export default function Home() {
           <div className="max-w-[1400px] mx-auto px-6 relative z-10">
             <div className="grid lg:grid-cols-2 gap-20 items-center">
               <div>
-                <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">The Operational Backbone</span>
+                <span className="text-primary font-bold tracking-widest uppercase text-sm mb-4 block">Why Psychiatrists Switch to Us</span>
                 <h2 className="font-serif text-4xl md:text-5xl text-trust-navy mb-8 leading-tight">
-                  Complex Care Requires <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Absolute Precision</span>
+                  Generic VAs <br />
+                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">Can't Handle This</span>
                 </h2>
                 <p className="text-lg text-slate-600 mb-8 leading-relaxed">
-                  Generic virtual assistants cannot support high-acuity psychiatry. They miss critical intake details, fumble prior authorizations, and create revenue leakage.
+                  Most VAs look good on paper but don't understand psychiatric billing, prior auth logic, or HIPAA. They miss intake details, fumble authorizations, and cost you revenue you'll never recover.
                 </p>
                 <div className="pl-6 border-l-4 border-primary relative">
                   <div className="absolute -left-1.5 top-0 w-3 h-3 bg-primary rounded-full border-2 border-white shadow-sm" />
                   <div className="flex items-center gap-2 mb-4 opacity-80">
                     <span className="material-symbols-outlined text-primary text-lg">security</span>
-                    <span className="text-xs font-bold text-trust-navy uppercase tracking-widest">Clinical Clearance Verified</span>
+                    <span className="text-xs font-bold text-trust-navy uppercase tracking-widest">From a Real Client</span>
                   </div>
                   <p className="text-xl font-serif text-trust-navy mb-2 italic">
-                    "We protect your license, your time, and your patient relationships."
+                    "I just want to see my patients. Virtual Minds handles everything else."
                   </p>
                 </div>
                 <div className="mt-8">
@@ -404,7 +404,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-2xl relative top-1 left-1">inventory</span>
                     </div>
                     <div className="flex justify-end mb-10">
-                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_01</span>
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">STEP 01</span>
                     </div>
                     <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Diagnostic Review</h3>
                     <p className="text-slate-600 text-sm leading-relaxed font-medium">We audit your current processes, identify bottlenecks, and review your practice goals to build a custom roadmap.</p>
@@ -421,7 +421,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-2xl relative top-1 left-1">engineering</span>
                     </div>
                     <div className="flex justify-end mb-10">
-                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_02</span>
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">STEP 02</span>
                     </div>
                     <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Implementation</h3>
                     <p className="text-slate-600 text-sm leading-relaxed font-medium">We deploy EHR optimization, set up HIPAA-compliant workflows, and establish clear client management policies.</p>
@@ -438,7 +438,7 @@ export default function Home() {
                       <span className="material-symbols-outlined text-2xl relative top-1 left-1">verified</span>
                     </div>
                     <div className="flex justify-end mb-10">
-                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">SYS_MOD_03</span>
+                      <span className="text-[10px] font-mono font-bold text-slate-400 uppercase tracking-widest border border-slate-200 px-2 py-1 rounded bg-white/80 backdrop-blur-sm">STEP 03</span>
                     </div>
                     <h3 className="font-serif text-2xl text-trust-navy mb-4 mt-2 font-bold">Ongoing Management</h3>
                     <p className="text-slate-600 text-sm leading-relaxed font-medium">Daily administrative management, billing liaison support, and ongoing operational refinement to prevent drift.</p>
@@ -721,7 +721,7 @@ export default function Home() {
                     <div className="inline-block bg-white/5 backdrop-blur-sm border border-white/10 rounded-full px-4 py-1.5 mb-6">
                       <span className="text-accent font-bold uppercase tracking-widest text-xs">Limited Availability</span>
                     </div>
-                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6 leading-tight">Request Strategy Audit</h3>
+                    <h3 className="font-serif text-4xl md:text-5xl text-white mb-6 leading-tight">Let's Talk About Your Practice</h3>
                     <p className="text-slate-300 text-lg leading-relaxed mb-8 border-l-2 border-primary/30 pl-6">
                       We partner with a limited number of psychiatrists to ensure the highest level of service.
                     </p>
