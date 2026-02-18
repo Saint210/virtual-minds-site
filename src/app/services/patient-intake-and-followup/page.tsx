@@ -11,8 +11,8 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
-    title: "California Psychiatric Patient Intake Virtual Assistants | Virtual Minds",
-    description: "California psychiatric patient retention and intake systems. We stabilize your census with screening, onboarding, and continuity logic.",
+    title: "Patient Intake Coordinator & Psychiatric Virtual Assistants | Virtual Minds",
+    description: "Hire a dedicated Patient Intake Coordinator for your California psychiatric practice. We stabilize your census with screening, onboarding, and continuity logic.",
 };
 
 export default function IntakePage() {
@@ -23,7 +23,7 @@ export default function IntakePage() {
                 items={[
                     { label: "Home", href: "/" },
                     { label: "Services", href: "/services" },
-                    { label: "Patient Intake & Follow-up" }
+                    { label: "Patient Intake Coordinator & Follow-up" }
                 ]}
             />
             <main className="flex-grow">
@@ -44,7 +44,8 @@ export default function IntakePage() {
                                 </div>
 
                                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
-                                    Patient Intake <br />
+                                    <span className="block text-2xl md:text-3xl text-primary font-bold mb-2 uppercase tracking-wide">Patient Intake Coordinator</span>
+                                    & Retention <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
                                         Systems.
                                     </span>

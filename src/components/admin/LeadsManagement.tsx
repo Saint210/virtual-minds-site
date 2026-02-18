@@ -1,14 +1,12 @@
 "use client";
 
 import { useState, useEffect } from "react";
-
-// TODO: Uncomment these imports after running `npx convex dev`
-// import { useQuery, useMutation } from "convex/react";
-// import { api } from "@/convex/_generated/api";
-// import type { Id } from "@/convex/_generated/dataModel";
-
-// Mock type for development (remove after Convex is set up)
-type Id<T> = string;
+import { useQuery, useMutation } from "convex/react";
+// @ts-ignore
+// @ts-ignore
+import { api } from "../../../convex/_generated/api";
+// @ts-ignore
+import type { Id } from "../../../convex/_generated/dataModel";
 
 interface Lead {
     _id: Id<"consultationLeads">;
@@ -25,58 +23,18 @@ interface Lead {
     createdAt: number;
 }
 
-// Mock data for development (remove after Convex is set up)
-const mockLeads: Lead[] = [
-    {
-        _id: "mock-1",
-        _creationTime: Date.now() - 3600000,
-        fullName: "Dr. Sarah Johnson",
-        email: "sarah@psychiatry.com",
-        ehrPlatform: "SimplePractice",
-        practiceSize: "1 - 5",
-        painPoint: "Spending too much time on administrative tasks instead of patient care",
-        status: "new",
-        createdAt: Date.now() - 3600000,
-    },
-    {
-        _id: "mock-2",
-        _creationTime: Date.now() - 7200000,
-        fullName: "Dr. Michael Chen",
-        email: "mchen@mindhealth.com",
-        ehrPlatform: "Kareo",
-        practiceSize: "6 - 15",
-        painPoint: "Need help with medication prior authorizations",
-        status: "contacted",
-        contactedAt: Date.now() - 1800000,
-        contactedBy: "admin@virtualminds.com",
-        createdAt: Date.now() - 7200000,
-    },
-];
-
-const mockStats = {
-    total: 2,
-    new: 1,
-    contacted: 1,
-    qualified: 0,
-    converted: 0,
-    lost: 0,
-};
-
 export default function LeadsManagement() {
     const [statusFilter, setStatusFilter] = useState<string | undefined>(undefined);
     const [selectedLead, setSelectedLead] = useState<Lead | null>(null);
     const [newNotes, setNewNotes] = useState("");
     const [adminEmail, setAdminEmail] = useState("");
-    const [localLeads, setLocalLeads] = useState<Lead[]>(mockLeads);
 
-    // TODO: Replace with real Convex queries after setup
-    // const leads = useQuery(api.consultationLeads.getAllLeads, { status: statusFilter });
-    // const stats = useQuery(api.consultationLeads.getLeadStats);
-    // const updateStatus = useMutation(api.consultationLeads.updateLeadStatus);
-    // const addNotes = useMutation(api.consultationLeads.addLeadNotes);
+    // Real Convex Data
+    const leads = useQuery(api.consultationLeads.getAllLeads, { status: statusFilter });
+    const stats = useQuery(api.consultationLeads.getLeadStats);
 
-    const leads = localLeads.filter(lead => !statusFilter || lead.status === statusFilter);
-    const stats = mockStats;
+    const updateStatus = useMutation(api.consultationLeads.updateLeadStatus);
+    const addNotes = useMutation(api.consultationLeads.addLeadNotes);
 
     useEffect(() => {
         const auth = localStorage.getItem("vm-admin-auth");
@@ -87,36 +45,35 @@ export default function LeadsManagement() {
     }, []);
 
     const handleStatusChange = async (leadId: Id<"consultationLeads">, newStatus: string) => {
-        // TODO: Replace with real mutation after Convex setup
-        // await updateStatus({
-        //   id: leadId,
-        //   status: newStatus,
-        //   contactedBy: newStatus === "contacted" ? adminEmail : undefined,
-        // });
+        await updateStatus({
+            id: leadId,
+            status: newStatus,
+            contactedBy: newStatus === "contacted" ? adminEmail : undefined,
+        });
 
-        setLocalLeads(localLeads.map(lead =>
-            lead._id === leadId
-                ? {
-                    ...lead,
-                    status: newStatus,
-                    contactedAt: newStatus === "contacted" ? Date.now() : lead.contactedAt,
-                    contactedBy: newStatus === "contacted" ? adminEmail : lead.contactedBy,
-                }
-                : lead
-        ));
+        // Optimistic update for selected lead if open
+        if (selectedLead && selectedLead._id === leadId) {
+            setSelectedLead({
+                ...selectedLead,
+                status: newStatus,
+                contactedAt: newStatus === "contacted" ? Date.now() : selectedLead.contactedAt,
+                contactedBy: newStatus === "contacted" ? adminEmail : selectedLead.contactedBy
+            });
+        }
     };
 
     const handleAddNotes = async (leadId: Id<"consultationLeads">) => {
         if (!newNotes.trim()) return;
 
-        // TODO: Replace with real mutation after Convex setup
-        // await addNotes({ id: leadId, notes: newNotes });
+        await addNotes({ id: leadId, notes: newNotes });
 
-        setLocalLeads(localLeads.map(lead =>
-            lead._id === leadId ? { ...lead, notes: newNotes } : lead
-        ));
+        // Optimistic update
+        if (selectedLead && selectedLead._id === leadId) {
+            setSelectedLead({ ...selectedLead, notes: newNotes });
+        }
+
         setNewNotes("");
-        setSelectedLead(null);
+        // Don't close modal, just clear input so they can see it saved (re-render will show it if backend updates fast enough, or usage of optimistic update)
     };
 
     const getStatusColor = (status: string) => {
@@ -146,29 +103,17 @@ export default function LeadsManagement() {
         });
     };
 
-    return (
-        <div className="space-y-8">
-            {/* Setup Notice */}
-            <div className="bg-blue-50 border border-blue-200 rounded-xl p-6">
-                <div className="flex items-start gap-3">
-                    <span className="material-symbols-outlined text-blue-600 text-2xl">info</span>
-                    <div>
-                        <h3 className="text-lg font-bold text-blue-900 mb-2">Setup Required</h3>
-                        <p className="text-blue-700 mb-3">
-                            This is showing <strong>mock data</strong>. To see real leads, you need to:
-                        </p>
-                        <ol className="list-decimal list-inside space-y-1 text-blue-700 text-sm">
-                            <li>Run <code className="bg-blue-100 px-2 py-1 rounded">npx convex dev</code> in your terminal</li>
-                            <li>Get a Resend API key from <a href="https://resend.com" target="_blank" rel="noreferrer" className="underline">resend.com</a></li>
-                            <li>Create <code className="bg-blue-100 px-2 py-1 rounded">.env.local</code> with your credentials</li>
-                            <li>Restart your dev server</li>
-                        </ol>
-                        <p className="text-blue-700 mt-3 text-sm">
-                            📚 See <code className="bg-blue-100 px-2 py-1 rounded">LEAD_MANAGEMENT_SETUP.md</code> for detailed instructions
-                        </p>
-                    </div>
-                </div>
+    if (!leads && !stats) {
+        return (
+            <div className="p-12 text-center">
+                <div className="size-8 border-4 border-primary/30 border-t-primary rounded-full animate-spin mx-auto mb-4"></div>
+                <p className="text-slate-500">Loading Command Center...</p>
             </div>
+        );
+    }
+
+    return (
+        <div className="space-y-8 animate-in fade-in duration-500">
 
             {/* Stats Cards */}
             {stats && (
@@ -219,7 +164,7 @@ export default function LeadsManagement() {
             </div>
 
             {/* Leads Table */}
-            <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden">
+            <div className="bg-white rounded-xl shadow-sm border border-slate-200 overflow-hidden min-h-[400px]">
                 <table className="w-full">
                     <thead className="bg-slate-50 border-b border-slate-200">
                         <tr>
@@ -233,7 +178,7 @@ export default function LeadsManagement() {
                     </thead>
                     <tbody className="divide-y divide-slate-200">
                         {leads?.map((lead) => (
-                            <tr key={lead._id} className="hover:bg-slate-50">
+                            <tr key={lead._id} className="hover:bg-slate-50 transition-colors">
                                 <td className="p-4">
                                     <div>
                                         <div className="font-medium text-slate-900">{lead.fullName}</div>
@@ -257,7 +202,7 @@ export default function LeadsManagement() {
                                     <select
                                         value={lead.status}
                                         onChange={(e) => handleStatusChange(lead._id, e.target.value)}
-                                        className={`text-xs font-medium px-2 py-1 rounded border-0 ${getStatusColor(lead.status)}`}
+                                        className={`text-xs font-medium px-2 py-1 rounded border-0 cursor-pointer ${getStatusColor(lead.status)}`}
                                     >
                                         <option value="new">New</option>
                                         <option value="contacted">Contacted</option>
@@ -267,40 +212,42 @@ export default function LeadsManagement() {
                                     </select>
                                 </td>
                                 <td className="p-4 text-sm text-slate-600">
-                                    {formatDate(lead.createdAt)}
+                                    {formatDate(lead._creationTime)}
                                 </td>
                                 <td className="p-4">
-                                    <div className="flex gap-2">
-                                        <button
-                                            onClick={() => setSelectedLead(lead)}
-                                            className="text-blue-600 hover:text-blue-700 text-sm font-medium"
-                                        >
-                                            View Details
-                                        </button>
-                                    </div>
+                                    <button
+                                        onClick={() => setSelectedLead(lead)}
+                                        className="text-blue-600 hover:text-blue-700 text-sm font-medium hover:underline"
+                                    >
+                                        View Details
+                                    </button>
                                 </td>
                             </tr>
                         ))}
                     </tbody>
                 </table>
 
-                {!leads || leads.length === 0 && (
-                    <div className="p-8 text-center text-slate-500">
-                        No leads found. {statusFilter && "Try changing the filter."}
+                {leads && leads.length === 0 && (
+                    <div className="p-12 text-center text-slate-500 flex flex-col items-center gap-4">
+                        <div className="size-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-400">
+                            <span className="material-symbols-outlined text-2xl">inbox</span>
+                        </div>
+                        <p>No leads found via real-time sync.</p>
+                        {statusFilter && <p className="text-sm">Try clearing the "{statusFilter}" filter.</p>}
                     </div>
                 )}
             </div>
 
             {/* Lead Detail Modal */}
             {selectedLead && (
-                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4">
-                    <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+                <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4 backdrop-blur-sm animate-in fade-in duration-200">
+                    <div className="bg-white rounded-xl shadow-2xl max-w-2xl w-full max-h-[90vh] overflow-y-auto animate-in zoom-in-95 duration-200">
                         <div className="p-6 border-b border-slate-200">
                             <div className="flex items-center justify-between">
                                 <h3 className="text-2xl font-bold text-slate-900">Lead Details</h3>
                                 <button
                                     onClick={() => setSelectedLead(null)}
-                                    className="text-slate-400 hover:text-slate-600"
+                                    className="text-slate-400 hover:text-slate-600 transition-colors"
                                 >
                                     <span className="material-symbols-outlined">close</span>
                                 </button>
@@ -360,7 +307,7 @@ export default function LeadsManagement() {
                                     </div>
                                     <div className="flex items-center justify-between">
                                         <span className="text-sm text-slate-600">Submitted:</span>
-                                        <span className="text-sm font-medium">{formatDate(selectedLead.createdAt)}</span>
+                                        <span className="text-sm font-medium">{formatDate(selectedLead._creationTime)}</span>
                                     </div>
                                     {selectedLead.contactedAt && (
                                         <div className="flex items-center justify-between">
@@ -395,7 +342,7 @@ export default function LeadsManagement() {
                                 <button
                                     onClick={() => handleAddNotes(selectedLead._id)}
                                     disabled={!newNotes.trim()}
-                                    className="mt-2 px-4 py-2 bg-[#D2691E] text-white rounded-lg hover:bg-[#D2691E]/90 disabled:opacity-50 disabled:cursor-not-allowed"
+                                    className="mt-2 px-4 py-2 bg-[#D2691E] text-white rounded-lg hover:bg-[#D2691E]/90 disabled:opacity-50 disabled:cursor-not-allowed transition-all"
                                 >
                                     Save Notes
                                 </button>
@@ -405,7 +352,7 @@ export default function LeadsManagement() {
                             <div className="flex gap-3 pt-4 border-t border-slate-200">
                                 <a
                                     href={`mailto:${selectedLead.email}?subject=Virtual Minds Consultation Follow-up&body=Hi ${selectedLead.fullName},%0D%0A%0D%0AThank you for your interest in Virtual Minds...`}
-                                    className="flex-1 px-4 py-2 bg-[#D2691E] text-white text-center rounded-lg hover:bg-[#D2691E]/90 font-medium"
+                                    className="flex-1 px-4 py-2 bg-[#D2691E] text-white text-center rounded-lg hover:bg-[#D2691E]/90 font-medium transition-all"
                                 >
                                     Send Email
                                 </a>
@@ -415,7 +362,7 @@ export default function LeadsManagement() {
                                             handleStatusChange(selectedLead._id, "contacted");
                                         }
                                     }}
-                                    className="flex-1 px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-slate-300 font-medium"
+                                    className="flex-1 px-4 py-2 bg-slate-200 text-slate-700 rounded-lg hover:bg-slate-300 font-medium transition-all"
                                 >
                                     Mark as Contacted
                                 </button>

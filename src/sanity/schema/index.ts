@@ -3,6 +3,7 @@ import post from './post'
 import author from './author'
 import service from './service'
 import location from './location'
+import imageAsset from './imageAsset'
 import calculatorSubmission from './calculatorSubmission' // Import
 import page, {
     heroSection,
@@ -20,6 +21,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
     author,
     service,
     location,
+    imageAsset,
     calculatorSubmission, // Register
     page,
     heroSection,

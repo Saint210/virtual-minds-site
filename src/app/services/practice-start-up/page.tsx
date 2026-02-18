@@ -38,14 +38,14 @@ export default function PracticeStartUpPage() {
                                     <span className="material-symbols-outlined text-sm">rocket_launch</span>
                                     30-Day Launch System
                                 </div>
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1]">
-                                    The Private Practice <br />
+                                <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                                    California Psychiatric <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                                        Operating System.
+                                        Private Practice Start-Up.
                                     </span>
                                 </h1>
                                 <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
-                                    Don't waste 6 months Googling "how to start a practice." We deploy a turnkey <span className="text-trust-navy font-bold">operational setup</span>—EHR, credentialing, and compliance—so you open your doors in 30 days.
+                                    Don't waste 6 months Googling "how to start a Psychiatric Private Practice in California." We deploy a turnkey <span className="text-trust-navy font-bold">operational setup</span>—EHR, credentialing, and compliance—so you open your doors in 30 days.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Practice Start-Up" />
 

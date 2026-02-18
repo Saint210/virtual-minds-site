@@ -10,8 +10,9 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
-    title: "HIPAA Compliant Virtual Assistants for Psychiatrists | Virtual Minds",
-    description: "HIPAA compliant clinical support for psychiatrists. We provide BAA coverage, secure workflows, and risk mitigation systems.",
+    title: "HIPAA Compliant Virtual Assistants & Psychiatric Compliance | California",
+    description: "Hire HIPAA compliant virtual assistants for your psychiatric practice. We sign BAAs, manage secure Google Workspaces, and ensure 100% audit-readiness.",
+    keywords: ["HIPAA compliant virtual assistant", "psychiatry hipaa checklist", "mental health BAA", "google workspace hipaa compliance", "private practice compliance audit", "telehealth security requirements"],
 };
 
 export default function HIPAAPage() {
@@ -43,16 +44,16 @@ export default function HIPAAPage() {
                                 </div>
 
                                 <h1 className="font-display text-4xl md:text-6xl lg:text-[4.5rem] font-bold text-trust-navy mb-5 leading-[0.95] tracking-tight">
-                                    HIPAA-Compliant <br />
+                                    HIPAA Compliant <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
-                                        Clinical Support.
+                                        Virtual Assistants.
                                     </span>
                                 </h1>
 
                                 <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
-                                    We don't just "follow" HIPAA—we engineer hardened
-                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">secure clinical environments</span>
-                                    that mitigate your liability and protect patient trust.
+                                    We don't just "follow" HIPAA—we deploy
+                                    <span className="text-trust-navy font-bold border-b-2 border-[#D2691E]/30 mx-2">Business Associate Agreements (BAA)</span>
+                                    and secure workspaces that protect your license and patient trust.
                                 </p>
                                 <LocationTagline variant="service" serviceName="HIPAA Compliance Support" />
 

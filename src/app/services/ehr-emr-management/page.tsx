@@ -10,8 +10,8 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
-  title: "Psychiatric EHR Optimization & Management | California Specialists",
-  description: "Beyond simple support—we optimize psychiatric EHR workflows for California MDs. Integration experts for DrChrono, SimplePractice, and CharmHealth with privacy-audited protocols.",
+  title: "EHR Management for Psychiatrists & Workflow Optimization",
+  description: "Expert EHR Management for Psychiatrists in California. We optimize psychiatric EHR workflows for California MDs. Integration experts for DrChrono, SimplePractice, and CharmHealth.",
   keywords: ["psychiatric EHR optimization", "DrChrono virtual assistant", "SimplePractice psychiatric workflow", "CharmHealth management", "medical record automation psychiatry", "HIPAA compliant EMR support"],
   openGraph: {
     title: "EHR Optimization for California Psychiatrists | Virtual Minds",
@@ -161,14 +161,15 @@ export default function EHRManagementPage() {
                   <span className="tracking-[0.2em] uppercase">Workflow Optimization</span>
                 </div>
 
-                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
-                  Psychiatric <br />
+                <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                  <span className="block text-xl md:text-2xl text-primary font-bold mb-2 uppercase tracking-wide">EHR Management for Psychiatrists</span>
+                  & Psychiatric <br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">
                     Workflow Optimization.
                   </span>
                 </h1>
 
-                <p className="text-xl md:text-2xl text-slate-600 font-medium leading-relaxed mb-4 max-w-2xl">
+                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                   We don&apos;t just &quot;type notes&quot;—we engineer
                   <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">DrChrono, Charm, and SimplePractice</span>
                   macros that cut your documentation time in half.
@@ -242,7 +243,7 @@ export default function EHRManagementPage() {
               <div className="lg:w-[40%] relative w-full">
                 <div className="relative group">
                   <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl opacity-50"></div>
-                  <div className="relative aspect-[4/5] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
+                  <div className="relative aspect-[1/1] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
                     <Image
                       src="/images/ehr-optimization-mockup-v2.png"
                       alt="Psychiatric EHR Optimization Dashboard"

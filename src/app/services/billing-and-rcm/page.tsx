@@ -12,8 +12,8 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata: Metadata = {
-    title: "Psychiatric Billing Administration & RCM Support | California",
-    description: "We are the bridge between your clinical notes and your billing company. Specialized support for prior authorizations, superbills, and denial liaison.",
+    title: "Mental Health Billing Services & RCM Support | California Psychiatry",
+    description: "Specialized Mental Health Billing Services. We bridge the gap between your clinical notes and your billing company. Specialized support for prior authorizations.",
 };
 
 export default function BillingPage() {
@@ -25,7 +25,7 @@ export default function BillingPage() {
                 items={[
                     { label: "Home", href: "/" },
                     { label: "Services", href: "/services" },
-                    { label: "Billing Administration" }
+                    { label: "Mental Health Billing Services" }
                 ]}
             />
             <main className="flex-grow">
@@ -40,18 +40,19 @@ export default function BillingPage() {
                                     <span className="material-symbols-outlined text-sm">verified</span>
                                     Verified Liaison Service
                                 </div>
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1]">
+                                <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                                    <span className="block text-xl md:text-2xl text-primary font-bold mb-2 uppercase tracking-wide">Mental Health Billing Services</span>
                                     We Don't Submit Claims.<br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-secondary animate-gradient-x">
                                         We Ensure They Get Paid.
                                     </span>
                                 </h1>
-                                <p className="text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
+                                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed mb-6 max-w-2xl">
                                     The gap between your clinical notes and your billing company is where revenue is lost. We act as your <span className="text-trust-navy font-bold">Administrative Liaison</span>, managing prior auths, superbills, and billing inquiries so you don't have to.
                                 </p>
                                 <LocationTagline variant="service" serviceName="Billing & RCM" />
 
-                                <div className="flex flex-col sm:flex-row gap-4">
+                                <div className="flex flex-col sm:flex-row gap-4 mb-8">
                                     <TrackedLink
                                         href="/book-consultation"
                                         ctaName="Schedule Usage Audit"
@@ -68,14 +69,13 @@ export default function BillingPage() {
                             </div>
 
                             {/* Visual */}
-                            <div className="lg:w-1/2 relative">
-                                <div className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
+                            <div className="lg:w-1/2 relative w-full">
+                                <div className="relative aspect-[1/1] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white bg-white">
                                     <div className="absolute inset-0 bg-slate-900/5 z-10"></div>
                                     <Image
                                         src="/images/visual-intel-rcm.png"
                                         alt="Revenue Cycle Management Dashboard"
-                                        width={800}
-                                        height={600}
+                                        fill
                                         className="object-cover"
                                         priority
                                     />
@@ -105,7 +105,7 @@ export default function BillingPage() {
                         <div className="text-center mb-16">
                             <h2 className="font-serif text-4xl font-bold text-trust-navy mb-4">The "Liaison" Difference</h2>
                             <p className="text-lg text-slate-600 max-w-2xl mx-auto">
-                                We are strictly administrative coordinators. We do NOT replace your biller; we make them effective.
+                                Virtual Minds does not create claims or submit billing on behalf of a practice. We will work together with your billing company to assist in resolving any issues that may arise.
                             </p>
                         </div>
 

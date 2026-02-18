@@ -22,6 +22,7 @@ export const client = isMissingEnv
         dataset,
         apiVersion,
         useCdn: false,
+        token: process.env.SANITY_API_TOKEN, // Required for write operations (metadata updates)
     });
 
 // Only initialize builder if client is valid

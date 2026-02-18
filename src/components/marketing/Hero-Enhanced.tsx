@@ -84,8 +84,10 @@ export default function EnhancedHero() {
                                 src="/images/homepage-hero.webp"
                                 alt="California Psychiatrist Collaborating with Virtual Minds Assistant"
                                 fill
+                                sizes="(max-width: 768px) 100vw, 50vw"
                                 className="object-cover"
-                                priority
+                                priority={true}
+                                quality={90}
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-[#D2691E]/10 to-transparent"></div>
                         </div>

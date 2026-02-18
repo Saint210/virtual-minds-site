@@ -2,9 +2,12 @@
 
 import { useState } from "react";
 import { useSearchParams } from "next/navigation";
+import { useMutation } from "convex/react";
+// @ts-ignore
+import { api } from "../../../convex/_generated/api";
 
 // Step Types - REDESIGNED V3
-type Step = "MODEL" | "CHALLENGE" | "STAFFING" | "TIME_DRAIN" | "TECH" | "DIGITAL" | "BOOKING";
+type Step = "MODEL" | "CHALLENGE" | "STAFFING" | "TIME_DRAIN" | "TECH" | "DIGITAL" | "CONTACT" | "BOOKING";
 
 interface WizardState {
     practiceModel: string;
@@ -13,6 +16,10 @@ interface WizardState {
     timeDrain: string;
     ehr: string;
     digital: string;
+    fullName: string;
+    email: string;
+    phone: string;
+    practiceName: string;
 }
 
 export default function PracticeAuditWizard() {
@@ -23,8 +30,15 @@ export default function PracticeAuditWizard() {
         staffing: "",
         timeDrain: "",
         ehr: "",
-        digital: ""
+        digital: "",
+        fullName: "",
+        email: "",
+        phone: "",
+        practiceName: ""
     });
+
+    const createLead = useMutation(api.consultationLeads.createLead);
+    const [isSubmitting, setIsSubmitting] = useState(false);
 
 
 
@@ -96,9 +110,27 @@ export default function PracticeAuditWizard() {
         else if (step === "STAFFING") setStep("TIME_DRAIN");
         else if (step === "TIME_DRAIN") setStep("TECH");
         else if (step === "TECH") setStep("DIGITAL");
-        else if (step === "DIGITAL") {
-            // After all questions, show calendar
+        else if (step === "DIGITAL") setStep("CONTACT");
+    };
+
+    const handleSubmitContact = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setIsSubmitting(true);
+
+        try {
+            await createLead({
+                fullName: data.fullName,
+                email: data.email,
+                ehrPlatform: data.ehr,
+                practiceSize: data.practiceModel, // Mapping model to size loosely
+                painPoint: data.challenge,
+            });
             setStep("BOOKING");
+        } catch (error) {
+            console.error("Failed to submit lead:", error);
+            alert("Something went wrong. Please try again.");
+        } finally {
+            setIsSubmitting(false);
         }
     };
 
@@ -108,6 +140,7 @@ export default function PracticeAuditWizard() {
         else if (step === "TIME_DRAIN") setStep("STAFFING");
         else if (step === "TECH") setStep("TIME_DRAIN");
         else if (step === "DIGITAL") setStep("TECH");
+        else if (step === "CONTACT") setStep("DIGITAL");
     };
 
 
@@ -115,12 +148,13 @@ export default function PracticeAuditWizard() {
     // Helper to calculate progress width (6 questions)
     const getProgress = () => {
         switch (step) {
-            case "MODEL": return "w-[16.66%]";
-            case "CHALLENGE": return "w-[33.33%]";
-            case "STAFFING": return "w-[50%]";
-            case "TIME_DRAIN": return "w-[66.66%]";
-            case "TECH": return "w-[83.33%]";
-            case "DIGITAL": return "w-[100%]";
+            case "MODEL": return "w-[14%]";
+            case "CHALLENGE": return "w-[28%]";
+            case "STAFFING": return "w-[42%]";
+            case "TIME_DRAIN": return "w-[56%]";
+            case "TECH": return "w-[70%]";
+            case "DIGITAL": return "w-[84%]";
+            case "CONTACT": return "w-[95%]";
             default: return "w-full";
         }
     };
@@ -151,7 +185,7 @@ export default function PracticeAuditWizard() {
                 {step !== "BOOKING" && (
                     <div className="mb-10">
                         <span className="text-primary font-black uppercase tracking-widest text-xs mb-2 block">
-                            Diagnostic Step {["MODEL", "CHALLENGE", "STAFFING", "TIME_DRAIN", "TECH", "DIGITAL"].indexOf(step) + 1} of 6
+                            Diagnostic Step {["MODEL", "CHALLENGE", "STAFFING", "TIME_DRAIN", "TECH", "DIGITAL", "CONTACT"].indexOf(step) + 1} of 7
                         </span>
                         <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy leading-tight">
                             {step === "MODEL" && "Describe your practice model."}
@@ -160,6 +194,7 @@ export default function PracticeAuditWizard() {
                             {step === "TIME_DRAIN" && "What administrative task takes most of your time?"}
                             {step === "TECH" && "What is your clinical OS?"}
                             {step === "DIGITAL" && "How do patients find you?"}
+                            {step === "CONTACT" && "Where should we send your custom strategy?"}
                         </h2>
                     </div>
                 )}
@@ -316,6 +351,75 @@ export default function PracticeAuditWizard() {
                 )}
 
 
+
+
+                {/* STEP 7: CONTACT FORM */}
+                {step === "CONTACT" && (
+                    <form onSubmit={handleSubmitContact} className="max-w-md mx-auto w-full animate-in slide-in-from-right-8 duration-500">
+                        <div className="space-y-4">
+                            <div>
+                                <label className="block text-sm font-bold text-trust-navy mb-1">Full Name</label>
+                                <input
+                                    required
+                                    type="text"
+                                    placeholder="Dr. Sarah Smith"
+                                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                    value={data.fullName}
+                                    onChange={(e) => setData({ ...data, fullName: e.target.value })}
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-bold text-trust-navy mb-1">Work Email</label>
+                                <input
+                                    required
+                                    type="email"
+                                    placeholder="doctor@practice.com"
+                                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                    value={data.email}
+                                    onChange={(e) => setData({ ...data, email: e.target.value })}
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm font-bold text-trust-navy mb-1">Practice Name</label>
+                                <input
+                                    required
+                                    type="text"
+                                    placeholder="Smith Psychiatry Group"
+                                    className="w-full px-4 py-3 bg-slate-50 border border-slate-200 rounded-xl focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                                    value={data.practiceName}
+                                    onChange={(e) => setData({ ...data, practiceName: e.target.value })}
+                                />
+                            </div>
+                        </div>
+
+                        <button
+                            type="submit"
+                            disabled={isSubmitting}
+                            className="mt-8 w-full bg-[#D2691E] hover:bg-[#B8860B] text-white text-lg font-bold py-4 rounded-2xl shadow-xl shadow-[#D2691E]/20 hover:scale-[1.02] active:scale-95 transition-all flex items-center justify-center gap-2 disabled:opacity-70 disabled:cursor-not-allowed"
+                        >
+                            {isSubmitting ? (
+                                <>
+                                    <span className="size-5 border-2 border-white/30 border-t-white rounded-full animate-spin"></span>
+                                    Generating Strategy...
+                                </>
+                            ) : (
+                                <>
+                                    Reveal My Strategy <span className="material-symbols-outlined">arrow_forward</span>
+                                </>
+                            )}
+                        </button>
+
+                        <button type="button" onClick={handleBack} className="w-full text-slate-400 text-sm font-bold mt-4 hover:text-trust-navy transition-colors flex items-center gap-2 justify-center">
+                            <span className="material-symbols-outlined text-sm">arrow_back</span> Back
+                        </button>
+
+                        <p className="mt-4 text-center text-[10px] text-slate-400 font-medium">
+                            Private & HIPAA Compliant. We never sell your data.
+                        </p>
+                    </form>
+                )}
 
                 {/* STEP 7: BOOKING - IMMEDIATE CALENDAR */}
                 {step === "BOOKING" && (

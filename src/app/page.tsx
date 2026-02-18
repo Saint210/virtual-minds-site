@@ -23,7 +23,7 @@ const PracticeLeaksCalculator = dynamic(() => import("@/components/tools/Practic
 
 export const metadata = {
   title: "California Psychiatric Virtual Assistant | Virtual Minds",
-  description: "California's premier psychiatric virtual assistant for high-acuity practices. HIPAA-compliant support for intake, billing, and practice management. Recover 15+ hours weekly.",
+  description: "California Psychiatric Virtual Assistant services for high-acuity practices. HIPAA-compliant support for intake, billing, and practice management. Recover 15+ hours weekly.",
 };
 
 export default function Home() {
@@ -66,20 +66,21 @@ export default function Home() {
               {/* Copy (Left) */}
               <div className="lg:w-[55%] space-y-6">
 
-                <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.2] tracking-tight mb-6 animate-fade-in-up">
+                <h1 className="font-serif text-4xl md:text-6xl font-medium text-trust-navy leading-[1.1] tracking-tight mb-4 animate-fade-in-up">
+                  <span className="block text-lg md:text-xl text-primary font-bold mb-2 uppercase tracking-wide">California Psychiatric Virtual Assistant</span>
                   You Didn't Go to Medical School<br />
                   <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80 font-bold">to Chase Prior Authorizations.</span>
                 </h1>
 
-                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-6 animate-fade-in-up [animation-delay:200ms]">
+                <p className="text-lg md:text-xl text-slate-600 font-medium leading-relaxed max-w-2xl border-l-4 border-primary pl-4 md:pl-6 mb-4 animate-fade-in-up [animation-delay:200ms]">
                   20+ hours a week on calls, forms, and follow-ups — that's time you should be spending with patients. We handle the admin with a dedicated <strong>Psychiatric Virtual Assistant</strong> so you don't have to.
                 </p>
 
-                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-8 animate-fade-in-up [animation-delay:400ms]">
+                <p className="text-lg text-slate-500 leading-relaxed max-w-2xl mb-4 animate-fade-in-up [animation-delay:400ms]">
                   Generic VAs don't understand <strong>psychiatric billing</strong>, <strong>HIPAA</strong>, or how your <strong>EHR actually works</strong>. We do.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 pt-4 animate-fade-in-up [animation-delay:600ms]">
+                <div className="flex flex-col sm:flex-row gap-4 pt-2 animate-fade-in-up [animation-delay:600ms]">
                   <Link href="/book-consultation" className="bg-primary hover:bg-primary-hover text-white px-8 py-4 rounded-xl font-bold text-lg shadow-xl shadow-primary/20 transition-all hover:scale-[1.02] text-center flex items-center justify-center gap-2 group">
                     <span>Request Audit</span>
                     <span className="material-symbols-outlined text-white/80 group-hover:translate-x-1 transition-transform">arrow_forward</span>
@@ -90,7 +91,7 @@ export default function Home() {
                 </div>
 
                 {/* Micro-Stats Bar */}
-                <div className="grid grid-cols-3 gap-4 py-6 mt-6 animate-fade-in-up [animation-delay:800ms]">
+                <div className="grid grid-cols-3 gap-4 py-3 mt-4 animate-fade-in-up [animation-delay:800ms]">
                   <div className="text-center">
                     <p className="text-3xl md:text-4xl font-serif font-bold text-primary flex justify-center">
                       <AnimatedCounter end={15} suffix="+" duration={2000} />
@@ -112,14 +113,14 @@ export default function Home() {
                 </div>
 
                 {/* Authority Signal */}
-                <div className="pt-4 border-t border-slate-200/60 mt-4">
+                <div className="pt-3 border-t border-slate-200/60 mt-2">
                   <p className="text-sm font-bold text-slate-400 uppercase tracking-widest mb-2">Supporting Clinicians Trained At</p>
-                  <div className="flex flex-wrap gap-x-8 gap-y-4 opacity-60">
+                  <div className="flex flex-wrap gap-x-8 gap-y-2 opacity-60">
                     {["UCSF", "Stanford", "Harvard", "UCLA", "Princeton", "Duke", "Baylor"].map(school => (
                       <span key={school} className="font-serif text-xl text-trust-navy">{school}</span>
                     ))}
                   </div>
-                  <div className="mt-6 flex items-center gap-2 bg-trust-navy/5 w-fit px-4 py-2 rounded-lg border border-trust-navy/10">
+                  <div className="mt-4 flex items-center gap-2 bg-trust-navy/5 w-fit px-4 py-2 rounded-lg border border-trust-navy/10">
                     <span className="material-symbols-outlined text-trust-navy text-lg">school</span>
                     <span className="text-xs font-bold text-trust-navy">Trusted by Psychiatrists from Top Residency Programs</span>
                   </div>
@@ -131,7 +132,7 @@ export default function Home() {
               <div className="lg:w-[45%] relative">
                 <div
                   className="relative rounded-[2.5rem] overflow-hidden shadow-2xl border border-white/50 bg-slate-100 animate-fade-in-up [animation-delay:800ms] hover:scale-[1.02] transition-transform duration-700 ease-out"
-                  style={{ aspectRatio: '4/5' }}
+                  style={{ aspectRatio: '1/1' }}
                 >
                   {/* Organic Tech Gradient Overlay */}
                   <div className="absolute inset-0 bg-gradient-to-tr from-trust-navy/40 via-transparent to-accent/20 z-10 pointer-events-none mix-blend-multiply" />

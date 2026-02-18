@@ -10,9 +10,9 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
-    title: "Psychiatric Practice Management & Strategic Launch | California",
-    description: "Specialized practice consulting for California psychiatrists. From launch logistics to operational audits and compliance-ready policy creation.",
-    keywords: ["psychiatric practice management", "california mental health strategy", "practice start-up services", "EHR implementation", "HIPAA compliance support"],
+    title: "Psychiatric Practice Consulting & Management | California",
+    description: "Expert psychiatric practice consulting in California. We optimize workflows, ensure HIPAA compliance, and scale mental health practices.",
+    keywords: ["psychiatric practice consulting", "mental health practice management", "psychiatry business consultant", "private practice scaling", "California mental health operations"],
 };
 
 export default function ConsultingPage() {
@@ -43,13 +43,13 @@ export default function ConsultingPage() {
                                     <span className="tracking-[0.2em] uppercase">Practice Intelligence</span>
                                 </div>
 
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
-                                    Strategic Practice <br />
+                                <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                                    Psychiatric Practice <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
-                                        Consulting.
+                                        Management & Consulting.
                                     </span>
                                 </h1>
-                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
+                                <p className="text-lg md:text-xl text-slate-600 font-display leading-relaxed mb-6 max-w-2xl">
                                     We build the
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">operational systems</span>
                                     that let California psychiatrists scale without administrative friction.
@@ -165,93 +165,138 @@ export default function ConsultingPage() {
                     </div>
                 </section>
 
-                {/* 2. THE EXCELLENCE FRAMEWORK */}
+                {/* 2. CONSULTING SERVICES LIST */}
                 <section className="py-32 bg-white">
                     <div className="max-w-7xl mx-auto px-6">
                         <div className="text-center mb-20">
-                            <div className="inline-flex items-center gap-2 mb-6">
-                                <span className="text-[#D2691E] font-bold uppercase tracking-widest text-[11px]">Our Approach</span>
-                                <span className="w-12 h-[2px] bg-gradient-to-r from-[#D2691E] to-transparent"></span>
-                            </div>
                             <h2 className="text-4xl md:text-5xl font-serif font-bold text-trust-navy mb-8">
-                                We Solve for <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Sustainable Excellence</span>.
+                                Comprehensive <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Consulting Services</span>
                             </h2>
                             <p className="text-slate-600 max-w-3xl mx-auto text-lg font-medium">
-                                Generic medical consulting fails psychiatrists because it ignores the unique nuances of mental health liability and medication management. We design for the <strong className="text-trust-navy">psychiatric-specific ecosystem</strong>.
+                                Expert guidance designed to stabilize and scale your psychiatric practice.
                             </p>
                         </div>
 
-                        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-                            {/* Card 1: Start-Up */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">rocket_launch</span>
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Practice Start-Up & Launch</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Complete practice setup including clinical systems (physical or remote), EHR implementation, and operational roadmap development.</p>
+                        <div className="grid md:grid-cols-2 gap-12 mb-24">
+                            {/* CORE CONSULTING */}
+                            <div className="space-y-8">
+                                <h3 className="font-serif text-3xl font-bold text-trust-navy border-b border-primary/20 pb-4">
+                                    Practice Operations
+                                </h3>
+                                <div className="grid gap-6">
+                                    {[
+                                        {
+                                            title: "Practice Start-Up Services",
+                                            link: "/services/practice-start-up",
+                                            icon: "rocket_launch",
+                                            desc: "A turnkey launch system for new practices."
+                                        },
+                                        {
+                                            title: "Review Current Plans",
+                                            icon: "plagiarism",
+                                            desc: "Audit of existing operational and business models."
+                                        },
+                                        {
+                                            title: "Office Set-Up",
+                                            icon: "desk",
+                                            desc: "Physical or digital workspace configuration logistics."
+                                        },
+                                        {
+                                            title: "EHR Implementation",
+                                            link: "/services/ehr-emr-management",
+                                            icon: "computer",
+                                            desc: "Selection, configuration, and migration support."
+                                        },
+                                        {
+                                            title: "Contract Review & Negotiation",
+                                            icon: "history_edu",
+                                            desc: "Payer and vendor contract analysis (Non-legal)."
+                                        },
+                                        {
+                                            title: "HIPAA Compliance",
+                                            link: "/services/hipaa-compliance-support",
+                                            icon: "shield_lock",
+                                            desc: "Risk assessments and BAA management."
+                                        },
+                                        {
+                                            title: "Client Management Policies",
+                                            icon: "policy",
+                                            desc: "Creating experience policies and standard operating procedures."
+                                        }
+                                    ].map((item, i) => (
+                                        <div key={i} className="flex items-start gap-4 p-4 rounded-2xl bg-slate-50 border border-slate-100 hover:border-trust-navy hover:shadow-lg transition-all group">
+                                            <div className="mt-1 p-2 bg-white rounded-lg shadow-sm text-trust-navy group-hover:text-primary transition-colors">
+                                                <span className="material-symbols-outlined">{item.icon}</span>
+                                            </div>
+                                            <div className="flex-grow">
+                                                {item.link ? (
+                                                    <Link href={item.link} className="font-bold text-lg text-trust-navy hover:text-primary transition-colors flex items-center gap-2">
+                                                        {item.title}
+                                                        <span className="material-symbols-outlined text-sm opacity-50">arrow_forward</span>
+                                                    </Link>
+                                                ) : (
+                                                    <h4 className="font-bold text-lg text-trust-navy">{item.title}</h4>
+                                                )}
+                                                <p className="text-slate-600 text-sm mt-1">{item.desc}</p>
+                                            </div>
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
 
-                            {/* Card 2: Diagnostics */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">troubleshoot</span>
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Operational Diagnostics</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">A systematic review of your current systems and workflows to identify bottlenecks and implement new, efficient procedures.</p>
-                                </div>
-                            </div>
+                            {/* GROWING YOUR PRACTICE */}
+                            <div className="bg-trust-navy rounded-[2.5rem] p-10 text-white relative overflow-hidden">
+                                <div className="absolute top-0 right-0 w-[400px] h-[400px] bg-primary/20 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/2 pointer-events-none" />
 
-                            {/* Card 3: Policy */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">gavel</span>
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Policy & Compliance</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Developing HIPAA-compliant SOPs, client management policies, and contract review to protect your practice's legal and ethical foundation.</p>
-                                </div>
-                            </div>
+                                <h3 className="font-serif text-3xl font-bold mb-8 relative z-10 border-b border-white/20 pb-4">
+                                    Growing Your Practice
+                                </h3>
 
-                            {/* Card 4: Automation */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">hub</span>
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Workflow Automation</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Recommendations and implementation of procedures that reduce administrative friction and enhance patient outcomes.</p>
-                                </div>
-                            </div>
+                                <div className="space-y-8 relative z-10">
+                                    <p className="text-lg text-slate-300">
+                                        For established practices looking to scale efficiency and patient volume.
+                                    </p>
 
-                            {/* Card 5: Architecture */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">settings_suggest</span>
-                                    </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Systems Integration</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Expert guidance on selecting and implementing the right software stack, from EMRs to patient portals.</p>
-                                </div>
-                            </div>
+                                    <ul className="space-y-6">
+                                        <li className="flex gap-4">
+                                            <div className="p-2 bg-white/10 rounded-xl text-primary">
+                                                <span className="material-symbols-outlined">analytics</span>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold text-xl mb-1">Review Systems</h4>
+                                                <p className="text-slate-300 text-sm">Deep-dive audit of current processes and bottlenecks.</p>
+                                            </div>
+                                        </li>
+                                        <li className="flex gap-4">
+                                            <div className="p-2 bg-white/10 rounded-xl text-primary">
+                                                <span className="material-symbols-outlined">recommend</span>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold text-xl mb-1">Make Recommendations</h4>
+                                                <p className="text-slate-300 text-sm">Actionable intelligence to improve clinical yield.</p>
+                                            </div>
+                                        </li>
+                                        <li className="flex gap-4">
+                                            <div className="p-2 bg-white/10 rounded-xl text-primary">
+                                                <span className="material-symbols-outlined">build</span>
+                                            </div>
+                                            <div>
+                                                <h4 className="font-bold text-xl mb-1">Implement Procedures</h4>
+                                                <p className="text-slate-300 text-sm">Hands-on installation of new operating procedures.</p>
+                                            </div>
+                                        </li>
+                                    </ul>
 
-                            {/* Card 6: Strategy */}
-                            <div className="bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-trust-navy transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl group relative overflow-hidden">
-                                <div className="absolute inset-0 bg-gradient-to-br from-transparent via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                                <div className="relative z-10">
-                                    <div className="size-16 rounded-2xl bg-slate-50 border border-slate-100 flex items-center justify-center text-trust-navy mb-8 group-hover:bg-trust-navy group-hover:text-white transition-colors duration-300">
-                                        <span className="material-symbols-outlined text-3xl">diamond</span>
+                                    <div className="pt-8 mt-8 border-t border-white/10">
+                                        <TrackedLink
+                                            href="/book-consultation"
+                                            ctaName="Scale Your Practice"
+                                            source="service_consulting_growth"
+                                            className="w-full bg-white text-trust-navy hover:bg-slate-100 px-6 py-4 rounded-xl font-bold text-center block transition-colors"
+                                        >
+                                            Start Growth Audit
+                                        </TrackedLink>
                                     </div>
-                                    <h3 className="text-2xl font-serif font-bold text-trust-navy mb-4 group-hover:text-primary transition-colors">Strategic Development</h3>
-                                    <p className="text-slate-600 leading-relaxed font-medium">Long-term operational planning to ensure your practice remains sustainable and scalable in the California market.</p>
                                 </div>
                             </div>
                         </div>

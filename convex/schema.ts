@@ -155,6 +155,16 @@ export default defineSchema({
     createdAt: v.number(),
   }),
 
+  // Activity Logs
+  activityLogs: defineTable({
+    user: v.string(), // e.g., "Admin User" or email
+    action: v.string(), // e.g., "Login", "Update Page"
+    details: v.string(), // e.g., "Successful login from IP..."
+    type: v.string(), // 'auth', 'content', 'system', 'media', 'data'
+    metadata: v.optional(v.any()), // flexible JSON payload
+    timestamp: v.number(),
+  }).index("timestamp", ["timestamp"]).index("type", ["type"]),
+
   // Consultation leads from booking form
   consultationLeads: defineTable({
     fullName: v.string(),

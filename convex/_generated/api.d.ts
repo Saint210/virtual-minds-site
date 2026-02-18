@@ -8,8 +8,11 @@
  * @module
  */
 
+import type * as activity from "../activity.js";
 import type * as aiChat from "../aiChat.js";
+import type * as analytics from "../analytics.js";
 import type * as calculations from "../calculations.js";
+import type * as consultationLeads from "../consultationLeads.js";
 import type * as context7 from "../context7.js";
 import type * as notion from "../notion.js";
 
@@ -20,8 +23,11 @@ import type {
 } from "convex/server";
 
 declare const fullApi: ApiFromModules<{
+  activity: typeof activity;
   aiChat: typeof aiChat;
+  analytics: typeof analytics;
   calculations: typeof calculations;
+  consultationLeads: typeof consultationLeads;
   context7: typeof context7;
   notion: typeof notion;
 }>;

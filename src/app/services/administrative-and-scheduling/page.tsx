@@ -10,8 +10,8 @@ import TrackedLink from "@/components/ui/TrackedLink";
 import BottomCTA from "@/components/marketing/BottomCTA";
 
 export const metadata = {
-    title: "California Psychiatric Scheduling Virtual Assistants | Virtual Minds",
-    description: "California psychiatric patient retention and calendar logic. specialized intake coordination, titration tracking, and waitlist conversion.",
+    title: "Psychiatric Scheduling Services & Administrative Support | Virtual Minds",
+    description: "Psychiatric Scheduling Services that stabilize your calendar. Specialized intake conversion, titration tracking, and waitlist conversion.",
 };
 
 export default function SchedulingPage() {
@@ -42,14 +42,15 @@ export default function SchedulingPage() {
                                     <span className="tracking-[0.2em] uppercase">High-Acuity Calendar Logic</span>
                                 </div>
 
-                                <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-trust-navy mb-6 leading-[1.1] tracking-tight">
-                                    Administrative <br />
+                                <h1 className="font-serif text-4xl md:text-6xl font-bold text-trust-navy mb-4 leading-[1.1] tracking-tight">
+                                    <span className="block text-xl md:text-2xl text-primary font-bold mb-2 uppercase tracking-wide">Psychiatric Scheduling Services</span>
+                                    & Administrative <br />
                                     <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#D2691E] via-[#B8860B] to-[#D2691E] animate-gradient-x">
                                         Precision.
                                     </span>
                                 </h1>
 
-                                <p className="text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto mb-10 leading-relaxed font-light">
+                                <p className="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto mb-6 leading-relaxed font-light">
                                     We manage the
                                     <span className="text-trust-navy font-bold border-b-2 border-primary/30 mx-2">intake conversion, titration windows, and patient retention</span>
                                     so you can focus exclusively on clinical care.
@@ -120,7 +121,7 @@ export default function SchedulingPage() {
                             <div className="lg:w-[40%] relative w-full">
                                 <div className="relative group">
                                     <div className="absolute -inset-4 bg-primary/10 rounded-3xl blur-3xl opacity-50"></div>
-                                    <div className="relative aspect-[4/5] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
+                                    <div className="relative aspect-[1/1] w-full rounded-[3rem] shadow-2xl overflow-hidden border-8 border-white bg-slate-100 flex items-center justify-center group-hover:scale-[1.02] transition-transform duration-700">
                                         <Image
                                             src="/images/scheduling-hero.png"
                                             alt="Administrative Calendar Workflow"
