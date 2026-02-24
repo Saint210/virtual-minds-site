@@ -1,0 +1,42 @@
+[
+  {
+    "page": "Home",
+    "keyword": "California Psychiatric Virtual Assistant",
+    "score": 100,
+    "titleStatus": true,
+    "descStatus": true,
+    "h1Status": true
+  },
+  {
+    "page": "Billing",
+    "keyword": "Mental Health Billing Services",
+    "score": 100,
+    "titleStatus": true,
+    "descStatus": true,
+    "h1Status": true
+  },
+  {
+    "page": "Intake",
+    "keyword": "Patient Intake Coordinator",
+    "score": 100,
+    "titleStatus": true,
+    "descStatus": true,
+    "h1Status": true
+  },
+  {
+    "page": "Admin/Scheduling",
+    "keyword": "Psychiatric Scheduling Services",
+    "score": 100,
+    "titleStatus": true,
+    "descStatus": true,
+    "h1Status": true
+  },
+  {
+    "page": "EHR Management",
+    "keyword": "EHR Management for Psychiatrists",
+    "score": 100,
+    "titleStatus": true,
+    "descStatus": true,
+    "h1Status": true
+  }
+]

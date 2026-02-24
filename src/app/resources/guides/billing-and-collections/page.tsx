@@ -1,0 +1,237 @@
+import Link from "next/link";
+import Image from "next/image";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+
+export const metadata = {
+    title: "Billing & Collections Guide for California Psychiatrists | Virtual Minds",
+    description: "Reduce denied claims and get paid faster. Optimized documentation, billing coordination, and collections workflows for psychiatric practices.",
+    keywords: ["psychiatric administration", "mental health operations", "workflow management", "psychiatry documentation", "practice efficiency"],
+    alternates: {
+        canonical: "https://thevirtualminds.com/resources/guides/billing-and-collections",
+    },
+    openGraph: {
+        title: "Billing & Collections Guide for California Psychiatrists",
+        description: "Reduce denied claims and get paid faster. Optimized documentation, billing coordination, and collections workflows for psychiatric practices.",
+        url: "https://thevirtualminds.com/resources/guides/billing-and-collections",
+        siteName: "Virtual Minds",
+        locale: "en_US",
+        type: "article",
+    },
+};
+
+export default function BillingAndCollectionsGuide() {
+    return (
+        <div className="flex flex-col min-h-screen bg-slate-50">
+            <Navbar />
+
+            <main className="flex-grow">
+                {/* EXECUTIVE STRATEGIC HERO */}
+                <section className="relative pt-12 md:pt-20 pb-20 overflow-hidden">
+                    <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
+                        <div className="absolute top-0 left-0 w-full h-full bg-[radial-gradient(#0F172A_1px,transparent_1px)] [background-size:40px_40px]" />
+                    </div>
+
+                    <div className="relative z-10 max-w-[1400px] mx-auto px-6">
+                        <div className="flex flex-col lg:flex-row gap-16 items-center">
+
+                            {/* Left Column: Strategic Context (60%) */}
+                            <div className="lg:w-[60%]">
+                                <nav className="flex items-center gap-2 text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 mb-8">
+                                    <Link href="/" className="hover:text-primary transition-colors">Home</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <Link href="/resources" className="hover:text-primary transition-colors">Guides</Link>
+                                    <span className="material-symbols-outlined text-[14px]">chevron_right</span>
+                                    <span className="text-trust-navy">Billing & Collections</span>
+                                </nav>
+
+                                <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-1.5 text-trust-navy text-[10px] font-black uppercase tracking-[0.2em] mb-6">
+                                    <span className="material-symbols-outlined text-primary text-[16px]">account_balance_wallet</span>
+                                    Guide 02
+                                </div>
+
+                                <h1 className="font-serif text-5xl md:text-7xl font-bold text-trust-navy mb-8 leading-[0.95] tracking-tight">
+                                    Billing &<br />
+                                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-trust-navy via-primary to-trust-navy animate-gradient-x">
+                                        Collections.
+                                    </span>
+                                </h1>
+
+                                <p className="text-xl md:text-2xl text-slate-600 font-display leading-relaxed mb-8 max-w-2xl">
+                                    Stop leaving money on the table. Clean documentation, faster claims, and proactive follow-up so you get paid for every session.
+                                </p>
+
+                                <div className="flex flex-wrap gap-4">
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-green-500">trending_up</span>
+                                        <span className="text-sm font-bold text-trust-navy">Faster Payments</span>
+                                    </div>
+                                    <div className="flex items-center gap-2 bg-white px-4 py-2 rounded-xl shadow-sm border border-slate-100">
+                                        <span className="material-symbols-outlined text-blue-500">description</span>
+                                        <span className="text-sm font-bold text-trust-navy">Documentation Mastery</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Right Column: Visual Intel (40%) */}
+                            <div className="lg:w-[40%] group w-full">
+                                <div className="relative rounded-[2rem] overflow-hidden border border-slate-200/60 shadow-2xl aspect-[4/5] bg-white group-hover:border-primary/30 transition-colors">
+                                    <Image
+                                        src="/images/blueprint-revenue.png"
+                                        alt="Psychiatric Revenue and Operational Optimization System"
+                                        fill
+                                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                                        priority
+                                    />
+                                    <div className="absolute inset-0 bg-gradient-to-t from-trust-navy/30 via-transparent to-transparent pointer-events-none" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* CORE GUIDE CONTENT */}
+                <section className="py-24 bg-white border-t border-slate-100">
+                    <div className="max-w-[1200px] mx-auto px-6">
+                        <div className="grid grid-cols-1 lg:grid-cols-12 gap-20">
+
+                            {/* Left Content Area (8 columns) */}
+                            <div className="lg:col-span-8 space-y-20">
+
+                                {/* 1. The Operational Friction */}
+                                <div className="space-y-6">
+                                    <h2 className="text-3xl md:text-4xl font-serif font-bold text-trust-navy">Documentation Excellence</h2>
+                                    <div className="prose prose-slate prose-lg max-w-none">
+                                        <p>
+                                            Most California psychiatric practices struggle with documentation lag or templates that don&apos;t accurately reflect clinical depth. Transitioning to a high-fidelity documentation model ensures your practice remains compliant, professional, and ready for growth.
+                                        </p>
+                                        <blockquote className="border-l-4 border-primary bg-primary/5 p-8 rounded-r-3xl my-8">
+                                            <p className="font-serif italic text-trust-navy text-xl leading-relaxed">
+                                                "Precision Documentation is the bridge between clinical excellence and financial sustainability. If your templates aren't audit-proof, you're leaving thousands on the table every month."
+                                            </p>
+                                            <cite className="block mt-4 text-xs font-black uppercase tracking-widest text-slate-400">— Revenue Director, Virtual Minds</cite>
+                                        </blockquote>
+                                    </div>
+                                </div>
+
+                                {/* 2. The 5 Pillars of Revenue Protection */}
+                                <div className="space-y-12">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">The Revenue System</h2>
+                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        {[
+                                            {
+                                                icon: "call",
+                                                title: "Intake Conversion",
+                                                desc: "Convert the vast majority of initial psychiatric inquiries into booked evaluations through empathetic, professional coordination."
+                                            },
+                                            {
+                                                icon: "fact_check",
+                                                title: "Doc Quality Control",
+                                                desc: "Prepare accurate superbills that your billing company needs for clean first-pass submissions, reducing rejection rates to <2%."
+                                            },
+                                            {
+                                                icon: "handshake",
+                                                title: "Billing Liaison",
+                                                desc: "Direct coordination with your third-party biller to resolve documentation issues and track outstanding claims proactivey."
+                                            },
+                                            {
+                                                icon: "payments",
+                                                title: "Payment Recovery",
+                                                desc: "Automated collection workflows for patient copays and balances, managed by your VA without awkward clinical conversations."
+                                            },
+                                            {
+                                                icon: "analytics",
+                                                title: "Process Analysis",
+                                                desc: "Monthly reviewing of your clinical workflows to identify efficiency opportunities and operational trends."
+                                            }
+                                        ].map((step, idx) => (
+                                            <div key={idx} className="bg-white p-8 rounded-[2.5rem] border border-slate-100 hover:shadow-xl transition-all group">
+                                                <div className="w-12 h-12 rounded-2xl bg-white flex items-center justify-center text-primary mb-6 shadow-sm group-hover:bg-primary group-hover:text-white transition-colors">
+                                                    <span className="material-symbols-outlined">{step.icon}</span>
+                                                </div>
+                                                <h4 className="font-bold text-xl text-trust-navy mb-3">{step.title}</h4>
+                                                <p className="text-slate-500 text-sm leading-relaxed">{step.desc}</p>
+                                            </div>
+                                        ))}
+                                    </div>
+                                </div>
+
+                                {/* 3. The Efficiency Table */}
+                                <div className="space-y-8">
+                                    <h2 className="text-3xl font-serif font-bold text-trust-navy">Operational Comparison</h2>
+                                    <div className="overflow-hidden rounded-[2.5rem] border border-slate-200 shadow-sm">
+                                        <table className="w-full text-left border-collapse">
+                                            <thead>
+                                                <tr className="bg-slate-50">
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-slate-400">Metric</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-trust-navy">Standard Operations</th>
+                                                    <th className="p-6 text-xs font-black uppercase tracking-widest text-primary">VM Managed Model</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody className="divide-y divide-slate-100">
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Admin Lag Time</td>
+                                                    <td className="p-6 text-sm text-slate-500">High</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">Minimal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Superbill Accuracy</td>
+                                                    <td className="p-6 text-sm text-slate-500">Variable</td>
+                                                    <td className="p-6 text-sm font-bold text-green-600">First-Pass Ready</td>
+                                                </tr>
+                                                <tr>
+                                                    <td className="p-6 text-sm font-bold text-trust-navy">Patient Communication</td>
+                                                    <td className="p-6 text-sm text-slate-500">Reactive</td>
+                                                    <td className="p-6 text-sm font-bold text-primary italic">Proactive Liaison</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            {/* Right Sidebar (4 columns) */}
+                            <div className="lg:col-span-4 space-y-8">
+                                <div className="sticky top-12 space-y-8">
+
+                                    {/* Strategic Download Card */}
+                                    <div className="bg-trust-navy rounded-[2.5rem] p-10 text-white shadow-2xl relative overflow-hidden group">
+                                        <div className="absolute top-0 right-0 w-32 h-32 bg-primary/20 rounded-full blur-3xl -mr-16 -mt-16 group-hover:bg-primary/40 transition-all" />
+                                        <h3 className="font-serif text-2xl font-bold mb-6 italic !text-white">Analyze Revenue Leakage</h3>
+                                        <p className="text-slate-300 text-sm leading-relaxed mb-8">
+                                            In 15 minutes, we can identify exactly where your practice is losing billable revenue through administrative friction.
+                                        </p>
+                                        <Link href="/book-consultation" className="block w-full text-center bg-primary text-white font-black uppercase tracking-widest text-xs px-8 py-4 rounded-xl hover:scale-[1.02] transition-all hover:shadow-xl hover:shadow-primary/20">
+                                            Book Revenue Audit
+                                        </Link>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                {/* REVERSE SILO: Back to Hub CTA */}
+                <section className="py-16 bg-[#FAF8F3] border-t border-slate-100">
+                    <div className="max-w-4xl mx-auto px-6 text-center">
+                        <Link
+                            href="/resources"
+                            className="inline-flex items-center gap-3 text-trust-navy hover:text-primary font-bold text-lg transition-colors group"
+                        >
+                            <span className="material-symbols-outlined group-hover:-translate-x-1 transition-transform">arrow_back</span>
+                            Explore All Practice Guides & Resources
+                        </Link>
+                        <p className="text-slate-400 text-sm mt-3">Return to the full resource library for California psychiatric practices.</p>
+                    </div>
+                </section>
+
+            </main>
+
+            <Footer />
+        </div>
+    );
+}
