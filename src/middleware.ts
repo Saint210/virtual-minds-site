@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 
 // ─── Configuration ────────────────────────────────────────────────────────────
 // Change this to whatever password you want to use
-const SITE_PASSWORD = process.env.SITE_PASSWORD || 'virtualmindspro2026';
+const SITE_PASSWORD = process.env.SITE_PASSWORD || '4767';
 
 // Cookie name to track authenticated sessions
 const AUTH_COOKIE = 'vm_site_auth';
