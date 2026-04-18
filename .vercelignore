@@ -1,0 +1,36 @@
+# ─── Vercel Ignore ───────────────────────────────────────────────────────────
+# Files/dirs excluded from the Vercel deployment package.
+# Reduces build cache size and upload time.
+
+# Lighthouse & analysis scripts
+lighthouse-report.json
+lighthouse-report-new.json
+a11y-report.txt
+analyze-*.js
+analyze-lighthouse.js
+analyze-lighthouse-lcp.js
+analyze-a11y-details.js
+analyze-all-scores.js
+analyze-heavy-assets.js
+debug-*.js
+
+# Scratch / dev artifacts
+Whisk_*.jpeg
+check-font.tsx
+fix-contrast.ps1
+
+# Local tooling & configs
+.agent
+.opencode
+.windsurf
+.tmp
+.venv
+tools
+scripts
+directives
+execution
+architecture
+docs
+
+# tsconfig build info (regenerated at build time)
+tsconfig.tsbuildinfo

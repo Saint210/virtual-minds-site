@@ -16,7 +16,7 @@ const PUBLIC_PATHS = [
 
 // ─────────────────────────────────────────────────────────────────────────────
 
-export function middleware(request: NextRequest) {
+export function proxy(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
   // Skip password check for public paths
