@@ -4,11 +4,6 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Fix: Next.js 16 workspace root detection warning
-    turbopack: {
-        root: __dirname,
-    },
-
     // 301 redirects: consolidate versioned resource pages to v4 (canonical)
     async redirects() {
         const base = '/resources/virtual-assistants-for-psychiatrists/california-psychiatric-va-cost-analysis-2026';

@@ -104,9 +104,9 @@ export default function TechStackHub() {
                                 <h2 className="text-3xl font-serif font-bold text-white mb-4 italic">Not sure which clinical engine you need?</h2>
                                 <p className="text-slate-300">Take our 60-second Matchmaker Quiz to find your ideal EHR and automation setup.</p>
                             </div>
-                            <button className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl hover:scale-105 whitespace-nowrap">
+                            <Link href="/tools/ehr-matchmaker" className="bg-primary hover:bg-primary-hover text-white px-10 py-5 rounded-2xl font-bold transition-all shadow-xl hover:scale-105 whitespace-nowrap">
                                 Start Matchmaker Quiz
-                            </button>
+                            </Link>
                         </div>
                     </div>
                 </section>

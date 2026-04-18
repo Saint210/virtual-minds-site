@@ -25,12 +25,12 @@ fix-contrast.ps1
 .windsurf
 .tmp
 .venv
-tools
-scripts
-directives
-execution
-architecture
-docs
+/tools
+/scripts
+/directives
+/execution
+/architecture
+/docs
 
 # tsconfig build info (regenerated at build time)
 tsconfig.tsbuildinfo
